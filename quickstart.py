@@ -1,255 +1,136 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "name": "Android Management API - Quickstart",
-      "version": "0.3.2",
-      "provenance": [],
-      "private_outputs": true,
-      "collapsed_sections": [
-        "lbI8y3v1G6OM"
-      ]
-    },
-    "kernelspec": {
-      "display_name": "Python 3",
-      "name": "python3"
+#### Copyright 2018 Google LLC.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+
+# https://www.apache.org/licenses/LICENSE-2.0
+
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Android Management API - Quickstart
+
+This notebook shows you how to get started with the Android Management API. Follow
+the steps below to enroll an enterprise, create a policy, and provision a device.
+
+In order to run this notebook, you need:
+
+*   An Android 6.0+ device.
+*   A Gmail account. This account cannot be associated with an existing enterprise.
+
+## Setup
+
+The base resource of your Android Management solution is a Google Cloud Platform project. All other resources (`Enterprises`, `Devices`, `Policies`, etc) belong to the project and the project controls access to these resources. A solution is typically associated with a single project, but you can create multiple projects if you want to restrict access to resources.
+
+You can create a project in the Google Cloud Console: 
+
+1. [**Go to the Cloud Console**](https://console.cloud.google.com/cloud-resource-manager).
+2. Click **CREATE PROJECT**. 
+3. Enter your project details, and then click **CREATE**.
+2. Take note of the **project ID** and **paste it in the cell below**, then **run the cell**.
+
+To run a cell: 
+
+1. Click anywhere in the code block.
+2. Click the &#9654; button in the top-left of the code block.
+
+
+# Paste your project ID here.
+cloud_project_id = ''
+
+To create and access resources, you need to authenticate with an account that has edit rights over your project. To start the authentication flow, **run the cell below**.
+
+When you build a server-based solution, you should create a
+[service account](https://developers.google.com/android/management/service-account)
+so you don't need to authorize the access every time.
+
+from apiclient.discovery import build
+from google_auth_oauthlib.flow import InstalledAppFlow
+
+# This is a public OAuth config, you can use it to run this guide but please use
+# different credentials when building your own solution. 
+CLIENT_CONFIG = {
+    'installed': {
+        'client_id':'882252295571-uvkkfelq073vq73bbq9cmr0rn8bt80ee.apps.googleusercontent.com',
+        'client_secret': 'S2QcoBe0jxNLUoqnpeksCLxI',
+        'auth_uri':'https://accounts.google.com/o/oauth2/auth',
+        'token_uri':'https://accounts.google.com/o/oauth2/token'
     }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "lbI8y3v1G6OM"
-      },
-      "source": [
-        "#### Copyright 2018 Google LLC.\n",
-        "\n",
-        "Licensed under the Apache License, Version 2.0 (the \"License\");"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab_type": "code",
-        "id": "JxL-8R6KHRtK",
-        "colab": {}
-      },
-      "source": [
-        "# Licensed under the Apache License, Version 2.0 (the \"License\");\n",
-        "# you may not use this file except in compliance with the License.\n",
-        "# You may obtain a copy of the License at\n",
-        "\n",
-        "# https://www.apache.org/licenses/LICENSE-2.0\n",
-        "\n",
-        "# Unless required by applicable law or agreed to in writing, software\n",
-        "# distributed under the License is distributed on an \"AS IS\" BASIS,\n",
-        "# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n",
-        "# See the License for the specific language governing permissions and\n",
-        "# limitations under the License."
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "3Sf3qQL9CrIG"
-      },
-      "source": [
-        "# Android Management API - Quickstart\n",
-        "\n",
-        "This notebook shows you how to get started with the Android Management API. Follow\n",
-        "the steps below to enroll an enterprise, create a policy, and provision a device.\n",
-        "\n",
-        "In order to run this notebook, you need:\n",
-        "\n",
-        "*   An Android 6.0+ device.\n",
-        "*   A Gmail account. This account cannot be associated with an existing enterprise.\n",
-        "\n",
-        "## Setup\n",
-        "\n",
-        "The base resource of your Android Management solution is a Google Cloud Platform project. All other resources (`Enterprises`, `Devices`, `Policies`, etc) belong to the project and the project controls access to these resources. A solution is typically associated with a single project, but you can create multiple projects if you want to restrict access to resources.\n",
-        "\n",
-        "You can create a project in the Google Cloud Console: \n",
-        "\n",
-        "1. [**Go to the Cloud Console**](https://console.cloud.google.com/cloud-resource-manager).\n",
-        "2. Click **CREATE PROJECT**. \n",
-        "3. Enter your project details, and then click **CREATE**.\n",
-        "2. Take note of the **project ID** and **paste it in the cell below**, then **run the cell**.\n",
-        "\n",
-        "To run a cell: \n",
-        "\n",
-        "1. Click anywhere in the code block.\n",
-        "2. Click the &#9654; button in the top-left of the code block.\n"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab_type": "code",
-        "id": "orawejuC9GHB",
-        "colab": {}
-      },
-      "source": [
-        "# Paste your project ID here.\n",
-        "cloud_project_id = ''"
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "n3FaCG1wJAO7"
-      },
-      "source": [
-        "To create and access resources, you need to authenticate with an account that has edit rights over your project. To start the authentication flow, **run the cell below**.\n",
-        "\n",
-        "When you build a server-based solution, you should create a\n",
-        "[service account](https://developers.google.com/android/management/service-account)\n",
-        "so you don't need to authorize the access every time."
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab_type": "code",
-        "id": "8myK1D6uy7HR",
-        "colab": {}
-      },
-      "source": [
-        "from apiclient.discovery import build\n",
-        "from google_auth_oauthlib.flow import InstalledAppFlow\n",
-        "\n",
-        "# This is a public OAuth config, you can use it to run this guide but please use\n",
-        "# different credentials when building your own solution. \n",
-        "CLIENT_CONFIG = {\n",
-        "    'installed': {\n",
-        "        'client_id':'882252295571-uvkkfelq073vq73bbq9cmr0rn8bt80ee.apps.googleusercontent.com',\n",
-        "        'client_secret': 'S2QcoBe0jxNLUoqnpeksCLxI',\n",
-        "        'auth_uri':'https://accounts.google.com/o/oauth2/auth',\n",
-        "        'token_uri':'https://accounts.google.com/o/oauth2/token'\n",
-        "    }\n",
-        "}\n",
-        "SCOPES = ['https://www.googleapis.com/auth/androidmanagement']\n",
-        "\n",
-        "# Run the OAuth flow.\n",
-        "flow = InstalledAppFlow.from_client_config(CLIENT_CONFIG, SCOPES)\n",
-        "credentials = flow.run_console()\n",
-        "\n",
-        "# Create the API client.\n",
-        "androidmanagement = build('androidmanagement', 'v1', credentials=credentials)\n",
-        "\n",
-        "print('\\nAuthentication succeeded.')"
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "bsnuDBT7JQ9O"
-      },
-      "source": [
-        "## Create an enterprise\n",
-        "\n",
-        "An **`Enterprise`** resource binds an organization to your Android Management solution.\n",
-        "**`Devices`** and **`Policies`** both belong to an enterprise. Typically, a single enterprise\n",
-        "resource is associated with a single organization. However, you can create multiple\n",
-        "enterprises for the same organization based on their needs. For example, an\n",
-        "organization may want separate enterprises for its different departments or regions.\n",
-        "\n",
-        "To create an enterprise you need a **Gmail account** that's not already associated with\n",
-        "an enterprise.\n",
-        "\n",
-        "To start the enterprise creation flow, **run the cell below**. \n",
-        "\n",
-        "If you've already created an enterprise for this project, you can skip this step and enter your enterprise name in the next cell.  "
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab_type": "code",
-        "id": "TSeTmD7Y85NQ",
-        "colab": {}
-      },
-      "source": [
-        "CALLBACK_URL = 'https://storage.googleapis.com/android-management-quick-start/enterprise_signup_callback.html'\n",
-        "\n",
-        "# Generate a signup URL where the enterprise admin can signup with a Gmail\n",
-        "# account.\n",
-        "signup_url = androidmanagement.signupUrls().create(\n",
-        "    projectId=cloud_project_id,\n",
-        "    callbackUrl=CALLBACK_URL\n",
-        ").execute()\n",
-        "\n",
-        "print('Please visit this URL to create an enterprise:', signup_url['url'])\n",
-        "\n",
-        "enterprise_token = input('Enter the code: ')\n",
-        "\n",
-        "# Complete the creation of the enterprise and retrieve the enterprise name.\n",
-        "enterprise = androidmanagement.enterprises().create(\n",
-        "    projectId=cloud_project_id,\n",
-        "    signupUrlName=signup_url['name'],\n",
-        "    enterpriseToken=enterprise_token,\n",
-        "    body={}\n",
-        ").execute()\n",
-        "\n",
-        "enterprise_name = enterprise['name']\n",
-        "\n",
-        "print('\\nYour enterprise name is', enterprise_name)"
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "PnWwzIFyJXQS"
-      },
-      "source": [
-        "Take note of the enterprise name so you can reuse it after you close this notebook.\n",
-        "\n",
-        "If you already have an enterprise, you can enter the enterprise name in the cell below and run the cell."
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab_type": "code",
-        "id": "R4rNq_O_BNBJ",
-        "colab": {}
-      },
-      "source": [
-        "# Paste your enterprise name here.\n",
-        "enterprise_name = ''"
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "urkbkf7zJgqN"
-      },
-      "source": [
-        "## Create a policy\n",
-        "\n",
-        "A **`Policy`** is a group of settings that determine the behavior of a managed device\n",
-        "and the apps installed on it. Each Policy resource represents a unique group of device\n",
-        "and app settings and can be applied to one or more devices. Once a device is linked to\n",
-        "a policy, any updates to the policy are automatically applied to the device.\n",
-        "\n",
-        "To create a basic policy, **run the cell below**. You'll see how to create more advanced policies later in this guide."
-      ]
+}
+SCOPES = ['https://www.googleapis.com/auth/androidmanagement']
+
+# Run the OAuth flow.
+flow = InstalledAppFlow.from_client_config(CLIENT_CONFIG, SCOPES)
+credentials = flow.run_console()
+
+# Create the API client.
+androidmanagement = build('androidmanagement', 'v1', credentials=credentials)
+
+print('\nAuthentication succeeded.')
+
+## Create an enterprise
+
+An **`Enterprise`** resource binds an organization to your Android Management solution.
+**`Devices`** and **`Policies`** both belong to an enterprise. Typically, a single enterprise
+resource is associated with a single organization. However, you can create multiple
+enterprises for the same organization based on their needs. For example, an
+organization may want separate enterprises for its different departments or regions.
+
+To create an enterprise you need a **Gmail account** that's not already associated with
+an enterprise.
+
+To start the enterprise creation flow, **run the cell below**. 
+
+If you've already created an enterprise for this project, you can skip this step and enter your enterprise name in the next cell.  
+
+CALLBACK_URL = 'https://storage.googleapis.com/android-management-quick-start/enterprise_signup_callback.html'
+
+# Generate a signup URL where the enterprise admin can signup with a Gmail
+# account.
+signup_url = androidmanagement.signupUrls().create(
+    projectId=cloud_project_id,
+    callbackUrl=CALLBACK_URL
+).execute()
+
+print('Please visit this URL to create an enterprise:', signup_url['url'])
+
+enterprise_token = input('Enter the code: ')
+
+# Complete the creation of the enterprise and retrieve the enterprise name.
+enterprise = androidmanagement.enterprises().create(
+    projectId=cloud_project_id,
+    signupUrlName=signup_url['name'],
+    enterpriseToken=enterprise_token,
+    body={}
+).execute()
+
+enterprise_name = enterprise['name']
+
+print('\nYour enterprise name is', enterprise_name)
+
+Take note of the enterprise name so you can reuse it after you close this notebook.
+
+If you already have an enterprise, you can enter the enterprise name in the cell below and run the cell.
+
+# Paste your enterprise name here.
+enterprise_name = ''
+
+## Create a policy
+
+A **`Policy`** is a group of settings that determine the behavior of a managed device
+and the apps installed on it. Each Policy resource represents a unique group of device
+and app settings and can be applied to one or more devices. Once a device is linked to
+a policy, any updates to the policy are automatically applied to the device.
+
+To create a basic policy, **run the cell below**. You'll see how to create more advanced policies later in this guide.
+
+
     },
     {
       "cell_type": "code",
@@ -258,44 +139,37 @@
         "id": "pjHfDSb8BoBP",
         "colab": {}
       },
-      "source": [
-        "import json\n",
-        "\n",
-        "policy_name = enterprise_name + '/policies/policy1'\n",
-        "\n",
-        "policy_json = '''\n",
-        "{\n",
-        "  \"applications\": [\n",
-        "    {\n",
-        "      \"packageName\": \"com.google.samples.apps.iosched\",\n",
-        "      \"installType\": \"FORCE_INSTALLED\"\n",
-        "    }\n",
-        "  ],\n",
-        "  \"debuggingFeaturesAllowed\": true\n",
-        "}\n",
-        "'''\n",
-        "\n",
-        "androidmanagement.enterprises().policies().patch(\n",
-        "    name=policy_name,\n",
-        "    body=json.loads(policy_json)\n",
-        ").execute()"
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
+      "source": 
+
+import json
+
+policy_name = enterprise_name + '/policies/policy1'
+
+policy_json = '''
+{
+  "applications": [
     {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "SyxrXcIMJuDF"
-      },
-      "source": [
-        "## Provision a device\n",
-        "\n",
-        "Provisioning refers to the process of enrolling a device with an enterprise, applying the appropriate policies to the device, and guiding the user to complete the set up of their device in accordance with those policies. Before attempting to provision a device, ensure that the device is running Android 6.0 or above.\n",
-        "\n",
-        "You need an enrollment token for each device that you want to provision (you can use the same token for multiple devices), when creating a token you can specify a policy that will be applied to the device."
-      ]
+      "packageName": "com.google.samples.apps.iosched",
+      "installType": "FORCE_INSTALLED"
+    }
+  ],
+  "debuggingFeaturesAllowed": true
+}
+'''
+
+androidmanagement.enterprises().policies().patch(
+    name=policy_name,
+    body=json.loads(policy_json)
+).execute()
+
+
+## Provision a device
+
+Provisioning refers to the process of enrolling a device with an enterprise, applying the appropriate policies to the device, and guiding the user to complete the set up of their device in accordance with those policies. Before attempting to provision a device, ensure that the device is running Android 6.0 or above.
+
+You need an enrollment token for each device that you want to provision (you can use the same token for multiple devices), when creating a token you can specify a policy that will be applied to the device.
+
+
     },
     {
       "cell_type": "code",
@@ -304,24 +178,18 @@
         "id": "JPYgBZSmCEil",
         "colab": {}
       },
-      "source": [
-        "enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(\n",
-        "    parent=enterprise_name,\n",
-        "    body={\"policyName\": policy_name}\n",
-        ").execute()"
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "zmq6yvGsJ3pJ"
-      },
-      "source": [
-        "Embed your enrollment token in either an enrollment link or a QR code, and then follow the provisioning instructions below."
-      ]
+      "source": 
+
+enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
+    parent=enterprise_name,
+    body={"policyName": policy_name}
+).execute()
+
+
+
+Embed your enrollment token in either an enrollment link or a QR code, and then follow the provisioning instructions below.
+
+
     },
     {
       "cell_type": "code",
@@ -330,104 +198,84 @@
         "id": "TTSgnpC9EScx",
         "colab": {}
       },
-      "source": [
-        "from urllib.parse import urlencode\n",
-        "\n",
-        "image = {\n",
-        "    'cht': 'qr',\n",
-        "    'chs': '500x500',\n",
-        "    'chl': enrollment_token['qrCode']\n",
-        "}\n",
-        "\n",
-        "qrcode_url = 'https://chart.googleapis.com/chart?' + urlencode(image)\n",
-        "\n",
-        "print('Please visit this URL to scan the QR code:', qrcode_url)"
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "colab_type": "code",
-        "id": "7ICRh_3UsiU4",
-        "colab": {}
-      },
-      "source": [
-        "enrollment_link = 'https://enterprise.google.com/android/enroll?et=' + enrollment_token['value']\n",
-        "\n",
-        "print('Please open this link on your device:', enrollment_link)"
-      ],
-      "execution_count": 0,
-      "outputs": []
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "colab_type": "text",
-        "id": "hcdeKcrIfM5H"
-      },
-      "source": [
-        "The method for provisioning a device varies depending on the management mode you want to use. \n",
-        "\n",
-        "### Fully managed mode\n",
-        "\n",
-        "In **fully managed mode** the entire device is managed and the device needs to be factory reset before setup. To set up a device in fully managed mode you need to use a QR code.\n",
-        "\n",
-        "For devices running Android 7.0 or above:\n",
-        "\n",
-        "1.  Turn on a new or factory-reset device.\n",
-        "2.  Tap the same spot on the welcome screen six times to enter QR code mode.\n",
-        "3.  Connect to a WiFi network.\n",
-        "4.  Scan the QR code.\n",
-        "\n",
-        "For devices running Android 6.0:\n",
-        "\n",
-        "1.  Turn on a new or factory-reset device.\n",
-        "2.  Follow the setup wizard and enter your Wi-Fi details.\n",
-        "3.  When prompted to sign in, enter **afw#setup**.\n",
-        "4.  Tap Next, and then accept the installation of Android Device Policy.\n",
-        "5.  Scan the QR code.\n",
-        "\n",
-        "### Work profile mode\n",
-        "\n",
-        "In **work profile mode** corporate apps and data are kept secure in a self-contained work profile while the user keeps control of the rest of the device. To set up a work profile you can either use a QR code or an enrollment link.\n",
-        "\n",
-        "Using the enrollment link:\n",
-        "\n",
-        "1.  Make the link accessible on the device (send it via email or put it on a website).\n",
-        "2.  Open the link.\n",
-        "\n",
-        "Or using the QR code:\n",
-        "\n",
-        "1.  Go to **Settings** > **Google**.\n",
-        "2.  Tap \"Set up your work profile\".\n",
-        "3.  Scan the QR code.\n",
-        "\n",
-        "## What's next?\n",
-        "\n",
-        "By now you should have a managed device configured with a basic policy, but there's\n",
-        "much more you can do with the Android Management API.\n",
-        "\n",
-        "First, we recommend\n",
-        "[**exploring the range of available policies**](https://developers.google.com/android/management/create-policy)\n",
-        "to build the right policy for your needs.  \n",
-        "\n",
-        "Next, explore other features of the Android Management API:\n",
-        "\n",
-        "*   Learn how to [discover apps](https://developers.google.com/android/management/apps)\n",
-        "*   Set up [Pub/Sub notifications](https://developers.google.com/android/management/notifications)\n",
-        "\n",
-        "Or start developing a server-based solution:\n",
-        "\n",
-        "*   Download the Android Management API client library for\n",
-        "    [Java](https://developers.google.com/api-client-library/java/apis/androidmanagement/v1),\n",
-        "    [.NET](https://developers.google.com/api-client-library/dotnet/apis/androidmanagement/v1),\n",
-        "    [Python](https://developers.google.com/api-client-library/python/apis/androidmanagement/v1),\n",
-        "    or [Ruby](https://developers.google.com/api-client-library/ruby/apis/androidmanagement/v1).\n",
-        "*   Create a [service account](https://developers.google.com/android/management/service-account).\n",
-        "\n"
-      ]
-    }
-  ]
+      "source": 
+
+from urllib.parse import urlencode
+
+image = {
+    'cht': 'qr',
+    'chs': '500x500',
+    'chl': enrollment_token['qrCode']
 }
+
+qrcode_url = 'https://chart.googleapis.com/chart?' + urlencode(image)
+
+print('Please visit this URL to scan the QR code:', qrcode_url)
+
+
+
+
+enrollment_link = 'https://enterprise.google.com/android/enroll?et=' + enrollment_token['value']
+
+print('Please open this link on your device:', enrollment_link)
+
+
+
+The method for provisioning a device varies depending on the management mode you want to use. 
+
+### Fully managed mode
+
+In **fully managed mode** the entire device is managed and the device needs to be factory reset before setup. To set up a device in fully managed mode you need to use a QR code.
+
+For devices running Android 7.0 or above:
+
+1.  Turn on a new or factory-reset device.
+2.  Tap the same spot on the welcome screen six times to enter QR code mode.
+3.  Connect to a WiFi network.
+4.  Scan the QR code.
+
+For devices running Android 6.0:
+
+1.  Turn on a new or factory-reset device.
+2.  Follow the setup wizard and enter your Wi-Fi details.
+3.  When prompted to sign in, enter **afw#setup**.
+4.  Tap Next, and then accept the installation of Android Device Policy.
+5.  Scan the QR code.
+
+### Work profile mode
+
+In **work profile mode** corporate apps and data are kept secure in a self-contained work profile while the user keeps control of the rest of the device. To set up a work profile you can either use a QR code or an enrollment link.
+
+Using the enrollment link:
+
+1.  Make the link accessible on the device (send it via email or put it on a website).
+2.  Open the link.
+
+Or using the QR code:
+
+1.  Go to **Settings** > **Google**.
+2.  Tap "Set up your work profile".
+3.  Scan the QR code.
+
+## What's next?
+
+By now you should have a managed device configured with a basic policy, but there's
+much more you can do with the Android Management API.
+
+First, we recommend
+[**exploring the range of available policies**](https://developers.google.com/android/management/create-policy)
+to build the right policy for your needs.  
+
+Next, explore other features of the Android Management API:
+
+*   Learn how to [discover apps](https://developers.google.com/android/management/apps)
+*   Set up [Pub/Sub notifications](https://developers.google.com/android/management/notifications)
+
+Or start developing a server-based solution:
+
+*   Download the Android Management API client library for
+    [Java](https://developers.google.com/api-client-library/java/apis/androidmanagement/v1),
+    [.NET](https://developers.google.com/api-client-library/dotnet/apis/androidmanagement/v1),
+    [Python](https://developers.google.com/api-client-library/python/apis/androidmanagement/v1),
+    or [Ruby](https://developers.google.com/api-client-library/ruby/apis/androidmanagement/v1).
+*   Create a [service account](https://developers.google.com/android/management/service-account).
