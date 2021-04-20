@@ -1,0 +1,19 @@
+# <twb> I'm sick of setup.py; what's Best Current Practice for declarative python packaging for Debian?
+# <twb> apparently in 2020 the cool kids prefer https://python-poetry.org/, but
+#       next year they will probably like something else.
+#       ⇒ https://packages.debian.org/sid/python3-poetry-core
+#       ⇒ https://www.python.org/dev/peps/pep-0517/
+#       ⇒ https://www.python.org/dev/peps/pep-0518/
+#       ⇒ https://grassfedcode.medium.com/pep-517-and-518-in-plain-english-47208ca8b7a6
+# <untakenstupidnick> twb: pip packaging is pretty easy
+# <twb> pip doesn't seem to even be a dependency for debhelper or python packaging
+# <twb> I don't see any interesting rdeps for python3-pip either...
+# <themill> twb: pybuild(1) has grown some support for pyproject.toml https://manpages.debian.org/unstable/dh-python/pybuild.1.en.html
+# <twb> Ah thanks, I think that is the bit I was missing
+# <twb> add 'Build-Depends: flit, python3-toml' and debuild will Just Work with pyproject.toml
+#
+# <twb> I feel like pybuild should "Suggests: flit" to make this easier to discover :/
+# <twb> Or "Enhances: dh-python" in flit (less discoverable).
+
+[build-system]
+requires = ["setuptools", "wheel"]
