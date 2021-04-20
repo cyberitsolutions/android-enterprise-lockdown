@@ -1,0 +1,4 @@
+#! /usr/bin/make -f
+export PYBUILD_NAME=lobata-hassles
+%:
+	dh $@ --buildsystem=pybuild

@@ -1,0 +1,16 @@
+Source: lobata-hassles
+Standards-Version: 4.5.0
+Vcs-Git: https://github.com/cyberitsolutions/android-enterprise-lockdown
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ flit,
+ python3-all,
+ python3-toml
+
+Package: python3-lobata-hassles
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: FIXME
+ FIXME
