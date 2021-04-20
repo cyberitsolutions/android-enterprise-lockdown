@@ -17,3 +17,12 @@
 
 [build-system]
 requires = ["setuptools", "wheel"]
+
+
+# FIXME: where is this build-system-specific section documented.
+# Without it, flit (and thus debuild) complain with
+#     TOML file missing [tool.flit] table
+# which really means "the file './pyproject.toml' has no INI section named 'tool.flit'".
+[tool.flit.metadata]
+module = "LobataHassles"
+author = "Trent W. Buck"
