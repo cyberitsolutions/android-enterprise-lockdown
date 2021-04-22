@@ -1,6 +1,6 @@
 {
     "service_account": "android-management-api-client@frobozz.iam.gserviceaccount.com",
-    "FIXME_enterprise_name": "FIXME",
+    "enterprise_name": "enterprises/LC02kggfh1",
     "policies": {
         "policy1": {
             "applications": [
