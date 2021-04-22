@@ -40,9 +40,31 @@ See also https://github.com/google/android-management-api-samples/blob/master/no
 
 
 import argparse
+import json
+import pathlib
+import subprocess
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--project-id', default='frobozz')
+parser = argparse.ArgumentParser(description=__DOC__)
+parser.add_argument(
+    '--service-account-client-email',
+    nargs='?',
+    # example='android-management-api-client@frobozz.iam.gserviceaccount.com',
+    help='"pass show <this>" should emit a JSON service_account object (mostly a private key)')
+args = parser.parse_args()
+
+if args.service_account_client_email:
+    # first-time setup has already been done, so get an oauth token from the private key.
+    service_account_object = json.loads(
+        subprocess.check_output(['pass', 'show', args.service_account_client_email]))
+    # Basic sanity checks
+    if service_account_object['type'] != 'service_account':
+        raise RuntimeError('wrong json')
+    if 'private_key' not in service_account_object:
+        raise RuntimeError('wrong json')
+    gcloud_project_id = service_account_object['project_id']
+    print(gcloud_project_id)
+else:
+    pass
 
 # To create and access resources,
 # you must authenticate with an account that has edit rights over your project.
