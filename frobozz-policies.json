@@ -1,0 +1,15 @@
+{
+    "service_account": "android-management-api-client@frobozz.iam.gserviceaccount.com",
+    "FIXME_enterprise_name": "FIXME",
+    "policies": {
+        "policy1": {
+            "applications": [
+                {
+                    "packageName": "com.google.samples.apps.iosched",
+                    "installType": "FORCE_INSTALLED"
+                }
+            ],
+            "debuggingFeaturesAllowed": true
+        }
+    }
+}

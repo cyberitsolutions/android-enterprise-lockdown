@@ -50,17 +50,36 @@ import pypass
 
 parser = argparse.ArgumentParser(description=__DOC__)
 parser.add_argument(
-    '--service-account-client-email',
+    'json_config_path',
     nargs='?',
+    default=pathlib.Path('frobozz-policies.json'),
+    type=pathlib.Path,
     # example='android-management-api-client@frobozz.iam.gserviceaccount.com',
-    help='"pass show <this>" should emit a JSON service_account object (mostly a private key)')
+    help="""
+    A file containing a JSON object with at least {"policies": {"my-cool-policy": ...}}.
+    If it contains "gcloud_project_id" you won't be prompted for one.
+    If it contains "enterprise_name" you won't be prompted to create one.
+    Note that "enterprise_name" is a token provided by Google, NOT one you make up.
+    If it contains "gcloud_service_account" it'll be looked up in ~/.password-store.
+    Otherwise, you will have to bounce through a browser every time.
+    """)
+parser.add_argument(
+    '--work-profile-mode', action='store_true',
+    help="""
+    Emit enrollment URL instead of enrollment QR code.
+    QR code is easier for "fully managed mode" (device only has restricted work account).
+    URL is easier for "work profile mode" (device has an unrestricted non-work account).
+    """)
 args = parser.parse_args()
 
-if args.service_account_client_email:
+with args.json_config_path.open() as f:
+    json_config_object = json.load(f)
+
+if 'service_account' in json_config_object:
     # first-time setup has already been done, so get an oauth token from the private key.
     service_account_object = json.loads(
         pypass.PasswordStore().get_decrypted_password(
-            args.service_account_client_email).strip())
+            json_config_object['service_account']).strip())
     # Basic sanity checks
     if service_account_object['type'] != 'service_account':
         raise RuntimeError('wrong json')
@@ -69,7 +88,17 @@ if args.service_account_client_email:
     gcloud_project_id = service_account_object['project_id']
     print(gcloud_project_id)
 else:
-    pass
+    # FIXME: CHANGE THESE MAGIC NUMBERS;
+    #        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
+    # This is a public OAuth config, you can use it to run this guide, but
+    # please use different credentials when building your own solution.
+    service_account_object = {
+        'client_id':'882252295571-uvkkfelq073vq73bbq9cmr0rn8bt80ee.apps.googleusercontent.com',
+        'client_secret': 'S2QcoBe0jxNLUoqnpeksCLxI',
+        'auth_uri':'https://accounts.google.com/o/oauth2/auth',
+        'token_uri':'https://accounts.google.com/o/oauth2/token'
+    }
+    gcloud_project_id = input('What is the gcloud project ID (that runs your EMM service?): ')
 
 # To create and access resources,
 # you must authenticate with an account that has edit rights over your project.
@@ -82,24 +111,11 @@ else:
 
 # Create the API client.
 androidmanagement = apiclient.discovery.build(
-    'androidmanagement',
-    'v1',
+    'androidmanagement', 'v1',
     credentials=google_auth_oauthlib.flow.InstalledAppFlow.from_client_config(
-        scopes=[
-            'https://www.googleapis.com/auth/androidmanagement',
-        ],
-        # FIXME: CHANGE THESE MAGIC NUMBERS;
-        #        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
-        # This is a public OAuth config, you can use it to run this guide, but
-        # please use different credentials when building your own solution.
-        client_config={
-            'installed': {
-                'client_id':'882252295571-uvkkfelq073vq73bbq9cmr0rn8bt80ee.apps.googleusercontent.com',
-                'client_secret': 'S2QcoBe0jxNLUoqnpeksCLxI',
-                'auth_uri':'https://accounts.google.com/o/oauth2/auth',
-                'token_uri':'https://accounts.google.com/o/oauth2/token'
-            }
-        }).run_console())
+        scopes=['https://www.googleapis.com/auth/androidmanagement'],
+        client_config={'installed': service_account_object}
+    ).run_console())
 
 print('\nAuthentication succeeded.')
 
@@ -120,34 +136,34 @@ print('\nAuthentication succeeded.')
 # If you've already created an enterprise for this project,
 # you can skip this step and enter your enterprise name in the next cell.
 
-# Generate a signup URL where the enterprise admin can signup with a Gmail
-# account.
-signup_url = androidmanagement.signupUrls().create(
-    projectId=cloud_project_id,
-    callbackUrl='https://storage.googleapis.com/android-management-quick-start/enterprise_signup_callback.html'
-).execute()
+if 'enterprise_name' not in json_config_object:
 
-print('Please visit this URL to create an enterprise:', signup_url['url'])
+    # Generate a signup URL where the enterprise admin can signup with a Gmail
+    # account.
+    signup_url = androidmanagement.signupUrls().create(
+        projectId=gcloud_project_id,
+        callbackUrl='https://storage.googleapis.com/android-management-quick-start/enterprise_signup_callback.html'
+    ).execute()
 
-enterprise_token = input('Enter the code: ')
+    print('Please visit this URL to create an enterprise:', signup_url['url'])
 
-# Complete the creation of the enterprise and retrieve the enterprise name.
-enterprise = androidmanagement.enterprises().create(
-    projectId=cloud_project_id,
-    signupUrlName=signup_url['name'],
-    enterpriseToken=enterprise_token,
-    body={}
-).execute()
+    enterprise_token = input('Enter the code: ')
 
-enterprise_name = enterprise['name']
+    # Complete the creation of the enterprise and retrieve the enterprise name.
+    enterprise = androidmanagement.enterprises().create(
+        projectId=gcloud_project_id,
+        signupUrlName=signup_url['name'],
+        enterpriseToken=enterprise_token,
+        body={}
+    ).execute()
 
-print('\nYour enterprise name is', enterprise_name)
+    json_config_object['enterprise_name'] = enterprise['name']
+    print('\nYour enterprise name is', json_config_object['enterprise_name'])
+
 
 # Take note of the enterprise name so you can reuse it after you close this notebook.
 # If you already have an enterprise, you can enter the enterprise name in the cell below and run the cell.
 
-# Paste your enterprise name here.
-enterprise_name = ''
 
 ######################################################################
 ## Create a policy
@@ -159,17 +175,16 @@ enterprise_name = ''
 #
 # To create a basic policy, run the cell below.
 # You'll see how to create more advanced policies later in this guide.
-androidmanagement.enterprises().policies().patch(
-    name=f'{enterprise_name}/policies/policy1',
-    body={
-        "applications": [
-            {
-                "packageName": "com.google.samples.apps.iosched",
-                "installType": "FORCE_INSTALLED"
-            }
-        ],
-        "debuggingFeaturesAllowed": true
-    }).execute()
+
+for policy_name, policy_body in json_config_object['policies'].items():
+    # Example: "frobozz-DEADBE/policies/policy1"
+    policy_path = (
+        pathlib.PosixPath(json_config_object['enterprise_name']) /
+        'policies' /
+        policy_name)
+    androidmanagement.enterprises().policies().patch(
+        name=policy_path,
+        body=policy_body).execute()
 
 
 ######################################################################
@@ -185,26 +200,21 @@ androidmanagement.enterprises().policies().patch(
 # when creating a token you can specify a policy that will be applied to the device.
 
 enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
-    parent=enterprise_name,
+    parent=json_config_object['enterprise_name'],
     body={"policyName": policy_name}
 ).execute()
 
 
 # Embed your enrollment token in either an enrollment link or a QR code, and then follow the provisioning instructions below.
-qrcode_url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
-    'cht': 'qr',
-    'chs': '500x500',
-    'chl': enrollment_token['qrCode']
-})
-print('Please visit this URL to scan the QR code:', qrcode_url)
-
-
-
-
-enrollment_link = 'https://enterprise.google.com/android/enroll?et=' + enrollment_token['value']
-
-print('Please open this link on your device:', enrollment_link)
-
+if args.work_profile_mode:
+    print('Please open this link on your device:',
+          'https://enterprise.google.com/android/enroll?et=' + enrollment_token['value'])
+else:
+    print('Please visit this URL to scan the QR code:',
+          'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
+              'cht': 'qr',
+              'chs': '500x500',
+              'chl': enrollment_token['qrCode']}))
 
 
 # The method for provisioning a device varies depending on the management mode you want to use.
