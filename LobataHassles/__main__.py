@@ -43,6 +43,10 @@ import argparse
 import json
 import pathlib
 import subprocess
+import urllib.parse
+
+import apiclient.discovery
+import google_auth_oauthlib.flow
 
 parser = argparse.ArgumentParser(description=__DOC__)
 parser.add_argument(
@@ -75,8 +79,6 @@ else:
 #
 #     https://developers.google.com/android/management/service-account
 
-import apiclient.discovery
-import google_auth_oauthlib.flow
 
 # FIXME: CHANGE THESE MAGIC NUMBERS;
 #        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
@@ -161,8 +163,6 @@ enterprise_name = ''
 # You'll see how to create more advanced policies later in this guide.
 
 
-import json
-
 policy_name = enterprise_name + '/policies/policy1'
 
 policy_json = '''
@@ -204,7 +204,6 @@ enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
 # Embed your enrollment token in either an enrollment link or a QR code, and then follow the provisioning instructions below.
 
 
-import urllib.parse
 
 image = {
     'cht': 'qr',
