@@ -75,8 +75,8 @@ else:
 #
 #     https://developers.google.com/android/management/service-account
 
-from apiclient.discovery import build
-from google_auth_oauthlib.flow import InstalledAppFlow
+import apiclient.discovery
+import google_auth_oauthlib.flow
 
 # FIXME: CHANGE THESE MAGIC NUMBERS;
 #        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
@@ -93,11 +93,11 @@ CLIENT_CONFIG = {
 SCOPES = ['https://www.googleapis.com/auth/androidmanagement']
 
 # Run the OAuth flow.
-flow = InstalledAppFlow.from_client_config(CLIENT_CONFIG, SCOPES)
+flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_config(CLIENT_CONFIG, SCOPES)
 credentials = flow.run_console()
 
 # Create the API client.
-androidmanagement = build('androidmanagement', 'v1', credentials=credentials)
+androidmanagement = apiclient.discovery.build('androidmanagement', 'v1', credentials=credentials)
 
 print('\nAuthentication succeeded.')
 
@@ -204,7 +204,7 @@ enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
 # Embed your enrollment token in either an enrollment link or a QR code, and then follow the provisioning instructions below.
 
 
-from urllib.parse import urlencode
+import urllib.parse
 
 image = {
     'cht': 'qr',
@@ -212,7 +212,7 @@ image = {
     'chl': enrollment_token['qrCode']
 }
 
-qrcode_url = 'https://chart.googleapis.com/chart?' + urlencode(image)
+qrcode_url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode(image)
 
 print('Please visit this URL to scan the QR code:', qrcode_url)
 
