@@ -80,27 +80,26 @@ else:
 #
 #     https://developers.google.com/android/management/service-account
 
-
-# FIXME: CHANGE THESE MAGIC NUMBERS;
-#        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
-# This is a public OAuth config, you can use it to run this guide, but
-# please use different credentials when building your own solution.
-CLIENT_CONFIG = {
-    'installed': {
-        'client_id':'882252295571-uvkkfelq073vq73bbq9cmr0rn8bt80ee.apps.googleusercontent.com',
-        'client_secret': 'S2QcoBe0jxNLUoqnpeksCLxI',
-        'auth_uri':'https://accounts.google.com/o/oauth2/auth',
-        'token_uri':'https://accounts.google.com/o/oauth2/token'
-    }
-}
-SCOPES = ['https://www.googleapis.com/auth/androidmanagement']
-
-# Run the OAuth flow.
-flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_config(CLIENT_CONFIG, SCOPES)
-credentials = flow.run_console()
-
 # Create the API client.
-androidmanagement = apiclient.discovery.build('androidmanagement', 'v1', credentials=credentials)
+androidmanagement = apiclient.discovery.build(
+    'androidmanagement',
+    'v1',
+    credentials=google_auth_oauthlib.flow.InstalledAppFlow.from_client_config(
+        scopes=[
+            'https://www.googleapis.com/auth/androidmanagement',
+        ],
+        # FIXME: CHANGE THESE MAGIC NUMBERS;
+        #        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
+        # This is a public OAuth config, you can use it to run this guide, but
+        # please use different credentials when building your own solution.
+        client_config={
+            'installed': {
+                'client_id':'882252295571-uvkkfelq073vq73bbq9cmr0rn8bt80ee.apps.googleusercontent.com',
+                'client_secret': 'S2QcoBe0jxNLUoqnpeksCLxI',
+                'auth_uri':'https://accounts.google.com/o/oauth2/auth',
+                'token_uri':'https://accounts.google.com/o/oauth2/token'
+            }
+        }).run_console())
 
 print('\nAuthentication succeeded.')
 
@@ -121,13 +120,11 @@ print('\nAuthentication succeeded.')
 # If you've already created an enterprise for this project,
 # you can skip this step and enter your enterprise name in the next cell.
 
-CALLBACK_URL = 'https://storage.googleapis.com/android-management-quick-start/enterprise_signup_callback.html'
-
 # Generate a signup URL where the enterprise admin can signup with a Gmail
 # account.
 signup_url = androidmanagement.signupUrls().create(
     projectId=cloud_project_id,
-    callbackUrl=CALLBACK_URL
+    callbackUrl='https://storage.googleapis.com/android-management-quick-start/enterprise_signup_callback.html'
 ).execute()
 
 print('Please visit this URL to create an enterprise:', signup_url['url'])
@@ -162,26 +159,17 @@ enterprise_name = ''
 #
 # To create a basic policy, run the cell below.
 # You'll see how to create more advanced policies later in this guide.
-
-
-policy_name = enterprise_name + '/policies/policy1'
-
-policy_json = '''
-{
-  "applications": [
-    {
-      "packageName": "com.google.samples.apps.iosched",
-      "installType": "FORCE_INSTALLED"
-    }
-  ],
-  "debuggingFeaturesAllowed": true
-}
-'''
-
 androidmanagement.enterprises().policies().patch(
-    name=policy_name,
-    body=json.loads(policy_json)
-).execute()
+    name=f'{enterprise_name}/policies/policy1',
+    body={
+        "applications": [
+            {
+                "packageName": "com.google.samples.apps.iosched",
+                "installType": "FORCE_INSTALLED"
+            }
+        ],
+        "debuggingFeaturesAllowed": true
+    }).execute()
 
 
 ######################################################################
@@ -203,17 +191,11 @@ enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
 
 
 # Embed your enrollment token in either an enrollment link or a QR code, and then follow the provisioning instructions below.
-
-
-
-image = {
+qrcode_url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
     'cht': 'qr',
     'chs': '500x500',
     'chl': enrollment_token['qrCode']
-}
-
-qrcode_url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode(image)
-
+})
 print('Please visit this URL to scan the QR code:', qrcode_url)
 
 
