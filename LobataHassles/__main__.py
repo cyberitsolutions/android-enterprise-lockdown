@@ -42,11 +42,11 @@ See also https://github.com/google/android-management-api-samples/blob/master/no
 import argparse
 import json
 import pathlib
-import subprocess
 import urllib.parse
 
 import apiclient.discovery
 import google_auth_oauthlib.flow
+import pypass
 
 parser = argparse.ArgumentParser(description=__DOC__)
 parser.add_argument(
@@ -59,7 +59,8 @@ args = parser.parse_args()
 if args.service_account_client_email:
     # first-time setup has already been done, so get an oauth token from the private key.
     service_account_object = json.loads(
-        subprocess.check_output(['pass', 'show', args.service_account_client_email]))
+        pypass.PasswordStore().get_decrypted_password(
+            args.service_account_client_email).strip())
     # Basic sanity checks
     if service_account_object['type'] != 'service_account':
         raise RuntimeError('wrong json')

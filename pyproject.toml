@@ -26,3 +26,8 @@ requires = ["setuptools", "wheel"]
 [tool.flit.metadata]
 module = "LobataHassles"
 author = "Trent W. Buck"
+requires = [
+    # Donenfield's GPG/git secret database (~/.password-store).
+    # We use this to store the oauth credentials outside the code repo.
+    'pypass',
+    ]
