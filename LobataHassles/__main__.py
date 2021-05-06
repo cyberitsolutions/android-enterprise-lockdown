@@ -41,7 +41,9 @@ See also https://github.com/google/android-management-api-samples/blob/master/no
 
 import argparse
 import json
+import logging
 import pathlib
+import subprocess
 import urllib.parse
 
 import apiclient.discovery
@@ -87,14 +89,15 @@ if 'service_account' in json_config_object:
     if 'private_key' not in service_account_object:
         raise RuntimeError('wrong json')
     gcloud_project_id = service_account_object['project_id']
-    print(gcloud_project_id)
+    logging.debug('Project ID is: %s', gcloud_project_id)
     androidmanagement = apiclient.discovery.build(
         serviceName='androidmanagement',
         version='v1',
+        cache_discovery=False,  # disable some stupid warning
         credentials=google.oauth2.service_account.Credentials.from_service_account_info(
             info=service_account_object,
             scopes=['https://www.googleapis.com/auth/androidmanagement']))
-    print('\nAuthentication succeeded.')
+    logging.info('Authentication succeeded.')
 else:
     # FIXME: CHANGE THESE MAGIC NUMBERS;
     #        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
@@ -186,16 +189,8 @@ if 'enterprise_name' not in json_config_object:
 
 for policy_name, policy_body in json_config_object['policies'].items():
     # Example: "frobozz-DEADBE/policies/policy1"
-    # Use PosixPath for easier (arguably) clearer joining, but
-    # then coerce to str because
-    # googleapiclient.discovery does
-    # isinstance(name, six.string_types) and
-    # re.match('foo', name),
-    # both of which fail on Path objects.
-    policy_path = str(
-        pathlib.PosixPath(json_config_object['enterprise_name']) /
-        'policies' /
-        policy_name)
+    # FIXME: probably doesn't quote silly enterprise names properly.
+    policy_path = f'{json_config_object["enterprise_name"]}/policies/{policy_name}'
     androidmanagement.enterprises().policies().patch(
         name=policy_path,
         body=policy_body).execute()
@@ -213,6 +208,9 @@ for policy_name, policy_body in json_config_object['policies'].items():
 # You need an enrollment token for each device that you want to provision (you can use the same token for multiple devices);
 # when creating a token you can specify a policy that will be applied to the device.
 
+# FIXME: this does enrollment for whatever the LAST POLICY IN THE LIST loop was.
+# Since "policies" is a dict, the order is random!
+# Move this crap inside the "for ... in policies" loop?
 enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
     parent=json_config_object['enterprise_name'],
     body={"policyName": policy_name}
@@ -224,11 +222,12 @@ if args.work_profile_mode:
     print('Please open this link on your device:',
           'https://enterprise.google.com/android/enroll?et=' + enrollment_token['value'])
 else:
-    print('Please visit this URL to scan the QR code:',
-          'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
+    url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
               'cht': 'qr',
               'chs': '500x500',
-              'chl': enrollment_token['qrCode']}))
+              'chl': enrollment_token['qrCode']})
+    print('Please visit this URL to scan the QR code:', url)
+    subprocess.check_call(['xdg-open', url])
 
 
 # The method for provisioning a device varies depending on the management mode you want to use.
