@@ -178,7 +178,13 @@ if 'enterprise_name' not in json_config_object:
 
 for policy_name, policy_body in json_config_object['policies'].items():
     # Example: "frobozz-DEADBE/policies/policy1"
-    policy_path = (
+    # Use PosixPath for easier (arguably) clearer joining, but
+    # then coerce to str because
+    # googleapiclient.discovery does
+    # isinstance(name, six.string_types) and
+    # re.match('foo', name),
+    # both of which fail on Path objects.
+    policy_path = str(
         pathlib.PosixPath(json_config_object['enterprise_name']) /
         'policies' /
         policy_name)
