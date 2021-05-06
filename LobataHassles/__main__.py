@@ -46,6 +46,7 @@ import urllib.parse
 
 import apiclient.discovery
 import google_auth_oauthlib.flow
+import google.oauth2.service_account
 import pypass
 
 parser = argparse.ArgumentParser(description=__DOC__)
@@ -87,6 +88,13 @@ if 'service_account' in json_config_object:
         raise RuntimeError('wrong json')
     gcloud_project_id = service_account_object['project_id']
     print(gcloud_project_id)
+    androidmanagement = apiclient.discovery.build(
+        serviceName='androidmanagement',
+        version='v1',
+        credentials=google.oauth2.service_account.Credentials.from_service_account_info(
+            info=service_account_object,
+            scopes=['https://www.googleapis.com/auth/androidmanagement']))
+    print('\nAuthentication succeeded.')
 else:
     # FIXME: CHANGE THESE MAGIC NUMBERS;
     #        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
@@ -100,24 +108,24 @@ else:
     }
     gcloud_project_id = input('What is the gcloud project ID (that runs your EMM service?): ')
 
-# To create and access resources,
-# you must authenticate with an account that has edit rights over your project.
-# To start the authentication flow, run the cell below.
-#
-# When you build a server-based solution, you should create a
-# service account so you don't need to authorize the access every time.
-#
-#     https://developers.google.com/android/management/service-account
+    # To create and access resources,
+    # you must authenticate with an account that has edit rights over your project.
+    # To start the authentication flow, run the cell below.
+    #
+    # When you build a server-based solution, you should create a
+    # service account so you don't need to authorize the access every time.
+    #
+    #     https://developers.google.com/android/management/service-account
 
-# Create the API client.
-androidmanagement = apiclient.discovery.build(
-    'androidmanagement', 'v1',
-    credentials=google_auth_oauthlib.flow.InstalledAppFlow.from_client_config(
-        scopes=['https://www.googleapis.com/auth/androidmanagement'],
-        client_config={'installed': service_account_object}
-    ).run_console())
+    # Create the API client.
+    androidmanagement = apiclient.discovery.build(
+        'androidmanagement', 'v1',
+        credentials=google_auth_oauthlib.flow.InstalledAppFlow.from_client_config(
+            scopes=['https://www.googleapis.com/auth/androidmanagement'],
+            client_config={'installed': service_account_object}
+        ).run_console())
 
-print('\nAuthentication succeeded.')
+    print('\nAuthentication succeeded.')
 
 ######################################################################
 ## Create an enterprise
