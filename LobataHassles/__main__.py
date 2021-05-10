@@ -42,13 +42,15 @@ See also https://github.com/google/android-management-api-samples/blob/master/no
 import argparse
 import json
 import logging
+import os
 import pathlib
 import subprocess
 import urllib.parse
 
 import apiclient.discovery
-import google_auth_oauthlib.flow
 import google.oauth2.service_account
+import google_auth_oauthlib.flow
+import googleapiclient
 import pypass
 
 parser = argparse.ArgumentParser(description=__DOC__)
@@ -194,6 +196,44 @@ for policy_name, policy_body in json_config_object['policies'].items():
     androidmanagement.enterprises().policies().patch(
         name=policy_path,
         body=policy_body).execute()
+
+
+######################################################################
+## Do some queries
+######################################################################
+# Save to disk some notes about the current state, so
+# it can be poked around at later with jq(1).
+os.makedirs('cache', exist_ok=True)
+with open('cache/enterprises.json', mode='w') as f:
+    try:
+        json.dump(
+            androidmanagement.enterprises().list(
+                projectId=gcloud_project_id
+            ).execute(),
+            f,
+            sort_keys=True,
+            indent=4)
+    except googleapiclient.errors.HttpError:
+        json.dump(
+            'API call failed... due to "not generally available yet"???',
+            f,
+            sort_keys=True,
+            indent=4)
+with open('cache/devices.json', mode='w') as f:
+    json.dump(
+        androidmanagement.enterprises().devices().list(
+            parent=json_config_object['enterprise_name']).execute(),
+        f,
+        sort_keys=True,
+        indent=4)
+with open('cache/policies.json', mode='w') as f:
+    json.dump(
+        androidmanagement.enterprises().policies().list(
+            parent=json_config_object['enterprise_name']
+        ).execute(),
+        f,
+        sort_keys=True,
+        indent=4)
 
 
 ######################################################################
