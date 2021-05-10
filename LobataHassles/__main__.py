@@ -46,6 +46,7 @@ import os
 import pathlib
 import subprocess
 import urllib.parse
+import urllib.request
 
 import apiclient.discovery
 import google.oauth2.service_account
@@ -204,6 +205,9 @@ for policy_name, policy_body in json_config_object['policies'].items():
 # Save to disk some notes about the current state, so
 # it can be poked around at later with jq(1).
 os.makedirs('cache', exist_ok=True)
+urllib.request.urlretrieve(
+    'https://androidmanagement.googleapis.com/$discovery/rest?version=v1',
+    filename='cache/API-androidmanagement-v1.json')
 with open('cache/enterprises.json', mode='w') as f:
     try:
         json.dump(
