@@ -46,7 +46,6 @@ import os
 import pathlib
 import subprocess
 import urllib.parse
-import urllib.request
 
 import apiclient.discovery
 import google.oauth2.service_account
@@ -54,6 +53,7 @@ import google_auth_oauthlib.flow
 import googleapiclient
 import jsmin                 # purely so policy file can have comments
 import pypass
+import requests
 
 parser = argparse.ArgumentParser(description=__DOC__)
 parser.add_argument(
@@ -206,9 +206,15 @@ for policy_name, policy_body in json_config_object['policies'].items():
 # Save to disk some notes about the current state, so
 # it can be poked around at later with jq(1).
 os.makedirs('cache', exist_ok=True)
-urllib.request.urlretrieve(
-    'https://androidmanagement.googleapis.com/$discovery/rest?version=v1',
-    filename='cache/API-androidmanagement-v1.json')
+with open('cache/API-androidmanagement-v1.json', mode='w') as f:
+    resp = requests.get('https://androidmanagement.googleapis.com/$discovery/rest?version=v1')
+    resp.raise_for_status()
+    json.dump(
+        resp.json(),
+        f,
+        sort_keys=True,
+        indent=4)
+    del resp
 with open('cache/enterprises.json', mode='w') as f:
     try:
         json.dump(
