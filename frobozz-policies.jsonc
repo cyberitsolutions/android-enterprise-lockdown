@@ -1,3 +1,4 @@
+// -*- mode: js; mode: json -*- Ref. https://github.com/komkom/jsonc
 {
     "service_account": "android-management-api-client@frobozz.iam.gserviceaccount.com",
     "enterprise_name": "enterprises/LC02kggfh1",

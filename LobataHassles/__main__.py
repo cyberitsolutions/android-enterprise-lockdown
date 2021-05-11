@@ -52,13 +52,14 @@ import apiclient.discovery
 import google.oauth2.service_account
 import google_auth_oauthlib.flow
 import googleapiclient
+import jsmin                 # purely so policy file can have comments
 import pypass
 
 parser = argparse.ArgumentParser(description=__DOC__)
 parser.add_argument(
     'json_config_path',
     nargs='?',
-    default=pathlib.Path('frobozz-policies.json'),
+    default=pathlib.Path('frobozz-policies.jsonc'),
     type=pathlib.Path,
     # example='android-management-api-client@frobozz.iam.gserviceaccount.com',
     help="""
@@ -79,7 +80,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 with args.json_config_path.open() as f:
-    json_config_object = json.load(f)
+    json_config_object = json.loads(jsmin.jsmin(f.read()))
 
 if 'service_account' in json_config_object:
     # first-time setup has already been done, so get an oauth token from the private key.
