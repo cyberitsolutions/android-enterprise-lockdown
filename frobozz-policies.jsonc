@@ -27,262 +27,307 @@
         "policy1": {
             "applications": [
                 // Test different "default apps"
+                {"installType": "FORCE_INSTALLED", "packageName": "com.android.chrome"},  // Chrome -- REQUESTS gmail account
                 {"installType": "FORCE_INSTALLED", "packageName": "org.mozilla.rocket"},  // Firefox Lite (browser)
                 {"installType": "FORCE_INSTALLED", "packageName": "org.mozilla.firefox"},  // Firefox (browser)
                 {"installType": "FORCE_INSTALLED", "packageName": "org.mozilla.focus"},  // Firefox Focus (browser)
                 {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.emmx"},  // Edge (browser)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nexuslauncher"},  // Pixel Launcher (home)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.launcher"},  // Microsoft Launcher (home)
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.real.launcher.wp.ten"},  // **NOT** Microsoft Launcher (home)
+
+                // https://search.f-droid.org/?q=launcher&lang=en
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.nexuslauncher"},  // Pixel Launcher (home) --- BROKEN?  Does not load on either test tablet.
+                {"installType": "FORCE_INSTALLED", "packageName": "amirz.rootless.nexuslauncher"},  // mostly OK (backport of com.google.android.apps.nexuslauncher... from Android 6???)
+                {"installType": "AVAILABLE", "packageName": "ch.deletescape.lawnchair.plah"},  // mostly OK
+                {"installType": "AVAILABLE", "packageName": "de.szalkowski.activitylauncher"},  // TOO minimalist -- BUT USEFUL FOR DEBUGGING to see exactly what launchables are in e.g. "Android Q Easter Egg" or "VpnDialogs" app
+                {"installType": "BLOCKED", "packageName": "ademar.textlauncher"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "app.olauncher"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "com.anpmech.launcher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.dynamicg.homebuttonlauncher"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "com.easwareapps.g2l"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.finnmglas.launcher"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "com.gacode.relaunchx"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.github.postapczuk.lalauncher"},  // "Joker Launcher" -- TOO minimalist
+                {"installType": "BLOCKED", "packageName": "com.github.rsteube.t4"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.harasoft.relaunch"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.jkuester.unlauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.kaneoriley.cyanogenport.launcher3"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.launcher.silverfish"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.mirasmithy.epochlauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.notriddle.null_launcer"},  // "built for an older Android"
+                {"installType": "BLOCKED", "packageName": "com.quaap.launchtime"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.sduduzog.slimlauncher"},  // TOO minimalist -- PERSONALLY I like this, but wrong for our target market
+                {"installType": "BLOCKED", "packageName": "com.sentienhq.launcher"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.applauncher"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "com.szchoiceway.aios.bridge"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.twsitedapps.homemanager"}, // DEAD, complains about wrong Android version
+                {"installType": "BLOCKED", "packageName": "com.vackosar.searchbasedlauncher"},  // "built for an older Android"
+                {"installType": "BLOCKED", "packageName": "com.vincent_falzon.discreetlauncher"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "community.fairphone.fplauncher3"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "community.fairphone.launcher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "de.clemensbartz.android.launcher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "de.devmil.paperlaunch"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "de.markusfisch.android.pielauncher"},  // TOO minimalist (but interesting)
+                {"installType": "BLOCKED", "packageName": "de.nodomain.tobihille.seniorlauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "foundation.e.blisslauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "fr.neamar.kiss"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "io.github.subhamtyagi.lastlauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "kr.hybdms.sidepanel"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "luke.launcher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "mono.hg"},  // tolerable; a bit weird
+                {"installType": "BLOCKED", "packageName": "net.nhiroki.bluelineconsole"},  // wrong target audience -- this is a bit like SilverLight for Mac
+                {"installType": "BLOCKED", "packageName": "ohi.andre.consolelauncher"},  // cool but WAYYYY wrong for this userbase
+                {"installType": "BLOCKED", "packageName": "org.xphnx.ameixa"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "org.zimmob.zimlx"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "posidon.launcher"},  // TOO complicated
+                {"installType": "BLOCKED", "packageName": "rocks.tbog.tblauncher"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "com.microsoft.launcher"},  // Microsoft Launcher (home) --- heavyweight -- interesting iff you run a lot of MS apps (Skype, SharePoint, &c)
+                {"installType": "BLOCKED", "packageName": "com.real.launcher.wp.ten"},  // **NOT** Microsoft Launcher (home) --- NOT FREE SOFTWARE, has ads, probably bitcoin miner -- ALSO this does NOT behave like Windows Phone, but more like Windows desktop!!! YUUUUK
 
 
                 // ============================================================
                 // INSTALLED BY LASER AND/OR LENOVO???
                 // ============================================================
-                {"installType": "FORCE_INSTALLED", "packageName": "android"},
-                {"installType": "FORCE_INSTALLED", "packageName": "android.auto_generated_rro_vendor__"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.Lct.Ext.Feature"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.allwinnertech.gmsintegration"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.allwinnertech.packageoverride"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.backupconfirm"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.bips"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.bluetooth"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.bluetoothmidiservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.bookmarkprovider"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.calculator2"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.camera2"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.captiveportallogin"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.certinstaller"},
-                //{"installType": "FORCE_INSTALLED", "packageName": "com.android.chrome"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.companiondevicemanager"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.contacts"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.ctsshim"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.priv.ctsshim"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.deskclock"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.documentsui"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.basic"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.phototable"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.dynsystem"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.egg"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.externalstorage"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.hotspot2"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.htmlviewer"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.inputdevices"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.corner"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.double"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.tall"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_extra_wide_back"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_narrow_back"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_wide_back"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.productivity"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.threebutton"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.twobutton"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.keychain"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.launcher3"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.localtransport"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.location.fused"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.managedprovisioning"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.mms.service"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.mtp"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.networkstack.inprocess"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.networkstack.permissionconfig"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.ons"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.pacprocessor"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.partnerbrowsercustomizations.example"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.phone"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.printspooler"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.blockednumber"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.calendar"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.contacts"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.downloads"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.downloads.ui"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.media"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.partnerbookmarks"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.settings"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.telephony"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.userdictionary"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.proxyhandler"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.se"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.server.telecom"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings.intelligence"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings.overlay.common"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.sharedstoragebackup"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.shell"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.simappdialog"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.smspush"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.soundrecorder"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.statementservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.storagemanager"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.systemui"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.black"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.cinnamon"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.green"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.ocean"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.orchid"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.purple"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.space"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.font.notoserifsource"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.roundedrect"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.square"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.squircle"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.teardrop"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.android"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.launcher"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.settings"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.systemui"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.themepicker"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.android"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.launcher"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.settings"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.systemui"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.themepicker"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.android"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.launcher"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.settings"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.systemui"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.timerswitch"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.timezone.updater"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.traceur"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.vending"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.vpndialogs"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaper.livepicker"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaperbackup"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpapercropper"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.wantjoin.childmode.ctrl"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.wantjoin.settings"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.caf.fmradio"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.dolby.daxappui"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.dolby.daxservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.dsi.ant.server"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.focaltech.ft_terminal_test"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.goodix.rawdata"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.assistant"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.maps"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nbu.files"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photos"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.restore"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.searchlite"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.speechservices"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.tachyon"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.wellbeing"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.work.oobconfig"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.music"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calendar"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.configupdater"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ext.services"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ext.shared"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.feedback"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gm"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gms"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gms.location.history"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gmsintegration"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.googlequicksearchbox"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gsf"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ims"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.latin"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.marvin.talkback"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.modulemetadata"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.onetimeinitializer"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsagoconfig"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsconfig"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsgoconfig"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsgsaconfig"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.ext.services"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.modulemedtadatagoogle.forframework"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.modulemetadata.forframework"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.permissioncontroller"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.permissioncontroller.forframework"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.packageinstaller"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.packageinstaller.overlay"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.partnersetup"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.permissioncontroller"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.printservice.recommendation"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.setupwizard"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.syncadapters.contacts"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.tag"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.tts"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.videos"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.webview"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.youtube"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lct.lottie"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.defaultlaunch"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.dsa"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.launcher.provider"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.lsf"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.lsf.device"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ocpl"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ota"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screenassistant"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screencapture"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.tab_m10_hd"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ue.device"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.longcheertel.midtest"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.bing.wallpapers"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.office.outlook"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.motorola.demo"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qti.confuridialer"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qti.dpmserviceapp"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qti.qualcomm.datastatusnotification"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qti.qualcomm.deviceinfo"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qti.service.colorservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qti.xdivert"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.atfwd"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.embms"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.location"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qcrilmsgtunnel"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.cne"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.confdialer"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.dynamicddsservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.ims"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.lpa"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.networksetting"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.poweroffalarm"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.connectionsecurity"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.telemetry"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.trustzoneaccess"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qtisystemservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.remoteSimlockAuth"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.seccamservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.services.secureui"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.simsettings"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.telephonyservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.uceShimService"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.uim"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.workloadclassifier"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.timeservice"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteclient"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteserver"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.wfd.service"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.skype.raider"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awlogsettings"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awmanager"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging.res"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonfire"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.settingssetup"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.launcher"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.lenovotips"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.setup"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.smartiot"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.wallpaper"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.whatsnewclient"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.codeaurora.bluetooth"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.codeaurora.ims"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.codeaurora.snapcam"},
-                {"installType": "FORCE_INSTALLED", "packageName": "vendor.qti.hardware.cacert.server"},
-                {"installType": "FORCE_INSTALLED", "packageName": "vendor.qti.iwlan"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "android"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "android.auto_generated_rro_vendor__"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.Lct.Ext.Feature"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.allwinnertech.gmsintegration"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.allwinnertech.packageoverride"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.backupconfirm"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bips"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bluetooth"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bluetoothmidiservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bookmarkprovider"},
+                {"installType": "BLOCKED", "packageName": "com.android.calculator2"},  // replaced by com.google.android.calculator
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.camera2"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.captiveportallogin"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.certinstaller"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.companiondevicemanager"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.contacts"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.ctsshim"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.priv.ctsshim"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.deskclock"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.documentsui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.basic"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.phototable"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dynsystem"},
+                {"installType": "BLOCKED", "packageName": "com.android.egg"}, // Android Q Easter Egg
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.externalstorage"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.hotspot2"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.htmlviewer"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.inputdevices"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.corner"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.double"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.tall"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_extra_wide_back"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_narrow_back"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_wide_back"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.productivity"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.threebutton"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.twobutton"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.keychain"},
+                {"installType": "BLOCKED", "packageName": "com.android.launcher3"},  // the default Home App / Launcher in AOSP / Android 4.4
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.localtransport"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.location.fused"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.managedprovisioning"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.mms.service"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.mtp"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.networkstack.inprocess"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.networkstack.permissionconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.ons"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.pacprocessor"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.partnerbrowsercustomizations.example"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.phone"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.printspooler"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.blockednumber"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.calendar"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.contacts"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.downloads"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.downloads.ui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.media"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.partnerbookmarks"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.telephony"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.userdictionary"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.proxyhandler"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.se"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.server.telecom"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings.intelligence"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings.overlay.common"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.sharedstoragebackup"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.shell"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.simappdialog"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.smspush"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.soundrecorder"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.statementservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.storagemanager"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.systemui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.black"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.cinnamon"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.green"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.ocean"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.orchid"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.purple"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.space"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.font.notoserifsource"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.roundedrect"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.square"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.squircle"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.teardrop"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.android"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.launcher"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.systemui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.themepicker"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.android"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.launcher"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.systemui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.themepicker"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.android"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.launcher"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.systemui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.timerswitch"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.timezone.updater"},
+                {"installType": "BLOCKED", "packageName": "com.android.traceur"},  // System Tracing -- debugging tool???
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.vending"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.vpndialogs"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaper.livepicker"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaperbackup"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpapercropper"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wantjoin.childmode.ctrl"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wantjoin.settings"},
+                {"installType": "AVAILABLE", "packageName": "com.caf.fmradio"},  // FM Radio -- works on Lenovo, but not in play store
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.dolby.daxappui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.dolby.daxservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.dsi.ant.server"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.focaltech.ft_terminal_test"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.goodix.rawdata"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.assistant"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.maps"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nbu.files"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photos"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.restore"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.searchlite"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.speechservices"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.tachyon"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.wellbeing"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.work.oobconfig"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.music"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calendar"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.configupdater"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ext.services"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ext.shared"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.feedback"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gm"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gms"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gms.location.history"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gmsintegration"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.googlequicksearchbox"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gsf"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ims"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.latin"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.marvin.talkback"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.modulemetadata"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.onetimeinitializer"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsagoconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsgoconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsgsaconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.ext.services"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.modulemedtadatagoogle.forframework"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.modulemetadata.forframework"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.permissioncontroller"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.permissioncontroller.forframework"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.packageinstaller"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.packageinstaller.overlay"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.partnersetup"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.permissioncontroller"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.printservice.recommendation"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.setupwizard"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.syncadapters.contacts"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.tag"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.tts"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.videos"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.webview"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.youtube"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lct.lottie"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.defaultlaunch"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.dsa"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.launcher.provider"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.lsf"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.lsf.device"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ocpl"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ota"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screenassistant"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screencapture"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.tab_m10_hd"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ue.device"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.longcheertel.midtest"},
+                {"installType": "BLOCKED", "packageName": "com.microsoft.bing.wallpapers"},
+                {"installType": "BLOCKED", "packageName": "com.microsoft.office.outlook"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.motorola.demo"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.confuridialer"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.dpmserviceapp"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.qualcomm.datastatusnotification"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.qualcomm.deviceinfo"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.service.colorservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.xdivert"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.atfwd"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.embms"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.location"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qcrilmsgtunnel"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.cne"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.confdialer"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.dynamicddsservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.ims"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.lpa"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.networksetting"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.poweroffalarm"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.connectionsecurity"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.telemetry"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.trustzoneaccess"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qtisystemservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.remoteSimlockAuth"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.seccamservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.services.secureui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.simsettings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.telephonyservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.uceShimService"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.uim"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.workloadclassifier"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.timeservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteclient"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteserver"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.wfd.service"},
+                {"installType": "BLOCKED", "packageName": "com.skype.raider"},  // regular Skype app (not Skype for Business)
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awlogsettings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awmanager"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging.res"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonfire"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.settingssetup"},
+                {"installType": "BLOCKED", "packageName": "com.tblenovo.launcher"},  // the default "Home App" / "Launcher" on Lenovo M1 gen1
+                {"installType": "BLOCKED", "packageName": "com.tblenovo.lenovotips"},  // annoying garbage
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.setup"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.smartiot"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.wallpaper"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.whatsnewclient"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "org.codeaurora.bluetooth"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "org.codeaurora.ims"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "org.codeaurora.snapcam"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "vendor.qti.hardware.cacert.server"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "vendor.qti.iwlan"},
 
                 // ============================================================
                 // MICROSOFT -- https://play.google.com/store/apps/dev?id=6720847872553662727
                 // ============================================================
-                {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.office.lync15"},  // Skype for Business
-                {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.microsoftsolitairecollection"},  // Solitaire (game)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.mahjong"},  // Mahjong (game)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.chineselearning"},  // (education?)
-
+                {"installType": "BLOCKED", "packageName": "com.microsoft.office.lync15"},  // Skype for Business -- NEEDS LOGIN
+                {"installType": "BLOCKED", "packageName": "com.microsoft.microsoftsolitairecollection"},  // Solitaire (game) --- FULL OF ADS, COMPLAINS ABOUT LACK OF DIRECT INTERNET ACCESS TO MS.COM
+                {"installType": "BLOCKED", "packageName": "com.microsoft.mahjong"},  // Mahjong (game)
+                {"installType": "BLOCKED", "packageName": "com.microsoft.chineselearning"},  // (education?) (needs internet, needs account)
 
                 // ============================================================
                 // GOOGLE -- https://play.google.com/store/apps/dev?id=5700313618786177705
@@ -311,16 +356,17 @@
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.youtube.creator"},  // YT Studio
                 {"installType": "BLOCKED", "packageName": "com.google.android.keep"},  // Keep Notes
                 {"installType": "BLOCKED", "packageName": "com.google.android.play.games"},  // Play Games
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.tachyon"},  // Google Duo (Video Calls)
                 {"installType": "BLOCKED", "packageName": "com.google.android.talk"},  // Hangouts
                 // Random apps "by Google" I found in the app store -- Gmail account REQUESTED
-                {"installType": "AVAILABLE", "packageName": "com.android.chrome"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.googleassistant"},  // Assistant
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.mapslite"},  // Maps Go
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.navlite"},  // Google Maps Go
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.searchlite"},  // Google Go
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.translate"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.kids"},  // YT Kids
-                {"installType": "AVAILABLE", "packageName": "com.google.android.contacts"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.googleassistant"},  // Assistant
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.mapslite"},  // Maps Go
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.navlite"},  // Google Maps Go
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.searchlite"},  // Google Go
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.translate"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.kids"},  // YT Kids
+                {"installType": "BLOCKED", "packageName": "com.google.android.youtube.tvkids"},  // NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.contacts"},
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.access.wifi.consumer"},  // configure google-brand wifi APs (hardware missing)
                 {"installType": "BLOCKED", "packageName": "com.google.android.katniss"},  // Google app for Android TV (hardware missing)
                 {"installType": "BLOCKED", "packageName": "com.google.android.tv.remote"},  // TV Remote (hardware missing)
@@ -333,27 +379,28 @@
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.earth"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.niksoftware.snapseed"},  // some photo editing thing???
                 // Random apps "by Google" I found in the app store -- DID NOT APPEAR IN THE APP LIST EVEN WHEN INSTALLED???
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.messaging"},  // Messages
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.nbu.files"},  // Files
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photos"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photos.scanner"},  // PhotoScan by Google
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.tachyon"},  // Google Duo (Video Calls)
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.music"},  // YT Music
-                {"installType": "AVAILABLE", "packageName": "com.google.android.calendar"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.dialer"},  // Google Phone
-                {"installType": "AVAILABLE", "packageName": "com.google.android.googlequicksearchbox"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.inputmethod.latin"},  // gboard
-                {"installType": "AVAILABLE", "packageName": "com.google.android.inputmethod.pinyin"},  // Google Pinyin Input
-                {"installType": "AVAILABLE", "packageName": "com.google.android.inputmethod.korean"},  // Google Korean Input
-                {"installType": "AVAILABLE", "packageName": "com.google.android.inputmethod.japanese"},  // Google Japanese Input
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.inputmethod.hindi"},  // Google Indic Keyboard
-                {"installType": "AVAILABLE", "packageName": "com.google.android.projection.gearhead"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.projection.gearhead.phonescreen"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.youtube"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.youtube.tvkids"},
-                {"installType": "AVAILABLE", "packageName": "com.google.ar.lens"},
-                {"installType": "AVAILABLE", "packageName": "com.google.tango.measure"}
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.messaging"},  // Messages - NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nbu.files"},  // Files
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photos"},
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos.scanner"},  // PhotoScan by Google - NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.music"},  // YT Music
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calendar"},
+                {"installType": "BLOCKED", "packageName": "com.google.android.dialer"},  // Google Phone - NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.googlequicksearchbox"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.latin"},  // gboard
+                {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead"},  // Android Auto - Google Maps, Media & Messaging --- wrong android version
+                {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead.phonescreen"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.youtube"},
+                {"installType": "BLOCKED", "packageName": "com.google.ar.lens"},  // NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.tango.measure"}  // NOT_COMPATIBLE_WITH_DEVICE
+
+                // Random apps "by Google" I found in the app store -- ARE THESE MERGED INTO gbord (inputmethod.latin) now???
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.pinyin"},  // Google Pinyin Input
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.korean"},  // Google Korean Input
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.japanese"},  // Google Japanese Input (says "do not use this, features merged into gboard (inputmethod.latin)")
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.inputmethod.hindi"},  // Google Indic Keyboard
+
             ],
             "factoryResetDisabled": true,
             "debuggingFeaturesAllowed": false
