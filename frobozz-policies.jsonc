@@ -545,8 +545,50 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.inputmethod.hindi"},  // Google Indic Keyboard
 
             ],
+
+
+            "advancedSecurityOverrides": {
+                // Controls access to developer settings: developer options and safe boot.
+                // Replaces safeBootDisabled (deprecated) and debuggingFeaturesAllowed (deprecated).
+                "developerSettings": "DEVELOPER_SETTINGS_DISABLED",
+                // Whether Google Play Protect verification (https://support.google.com/accounts/answer/2812853) is enforced.
+                // Replaces ensureVerifyAppsEnabled (deprecated).
+                "googlePlayProtectVerifyApps": "VERIFY_APPS_ENFORCED",  // Default. Force-enables app verification.
+                // The policy for untrusted apps (apps from unknown sources) enforced on the device.
+                // Replaces install_unknown_sources_allowed (deprecated).
+                "untrustedAppsPolicy": "DISALLOW_INSTALL",  // Default. Disallow untrusted app installs on entire device.
+                // Controls Common Criteria Mode –
+                // security standards defined in the Common Criteria for Information Technology Security Evaluation
+                // (https://www.commoncriteriaportal.org/) (CC).
+                // Enabling Common Criteria Mode increases certain security components on a device, including
+                // AES-GCM encryption of Bluetooth Long Term Keys, and
+                // Wi-Fi configuration stores.
+                // Warning: Common Criteria Mode enforces a strict security model typically only required for IT products used in national security systems and other highly sensitive organizations.
+                // Standard device use may be affected.
+                // Only enabled if required.
+                "commonCriteriaMode": "COMMON_CRITERIA_MODE_DISABLED"  // Default. Disables Common Criteria Mode.
+            },
+
             "factoryResetDisabled": true,
-            "debuggingFeaturesAllowed": false
+
+            "bluetoothDisabled": true,  // Prefer this setting over bluetooth_config_disabled because bluetooth_config_disabled can be bypassed by the user.
+            "bluetoothConfigDisabled": true,
+            "bluetoothContactSharingDisabled": true,
+
+            "addUserDisabled": true,  // Whether adding new users and profiles is disabled.
+
+            "adjustVolumeDisabled": false,
+            "cameraDisabled": false,
+
+            "funDisabled": true,             // disables "com.android.egg"
+            "appAutoUpdatePolicy": "ALWAYS"  // user can't disable auto-updates
+
+
+            // "androidDevicePolicyTracks": ["PRODUCTION", "BETA"],  // If no tracks are specified, then the device receives the latest version of the production track.
+
+
+
+
         }
     }
 }
