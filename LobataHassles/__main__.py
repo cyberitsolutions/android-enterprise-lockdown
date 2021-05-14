@@ -273,12 +273,16 @@ if args.work_profile_mode:
     print('Please open this link on your device:',
           'https://enterprise.google.com/android/enroll?et=' + enrollment_token['value'])
 else:
-    url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
-              'cht': 'qr',
-              'chs': '500x500',
-              'chl': enrollment_token['qrCode']})
-    print('Please visit this URL to scan the QR code:', url)
-    subprocess.check_call(['xdg-open', url])
+    # url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
+    #           'cht': 'qr',
+    #           'chs': '500x500',
+    #           'chl': enrollment_token['qrCode']})
+    # print('Please visit this URL to scan the QR code:', url)
+    # subprocess.check_call(['xdg-open', url])
+    subprocess.run(['qrencode', '-tUTF8'],
+                   check=True,
+                   input=enrollment_token['qrCode'],
+                   text=True)
 
 
 # The method for provisioning a device varies depending on the management mode you want to use.
