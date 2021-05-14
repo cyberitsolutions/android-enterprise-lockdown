@@ -26,17 +26,23 @@
 
         "policy1": {
             "applications": [
-                // Test different "default apps"
+                // ============================================================
+                // Web Browser
+                // ============================================================
                 {"installType": "FORCE_INSTALLED", "packageName": "com.android.chrome"},  // Chrome -- REQUESTS gmail account
-                {"installType": "FORCE_INSTALLED", "packageName": "org.mozilla.rocket"},  // Firefox Lite (browser)
-                {"installType": "FORCE_INSTALLED", "packageName": "org.mozilla.firefox"},  // Firefox (browser)
-                {"installType": "FORCE_INSTALLED", "packageName": "org.mozilla.focus"},  // Firefox Focus (browser)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.microsoft.emmx"},  // Edge (browser)
+                {"installType": "BLOCKED", "packageName": "org.mozilla.rocket"},  // Firefox Lite (browser)
+                {"installType": "BLOCKED", "packageName": "org.mozilla.firefox"},  // Firefox (browser)
+                {"installType": "BLOCKED", "packageName": "org.mozilla.focus"},  // Firefox Focus (browser)
+                {"installType": "BLOCKED", "packageName": "com.microsoft.emmx"},  // Edge (browser)
 
-                // https://search.f-droid.org/?q=launcher&lang=en
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.nexuslauncher"},  // Pixel Launcher (home) --- BROKEN?  Does not load on either test tablet.
-                {"installType": "FORCE_INSTALLED", "packageName": "amirz.rootless.nexuslauncher"},  // mostly OK (backport of com.google.android.apps.nexuslauncher... from Android 6???)
-                {"installType": "AVAILABLE", "packageName": "ch.deletescape.lawnchair.plah"},  // mostly OK
+                // ============================================================
+                // Launcher (Home App)
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.android.launcher3"},  // not in play store; cannot be removed; default on Laser MID1089IPS; default on Android 4.4
+                {"installType": "BLOCKED", "packageName": "com.tblenovo.launcher"},  // not in play store; cannot be removed; default on on Lenovo M1 gen1
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nexuslauncher"},  // cannot be installed; default on Google Pixel
+                {"installType": "FORCE_INSTALLED", "packageName": "amirz.rootless.nexuslauncher"},  // backport of com.google.android.apps.nexuslauncher
+                {"installType": "BLOCKED", "packageName": "ch.deletescape.lawnchair.plah"},  // mostly OK, similar to amirz.rootless.nexuslauncher but slightly more weird
                 {"installType": "AVAILABLE", "packageName": "de.szalkowski.activitylauncher"},  // TOO minimalist -- BUT USEFUL FOR DEBUGGING to see exactly what launchables are in e.g. "Android Q Easter Egg" or "VpnDialogs" app
                 {"installType": "BLOCKED", "packageName": "ademar.textlauncher"},  // TOO minimalist
                 {"installType": "BLOCKED", "packageName": "app.olauncher"},  // TOO minimalist
@@ -56,7 +62,6 @@
                 {"installType": "BLOCKED", "packageName": "com.quaap.launchtime"},  // in F-Droid but not Play Store.
                 {"installType": "BLOCKED", "packageName": "com.sduduzog.slimlauncher"},  // TOO minimalist -- PERSONALLY I like this, but wrong for our target market
                 {"installType": "BLOCKED", "packageName": "com.sentienhq.launcher"},  // TOO minimalist
-                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.applauncher"},  // not reviewed
                 {"installType": "BLOCKED", "packageName": "com.szchoiceway.aios.bridge"},  // in F-Droid but not Play Store.
                 {"installType": "BLOCKED", "packageName": "com.twsitedapps.homemanager"}, // DEAD, complains about wrong Android version
                 {"installType": "BLOCKED", "packageName": "com.vackosar.searchbasedlauncher"},  // "built for an older Android"
@@ -84,6 +89,159 @@
 
 
                 // ============================================================
+                // Calculator
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.android.calculator2"},  // not in play store; default in Laser MID1089IPS?; default in AOSP?
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calculator"},  // in play store; default in Lenovo M1 gen1?
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.calculator"},  // doesn't support rotation; does support dashbaord widget
+
+
+                // ============================================================
+                // Search (NOTE: com.google.chrome might be sufficient)
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.google.android.googlequicksearchbox"},  // Google
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.searchlite"},  // Google Go
+                {"installType": "FORCE_INSTALLED", "packageName": "com.duckduckgo.mobile.android"},  // Duck Duck Go
+
+
+                // ============================================================
+                // Calender / Appointments
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calendar"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.calendar"},
+
+                // ============================================================
+                // Clock / Alarm Clock
+                // ============================================================
+
+                // ============================================================
+                // Music Player
+                // ============================================================
+
+                // ============================================================
+                // Sound Recorder / Editor
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "amirz.musicfx.material"},
+
+                // ============================================================
+                // Camera
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.android.camera2"},  // not in play store; default in Laser MID1089IPS?; default in AOSP?
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.GoogleCamera"},  // Camera
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.camera"},  // saves under "DCIM" instead of "Camera" sometimes?
+
+                // ============================================================
+                // Photo Gallery (image viewer)
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos"},  // Prefer the "photos go" lite version???
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.gallery"},  // doesn't support SVG, even though com.simplemobiletools.sketch makes those??
+
+                // ============================================================
+                // Photo Editor / Image Editor / Drawing / Sketching
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.niksoftware.snapseed"},  // some photo editing thing???
+
+
+                // ============================================================
+                // Video Editor
+                // ============================================================
+
+                // ============================================================
+                // Messaging / Chat / Video Chat / Teleconference / Phone
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.google.android.dialer"},  // Google Phone - NOT_COMPATIBLE_WITH_DEVICE
+
+
+                // ============================================================
+                // Maps
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "net.osmand"},  // OsmAnd (OpenStreetMap for Android)
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.maps"},  // Maps
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.mapslite"},  // Maps Go
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.navlite"},  // Navigation for Google Maps Go — is this ONLY for automobiles?
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.street"},  // Street View
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.earth"},
+
+
+                // ============================================================
+                // Office Suite
+                // ============================================================
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.docs"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.sheets"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.slides"},  // Gmail account REQUIRED
+                // Can we at least install a short-term office suite locally?
+                // I think the LONG TERM goal is that we run a browser-based office suite on an in-house VM.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.collabora.libreoffice"},
+
+
+                // ============================================================
+                // Games
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.microsoft.microsoftsolitairecollection"},  // Solitaire (game) --- FULL OF ADS, COMPLAINS ABOUT LACK OF DIRECT INTERNET ACCESS TO MS.COM
+                {"installType": "BLOCKED", "packageName": "com.microsoft.mahjong"},  // Mahjong (game)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.emmanuelmess.tictactoe"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.andstatus.game2048"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendly2048"},
+                {"installType": "FORCE_INSTALLED", "packageName": "dev.lucanlm.antimine"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyminesweeper"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysudoku"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.agateau.tinywheels.android"},
+                {"installType": "FORCE_INSTALLED", "packageName": "app.crossword.yourealwaysbe.forkyz"},
+                {"installType": "FORCE_INSTALLED", "packageName": "de.sudoq"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.serwylo.beatgame"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.moire.opensudoku"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.eehouse.android.xw4"},         // crosswords (scrabble)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.dozingcatsoftware.bouncy"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.billthefarmer.crossword"},
+                {"installType": "FORCE_INSTALLED", "packageName": "net.nullsum.freedoom"},            // DOOM
+                {"installType": "FORCE_INSTALLED", "packageName": "com.jeffliu.balancetheball"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.supertuxkart.stk"},
+                {"installType": "FORCE_INSTALLED", "packageName": "net.minetest.minetest"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.gitlab.ardash.appleflinger.android"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlydame"},  // Checkers
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysolitaire"},
+                {"installType": "FORCE_INSTALLED", "packageName": "jwtc.android.chess"},
+                {"installType": "FORCE_INSTALLED", "packageName": "it.alessandropira.wesnoth114"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},
+                {"installType": "FORCE_INSTALLED", "packageName": "pro.rudloff.papercraft"},
+                {"installType": "FORCE_INSTALLED", "packageName": "de.tobiasbielefeld.brickgames"},   // tetris?
+                {"installType": "FORCE_INSTALLED", "packageName": "org.jfedor.frozenbubble"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.traffar.oware"},
+
+                // ============================================================
+                // Education
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.microsoft.chineselearning"},  // (education?) (needs internet, needs account)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.duolingo"},  // DuoLingo (language education) (needs internet???)
+                {"installType": "FORCE_INSTALLED", "packageName": "net.gcompris.full"},  // GCompris (early learning)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.rechnen.app"},  // Calculate, math training
+                {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics.memory"},
+                {"installType": "FORCE_INSTALLED", "packageName": "de.moekadu.tuner"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.ichi2.anki"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.LAPARCELA.nihonoari"},
+                {"installType": "FORCE_INSTALLED", "packageName": "info.puzz.a10000sentences"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.quaap.primary"},
+
+
+
+                // "Simple" apps – dev house recommended by mike — https://play.google.com/store/apps/dev?id=9070296388022589266
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.applauncher"},  // can't be set at home app, so fuck it
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.clock"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.contacts"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.dialer"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.draw"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.filemanager"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.flashlight"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.musicplayer"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.notes"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.smsmessenger"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.voicerecorder"},
+
+                // ============================================================
                 // INSTALLED BY LASER AND/OR LENOVO???
                 // ============================================================
                 // {"installType": "FORCE_INSTALLED", "packageName": "android"},
@@ -96,8 +254,6 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bluetooth"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bluetoothmidiservice"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bookmarkprovider"},
-                {"installType": "BLOCKED", "packageName": "com.android.calculator2"},  // replaced by com.google.android.calculator
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.camera2"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.captiveportallogin"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.certinstaller"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.companiondevicemanager"},
@@ -109,7 +265,7 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.basic"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.phototable"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dynsystem"},
-                {"installType": "BLOCKED", "packageName": "com.android.egg"}, // Android Q Easter Egg
+                // {"installType": "BLOCKED", "packageName": "com.android.egg"}, // Android Q Easter Egg; cannot be removed; see "funDisabled=true" below.
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.externalstorage"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.hotspot2"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.htmlviewer"},
@@ -125,7 +281,6 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.threebutton"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.twobutton"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.keychain"},
-                {"installType": "BLOCKED", "packageName": "com.android.launcher3"},  // the default Home App / Launcher in AOSP / Android 4.4
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.localtransport"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.location.fused"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.managedprovisioning"},
@@ -205,8 +360,6 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.focaltech.ft_terminal_test"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.goodix.rawdata"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.assistant"},
-                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.maps"},
                 // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nbu.files"},
                 // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photos"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.restore"},
@@ -266,8 +419,8 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.tab_m10_hd"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ue.device"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.longcheertel.midtest"},
-                {"installType": "BLOCKED", "packageName": "com.microsoft.bing.wallpapers"},
-                {"installType": "BLOCKED", "packageName": "com.microsoft.office.outlook"},
+                {"installType": "BLOCKED", "packageName": "com.microsoft.bing.wallpapers"},  // installed by default on Lenovo M1 gen1
+                {"installType": "BLOCKED", "packageName": "com.microsoft.office.outlook"},  // installed by default on Lenovo M1 gen1
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.motorola.demo"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.confuridialer"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.dpmserviceapp"},
@@ -302,14 +455,13 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteclient"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteserver"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.wfd.service"},
-                {"installType": "BLOCKED", "packageName": "com.skype.raider"},  // regular Skype app (not Skype for Business)
+                {"installType": "BLOCKED", "packageName": "com.skype.raider"},  // Skype (not Skype for Business); installed by default on Lenovo M1 gen1
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awlogsettings"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awmanager"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging.res"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonfire"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.settingssetup"},
-                {"installType": "BLOCKED", "packageName": "com.tblenovo.launcher"},  // the default "Home App" / "Launcher" on Lenovo M1 gen1
                 {"installType": "BLOCKED", "packageName": "com.tblenovo.lenovotips"},  // annoying garbage
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.setup"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.smartiot"},
@@ -325,9 +477,17 @@
                 // MICROSOFT -- https://play.google.com/store/apps/dev?id=6720847872553662727
                 // ============================================================
                 {"installType": "BLOCKED", "packageName": "com.microsoft.office.lync15"},  // Skype for Business -- NEEDS LOGIN
-                {"installType": "BLOCKED", "packageName": "com.microsoft.microsoftsolitairecollection"},  // Solitaire (game) --- FULL OF ADS, COMPLAINS ABOUT LACK OF DIRECT INTERNET ACCESS TO MS.COM
-                {"installType": "BLOCKED", "packageName": "com.microsoft.mahjong"},  // Mahjong (game)
-                {"installType": "BLOCKED", "packageName": "com.microsoft.chineselearning"},  // (education?) (needs internet, needs account)
+
+
+                // SECUSO privacy-friendly research group https://play.google.com/store/apps/dev?id=4797307650791917378
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyrulerapp"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlybackup"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.aktivpause"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysketching"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyfoodtracker"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyfinancemanager"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlypausinghealthily"},
+
 
                 // ============================================================
                 // GOOGLE -- https://play.google.com/store/apps/dev?id=5700313618786177705
@@ -335,59 +495,42 @@
                 // The demo app in the AndroidEnterprise quickstart docs.  It is about a google conference.
                 {"installType": "BLOCKED", "packageName": "com.google.samples.apps.iosched"},
                 // Random apps "by Google" I found in the app store -- Gmail account REQUIRED
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.adm"},  // Find Device
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.authenticator2"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.books"},  // Play Books
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.chromecast.app"},  // Google Home
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.classroom"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.docs"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.sheets"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.slides"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.dynamite"},  // Chat
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.fitness"},  // Google Fit
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.kids.familylink"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.meetings"},  // Meet
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.paidtasks"},  // Google Opinion Rewards (loops)
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.subscriptions.red"},  // Google One
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.tasks"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.vega"},  // Google My Business
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.walletnfcrel"},  // Google Pay
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.youtube.creator"},  // YT Studio
-                {"installType": "BLOCKED", "packageName": "com.google.android.keep"},  // Keep Notes
-                {"installType": "BLOCKED", "packageName": "com.google.android.play.games"},  // Play Games
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.tachyon"},  // Google Duo (Video Calls)
-                {"installType": "BLOCKED", "packageName": "com.google.android.talk"},  // Hangouts
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.adm"},  // Gmail account REQUIRED; Find Device
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.authenticator2"}, // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.books"},  // Gmail account REQUIRED; Play Books
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.chromecast.app"},  // Gmail account REQUIRED; Google Home
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.classroom"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.dynamite"},  // Gmail account REQUIRED; Chat
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.fitness"},  // Gmail account REQUIRED; Google Fit
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.kids.familylink"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.meetings"},  // Gmail account REQUIRED; Meet
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.paidtasks"},  // Gmail account REQUIRED; Google Opinion Rewards (loops)
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.subscriptions.red"},  // Gmail account REQUIRED; Google One
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.tasks"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.vega"},  // Gmail account REQUIRED; Google My Business
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.walletnfcrel"},  // Gmail account REQUIRED; Google Pay
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.youtube.creator"},  // Gmail account REQUIRED; YT Studio
+                {"installType": "BLOCKED", "packageName": "com.google.android.keep"},  // Gmail account REQUIRED; Keep Notes
+                {"installType": "BLOCKED", "packageName": "com.google.android.play.games"},  // Gmail account REQUIRED; Play Games
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.tachyon"},  // Gmail account REQUIRED; Google Duo (Video Calls)
+                {"installType": "BLOCKED", "packageName": "com.google.android.talk"},  // Gmail account REQUIRED; Hangouts
                 // Random apps "by Google" I found in the app store -- Gmail account REQUESTED
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.googleassistant"},  // Assistant
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.mapslite"},  // Maps Go
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.navlite"},  // Google Maps Go
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.searchlite"},  // Google Go
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.translate"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.kids"},  // YT Kids
-                {"installType": "BLOCKED", "packageName": "com.google.android.youtube.tvkids"},  // NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.contacts"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.googleassistant"},  // Gmail account REQUESTED; Assistant
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.translate"},  // Gmail account REQUESTED
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.kids"},  // Gmail account REQUESTED; YT Kids
+                {"installType": "BLOCKED", "packageName": "com.google.android.youtube.tvkids"},  // Gmail account REQUESTED; NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.contacts"},  // Gmail account REQUESTED
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.access.wifi.consumer"},  // configure google-brand wifi APs (hardware missing)
                 {"installType": "BLOCKED", "packageName": "com.google.android.katniss"},  // Google app for Android TV (hardware missing)
                 {"installType": "BLOCKED", "packageName": "com.google.android.tv.remote"},  // TV Remote (hardware missing)
                 {"installType": "BLOCKED", "packageName": "com.google.android.wearable.app"},  // Wear OS (hardware missing)
                 // Random apps "by Google" I found in the app store -- Gmail account NOT PROMPTED
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.GoogleCamera"},  // Camera
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.podcasts"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calculator"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.street"},  // Street View
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.earth"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.niksoftware.snapseed"},  // some photo editing thing???
                 // Random apps "by Google" I found in the app store -- DID NOT APPEAR IN THE APP LIST EVEN WHEN INSTALLED???
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.messaging"},  // Messages - NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nbu.files"},  // Files
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photos"},
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.nbu.files"},  // Files - "save space by deleting things" but also "share files with friends", therefore fuck that
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos.scanner"},  // PhotoScan by Google - NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.music"},  // YT Music
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calendar"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.dialer"},  // Google Phone - NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.googlequicksearchbox"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.latin"},  // gboard
                 {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead"},  // Android Auto - Google Maps, Media & Messaging --- wrong android version
                 {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead.phonescreen"},
