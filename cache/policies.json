@@ -5,231 +5,771 @@
             "version": "1"
         },
         {
+            "addUserDisabled": true,
+            "advancedSecurityOverrides": {
+                "commonCriteriaMode": "COMMON_CRITERIA_MODE_DISABLED",
+                "developerSettings": "DEVELOPER_SETTINGS_DISABLED",
+                "googlePlayProtectVerifyApps": "VERIFY_APPS_ENFORCED",
+                "untrustedAppsPolicy": "DISALLOW_INSTALL"
+            },
+            "appAutoUpdatePolicy": "ALWAYS",
             "applications": [
-                {
-                    "installType": "BLOCKED",
-                    "packageName": "com.google.samples.apps.iosched"
-                },
                 {
                     "installType": "FORCE_INSTALLED",
                     "packageName": "com.android.chrome"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.GoogleCamera"
+                    "installType": "BLOCKED",
+                    "packageName": "org.mozilla.rocket"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "org.mozilla.firefox"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "org.mozilla.focus"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.microsoft.emmx"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.android.launcher3"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.tblenovo.launcher"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.nexuslauncher"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "amirz.rootless.nexuslauncher"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "ch.deletescape.lawnchair.plah"
                 },
                 {
                     "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.adm"
+                    "packageName": "de.szalkowski.activitylauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.authenticator2"
+                    "installType": "BLOCKED",
+                    "packageName": "ademar.textlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.books"
+                    "installType": "BLOCKED",
+                    "packageName": "app.olauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.chromecast.app"
+                    "installType": "BLOCKED",
+                    "packageName": "com.anpmech.launcher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.classroom"
+                    "installType": "BLOCKED",
+                    "packageName": "com.dynamicg.homebuttonlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.docs"
+                    "installType": "BLOCKED",
+                    "packageName": "com.easwareapps.g2l"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.docs.editors.docs"
+                    "installType": "BLOCKED",
+                    "packageName": "com.finnmglas.launcher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.docs.editors.sheets"
+                    "installType": "BLOCKED",
+                    "packageName": "com.gacode.relaunchx"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.docs.editors.slides"
+                    "installType": "BLOCKED",
+                    "packageName": "com.github.postapczuk.lalauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.dynamite"
+                    "installType": "BLOCKED",
+                    "packageName": "com.github.rsteube.t4"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.fitness"
+                    "installType": "BLOCKED",
+                    "packageName": "com.harasoft.relaunch"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.googleassistant"
+                    "installType": "BLOCKED",
+                    "packageName": "com.jkuester.unlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.kids.familylink"
+                    "installType": "BLOCKED",
+                    "packageName": "com.kaneoriley.cyanogenport.launcher3"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.mapslite"
+                    "installType": "BLOCKED",
+                    "packageName": "com.launcher.silverfish"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.meetings"
+                    "installType": "BLOCKED",
+                    "packageName": "com.mirasmithy.epochlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.messaging"
+                    "installType": "BLOCKED",
+                    "packageName": "com.notriddle.null_launcer"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.navlite"
+                    "installType": "BLOCKED",
+                    "packageName": "com.quaap.launchtime"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.nbu.files"
+                    "installType": "BLOCKED",
+                    "packageName": "com.sduduzog.slimlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.paidtasks"
+                    "installType": "BLOCKED",
+                    "packageName": "com.sentienhq.launcher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.photos"
+                    "installType": "BLOCKED",
+                    "packageName": "com.szchoiceway.aios.bridge"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.photos.scanner"
+                    "installType": "BLOCKED",
+                    "packageName": "com.twsitedapps.homemanager"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.podcasts"
+                    "installType": "BLOCKED",
+                    "packageName": "com.vackosar.searchbasedlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.searchlite"
+                    "installType": "BLOCKED",
+                    "packageName": "com.vincent_falzon.discreetlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.subscriptions.red"
+                    "installType": "BLOCKED",
+                    "packageName": "community.fairphone.fplauncher3"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.tachyon"
+                    "installType": "BLOCKED",
+                    "packageName": "community.fairphone.launcher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.tasks"
+                    "installType": "BLOCKED",
+                    "packageName": "de.clemensbartz.android.launcher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.translate"
+                    "installType": "BLOCKED",
+                    "packageName": "de.devmil.paperlaunch"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.vega"
+                    "installType": "BLOCKED",
+                    "packageName": "de.markusfisch.android.pielauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.walletnfcrel"
+                    "installType": "BLOCKED",
+                    "packageName": "de.nodomain.tobihille.seniorlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.youtube.creator"
+                    "installType": "BLOCKED",
+                    "packageName": "foundation.e.blisslauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.youtube.kids"
+                    "installType": "BLOCKED",
+                    "packageName": "fr.neamar.kiss"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.apps.youtube.music"
+                    "installType": "BLOCKED",
+                    "packageName": "io.github.subhamtyagi.lastlauncher"
                 },
                 {
-                    "installType": "AVAILABLE",
+                    "installType": "BLOCKED",
+                    "packageName": "kr.hybdms.sidepanel"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "luke.launcher"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "mono.hg"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "net.nhiroki.bluelineconsole"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "ohi.andre.consolelauncher"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "org.xphnx.ameixa"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "org.zimmob.zimlx"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "posidon.launcher"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "rocks.tbog.tblauncher"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.microsoft.launcher"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.real.launcher.wp.ten"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.android.calculator2"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
                     "packageName": "com.google.android.calculator"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.calendar"
+                    "installType": "BLOCKED",
+                    "packageName": "com.simplemobiletools.calculator"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.contacts"
-                },
-                {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.dialer"
-                },
-                {
-                    "installType": "AVAILABLE",
+                    "installType": "BLOCKED",
                     "packageName": "com.google.android.googlequicksearchbox"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.inputmethod.latin"
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.searchlite"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.keep"
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.duckduckgo.mobile.android"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.play.games"
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.calendar"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.projection.gearhead"
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.calendar"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.projection.gearhead.phonescreen"
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "amirz.musicfx.material"
                 },
                 {
-                    "installType": "AVAILABLE",
+                    "installType": "BLOCKED",
+                    "packageName": "com.android.camera2"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.GoogleCamera"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.simplemobiletools.camera"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.photos"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.photosgo"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.simplemobiletools.gallery"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.niksoftware.snapseed"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.dialer"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "net.osmand"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.maps"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.mapslite"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.navlite"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
                     "packageName": "com.google.android.street"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.talk"
-                },
-                {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.tv.remote"
-                },
-                {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.wearable.app"
-                },
-                {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.youtube"
-                },
-                {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.android.youtube.tvkids"
-                },
-                {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.ar.lens"
-                },
-                {
-                    "installType": "AVAILABLE",
+                    "installType": "FORCE_INSTALLED",
                     "packageName": "com.google.earth"
                 },
                 {
-                    "installType": "AVAILABLE",
-                    "packageName": "com.google.tango.measure"
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.docs"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.docs.editors.docs"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.docs.editors.sheets"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.docs.editors.slides"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.collabora.libreoffice"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.microsoft.microsoftsolitairecollection"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.microsoft.mahjong"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.emmanuelmess.tictactoe"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.andstatus.game2048"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendly2048"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "dev.lucanlm.antimine"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyminesweeper"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlysudoku"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.agateau.tinywheels.android"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "app.crossword.yourealwaysbe.forkyz"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "de.sudoq"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.serwylo.beatgame"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.moire.opensudoku"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.eehouse.android.xw4"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.dozingcatsoftware.bouncy"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.billthefarmer.crossword"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "net.nullsum.freedoom"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.jeffliu.balancetheball"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.supertuxkart.stk"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "net.minetest.minetest"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.gitlab.ardash.appleflinger.android"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlydame"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlysolitaire"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "jwtc.android.chess"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "it.alessandropira.wesnoth114"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.roguetemple.hyperroid"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "pro.rudloff.papercraft"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "de.tobiasbielefeld.brickgames"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.jfedor.frozenbubble"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.traffar.oware"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.microsoft.chineselearning"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.duolingo"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "net.gcompris.full"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.rechnen.app"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.sanskritbasics"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.sanskritbasics.memory"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "de.moekadu.tuner"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.ichi2.anki"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.LAPARCELA.nihonoari"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "info.puzz.a10000sentences"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.quaap.primary"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.simplemobiletools.applauncher"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.clock"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.contacts"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.dialer"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.draw"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.filemanager"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.flashlight"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.musicplayer"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.notes"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.smsmessenger"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.simplemobiletools.voicerecorder"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.android.traceur"
                 },
                 {
                     "installType": "AVAILABLE",
-                    "packageName": "com.niksoftware.snapseed"
+                    "packageName": "com.caf.fmradio"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.microsoft.bing.wallpapers"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.microsoft.office.outlook"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.skype.raider"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.tblenovo.lenovotips"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.microsoft.office.lync15"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyrulerapp"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlybackup"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.aktivpause"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlysketching"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyfoodtracker"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyfinancemanager"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlypausinghealthily"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.samples.apps.iosched"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.adm"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.authenticator2"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.books"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.chromecast.app"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.classroom"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.dynamite"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.fitness"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.kids.familylink"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.meetings"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.paidtasks"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.subscriptions.red"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.tasks"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.vega"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.walletnfcrel"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.youtube.creator"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.keep"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.play.games"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.tachyon"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.talk"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.googleassistant"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.translate"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.youtube.kids"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.youtube.tvkids"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.contacts"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.access.wifi.consumer"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.katniss"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.tv.remote"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.wearable.app"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.podcasts"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.messaging"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.nbu.files"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.apps.photos.scanner"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.apps.youtube.music"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.inputmethod.latin"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.projection.gearhead"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.android.projection.gearhead.phonescreen"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.android.youtube"
+                },
+                {
+                    "installType": "BLOCKED",
+                    "packageName": "com.google.ar.lens"
+                },
+                {
+                    "installType": "FORCE_INSTALLED",
+                    "packageName": "com.google.tango.measure"
                 }
             ],
+            "bluetoothConfigDisabled": true,
+            "bluetoothContactSharingDisabled": true,
+            "bluetoothDisabled": true,
             "factoryResetDisabled": true,
+            "funDisabled": true,
             "name": "enterprises/LC02kggfh1/policies/policy1",
-            "version": "7"
+            "version": "22"
         },
         {
             "name": "enterprises/LC02kggfh1/policies/wifi-locked-policy",
@@ -247,7 +787,7 @@
                     }
                 ]
             },
-            "version": "13",
+            "version": "37",
             "wifiConfigDisabled": true
         }
     ]
