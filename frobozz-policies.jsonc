@@ -26,6 +26,11 @@
 
         "policy1": {
             "applications": [
+                // NOTE: these ApplicationPolicy properties are not interesting:
+                //
+                //     "accessibleTrackIds": ["foo", "bar"], // List of the app's track IDs that a device belonging to the enterprise can access. If the list contains multiple track IDs, devices receive the latest version among all accessible tracks. If the list contains no track IDs, devices only have access to the app's production track. More details about each track are available in AppTrackInfo.
+
+
                 // ============================================================
                 // Web Browser
                 // ============================================================
@@ -592,18 +597,49 @@
             "bluetoothContactSharingDisabled": true,
 
             "addUserDisabled": true,  // Whether adding new users and profiles is disabled.
+            "modifyAccountsDisabled": true,  // Whether adding or removing accounts is disabled.
 
             "adjustVolumeDisabled": false,
             "cameraDisabled": false,
+            "mountPhysicalMediaDisabled": true,  // user can't read from / write to an SD card?
+            "outgoingBeamDisabled": true,  // user can't use NFC (e.g. paywave)
+            "outgoingCallsDisabled": true,  // user can't make calls
 
-            "funDisabled": true,             // disables "com.android.egg"
-            "appAutoUpdatePolicy": "ALWAYS"  // user can't disable auto-updates
+            "mobileNetworksConfigDisabled": true,  // user can't configure the SIM card?
+            "cellBroadcastsConfigDisabled": true,  // something to do with the SIM card?
+            "dataRoamingDisabled": true,           // something to do with the SIM card?
+
+            "funDisabled": true,             // disables "com.android.egg" (NOTE: de.szalkowski.activitylauncher can still run it)
+
+            "blockApplicationsEnabled": true,  // auto-remove apps whose policy changes from "allowed" to "blocked"
+
+            "autoDateAndTimeZone": "AUTO_DATE_AND_TIME_ZONE_ENFORCED",  // user can't spoof the clock
+            "appAutoUpdatePolicy": "ALWAYS",  // user can't disable auto-updates
+            "autoTimeRequired": true,        // ignored if autoDateAndTimeZone is set
+
+            "deviceOwnerLockScreenInfo": {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>MajoretteFlyingJackalArenaFlameImpose</small>)"},  // The device owner information to be shown on the lock screen.
+            "shortSupportMessage":       {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>StartlingAerosolPoppyChunkPolicyWildfowl</small>)"},  // A message displayed to the user in the settings screen wherever functionality has been disabled by the admin. If the message is longer than 200 characters it may be truncated.
+            "longSupportMessage":        {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>BackedUnstitchDeployMoonriseDangerMaybe</small>)"},  // A message displayed to the user in the device administators settings screen.
+
 
 
             // "androidDevicePolicyTracks": ["PRODUCTION", "BETA"],  // If no tracks are specified, then the device receives the latest version of the production track.
 
+            // FIXME: I don't understand these policy options:
+            //
+            //     "accountTypesWithManagementDisabled": ['foo', 'bar', 'baz'],  // Account types that can't be managed by the user.
+            //     "createWindowsDisabled": true,  // Whether creating windows besides app windows is disabled.
 
 
+            // FIXME: we don't *need* a VPN; is it useful to force a VPN to always be on, purely to prevent them adding one later?
+            //     "alwaysOnVpnPackage": {"lockdownEnabled": true, "packageName": "com.example.foo"},  // Configuration for an always-on VPN connection. Use with vpn_config_disabled to prevent modification of this setting.
+
+
+
+
+            // WARNING: DO NOT SET THIS TO false WITHOUT A BLOODY GOOD REASON.
+            // SETTING THIS TO FALSE MAKES IT POSSIBLE TO BRICK A TABLET.
+            "networkEscapeHatchEnabled": true  // Whether the network escape hatch is enabled. If a network connection can't be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings.Note: Setting wifiConfigDisabled to true will override this setting under specific circumstances. Please see wifiConfigDisabled for further details.
 
         }
     }
