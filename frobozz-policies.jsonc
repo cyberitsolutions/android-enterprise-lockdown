@@ -569,7 +569,23 @@
                 "commonCriteriaMode": "COMMON_CRITERIA_MODE_DISABLED"  // Default. Disables Common Criteria Mode.
             },
 
-            "factoryResetDisabled": true,
+            "networkResetDisabled": true,  // user can't delete wifi passwords
+            "factoryResetDisabled": true,  // user can't factory reset from GUI (can still reboot into "recovery" mode and choose there, though)
+
+            // If the inmate can get to the bootloader's recovery-ui, they can select "Erase data (Factory reset)".
+            // This is accessible REGARDLESS of factoryResetDisabled=true above.
+            // If they choose this, then AFTERWARD, when they try to do initial login of the tablet,
+            // it will say "sorry, factory reset protection triggered, log in (to the tablet) as the previous owner".
+            // The "previous owner" they mean is ANYONE in this list below.
+            // The email addresses in the list below **DO NOT** need to have anything to do with this enterprise!
+            //
+            // NOTE: allegedly this relies on the OEM vendor shipping an "FRP partition" which is a device-specific binary blob?
+            // NOTE: allegedly the inmate can defeat FRP by booting "fastboot" to zero "FRP partition".
+            // NOTE: allegedly the inmate can defeat FRP by using a device-specific tool (SP Flash Tool) to zero "FRP partition".
+            "frpAdminEmails": [
+                "prisonpctester2@gmail.com",
+                "prisonpctester1@gmail.com",
+                "trentbuck@gmail.com"],
 
             "bluetoothDisabled": true,  // Prefer this setting over bluetooth_config_disabled because bluetooth_config_disabled can be bypassed by the user.
             "bluetoothConfigDisabled": true,
