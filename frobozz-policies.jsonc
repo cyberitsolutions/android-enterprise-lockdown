@@ -34,7 +34,7 @@
                 // ============================================================
                 // Web Browser
                 // ============================================================
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.chrome"},  // Chrome -- REQUESTS gmail account
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome"},  // Chrome -- REQUESTS gmail account
                 {"installType": "BLOCKED", "packageName": "org.mozilla.rocket"},  // Firefox Lite (browser)
                 {"installType": "BLOCKED", "packageName": "org.mozilla.firefox"},  // Firefox (browser)
                 {"installType": "BLOCKED", "packageName": "org.mozilla.focus"},  // Firefox Focus (browser)
@@ -46,7 +46,7 @@
                 {"installType": "BLOCKED", "packageName": "com.android.launcher3"},  // not in play store; cannot be removed; default on Laser MID1089IPS; default on Android 4.4
                 {"installType": "BLOCKED", "packageName": "com.tblenovo.launcher"},  // not in play store; cannot be removed; default on on Lenovo M1 gen1
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nexuslauncher"},  // cannot be installed; default on Google Pixel
-                {"installType": "FORCE_INSTALLED", "packageName": "amirz.rootless.nexuslauncher"},  // backport of com.google.android.apps.nexuslauncher
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "amirz.rootless.nexuslauncher"},  // backport of com.google.android.apps.nexuslauncher
                 {"installType": "BLOCKED", "packageName": "ch.deletescape.lawnchair.plah"},  // mostly OK, similar to amirz.rootless.nexuslauncher but slightly more weird
                 {"installType": "AVAILABLE", "packageName": "de.szalkowski.activitylauncher"},  // TOO minimalist -- BUT USEFUL FOR DEBUGGING to see exactly what launchables are in e.g. "Android Q Easter Egg" or "VpnDialogs" app
                 {"installType": "BLOCKED", "packageName": "ademar.textlauncher"},  // TOO minimalist
@@ -105,19 +105,21 @@
                 // Search (NOTE: com.google.chrome might be sufficient)
                 // ============================================================
                 {"installType": "BLOCKED", "packageName": "com.google.android.googlequicksearchbox"},  // Google
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.searchlite"},  // Google Go
-                {"installType": "FORCE_INSTALLED", "packageName": "com.duckduckgo.mobile.android"},  // Duck Duck Go
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.searchlite"},  // Google Go
+                {"installType": "BLOCKED", "packageName": "com.duckduckgo.mobile.android"},  // Duck Duck Go (FIXME: this is a browser as well???)
 
 
                 // ============================================================
                 // Calender / Appointments
                 // ============================================================
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calendar"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calendar"},  // You can LOOK at an EMPTY calendar, but you need a gmail account (or similar) to actually CREATE an appointment!
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.calendar"},
 
                 // ============================================================
                 // Clock / Alarm Clock
                 // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.android.deskclock"},  // "Clock"
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.clock"},  // basically fine, but first-party one is also fine
 
                 // ============================================================
                 // Music Player
@@ -131,8 +133,10 @@
                 // ============================================================
                 // Camera
                 // ============================================================
+                // 18:29 <twb> the other case I thought was "I want to take a picture to show to my kids"
+                // 18:29 <ron> nope, can't do that
                 {"installType": "BLOCKED", "packageName": "com.android.camera2"},  // not in play store; default in Laser MID1089IPS?; default in AOSP?
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.GoogleCamera"},  // Camera
+                {"installType": "BLOCKED", "packageName": "com.google.android.GoogleCamera"},  // Camera
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.camera"},  // saves under "DCIM" instead of "Camera" sometimes?
 
                 // ============================================================
@@ -157,6 +161,11 @@
                 // ============================================================
                 {"installType": "BLOCKED", "packageName": "com.google.android.dialer"},  // Google Phone - NOT_COMPATIBLE_WITH_DEVICE
 
+                // ============================================================
+                // Contacts / Address Book
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.contacts"},  // Gmail account REQUESTED
+
 
                 // ============================================================
                 // Maps
@@ -179,7 +188,7 @@
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.slides"},  // Gmail account REQUIRED
                 // Can we at least install a short-term office suite locally?
                 // I think the LONG TERM goal is that we run a browser-based office suite on an in-house VM.
-                {"installType": "FORCE_INSTALLED", "packageName": "com.collabora.libreoffice"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.collabora.libreoffice"},  // works fine.  They've tried to make LibreOffice into a touchscreen app, with moderate success.
 
 
                 // ============================================================
@@ -187,29 +196,29 @@
                 // ============================================================
                 {"installType": "BLOCKED", "packageName": "com.microsoft.microsoftsolitairecollection"},  // Solitaire (game) --- FULL OF ADS, COMPLAINS ABOUT LACK OF DIRECT INTERNET ACCESS TO MS.COM
                 {"installType": "BLOCKED", "packageName": "com.microsoft.mahjong"},  // Mahjong (game)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.emmanuelmess.tictactoe"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.andstatus.game2048"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendly2048"},
+                {"installType": "BLOCKED", "packageName": "com.emmanuelmess.tictactoe"},  // no AI, black-and-white, looks ugly
+                {"installType": "AVAILABLE", "packageName": "org.andstatus.game2048"},  // fine
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendly2048"},  // also fine, andstatus is slightly nicer
                 {"installType": "FORCE_INSTALLED", "packageName": "dev.lucanlm.antimine"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyminesweeper"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysudoku"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.agateau.tinywheels.android"},
+                {"installType": "AVAILABLE", "packageName": "com.agateau.tinywheels.android"},  // Pixel Wheels; fine, controls take some getting used to.  There's a cop car, does that matter?
                 {"installType": "FORCE_INSTALLED", "packageName": "app.crossword.yourealwaysbe.forkyz"},
-                {"installType": "FORCE_INSTALLED", "packageName": "de.sudoq"},
+                {"installType": "BLOCKED", "packageName": "de.sudoq"},  // perfectly fine sudoku game, but LOOKS like it's a privesc app
                 {"installType": "FORCE_INSTALLED", "packageName": "com.serwylo.beatgame"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.moire.opensudoku"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.eehouse.android.xw4"},         // crosswords (scrabble)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.dozingcatsoftware.bouncy"},
+                {"installType": "AVAILABLE", "packageName": "com.dozingcatsoftware.bouncy"},  // Vector Pinball -- GREAT!!!
                 {"installType": "FORCE_INSTALLED", "packageName": "org.billthefarmer.crossword"},
-                {"installType": "FORCE_INSTALLED", "packageName": "net.nullsum.freedoom"},            // DOOM
-                {"installType": "FORCE_INSTALLED", "packageName": "com.jeffliu.balancetheball"},
+                {"installType": "FORCE_INSTALLED", "packageName": "net.nullsum.freedoom"},            // DOOM (crashed a couple times trying to start it, BUT played OK once I got past that)
+                {"installType": "BLOCKED", "packageName": "com.jeffliu.balancetheball"},  // Broken?  I couldn't get this game to "play"
                 {"installType": "FORCE_INSTALLED", "packageName": "org.supertuxkart.stk"},
                 {"installType": "FORCE_INSTALLED", "packageName": "net.minetest.minetest"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.gitlab.ardash.appleflinger.android"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlydame"},  // Checkers
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysolitaire"},
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlysolitaire"},  // works, but REALLY ugly jaggie images
                 {"installType": "FORCE_INSTALLED", "packageName": "jwtc.android.chess"},
-                {"installType": "FORCE_INSTALLED", "packageName": "it.alessandropira.wesnoth114"},
+                {"installType": "BLOCKED", "packageName": "it.alessandropira.wesnoth114"},  // NEEDS INTERNET -- DOWNLOADS 100MB to 500MB **AFTER** GAME STARTS!!  The touchscreen moves around a separate virtual mouse pointer -- VERY PAINFUL!
                 {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},
                 {"installType": "FORCE_INSTALLED", "packageName": "pro.rudloff.papercraft"},
                 {"installType": "FORCE_INSTALLED", "packageName": "de.tobiasbielefeld.brickgames"},   // tetris?
@@ -220,26 +229,25 @@
                 // Education
                 // ============================================================
                 {"installType": "BLOCKED", "packageName": "com.microsoft.chineselearning"},  // (education?) (needs internet, needs account)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.duolingo"},  // DuoLingo (language education) (needs internet???)
-                {"installType": "FORCE_INSTALLED", "packageName": "net.gcompris.full"},  // GCompris (early learning)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.duolingo"},  // DuoLingo (language education) (needs internet???), has some ads.  Otherwise VERY good.
+                {"installType": "FORCE_INSTALLED", "packageName": "net.gcompris.full"},  // GCompris (early learning); WANTS INTERNET
                 {"installType": "FORCE_INSTALLED", "packageName": "com.rechnen.app"},  // Calculate, math training
                 {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics.memory"},
                 {"installType": "FORCE_INSTALLED", "packageName": "de.moekadu.tuner"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.ichi2.anki"},
+                {"installType": "AVAILABLE", "packageName": "com.ichi2.anki"},  // Flash card app, mostly for vocab memorization.  Wants you to log into a website (ankiweb) to access existing cards??
                 {"installType": "FORCE_INSTALLED", "packageName": "com.LAPARCELA.nihonoari"},
-                {"installType": "FORCE_INSTALLED", "packageName": "info.puzz.a10000sentences"},
+                {"installType": "AVAILABLE", "packageName": "info.puzz.a10000sentences"},  // WARNING: needs internet access to download flash cards; otherwise seems OK
                 {"installType": "FORCE_INSTALLED", "packageName": "com.quaap.primary"},
 
 
 
                 // "Simple" apps – dev house recommended by mike — https://play.google.com/store/apps/dev?id=9070296388022589266
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.applauncher"},  // can't be set at home app, so fuck it
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.clock"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.contacts"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.dialer"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.draw"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.filemanager"},
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.filemanager"},  // not useful/interesting
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.flashlight"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.musicplayer"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.notes"},
@@ -265,7 +273,6 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.contacts"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.ctsshim"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.priv.ctsshim"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.deskclock"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.documentsui"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.basic"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.phototable"},
@@ -486,8 +493,8 @@
 
                 // SECUSO privacy-friendly research group https://play.google.com/store/apps/dev?id=4797307650791917378
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyrulerapp"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlybackup"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.aktivpause"},
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlybackup"},  // Not useful
+                {"installType": "AVAILABLE", "packageName": "org.secuso.aktivpause"},  // "take a break and do this exercise" thing.  FIXME: useful or useless??
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysketching"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyfoodtracker"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyfinancemanager"},
@@ -520,17 +527,17 @@
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.tachyon"},  // Gmail account REQUIRED; Google Duo (Video Calls)
                 {"installType": "BLOCKED", "packageName": "com.google.android.talk"},  // Gmail account REQUIRED; Hangouts
                 // Random apps "by Google" I found in the app store -- Gmail account REQUESTED
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.googleassistant"},  // Gmail account REQUESTED; Assistant
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.translate"},  // Gmail account REQUESTED
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.kids"},  // Gmail account REQUESTED; YT Kids
+
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.translate"},  // Gmail account REQUESTED; WORKS OK; NEEDS INTERNET; USEFUL?
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.kids"},  // Gmail account REQUESTED; YT Kids; WORKS OK; NEEDS INTERNET; NOT USEFUL?
                 {"installType": "BLOCKED", "packageName": "com.google.android.youtube.tvkids"},  // Gmail account REQUESTED; NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.contacts"},  // Gmail account REQUESTED
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.access.wifi.consumer"},  // configure google-brand wifi APs (hardware missing)
                 {"installType": "BLOCKED", "packageName": "com.google.android.katniss"},  // Google app for Android TV (hardware missing)
                 {"installType": "BLOCKED", "packageName": "com.google.android.tv.remote"},  // TV Remote (hardware missing)
                 {"installType": "BLOCKED", "packageName": "com.google.android.wearable.app"},  // Wear OS (hardware missing)
                 // Random apps "by Google" I found in the app store -- Gmail account NOT PROMPTED
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.podcasts"},
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.podcasts"},  // REQUIRES com.google.android.googlequicksearchbox
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.googleassistant"},  // REQUIRES com.google.android.googlequicksearchbox; Gmail account REQUESTED; Assistant
                 // Random apps "by Google" I found in the app store -- DID NOT APPEAR IN THE APP LIST EVEN WHEN INSTALLED???
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.messaging"},  // Messages - NOT_COMPATIBLE_WITH_DEVICE
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.nbu.files"},  // Files - "save space by deleting things" but also "share files with friends", therefore fuck that
@@ -575,6 +582,7 @@
             },
 
             "networkResetDisabled": true,  // user can't delete wifi passwords
+            "safeBootDisabled": true,      // long-press "Power Off" to enter; is full GUI, but with Play Store apps disabled
             "factoryResetDisabled": true,  // user can't factory reset from GUI (can still reboot into "recovery" mode and choose there, though)
 
             // If the inmate can get to the bootloader's recovery-ui, they can select "Erase data (Factory reset)".
@@ -598,28 +606,83 @@
 
             "addUserDisabled": true,  // Whether adding new users and profiles is disabled.
             "modifyAccountsDisabled": true,  // Whether adding or removing accounts is disabled.
+            "removeUserDisabled": true,      // Whether removing other users is disabled.
 
             "adjustVolumeDisabled": false,
+
+            // 18:13 <twb> Should camera and/or microphone be completely disabled?
+            // 18:13 <twb> I currently assume "camera and microphone are allowed" mainly for education learning and maybe eventually voice/video calls
+            // 18:13 <mike> Probably not completely because we'll eventually do SIP/etc on this
+            // 18:13 <mike> But probably disable it for now and make sure you have a FINDME comment or similar
+            // 18:14 <twb> I guess "disable for now; revisit later" is reasonable
+            // 18:14 <twb> Will the prison crack the shits if they get a tablet and stuff like that is disabled?
+            // 18:14 <twb> "nothing on this thing works!  What a shitpiece!"
+            // 18:15 <mike> If it says it was disabled by PrisonPC, then I expect they'll communicate with us in the pilot
+            // 18:29 <ron> ok, we need to have both microphone and camera enabled when we deploy the telephony apps
+            // 18:29 <twb> the other case I thought was "I want to take a picture to show to my kids"
+            // 18:29 <ron> nope, can't do that
+            //
+            // 18:34 <twb> PROBABLY this has also broken the ability to scan QR codes
+            // 18:34 <ron> ah, good point
+            // 18:34 <twb> confirmed
+            // 18:35 <twb> QR code scanning for wifi is now broken
+            // 18:35 <ron> ok, then leave it enabled
+            //
+            // FIXME: revisit this when SIP voice/video chat.
+            // FIXME: microphone is useful for language learning (duolingo).
             "cameraDisabled": false,
+            "unmuteMicrophoneDisabled": true,
+
+            "screenCaptureDisabled": true,  // user can't take screenshots
+            "setWallpaperDisabled": true,   // user can't change desktop background (wallpaper)
+            "setUserIconDisabled": true,    // user can't change their X-Face
             "mountPhysicalMediaDisabled": true,  // user can't read from / write to an SD card?
             "outgoingBeamDisabled": true,  // user can't use NFC (e.g. paywave)
             "outgoingCallsDisabled": true,  // user can't make calls
+            "usbFileTransferDisabled": true,  // user can't share files over MTP/PTP???
+            "usbMassStorageEnabled": true,    // user can't share files over SD card???
+
+
+            // <twb> "Keyguard" is the brand name for android's lock screen.
+            //       Do we care about e.g. face recognition?
+            // <ron> twb: for unlocking? not yet, possibly not ever
+            // <twb> ron: do we care to ban them?
+            // <ron> twb: for now there'll be too much admin overhead to manage it.
+            //       I think we should ban it until we decide it is valuable enough to promote.
+            //       default-deny
+            //
+            // NOTE: this setting ALSO allows disabling camera while locked, disabling notifications while locked, &c.
+            "keyguardDisabledFeatures": "BIOMETRICS",  // user cannot log in with fingerprint/face/iris &c
+
+            // Can apps ask the hardware "where am I?"
+            // BONUS: map apps default to local area.
+            // MALUS: an escapee might have offline maps with them, and
+            //        use it to work out exactly which way to run?
+            // Does this affect automatic timezone? (I don't think so.)
+            //
+            // Ron's view is default-deny --- have to justify why they SHOULD get anything, not why they SHOULDN'T.
+            "locationMode": "LOCATION_DISABLED",
+            "shareLocationDisabled": true,
 
             "mobileNetworksConfigDisabled": true,  // user can't configure the SIM card?
             "cellBroadcastsConfigDisabled": true,  // something to do with the SIM card?
             "dataRoamingDisabled": true,           // something to do with the SIM card?
+            "smsDisabled": true,
+            "tetheringConfigDisabled": true,  // tethering and portable hotspots is disabledx
 
             "funDisabled": true,             // disables "com.android.egg" (NOTE: de.szalkowski.activitylauncher can still run it)
 
             "blockApplicationsEnabled": true,  // auto-remove apps whose policy changes from "allowed" to "blocked"
+            "installAppsDisabled": true,       // user cannot install apps whitelisted as "AVAILABLE" (but not pre- or force-installed)
+            "uninstallAppsDisabled": true,     // user cannot remove apps whitelisted as "PREINSTALLED" (pre-installed but removable)
 
             "autoDateAndTimeZone": "AUTO_DATE_AND_TIME_ZONE_ENFORCED",  // user can't spoof the clock
             "appAutoUpdatePolicy": "ALWAYS",  // user can't disable auto-updates
             "autoTimeRequired": true,        // ignored if autoDateAndTimeZone is set
 
-            "deviceOwnerLockScreenInfo": {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>MajoretteFlyingJackalArenaFlameImpose</small>)"},  // The device owner information to be shown on the lock screen.
-            "shortSupportMessage":       {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>StartlingAerosolPoppyChunkPolicyWildfowl</small>)"},  // A message displayed to the user in the settings screen wherever functionality has been disabled by the admin. If the message is longer than 200 characters it may be truncated.
-            "longSupportMessage":        {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>BackedUnstitchDeployMoonriseDangerMaybe</small>)"},  // A message displayed to the user in the device administators settings screen.
+            "deviceOwnerLockScreenInfo": {"defaultMessage": "By logging in, YOU AGREE to the following policy.\n\nAccess to the Prisoner Interactive Learning System is a privilege.\n\nAbuse may result in temporary or permanent loss of use.\nAbuse includes, but is not limited to, attempts to\n • disclose your password to another user;\n • grant another user access to your account;\n • access another user's account;\n • communicate with another inmate;\n • use unauthorised media (inc. CD, DVD & USB);\n • install or modify software; and\n • modify system settings.\n\nAll use, including email correspondence, may be\n • archived indefinitely;\n • reviewed by automated systems;\n • reviewed by staff;\n • reviewed by external agencies for the purposes of\n • investigating suspected criminal/unlawful activity.\n\nAll logs, records and archives may be used as evidence in court."},  // The device owner information to be shown on the lock screen.  --- This shows on the lock screen; end user CANNOT change it.
+            "shortSupportMessage":       {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>StartlingAerosolPoppyChunkPolicyWildfowl</small>)"},  // A message displayed to the user in the settings screen wherever functionality has been disabled by the admin. If the message is longer than 200 characters it may be truncated. ---- UPDATE: this line appears as the "body" of a popup when you try to remove a FORCE_INSTALLED app.
+            "longSupportMessage":        {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>BackedUnstitchDeployMoonriseDangerMaybe</small>)"},  // A message displayed to the user in the device administators settings screen.  --- This appears under Settings > Security > Device admin info > Device Policyx
 
 
 
@@ -633,7 +696,19 @@
 
             // FIXME: we don't *need* a VPN; is it useful to force a VPN to always be on, purely to prevent them adding one later?
             //     "alwaysOnVpnPackage": {"lockdownEnabled": true, "packageName": "com.example.foo"},  // Configuration for an always-on VPN connection. Use with vpn_config_disabled to prevent modification of this setting.
+            "vpnConfigDisabled": true,
 
+            // Requirements:
+            //
+            //     1. Prison staff MUST be able to read content created by inmates.
+            //     2. Inmates MUST NOT be able to communicate clandestinely (e.g. dead drops inside a the tablet).
+            //     3. Inmate B SHOULD NOT be able to read Inmate A's content without Inmate A's knowledge.
+            //
+            // Due to (1) I think we actually want to BAN full-disk-encryption, but that is not an option.
+            //
+            // UPDATE: according to Settings > Security > Encryption & Credentials, Lenovo M1 is encrypted by default.
+            // UPDATE: according to Settings > Security > Encryption & Credentials, Laser MID1089IPS is encrypted by default.
+            "encryptionPolicy": "ENCRYPTION_POLICY_UNSPECIFIED",
 
 
 
