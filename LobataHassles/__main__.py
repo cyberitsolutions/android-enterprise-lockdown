@@ -200,6 +200,37 @@ for policy_name, policy_body in json_config_object['policies'].items():
         body=policy_body).execute()
 
 
+############################################################
+## Create webapp pseudo-apps
+############################################################
+
+# Ref. https://colab.research.google.com/github/google/android-management-api-samples/blob/master/notebooks/web_apps.ipynb
+
+# Unlike policy, patch() won't implicitly create a webapp.
+# Instead we must "PATCH if in LIST else CREATE".
+# This mirrors SQL's "UPDATE if SELECT else INSERT".
+old_webApps = androidmanagement.enterprises().webApps().list(
+    parent=json_config_object['enterprise_name']).execute()['webApps']
+for new_webApp in json_config_object['webApps']:
+    # We assume the startUrl (not title) is unique.
+    try:
+        # import pprint
+        # pprint.pprint(old_webApps)
+        name, = {
+            old_webApp['name']
+            for old_webApp in old_webApps
+            if old_webApp['startUrl'] == new_webApp['startUrl']}
+        # Exists, so patch.
+        androidmanagement.enterprises().webApps().patch(
+            name=name,
+            body=new_webApp).execute()
+    except ValueError:
+        # Doesn't exist, so create.
+        androidmanagement.enterprises().webApps().create(
+            parent=json_config_object['enterprise_name'],
+            body=new_webApp).execute()
+
+
 ######################################################################
 ## Do some queries
 ######################################################################
@@ -245,7 +276,13 @@ with open('cache/policies.json', mode='w') as f:
         f,
         sort_keys=True,
         indent=4)
-
+with open('cache/webApps.json', mode='w') as f:
+    json.dump(
+        androidmanagement.enterprises().webApps().list(
+            parent=json_config_object['enterprise_name']).execute(),
+        f,
+        sort_keys=True,
+        indent=4)
 
 ######################################################################
 ## Provision a device

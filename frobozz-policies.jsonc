@@ -2,6 +2,20 @@
 {
     "service_account": "android-management-api-client@frobozz.iam.gserviceaccount.com",
     "enterprise_name": "enterprises/LC02kggfh1",
+    "webApps": [
+        {
+            // "icons": ["imageData": "XXX"]  // base64'd 512x512 PNG
+            "title": "Mail",
+            "startUrl": "https://webmail/",
+            "displayMode": "STANDALONE"
+        },
+        {
+            // "icons": ["imageData": "XXX"]  // base64'd 512x512 PNG
+            "title": "TV Guide",
+            "startUrl": "https://prisonpc/TV/",
+            "displayMode": "MINIMAL_UI"
+        }
+    ],
     "policies": {
         // "empty-policy": { },
 
@@ -124,6 +138,17 @@
                 // ============================================================
                 // Music Player
                 // ============================================================
+
+                // ============================================================
+                // Video Player / TV
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x597edd8749574755"},  // "TV Guide" (https://prisonpc/TV/)
+
+                // ============================================================
+                // Email
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x50bb90cffc907768"},  // "Mail" (https://webmail/)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xf5f403c242677721"},  // "Lorem Ipsum" (test app)
 
                 // ============================================================
                 // Sound Recorder / Editor
