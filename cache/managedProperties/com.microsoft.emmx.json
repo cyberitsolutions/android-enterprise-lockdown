@@ -1,0 +1,9 @@
+[
+    {
+        "defaultValue": "",
+        "description": "Only the listed accounts may sign-in.",
+        "key": "com.microsoft.intune.mam.AllowedAccountUPNs",
+        "title": "Allowed Accounts",
+        "type": "STRING"
+    }
+]

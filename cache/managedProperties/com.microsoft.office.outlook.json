@@ -1,0 +1,163 @@
+[
+    {
+        "key": "com.microsoft.outlook.EmailProfile.EmailAddress",
+        "title": "email address",
+        "type": "STRING"
+    },
+    {
+        "key": "com.microsoft.outlook.EmailProfile.EmailAccountName",
+        "title": "description for account",
+        "type": "STRING"
+    },
+    {
+        "key": "com.microsoft.outlook.EmailProfile.ServerHostName",
+        "title": "exchange server url",
+        "type": "STRING"
+    },
+    {
+        "key": "com.microsoft.outlook.EmailProfile.AccountDomain",
+        "title": "domain of user account",
+        "type": "STRING"
+    },
+    {
+        "key": "com.microsoft.outlook.EmailProfile.EmailUPN",
+        "title": "username",
+        "type": "STRING"
+    },
+    {
+        "key": "com.microsoft.outlook.EmailProfile.ServerAuthentication",
+        "title": "server authentication method",
+        "type": "STRING"
+    },
+    {
+        "defaultValue": "",
+        "description": "Only the listed accounts may sign-in.",
+        "key": "com.microsoft.intune.mam.AllowedAccountUPNs",
+        "title": "Allowed Accounts",
+        "type": "STRING"
+    },
+    {
+        "key": "com.microsoft.outlook.EmailProfile.AccountType",
+        "title": "account type",
+        "type": "STRING"
+    },
+    {
+        "defaultValue": false,
+        "description": "Block external images by default",
+        "key": "com.microsoft.outlook.Mail.BlockExternalImagesEnabled",
+        "title": "Block external images",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Allow user to change blocking external images",
+        "key": "com.microsoft.outlook.Mail.BlockExternalImagesEnabled.UserChangeAllowed",
+        "title": "Block external images (user change allowed)",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show MailTips for external recipients",
+        "key": "com.microsoft.outlook.Mail.ExternalRecipientsToolTipEnabled",
+        "title": "Show external recipients MailTip",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Use focused inbox by default",
+        "key": "com.microsoft.outlook.Mail.FocusedInbox",
+        "title": "Focused inbox",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Discover enabled",
+        "key": "com.microsoft.outlook.Mail.OfficeFeedEnabled",
+        "title": "Show Discover",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": false,
+        "description": "Sync Outlook contacts to native address book on device",
+        "key": "com.microsoft.outlook.Contacts.LocalSyncEnabled",
+        "title": "Contact sync enabled",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Allow user to change local contacts sync setting",
+        "key": "com.microsoft.outlook.Contacts.LocalSyncEnabled.UserChangeAllowed",
+        "title": "Contact sync (user change allowed)",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Allow app to control showing default signature",
+        "key": "com.microsoft.outlook.Mail.DefaultSignatureEnabled",
+        "title": "Default signature enabled",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Show suggested replies",
+        "key": "com.microsoft.outlook.Mail.SuggestedRepliesEnabled",
+        "title": "Suggested replies enabled",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Allow user to change suggested replies setting",
+        "key": "com.microsoft.outlook.Mail.SuggestedRepliesEnabled.UserChangeAllowed",
+        "title": "Suggested replies (user change allowed)",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": false,
+        "description": "Enable S/MIME setting",
+        "key": "com.microsoft.outlook.Mail.SMIMEEnabled",
+        "title": "S/MIME setting",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Allow user to change S/MIME setting",
+        "key": "com.microsoft.outlook.Mail.SMIMEEnabled.UserChangeAllowed",
+        "title": "S/MIME setting (user change allowed)",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Organize your email by thread",
+        "key": "com.microsoft.outlook.Mail.OrganizeByThreadEnabled",
+        "title": "Organize by thread",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Play My Emails",
+        "key": "com.microsoft.outlook.Mail.PlayMyEmailsEnabled",
+        "title": "Play My Emails",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Allow user to enable custom themes",
+        "key": "com.microsoft.outlook.Settings.ThemesEnabled",
+        "title": "Show Your Pride setting",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Enable text predictions",
+        "key": "com.microsoft.outlook.Mail.TextPredictionsEnabled",
+        "title": "Text predictions enabled",
+        "type": "BOOL"
+    },
+    {
+        "defaultValue": true,
+        "description": "Allow user to change text predictions setting",
+        "key": "com.microsoft.outlook.Mail.TextPredictionsEnabled.UserChangeAllowed",
+        "title": "Text predictions (user change allowed)",
+        "type": "BOOL"
+    }
+]
