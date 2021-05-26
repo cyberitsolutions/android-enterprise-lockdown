@@ -698,8 +698,9 @@
             "funDisabled": true,             // disables "com.android.egg" (NOTE: de.szalkowski.activitylauncher can still run it)
 
             "blockApplicationsEnabled": true,  // auto-remove apps whose policy changes from "allowed" to "blocked"
-            "installAppsDisabled": true,       // user cannot install apps whitelisted as "AVAILABLE" (but not pre- or force-installed)
-            "uninstallAppsDisabled": true,     // user cannot remove apps whitelisted as "PREINSTALLED" (pre-installed but removable)
+            // UPDATE: these were even more annoying than I thought.  Even FORCE_INSTALLED apps won't auto-install!
+            // "installAppsDisabled": true,       // user cannot install apps whitelisted as "AVAILABLE" (but not pre- or force-installed)
+            // "uninstallAppsDisabled": true,     // user cannot remove apps whitelisted as "PREINSTALLED" (pre-installed but removable)
 
             "autoDateAndTimeZone": "AUTO_DATE_AND_TIME_ZONE_ENFORCED",  // user can't spoof the clock
             "appAutoUpdatePolicy": "ALWAYS",  // user can't disable auto-updates
