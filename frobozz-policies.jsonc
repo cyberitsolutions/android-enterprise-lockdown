@@ -606,6 +606,23 @@
                 "commonCriteriaMode": "COMMON_CRITERIA_MODE_DISABLED"  // Default. Disables Common Criteria Mode.
             },
 
+            // DEBUGGING!
+            // When this is on, tablets report more *TO GOOGLE* information about themselves.
+            // We can then ask Google to tell the information back to us, the real site admins.
+            "statusReportingSettings": {
+                "applicationReportsEnabled": true,     // enable app reports
+                "applicationReportingSettings": {
+                    "includeRemovedApps": true},       // include removed apps in application reports.
+                "commonCriteriaModeEnabled": false,    // enable Common Criteria Mode reporting
+                "deviceSettingsEnabled": true,         // enable device settings reporting
+                "displayInfoEnabled": true,            // enable displays reporting.  Not available for personally-owned devices with work profiles.
+                "hardwareStatusEnabled": true,         // enable hardware status reporting. Not available for personally owned devices with work profiles.
+                "memoryInfoEnabled": true,             // enable memory reporting
+                "networkInfoEnabled": true,            // enable network info reporting
+                "powerManagementEventsEnabled": true,  // enable power management event reporting. Not available for personally owned devices with work profiles.
+                "softwareInfoEnabled": true,           // enable software info reporting
+                "systemPropertiesEnabled": true},      // enable system properties reporting
+
             "networkResetDisabled": true,  // user can't delete wifi passwords
             "safeBootDisabled": true,      // long-press "Power Off" to enter; is full GUI, but with Play Store apps disabled
             "factoryResetDisabled": true,  // user can't factory reset from GUI (can still reboot into "recovery" mode and choose there, though)
