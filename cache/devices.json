@@ -3,6 +3,923 @@
         {
             "apiLevel": 29,
             "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
+            "appliedPolicyVersion": "35",
+            "appliedState": "ACTIVE",
+            "deviceSettings": {
+                "encryptionStatus": "ACTIVE_PER_USER",
+                "isEncrypted": true,
+                "verifyAppsEnabled": true
+            },
+            "displays": [
+                {
+                    "density": 160,
+                    "height": 1280,
+                    "name": "Built-in Screen",
+                    "refreshRate": 59,
+                    "state": "OFF",
+                    "width": 800
+                }
+            ],
+            "enrollmentTime": "2021-05-25T03:17:07.442Z",
+            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/NWw-341D9kpR7002cBIwFW1BalruJ1rv-KtNoBwdB9g",
+            "hardwareInfo": {
+                "brand": "Laser",
+                "hardware": "A50",
+                "manufacturer": "incar",
+                "model": "MID_1089IPS",
+                "serialNumber": "3c0014056441073248e"
+            },
+            "lastPolicySyncTime": "2021-05-26T06:31:11.697Z",
+            "lastStatusReportTime": "2021-05-26T06:31:20.485Z",
+            "managementMode": "DEVICE_OWNER",
+            "memoryEvents": [
+                {
+                    "byteCount": "12389822464",
+                    "createTime": "2021-05-26T06:31:11.489Z",
+                    "eventType": "EXTERNAL_STORAGE_DETECTED"
+                }
+            ],
+            "memoryInfo": {
+                "totalInternalStorage": "598638592",
+                "totalRam": "2093760512"
+            },
+            "name": "enterprises/LC02kggfh1/devices/3059573412daf8a0",
+            "networkInfo": {
+                "wifiMacAddress": "60:4d:ae:4c:92:4b"
+            },
+            "nonComplianceDetails": [
+                {
+                    "nonComplianceReason": "INVALID_VALUE",
+                    "packageName": "com.android.launcher3",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.nexuslauncher",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "app.crossword.yourealwaysbe.forkyz",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.serwylo.beatgame",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.billthefarmer.crossword",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.gitlab.ardash.appleflinger.android",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "pro.rudloff.papercraft",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "de.tobiasbielefeld.brickgames",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.traffar.oware",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.rechnen.app",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.quaap.primary",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.dialer",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.smsmessenger",
+                    "settingName": "applications"
+                },
+                {
+                    "nonComplianceReason": "INVALID_VALUE",
+                    "packageName": "com.android.traceur",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.messaging",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.tango.measure",
+                    "settingName": "applications"
+                },
+                {
+                    "fieldPath": "advancedSecurityOverrides.commonCriteriaMode",
+                    "nonComplianceReason": "API_LEVEL",
+                    "settingName": "advancedSecurityOverrides"
+                },
+                {
+                    "nonComplianceReason": "UNSUPPORTED",
+                    "settingName": "blockApplicationsEnabled"
+                },
+                {
+                    "nonComplianceReason": "MANAGEMENT_MODE",
+                    "settingName": "bluetoothContactSharingDisabled"
+                }
+            ],
+            "ownership": "COMPANY_OWNED",
+            "policyCompliant": true,
+            "policyName": "enterprises/LC02kggfh1/policies/policy1",
+            "previousDeviceNames": [
+                "enterprises/LC02kggfh1/devices/3b2767b18f9c4405",
+                "enterprises/LC02kggfh1/devices/37977ffdbc26f9db",
+                "enterprises/LC02kggfh1/devices/3cebbde468415aad",
+                "enterprises/LC02kggfh1/devices/37b0aa3d5905b0ad",
+                "enterprises/LC02kggfh1/devices/3715f85817a474fd",
+                "enterprises/LC02kggfh1/devices/3f79c67b5fb46dce",
+                "enterprises/LC02kggfh1/devices/35132f656b47c34f",
+                "enterprises/LC02kggfh1/devices/3e1ca1926e8ddfa7",
+                "enterprises/LC02kggfh1/devices/375182d5f613ed58"
+            ],
+            "securityPosture": {
+                "devicePosture": "SECURE"
+            },
+            "softwareInfo": {
+                "androidBuildNumber": "MID_1089IPS_V01_20200626",
+                "androidBuildTime": "2020-06-26T03:37:31Z",
+                "androidDevicePolicyVersionCode": 1498020,
+                "androidDevicePolicyVersionName": "14.98.02.v39",
+                "androidVersion": "10",
+                "bootloaderVersion": "unknown",
+                "deviceBuildSignature": "7f5088d73143bfcadb55f55bcf77d98d8caa9b68dee882919e5497a7f5fb79d3",
+                "deviceKernelVersion": "4.9.170",
+                "primaryLanguageCode": "en-AU",
+                "securityPatchLevel": "2020-04-05",
+                "systemUpdateInfo": {
+                    "updateStatus": "UP_TO_DATE"
+                }
+            },
+            "state": "ACTIVE",
+            "systemProperties": {
+                "ro.product.first_api_level": "29"
+            },
+            "userName": "enterprises/LC02kggfh1/users/113061362204729817658"
+        },
+        {
+            "apiLevel": 29,
+            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
+            "appliedPolicyVersion": "23",
+            "appliedState": "ACTIVE",
+            "enrollmentTime": "2021-05-19T04:02:24.518Z",
+            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/jW6uqGKCrSP9bq-WvtAMqHN799gH-2E2EuhvgptNvYE",
+            "hardwareInfo": {
+                "brand": "Lenovo",
+                "hardware": "qcom",
+                "manufacturer": "LENOVO",
+                "model": "Lenovo TB-X505F",
+                "serialNumber": "HGAL10T2"
+            },
+            "lastPolicySyncTime": "2021-05-19T04:57:36.381Z",
+            "lastStatusReportTime": "2021-05-19T04:03:16.361Z",
+            "managementMode": "DEVICE_OWNER",
+            "memoryInfo": {
+                "totalInternalStorage": "4160729088",
+                "totalRam": "1954582528"
+            },
+            "name": "enterprises/LC02kggfh1/devices/33639ffb1e61f7cd",
+            "nonComplianceDetails": [
+                {
+                    "nonComplianceReason": "INVALID_VALUE",
+                    "packageName": "com.tblenovo.launcher",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.nexuslauncher",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "amirz.rootless.nexuslauncher",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.calculator",
+                    "settingName": "applications"
+                },
+                {
+                    "nonComplianceReason": "APP_INSTALLED",
+                    "packageName": "com.google.android.googlequicksearchbox",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.duckduckgo.mobile.android",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.calendar",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "amirz.musicfx.material",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.GoogleCamera",
+                    "settingName": "applications"
+                },
+                {
+                    "nonComplianceReason": "APP_INSTALLED",
+                    "packageName": "com.google.android.apps.photos",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.photosgo",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "net.osmand",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.mapslite",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.street",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.earth",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.collabora.libreoffice",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.emmanuelmess.tictactoe",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.andstatus.game2048",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendly2048",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "dev.lucanlm.antimine",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyminesweeper",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlysudoku",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.agateau.tinywheels.android",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "app.crossword.yourealwaysbe.forkyz",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "de.sudoq",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.serwylo.beatgame",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.moire.opensudoku",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.eehouse.android.xw4",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.dozingcatsoftware.bouncy",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.billthefarmer.crossword",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "net.nullsum.freedoom",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.jeffliu.balancetheball",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.supertuxkart.stk",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "net.minetest.minetest",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.gitlab.ardash.appleflinger.android",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlydame",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlysolitaire",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "jwtc.android.chess",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "it.alessandropira.wesnoth114",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.roguetemple.hyperroid",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "pro.rudloff.papercraft",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "de.tobiasbielefeld.brickgames",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.jfedor.frozenbubble",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.traffar.oware",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.duolingo",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "net.gcompris.full",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.rechnen.app",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.sanskritbasics",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.sanskritbasics.memory",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "de.moekadu.tuner",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.ichi2.anki",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.LAPARCELA.nihonoari",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "info.puzz.a10000sentences",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.quaap.primary",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.clock",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.contacts",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.dialer",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.draw",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.filemanager",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.flashlight",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.musicplayer",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.notes",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.smsmessenger",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.voicerecorder",
+                    "settingName": "applications"
+                },
+                {
+                    "nonComplianceReason": "INVALID_VALUE",
+                    "packageName": "com.android.traceur",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyrulerapp",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlybackup",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.aktivpause",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlysketching",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyfoodtracker",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyfinancemanager",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlypausinghealthily",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.googleassistant",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.translate",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.youtube.kids",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.contacts",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.podcasts",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.messaging",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.tango.measure",
+                    "settingName": "applications"
+                },
+                {
+                    "fieldPath": "advancedSecurityOverrides.commonCriteriaMode",
+                    "nonComplianceReason": "API_LEVEL",
+                    "settingName": "advancedSecurityOverrides"
+                },
+                {
+                    "nonComplianceReason": "UNSUPPORTED",
+                    "settingName": "blockApplicationsEnabled"
+                },
+                {
+                    "nonComplianceReason": "MANAGEMENT_MODE",
+                    "settingName": "bluetoothContactSharingDisabled"
+                }
+            ],
+            "ownership": "COMPANY_OWNED",
+            "policyCompliant": true,
+            "policyName": "enterprises/LC02kggfh1/policies/policy1",
+            "previousDeviceNames": [
+                "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
+                "enterprises/LC02kggfh1/devices/348b1daeac68a70c",
+                "enterprises/LC02kggfh1/devices/39f5c698a64bed51",
+                "enterprises/LC02kggfh1/devices/35712c2e9993bc57"
+            ],
+            "securityPosture": {
+                "devicePosture": "SECURE"
+            },
+            "softwareInfo": {
+                "androidBuildNumber": "TB-X505F_S001135_210304_ROW",
+                "androidBuildTime": "2021-03-04T10:31:52Z",
+                "androidDevicePolicyVersionCode": 1498020,
+                "androidDevicePolicyVersionName": "14.98.02.v39",
+                "androidVersion": "10",
+                "bootloaderVersion": "unknown",
+                "deviceBuildSignature": "1c41fedecacbe89b81c242ecf74929f7d57322b64f8179c1c78a390a3494f14a",
+                "deviceKernelVersion": "4.9.205-perf+",
+                "primaryLanguageCode": "en-AU",
+                "securityPatchLevel": "2021-03-05",
+                "systemUpdateInfo": {
+                    "updateStatus": "UP_TO_DATE"
+                }
+            },
+            "state": "ACTIVE",
+            "userName": "enterprises/LC02kggfh1/users/116335617420936995477"
+        },
+        {
+            "apiLevel": 29,
+            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
+            "appliedPolicyVersion": "34",
+            "appliedState": "ACTIVE",
+            "enrollmentTime": "2021-05-19T05:43:38.648Z",
+            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/9QYzdvt6NFsDmntNNxOSRRdY4qfSa1uMkPrFamrVkbo",
+            "hardwareInfo": {
+                "brand": "Lenovo",
+                "hardware": "qcom",
+                "manufacturer": "LENOVO",
+                "model": "Lenovo TB-X505F",
+                "serialNumber": "HGAL10T2"
+            },
+            "lastPolicySyncTime": "2021-05-26T04:51:03.040Z",
+            "lastStatusReportTime": "2021-05-24T03:38:44.232Z",
+            "managementMode": "DEVICE_OWNER",
+            "memoryInfo": {
+                "totalInternalStorage": "4160729088",
+                "totalRam": "1954582528"
+            },
+            "name": "enterprises/LC02kggfh1/devices/346539c38497359c",
+            "nonComplianceDetails": [
+                {
+                    "nonComplianceReason": "INVALID_VALUE",
+                    "packageName": "com.tblenovo.launcher",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.nexuslauncher",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.enterprise.webapp.x597edd8749574755",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.enterprise.webapp.x50bb90cffc907768",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.enterprise.webapp.xf5f403c242677721",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "app.crossword.yourealwaysbe.forkyz",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.serwylo.beatgame",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.billthefarmer.crossword",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.gitlab.ardash.appleflinger.android",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "pro.rudloff.papercraft",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "de.tobiasbielefeld.brickgames",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.traffar.oware",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.rechnen.app",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.quaap.primary",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.dialer",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.flashlight",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.simplemobiletools.smsmessenger",
+                    "settingName": "applications"
+                },
+                {
+                    "nonComplianceReason": "INVALID_VALUE",
+                    "packageName": "com.android.traceur",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.messaging",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.tango.measure",
+                    "settingName": "applications"
+                },
+                {
+                    "fieldPath": "advancedSecurityOverrides.commonCriteriaMode",
+                    "nonComplianceReason": "API_LEVEL",
+                    "settingName": "advancedSecurityOverrides"
+                },
+                {
+                    "nonComplianceReason": "UNSUPPORTED",
+                    "settingName": "blockApplicationsEnabled"
+                },
+                {
+                    "nonComplianceReason": "MANAGEMENT_MODE",
+                    "settingName": "bluetoothContactSharingDisabled"
+                }
+            ],
+            "ownership": "COMPANY_OWNED",
+            "policyCompliant": true,
+            "policyName": "enterprises/LC02kggfh1/policies/policy1",
+            "previousDeviceNames": [
+                "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
+                "enterprises/LC02kggfh1/devices/348b1daeac68a70c",
+                "enterprises/LC02kggfh1/devices/39f5c698a64bed51",
+                "enterprises/LC02kggfh1/devices/35712c2e9993bc57",
+                "enterprises/LC02kggfh1/devices/33639ffb1e61f7cd"
+            ],
+            "securityPosture": {
+                "devicePosture": "SECURE"
+            },
+            "softwareInfo": {
+                "androidBuildNumber": "TB-X505F_S001135_210304_ROW",
+                "androidBuildTime": "2021-03-04T10:31:52Z",
+                "androidDevicePolicyVersionCode": 1498020,
+                "androidDevicePolicyVersionName": "14.98.02.v39",
+                "androidVersion": "10",
+                "bootloaderVersion": "unknown",
+                "deviceBuildSignature": "1c41fedecacbe89b81c242ecf74929f7d57322b64f8179c1c78a390a3494f14a",
+                "deviceKernelVersion": "4.9.205-perf+",
+                "primaryLanguageCode": "en-AU",
+                "securityPatchLevel": "2021-03-05",
+                "systemUpdateInfo": {
+                    "updateStatus": "UP_TO_DATE"
+                }
+            },
+            "state": "ACTIVE",
+            "userName": "enterprises/LC02kggfh1/users/112173242028438480394"
+        },
+        {
+            "apiLevel": 29,
+            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
             "appliedPolicyVersion": "15",
             "appliedState": "ACTIVE",
             "enrollmentTime": "2021-05-12T02:58:56.622Z",
@@ -587,119 +1504,10 @@
         {
             "apiLevel": 29,
             "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
-            "appliedPolicyVersion": "7",
+            "appliedPolicyVersion": "23",
             "appliedState": "ACTIVE",
-            "enrollmentTime": "2021-05-06T08:48:52Z",
-            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/R6ZoCo9F1KkUrbImCIdC_EguGzzyRlLbuCdz-mAHVNE",
-            "hardwareInfo": {
-                "brand": "Laser",
-                "hardware": "A50",
-                "manufacturer": "incar",
-                "model": "MID_1089IPS",
-                "serialNumber": "3c0014056441073248e"
-            },
-            "lastPolicySyncTime": "2021-05-06T08:48:55.976Z",
-            "lastStatusReportTime": "2021-05-06T08:49:45.890Z",
-            "managementMode": "DEVICE_OWNER",
-            "memoryInfo": {
-                "totalInternalStorage": "598638592",
-                "totalRam": "2093760512"
-            },
-            "name": "enterprises/LC02kggfh1/devices/3715f85817a474fd",
-            "ownership": "COMPANY_OWNED",
-            "policyCompliant": true,
-            "policyName": "enterprises/LC02kggfh1/policies/policy1",
-            "previousDeviceNames": [
-                "enterprises/LC02kggfh1/devices/3b2767b18f9c4405",
-                "enterprises/LC02kggfh1/devices/37977ffdbc26f9db",
-                "enterprises/LC02kggfh1/devices/3cebbde468415aad",
-                "enterprises/LC02kggfh1/devices/37b0aa3d5905b0ad"
-            ],
-            "securityPosture": {
-                "devicePosture": "SECURE"
-            },
-            "softwareInfo": {
-                "androidBuildNumber": "MID_1089IPS_V01_20200626",
-                "androidBuildTime": "2020-06-26T03:37:31Z",
-                "androidDevicePolicyVersionCode": 1498020,
-                "androidDevicePolicyVersionName": "14.98.02.v39",
-                "androidVersion": "10",
-                "bootloaderVersion": "unknown",
-                "deviceBuildSignature": "7f5088d73143bfcadb55f55bcf77d98d8caa9b68dee882919e5497a7f5fb79d3",
-                "deviceKernelVersion": "4.9.170",
-                "primaryLanguageCode": "en-AU",
-                "securityPatchLevel": "2020-04-05",
-                "systemUpdateInfo": {
-                    "updateStatus": "UP_TO_DATE"
-                }
-            },
-            "state": "ACTIVE",
-            "userName": "enterprises/LC02kggfh1/users/113995995219147806057"
-        },
-        {
-            "apiLevel": 29,
-            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
-            "appliedPolicyVersion": "3",
-            "appliedState": "ACTIVE",
-            "enrollmentTime": "2021-04-16T05:14:45.570Z",
-            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/V2-ZNKOV9Usxm3D_ZJWpatzJDDDYqq0Hyp7QoC0YCMw",
-            "hardwareInfo": {
-                "brand": "Laser",
-                "hardware": "A50",
-                "manufacturer": "incar",
-                "model": "MID_1089IPS",
-                "serialNumber": "3c0014056441073248e"
-            },
-            "lastPolicySyncTime": "2021-04-16T05:14:49.658Z",
-            "lastStatusReportTime": "2021-04-16T05:15:12.875Z",
-            "managementMode": "DEVICE_OWNER",
-            "memoryInfo": {
-                "totalInternalStorage": "598638592",
-                "totalRam": "2093760512"
-            },
-            "name": "enterprises/LC02kggfh1/devices/37977ffdbc26f9db",
-            "nonComplianceDetails": [
-                {
-                    "installationFailureReason": "IN_PROGRESS",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.samples.apps.iosched",
-                    "settingName": "applications"
-                }
-            ],
-            "ownership": "COMPANY_OWNED",
-            "policyCompliant": true,
-            "policyName": "enterprises/LC02kggfh1/policies/policy1",
-            "previousDeviceNames": [
-                "enterprises/LC02kggfh1/devices/3b2767b18f9c4405"
-            ],
-            "securityPosture": {
-                "devicePosture": "SECURE"
-            },
-            "softwareInfo": {
-                "androidBuildNumber": "MID_1089IPS_V01_20200626",
-                "androidBuildTime": "2020-06-26T03:37:31Z",
-                "androidDevicePolicyVersionCode": 1475050,
-                "androidDevicePolicyVersionName": "14.75.05.v38",
-                "androidVersion": "10",
-                "bootloaderVersion": "unknown",
-                "deviceBuildSignature": "7f5088d73143bfcadb55f55bcf77d98d8caa9b68dee882919e5497a7f5fb79d3",
-                "deviceKernelVersion": "4.9.170",
-                "primaryLanguageCode": "en-AU",
-                "securityPatchLevel": "2020-04-05",
-                "systemUpdateInfo": {
-                    "updateStatus": "UP_TO_DATE"
-                }
-            },
-            "state": "ACTIVE",
-            "userName": "enterprises/LC02kggfh1/users/115005885146018486868"
-        },
-        {
-            "apiLevel": 29,
-            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
-            "appliedPolicyVersion": "7",
-            "appliedState": "ACTIVE",
-            "enrollmentTime": "2021-05-07T04:09:31.381Z",
-            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/RG50KIeoQN0S79KUPdyFQSF5mNHl4lialQ1e43Q8X5k",
+            "enrollmentTime": "2021-05-18T04:38:48.445Z",
+            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/7U0ogXnDrsfL2UxXJC4NCfNXLZlqDaSLuFQJNaXmurA",
             "hardwareInfo": {
                 "brand": "Lenovo",
                 "hardware": "qcom",
@@ -707,111 +1515,14 @@
                 "model": "Lenovo TB-X505F",
                 "serialNumber": "HGAL10T2"
             },
-            "lastPolicySyncTime": "2021-05-07T05:45:10.066Z",
-            "lastStatusReportTime": "2021-05-07T04:10:02.584Z",
+            "lastPolicySyncTime": "2021-05-18T04:38:51.358Z",
+            "lastStatusReportTime": "2021-05-18T04:40:01.061Z",
             "managementMode": "DEVICE_OWNER",
             "memoryInfo": {
                 "totalInternalStorage": "4160729088",
                 "totalRam": "1954582528"
             },
-            "name": "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
-            "ownership": "COMPANY_OWNED",
-            "policyCompliant": true,
-            "policyName": "enterprises/LC02kggfh1/policies/policy1",
-            "securityPosture": {
-                "devicePosture": "SECURE"
-            },
-            "softwareInfo": {
-                "androidBuildNumber": "TB-X505F_S001135_210304_ROW",
-                "androidBuildTime": "2021-03-04T10:31:52Z",
-                "androidDevicePolicyVersionCode": 1498020,
-                "androidDevicePolicyVersionName": "14.98.02.v39",
-                "androidVersion": "10",
-                "bootloaderVersion": "unknown",
-                "deviceBuildSignature": "1c41fedecacbe89b81c242ecf74929f7d57322b64f8179c1c78a390a3494f14a",
-                "deviceKernelVersion": "4.9.205-perf+",
-                "primaryLanguageCode": "en-AU",
-                "securityPatchLevel": "2021-03-05",
-                "systemUpdateInfo": {
-                    "updateStatus": "UP_TO_DATE"
-                }
-            },
-            "state": "ACTIVE",
-            "userName": "enterprises/LC02kggfh1/users/108302315928033868889"
-        },
-        {
-            "apiLevel": 29,
-            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
-            "appliedPolicyVersion": "6",
-            "appliedState": "ACTIVE",
-            "enrollmentTime": "2021-05-06T06:58:34.111Z",
-            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/sC4Cj1sfcZAZjmsam20tQpyQLjpnYqhMegai5C4o_JY",
-            "hardwareInfo": {
-                "brand": "Laser",
-                "hardware": "A50",
-                "manufacturer": "incar",
-                "model": "MID_1089IPS",
-                "serialNumber": "3c0014056441073248e"
-            },
-            "lastPolicySyncTime": "2021-05-06T08:08:35.824Z",
-            "lastStatusReportTime": "2021-05-06T08:08:50.426Z",
-            "managementMode": "DEVICE_OWNER",
-            "memoryInfo": {
-                "totalInternalStorage": "598638592",
-                "totalRam": "2093760512"
-            },
-            "name": "enterprises/LC02kggfh1/devices/37b0aa3d5905b0ad",
-            "ownership": "COMPANY_OWNED",
-            "policyCompliant": true,
-            "policyName": "enterprises/LC02kggfh1/policies/policy1",
-            "previousDeviceNames": [
-                "enterprises/LC02kggfh1/devices/3b2767b18f9c4405",
-                "enterprises/LC02kggfh1/devices/37977ffdbc26f9db",
-                "enterprises/LC02kggfh1/devices/3cebbde468415aad"
-            ],
-            "securityPosture": {
-                "devicePosture": "SECURE"
-            },
-            "softwareInfo": {
-                "androidBuildNumber": "MID_1089IPS_V01_20200626",
-                "androidBuildTime": "2020-06-26T03:37:31Z",
-                "androidDevicePolicyVersionCode": 1498020,
-                "androidDevicePolicyVersionName": "14.98.02.v39",
-                "androidVersion": "10",
-                "bootloaderVersion": "unknown",
-                "deviceBuildSignature": "7f5088d73143bfcadb55f55bcf77d98d8caa9b68dee882919e5497a7f5fb79d3",
-                "deviceKernelVersion": "4.9.170",
-                "primaryLanguageCode": "en-AU",
-                "securityPatchLevel": "2020-04-05",
-                "systemUpdateInfo": {
-                    "updateStatus": "UP_TO_DATE"
-                }
-            },
-            "state": "ACTIVE",
-            "userName": "enterprises/LC02kggfh1/users/116468258087083168685"
-        },
-        {
-            "apiLevel": 29,
-            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
-            "appliedPolicyVersion": "22",
-            "appliedState": "ACTIVE",
-            "enrollmentTime": "2021-05-14T06:04:06.404Z",
-            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/YlQVAmv1vwYqpvr76qwTgz71NDspuSUx0GcEor3yuhU",
-            "hardwareInfo": {
-                "brand": "Lenovo",
-                "hardware": "qcom",
-                "manufacturer": "LENOVO",
-                "model": "Lenovo TB-X505F",
-                "serialNumber": "HGAL10T2"
-            },
-            "lastPolicySyncTime": "2021-05-14T06:04:10.539Z",
-            "lastStatusReportTime": "2021-05-14T06:04:55.750Z",
-            "managementMode": "DEVICE_OWNER",
-            "memoryInfo": {
-                "totalInternalStorage": "4160729088",
-                "totalRam": "1954582528"
-            },
-            "name": "enterprises/LC02kggfh1/devices/39f5c698a64bed51",
+            "name": "enterprises/LC02kggfh1/devices/35712c2e9993bc57",
             "nonComplianceDetails": [
                 {
                     "nonComplianceReason": "INVALID_VALUE",
@@ -837,6 +1548,11 @@
                     "settingName": "applications"
                 },
                 {
+                    "nonComplianceReason": "APP_INSTALLED",
+                    "packageName": "com.google.android.googlequicksearchbox",
+                    "settingName": "applications"
+                },
+                {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
                     "packageName": "com.duckduckgo.mobile.android",
@@ -858,6 +1574,11 @@
                     "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
                     "packageName": "com.google.android.GoogleCamera",
+                    "settingName": "applications"
+                },
+                {
+                    "nonComplianceReason": "APP_INSTALLED",
+                    "packageName": "com.google.android.apps.photos",
                     "settingName": "applications"
                 },
                 {
@@ -1279,6 +2000,10 @@
                     "settingName": "advancedSecurityOverrides"
                 },
                 {
+                    "nonComplianceReason": "UNSUPPORTED",
+                    "settingName": "blockApplicationsEnabled"
+                },
+                {
                     "nonComplianceReason": "MANAGEMENT_MODE",
                     "settingName": "bluetoothContactSharingDisabled"
                 }
@@ -1288,7 +2013,8 @@
             "policyName": "enterprises/LC02kggfh1/policies/policy1",
             "previousDeviceNames": [
                 "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
-                "enterprises/LC02kggfh1/devices/348b1daeac68a70c"
+                "enterprises/LC02kggfh1/devices/348b1daeac68a70c",
+                "enterprises/LC02kggfh1/devices/39f5c698a64bed51"
             ],
             "securityPosture": {
                 "devicePosture": "SECURE"
@@ -1309,15 +2035,15 @@
                 }
             },
             "state": "ACTIVE",
-            "userName": "enterprises/LC02kggfh1/users/112236481876376365531"
+            "userName": "enterprises/LC02kggfh1/users/115119453348214713239"
         },
         {
             "apiLevel": 29,
             "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
-            "appliedPolicyVersion": "2",
+            "appliedPolicyVersion": "7",
             "appliedState": "ACTIVE",
-            "enrollmentTime": "2021-04-15T07:32:52.831Z",
-            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/__BpBsLHrbUCXKrsR-_9j6UJvk9hvswRB14KRTC98P0",
+            "enrollmentTime": "2021-05-06T08:48:52Z",
+            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/R6ZoCo9F1KkUrbImCIdC_EguGzzyRlLbuCdz-mAHVNE",
             "hardwareInfo": {
                 "brand": "Laser",
                 "hardware": "A50",
@@ -1325,93 +2051,22 @@
                 "model": "MID_1089IPS",
                 "serialNumber": "3c0014056441073248e"
             },
-            "lastPolicySyncTime": "2021-04-15T07:57:51.963Z",
-            "lastStatusReportTime": "2021-04-15T07:57:58.017Z",
+            "lastPolicySyncTime": "2021-05-06T08:48:55.976Z",
+            "lastStatusReportTime": "2021-05-06T08:49:45.890Z",
             "managementMode": "DEVICE_OWNER",
             "memoryInfo": {
                 "totalInternalStorage": "598638592",
                 "totalRam": "2093760512"
             },
-            "name": "enterprises/LC02kggfh1/devices/3b2767b18f9c4405",
-            "nonComplianceDetails": [
-                {
-                    "nonComplianceReason": "APP_INSTALLED",
-                    "packageName": "com.google.samples.apps.iosched",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "IN_PROGRESS",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "net.nullsum.freedoom",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "IN_PROGRESS",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.zoiper.android.app",
-                    "settingName": "applications"
-                }
-            ],
-            "ownership": "COMPANY_OWNED",
-            "policyCompliant": true,
-            "policyName": "enterprises/LC02kggfh1/policies/policy1",
-            "securityPosture": {
-                "devicePosture": "SECURE"
-            },
-            "softwareInfo": {
-                "androidBuildNumber": "MID_1089IPS_V01_20200626",
-                "androidBuildTime": "2020-06-26T03:37:31Z",
-                "androidDevicePolicyVersionCode": 1475050,
-                "androidDevicePolicyVersionName": "14.75.05.v38",
-                "androidVersion": "10",
-                "bootloaderVersion": "unknown",
-                "deviceBuildSignature": "7f5088d73143bfcadb55f55bcf77d98d8caa9b68dee882919e5497a7f5fb79d3",
-                "deviceKernelVersion": "4.9.170",
-                "primaryLanguageCode": "en-AU",
-                "securityPatchLevel": "2020-04-05",
-                "systemUpdateInfo": {
-                    "updateStatus": "UP_TO_DATE"
-                }
-            },
-            "state": "ACTIVE",
-            "userName": "enterprises/LC02kggfh1/users/100445345308133412203"
-        },
-        {
-            "apiLevel": 29,
-            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
-            "appliedPolicyVersion": "3",
-            "appliedState": "ACTIVE",
-            "enrollmentTime": "2021-04-20T05:53:47.962Z",
-            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/wnCAH6DAmu8VOHKwCZJoy1M56b-kC1L6g9sIkqDEntM",
-            "hardwareInfo": {
-                "brand": "Laser",
-                "hardware": "A50",
-                "manufacturer": "incar",
-                "model": "MID_1089IPS",
-                "serialNumber": "3c0014056441073248e"
-            },
-            "lastPolicySyncTime": "2021-04-20T05:53:51.677Z",
-            "lastStatusReportTime": "2021-04-20T05:54:12.249Z",
-            "managementMode": "DEVICE_OWNER",
-            "memoryInfo": {
-                "totalInternalStorage": "598638592",
-                "totalRam": "2093760512"
-            },
-            "name": "enterprises/LC02kggfh1/devices/3cebbde468415aad",
-            "nonComplianceDetails": [
-                {
-                    "installationFailureReason": "IN_PROGRESS",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.samples.apps.iosched",
-                    "settingName": "applications"
-                }
-            ],
+            "name": "enterprises/LC02kggfh1/devices/3715f85817a474fd",
             "ownership": "COMPANY_OWNED",
             "policyCompliant": true,
             "policyName": "enterprises/LC02kggfh1/policies/policy1",
             "previousDeviceNames": [
                 "enterprises/LC02kggfh1/devices/3b2767b18f9c4405",
-                "enterprises/LC02kggfh1/devices/37977ffdbc26f9db"
+                "enterprises/LC02kggfh1/devices/37977ffdbc26f9db",
+                "enterprises/LC02kggfh1/devices/3cebbde468415aad",
+                "enterprises/LC02kggfh1/devices/37b0aa3d5905b0ad"
             ],
             "securityPosture": {
                 "devicePosture": "SECURE"
@@ -1419,8 +2074,8 @@
             "softwareInfo": {
                 "androidBuildNumber": "MID_1089IPS_V01_20200626",
                 "androidBuildTime": "2020-06-26T03:37:31Z",
-                "androidDevicePolicyVersionCode": 1475050,
-                "androidDevicePolicyVersionName": "14.75.05.v38",
+                "androidDevicePolicyVersionCode": 1498020,
+                "androidDevicePolicyVersionName": "14.98.02.v39",
                 "androidVersion": "10",
                 "bootloaderVersion": "unknown",
                 "deviceBuildSignature": "7f5088d73143bfcadb55f55bcf77d98d8caa9b68dee882919e5497a7f5fb79d3",
@@ -1432,15 +2087,15 @@
                 }
             },
             "state": "ACTIVE",
-            "userName": "enterprises/LC02kggfh1/users/107803970853114305970"
+            "userName": "enterprises/LC02kggfh1/users/113995995219147806057"
         },
         {
             "apiLevel": 29,
             "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
-            "appliedPolicyVersion": "17",
+            "appliedPolicyVersion": "23",
             "appliedState": "ACTIVE",
-            "enrollmentTime": "2021-05-13T04:53:43.387Z",
-            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/q2K31_rRC-pNqUxxOeod9HK3DZ_TwX3q1nTtCIvmFAM",
+            "enrollmentTime": "2021-05-18T04:38:58.916Z",
+            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/7U0ogXnDrsfL2UxXJC4NCfNXLZlqDaSLuFQJNaXmurA",
             "hardwareInfo": {
                 "brand": "Laser",
                 "hardware": "A50",
@@ -1448,37 +2103,24 @@
                 "model": "MID_1089IPS",
                 "serialNumber": "3c0014056441073248e"
             },
-            "lastPolicySyncTime": "2021-05-13T04:53:48.881Z",
-            "lastStatusReportTime": "2021-05-13T04:55:24.563Z",
+            "lastPolicySyncTime": "2021-05-18T04:39:03.451Z",
+            "lastStatusReportTime": "2021-05-18T04:41:39.135Z",
             "managementMode": "DEVICE_OWNER",
             "memoryInfo": {
                 "totalInternalStorage": "598638592",
                 "totalRam": "2093760512"
             },
-            "name": "enterprises/LC02kggfh1/devices/3e1ca1926e8ddfa7",
+            "name": "enterprises/LC02kggfh1/devices/375182d5f613ed58",
             "nonComplianceDetails": [
                 {
-                    "installationFailureReason": "NOT_APPROVED",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "org.mozilla.rocket",
+                    "nonComplianceReason": "INVALID_VALUE",
+                    "packageName": "com.android.launcher3",
                     "settingName": "applications"
                 },
                 {
-                    "installationFailureReason": "NOT_APPROVED",
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "org.mozilla.firefox",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "NOT_APPROVED",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "org.mozilla.focus",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "NOT_APPROVED",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.microsoft.emmx",
+                    "packageName": "com.google.android.apps.nexuslauncher",
                     "settingName": "applications"
                 },
                 {
@@ -1488,54 +2130,32 @@
                     "settingName": "applications"
                 },
                 {
-                    "nonComplianceReason": "INVALID_VALUE",
-                    "packageName": "com.android.egg",
-                    "settingName": "applications"
-                },
-                {
-                    "nonComplianceReason": "INVALID_VALUE",
-                    "packageName": "com.android.launcher3",
-                    "settingName": "applications"
-                },
-                {
-                    "nonComplianceReason": "INVALID_VALUE",
-                    "packageName": "com.android.traceur",
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.calculator",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.apps.googleassistant",
+                    "packageName": "com.duckduckgo.mobile.android",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.apps.mapslite",
+                    "packageName": "com.simplemobiletools.calendar",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.apps.navlite",
+                    "packageName": "amirz.musicfx.material",
                     "settingName": "applications"
                 },
                 {
-                    "installationFailureReason": "IN_PROGRESS",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.apps.translate",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "IN_PROGRESS",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.apps.youtube.kids",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "IN_PROGRESS",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.contacts",
+                    "nonComplianceReason": "APP_INSTALLED",
+                    "packageName": "com.android.camera2",
                     "settingName": "applications"
                 },
                 {
@@ -1545,15 +2165,26 @@
                     "settingName": "applications"
                 },
                 {
-                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.apps.podcasts",
+                    "nonComplianceReason": "APP_INSTALLED",
+                    "packageName": "com.google.android.apps.photos",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.calculator",
+                    "packageName": "com.google.android.apps.photosgo",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "net.osmand",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.mapslite",
                     "settingName": "applications"
                 },
                 {
@@ -1571,55 +2202,235 @@
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.niksoftware.snapseed",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.apps.messaging",
+                    "packageName": "com.collabora.libreoffice",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.apps.photosgo",
+                    "packageName": "com.emmanuelmess.tictactoe",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.android.googlequicksearchbox",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.google.tango.measure",
+                    "packageName": "org.andstatus.game2048",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.simplemobiletools.applauncher",
+                    "packageName": "org.secuso.privacyfriendly2048",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.simplemobiletools.calculator",
+                    "packageName": "dev.lucanlm.antimine",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.simplemobiletools.calendar",
+                    "packageName": "org.secuso.privacyfriendlyminesweeper",
                     "settingName": "applications"
                 },
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.simplemobiletools.camera",
+                    "packageName": "org.secuso.privacyfriendlysudoku",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.agateau.tinywheels.android",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "app.crossword.yourealwaysbe.forkyz",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "de.sudoq",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.serwylo.beatgame",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.moire.opensudoku",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.eehouse.android.xw4",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.dozingcatsoftware.bouncy",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.billthefarmer.crossword",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "net.nullsum.freedoom",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.jeffliu.balancetheball",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.supertuxkart.stk",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "net.minetest.minetest",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.gitlab.ardash.appleflinger.android",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlydame",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlysolitaire",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "jwtc.android.chess",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "it.alessandropira.wesnoth114",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.roguetemple.hyperroid",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "pro.rudloff.papercraft",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "de.tobiasbielefeld.brickgames",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.jfedor.frozenbubble",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.traffar.oware",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.duolingo",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "net.gcompris.full",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.rechnen.app",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.sanskritbasics",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.sanskritbasics.memory",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "de.moekadu.tuner",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.ichi2.anki",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.LAPARCELA.nihonoari",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "info.puzz.a10000sentences",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_FOUND",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.quaap.primary",
                     "settingName": "applications"
                 },
                 {
@@ -1661,12 +2472,6 @@
                 {
                     "installationFailureReason": "IN_PROGRESS",
                     "nonComplianceReason": "APP_NOT_INSTALLED",
-                    "packageName": "com.simplemobiletools.gallery",
-                    "settingName": "applications"
-                },
-                {
-                    "installationFailureReason": "IN_PROGRESS",
-                    "nonComplianceReason": "APP_NOT_INSTALLED",
                     "packageName": "com.simplemobiletools.musicplayer",
                     "settingName": "applications"
                 },
@@ -1689,9 +2494,102 @@
                     "settingName": "applications"
                 },
                 {
+                    "nonComplianceReason": "INVALID_VALUE",
+                    "packageName": "com.android.traceur",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyrulerapp",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlybackup",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.aktivpause",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlysketching",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyfoodtracker",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlyfinancemanager",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "org.secuso.privacyfriendlypausinghealthily",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.googleassistant",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.translate",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.youtube.kids",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.contacts",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.podcasts",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.android.apps.messaging",
+                    "settingName": "applications"
+                },
+                {
+                    "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.tango.measure",
+                    "settingName": "applications"
+                },
+                {
                     "fieldPath": "advancedSecurityOverrides.commonCriteriaMode",
                     "nonComplianceReason": "API_LEVEL",
                     "settingName": "advancedSecurityOverrides"
+                },
+                {
+                    "nonComplianceReason": "UNSUPPORTED",
+                    "settingName": "blockApplicationsEnabled"
                 },
                 {
                     "nonComplianceReason": "MANAGEMENT_MODE",
@@ -1708,7 +2606,8 @@
                 "enterprises/LC02kggfh1/devices/37b0aa3d5905b0ad",
                 "enterprises/LC02kggfh1/devices/3715f85817a474fd",
                 "enterprises/LC02kggfh1/devices/3f79c67b5fb46dce",
-                "enterprises/LC02kggfh1/devices/35132f656b47c34f"
+                "enterprises/LC02kggfh1/devices/35132f656b47c34f",
+                "enterprises/LC02kggfh1/devices/3e1ca1926e8ddfa7"
             ],
             "securityPosture": {
                 "devicePosture": "SECURE"
@@ -1729,8 +2628,111 @@
                 }
             },
             "state": "ACTIVE",
-            "userName": "enterprises/LC02kggfh1/users/117021890898272086590"
+            "userName": "enterprises/LC02kggfh1/users/114267616744118929146"
+        },
+        {
+            "apiLevel": 29,
+            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
+            "appliedPolicyVersion": "3",
+            "appliedState": "ACTIVE",
+            "enrollmentTime": "2021-04-16T05:14:45.570Z",
+            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/V2-ZNKOV9Usxm3D_ZJWpatzJDDDYqq0Hyp7QoC0YCMw",
+            "hardwareInfo": {
+                "brand": "Laser",
+                "hardware": "A50",
+                "manufacturer": "incar",
+                "model": "MID_1089IPS",
+                "serialNumber": "3c0014056441073248e"
+            },
+            "lastPolicySyncTime": "2021-04-16T05:14:49.658Z",
+            "lastStatusReportTime": "2021-04-16T05:15:12.875Z",
+            "managementMode": "DEVICE_OWNER",
+            "memoryInfo": {
+                "totalInternalStorage": "598638592",
+                "totalRam": "2093760512"
+            },
+            "name": "enterprises/LC02kggfh1/devices/37977ffdbc26f9db",
+            "nonComplianceDetails": [
+                {
+                    "installationFailureReason": "IN_PROGRESS",
+                    "nonComplianceReason": "APP_NOT_INSTALLED",
+                    "packageName": "com.google.samples.apps.iosched",
+                    "settingName": "applications"
+                }
+            ],
+            "ownership": "COMPANY_OWNED",
+            "policyCompliant": true,
+            "policyName": "enterprises/LC02kggfh1/policies/policy1",
+            "previousDeviceNames": [
+                "enterprises/LC02kggfh1/devices/3b2767b18f9c4405"
+            ],
+            "securityPosture": {
+                "devicePosture": "SECURE"
+            },
+            "softwareInfo": {
+                "androidBuildNumber": "MID_1089IPS_V01_20200626",
+                "androidBuildTime": "2020-06-26T03:37:31Z",
+                "androidDevicePolicyVersionCode": 1475050,
+                "androidDevicePolicyVersionName": "14.75.05.v38",
+                "androidVersion": "10",
+                "bootloaderVersion": "unknown",
+                "deviceBuildSignature": "7f5088d73143bfcadb55f55bcf77d98d8caa9b68dee882919e5497a7f5fb79d3",
+                "deviceKernelVersion": "4.9.170",
+                "primaryLanguageCode": "en-AU",
+                "securityPatchLevel": "2020-04-05",
+                "systemUpdateInfo": {
+                    "updateStatus": "UP_TO_DATE"
+                }
+            },
+            "state": "ACTIVE",
+            "userName": "enterprises/LC02kggfh1/users/115005885146018486868"
+        },
+        {
+            "apiLevel": 29,
+            "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
+            "appliedPolicyVersion": "7",
+            "appliedState": "ACTIVE",
+            "enrollmentTime": "2021-05-07T04:09:31.381Z",
+            "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/RG50KIeoQN0S79KUPdyFQSF5mNHl4lialQ1e43Q8X5k",
+            "hardwareInfo": {
+                "brand": "Lenovo",
+                "hardware": "qcom",
+                "manufacturer": "LENOVO",
+                "model": "Lenovo TB-X505F",
+                "serialNumber": "HGAL10T2"
+            },
+            "lastPolicySyncTime": "2021-05-07T05:45:10.066Z",
+            "lastStatusReportTime": "2021-05-07T04:10:02.584Z",
+            "managementMode": "DEVICE_OWNER",
+            "memoryInfo": {
+                "totalInternalStorage": "4160729088",
+                "totalRam": "1954582528"
+            },
+            "name": "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
+            "ownership": "COMPANY_OWNED",
+            "policyCompliant": true,
+            "policyName": "enterprises/LC02kggfh1/policies/policy1",
+            "securityPosture": {
+                "devicePosture": "SECURE"
+            },
+            "softwareInfo": {
+                "androidBuildNumber": "TB-X505F_S001135_210304_ROW",
+                "androidBuildTime": "2021-03-04T10:31:52Z",
+                "androidDevicePolicyVersionCode": 1498020,
+                "androidDevicePolicyVersionName": "14.98.02.v39",
+                "androidVersion": "10",
+                "bootloaderVersion": "unknown",
+                "deviceBuildSignature": "1c41fedecacbe89b81c242ecf74929f7d57322b64f8179c1c78a390a3494f14a",
+                "deviceKernelVersion": "4.9.205-perf+",
+                "primaryLanguageCode": "en-AU",
+                "securityPatchLevel": "2021-03-05",
+                "systemUpdateInfo": {
+                    "updateStatus": "UP_TO_DATE"
+                }
+            },
+            "state": "ACTIVE",
+            "userName": "enterprises/LC02kggfh1/users/108302315928033868889"
         }
     ],
-    "nextPageToken": "ChAzZTFjYTE5MjZlOGRkZmE3"
+    "nextPageToken": "ChAzN2E2YzcwZDZlNTRiODZi"
 }

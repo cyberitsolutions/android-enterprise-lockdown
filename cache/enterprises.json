@@ -1,1 +1,8 @@
-"API call failed... due to \"not generally available yet\"???"
+{
+    "enterprises": [
+        {
+            "enterpriseDisplayName": "Frobozz",
+            "name": "enterprises/LC02kggfh1"
+        }
+    ]
+}
