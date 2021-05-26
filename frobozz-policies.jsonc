@@ -48,7 +48,13 @@
                 // ============================================================
                 // Web Browser
                 // ============================================================
-                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome"},  // Chrome -- REQUESTS gmail account
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",  // Chrome -- REQUESTS gmail account
+                 "managedConfiguration": {
+                     // FIXME: experimental test app lockdown.
+                     "HomepageLocation": "https://example.com/",
+                     "PrintingEnabled": false
+                     }
+                 },
                 {"installType": "BLOCKED", "packageName": "org.mozilla.rocket"},  // Firefox Lite (browser)
                 {"installType": "BLOCKED", "packageName": "org.mozilla.firefox"},  // Firefox (browser)
                 {"installType": "BLOCKED", "packageName": "org.mozilla.focus"},  // Firefox Focus (browser)
