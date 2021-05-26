@@ -283,6 +283,29 @@ with open('cache/webApps.json', mode='w') as f:
         f,
         sort_keys=True,
         indent=4)
+# cached/managedProperties/com.android.chrome.json is the equivalent of
+# https://www.chromium.org/administrators/policy-list-3
+os.makedirs('cache/managedProperties', exist_ok=True)
+for packageName in sorted(set(
+        application['packageName']
+        for policy in json_config_object['policies'].values()
+        for application in policy['applications'])):
+    try:
+        managedProperties = androidmanagement.enterprises().applications().get(
+            name=f'{json_config_object["enterprise_name"]}/applications/{packageName}'
+        ).execute().get('managedProperties', None)
+        with open(f'cache/managedProperties/{packageName}.json', mode='w') as f:
+            json.dump(
+                managedProperties,
+                f,
+                sort_keys=True,
+                indent=4)
+    except googleapiclient.errors.HttpError as e:
+        if e.resp.status == 404:
+            logging.debug('App %s not in Play Store -- probably from F-Droid', packageName)
+        else:
+            raise
+
 
 ######################################################################
 ## Provision a device
