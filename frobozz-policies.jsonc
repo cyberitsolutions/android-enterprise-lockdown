@@ -277,13 +277,13 @@
                 {"installType": "FORCE_INSTALLED", "packageName": "net.nullsum.freedoom"},            // DOOM (crashed a couple times trying to start it, BUT played OK once I got past that)
                 {"installType": "BLOCKED", "packageName": "com.jeffliu.balancetheball"},  // Broken?  I couldn't get this game to "play"
                 {"installType": "FORCE_INSTALLED", "packageName": "org.supertuxkart.stk"},
-                {"installType": "FORCE_INSTALLED", "packageName": "net.minetest.minetest"},
+                {"installType": "BLOCKED", "packageName": "net.minetest.minetest"},  // more-or-less works, but really not fun on a touchscreen without a gamepad
                 {"installType": "FORCE_INSTALLED", "packageName": "com.gitlab.ardash.appleflinger.android"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlydame"},  // Checkers
                 {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlysolitaire"},  // works, but REALLY ugly jaggie images
                 {"installType": "FORCE_INSTALLED", "packageName": "jwtc.android.chess"},
                 {"installType": "BLOCKED", "packageName": "it.alessandropira.wesnoth114"},  // NEEDS INTERNET -- DOWNLOADS 100MB to 500MB **AFTER** GAME STARTS!!  The touchscreen moves around a separate virtual mouse pointer -- VERY PAINFUL!
-                {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},  // HyperRogue -- GREAT! works really well on touchscreen.
                 {"installType": "FORCE_INSTALLED", "packageName": "pro.rudloff.papercraft"},
                 {"installType": "FORCE_INSTALLED", "packageName": "de.tobiasbielefeld.brickgames"},   // tetris?
                 {"installType": "FORCE_INSTALLED", "packageName": "org.jfedor.frozenbubble"},
@@ -293,8 +293,8 @@
                 // Education
                 // ============================================================
                 {"installType": "BLOCKED", "packageName": "com.microsoft.chineselearning"},  // (education?) (needs internet, needs account)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.duolingo"},  // DuoLingo (language education) (needs internet???), has some ads.  Otherwise VERY good.
-                {"installType": "FORCE_INSTALLED", "packageName": "net.gcompris.full"},  // GCompris (early learning); WANTS INTERNET
+                {"installType": "AVAILABLE", "packageName": "com.duolingo"},  // DuoLingo (language education) (needs internet???), has some ads.  Otherwise VERY good.
+                {"installType": "AVAILABLE", "packageName": "net.gcompris.full"},  // GCompris (early learning); WANTS INTERNET; (FIXME: not FORCE_INSTALLED because huge ~500MB)
                 {"installType": "FORCE_INSTALLED", "packageName": "com.rechnen.app"},  // Calculate, math training
                 {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics.memory"},
