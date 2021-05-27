@@ -58,7 +58,7 @@
                 {"installType": "BLOCKED", "packageName": "org.mozilla.rocket"},  // Firefox Lite (browser)
                 {"installType": "BLOCKED", "packageName": "org.mozilla.firefox"},  // Firefox (browser)
                 {"installType": "BLOCKED", "packageName": "org.mozilla.focus"},  // Firefox Focus (browser)
-                {"installType": "BLOCKED", "packageName": "com.microsoft.emmx"},  // Edge (browser)
+                {"installType": "BLOCKED", "packageName": "com.microsoft.emmx"},  // Edge (browser)  (NOTE: supports managedConfiguration)
 
                 // ============================================================
                 // Launcher (Home App)
@@ -109,7 +109,26 @@
                 {"installType": "BLOCKED", "packageName": "org.zimmob.zimlx"},  // in F-Droid but not Play Store.
                 {"installType": "BLOCKED", "packageName": "posidon.launcher"},  // TOO complicated
                 {"installType": "BLOCKED", "packageName": "rocks.tbog.tblauncher"},  // not reviewed
-                {"installType": "BLOCKED", "packageName": "com.microsoft.launcher"},  // Microsoft Launcher (home) --- heavyweight -- interesting iff you run a lot of MS apps (Skype, SharePoint, &c)
+                {"installType": "BLOCKED", "packageName": "com.microsoft.launcher",  // Microsoft Launcher (home) --- heavyweight -- interesting iff you run a lot of MS apps (Skype, SharePoint, &c)
+                 "managedConfiguration": {
+                     // "management_mode_key": "???",
+                     "com.microsoft.launcher.Wallpaper.Url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri.jpg",
+                     "com.microsoft.launcher.Wallpaper.Url.UserChangeAllowed": false,
+                     "com.microsoft.launcher.Feed.Enable": false,
+                     "com.microsoft.launcher.Feed.Enable.UserChangeAllowed": false,
+                     // "com.microsoft.launcher.HomeScreen.GridSize": "4x6",  // is this correct format?
+                     // "com.microsoft.launcher.HomeScreen.Applications": [{"package": "com.android.chrome", }], // ???
+                     // "com.microsoft.launcher.HomeScreen.AppOrder": [???],
+                     "com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed": false,
+                     // "com.microsoft.launcher.Folder.Style": {???},
+                     "com.microsoft.launcher.Folder.Style.UserChangeAllowed": false,
+                     // These are identical to webApps except THESE don't have to be created as separate objects in play.google.com/work
+                     // "com.microsoft.launcher.HomeScreen.WebLinks": XXX,
+                     "com.microsoft.launcher.Dock.Mode": "Show",
+                     "com.microsoft.launcher.Dock.Mode.UserChangeAllowed": false,
+                     "com.microsoft.launcher.Search.SearchBar.Placement": "Hidden",  // don't show com.google.android.googlequicksearchbox widget
+                     "com.microsoft.launcher.Search.SearchBar.Placement.UserChangeAllowed": false}
+                 },
                 {"installType": "BLOCKED", "packageName": "com.real.launcher.wp.ten"},  // **NOT** Microsoft Launcher (home) --- NOT FREE SOFTWARE, has ads, probably bitcoin miner -- ALSO this does NOT behave like Windows Phone, but more like Windows desktop!!! YUUUUK
 
 
@@ -212,11 +231,25 @@
                 // ============================================================
                 // Office Suite
                 // ============================================================
-                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs"},  // Gmail account REQUIRED
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.docs"},  // Gmail account REQUIRED
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.sheets"},  // Gmail account REQUIRED
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.docs.editors.slides"},  // Gmail account REQUIRED
+                // If you install docs.editors.docs, you can "list recent files", but long-press "New doc" doesn't work.
+                // The actual editor for all three lives in com.google.android.apps.docs.
+                // We have to install the other three to force accountlessmode????
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.docs",
+                 "managedConfiguration": {
+                     "PrintingEnabled": true,
+                     "enableAccountLessMode": true}  // run on devices without Google accounts
+                },
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.sheets",
+                 "managedConfiguration": {
+                     "PrintingEnabled": true,
+                     "enableAccountLessMode": true}  // run on devices without Google accounts
+                },
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.slides",
+                 "managedConfiguration": {
+                     "PrintingEnabled": true,
+                     "enableAccountLessMode": true}  // run on devices without Google accounts
+                },
                 // Can we at least install a short-term office suite locally?
                 // I think the LONG TERM goal is that we run a browser-based office suite on an in-house VM.
                 {"installType": "FORCE_INSTALLED", "packageName": "com.collabora.libreoffice"},  // works fine.  They've tried to make LibreOffice into a touchscreen app, with moderate success.
@@ -463,7 +496,7 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ue.device"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.longcheertel.midtest"},
                 {"installType": "BLOCKED", "packageName": "com.microsoft.bing.wallpapers"},  // installed by default on Lenovo M1 gen1
-                {"installType": "BLOCKED", "packageName": "com.microsoft.office.outlook"},  // installed by default on Lenovo M1 gen1
+                {"installType": "BLOCKED", "packageName": "com.microsoft.office.outlook"},  // installed by default on Lenovo M1 gen1  (NOTE: supports managedConfiguration)
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.motorola.demo"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.confuridialer"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.dpmserviceapp"},
