@@ -862,9 +862,24 @@
             "appAutoUpdatePolicy": "ALWAYS",  // user can't disable auto-updates
             "autoTimeRequired": true,        // ignored if autoDateAndTimeZone is set
 
-            "deviceOwnerLockScreenInfo": {"defaultMessage": "By logging in, YOU AGREE to the following policy.\n\nAccess to the Prisoner Interactive Learning System is a privilege.\n\nAbuse may result in temporary or permanent loss of use.\nAbuse includes, but is not limited to, attempts to\n • disclose your password to another user;\n • grant another user access to your account;\n • access another user's account;\n • communicate with another inmate;\n • use unauthorised media (inc. CD, DVD & USB);\n • install or modify software; and\n • modify system settings.\n\nAll use, including email correspondence, may be\n • archived indefinitely;\n • reviewed by automated systems;\n • reviewed by staff;\n • reviewed by external agencies for the purposes of\n • investigating suspected criminal/unlawful activity.\n\nAll logs, records and archives may be used as evidence in court."},  // The device owner information to be shown on the lock screen.  --- This shows on the lock screen; end user CANNOT change it.
-            "shortSupportMessage":       {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>StartlingAerosolPoppyChunkPolicyWildfowl</small>)"},  // A message displayed to the user in the settings screen wherever functionality has been disabled by the admin. If the message is longer than 200 characters it may be truncated. ---- UPDATE: this line appears as the "body" of a popup when you try to remove a FORCE_INSTALLED app.
-            "longSupportMessage":        {"defaultMessage": "My cool <strong>PrisonPC</strong> message (<small>BackedUnstitchDeployMoonriseDangerMaybe</small>)"},  // A message displayed to the user in the device administators settings screen.  --- This appears under Settings > Security > Device admin info > Device Policyx
+            "deviceOwnerLockScreenInfo": {
+                // The device owner information to be shown on the lock screen.
+                // This shows on the lock screen; end user CANNOT change it.
+                // It scrolls in a marquee, but you can only read about 100 letters before the screen blanks.
+                "defaultMessage":
+                "By logging in, YOU AGREE to the Acceptable Use Policy."},
+            "shortSupportMessage": {
+                "defaultMessage":
+                // A message displayed to the user in the settings screen wherever functionality has been disabled by the admin.
+                // If the message is longer than 200 characters it may be truncated.
+                // UPDATE: this line appears as the "body" of a popup when you try to remove a FORCE_INSTALLED app.
+                "By logging in, YOU AGREE to the Acceptable Use Policy."},
+            "longSupportMessage": {
+                "defaultMessage":
+                // A message displayed to the user in the device administators settings screen.
+                // This appears under Settings > Security > Device admin info > Device Policy;
+                // This also appears if you click "Learn Mode" in the previous line's popup.
+                "By logging in, YOU AGREE to the following policy Acceptable Use Policy.\n\nAccess to the Prisoner Interactive Learning System is a privilege.\n\nAbuse may result in temporary or permanent loss of use.\nAbuse includes, but is not limited to, attempts to\n • disclose your password to another user;\n • grant another user access to your account;\n • access another user's account;\n • communicate with another inmate;\n • use unauthorised media (inc. CD, DVD & USB);\n • install or modify software; and\n • modify system settings.\n\nAll use, including email correspondence, may be\n • archived indefinitely;\n • reviewed by automated systems;\n • reviewed by staff;\n • reviewed by external agencies for the purposes of\n • investigating suspected criminal/unlawful activity.\n\nAll logs, records and archives may be used as evidence in court."},
 
 
 
