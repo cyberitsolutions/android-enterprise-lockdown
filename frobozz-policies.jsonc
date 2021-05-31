@@ -893,6 +893,23 @@
             "encryptionPolicy": "ENCRYPTION_POLICY_UNSPECIFIED",
 
 
+            // If you enroll the device immediately after factory
+            // reset, at the blue-background-yellow-button screen, I
+            // think this setting has NO EFFECT WHATSOEVER.
+            // I think this only applies to mixed personal-plus-work devices,
+            // which have personal user "user" and work user "work".
+            // You do that by taking a normal device and manually installing Device Policy, then
+            // opening Device Policy app and scanning the QR code.
+            // This SHOULDN'T ever be possible, but just for paranoia's sake,
+            // I'm setting all the settings to their most paranoid values.
+            // --twb, May 2021
+            "personalUsagePolicies": {
+                // "accountTypesWithManagementDisabled": [???],  // FIXME
+                "cameraDisabled": true,
+                "maxDaysWithWorkOff": 3,  // How long the work profile can stay off [... minimum] 3 days.
+                "personalApplications": [],  // no apps/packages are whitelisted.
+                "personalPlayStoreMode": "ALLOWLIST",  // Only apps set to AVAILABLE in personalApplications may be installed in the personal profile.
+                "screenCaptureDisabled": true},
 
             // WARNING: DO NOT SET THIS TO false WITHOUT A BLOODY GOOD REASON.
             // SETTING THIS TO FALSE MAKES IT POSSIBLE TO BRICK A TABLET.
