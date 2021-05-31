@@ -398,7 +398,7 @@
                 {"installType": "FORCE_INSTALLED", "packageName": "com.rechnen.app"},  // Calculate, math training
                 {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics.memory"},
-                {"installType": "FORCE_INSTALLED", "packageName": "de.moekadu.tuner"},
+                {"installType": "AVAILABLE", "packageName": "de.moekadu.tuner"},  // NOTE: microphone currently blocked in policy, so can't test it
                 {"installType": "AVAILABLE", "packageName": "com.ichi2.anki"},  // Flash card app, mostly for vocab memorization.  Wants you to log into a website (ankiweb) to access existing cards??
                 {"installType": "FORCE_INSTALLED", "packageName": "com.LAPARCELA.nihonoari"},
                 {"installType": "AVAILABLE", "packageName": "info.puzz.a10000sentences"},  // WARNING: needs internet access to download flash cards; otherwise seems OK
@@ -811,6 +811,7 @@
             //
             // FIXME: revisit this when SIP voice/video chat.
             // FIXME: microphone is useful for language learning (duolingo).
+            // FIXME: microphone is for guitar/piano tuner app?
             "cameraDisabled": false,
             "unmuteMicrophoneDisabled": true,
 
