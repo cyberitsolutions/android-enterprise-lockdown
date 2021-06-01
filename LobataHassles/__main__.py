@@ -214,18 +214,23 @@ old_webApps = androidmanagement.enterprises().webApps().list(
 for new_webApp in json_config_object['webApps']:
     # We assume the startUrl (not title) is unique.
     try:
-        # import pprint
-        # pprint.pprint(old_webApps)
-        name, = {
-            old_webApp['name']
+        old_webApp, = [
+            old_webApp
             for old_webApp in old_webApps
-            if old_webApp['startUrl'] == new_webApp['startUrl']}
-        # Exists, so patch.
+            if old_webApp['startUrl'] == new_webApp['startUrl']]
+        # UGHHHHH, if we send a noop patch, the webapp version jumps, and play store pushes a "new" 50kB apk to every device.
+        # Therefore if old_webApp == new_webApp, do nothing.
+        # Except that old_webApp has some auto-populated fields, so
+        # only compare startUrl/title/displayMode.
+        if all(old_webApp[k] == new_webApp[k] for k in new_webApp):
+            logging.debug('Exists and unchanged, so call nothing')
+            continue
+        logging.debug('Exists, so call patch()')
         androidmanagement.enterprises().webApps().patch(
-            name=name,
+            name=old_webApp['name'],
             body=new_webApp).execute()
     except ValueError:
-        # Doesn't exist, so create.
+        logging.debug("Doesn't exist, so call create()")
         androidmanagement.enterprises().webApps().create(
             parent=json_config_object['enterprise_name'],
             body=new_webApp).execute()
