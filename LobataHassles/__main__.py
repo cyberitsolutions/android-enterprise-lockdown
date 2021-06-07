@@ -242,33 +242,6 @@ for new_webApp in json_config_object['webApps']:
 ############################################################
 ## Delete historical devices from the device list.
 ############################################################
-# FIXME: OH FUCK ME, as well as "devices" there is a "nextPageToken".
-#        Does that mean the return data is paginated and
-#        I need to do multiple queries until I get no more "nextPageToken"???
-
-        # androidmanagement.enterprises().webApps().list(
-        #     parent=json_config_object['enterprise_name']).execute(),
-
-
-
-
-######################################################################
-## Do some queries
-######################################################################
-# Save to disk some notes about the current state, so
-# it can be poked around at later with jq(1).
-os.makedirs('cache', exist_ok=True)
-with open('cache/API-androidmanagement-v1.json', mode='w') as f:
-    resp = requests.get('https://androidmanagement.googleapis.com/$discovery/rest?version=v1')
-    resp.raise_for_status()
-    json.dump(
-        resp.json(),
-        f,
-        sort_keys=True,
-        indent=4)
-    del resp
-
-
 def pages(
         resource: googleapiclient.discovery.Resource,  # e.g. androidmanagement.enterprises().devices()
         *args,
@@ -302,6 +275,42 @@ def merged_pages(
                 raise RuntimeError('Unexpected key', {k: page[k]})
         for record in page[response_key]:
             yield record
+
+for device in merged_pages(
+        # our arguments
+        resource=androidmanagement.enterprises().devices(),
+        response_key='devices',
+        # google's arguments
+        parent=json_config_object['enterprise_name']):
+    for name in device['previousDeviceNames']:
+        try:
+            androidmanagement.enterprises().devices().delete(
+                name=name).execute()
+        except googleapiclient.errors.HttpError as e:
+            if e.resp.status == 404:
+                logging.debug('PROBABLY "Device is no longer being managed" -- FIXME, check for that string explicitly')
+            else:
+                raise
+
+
+
+
+
+######################################################################
+## Do some queries
+######################################################################
+# Save to disk some notes about the current state, so
+# it can be poked around at later with jq(1).
+os.makedirs('cache', exist_ok=True)
+with open('cache/API-androidmanagement-v1.json', mode='w') as f:
+    resp = requests.get('https://androidmanagement.googleapis.com/$discovery/rest?version=v1')
+    resp.raise_for_status()
+    json.dump(
+        resp.json(),
+        f,
+        sort_keys=True,
+        indent=4)
+    del resp
 
 
 def my_json_dump(obj):
