@@ -239,6 +239,19 @@ for new_webApp in json_config_object['webApps']:
             body=new_webApp).execute()
 
 
+############################################################
+## Delete historical devices from the device list.
+############################################################
+# FIXME: OH FUCK ME, as well as "devices" there is a "nextPageToken".
+#        Does that mean the return data is paginated and
+#        I need to do multiple queries until I get no more "nextPageToken"???
+
+        # androidmanagement.enterprises().webApps().list(
+        #     parent=json_config_object['enterprise_name']).execute(),
+
+
+
+
 ######################################################################
 ## Do some queries
 ######################################################################
@@ -254,6 +267,130 @@ with open('cache/API-androidmanagement-v1.json', mode='w') as f:
         sort_keys=True,
         indent=4)
     del resp
+
+
+def f(n):
+    "test to prove I understand how iterators work in python"
+    for i in range(n):
+        yield i
+    if n > 1:                   # simulate "there is another page"
+        yield from f(n//2)      # simulate tail call
+
+
+assert len(list(f(32))) == 63, "Trent groks yield?"
+del f
+
+
+
+def iterable_google_list(list_fn=androidmanagement.enterprises().devices().list,
+                         record_key='devices',  # FIXME: infer this from list_fn
+                         *args,
+                         **kwargs):
+    "Workaround large REST responses being paginated, and the API not handling it for me."
+    resp = list_fn(*args, **kwargs).execute()
+    for k in resp.keys():
+        if k not in {'nextPageToken', record_key}:
+            raise RuntimeError('Unexpected key in response', {k: resp[k]})
+    for record in resp[record_key]:
+        yield record
+    if 'nextPageToken' in resp:
+        logging.debug('Response was paginated, fetching next page')
+        kwargs['pageToken'] = resp['nextPageToken']
+        iterable_google_list(
+            list_fn=list_fn,
+            record_key=record_key,
+            *args,
+            **kwargs)
+
+
+# UPDATE: oh from print(dir(...)) I found there's a list_next method.
+# Let's try using that to simplify my code.
+
+n = 0                           # DEBUGGING
+
+request = androidmanagement.enterprises().devices().list(
+    parent=json_config_object['enterprise_name'])
+response = request.execute()
+while True:
+    n += 1                      # DEBUGGING
+    logging.debug('ITERATION %s', n)  # DEBUGGING
+    request = androidmanagement.enterprises().devices().list_next(
+        previous_request=request,
+        previous_response=response)
+    if request is None:
+        logging.debug('STOP ITERATION %s', n)  # DEBUGGING
+        break
+    else:
+        response = request.execute()
+
+
+def pages(
+        resource: googleapiclient.discovery.Resource,  # e.g. androidmanagement.enterprises().devices()
+        *args,
+        **kwargs):
+    "Given e.g. devices(), iterate over each page of responses."
+    request = resource.list(*args, **kwargs)
+    response = request.execute()
+    yield response
+    while True:
+        request = resource.list_next(
+            previous_request=request,
+            previous_response=response)
+        if request:           # on last page, list_next() returns None
+            response = request.execute()
+            yield response
+        else:
+            break
+
+
+
+def pages(
+        resource: googleapiclient.discovery.Resource,  # e.g. androidmanagement.enterprises().devices()
+        *args,
+        **kwargs):
+    "Given e.g. devices(), iterate over each page of responses."
+    request = None
+    while True:
+        if request is None:     # first iteration through "while True"
+            request = resource.list(*args, **kwargs)
+        else:                   # subsequent iteration through "while True"
+            request = resource.list_next(
+                previous_request=request,
+                previous_response=response)
+        if request:           # on last page, list_next() returns None
+            response = request.execute()
+            yield response
+        else:
+            break
+
+
+def merged_pages(
+        resource: googleapiclient.discovery.Resource,  # e.g. androidmanagement.enterprises().devices()
+        response_key: str,                             # e.g. "devices"
+        *args,
+        **kwargs):
+    "Given e.g. devices(), iterate over each device (across multiple pages)."
+    for page in pages(resource, *args, **kwargs):
+        # Sanity check
+        for k in page.keys():
+            if k not in {response_key, 'nextPageToken'}:
+                raise RuntimeError('Unexpected key', {k: page[k]})
+        for record in page[response_key]:
+            yield record
+
+
+import pprint
+pprint.pprint(
+    [device["name"]
+     for device in merged_pages(
+             resource=androidmanagement.enterprises().devices(),
+             response_key='devices',
+             # request parameters
+             parent=json_config_object['enterprise_name'])])
+
+
+
+
 with open('cache/enterprises.json', mode='w') as f:
     try:
         json.dump(
@@ -270,6 +407,9 @@ with open('cache/enterprises.json', mode='w') as f:
             sort_keys=True,
             indent=4)
 with open('cache/devices.json', mode='w') as f:
+    # FIXME: OH FUCK ME, as well as "devices" there is a "nextPageToken".
+    #        Does that mean the return data is paginated and
+    #        I need to do multiple queries until I get no more "nextPageToken"???
     json.dump(
         androidmanagement.enterprises().devices().list(
             parent=json_config_object['enterprise_name']).execute(),
