@@ -393,34 +393,45 @@ pprint.pprint(
 
 with open('cache/enterprises.json', mode='w') as f:
     json.dump(
-        androidmanagement.enterprises().list(
-            projectId=gcloud_project_id
-        ).execute(),
+        list(merged_pages(
+            # our arguments
+            resource=androidmanagement.enterprises(),
+            response_key='enterprises',
+            # google's arguments
+            projectId=gcloud_project_id)),
         f,
         sort_keys=True,
         indent=4)
 with open('cache/devices.json', mode='w') as f:
-    # FIXME: OH FUCK ME, as well as "devices" there is a "nextPageToken".
-    #        Does that mean the return data is paginated and
-    #        I need to do multiple queries until I get no more "nextPageToken"???
     json.dump(
-        androidmanagement.enterprises().devices().list(
-            parent=json_config_object['enterprise_name']).execute(),
+        list(merged_pages(
+            # our arguments
+            resource=androidmanagement.enterprises().devices(),
+            response_key='devices',
+            # google's arguments
+            parent=json_config_object['enterprise_name'])),
         f,
         sort_keys=True,
         indent=4)
 with open('cache/policies.json', mode='w') as f:
     json.dump(
-        androidmanagement.enterprises().policies().list(
-            parent=json_config_object['enterprise_name']
-        ).execute(),
+        list(merged_pages(
+            # our arguments
+            resource=androidmanagement.enterprises().policies(),
+            response_key='policies',
+            # google's arguments
+            parent=json_config_object['enterprise_name'])),
         f,
         sort_keys=True,
         indent=4)
 with open('cache/webApps.json', mode='w') as f:
     json.dump(
-        androidmanagement.enterprises().webApps().list(
-            parent=json_config_object['enterprise_name']).execute(),
+        list(merged_pages(
+            # our arguments
+            resource=androidmanagement.enterprises().webApps(),
+            response_key='webApps',
+            # google's arguments
+            parent=json_config_object['enterprise_name'])),
         f,
         sort_keys=True,
         indent=4)
