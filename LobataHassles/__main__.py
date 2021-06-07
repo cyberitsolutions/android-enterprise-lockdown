@@ -77,7 +77,10 @@ parser.add_argument(
     QR code is easier for "fully managed mode" (device only has restricted work account).
     URL is easier for "work profile mode" (device has an unrestricted non-work account).
     """)
+parser.add_argument('--debug', dest='logging_level', action='store_const', const=logging.DEBUG, default=logging.NOTSET)
+parser.add_argument('--verbose', dest='logging_level', action='store_const', const=logging.INFO, default=logging.NOTSET)
 args = parser.parse_args()
+logging.getLogger().setLevel(args.logging_level)
 
 with args.json_config_path.open() as f:
     json_config_object = json.loads(jsmin.jsmin(f.read()))
