@@ -339,7 +339,8 @@ for enterprise in merged_pages(
     for packageName in sorted(set(
             application['packageName']
             for policy in json_config_object['policies'].values()
-            for application in policy['applications'])):
+            for application in policy['applications']
+            if application['installType'] != 'BLOCKED')):
         try:
             my_json_dump(androidmanagement.enterprises().applications().get(
                 name=f'{enterprise["name"]}/applications/{packageName}').execute())
