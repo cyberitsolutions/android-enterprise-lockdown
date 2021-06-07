@@ -1,0 +1,46 @@
+{
+    "apiLevel": 29,
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
+    "appliedPolicyVersion": "7",
+    "appliedState": "ACTIVE",
+    "enrollmentTime": "2021-05-07T04:09:31.381Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/RG50KIeoQN0S79KUPdyFQSF5mNHl4lialQ1e43Q8X5k",
+    "hardwareInfo": {
+        "brand": "Lenovo",
+        "hardware": "qcom",
+        "manufacturer": "LENOVO",
+        "model": "Lenovo TB-X505F",
+        "serialNumber": "HGAL10T2"
+    },
+    "lastPolicySyncTime": "2021-05-07T05:45:10.066Z",
+    "lastStatusReportTime": "2021-05-07T04:10:02.584Z",
+    "managementMode": "DEVICE_OWNER",
+    "memoryInfo": {
+        "totalInternalStorage": "4160729088",
+        "totalRam": "1954582528"
+    },
+    "name": "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
+    "ownership": "COMPANY_OWNED",
+    "policyCompliant": true,
+    "policyName": "enterprises/LC02kggfh1/policies/policy1",
+    "securityPosture": {
+        "devicePosture": "SECURE"
+    },
+    "softwareInfo": {
+        "androidBuildNumber": "TB-X505F_S001135_210304_ROW",
+        "androidBuildTime": "2021-03-04T10:31:52Z",
+        "androidDevicePolicyVersionCode": 1498020,
+        "androidDevicePolicyVersionName": "14.98.02.v39",
+        "androidVersion": "10",
+        "bootloaderVersion": "unknown",
+        "deviceBuildSignature": "1c41fedecacbe89b81c242ecf74929f7d57322b64f8179c1c78a390a3494f14a",
+        "deviceKernelVersion": "4.9.205-perf+",
+        "primaryLanguageCode": "en-AU",
+        "securityPatchLevel": "2021-03-05",
+        "systemUpdateInfo": {
+            "updateStatus": "UP_TO_DATE"
+        }
+    },
+    "state": "ACTIVE",
+    "userName": "enterprises/LC02kggfh1/users/108302315928033868889"
+}

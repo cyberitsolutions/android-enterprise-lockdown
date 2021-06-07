@@ -1,0 +1,97 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.simplemobiletools.smsmessenger",
+    "permissions": [
+        {
+            "permissionId": "android.permission.READ_APP_BADGE"
+        },
+        {
+            "description": "Allows the app to read data about your contacts stored on your device, including the frequency with which you've called, emailed, or communicated in other ways with specific individuals. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.",
+            "name": "read your contacts",
+            "permissionId": "android.permission.READ_CONTACTS"
+        },
+        {
+            "description": "Allows the app to access the phone features of the device. This permission allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a call.",
+            "name": "read phone status and identity",
+            "permissionId": "android.permission.READ_PHONE_STATE"
+        },
+        {
+            "description": "Allows the app to read SMS messages stored on your device or SIM card. This allows the app to read all SMS messages, regardless of content or confidentiality.",
+            "name": "read your text messages (SMS or MMS)",
+            "permissionId": "android.permission.READ_SMS"
+        },
+        {
+            "description": "Allows the app to receive and process MMS messages. This means the app could monitor or delete messages sent to your device without showing them to you.",
+            "name": "receive text messages (MMS)",
+            "permissionId": "android.permission.RECEIVE_MMS"
+        },
+        {
+            "description": "Allows the app to receive and process SMS messages. This means the app could monitor or delete messages sent to your device without showing them to you.",
+            "name": "receive text messages (SMS)",
+            "permissionId": "android.permission.RECEIVE_SMS"
+        },
+        {
+            "description": "Allows the app to send SMS messages. This may result in unexpected charges. Malicious apps may cost you money by sending messages without your confirmation.",
+            "name": "send SMS messages",
+            "permissionId": "android.permission.SEND_SMS"
+        },
+        {
+            "description": "Allows the app to prevent the device from going to sleep.",
+            "name": "prevent device from sleeping",
+            "permissionId": "android.permission.WAKE_LOCK"
+        },
+        {
+            "description": "Allows the app to write to SMS messages stored on your device or SIM card. Malicious apps may delete your messages.",
+            "name": "edit your text messages (SMS or MMS)",
+            "permissionId": "android.permission.WRITE_SMS"
+        },
+        {
+            "permissionId": "android.provider.Telephony.SMS_RECEIVED"
+        },
+        {
+            "permissionId": "com.anddoes.launcher.permission.UPDATE_COUNT"
+        },
+        {
+            "permissionId": "com.htc.launcher.permission.READ_SETTINGS"
+        },
+        {
+            "permissionId": "com.htc.launcher.permission.UPDATE_SHORTCUT"
+        },
+        {
+            "permissionId": "com.huawei.android.launcher.permission.CHANGE_BADGE"
+        },
+        {
+            "permissionId": "com.huawei.android.launcher.permission.READ_SETTINGS"
+        },
+        {
+            "permissionId": "com.huawei.android.launcher.permission.WRITE_SETTINGS"
+        },
+        {
+            "permissionId": "com.majeur.launcher.permission.UPDATE_BADGE"
+        },
+        {
+            "permissionId": "com.oppo.launcher.permission.READ_SETTINGS"
+        },
+        {
+            "permissionId": "com.oppo.launcher.permission.WRITE_SETTINGS"
+        },
+        {
+            "permissionId": "com.sec.android.provider.badge.permission.READ"
+        },
+        {
+            "permissionId": "com.sec.android.provider.badge.permission.WRITE"
+        },
+        {
+            "permissionId": "com.sonyericsson.home.permission.BROADCAST_BADGE"
+        },
+        {
+            "permissionId": "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"
+        },
+        {
+            "permissionId": "me.everything.badger.permission.BADGE_COUNT_READ"
+        },
+        {
+            "permissionId": "me.everything.badger.permission.BADGE_COUNT_WRITE"
+        }
+    ],
+    "title": "Simple SMS Messenger: SMS and MMS messaging app"
+}

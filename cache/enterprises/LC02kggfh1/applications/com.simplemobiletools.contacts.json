@@ -1,0 +1,31 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.simplemobiletools.contacts",
+    "permissions": [
+        {
+            "description": "Allows the app to call phone numbers without your intervention. This may result in unexpected charges or calls. Note that this doesn't allow the app to call emergency numbers. Malicious apps may cost you money by making calls without your confirmation.",
+            "name": "directly call phone numbers",
+            "permissionId": "android.permission.CALL_PHONE"
+        },
+        {
+            "description": "Allows the app to get the list of accounts known by the device. This may include any accounts created by applications you have installed.",
+            "name": "find accounts on the device",
+            "permissionId": "android.permission.GET_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to read data about your contacts stored on your device, including the frequency with which you've called, emailed, or communicated in other ways with specific individuals. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.",
+            "name": "read your contacts",
+            "permissionId": "android.permission.READ_CONTACTS"
+        },
+        {
+            "description": "Allows the app to read the sync settings for an account. For example, this can determine whether the People app is synced with an account.",
+            "name": "read sync settings",
+            "permissionId": "android.permission.READ_SYNC_SETTINGS"
+        },
+        {
+            "description": "Allows the app to modify the data about your contacts stored on your device, including the frequency with which you've called, emailed, or communicated in other ways with specific contacts. This permission allows apps to delete contact data.",
+            "name": "modify your contacts",
+            "permissionId": "android.permission.WRITE_CONTACTS"
+        }
+    ],
+    "title": "Simple Contacts: Address Book with Contact Backup"
+}

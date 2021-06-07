@@ -1,0 +1,46 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.google.tango.measure",
+    "permissions": [
+        {
+            "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
+            "name": "view network connections",
+            "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to take pictures and videos with the camera. This permission allows the app to use the camera at any time without your confirmation.",
+            "name": "take pictures and videos",
+            "permissionId": "android.permission.CAMERA"
+        },
+        {
+            "description": "Allows the app to retrieve its code, data, and cache sizes",
+            "name": "measure app storage space",
+            "permissionId": "android.permission.GET_PACKAGE_SIZE"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to control the vibrator.",
+            "name": "control vibration",
+            "permissionId": "android.permission.VIBRATE"
+        },
+        {
+            "description": "Allows the app to prevent the device from going to sleep.",
+            "name": "prevent device from sleeping",
+            "permissionId": "android.permission.WAKE_LOCK"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows this app to read Google service configuration data.",
+            "name": "read Google service configuration",
+            "permissionId": "com.google.android.providers.gsf.permission.READ_GSERVICES"
+        }
+    ],
+    "title": "Measure"
+}

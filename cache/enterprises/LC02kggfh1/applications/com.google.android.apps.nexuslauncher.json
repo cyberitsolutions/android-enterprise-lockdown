@@ -1,0 +1,63 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.google.android.apps.nexuslauncher",
+    "permissions": [
+        {
+            "description": "Allows the app to get your approximate location. This location is derived by location services using network location sources such as cell towers and Wi-Fi. These location services must be turned on and available to your device for the app to use them. Apps may use this to determine approximately where you are.",
+            "name": "approximate location (network-based)",
+            "permissionId": "android.permission.ACCESS_COARSE_LOCATION"
+        },
+        {
+            "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
+            "name": "view network connections",
+            "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to call phone numbers without your intervention. This may result in unexpected charges or calls. Note that this doesn't allow the app to call emergency numbers. Malicious apps may cost you money by making calls without your confirmation.",
+            "name": "directly call phone numbers",
+            "permissionId": "android.permission.CALL_PHONE"
+        },
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
+            "name": "run at startup",
+            "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"
+        },
+        {
+            "description": "Allows the app to set the system wallpaper.",
+            "name": "set wallpaper",
+            "permissionId": "android.permission.SET_WALLPAPER"
+        },
+        {
+            "description": "Allows the app to set the system wallpaper size hints.",
+            "name": "adjust your wallpaper size",
+            "permissionId": "android.permission.SET_WALLPAPER_HINTS"
+        },
+        {
+            "description": "Allows the app to read the settings and shortcuts in Home.",
+            "name": "read Home settings and shortcuts",
+            "permissionId": "com.android.launcher.permission.READ_SETTINGS"
+        },
+        {
+            "permissionId": "com.google.android.apps.nexuslauncher.permission.QSB"
+        },
+        {
+            "permissionId": "com.google.android.apps.nexuslauncher.permission.READ_SETTINGS"
+        },
+        {
+            "permissionId": "com.google.android.apps.nexuslauncher.permission.WRITE_SETTINGS"
+        },
+        {
+            "permissionId": "com.google.android.launcher.permission.READ_SETTINGS"
+        }
+    ],
+    "title": "Pixel Launcher"
+}

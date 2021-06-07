@@ -1,0 +1,141 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.duolingo",
+    "permissions": [
+        {
+            "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
+            "name": "view network connections",
+            "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices.",
+            "name": "view Wi-Fi connections",
+            "permissionId": "android.permission.ACCESS_WIFI_STATE"
+        },
+        {
+            "description": "Allows the app to use the account authenticator capabilities of the AccountManager, including creating accounts and getting and setting their passwords.",
+            "name": "create accounts and set passwords",
+            "permissionId": "android.permission.AUTHENTICATE_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to take pictures and videos with the camera. This permission allows the app to use the camera at any time without your confirmation.",
+            "name": "take pictures and videos",
+            "permissionId": "android.permission.CAMERA"
+        },
+        {
+            "permissionId": "android.permission.FOREGROUND_SERVICE"
+        },
+        {
+            "description": "Allows the app to get the list of accounts known by the device. This may include any accounts created by applications you have installed.",
+            "name": "find accounts on the device",
+            "permissionId": "android.permission.GET_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        },
+        {
+            "description": "Allows the app to modify global audio settings such as volume and which speaker is used for output.",
+            "name": "change your audio settings",
+            "permissionId": "android.permission.MODIFY_AUDIO_SETTINGS"
+        },
+        {
+            "permissionId": "android.permission.READ_APP_BADGE"
+        },
+        {
+            "description": "Allows the app to read data about your contacts stored on your device, including the frequency with which you've called, emailed, or communicated in other ways with specific individuals. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.",
+            "name": "read your contacts",
+            "permissionId": "android.permission.READ_CONTACTS"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
+            "name": "run at startup",
+            "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"
+        },
+        {
+            "description": "Allows the app to record audio with the microphone. This permission allows the app to record audio at any time without your confirmation.",
+            "name": "record audio",
+            "permissionId": "android.permission.RECORD_AUDIO"
+        },
+        {
+            "description": "Allows the app to control the vibrator.",
+            "name": "control vibration",
+            "permissionId": "android.permission.VIBRATE"
+        },
+        {
+            "description": "Allows the app to prevent the device from going to sleep.",
+            "name": "prevent device from sleeping",
+            "permissionId": "android.permission.WAKE_LOCK"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "permissionId": "com.anddoes.launcher.permission.UPDATE_COUNT"
+        },
+        {
+            "permissionId": "com.android.vending.BILLING"
+        },
+        {
+            "permissionId": "com.duolingo.permission.C2D_MESSAGE"
+        },
+        {
+            "description": "Allows apps to accept cloud to device messages sent by the app's service. Using this service will incur data usage. Malicious apps could cause excess data usage.",
+            "name": "receive data from Internet",
+            "permissionId": "com.google.android.c2dm.permission.RECEIVE"
+        },
+        {
+            "permissionId": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+        },
+        {
+            "permissionId": "com.htc.launcher.permission.READ_SETTINGS"
+        },
+        {
+            "permissionId": "com.htc.launcher.permission.UPDATE_SHORTCUT"
+        },
+        {
+            "permissionId": "com.huawei.android.launcher.permission.CHANGE_BADGE"
+        },
+        {
+            "permissionId": "com.huawei.android.launcher.permission.READ_SETTINGS"
+        },
+        {
+            "permissionId": "com.huawei.android.launcher.permission.WRITE_SETTINGS"
+        },
+        {
+            "permissionId": "com.majeur.launcher.permission.UPDATE_BADGE"
+        },
+        {
+            "permissionId": "com.oppo.launcher.permission.READ_SETTINGS"
+        },
+        {
+            "permissionId": "com.oppo.launcher.permission.WRITE_SETTINGS"
+        },
+        {
+            "permissionId": "com.sec.android.provider.badge.permission.READ"
+        },
+        {
+            "permissionId": "com.sec.android.provider.badge.permission.WRITE"
+        },
+        {
+            "permissionId": "com.sonyericsson.home.permission.BROADCAST_BADGE"
+        },
+        {
+            "permissionId": "com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"
+        },
+        {
+            "permissionId": "me.everything.badger.permission.BADGE_COUNT_READ"
+        },
+        {
+            "permissionId": "me.everything.badger.permission.BADGE_COUNT_WRITE"
+        }
+    ],
+    "title": "Duolingo: Learn Languages Free"
+}

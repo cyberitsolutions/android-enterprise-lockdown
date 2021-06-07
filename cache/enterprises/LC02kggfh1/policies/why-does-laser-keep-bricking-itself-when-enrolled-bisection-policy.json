@@ -1,0 +1,29 @@
+{
+    "advancedSecurityOverrides": {
+        "developerSettings": "DEVELOPER_SETTINGS_DISABLED"
+    },
+    "applications": [
+        {
+            "installType": "REQUIRED_FOR_SETUP",
+            "managedConfiguration": {
+                "BlockThirdPartyCookies": true,
+                "HomepageLocation": "https://prisonpc.com/"
+            },
+            "packageName": "com.android.chrome"
+        },
+        {
+            "installType": "BLOCKED",
+            "packageName": "com.google.android.apps.youtube.music"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.microsoft.emmx"
+        },
+        {
+            "installType": "REQUIRED_FOR_SETUP",
+            "packageName": "amirz.rootless.nexuslauncher"
+        }
+    ],
+    "name": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "version": "3"
+}

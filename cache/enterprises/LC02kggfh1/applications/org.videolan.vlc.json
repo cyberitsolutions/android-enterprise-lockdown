@@ -1,0 +1,91 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/org.videolan.vlc",
+    "permissions": [
+        {
+            "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
+            "name": "view network connections",
+            "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to view the configuration of Bluetooth on the device, and to make and accept connections with paired devices.",
+            "name": "pair with Bluetooth devices",
+            "permissionId": "android.permission.BLUETOOTH"
+        },
+        {
+            "permissionId": "android.permission.FOREGROUND_SERVICE"
+        },
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        },
+        {
+            "description": "Allows the app to modify global audio settings such as volume and which speaker is used for output.",
+            "name": "change your audio settings",
+            "permissionId": "android.permission.MODIFY_AUDIO_SETTINGS"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
+            "name": "run at startup",
+            "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"
+        },
+        {
+            "description": "Allows the app to record audio with the microphone. This permission allows the app to record audio at any time without your confirmation.",
+            "name": "record audio",
+            "permissionId": "android.permission.RECORD_AUDIO"
+        },
+        {
+            "description": "Allows the app to draw on top of other applications or parts of the user interface. They may interfere with your use of the interface in any application, or change what you think you are seeing in other applications.",
+            "name": "draw over other apps",
+            "permissionId": "android.permission.SYSTEM_ALERT_WINDOW"
+        },
+        {
+            "description": "Allows the app to control the vibrator.",
+            "name": "control vibration",
+            "permissionId": "android.permission.VIBRATE"
+        },
+        {
+            "description": "Allows the app to prevent the device from going to sleep.",
+            "name": "prevent device from sleeping",
+            "permissionId": "android.permission.WAKE_LOCK"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to modify the system's settings data. Malicious apps may corrupt your system's configuration.",
+            "name": "modify system settings",
+            "permissionId": "android.permission.WRITE_SETTINGS"
+        },
+        {
+            "description": "Allows the app to read the TV channel/program information stored on your device.",
+            "name": "read TV channel/program information",
+            "permissionId": "com.android.providers.tv.permission.READ_EPG_DATA"
+        },
+        {
+            "description": "Allows the app to provide and modify the TV channel/program information on your device.",
+            "name": "write TV channel/program information",
+            "permissionId": "com.android.providers.tv.permission.WRITE_EPG_DATA"
+        },
+        {
+            "permissionId": "com.android.vending.BILLING"
+        },
+        {
+            "permissionId": "org.videolan.vlc.MEDIA"
+        },
+        {
+            "permissionId": "org.videolan.vlc.permission.BIND_DATA_CONSUMER"
+        },
+        {
+            "permissionId": "org.videolan.vlc.permission.READ_EXTENSION_DATA"
+        }
+    ],
+    "title": "VLC for Android"
+}

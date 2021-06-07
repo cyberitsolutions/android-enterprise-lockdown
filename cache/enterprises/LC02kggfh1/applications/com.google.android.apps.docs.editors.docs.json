@@ -1,0 +1,151 @@
+{
+    "managedProperties": [
+        {
+            "defaultValue": true,
+            "description": "Set to false to disable use of local printing APIs",
+            "key": "PrintingEnabled",
+            "title": "App is allowed to use local printing APIs",
+            "type": "BOOL"
+        },
+        {
+            "defaultValue": false,
+            "key": "enableAccountLessMode",
+            "title": "Enables the app to run on devices without Google accounts",
+            "type": "BOOL"
+        }
+    ],
+    "name": "enterprises/LC02kggfh1/applications/com.google.android.apps.docs.editors.docs",
+    "permissions": [
+        {
+            "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
+            "name": "view network connections",
+            "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices.",
+            "name": "view Wi-Fi connections",
+            "permissionId": "android.permission.ACCESS_WIFI_STATE"
+        },
+        {
+            "permissionId": "android.permission.FOREGROUND_SERVICE"
+        },
+        {
+            "description": "Allows the app to get the list of accounts known by the device. This may include any accounts created by applications you have installed.",
+            "name": "find accounts on the device",
+            "permissionId": "android.permission.GET_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to retrieve its code, data, and cache sizes",
+            "name": "measure app storage space",
+            "permissionId": "android.permission.GET_PACKAGE_SIZE"
+        },
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        },
+        {
+            "description": "Allows the app to perform operations like adding and removing accounts, and deleting their password.",
+            "name": "add or remove accounts",
+            "permissionId": "android.permission.MANAGE_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to read data about your contacts stored on your device, including the frequency with which you've called, emailed, or communicated in other ways with specific individuals. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.",
+            "name": "read your contacts",
+            "permissionId": "android.permission.READ_CONTACTS"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to read the sync settings for an account. For example, this can determine whether the People app is synced with an account.",
+            "name": "read sync settings",
+            "permissionId": "android.permission.READ_SYNC_SETTINGS"
+        },
+        {
+            "description": "Allows an app to read the sync stats for an account, including the history of sync events and how much data is synced.",
+            "name": "read sync statistics",
+            "permissionId": "android.permission.READ_SYNC_STATS"
+        },
+        {
+            "description": "Allows the app to get details about the currently synced feeds.",
+            "name": "read subscribed feeds",
+            "permissionId": "android.permission.SUBSCRIBED_FEEDS_READ"
+        },
+        {
+            "description": "Allows the app to modify your currently synced feeds. Malicious apps may change your synced feeds.",
+            "name": "write subscribed feeds",
+            "permissionId": "android.permission.SUBSCRIBED_FEEDS_WRITE"
+        },
+        {
+            "description": "Allows the app to request authentication tokens.",
+            "name": "use accounts on the device",
+            "permissionId": "android.permission.USE_CREDENTIALS"
+        },
+        {
+            "description": "Allows the app to control the vibrator.",
+            "name": "control vibration",
+            "permissionId": "android.permission.VIBRATE"
+        },
+        {
+            "description": "Allows the app to prevent the device from going to sleep.",
+            "name": "prevent device from sleeping",
+            "permissionId": "android.permission.WAKE_LOCK"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows an app to modify the sync settings for an account. For example, this can be used to enable sync of the People app with an account.",
+            "name": "toggle sync on and off",
+            "permissionId": "android.permission.WRITE_SYNC_SETTINGS"
+        },
+        {
+            "description": "Allows an app to add shortcuts without user intervention.",
+            "name": "install shortcuts",
+            "permissionId": "com.android.launcher.permission.INSTALL_SHORTCUT"
+        },
+        {
+            "permissionId": "com.google.android.apps.docs.editors.kix.permission.READ_MY_DATA"
+        },
+        {
+            "permissionId": "com.google.android.apps.docs.editors.kix.permission.SYNC_STATUS"
+        },
+        {
+            "permissionId": "com.google.android.apps.docs.editors.kix.permission.WRITE_IMAGES"
+        },
+        {
+            "permissionId": "com.google.android.gm.permission.READ_GMAIL"
+        },
+        {
+            "description": "Allows apps to see the usernames (email addresses) of the Google account(s) you have configured.",
+            "name": "view configured accounts",
+            "permissionId": "com.google.android.googleapps.permission.GOOGLE_AUTH"
+        },
+        {
+            "description": "Allows apps to sign in to unspecified Google services using the account(s) stored on this Android device.",
+            "name": "access other Google services",
+            "permissionId": "com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES"
+        },
+        {
+            "description": "Allows apps to sign in to Google Spreadsheets using the account(s) stored on this Android device.",
+            "name": "Google Spreadsheets",
+            "permissionId": "com.google.android.googleapps.permission.GOOGLE_AUTH.wise"
+        },
+        {
+            "description": "Allows apps to sign in to Google Docs using the account(s) stored on this Android device.",
+            "name": "Google Docs",
+            "permissionId": "com.google.android.googleapps.permission.GOOGLE_AUTH.writely"
+        },
+        {
+            "description": "Allows this app to read Google service configuration data.",
+            "name": "read Google service configuration",
+            "permissionId": "com.google.android.providers.gsf.permission.READ_GSERVICES"
+        }
+    ],
+    "title": "Google Docs"
+}

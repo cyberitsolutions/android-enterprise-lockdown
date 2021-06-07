@@ -1,0 +1,16 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/amirz.musicfx.material",
+    "permissions": [
+        {
+            "description": "Allows the app to view the configuration of Bluetooth on the device, and to make and accept connections with paired devices.",
+            "name": "pair with Bluetooth devices",
+            "permissionId": "android.permission.BLUETOOTH"
+        },
+        {
+            "description": "Allows the app to modify global audio settings such as volume and which speaker is used for output.",
+            "name": "change your audio settings",
+            "permissionId": "android.permission.MODIFY_AUDIO_SETTINGS"
+        }
+    ],
+    "title": "Equalizer: Material FX"
+}

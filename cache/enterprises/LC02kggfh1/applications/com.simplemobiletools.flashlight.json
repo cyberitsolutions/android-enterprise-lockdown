@@ -1,0 +1,16 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.simplemobiletools.flashlight",
+    "permissions": [
+        {
+            "description": "Allows the app to take pictures and videos with the camera. This permission allows the app to use the camera at any time without your confirmation.",
+            "name": "take pictures and videos",
+            "permissionId": "android.permission.CAMERA"
+        },
+        {
+            "description": "Allows the app to control the flashlight.",
+            "name": "control flashlight",
+            "permissionId": "android.permission.FLASHLIGHT"
+        }
+    ],
+    "title": "Simple Flashlight - Led Lamp Light, Stroboscope"
+}

@@ -1,0 +1,112 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.google.android.apps.translate",
+    "permissions": [
+        {
+            "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
+            "name": "view network connections",
+            "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices.",
+            "name": "view Wi-Fi connections",
+            "permissionId": "android.permission.ACCESS_WIFI_STATE"
+        },
+        {
+            "description": "Allows the app to view the configuration of Bluetooth on the device, and to make and accept connections with paired devices.",
+            "name": "pair with Bluetooth devices",
+            "permissionId": "android.permission.BLUETOOTH"
+        },
+        {
+            "description": "Allows the app to configure the local Bluetooth device, and to discover and pair with remote devices.",
+            "name": "access Bluetooth settings",
+            "permissionId": "android.permission.BLUETOOTH_ADMIN"
+        },
+        {
+            "description": "Allows the app to take pictures and videos with the camera. This permission allows the app to use the camera at any time without your confirmation.",
+            "name": "take pictures and videos",
+            "permissionId": "android.permission.CAMERA"
+        },
+        {
+            "permissionId": "android.permission.FOREGROUND_SERVICE"
+        },
+        {
+            "description": "Allows the app to get the list of accounts known by the device. This may include any accounts created by applications you have installed.",
+            "name": "find accounts on the device",
+            "permissionId": "android.permission.GET_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to retrieve its code, data, and cache sizes",
+            "name": "measure app storage space",
+            "permissionId": "android.permission.GET_PACKAGE_SIZE"
+        },
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        },
+        {
+            "description": "Allows the app to perform operations like adding and removing accounts, and deleting their password.",
+            "name": "add or remove accounts",
+            "permissionId": "android.permission.MANAGE_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to modify global audio settings such as volume and which speaker is used for output.",
+            "name": "change your audio settings",
+            "permissionId": "android.permission.MODIFY_AUDIO_SETTINGS"
+        },
+        {
+            "description": "Allows the app to communicate with Near Field Communication (NFC) tags, cards, and readers.",
+            "name": "control Near Field Communication",
+            "permissionId": "android.permission.NFC"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to read SMS messages stored on your device or SIM card. This allows the app to read all SMS messages, regardless of content or confidentiality.",
+            "name": "read your text messages (SMS or MMS)",
+            "permissionId": "android.permission.READ_SMS"
+        },
+        {
+            "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
+            "name": "run at startup",
+            "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"
+        },
+        {
+            "description": "Allows the app to record audio with the microphone. This permission allows the app to record audio at any time without your confirmation.",
+            "name": "record audio",
+            "permissionId": "android.permission.RECORD_AUDIO"
+        },
+        {
+            "description": "Allows the app to draw on top of other applications or parts of the user interface. They may interfere with your use of the interface in any application, or change what you think you are seeing in other applications.",
+            "name": "draw over other apps",
+            "permissionId": "android.permission.SYSTEM_ALERT_WINDOW"
+        },
+        {
+            "description": "Allows the app to request authentication tokens.",
+            "name": "use accounts on the device",
+            "permissionId": "android.permission.USE_CREDENTIALS"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "permissionId": "com.google.android.apps.translate.PROTODATASTORE_SIGNAL"
+        },
+        {
+            "description": "Allows this app to read Google service configuration data.",
+            "name": "read Google service configuration",
+            "permissionId": "com.google.android.providers.gsf.permission.READ_GSERVICES"
+        }
+    ],
+    "title": "Google Translate"
+}

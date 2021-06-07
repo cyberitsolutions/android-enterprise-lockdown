@@ -1,0 +1,208 @@
+{
+    "managedProperties": [
+        {
+            "defaultValue": "",
+            "description": "Only the listed accounts may sign-in.",
+            "key": "com.microsoft.intune.mam.AllowedAccountUPNs",
+            "title": "Allowed Accounts",
+            "type": "STRING"
+        }
+    ],
+    "name": "enterprises/LC02kggfh1/applications/com.microsoft.emmx",
+    "permissions": [
+        {
+            "description": "Allows the app to get your approximate location. This location is derived by location services using network location sources such as cell towers and Wi-Fi. These location services must be turned on and available to your device for the app to use them. Apps may use this to determine approximately where you are.",
+            "name": "approximate location (network-based)",
+            "permissionId": "android.permission.ACCESS_COARSE_LOCATION"
+        },
+        {
+            "description": "Allows the app to get your precise location using the Global Positioning System (GPS) or network location sources such as cell towers and Wi-Fi. These location services must be turned on and available to your device for the app to use them. Apps may use this to determine where you are, and may consume additional battery power.",
+            "name": "precise location (GPS and network-based)",
+            "permissionId": "android.permission.ACCESS_FINE_LOCATION"
+        },
+        {
+            "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
+            "name": "view network connections",
+            "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices.",
+            "name": "view Wi-Fi connections",
+            "permissionId": "android.permission.ACCESS_WIFI_STATE"
+        },
+        {
+            "description": "Allows the app to use the account authenticator capabilities of the AccountManager, including creating accounts and getting and setting their passwords.",
+            "name": "create accounts and set passwords",
+            "permissionId": "android.permission.AUTHENTICATE_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to view the configuration of Bluetooth on the device, and to make and accept connections with paired devices.",
+            "name": "pair with Bluetooth devices",
+            "permissionId": "android.permission.BLUETOOTH"
+        },
+        {
+            "description": "Allows the app to configure the local Bluetooth device, and to discover and pair with remote devices.",
+            "name": "access Bluetooth settings",
+            "permissionId": "android.permission.BLUETOOTH_ADMIN"
+        },
+        {
+            "description": "Allows the app to take pictures and videos with the camera. This permission allows the app to use the camera at any time without your confirmation.",
+            "name": "take pictures and videos",
+            "permissionId": "android.permission.CAMERA"
+        },
+        {
+            "description": "Allows the app to download files through the download manager without any notification being shown to the user.",
+            "name": "download files without notification",
+            "permissionId": "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"
+        },
+        {
+            "description": "Allows the app to control the flashlight.",
+            "name": "control flashlight",
+            "permissionId": "android.permission.FLASHLIGHT"
+        },
+        {
+            "permissionId": "android.permission.FOREGROUND_SERVICE"
+        },
+        {
+            "description": "Allows the app to get the list of accounts known by the device. This may include any accounts created by applications you have installed.",
+            "name": "find accounts on the device",
+            "permissionId": "android.permission.GET_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        },
+        {
+            "description": "Allows the app to perform operations like adding and removing accounts, and deleting their password.",
+            "name": "add or remove accounts",
+            "permissionId": "android.permission.MANAGE_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to modify global audio settings such as volume and which speaker is used for output.",
+            "name": "change your audio settings",
+            "permissionId": "android.permission.MODIFY_AUDIO_SETTINGS"
+        },
+        {
+            "description": "Allows the app to communicate with Near Field Communication (NFC) tags, cards, and readers.",
+            "name": "control Near Field Communication",
+            "permissionId": "android.permission.NFC"
+        },
+        {
+            "description": "Allows the app to read data about your contacts stored on your device, including the frequency with which you've called, emailed, or communicated in other ways with specific individuals. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.",
+            "name": "read your contacts",
+            "permissionId": "android.permission.READ_CONTACTS"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to read personal profile information stored on your device, such as your name and contact information. This means the app can identify you and may send your profile information to others.",
+            "name": "read your own contact card",
+            "permissionId": "android.permission.READ_PROFILE"
+        },
+        {
+            "description": "Allows the app to read the sync settings for an account. For example, this can determine whether the People app is synced with an account.",
+            "name": "read sync settings",
+            "permissionId": "android.permission.READ_SYNC_SETTINGS"
+        },
+        {
+            "description": "Allows an app to read the sync stats for an account, including the history of sync events and how much data is synced.",
+            "name": "read sync statistics",
+            "permissionId": "android.permission.READ_SYNC_STATS"
+        },
+        {
+            "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
+            "name": "run at startup",
+            "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"
+        },
+        {
+            "description": "Allows the app to record audio with the microphone. This permission allows the app to record audio at any time without your confirmation.",
+            "name": "record audio",
+            "permissionId": "android.permission.RECORD_AUDIO"
+        },
+        {
+            "description": "Allows the app to move tasks to the foreground and background. The app may do this without your input.",
+            "name": "reorder running apps",
+            "permissionId": "android.permission.REORDER_TASKS"
+        },
+        {
+            "permissionId": "android.permission.REQUEST_INSTALL_PACKAGES"
+        },
+        {
+            "description": "Allows the app to request authentication tokens.",
+            "name": "use accounts on the device",
+            "permissionId": "android.permission.USE_CREDENTIALS"
+        },
+        {
+            "permissionId": "android.permission.USE_FINGERPRINT"
+        },
+        {
+            "description": "Allows the app to control the vibrator.",
+            "name": "control vibration",
+            "permissionId": "android.permission.VIBRATE"
+        },
+        {
+            "description": "Allows the app to prevent the device from going to sleep.",
+            "name": "prevent device from sleeping",
+            "permissionId": "android.permission.WAKE_LOCK"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows an app to modify the sync settings for an account. For example, this can be used to enable sync of the People app with an account.",
+            "name": "toggle sync on and off",
+            "permissionId": "android.permission.WRITE_SYNC_SETTINGS"
+        },
+        {
+            "description": "Allows the app to read the history of all URLs that the Browser has visited, and all of the Browser's bookmarks. Note: this permission may not be enforced by third-party browsers or other applications with web browsing capabilities.",
+            "name": "read your Web bookmarks and history",
+            "permissionId": "com.android.browser.permission.READ_HISTORY_BOOKMARKS"
+        },
+        {
+            "description": "Allows the app to modify the Browser's history or bookmarks stored on your device. This may allow the app to erase or modify Browser data. Note: this permission may note be enforced by third-party browsers or other applications with web browsing capabilities.",
+            "name": "write web bookmarks and history",
+            "permissionId": "com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"
+        },
+        {
+            "description": "Allows an app to add shortcuts without user intervention.",
+            "name": "install shortcuts",
+            "permissionId": "com.android.launcher.permission.INSTALL_SHORTCUT"
+        },
+        {
+            "permissionId": "com.chrome.permission.DEVICE_EXTRAS"
+        },
+        {
+            "permissionId": "com.google.android.apps.now.CURRENT_ACCOUNT_ACCESS"
+        },
+        {
+            "description": "Allows apps to accept cloud to device messages sent by the app's service. Using this service will incur data usage. Malicious apps could cause excess data usage.",
+            "name": "receive data from Internet",
+            "permissionId": "com.google.android.c2dm.permission.RECEIVE"
+        },
+        {
+            "permissionId": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+        },
+        {
+            "permissionId": "com.microsoft.emmx.TOS_ACKED"
+        },
+        {
+            "permissionId": "com.microsoft.emmx.configurator.READ"
+        },
+        {
+            "permissionId": "com.microsoft.emmx.permission.C2D_MESSAGE"
+        },
+        {
+            "permissionId": "com.microsoft.emmx.permission.READ_WRITE_BOOKMARK_FOLDERS"
+        },
+        {
+            "permissionId": "com.sony.mobile.permission.SYSTEM_UI_VISIBILITY_EXTENSION"
+        }
+    ],
+    "title": "Microsoft Edge: Web Browser"
+}

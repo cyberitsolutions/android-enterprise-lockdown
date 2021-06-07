@@ -1,0 +1,3759 @@
+{
+    "apiLevel": 29,
+    "applicationReports": [
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Storage Manager",
+            "packageName": "com.android.storagemanager",
+            "packageSha256Hash": "5b96050434fe1dacc98d8894b1b777e99cf04b55bf75357235827947fd379634",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Print Spooler",
+            "packageName": "com.android.printspooler",
+            "packageSha256Hash": "1e7b9fdbff54d124504582a911ae225cf4c9d63cc0c9a8765c3f8d69f0b07330",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "FT Terminal Test",
+            "packageName": "com.focaltech.ft_terminal_test",
+            "packageSha256Hash": "4c504ad032e672a657405bbaebb5e83a8721d06c8b521b5ece361bdbcc0578a7",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qti.service.colorservice",
+            "packageName": "com.qti.service.colorservice",
+            "packageSha256Hash": "516f34802ee2d49e0579e0cd8c5cf9be81d605aabc3bd2032be3ded625d85a39",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.longcheertel.midtest.FMAdapterApp",
+            "packageName": "com.longcheertel.midtest",
+            "packageSha256Hash": "c24429a3eda1950f7be413ee0e90002edf1bf8df9c99a31a1b8f658c650d2120",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 239,
+            "versionName": "2.3.9"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Notes",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.simplemobiletools.notes",
+            "packageSha256Hash": "e95e3de088a3e9ef27b24217dba62776fb3ed4f7f7c1012a90d1f31406ee24eb",
+            "signingKeyCertFingerprints": [
+                "bcc01ace31b3c9c0fae3d7a13f1df784148ea492"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 65,
+            "versionName": "5.2.4"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Wallpapers",
+            "packageName": "com.tblenovo.wallpaper",
+            "packageSha256Hash": "523abdee1598ce180cb8d4f87ae7eaef17a6532146b5f23387c58609f160eb92",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2090019,
+            "versionName": "V3.0.1.200806"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "PowerOffAlarm",
+            "packageName": "com.qualcomm.qti.poweroffalarm",
+            "packageSha256Hash": "60caa7d348e2c5723628670b4f866b21dab4fc53d1f01f4c55d44b57aec42118",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "VLC",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.videolan.vlc",
+            "packageSha256Hash": "96c44e01514ca3f289c488a546ccfa1e4af62d3de40b0087f3549b57722e0c66",
+            "signingKeyCertFingerprints": [
+                "eefbc981428343bbddfff6b23b6bd8717351410c"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 13030407,
+            "versionName": "3.3.4"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "PacProcessor",
+            "packageName": "com.android.pacprocessor",
+            "packageSha256Hash": "3b9f9bac09953bb32f99207769d8dafe5b7a224c40fa9da3cd5dedf431d1a7f6",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Device Policy",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.work.clouddpc",
+            "packageSha256Hash": "192d7860ce0880240061ce9a1190e02f99f27b404af2c88294e9fcd9ad56f5e5",
+            "signingKeyCertFingerprints": [
+                "693804be095bd77a327649a8b970ce25c1373069"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1516070,
+            "versionName": "15.16.07.v40"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Setup",
+            "packageName": "com.google.android.apps.restore",
+            "packageSha256Hash": "e768608061e488cd82c608868b80d8d7df35efc8c5391ca4c039920daee90fe0",
+            "signingKeyCertFingerprints": [
+                "19da94896ce4078c38ca695701f1dec741ec6d67"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 9069,
+            "versionName": "1.0.290634092"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Live Wallpaper Picker",
+            "packageName": "com.android.wallpaper.livepicker",
+            "packageSha256Hash": "9075883d81aba83fdfcbf6727fa96fd57545779169ed092790d5097f2e91a427",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.modules.permissioncontroller.forframework",
+            "packageName": "com.google.android.overlay.modules.permissioncontroller.forframework",
+            "packageSha256Hash": "90d20347851b223ed044f7aa93c9f23a49a646863e1bd7c6df1bba6aa6747ab2",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Gestural Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.gestural_narrow_back",
+            "packageSha256Hash": "8bbba44258bcd8fae2bad1657339900151a7e74d173edced879be4f268b76d8e",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Mobile Network Configuration",
+            "packageName": "com.android.providers.telephony",
+            "packageSha256Hash": "bc644c90cd7a8073dae2fc7b6ac213a566d96b418c724a14a5ee05b1c701972e",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Contacts",
+            "packageName": "com.android.contacts",
+            "packageSha256Hash": "37195860fbfa70ef0ea7c7612727e7e5c14d03426e788c02b5f1bb8916baa226",
+            "signingKeyCertFingerprints": [
+                "e867f1740bcb3612306290577729b87604bfcef4"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 10731,
+            "versionName": "1.7.31"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Partner Setup",
+            "packageName": "com.google.android.partnersetup",
+            "packageSha256Hash": "1583de0b85c2461a679a500ecb997b3e477e73dae7217a2ece4a09c79cedf324",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1184,
+            "versionName": "100.327071041"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Clock",
+            "packageName": "com.android.deskclock",
+            "packageSha256Hash": "0f9a86604e5eea0a729c09a4adfcd9d1c2cd695b67ba6606f87301ff3bc94114",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.networksetting",
+            "packageName": "com.qualcomm.qti.networksetting",
+            "packageSha256Hash": "39a036cd6299049d10c13f8fca671bff68a7c9d5d7d6ceb1ef697920fb897f2a",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Text-to-speech Engine",
+            "packageName": "com.google.android.tts",
+            "packageSha256Hash": "58b1552e1e02cdc91746e512cbb17daf8eb6c292ec6fb5a8d38d4cc4e230f1be",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 210315904,
+            "versionName": "3.20.6.280280128"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Shared Library",
+            "packageName": "com.google.android.ext.shared",
+            "packageSha256Hash": "f45132ec0509b60e5e155ecc497b46d91bac14b160bb9f5e0b57cefc9f5d6bc1",
+            "signingKeyCertFingerprints": [
+                "d6a06039c0213121c631bae619f674005f29d638"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.cts.ctsshim",
+            "packageName": "com.android.cts.ctsshim",
+            "packageSha256Hash": "7511d5fa669e86cdeb02be41009cf788b2c97ec1a39f4b004b9983342f9bdb09",
+            "signingKeyCertFingerprints": [
+                "61ed377e85d386a8dfee6b864bd85b0bfaa5af81"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 28,
+            "versionName": "9-5374186"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.qms.service.trustzoneaccess",
+            "packageName": "com.qualcomm.qti.qms.service.trustzoneaccess",
+            "packageSha256Hash": "7b91781638d969de0a10646564e41f6b4d629c3c704485db081fbb8e01a59c63",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1479371,
+            "versionName": "1479371"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "User Experience",
+            "packageName": "com.lenovo.ue.device",
+            "packageSha256Hash": "72eeedce31d3b30bf960a560ac051d5d3aa9c03f9ae30f4f84124a38a0ca38fe",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 8050152,
+            "versionName": "8.5.152-gccfb172-ROW-GteQ"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "MTP Host",
+            "packageName": "com.android.mtp",
+            "packageSha256Hash": "20b5abda20217a6832468360882ef73a3fd688f9af6e8ca95e134fcf2dc71407",
+            "signingKeyCertFingerprints": [
+                "723ad8cb26bf5314c37472785f588c2945883dae"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Files",
+            "packageName": "com.android.documentsui",
+            "packageSha256Hash": "9a16c2dfe4e3b2713bce8fb5abb0b27e5e17882075966b7c8410f2cb5aa2ca44",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "VLC Benchmark",
+            "events": [
+                {
+                    "createTime": "2021-06-07T01:27:52.312Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.videolan.vlcbenchmark",
+            "packageSha256Hash": "8081fcf69cba2773a80defd5791a96ed6bd50e4aeed9f11ef03ab6fe2ea4c86a",
+            "signingKeyCertFingerprints": [
+                "eefbc981428343bbddfff6b23b6bd8717351410c"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 25,
+            "versionName": "1.0.2"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Bookmark Provider",
+            "packageName": "com.android.bookmarkprovider",
+            "packageSha256Hash": "1b298d677a6c1046e3b5aaaec0bcc4a73dbfd59f488a968a555461f636443bfd",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Minesweeper",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.secuso.privacyfriendlyminesweeper",
+            "packageSha256Hash": "ad6de8cb06c0b631a631b4b65457575a965a12f525912575fdd5c2a3ee1d3725",
+            "signingKeyCertFingerprints": [
+                "ce01a61218b97ac4deaa75da4e5afbda059dff20"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Earth",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.earth",
+            "packageSha256Hash": "feb6fe0ac6082ec1067017a7c28ae36bb2855e58732873c20b0f076b6585edd6",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 210621311,
+            "versionName": "9.132.1.1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Productivity Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.productivity",
+            "packageSha256Hash": "475219c354783d2a7eebfce928402c0f7ca0ea8ea60991dd59f1d0e598711bf0",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Draw",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.simplemobiletools.draw",
+            "packageSha256Hash": "e0cda86630ab5f098424d9b0cd66bdd4acdb1298ac9d3148a49c92cb382da239",
+            "signingKeyCertFingerprints": [
+                "bdfb77e01f940e0ce6b931213d5e1bd9532d9d92"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 54,
+            "versionName": "5.2.5"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Carrier Services",
+            "packageName": "com.google.android.ims",
+            "packageSha256Hash": "84507281efdf40e62fc9b11457e82eb7f8e201c5990d670f54b8fc8228dfc155",
+            "signingKeyCertFingerprints": [
+                "6ddb6673e07f05a1bece93343651ad167faddc10"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 30248501,
+            "versionName": "43.0.325350470-carrierservices_V43NF_RC08"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "DefaultLaunch",
+            "packageName": "com.lenovo.defaultlaunch",
+            "packageSha256Hash": "03fa1d145daac49fd88971ab9905851f6b056b39a0e8113ce89e7de2832b7b6d",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.dynamicddsservice",
+            "packageName": "com.qualcomm.qti.dynamicddsservice",
+            "packageSha256Hash": "9bea6d86d3d5d8a15e9a00786fddeceb3ca3676b5f882d0ac981c09028567f26",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Gestural Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.gestural_extra_wide_back",
+            "packageSha256Hash": "329c6f047678869ee30b4d2ab696ffb12a850afffc43ad5ac675ce423fa07390",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Fused Location",
+            "packageName": "com.android.location.fused",
+            "packageSha256Hash": "e31f3c793c26f5314734f11eef31e3f5e208e7cf63c6bac5e13c5ab8fdea0a41",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.localtransport",
+            "packageName": "com.android.localtransport",
+            "packageSha256Hash": "a127b59091937fe795785d10870a477b860ed93d1436cf2a54d073cf2a062597",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Squircle",
+            "packageName": "com.android.theme.icon.squircle",
+            "packageSha256Hash": "1a14904ed462441f5218269607763bfd8f3430f600115af6a2a2ca3957b13319",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Memory",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.sanskritbasics.memory",
+            "packageSha256Hash": "695705f9d0bacccdd5641031c05d57c384986af4cc5012d83b42be442932bc56",
+            "signingKeyCertFingerprints": [
+                "5bb8ab3a7eecc4b8c97b6e0edf1530958c473abf"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 32,
+            "versionName": "3.2"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "org.codeaurora.ims",
+            "packageName": "org.codeaurora.ims",
+            "packageSha256Hash": "c2c6f4a7fcd1d4ff833f3af886788fb2e5cedce894506a267e12269b0902e944",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "ANT HAL Service",
+            "packageName": "com.dsi.ant.server",
+            "packageSha256Hash": "83a390cd673db461fd8efd180441ec98183aa729ed639444e1dc3e7dada73fbb",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 40001,
+            "versionName": "4.0.1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Companion Device Manager",
+            "packageName": "com.android.companiondevicemanager",
+            "packageSha256Hash": "78d93d1ba6b591ba534e2b574059896eedb70c9effebd44a5f81fc0244292031",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Basic Daydreams",
+            "packageName": "com.android.dreams.basic",
+            "packageSha256Hash": "f4325700cf111984ec5dc757a4594630f2f9ee68dfe9520c4f7f960820dfefbc",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qcrilmsgtunnel",
+            "packageName": "com.qualcomm.qcrilmsgtunnel",
+            "packageSha256Hash": "c17f1497722cc237305d81b1208771b907c55edc4e2d0904781282c0f95b476e",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Gestural Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.gestural_wide_back",
+            "packageSha256Hash": "2189a0a696eaa876c148b092d1ff0118e3bf2759c1a8c306e6e6008277b4cfa8",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "OCZ_DeployServiceApp",
+            "packageName": "com.lenovo.dsa",
+            "packageSha256Hash": "25540ca62310f64d1cce0c761400438025f277a131c7cd1a10d8036d973d73bd",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 20081101,
+            "versionName": "3.0.0.2020081101"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Lorem Ipsum",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.enterprise.webapp.xf5f403c242677721",
+            "packageSha256Hash": "787c1182c0c558432b0b45c2d693437f126a6c82a34f3fdd695cfe3dda5175fd",
+            "signingKeyCertFingerprints": [
+                "46b5804cba81236f1dcee323c3d58442d0ffd250"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded",
+            "packageName": "com.android.theme.icon_pack.rounded.launcher",
+            "packageSha256Hash": "8cc5469f26d80093da68dde51a21fa994a5153752cb20f13cf7716a49b187d68",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Shell",
+            "packageName": "com.android.shell",
+            "packageSha256Hash": "6e5a9b71fa65dba842a21f4ab37eeb926338cacdb8a27f002c59a83a38a44ff1",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.embms",
+            "packageName": "com.qualcomm.embms",
+            "packageSha256Hash": "61feaa49b2a64a5b816749f82e752c5efe820271f3f7e96beaa26feb3f144578",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "OsmAnd",
+            "installerPackageName": "com.android.vending",
+            "packageName": "net.osmand",
+            "packageSha256Hash": "468f5d398a2c62c1c3f11cf93cee14420106efc146d668655fe0d4369f73aa4b",
+            "signingKeyCertFingerprints": [
+                "49a9ace0bfee7bb91506d7921f93a47808cb62ab"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 400,
+            "versionName": "3.9.10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "User Dictionary",
+            "packageName": "com.android.providers.userdictionary",
+            "packageSha256Hash": "0a8eb755f4df0ac95c6800c70349bb4fd987b8b13e506b4ad577960174547258",
+            "signingKeyCertFingerprints": [
+                "e867f1740bcb3612306290577729b87604bfcef4"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Location History",
+            "packageName": "com.google.android.gms.location.history",
+            "packageSha256Hash": "883bdabea7146ca5de25dfa2f8a983bf71aa3e61b86dcd37a751651a6897026f",
+            "signingKeyCertFingerprints": [
+                "09b3e0b0e7995718fd4328e851b72ab6420748c9"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Market Feedback Agent",
+            "packageName": "com.google.android.feedback",
+            "packageSha256Hash": "26cac31e16f398c033aeb3a046eb36404e7f82447a9b1e9ed753d3b857ddd94f",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Lenovo ID",
+            "packageName": "com.lenovo.lsf",
+            "packageSha256Hash": "97d0a5e8089856724ad90f039b1da093e7d21de2091711dec31cdd3e3e971984",
+            "signingKeyCertFingerprints": [
+                "5af3c82bcdf98581f4bc98a5b86a41b30ed0c231"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 7010202,
+            "versionName": "V4.2.10.0202tr"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.ims",
+            "packageName": "com.qualcomm.qti.ims",
+            "packageSha256Hash": "e801fd9e5943cd7658d00540eb71a5d8dcb2ed737f486adc5d511afe52acdd95",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded",
+            "packageName": "com.android.theme.icon_pack.rounded.systemui",
+            "packageSha256Hash": "b132750730bda237781a160388bd0fe620bdc4783552824f8fb470424cffe4c4",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Settings Suggestions",
+            "packageName": "com.android.settings.intelligence",
+            "packageSha256Hash": "b1796448716f3ab593a9a066dbb8e0e996bfdc14d5816f3ccbc9c18b25a13884",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Translate",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.translate",
+            "packageSha256Hash": "23c268e6ffce9d444d37c9c1a1bbf4200dd951d497e2809ad772190a9a616f34",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 69308957,
+            "versionName": "6.17.1.04.359877260"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Music Player",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.simplemobiletools.musicplayer",
+            "packageSha256Hash": "da722204644479c121aa9983606fff711a68fcf0c3dccd135d55100a97c674c1",
+            "signingKeyCertFingerprints": [
+                "af032d16f87161b2608179601dd6c610aefd6d9c"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 87,
+            "versionName": "5.7.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Screen Recorder",
+            "packageName": "com.lenovo.screencapture",
+            "packageSha256Hash": "a852524315e367bcd90fbaafe7c5973ffd55dbaac29711d6001b9b78a4506d8d",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionName": "V3.2.1.20210107"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.android",
+            "packageSha256Hash": "53201e982a687e53bf27d28e521ca72aab9ba33559ded4d1ea9ae65851b940bd",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "YouTube Music",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.youtube.music",
+            "packageSha256Hash": "9255e413bd060f85e7d5d0c5c5304c3aa3a6eb12e2c499f0a63c2343ba9c13c8",
+            "signingKeyCertFingerprints": [
+                "afb0fed5eeaebdd86f56a97742f4b6b33ef59875"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 42950240,
+            "versionName": "4.29.50"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Chess",
+            "installerPackageName": "com.android.vending",
+            "packageName": "jwtc.android.chess",
+            "packageSha256Hash": "9f672ced5c7f454a22f3cc27537f09345ab9daf25f76359f2c15f4d0c2d1e72f",
+            "signingKeyCertFingerprints": [
+                "14bdeb36625538e780ebc4f40a4e13d4fd208bf7"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 156,
+            "versionName": "8.9.5"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.launcher",
+            "packageSha256Hash": "057650865a379dfe91c9a56d3c34f12d70b323b6c4061c47dc9c898e276085c4",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Bluetooth MIDI Service",
+            "packageName": "com.android.bluetoothmidiservice",
+            "packageSha256Hash": "be4024415cbb852cdcfcfb69d159496eda74c483e222a10c0ecc5018bbb30e72",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Wfd Service",
+            "packageName": "com.qualcomm.wfd.service",
+            "packageSha256Hash": "9b9b9e784bebab9ca1fa8f18255f02f75dcc164299b1c07db92c77900df9611e",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2,
+            "versionName": "2.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Double cutout",
+            "packageName": "com.android.internal.display.cutout.emulation.double",
+            "packageSha256Hash": "527990e61b8b43613df073b333a1d00d49d5443b042372aa6fcda18fe96ea308",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.workloadclassifier",
+            "packageName": "com.qualcomm.qti.workloadclassifier",
+            "packageSha256Hash": "e5191ac3b889e67f1957414f4730ec4b012fec6578fd7decd1bf69240619c958",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "LctAppication",
+            "packageName": "com.Lct.Ext.Feature",
+            "packageSha256Hash": "023b9178e7920dd4673a17a99f9b49156b1c75052ceea640cabc28cbfbbc3396",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Android System WebView",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.webview",
+            "packageSha256Hash": "b67d1967591a52233bec0d3451990aacf6e67e7ca7a9e4d63fd32fabd20417d3",
+            "signingKeyCertFingerprints": [
+                "1f387cb25e0069efca490ade28c060e09d37dd45"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 443021033,
+            "versionName": "90.0.4430.210"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.systemui",
+            "packageSha256Hash": "40fdd7e831c387ff92b29e0066dcc7cf33daa5ce3ddc125e236b7d323318c589",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Print Service Recommendation Service",
+            "packageName": "com.google.android.printservice.recommendation",
+            "packageSha256Hash": "a1f470272171aad45f9f73cf6e8c7d322d9327f5a0a56675a7f7ab1b390fbdac",
+            "signingKeyCertFingerprints": [
+                "4a296f252841c126e8266122863393e1a107600d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 4,
+            "versionName": "1.3.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Tuner",
+            "installerPackageName": "com.android.vending",
+            "packageName": "de.moekadu.tuner",
+            "packageSha256Hash": "2e47602f8a3250d5f1a48f7cffe27e791ccebc032c32ceb11e2796c285e24de9",
+            "signingKeyCertFingerprints": [
+                "9bfd1a763eeb61882953908b6a871c3111958691"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 7,
+            "versionName": "1.2.3"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "CaptivePortalLogin",
+            "packageName": "com.android.captiveportallogin",
+            "packageSha256Hash": "4e3cdd5287a09df3843c91186469560f4a4d30666a50fc6c4faf0ea7ab06b124",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 290000000,
+            "versionName": "2019-09"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "CrossWords",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.eehouse.android.xw4",
+            "packageSha256Hash": "4a095d075c817b026554f8b7d815cd0d2de8f32681b30b87a4cbbcd9dd3ea323",
+            "signingKeyCertFingerprints": [
+                "85e78537376f775f5d90aa58a1260a55a34bd41e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 174,
+            "versionName": "4.4.178"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.gmsconfig",
+            "packageName": "com.google.android.overlay.gmsconfig",
+            "packageSha256Hash": "1c94cb7502b56a1c4da046f1170d44ca5b6c86e0409a02b16fa132735c3c196d",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Lenovo Feature Update",
+            "packageName": "com.tblenovo.whatsnewclient",
+            "packageSha256Hash": "b22186b2710412d516bf298e698cff12191579d24155a6d870186b185fdf4672",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1000,
+            "versionName": "V2.2.1000.20200927"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "External Storage",
+            "packageName": "com.android.externalstorage",
+            "packageSha256Hash": "de56434194ebc26fbe4c0499ec1936a64cd1309351065d190b46a44693f141d6",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Docs",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.docs.editors.docs",
+            "packageSha256Hash": "94367910828aa28ac188b3c4f1dd4e1480b3ac412ea2300320541b8df8e5b057",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 212020442,
+            "versionName": "1.21.202.04.42"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Secure UI Service",
+            "packageName": "com.qualcomm.qti.services.secureui",
+            "packageSha256Hash": "ce37d6cb5d911d7fbe3c74e38b0edc0fc80824b7d88961c16c7a2afd109a1bfc",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "TabletSmartIot",
+            "packageName": "com.tblenovo.smartiot",
+            "packageSha256Hash": "4b1d7b5a901539c40bb9b35a93afb0e8c8d15edad44e8329a0a177b8fc8aaafc",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 3,
+            "versionName": "V2.1.2.20200810"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Key Chain",
+            "packageName": "com.android.keychain",
+            "packageSha256Hash": "a140aa0127186dc8810b769058700e47cdd107c936aad8c24cefaaa3b5ad8784",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Work Setup",
+            "packageName": "com.android.managedprovisioning",
+            "packageSha256Hash": "b41d2710bab64121cf4488c6ac67f0dcbb97fc4338777517307725b39d6d75f7",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.settings.overlay.common",
+            "packageName": "com.android.settings.overlay.common",
+            "packageSha256Hash": "c5639224ecea4092ed2e5f1ceeff477b93aec9d1114a1d1ddd06bc7eab221ead",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Drive",
+            "events": [
+                {
+                    "createTime": "2021-06-06T16:43:01.325Z",
+                    "eventType": "CHANGED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.docs",
+            "packageSha256Hash": "1fdf911903eca1e0ee2d4fe4d694fdeac290350323eefed2208f101bea53eee4",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 212010742,
+            "versionName": "2.21.201.07.42"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Material FX",
+            "installerPackageName": "com.android.vending",
+            "packageName": "amirz.musicfx.material",
+            "packageSha256Hash": "e7e2ebbff67dcd4a6b0e8d5c512e7f35ffa0342976e972e0ac1257a450ea3b51",
+            "signingKeyCertFingerprints": [
+                "7474d9eb6aa776ab08135e19cb2a3b69cedc2432"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "vendor.qti.iwlan",
+            "packageName": "vendor.qti.iwlan",
+            "packageSha256Hash": "02e0a84a58925bb230f2e7c6c35756e6ee24fc0db0daa397c65936fe154cf20b",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "GCompris",
+            "installerPackageName": "com.android.vending",
+            "packageName": "net.gcompris.full",
+            "packageSha256Hash": "8895146213b276ef1913c49571fb802dd8b9aaaf5232fee664e11587de5f90d6",
+            "signingKeyCertFingerprints": [
+                "c703e21a82c4871b00169504593c8ead7b4bb0c9"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 10101,
+            "versionName": "1.1"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Collabora Office",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.collabora.libreoffice",
+            "packageSha256Hash": "1fb7f82cc8d10ba36ac8feeebdce1627772517e119d3111a17bfa4c53b7d040d",
+            "signingKeyCertFingerprints": [
+                "a79966c152a6b7f40707169ce9b58b50b96e1618"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 68,
+            "versionName": "6.4.3"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Sketches",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.secuso.privacyfriendlysketching",
+            "packageSha256Hash": "6618d98589394c6c2c71c4dc6ddc81cb75dc580676e266b0d078df60b6f40b5a",
+            "signingKeyCertFingerprints": [
+                "ce01a61218b97ac4deaa75da4e5afbda059dff20"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android System",
+            "packageName": "android",
+            "packageSha256Hash": "f4bf3bc83fd5bfbe4c22fb0aa696a98c1c185a479997c043873504953982b990",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Shades",
+            "installerPackageName": "com.android.vending",
+            "packageName": "dev.lucanlm.antimine",
+            "packageSha256Hash": "0f004679d2ec61493947f63e279cb0346391f09b1e14d1c63c7f6d519c961941",
+            "signingKeyCertFingerprints": [
+                "fdf4ae0afa0e11afdc61e4630faa6f56fb49f039"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 34000000,
+            "versionName": "34.0.00"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Google Play services",
+            "events": [
+                {
+                    "createTime": "2021-06-07T01:17:25.999Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-07T01:17:39.533Z",
+                    "eventType": "CHANGED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.gms",
+            "packageSha256Hash": "d69d7364120501d94d160f1ab9505aeaa7bb41e598149042e576e245d5d25612",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 211816037,
+            "versionName": "21.18.16 (120400-374723149)"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "LenovoLauncherProvider",
+            "packageName": "com.lenovo.launcher.provider",
+            "packageSha256Hash": "a4e0b4155ef3cea0d8174e67087ad369112322839f4e6c1ead8629d6cf897b14",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Demo mode",
+            "packageName": "com.motorola.demo",
+            "packageSha256Hash": "7a6e37897b07314c185499c49a9682b988ec8c10e760402177cf8d42c96e3abb",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 20200611,
+            "versionName": "20200611"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Accessibility Suite",
+            "packageName": "com.google.android.marvin.talkback",
+            "packageSha256Hash": "2727fe4089af42a6661ec54b41487a25be4a0815b4059b70783916f82124fbe1",
+            "signingKeyCertFingerprints": [
+                "9b424c2d27ad51a42a337e0bb6991c76eca44461"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 60104040,
+            "versionName": "8.1.0.278818032"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.qtisystemservice",
+            "packageName": "com.qualcomm.qti.qtisystemservice",
+            "packageSha256Hash": "36abde4e10c45c9a3c5f8c52fc9d14574b413d97019ddc393bf1e7d892658cd2",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Green",
+            "packageName": "com.android.theme.color.green",
+            "packageSha256Hash": "cc4368a1966934249df4c7afb111ac3226cb62b13c50c11a8f4710e4b176aa4e",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "SecureElementApplication",
+            "packageName": "com.android.se",
+            "packageSha256Hash": "0f69a3587e80a12a0e9692736f5d45d1b9bff94e4aa55fb5a7dbc08a07fab899",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "ProxyHandler",
+            "packageName": "com.android.proxyhandler",
+            "packageSha256Hash": "790df903967b5f9985591c9a95b34cb56ce2e185148f4615e04b1c9499f3f43c",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Sim App Dialog",
+            "packageName": "com.android.simappdialog",
+            "packageSha256Hash": "0ebd29ec3d1ddb2a7a050bdbc1f7f6da3011f652a365a41a437a3ccd6d80f561",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Food Tracker",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.secuso.privacyfriendlyfoodtracker",
+            "packageSha256Hash": "8ceee52463972bda89aa3078d1a763eaf1bf321b0a5fea4e059db58788d16832",
+            "signingKeyCertFingerprints": [
+                "ce01a61218b97ac4deaa75da4e5afbda059dff20"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 4,
+            "versionName": "1.1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Device Info",
+            "packageName": "com.qti.qualcomm.deviceinfo",
+            "packageSha256Hash": "5a5857894b7700eb8e2086ca838b5f461e386441aac5874490b4aad44db9e8a4",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Nihonoari",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.LAPARCELA.nihonoari",
+            "packageSha256Hash": "3778a505d0a08b3b8997d91092b2c9cdbc87a0badeaa213dd1909efc5f6ba822",
+            "signingKeyCertFingerprints": [
+                "0fb3e302f338b4f889bd2cb4b8979a6a24c46171"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 7,
+            "versionName": "1.5.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "ScreenAssistant",
+            "packageName": "com.lenovo.screenassistant",
+            "packageSha256Hash": "a189b0fa0182de97a0de40b24b02c9bc12fddb2bdd4165e6883f06be345ca7b9",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionName": "V3.2.1.20210122"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Multi-User",
+            "packageName": "com.android.wantjoin.childmode.ctrl",
+            "packageSha256Hash": "2f55f8367b8c33e06166b98a358a26a5ead5b08a8efc4a08228f23445c9d0269",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 3000001,
+            "versionName": "3.2.1.20200623"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Services Library",
+            "packageName": "com.google.android.ext.services",
+            "packageSha256Hash": "5333e38575f05b0f497b0ff4db8cadfd354ff35e7699b62827d557633c292f8a",
+            "signingKeyCertFingerprints": [
+                "b99dd2248a4882e560503ba1b6cb10efb3808f21"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 291900801,
+            "versionName": "q_pr1-release_aml_291900801"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "RawDataTest",
+            "packageName": "com.goodix.rawdata",
+            "packageSha256Hash": "b00544414e9569ad2288f411c9ded65323d0f9942319ea8482dd73e20f503b9c",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.8.0.12"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.atfwd",
+            "packageName": "com.qualcomm.atfwd",
+            "packageSha256Hash": "c6a1d049fff521887a0c9af174f18213250f1ee8ccbc6abbb8f243a5a501dfde",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Bluetooth",
+            "packageName": "com.android.bluetooth",
+            "packageSha256Hash": "93cb7bc0e06b27b7f435efab6abd4baa6e7bced91c4406aa151fc70b9b7667c4",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Sheets",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.docs.editors.sheets",
+            "packageSha256Hash": "1ef5ae173029eac4874f9c26a605da3a4e2bb7b1f894cdb0cf9f016dcb611615",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 212020542,
+            "versionName": "1.21.202.05.42"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.uim",
+            "packageName": "com.qualcomm.qti.uim",
+            "packageSha256Hash": "831ba899fbb9a0d91ee45314b3e352b7455817e30da4491ea397d9d2ae6f5013",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "System Tracing",
+            "packageName": "com.android.traceur",
+            "packageSha256Hash": "a3e1a54c45b3a8f8b8bcfa319a597c60ac8d0447504346c52efabb5f8b2d050d",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Dynamic System Updates",
+            "packageName": "com.android.dynsystem",
+            "packageSha256Hash": "bd48744fd59019afe0c8c21e9a0527d736fc3f75b1784610b370742fad30389f",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "HTML Viewer",
+            "packageName": "com.android.htmlviewer",
+            "packageSha256Hash": "a0cd241cff45a0fef3a61fb93dddb31145fd5a45d8c27bfc7f0bfcba3fddf36f",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "ConfigUpdater",
+            "packageName": "com.google.android.configupdater",
+            "packageSha256Hash": "bba7f585c0a873a521146ef45c7f55a1edc522cd562161482084b2192f6369e6",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "System Update",
+            "packageName": "com.lenovo.ota",
+            "packageSha256Hash": "745b4a7e0589061e47c5c2bafd8c046ac2be281fddfec96ba96f84910ea85d0d",
+            "signingKeyCertFingerprints": [
+                "e867f1740bcb3612306290577729b87604bfcef4"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 999000002,
+            "versionName": "V8.1.7.200709"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.ons",
+            "packageName": "com.android.ons",
+            "packageSha256Hash": "9c229c6e4ddf734f94798e0ff46f045f181106e26b533e82d9c656fba22431ec",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "CACertApp",
+            "packageName": "vendor.qti.hardware.cacert.server",
+            "packageSha256Hash": "4e233eef6a01590b853b7653e8e811dadc093e69ea0fdcd926feaa72c22e7d99",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.simsettings",
+            "packageName": "com.qualcomm.qti.simsettings",
+            "packageSha256Hash": "63b17e7e421de3aa97c4a3b16570b297d5bec4526ea53fafed71b842ac91b7ae",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Package installer",
+            "packageName": "com.google.android.packageinstaller",
+            "packageSha256Hash": "f7f9e87296479b21ba5148282b004741ade139fccaef492e02fd9955dd76419b",
+            "signingKeyCertFingerprints": [
+                "82f34042b49bfdb66209047207b4434f0658218a"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-7029319"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Street View",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.street",
+            "packageSha256Hash": "67dc6940495a326263770b9a5912554297062510b1d0eb171b257ca994d078b5",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 52374,
+            "versionName": "2.0.0.368298344"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.themepicker",
+            "packageSha256Hash": "bf8c9abe482f053785f3788c626617185de0c08c4de1d4be70585a4032d44ed9",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Photo Screensavers",
+            "packageName": "com.android.dreams.phototable",
+            "packageSha256Hash": "33f860716a0aeb84a6cb5d918d13c44523581758f1bb42355a2945f332699f48",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Google Go",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.searchlite",
+            "packageSha256Hash": "89066e218e703295d12b38a7807b22803828b9c9bb558fbd0efe7ba800e74a96",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 470005,
+            "versionName": "3.28.375064974.release"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Slides",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.docs.editors.slides",
+            "packageSha256Hash": "38bbe7ac0b3bada8c6687f56df382f36602a4eeb54b0743f3f9bd9f84f8f5a20",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 212020542,
+            "versionName": "1.21.202.05.42"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Qualcomm Mobile Security",
+            "packageName": "com.qualcomm.qti.qms.service.telemetry",
+            "packageSha256Hash": "ad4958fdbe92746d43aed4703c58bd112504b4ca776ece9bee83afba6e985d4f",
+            "signingKeyCertFingerprints": [
+                "51a1cdd95a87a7cc9c2069c52eebf99c80fa45f5"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1479375,
+            "versionName": "1479375"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Voice Recorder",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.simplemobiletools.voicerecorder",
+            "packageSha256Hash": "85e6a55512cb445befebd69b13185d3f5d7dbdc92674749f3c18912e49a41a4c",
+            "signingKeyCertFingerprints": [
+                "091d8131f89a9355073a3b03742dcc5d4ae32028"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 13,
+            "versionName": "5.5.1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Contacts Storage",
+            "packageName": "com.android.providers.contacts",
+            "packageSha256Hash": "faac263fc9fd5d7709d500011f1d98b23c6f3428de70b1707b5f9a1c01fef94b",
+            "signingKeyCertFingerprints": [
+                "e867f1740bcb3612306290577729b87604bfcef4"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.sharedstoragebackup",
+            "packageName": "com.android.sharedstoragebackup",
+            "packageSha256Hash": "192ab831fcfe6241e7001fe9a0f55af33b2b3386a8b72385af5de5ec5414b2c0",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "SetupWizardExt",
+            "packageName": "com.tblenovo.setup",
+            "packageSha256Hash": "4c81bc5377f90f4e572b0f711390cc35dcc3991a4b3599bb5a4d3a3c9c147d31",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2010019,
+            "versionName": "V2.1.49.20200929081344"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.uimremoteclient",
+            "packageName": "com.qualcomm.uimremoteclient",
+            "packageSha256Hash": "64e47e791e008c441996c141f44f282f73c662ad20ede61a05d3063a36e63b3b",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "VpnDialogs",
+            "packageName": "com.android.vpndialogs",
+            "packageSha256Hash": "96b1e1165f6e9e981cc6fc84d40a2ffb756373e0871e4b520d57917e4cc39ff5",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Cinnamon",
+            "packageName": "com.android.theme.color.cinnamon",
+            "packageSha256Hash": "a67691d76af8de524b5b9d037c8e47a037b53f40845a82a38f60192e768bc3d3",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Services Framework",
+            "packageName": "com.google.android.gsf",
+            "packageSha256Hash": "9d3dbd5fdb1e483e4035cdb8c52f132a1c5fc2348780e364093ce19c36ce33ae",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-6475670"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Calendar",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.simplemobiletools.calendar",
+            "packageSha256Hash": "ea5967a910dd456bafbf6fcce6f5d64142254735dfea33f899bc6f04658edb50",
+            "signingKeyCertFingerprints": [
+                "c45f727bb7bc3e86005ad1c833683fc0befcd891"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 144,
+            "versionName": "5.2.7"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.android",
+            "packageSha256Hash": "7ebfd8a7890990624c81470378c7591b2f9d4f72e07bb7753acc55881e2d9e70",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Corner cutout",
+            "packageName": "com.android.internal.display.cutout.emulation.corner",
+            "packageSha256Hash": "1143a6c4d01c2f18a554f22a6e67a8f3742b57f9094cf8ba2f935091268754a5",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Main components",
+            "packageName": "com.google.android.modulemetadata",
+            "packageSha256Hash": "05500e5254e5cacf3261b168b6ca75386b8a98e69229d73f11c50e34ea055ef8",
+            "signingKeyCertFingerprints": [
+                "8e017ef64bdca26698fe60ec8f45fcf9819f1f4d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 301402801,
+            "versionName": "2020-12-01"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "NetworkStack",
+            "packageName": "com.android.networkstack.inprocess",
+            "packageSha256Hash": "fd1cb0b1171c08658565e22513de3fa5a3f74f90ea79a5acc1f87e5972b1b6fb",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Ocean",
+            "packageName": "com.android.theme.color.ocean",
+            "packageSha256Hash": "12b996c9872000c55fd62d1c703533dbcc4ef9e903e73f4b9537108a407dda5e",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Gallery Go",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.photosgo",
+            "packageSha256Hash": "a3fd841bdc56baf10405e7eae9d74a931e5770e79be24b4efd781146abe7fb41",
+            "signingKeyCertFingerprints": [
+                "643fd63d7df2c3f5ab507febb20a1847c53b4d49"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 6417973,
+            "versionName": "1.7.8.373694029 release"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.server.NetworkPermissionConfig",
+            "packageName": "com.android.networkstack.permissionconfig",
+            "packageSha256Hash": "ce6e5183bc6b81895242dc6ad641178c89e9baba0333eed640978c2d09f0dae3",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 290000000,
+            "versionName": "2019-09"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded Rectangle",
+            "packageName": "com.android.theme.icon.roundedrect",
+            "packageSha256Hash": "947aef9e03a5f18a5e293ee4e42413592df87165e32d6c85d3477f3d9824c37d",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Intent Filter Verification Service",
+            "packageName": "com.android.statementservice",
+            "packageSha256Hash": "6689ec217f699c0540b5c19b4abfe1a50a32f1481a034877ecd13390675cd2ca",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Ruler",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.secuso.privacyfriendlyrulerapp",
+            "packageSha256Hash": "1eecea07e27f77936858a1d5b2cf2e6874a90fabe91e6c5cbedd6d5acf08301c",
+            "signingKeyCertFingerprints": [
+                "ce01a61218b97ac4deaa75da4e5afbda059dff20"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 3,
+            "versionName": "1.1"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "SuperTuxKart",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.supertuxkart.stk",
+            "packageSha256Hash": "50c038749386e83d8c3e965fc18fcf80089819df653725ee909118e06a94347c",
+            "signingKeyCertFingerprints": [
+                "ed5628fefd30e42f24fda798d77cca3ca5dd4249"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 225,
+            "versionName": "1.2"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Settings Storage",
+            "packageName": "com.android.providers.settings",
+            "packageSha256Hash": "341863dc04ed30f34798652313bab92074701f6e9b6f38d725d94b81190b234a",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qti.qualcomm.datastatusnotification",
+            "packageName": "com.qti.qualcomm.datastatusnotification",
+            "packageSha256Hash": "471a42af30457b8563334e50742159178bcbcf3588d9ff582804e2c214c35c1e",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "System UI",
+            "packageName": "com.android.systemui",
+            "packageSha256Hash": "8127e26f1cd09512da1a333f88c79bff1f037c740bb6ffb608385db5095a5bf3",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Smart Launcher",
+            "packageName": "com.tblenovo.launcher",
+            "packageSha256Hash": "4734538161576d789fd96d21afd99720aae1f59b1518c2233a4335b35c6780e1",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2200000,
+            "versionName": "V3.2.109.201208"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded",
+            "packageName": "com.android.theme.icon_pack.rounded.android",
+            "packageSha256Hash": "ef3b98c703fca4483eb2d5206f9783ce86e640e0c2c34a76e71bdfef8d10a2fa",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Time Zone Updater",
+            "packageName": "com.android.timezone.updater",
+            "packageSha256Hash": "c62ef8c7d0c3dc6add74da6dc0fc5fd7cd8ff47b7bee0775e747c00b5f6edbdb",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Default Print Service",
+            "packageName": "com.android.bips",
+            "packageSha256Hash": "2691d7ec3992ae5ad3e85fb420d3e2d7cb0b27677400bbd9f42a2cc00a940f06",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.systemui",
+            "packageSha256Hash": "9d3fecfe7513596eb576631b158c1faa8b02b6c98120adcca3f59cfc197acfd2",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "LocationServices",
+            "packageName": "com.qualcomm.location",
+            "packageSha256Hash": "6338694960543e545b04eb70d57f3e5106dc89f8405c3d3520b20038c0860cb0",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Contacts",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.simplemobiletools.contacts",
+            "packageSha256Hash": "80b6c741b26d18e16528e60559d181a75473ccb8b919db6245fff37b4ce4d13a",
+            "signingKeyCertFingerprints": [
+                "ca7f58994ba2682ad49707d98a009ec025486dad"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 46,
+            "versionName": "5.2.7"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Permission controller",
+            "packageName": "com.google.android.permissioncontroller",
+            "packageSha256Hash": "4eb46b42b463eb188c1a1e03b2711de1a0bcfa9e77223d4ede8c205a18cde0cc",
+            "signingKeyCertFingerprints": [
+                "1d156d16e46b29796ef586b1b6c80e8690156717"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 293100000,
+            "versionName": "q_pc_aml_293100000"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.settings",
+            "packageSha256Hash": "d7be053e91765aff745777d980133e59187097d0467d27cb3e275d2e51d39c16",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Mail",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.enterprise.webapp.x50bb90cffc907768",
+            "packageSha256Hash": "c26a9ca46f91ad1ff83bee2b3daae9af92087124f1a7f6e4101f2369b34715f3",
+            "signingKeyCertFingerprints": [
+                "7de20d1dc34b4fa794271471876a25c5f5e4707a"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 21,
+            "versionName": "21"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.themepicker",
+            "packageSha256Hash": "8508b58be4c20833d5770a7af0cfb8ba0ab65819be416ccced72ee6905938d26",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.remoteSimlockAuth",
+            "packageName": "com.qualcomm.qti.remoteSimlockAuth",
+            "packageSha256Hash": "f7a83f7a2b796daee8d32803ed7f368f8809ac863a78d8a83ce73b1e72c2a3cf",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Frozen Bubble",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.jfedor.frozenbubble",
+            "packageSha256Hash": "4f2dbd83698bd44aac074de20c23b73c24e679844f27e0e7a07b0dedf4fd90aa",
+            "signingKeyCertFingerprints": [
+                "e37fd6740a301b0141abd85e0d2d78ed111d578b"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 57,
+            "versionName": "4.7"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Smart-Divert",
+            "packageName": "com.qti.xdivert",
+            "packageSha256Hash": "6f25bb12391fb304c9af9e2c1ff667db660e997c7e1b9f5f02cab94729f054ad",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google One Time Init",
+            "packageName": "com.google.android.onetimeinitializer",
+            "packageSha256Hash": "0df32a1ce51e2338f605ebc70780c59276d30cfaa1bdb8807f970a5feec4acbb",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.backupconfirm",
+            "packageName": "com.android.backupconfirm",
+            "packageSha256Hash": "bb641f6b920c1987f0064a743c8cbd4ac917fcc70bdd2ed6712d9ba4a1be5bf7",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Teardrop",
+            "packageName": "com.android.theme.icon.teardrop",
+            "packageSha256Hash": "ee89d9bef3bdf0b72ec253a36648582e7e6a1c664d453c2a4521e7d3ed56bcda",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Open Sudoku",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.moire.opensudoku",
+            "packageSha256Hash": "bf84d173986a908e05d0345e683c8212ebf2336d37e76c4a349451c461116bff",
+            "signingKeyCertFingerprints": [
+                "41ec00dc8cde584b08ed124092686e78691b6965"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 20210327,
+            "versionName": "3.7.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Calculator",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.calculator",
+            "packageSha256Hash": "ed89f641a2851abc4b6e9ed440d174c4a9de9a029e489ec56dead518a98e2c46",
+            "signingKeyCertFingerprints": [
+                "af24b7f3eff9d97ae6d8a84664e0e98888636110"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 78000303,
+            "versionName": "7.8 (271241277)"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.timeservice",
+            "packageName": "com.qualcomm.timeservice",
+            "packageSha256Hash": "3fe0ce5af3f574ab19e01dff9540f8167531551f911f619304c79cf8f5eff9d2",
+            "signingKeyCertFingerprints": [
+                "ed4d8cb358d5894077ddfceaaccddba19a82b0ee"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Settings",
+            "packageName": "com.android.settings",
+            "packageSha256Hash": "dc4e1b90c7dcf769e3552a9b66241acf1efd1998eb8af5b483a9ae9045664c8d",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Purple",
+            "packageName": "com.android.theme.color.purple",
+            "packageSha256Hash": "f38a8ef85095896f81714ed8a867217e8ea7940f50859f4d121e10de37bfad27",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.telephonyservice",
+            "packageName": "com.qualcomm.qti.telephonyservice",
+            "packageSha256Hash": "f49655fba7309c47fbde000b2aa4ef4cb7cefda5c4b36337c7ddee80d2f55dcd",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Rootless Pixel Launcher",
+            "installerPackageName": "com.android.vending",
+            "packageName": "amirz.rootless.nexuslauncher",
+            "packageSha256Hash": "627c9d6ea257637b65d04c1b0c23d030c40cb8109eb50cfe7903ae219f38168b",
+            "signingKeyCertFingerprints": [
+                "7474d9eb6aa776ab08135e19cb2a3b69cedc2432"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 30911,
+            "versionName": "3.9.1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "ConfDialer",
+            "packageName": "com.qualcomm.qti.confdialer",
+            "packageSha256Hash": "de60fbd883b7617cccc2cc70d1d875118394e2e2e18233f05867cd78a2c8aebf",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Orchid",
+            "packageName": "com.android.theme.color.orchid",
+            "packageSha256Hash": "c60812a1e4254f4d0d8d695fb8b501c73b5fe21cd49e2b49b61e1d57a01fc96a",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qti.dpmserviceapp",
+            "packageName": "com.qti.dpmserviceapp",
+            "packageSha256Hash": "3d2ad4deb33c9c78c55cb7350d64a86f54d23eaec238a404104a946fe4606c2f",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Sudoku",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.secuso.privacyfriendlysudoku",
+            "packageSha256Hash": "5202d145053c3767c26f4bfd2e7e9f3946dd6a23c68e13a7098f605943ae7bd2",
+            "signingKeyCertFingerprints": [
+                "ce01a61218b97ac4deaa75da4e5afbda059dff20"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 10,
+            "versionName": "3.0.1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.modules.permissioncontroller",
+            "packageName": "com.google.android.overlay.modules.permissioncontroller",
+            "packageSha256Hash": "902dc8161d23d1e22678a600de9a37d641d1454365bbda1ed941c947c7f39fc4",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Setup",
+            "packageName": "com.google.android.setupwizard",
+            "packageSha256Hash": "441f60debffa87ef168cb09714a220c5193f5f2568bb4963bedcd67719f417ca",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 7399,
+            "versionName": "230.329243634"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Noto Serif / Source Sans Pro",
+            "packageName": "com.android.theme.font.notoserifsource",
+            "packageSha256Hash": "9b38db98f2a4524078f95d5149323eb7290ff698193946db70c471e91a843300",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Space",
+            "packageName": "com.android.theme.color.space",
+            "packageSha256Hash": "ad73d1798409ecd7f433e951f87a1cc770e175ed6ca498ece5ae593192975f9e",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Mobile Data",
+            "packageName": "com.android.phone",
+            "packageSha256Hash": "dd6b50c5bc51fad396af7ec5faec71b4e7dab5183dd5d339918351aa1ad62cea",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "MmsService",
+            "packageName": "com.android.mms.service",
+            "packageSha256Hash": "bb2783ce3cbc812dd679319e868f29959dd38db7f9784a1850205a4777cb75eb",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Q Easter Egg",
+            "packageName": "com.android.egg",
+            "packageSha256Hash": "1a03eeff7d4bb0cc5a4bf3eb277d05e9c931cfdab8d621e90b105fa56b257fcb",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Pixel Wheels",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.agateau.tinywheels.android",
+            "packageSha256Hash": "c038bdbd702a4fa7485a9930dc6448b0acbec42244812a0f5acd2e61f6274f9e",
+            "signingKeyCertFingerprints": [
+                "279db4af2bb1ba3fdb8ef2a6734ca21971f24158"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 20,
+            "versionName": "0.19.1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded",
+            "packageName": "com.android.theme.icon_pack.rounded.settings",
+            "packageSha256Hash": "dc668e1f195766232411ac5c556384707933ff56394c8f035470c60ba5c9b76b",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Finance Manager",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.secuso.privacyfriendlyfinancemanager",
+            "packageSha256Hash": "502749d30f9aea500a4847167bfe3ac62f72537958b3d2aa6fa324a72a776718",
+            "signingKeyCertFingerprints": [
+                "ce01a61218b97ac4deaa75da4e5afbda059dff20"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 4,
+            "versionName": "2.0.2"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.uimremoteserver",
+            "packageName": "com.qualcomm.uimremoteserver",
+            "packageSha256Hash": "1063f966d6d893930f6d87e89768e1bd8c40adc7c480b1e4bf1b03b6fb2b10e3",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Scheduled power on and off",
+            "packageName": "com.android.timerswitch",
+            "packageSha256Hash": "0c6cfa57f5a146a1f9922d649ebe0abde3ca5432221bdf56fb2257e5b13a2bae",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "OsuLogin",
+            "packageName": "com.android.hotspot2",
+            "packageSha256Hash": "f8aa34dd710dcbf693cdf1157ed61341f901b9e970632114778b7b637978c733",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Lottie",
+            "packageName": "com.lct.lottie",
+            "packageSha256Hash": "d844e47ce58149fb73be36b108ba3de156f8c8a80ad46af0800349b59f014090",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Black",
+            "packageName": "com.android.theme.color.black",
+            "packageSha256Hash": "c3871ff2788412eaffda46e7afbc65f03e4ac5b55a198132298a11d135edb688",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Input Devices",
+            "packageName": "com.android.inputdevices",
+            "packageSha256Hash": "cb7f7acf67a4f4875cbf9dfc7b4e50e0ffd2b556fa5af4708f8f1fd3695a6dbb",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Device setup",
+            "packageName": "com.google.android.apps.work.oobconfig",
+            "packageSha256Hash": "e1bbb16eef99cc499864f934fbe0d9c424f949c94f26d904b6d1d69009a162c6",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 161,
+            "versionName": "1.0.300218219"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.providers.partnerbookmarks",
+            "packageName": "com.android.providers.partnerbookmarks",
+            "packageSha256Hash": "c7931c4762eb4862ae049d70d53e8f6ee4eaf4e96742673044d635017f77ae21",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Calendar Storage",
+            "packageName": "com.android.providers.calendar",
+            "packageSha256Hash": "91fe05ada1ff6f940ee3613c108c869be7044805603c54d3e6ba97416f741a29",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Tags",
+            "packageName": "com.google.android.tag",
+            "packageSha256Hash": "ecb051d20e7990d810d904a515ce122fc926578f4355afaafe2d3400827b8c1c",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 101,
+            "versionName": "1.1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Conference URI Dialer",
+            "packageName": "com.qti.confuridialer",
+            "packageSha256Hash": "402953ea1bc8ffb3989f54a8d4f8c68b700e7962b7915f7cde98028ac948c3e6",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "org.codeaurora.bluetooth",
+            "packageName": "org.codeaurora.bluetooth",
+            "packageSha256Hash": "e6a885454810ce3aad08b0a55f094a9413a5bd47591c94ec993c078e6b622096",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "SanskritBasicsLetters",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.sanskritbasics",
+            "packageSha256Hash": "8ed595e5e36266d6218da62d01f8800bd28fddcdf88ac2a06a208201b197557e",
+            "signingKeyCertFingerprints": [
+                "5bb8ab3a7eecc4b8c97b6e0edf1530958c473abf"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 31,
+            "versionName": "3.1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.qms.service.connectionsecurity",
+            "packageName": "com.qualcomm.qti.qms.service.connectionsecurity",
+            "packageSha256Hash": "2c1a9969089ddc6409b2340550e5f997b8957355e9660da336ecc26442359ded",
+            "signingKeyCertFingerprints": [
+                "51a1cdd95a87a7cc9c2069c52eebf99c80fa45f5"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1479374,
+            "versionName": "1479374"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Pausing Healthily",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.secuso.privacyfriendlypausinghealthily",
+            "packageSha256Hash": "9a6d6409e995bd16dd88880dc24e85c162f40ba5e8889e55a8e919a2d6abd7d1",
+            "signingKeyCertFingerprints": [
+                "ce01a61218b97ac4deaa75da4e5afbda059dff20"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 7,
+            "versionName": "1.3"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.gmsgsaconfig",
+            "packageName": "com.google.android.overlay.gmsgsaconfig",
+            "packageSha256Hash": "cd750363aeec8ac34c8ca7bda526eece95c712613d335e45685d7003e41f5598",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Google Play Store",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.android.vending",
+            "packageSha256Hash": "4e7a1f21bd2e41ac40fa0156587b9924b070967b1cf5465a579f98cc4ba9c807",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 82552710,
+            "versionName": "25.5.27-21 [0] [PR] 375135971"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Call Management",
+            "packageName": "com.android.server.telecom",
+            "packageSha256Hash": "6f013a186e0b7bd7b9470e52c2cb56b30db34ebe324090f13cedd9c2f0532f02",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.wallpaperbackup",
+            "packageName": "com.android.wallpaperbackup",
+            "packageSha256Hash": "d2e38c1ac95f183f76fb7b68cddc0f4f3214184c09878bbd743baa57e0cd9663",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Device Service",
+            "packageName": "com.lenovo.lsf.device",
+            "packageSha256Hash": "3c042b297c459143dbdd8b31be8883ce15a833e5cdc2c76b9d034e0d815bd088",
+            "signingKeyCertFingerprints": [
+                "1698f28a45d3a2830c06d81d9c93eda2dbffb09e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 500020058,
+            "versionName": "V5.0.2.0058trn"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Chrome",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.android.chrome",
+            "packageSha256Hash": "c7b27d4b19d9b069adc7f75713821f788a16e70167ba2179fdf952af6b32d25e",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 443021033,
+            "versionName": "90.0.4430.210"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "daxService",
+            "packageName": "com.dolby.daxservice",
+            "packageSha256Hash": "656345e9e2b013c9c490dd9798ae189b87d9c6fc6c22d1eedfe5e4e2922327f9",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Media Storage",
+            "packageName": "com.android.providers.media",
+            "packageSha256Hash": "fe042340f49f0a27042ffe7b04064ef45933b8b6152cfe5adf5b45a2b00861a3",
+            "signingKeyCertFingerprints": [
+                "723ad8cb26bf5314c37472785f588c2945883dae"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1023,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "YouTube",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.youtube",
+            "packageSha256Hash": "a01081fcb34ea55a492791c70848905f82b696cf63bccab36b1abfa6c7094c6b",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1521081792,
+            "versionName": "16.20.35"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "3 Button Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.threebutton",
+            "packageSha256Hash": "0079b811b2281e49b441fbae98fea2dac7e1ca2f394b8e69db119802e15fa30d",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "OCZ_ClientDownloader",
+            "packageName": "com.lenovo.ocpl",
+            "packageSha256Hash": "ff18130fa6388a280593bcb4fc1685b439c3bb6444f82440721c9e9e84cd6e17",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 20091601,
+            "versionName": "3.0.0.2020091601"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.wallpapercropper",
+            "packageName": "com.android.wallpapercropper",
+            "packageSha256Hash": "4a26b6369258e64e58b92d7e949609f30963113397c311a384fbe71586af1c06",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Camera",
+            "packageName": "org.codeaurora.snapcam",
+            "packageSha256Hash": "707347579d4ad7d6cc8e672ffd57244d119eb82393d025f6fe684628a8bcdfc7",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 20002100,
+            "versionName": "2.0.002 (-00)"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "HyperRogue",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.roguetemple.hyperroid",
+            "packageSha256Hash": "072a319b76bdce7e4e8dd17e3b80c73cf0b11116263ffe44014b6ebe3a3febf2",
+            "signingKeyCertFingerprints": [
+                "c8e15c57a35fa5e423cab44f26f5355152559432"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 11309,
+            "versionName": "11.3i"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Contacts",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.contacts",
+            "packageSha256Hash": "a18040a3d6c77abd1c226f0915906525430a58abef68239aef3e9393d662988a",
+            "signingKeyCertFingerprints": [
+                "ee3e2b5d95365c5a1ccc2d8dfe48d94eb33b3ebe"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2611093,
+            "versionName": "3.46.1.374101456"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Certificate Installer",
+            "packageName": "com.android.certinstaller",
+            "packageSha256Hash": "f00db3887837c6de56faacd5a6febe742480d97e3e98871acd0ba75e8bf98c70",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Checkers",
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.secuso.privacyfriendlydame",
+            "packageSha256Hash": "0af2316f808a09179c9a80843707a7b9a45bfefaccc93dd64218c5fd89b0726a",
+            "signingKeyCertFingerprints": [
+                "ce01a61218b97ac4deaa75da4e5afbda059dff20"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 3,
+            "versionName": "1.2"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.launcher",
+            "packageSha256Hash": "72894e89793973f77112fa0761f0b7af89b730cf41bd6deb2643f398b67e3afe",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.smspush",
+            "packageName": "com.android.smspush",
+            "packageSha256Hash": "9c0eda099e6bed9d27a0c14cdbd3e367db8be0e6e53e65e389a94af6dbf9728f",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "TV Guide",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.enterprise.webapp.x597edd8749574755",
+            "packageSha256Hash": "04921371ee85bee9e89fe23760c4f2580c41d59831f147bedf6a74291ebcb9df",
+            "signingKeyCertFingerprints": [
+                "72df577815cf36ec23dfcbc6af35279c93fc6da0"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 20,
+            "versionName": "20"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Download Manager",
+            "packageName": "com.android.providers.downloads",
+            "packageSha256Hash": "4fd7cc9b291aca445c1aad4c9b4b5d04f08fadc6e9515f4591391e204c382e74",
+            "signingKeyCertFingerprints": [
+                "723ad8cb26bf5314c37472785f588c2945883dae"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.settings",
+            "packageSha256Hash": "6f170d28d7ff03432f6ab7e3d4630a0709ba712c8fc50159e91f4bc6b6dc18cc",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Tall cutout",
+            "packageName": "com.android.internal.display.cutout.emulation.tall",
+            "packageSha256Hash": "29b7bac4d0a38536da82b095ed946b200018b807e30b8f623b60765a16b28725",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.modules.modulemetadata.forframework",
+            "packageName": "com.google.android.overlay.modules.modulemetadata.forframework",
+            "packageSha256Hash": "1901f4b052ff63a631d1007d97334b31f2229d44fc961226317acf0c1c62990d",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.cts.priv.ctsshim",
+            "packageName": "com.android.cts.priv.ctsshim",
+            "packageSha256Hash": "06f757354a7c2497264f8ff699942d2e3e26d337c9a47b6d8841d7ff83981b86",
+            "signingKeyCertFingerprints": [
+                "61ed377e85d386a8dfee6b864bd85b0bfaa5af81"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 28,
+            "versionName": "9-5374186"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "2 Button Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.twobutton",
+            "packageSha256Hash": "a7fead23c3addac9d1d0db0262e80dea7510ce0bd722c0ed548e309d961bc0b0",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Maps Go",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.mapslite",
+            "packageSha256Hash": "3d1a9c5b7cde74d28d848c0fe3163dac3391ae1f1c890847d52c49566064175d",
+            "signingKeyCertFingerprints": [
+                "c6bf74b328a4afc0cca4af9bdbcc467d7c25323e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 152,
+            "versionName": "152.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Downloads",
+            "packageName": "com.android.providers.downloads.ui",
+            "packageSha256Hash": "d243ea3373f9e6e479ec99e863619de29b69271432c26c43ffbb43624b0f5eed",
+            "signingKeyCertFingerprints": [
+                "723ad8cb26bf5314c37472785f588c2945883dae"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.modules.ext.services",
+            "packageName": "com.google.android.overlay.modules.ext.services",
+            "packageSha256Hash": "d03f3ab935f7a4147cb5cfc82d50d6c3aaa052b711fdfe0c8ff28f30beed5acd",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Contacts Sync",
+            "packageName": "com.google.android.syncadapters.contacts",
+            "packageSha256Hash": "cd4e0e33e1ea1d73c1f261e4e0d34fd3ceca333097d4e49c81a381b87d2e6e80",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.qualcomm.qti.lpa",
+            "packageName": "com.qualcomm.qti.lpa",
+            "packageSha256Hash": "9382198f242246321e4efbf00deab12e6653e787325d7521def8ae74e5dde469",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Blocked Numbers Storage",
+            "packageName": "com.android.providers.blockednumber",
+            "packageSha256Hash": "6f83beb925c504d49fe0d8706da9c99615512332a542cbd96e2f3910206d2d6d",
+            "signingKeyCertFingerprints": [
+                "e867f1740bcb3612306290577729b87604bfcef4"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Gestural Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.gestural",
+            "packageSha256Hash": "b961ec74ac1423d2af213bae8dd937be8538835c691a0f1d7aa91b67c4becb6c",
+            "signingKeyCertFingerprints": [
+                "e97c1561544c4d017e10af6c18cffa18e7b6e30e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "uceShimService",
+            "packageName": "com.qualcomm.qti.uceShimService",
+            "packageSha256Hash": "7e1b482108cb445617bc0355c4ff3d9089130c56fa393e68a878cec6bd30d417",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "CneApp",
+            "packageName": "com.qualcomm.qti.cne",
+            "packageSha256Hash": "e3ca3bfd96915317c64652bdeaf43b65cd46e0a1003df82408b3659875ecb945",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "SecCamService",
+            "packageName": "com.qualcomm.qti.seccamservice",
+            "packageSha256Hash": "a60947a8c24bff59b1dfcc00fe955138659b6af6a4522c736d6ba0e1e47e0587",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2,
+            "versionName": "2.2"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Freedoom",
+            "installerPackageName": "com.android.vending",
+            "packageName": "net.nullsum.freedoom",
+            "packageSha256Hash": "ec1db7213896ecac6520949493ac78037a57d0da7a5a2f31a179124d68693663",
+            "signingKeyCertFingerprints": [
+                "24ad480caa32f5410903b98c2a1ced8a6326e126"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 19,
+            "versionName": "0.4.2"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.partnerbrowsercustomizations.example",
+            "packageName": "com.android.partnerbrowsercustomizations.example",
+            "packageSha256Hash": "a47310f61c47817779cb0e22ce9e9ea0e3e85a8286ba8ff5474b84a03fe24471",
+            "signingKeyCertFingerprints": [
+                "020b90d7c74b13eee675b27dce5f5a501bc07c5e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Gboard",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.inputmethod.latin",
+            "packageSha256Hash": "fe89b874a996d6440e7623e35c5b7c78bc1f58b6786142cdb0b5efc0cdb53c15",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 56407730,
+            "versionName": "10.6.02.371892758-release-arm64-v8a"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Calendar",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.calendar",
+            "packageSha256Hash": "a191775a92c5dc29be6c35c9dd28265afcc5617d7674709fbc2b60c3c9c20702",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2016996610,
+            "versionName": "2021.19.0-372815398-release"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Minetest",
+            "events": [
+                {
+                    "createTime": "2021-05-27T13:57:07.953Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "net.minetest.minetest",
+            "packageSha256Hash": "05b11f2d90dc30af1c27ec9d5d13b7bb4b306435b93bda286b0215381f08c601",
+            "signingKeyCertFingerprints": [
+                "27c2aa67d2965e4e20f991201b16640e172c835a"
+            ],
+            "state": "REMOVED",
+            "versionCode": 33,
+            "versionName": "5.4.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Duolingo",
+            "events": [
+                {
+                    "createTime": "2021-05-27T05:56:47.433Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.duolingo",
+            "packageSha256Hash": "ed6cb41e8921e7be5ebea6dba0aa8fa8955a96c4f5217c796a7dcd1bf3bd7508",
+            "signingKeyCertFingerprints": [
+                "a00bb7d92e38909c2f6c04a80558890e52949cd9"
+            ],
+            "state": "REMOVED",
+            "versionCode": 1162,
+            "versionName": "5.10.4"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "YT Kids",
+            "events": [
+                {
+                    "createTime": "2021-05-26T07:57:33.218Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.youtube.kids",
+            "packageSha256Hash": "e0084c134d0ae31480e12932dbbe6dd94e590ef2a6240b05f7036a58eda2a903",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "REMOVED",
+            "versionCode": 121405030,
+            "versionName": "6.14.5"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Activity Launcher",
+            "events": [
+                {
+                    "createTime": "2021-05-26T07:58:02.060Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "de.szalkowski.activitylauncher",
+            "packageSha256Hash": "ae8e2b9d935a1fd3ef92d9419aba77a37dd3702bb0e41ff6a6a0a9645f0537f9",
+            "signingKeyCertFingerprints": [
+                "e16b44a1ac8f3fbfc8f6d8b62d12ffa5b076cf7b"
+            ],
+            "state": "REMOVED",
+            "versionCode": 18,
+            "versionName": "1.10.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "2048 Open Fun Game",
+            "events": [
+                {
+                    "createTime": "2021-05-26T07:58:01.155Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "org.andstatus.game2048",
+            "packageSha256Hash": "2783f2392395e927d78cb39cefc0978a10d438dc234d005bb83588e18631d87c",
+            "signingKeyCertFingerprints": [
+                "21139f94d24a1fe9ae7af96d4106efcf97339e47"
+            ],
+            "state": "REMOVED",
+            "versionCode": 27,
+            "versionName": "1.10.10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Vector Pinball",
+            "events": [
+                {
+                    "createTime": "2021-05-26T07:57:54.213Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.dozingcatsoftware.bouncy",
+            "packageSha256Hash": "d7df8062a6429005144380d7b0f9ea404ceeda52453533016bafb8ed6b227a8f",
+            "signingKeyCertFingerprints": [
+                "2b30769391dba9aed8478d6ce358bff6ad7b6a0e"
+            ],
+            "state": "REMOVED",
+            "versionCode": 33,
+            "versionName": "1.9.6"
+        }
+    ],
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/policy1",
+    "appliedPolicyVersion": "44",
+    "appliedState": "ACTIVE",
+    "deviceSettings": {
+        "encryptionStatus": "ACTIVE_PER_USER",
+        "isEncrypted": true,
+        "verifyAppsEnabled": true
+    },
+    "displays": [
+        {
+            "density": 160,
+            "height": 800,
+            "name": "Built-in Screen",
+            "refreshRate": 60,
+            "state": "ON",
+            "width": 1280
+        }
+    ],
+    "enrollmentTime": "2021-05-19T05:43:38.648Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/9QYzdvt6NFsDmntNNxOSRRdY4qfSa1uMkPrFamrVkbo",
+    "hardwareInfo": {
+        "batteryShutdownTemperatures": [
+            -3.4028235e+38
+        ],
+        "batteryThrottlingTemperatures": [
+            -3.4028235e+38
+        ],
+        "brand": "Lenovo",
+        "cpuShutdownTemperatures": [
+            -3.4028235e+38,
+            -3.4028235e+38,
+            -3.4028235e+38,
+            -3.4028235e+38
+        ],
+        "cpuThrottlingTemperatures": [
+            -3.4028235e+38,
+            -3.4028235e+38,
+            -3.4028235e+38,
+            -3.4028235e+38
+        ],
+        "gpuShutdownTemperatures": [
+            -3.4028235e+38
+        ],
+        "gpuThrottlingTemperatures": [
+            -3.4028235e+38
+        ],
+        "hardware": "qcom",
+        "manufacturer": "LENOVO",
+        "model": "Lenovo TB-X505F",
+        "serialNumber": "HGAL10T2",
+        "skinShutdownTemperatures": [
+            -3.4028235e+38
+        ],
+        "skinThrottlingTemperatures": [
+            -3.4028235e+38
+        ]
+    },
+    "hardwareStatusSamples": [
+        {
+            "batteryTemperatures": [
+                17.5
+            ],
+            "cpuTemperatures": [
+                22.000002,
+                22.000002,
+                23.000002,
+                23.000002
+            ],
+            "cpuUsages": [
+                0.20029293,
+                0.9999639,
+                0.99991214,
+                0.99986565
+            ],
+            "createTime": "2021-06-05T22:59:57.303Z",
+            "gpuTemperatures": [
+                19
+            ],
+            "skinTemperatures": [
+                17.567001
+            ]
+        },
+        {
+            "batteryTemperatures": [
+                17.400002
+            ],
+            "cpuTemperatures": [
+                23.000002,
+                22.000002,
+                24.000002,
+                24.000002
+            ],
+            "cpuUsages": [
+                0.1971889,
+                0.9999302,
+                0.9998931,
+                0.99986845
+            ],
+            "createTime": "2021-06-06T04:47:55.476Z",
+            "gpuTemperatures": [
+                19
+            ],
+            "skinTemperatures": [
+                17.612001
+            ]
+        },
+        {
+            "batteryTemperatures": [
+                17.800001
+            ],
+            "cpuTemperatures": [
+                22.000002,
+                22.000002,
+                24.000002,
+                24.000002
+            ],
+            "cpuUsages": [
+                0.19653165,
+                0.99990076,
+                0.99987805,
+                0.9998742
+            ],
+            "createTime": "2021-06-06T10:42:48.608Z",
+            "gpuTemperatures": [
+                19
+            ],
+            "skinTemperatures": [
+                18.018002
+            ]
+        },
+        {
+            "batteryTemperatures": [
+                17.800001
+            ],
+            "cpuTemperatures": [
+                23.000002,
+                23.000002,
+                25.000002,
+                24.000002
+            ],
+            "cpuUsages": [
+                0.19536816,
+                0.99995226,
+                0.9999017,
+                0.9998777
+            ],
+            "createTime": "2021-06-06T16:42:56.783Z",
+            "gpuTemperatures": [
+                19
+            ],
+            "skinTemperatures": [
+                18.063002
+            ]
+        },
+        {
+            "batteryTemperatures": [
+                17.800001
+            ],
+            "cpuTemperatures": [
+                23.000002,
+                22.000002,
+                24.000002,
+                24.000002
+            ],
+            "cpuUsages": [
+                0.19258735,
+                0.99995404,
+                0.99992394,
+                0.9999287
+            ],
+            "createTime": "2021-06-06T22:29:53.816Z",
+            "gpuTemperatures": [
+                19
+            ],
+            "skinTemperatures": [
+                17.927
+            ]
+        },
+        {
+            "batteryTemperatures": [
+                17.800001
+            ],
+            "cpuTemperatures": [
+                25.000002,
+                25.000002,
+                27.000002,
+                26.000002
+            ],
+            "cpuUsages": [
+                0.19331294,
+                0.99232185,
+                0.9900159,
+                0.98745304
+            ],
+            "createTime": "2021-06-07T01:16:00.823Z",
+            "gpuTemperatures": [
+                21.000002
+            ],
+            "skinTemperatures": [
+                18.108002
+            ]
+        }
+    ],
+    "lastPolicySyncTime": "2021-06-07T01:27:44.165Z",
+    "lastStatusReportTime": "2021-06-07T01:27:56.570Z",
+    "managementMode": "DEVICE_OWNER",
+    "memoryEvents": [
+        {
+            "byteCount": "992649216",
+            "createTime": "2021-06-05T22:59:57.316Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "byteCount": "179539968",
+            "createTime": "2021-06-05T22:59:57.323Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "14174781440",
+            "createTime": "2021-06-05T22:59:57.335Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-05T23:00:01.382Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-05T23:00:06.799Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1031892992",
+            "createTime": "2021-06-06T04:47:55.511Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "byteCount": "179539968",
+            "createTime": "2021-06-06T04:47:55.511Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "14174887936",
+            "createTime": "2021-06-06T04:47:55.524Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T04:48:01.918Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T04:48:05.769Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T04:48:11.624Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1044275200",
+            "createTime": "2021-06-06T10:42:48.533Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "byteCount": "179539968",
+            "createTime": "2021-06-06T10:42:48.541Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "14174572544",
+            "createTime": "2021-06-06T10:42:48.545Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T10:43:00.089Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1044901888",
+            "createTime": "2021-06-06T16:42:56.713Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "byteCount": "179539968",
+            "createTime": "2021-06-06T16:42:56.714Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "14173540352",
+            "createTime": "2021-06-06T16:42:56.739Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T16:43:08.213Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1038098432",
+            "createTime": "2021-06-06T22:29:53.765Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "byteCount": "179539968",
+            "createTime": "2021-06-06T22:29:53.766Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "14174244864",
+            "createTime": "2021-06-06T22:29:53.804Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T22:30:00.347Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T22:30:04.436Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T22:30:13.284Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-06T22:30:17.405Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "981323776",
+            "createTime": "2021-06-07T01:16:00.791Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "byteCount": "179539968",
+            "createTime": "2021-06-07T01:16:00.792Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "14173593600",
+            "createTime": "2021-06-07T01:16:00.808Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-07T01:16:06.538Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-07T01:16:10.864Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-07T01:17:41.504Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "23087513600",
+            "createTime": "2021-06-07T01:27:48.772Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        }
+    ],
+    "memoryInfo": {
+        "totalInternalStorage": "4160729088",
+        "totalRam": "1954582528"
+    },
+    "name": "enterprises/LC02kggfh1/devices/346539c38497359c",
+    "networkInfo": {
+        "wifiMacAddress": "94:be:46:50:cd:57"
+    },
+    "nonComplianceDetails": [
+        {
+            "nonComplianceReason": "INVALID_VALUE",
+            "packageName": "com.tblenovo.launcher",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.google.android.apps.nexuslauncher",
+            "settingName": "applications"
+        },
+        {
+            "nonComplianceReason": "APP_INSTALLED",
+            "packageName": "org.videolan.vlcbenchmark",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "app.crossword.yourealwaysbe.forkyz",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.serwylo.beatgame",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "org.billthefarmer.crossword",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.gitlab.ardash.appleflinger.android",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "pro.rudloff.papercraft",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "de.tobiasbielefeld.brickgames",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.traffar.oware",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.rechnen.app",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_FOUND",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.quaap.primary",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.simplemobiletools.dialer",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.simplemobiletools.flashlight",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.simplemobiletools.smsmessenger",
+            "settingName": "applications"
+        },
+        {
+            "nonComplianceReason": "INVALID_VALUE",
+            "packageName": "com.android.traceur",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.google.android.apps.messaging",
+            "settingName": "applications"
+        },
+        {
+            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
+            "nonComplianceReason": "APP_NOT_INSTALLED",
+            "packageName": "com.google.tango.measure",
+            "settingName": "applications"
+        },
+        {
+            "fieldPath": "advancedSecurityOverrides.commonCriteriaMode",
+            "nonComplianceReason": "API_LEVEL",
+            "settingName": "advancedSecurityOverrides"
+        },
+        {
+            "nonComplianceReason": "MANAGEMENT_MODE",
+            "settingName": "personalUsagePolicies"
+        },
+        {
+            "nonComplianceReason": "UNSUPPORTED",
+            "settingName": "blockApplicationsEnabled"
+        },
+        {
+            "nonComplianceReason": "MANAGEMENT_MODE",
+            "settingName": "bluetoothContactSharingDisabled"
+        }
+    ],
+    "ownership": "COMPANY_OWNED",
+    "policyCompliant": true,
+    "policyName": "enterprises/LC02kggfh1/policies/policy1",
+    "powerManagementEvents": [
+        {
+            "batteryLevel": 87,
+            "createTime": "2021-06-05T22:59:57.328Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 87,
+            "createTime": "2021-06-05T22:59:57.404Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 86,
+            "createTime": "2021-06-06T04:47:55.619Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 86,
+            "createTime": "2021-06-06T04:48:06.287Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 85,
+            "createTime": "2021-06-06T10:42:48.560Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 85,
+            "createTime": "2021-06-06T10:42:48.666Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 83,
+            "createTime": "2021-06-06T16:42:56.736Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 83,
+            "createTime": "2021-06-06T16:42:56.873Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 82,
+            "createTime": "2021-06-06T22:29:53.770Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 82,
+            "createTime": "2021-06-06T22:29:54.024Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 81,
+            "createTime": "2021-06-07T01:16:00.775Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 81,
+            "createTime": "2021-06-07T01:16:00.857Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-07T01:16:18.538Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-07T01:17:29.148Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-06-07T01:24:11.456Z",
+            "eventType": "POWER_CONNECTED"
+        }
+    ],
+    "previousDeviceNames": [
+        "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
+        "enterprises/LC02kggfh1/devices/348b1daeac68a70c",
+        "enterprises/LC02kggfh1/devices/39f5c698a64bed51",
+        "enterprises/LC02kggfh1/devices/35712c2e9993bc57",
+        "enterprises/LC02kggfh1/devices/33639ffb1e61f7cd"
+    ],
+    "securityPosture": {
+        "devicePosture": "SECURE"
+    },
+    "softwareInfo": {
+        "androidBuildNumber": "TB-X505F_S001135_210304_ROW",
+        "androidBuildTime": "2021-03-04T10:31:52Z",
+        "androidDevicePolicyVersionCode": 1516070,
+        "androidDevicePolicyVersionName": "15.16.07.v40",
+        "androidVersion": "10",
+        "bootloaderVersion": "unknown",
+        "deviceBuildSignature": "1c41fedecacbe89b81c242ecf74929f7d57322b64f8179c1c78a390a3494f14a",
+        "deviceKernelVersion": "4.9.205-perf+",
+        "primaryLanguageCode": "en-AU",
+        "securityPatchLevel": "2021-03-05",
+        "systemUpdateInfo": {
+            "updateStatus": "UP_TO_DATE"
+        }
+    },
+    "state": "ACTIVE",
+    "systemProperties": {
+        "ro.product.first_api_level": "28"
+    },
+    "userName": "enterprises/LC02kggfh1/users/112173242028438480394"
+}
