@@ -335,39 +335,22 @@ with open('cache/enterprises.json', mode='w') as f:
         f,
         sort_keys=True,
         indent=4)
-with open('cache/devices.json', mode='w') as f:
-    json.dump(
-        list(merged_pages(
-            # our arguments
-            resource=androidmanagement.enterprises().devices(),
-            response_key='devices',
-            # google's arguments
-            parent=json_config_object['enterprise_name'])),
-        f,
-        sort_keys=True,
-        indent=4)
-with open('cache/policies.json', mode='w') as f:
-    json.dump(
-        list(merged_pages(
-            # our arguments
-            resource=androidmanagement.enterprises().policies(),
-            response_key='policies',
-            # google's arguments
-            parent=json_config_object['enterprise_name'])),
-        f,
-        sort_keys=True,
-        indent=4)
-with open('cache/webApps.json', mode='w') as f:
-    json.dump(
-        list(merged_pages(
-            # our arguments
-            resource=androidmanagement.enterprises().webApps(),
-            response_key='webApps',
-            # google's arguments
-            parent=json_config_object['enterprise_name'])),
-        f,
-        sort_keys=True,
-        indent=4)
+for response_key, resource in [
+        ('devices', androidmanagement.enterprises.devices),
+        ('policies', androidmanagement.enterprises.policies),
+        ('webApps', androidmanagement.enterprises.webApps),
+        ]:
+    with open(f'cache/{response_key}.json', mode='w') as f:
+        json.dump(
+            list(merged_pages(
+                # our arguments
+                resource=resource(),
+                response_key=response_key,
+                # google's arguments
+                parent=json_config_object['enterprise_name'])),
+            f,
+            sort_keys=True,
+            indent=4)
 # cached/managedProperties/com.android.chrome.json is the equivalent of
 # https://www.chromium.org/administrators/policy-list-3
 os.makedirs('cache/managedProperties', exist_ok=True)
