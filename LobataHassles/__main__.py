@@ -392,20 +392,13 @@ pprint.pprint(
 
 
 with open('cache/enterprises.json', mode='w') as f:
-    try:
-        json.dump(
-            androidmanagement.enterprises().list(
-                projectId=gcloud_project_id
-            ).execute(),
-            f,
-            sort_keys=True,
-            indent=4)
-    except googleapiclient.errors.HttpError:
-        json.dump(
-            'API call failed... due to "not generally available yet"???',
-            f,
-            sort_keys=True,
-            indent=4)
+    json.dump(
+        androidmanagement.enterprises().list(
+            projectId=gcloud_project_id
+        ).execute(),
+        f,
+        sort_keys=True,
+        indent=4)
 with open('cache/devices.json', mode='w') as f:
     # FIXME: OH FUCK ME, as well as "devices" there is a "nextPageToken".
     #        Does that mean the return data is paginated and
