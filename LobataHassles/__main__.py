@@ -304,55 +304,50 @@ def merged_pages(
             yield record
 
 
-with open('cache/enterprises.json', mode='w') as f:
-    json.dump(
-        list(merged_pages(
-            # our arguments
-            resource=androidmanagement.enterprises(),
-            response_key='enterprises',
-            # google's arguments
-            projectId=gcloud_project_id)),
-        f,
-        sort_keys=True,
-        indent=4)
-for response_key, resource in [
-        ('devices', androidmanagement.enterprises.devices),
-        ('policies', androidmanagement.enterprises.policies),
-        ('webApps', androidmanagement.enterprises.webApps),
-        ]:
-    with open(f'cache/{response_key}.json', mode='w') as f:
-        json.dump(
-            list(merged_pages(
+def my_json_dump(obj):
+    path = pathlib.Path(f'cache/{obj["name"]}.json')
+    os.makedirs(path.parent, exist_ok=True)
+    with path.open('w') as f:
+        json.dump(obj, f, sort_keys=True, indent=4)
+
+for enterprise in merged_pages(
+        # our arguments
+        resource=androidmanagement.enterprises(),
+        response_key='enterprises',
+        # google's arguments
+        projectId=gcloud_project_id):
+    my_json_dump(enterprise)
+    for response_key, resource in [
+            ('devices', androidmanagement.enterprises().devices),
+            ('policies', androidmanagement.enterprises().policies),
+            ('webApps', androidmanagement.enterprises().webApps)]:
+        for obj in merged_pages(
                 # our arguments
                 resource=resource(),
                 response_key=response_key,
                 # google's arguments
-                parent=json_config_object['enterprise_name'])),
-            f,
-            sort_keys=True,
-            indent=4)
-# cached/managedProperties/com.android.chrome.json is the equivalent of
-# https://www.chromium.org/administrators/policy-list-3
-os.makedirs('cache/managedProperties', exist_ok=True)
-for packageName in sorted(set(
-        application['packageName']
-        for policy in json_config_object['policies'].values()
-        for application in policy['applications'])):
-    try:
-        managedProperties = androidmanagement.enterprises().applications().get(
-            name=f'{json_config_object["enterprise_name"]}/applications/{packageName}'
-        ).execute().get('managedProperties', None)
-        with open(f'cache/managedProperties/{packageName}.json', mode='w') as f:
-            json.dump(
-                managedProperties,
-                f,
-                sort_keys=True,
-                indent=4)
-    except googleapiclient.errors.HttpError as e:
-        if e.resp.status == 404:
-            logging.debug('App %s not in Play Store -- probably from F-Droid', packageName)
-        else:
-            raise
+                parent=enterprise['name']):
+            my_json_dump(obj)
+
+    # NOTE: because this is essentially EVERY app in Play Store,
+    #       there is no list().
+    #       Instead we ask for a single application by name.
+    #       Get those names from current policies.
+    #
+    # NOTE: com.android.chrome's managedProperties is equivalent to
+    #       https://www.chromium.org/administrators/policy-list-3
+    for packageName in sorted(set(
+            application['packageName']
+            for policy in json_config_object['policies'].values()
+            for application in policy['applications'])):
+        try:
+            my_json_dump(androidmanagement.enterprises().applications().get(
+                name=f'{enterprise["name"]}/applications/{packageName}').execute())
+        except googleapiclient.errors.HttpError as e:
+            if e.resp.status == 404:
+                logging.debug('App %s not in Play Store -- probably from F-Droid', packageName)
+            else:
+                raise
 
 
 ######################################################################
