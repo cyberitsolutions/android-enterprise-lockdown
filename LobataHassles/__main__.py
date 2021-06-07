@@ -53,7 +53,7 @@ import google_auth_oauthlib.flow
 import googleapiclient
 import jsmin                 # purely so policy file can have comments
 import pypass
-import requests
+import requests                 # purely for get().json() shorthand
 
 parser = argparse.ArgumentParser(description=__DOC__)
 parser.add_argument(
