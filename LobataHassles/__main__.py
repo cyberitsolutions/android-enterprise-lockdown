@@ -276,21 +276,29 @@ def merged_pages(
         for record in page[response_key]:
             yield record
 
-for device in merged_pages(
+# If a device is re-enrolled, it becomes a new "device" with a new name.
+# The old enrollment continues to exist under the old name.
+# Delete any old enrollments that haven't already been deleted.
+# Use set() to minimize the number of HTTP requests, since they're slow (urllib2 can't HTTP/3).
+devices = list(
+    merged_pages(
         # our arguments
         resource=androidmanagement.enterprises().devices(),
         response_key='devices',
         # google's arguments
-        parent=json_config_object['enterprise_name']):
-    for name in device['previousDeviceNames']:
-        try:
-            androidmanagement.enterprises().devices().delete(
-                name=name).execute()
-        except googleapiclient.errors.HttpError as e:
-            if e.resp.status == 404:
-                logging.debug('PROBABLY "Device is no longer being managed" -- FIXME, check for that string explicitly')
-            else:
-                raise
+        parent=json_config_object['enterprise_name']))
+device_names_to_delete = (
+    # All obsolete devices
+    set(
+        name
+        for d in devices
+        for name in d['previousDeviceNames'])
+    &                  # set intersection -- name must be in both sets
+    # All known devices
+    set(d['name'] for d in devices))
+for name in device_names_to_delete:
+    androidmanagement.enterprises().devices().delete(
+        name=name).execute()
 
 
 
