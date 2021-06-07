@@ -274,26 +274,6 @@ def pages(
         *args,
         **kwargs):
     "Given e.g. devices(), iterate over each page of responses."
-    request = resource.list(*args, **kwargs)
-    response = request.execute()
-    yield response
-    while True:
-        request = resource.list_next(
-            previous_request=request,
-            previous_response=response)
-        if request:           # on last page, list_next() returns None
-            response = request.execute()
-            yield response
-        else:
-            break
-
-
-
-def pages(
-        resource: googleapiclient.discovery.Resource,  # e.g. androidmanagement.enterprises().devices()
-        *args,
-        **kwargs):
-    "Given e.g. devices(), iterate over each page of responses."
     request = None
     while True:
         if request is None:     # first iteration through "while True"
