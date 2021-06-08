@@ -395,7 +395,7 @@
             "type": "CHOICE"
         },
         {
-            "description": "Setting the policy lets you list the URL patterns that specify which sites are automatically granted permission to access a USB device with the given vendor and product IDs. Each item in the list requires both devices and urls fields for the policy to be valid. Each item in the devices field can have a vendor_id and product_id field. Omitting the vendor_id field will create a policy matching any device. Omitting the product_id field will create a policy matching any device with the given vendor ID. A policy which has a product_id field without a vendor_id field is invalid. The USB permission model uses the requesting and embedding URLs to grant the requesting URL permission to access the USB device. The requesting URL can be different than the embedding URL when the requesting site is loaded in an iframe. So, the urls field can have up to 2 URL strings delimited by a comma to specify the requesting and embedding URL, respectively. If only one URL is specified, then access to the corresponding USB devices is granted when the requesting site's URL matches this URL, regardless of embedding status. The URLs must be valid, otherwise the policy is ignored. Leaving the policy unset means DefaultWebUsbGuardSetting applies, if it's set. If not, the user's personal setting applies. URL patterns in this policy shouldn't conflict with those configured through WebUsbBlockedForUrls. If they do, this policy takes precedence over WebUsbBlockedForUrls and WebUsbAskForUrls.",
+            "description": "Setting the policy lets you list the URL patterns that specify which sites are automatically granted permission to access a USB device with the given vendor and product IDs. Each item in the list requires both devices and urls fields for the policy to be valid. Each item in the devices field can have a vendor_id and product_id field. Omitting the vendor_id field will create a policy matching any device. Omitting the product_id field will create a policy matching any device with the given vendor ID. A policy which has a product_id field without a vendor_id field is invalid. The USB permission model will grant the specified URL permission to access the USB device as a top-level origin. If embedded frames need to access USB devices, the 'usb' feature-policy header should be used to grant access. The URL must be valid, otherwise the policy is ignored. Deprecated: The USB permission model used to support specifying both the requesting and embedding URLs. This is deprecated and only supported for backwards compatiblity in this manner: if both a requesting and embedding URL is specified, then the embedding URL will be granted the permission as top-level origin and the requsting URL will be ignored entirely. This policy overrides DefaultWebUsbGuardSetting, WebUsbAskForUrls, WebUsbBlockedForUrls and the user's preferences. This policy only affects access to USB devices through the WebUSB API. To grant access to USB devices through the Web Serial API see the SerialAllowUsbDevicesForUrls policy.",
             "key": "WebUsbAllowDevicesForUrls",
             "title": "Automatically grant permission to these sites to connect to USB devices with the given vendor and product IDs.",
             "type": "STRING"
@@ -617,6 +617,12 @@
             "type": "CHOICE"
         },
         {
+            "description": "If this policy is not configured, or is set to enabled, then Google Chrome will follow the default rollout process for CECPQ2, a post-quantum key-agreement algorithm in TLS. CECPQ2 results in larger TLS messages which, in very rare cases, can trigger bugs in some networking hardware. This policy can be set to False to disable CECPQ2 while networking issues are resolved. This policy is a temporary measure and will be removed in future versions of Google Chrome.",
+            "key": "CECPQ2Enabled",
+            "title": "CECPQ2 post-quantum key-agreement enabled for TLS",
+            "type": "BOOL"
+        },
+        {
             "description": "Setting the policy turns off Certificate Transparency disclosure requirements for the hostnames in the specified URLs. While making it harder to detect misissued certificates, hosts can keep using certificates that otherwise wouldn't be trusted (because they weren't properly publicly disclosed). Leaving the policy unset means that if certificates requiring disclosure through Certificate Transparency aren't disclosed, then Google Chrome doesn't trust those certificates. A URL pattern follows this format ( https://www.chromium.org/administrators/url-blocklist-filter-format ). However, because the validity of certificates for a given hostname is independent of the scheme, port, or path, Google Chrome only considers the hostname portion of the URL. Wildcard hosts aren't supported.",
             "key": "CertificateTransparencyEnforcementDisabledForUrls",
             "title": "Disable Certificate Transparency enforcement for a list of URLs",
@@ -767,7 +773,7 @@
             "type": "BOOL"
         },
         {
-            "description": "This policy prevents the display of lookalike URL warnings on the sites listed. These warnings are typically shown on sites that Google Chrome believes might be trying to spoof another site the user is familiar with. If the policy is enabled and set to one or more domains, no lookalike warnings pages will be shown when the user visits pages on that domain. If the policy is disabled, not set, or set to an empty list, warnings may appear on any site the user visits. A hostname can be allowed with a complete host match, or any domain match. For example, a URL like \\https://foo.example.com/bar\\ may have warnings suppressed if this list includes either \\foo.example.com\\ or \\example.com\\.",
+            "description": "This policy prevents the display of lookalike URL warnings on the sites listed. These warnings are typically shown on sites that Google Chrome believes might be trying to spoof another site the user is familiar with. If the policy is enabled and set to one or more domains, no lookalike warnings pages will be shown when the user visits pages on that domain. If the policy is not set, or set to an empty list, warnings may appear on any site the user visits. A hostname can be allowed with a complete host match, or any domain match. For example, a URL like \\https://foo.example.com/bar\\ may have warnings suppressed if this list includes either \\foo.example.com\\ or \\example.com\\.",
             "key": "LookalikeWarningAllowlistDomains",
             "title": "Suppress lookalike domain warnings on domains",
             "type": "STRING"
@@ -793,6 +799,28 @@
             "key": "WebXRImmersiveArEnabled",
             "title": "Allow creating WebXR's \\immersive-ar\\ sessions",
             "type": "BOOL"
+        },
+        {
+            "description": "As described in https://www.chromestatus.com/feature/5148698084376576 , JavaScript modal dialogs, triggered by $6, $6, and $6, will be blocked in Google Chrome if triggered from a subframe whose origin is different from the main frame origin. This policy allows overriding that change. If the policy is set to enabled or unset, JavaScript dialogs triggered from a different origin subframe will be blocked. If the policy is set to disabled, JavaScript dialogs triggered from a different origin subframe will not be blocked. This policy will be removed in Google Chrome version 95.",
+            "key": "SuppressDifferentOriginSubframeDialogs",
+            "title": "Suppress JavaScript Dialogs triggered from different origin subframes",
+            "type": "BOOL"
+        },
+        {
+            "description": "Setting the policy permits bypassing the list of restricted ports built into Google Chrome. The value is a comma-separated list of zero or more ports that outgoing connections will be permitted on. Ports are restricted to prevent Google Chrome being used as a vector to exploit various network vulnerabilities. Setting this policy may expose your network to attacks. This policy is intended as a temporary workaround for errors with code \\ERR_UNSAFE_PORT\\ while migrating a service running on a blocked port to a standard port (ie. port 80 or 443). Malicious websites can easily detect that this policy is set, and for what ports, and use that information to target attacks. Leaving the value empty or unset means that all restricted ports will be blocked. If there is a mixture of valid and invalid values, the valid ones will be applied. This policy overrides the \\--explicitly-allowed-ports\\ command-line option.",
+            "entries": [
+                {
+                    "name": "port 554 (expires 2021/10/15)",
+                    "value": "554"
+                },
+                {
+                    "name": "port 10080 (expires 2022/04/01)",
+                    "value": "10080"
+                }
+            ],
+            "key": "ExplicitlyAllowedNetworkPorts",
+            "title": "Explicitly allowed network ports",
+            "type": "MULTISELECT"
         }
     ],
     "name": "enterprises/LC02kggfh1/applications/com.android.chrome",
