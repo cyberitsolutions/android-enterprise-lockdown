@@ -166,6 +166,14 @@
                 {"installType": "BLOCKED", "packageName": "org.mozilla.focus"},  // Firefox Focus (browser)
                 {"installType": "BLOCKED", "packageName": "com.microsoft.emmx"},  // Edge (browser)  (NOTE: supports managedConfiguration)
 
+
+                // ============================================================
+                // DEVELOPMENT DEBUGGING
+                // ============================================================
+                {"installType": "AVAILABLE", "packageName": "de.szalkowski.activitylauncher"},  // TOO minimalist -- BUT USEFUL FOR DEBUGGING to see exactly what launchables are in e.g. "Android Q Easter Egg" or "VpnDialogs" app
+                {"installType": "AVAILABLE", "packageName": "com.ubqsoft.sec01"},  // https://www.xda-developers.com/disable-system-app-bloatware-android/
+
+
                 // ============================================================
                 // Launcher (Home App)
                 // ============================================================
@@ -174,7 +182,6 @@
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nexuslauncher"},  // cannot be installed; default on Google Pixel
                 {"installType": "REQUIRED_FOR_SETUP", "packageName": "amirz.rootless.nexuslauncher"},  // backport of com.google.android.apps.nexuslauncher
                 {"installType": "BLOCKED", "packageName": "ch.deletescape.lawnchair.plah"},  // mostly OK, similar to amirz.rootless.nexuslauncher but slightly more weird
-                {"installType": "AVAILABLE", "packageName": "de.szalkowski.activitylauncher"},  // TOO minimalist -- BUT USEFUL FOR DEBUGGING to see exactly what launchables are in e.g. "Android Q Easter Egg" or "VpnDialogs" app
                 {"installType": "BLOCKED", "packageName": "ademar.textlauncher"},  // TOO minimalist
                 {"installType": "BLOCKED", "packageName": "app.olauncher"},  // TOO minimalist
                 {"installType": "BLOCKED", "packageName": "com.anpmech.launcher"},  // in F-Droid but not Play Store.
