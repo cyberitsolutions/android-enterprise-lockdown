@@ -39,6 +39,12 @@
 
 
         "policy1": {
+            // WARNING WARNING WARNING:
+            //   Android's docs say the work application list is a whitelist by default -- if an app isn't on the list, you can't run it.
+            //   BUT, it's a blacklist for apps that ship with the OS, e.g. YT Music.
+            //   If you don't explicitly ban them, they're allowed.
+            //   Each vendor pre-installs different apps (e.g. Lenovo ships com.motorola.demo and org.codeaurora.snapcam).
+            //   So you have to check and blacklist apps for EVERY FUCKING DEVICE SEPARATELY.
             "applications": [
                 // NOTE: these ApplicationPolicy properties are not interesting:
                 //
