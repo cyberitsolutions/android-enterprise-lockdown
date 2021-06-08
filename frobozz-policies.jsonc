@@ -58,13 +58,13 @@
                  "managedConfiguration": {
                      "HomepageLocation": "https://prisonpc.com/",  // FIXME: change to https://prisonpc.lan/ in final version
                      "AlternateErrorPagesEnabled": true,  // NOTE: I couldn't get this to behave differently on a generic 404 message.
-                     // "SearchSuggestEnabled": ???,  // FIXME
+                     "SearchSuggestEnabled": false,  // FIXME
                      // "NetworkPredictionOptions": ???,  // FIXME
-                     // "IncognitoModeAvailability": ???,  // FIXME
+                     "IncognitoModeAvailability": false,  // FIXME
                      // "SavingBrowserHistoryDisabled": ???,  // FIXME
                      "PrintingEnabled": true,
                      // "AppCacheForceEnabled": ???,  // DEAD: https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache
-                     // "ForceGoogleSafeSearch": ???,  // FIXME
+                     "ForceGoogleSafeSearch": false,  // FIXME
                      // "ForceYouTubeRestrict": ???,  // FIXME
                      // "SafeBrowsingProtectionLevel": ???,  // FIXME
                      // "PasswordManagerEnabled": ???,  // FIXME
@@ -78,7 +78,7 @@
                      // "AuthServerAllowlist": ???,  // somehow related to https://en.wikipedia.org/wiki/Integrated_Windows_Authentication
                      // "AuthNegotiateDelegateAllowlist": ???,  // SPNEGO (Active Directory Kerberos client) TGT server whitelist
                      // "AuthAndroidNegotiateAccountType": ???,  // SPNEGO (Active Directory Kerberos client) enabled?
-                     // "NtlmV2Enabled": ???,  // FIXME
+                     "NtlmV2Enabled": false,  // FIXME
                      "BlockThirdPartyCookies": true,  // If you browse to https://example.com, and that google analytics or facebook button, google/FB can't use cookies for tracking (but they can still use other things).
                      // "DefaultSearchProviderEnabled": ???,  // FIXME
                      // "DefaultSearchProviderName": ???,  // FIXME
@@ -115,40 +115,40 @@
                      // "SensorsAllowedForUrls": ???,  // FIXME
                      // "SensorsBlockedForUrls": ???,  // FIXME
                      // "TargetBlankImpliesNoOpener": ???,  // FIXME
-                     // "TranslateEnabled": ???,  // FIXME
-                     // "EditBookmarksEnabled": ???,  // FIXME
+                     "TranslateEnabled": false,  // FIXME
+                     "EditBookmarksEnabled": false,  // FIXME
                      // "URLBlocklist": ???,  // FIXME
                      // "URLAllowlist": ???,  // FIXME
                      // "EnableExperimentalPolicies": ???,  // FIXME
-                     // "DisableSafeBrowsingProceedAnyway": ???,  // FIXME
+                     "DisableSafeBrowsingProceedAnyway": true,  // FIXME
                      // "BuiltInDnsClientEnabled": ???,  // I believe this only affects Chrome on Linux/Windows/MacOS, NOT Android
                      // "DnsOverHttpsMode": ???,  // FIXME
                      // "DnsOverHttpsTemplates": ???,  // FIXME
                      // "SharedClipboardEnabled": ???,  // FIXME
                      // "ManagedBookmarks": ???,  // FIXME
-                     // "DataCompressionProxyEnabled": ???,  // FIXME
+                     "DataCompressionProxyEnabled": false,  // FIXME
                      // "BrowserSignin": ???,  // FIXME FIXME FIXME -- THIS ONE IS DEEP MAGIC READ MORE -- FIXME FIXME FIXME
                      // "SSLVersionMin": ???,  // FIXME
                      // "CertificateTransparencyEnforcementDisabledForUrls": ???,  // FIXME
                      // "CertificateTransparencyEnforcementDisabledForCas": ???,  // FIXME
                      // "CertificateTransparencyEnforcementDisabledForLegacyCas": ???,  // FIXME
-                     // "ContextualSearchEnabled": ???,  // FIXME
-                     // "SSLErrorOverrideAllowed": ???,  // FIXME
+                     "ContextualSearchEnabled": false,  // FIXME
+                     "SSLErrorOverrideAllowed": false,  // FIXME
                      // "SSLErrorOverrideAllowedForOrigins": ???,  // FIXME
                      // // "AllowedDomainsForApps": ???,  // I THINK if you set this to e.g. "ai", then you can only sign into gmail as alice@ai and not alice@gmail.com.  I'm 50% sure this HAS NO EFFECT on non-Google websites.
-                     // "EnableMediaRouter": ???,  // FIXME
+                     "EnableMediaRouter": false,  // FIXME
                      // "NTPContentSuggestionsEnabled": ???,  // FIXME
                      // "WebRtcUdpPortRange": ???,  // FIXME
                      // "IsolateOriginsAndroid": ???,  // FIXME
                      // "SitePerProcessAndroid": ???,  // FIXME
                      // "RestrictAccountsToPatterns": ???,  // FIXME
-                     // "SafeBrowsingExtendedReportingEnabled": ???,  // FIXME
+                     "SafeBrowsingExtendedReportingEnabled": true,  // FIXME
                      // "OverrideSecurityRestrictionsOnInsecureOrigin": ???,  // FIXME
                      // "UrlKeyedAnonymizedDataCollectionEnabled": ???,  // FIXME
                      // "EnterpriseHardwarePlatformAPIEnabled": ???,  // FIXME
                      // "HSTSPolicyBypassList": ???,  // FIXME
                      // // "AllowSyncXHRInPageDismissal": false,  // BORING; will be removed in Chrome 93; https://www.chromestatus.com/feature/4664843055398912
-                     // "PaymentMethodQueryEnabled": ???,  // FIXME
+                     "PaymentMethodQueryEnabled": false,  // FIXME
                      // "ScrollToTextFragmentEnabled": ???,  // FIXME
                      // "IntensiveWakeUpThrottlingEnabled": ???,  // FIXME
                      "BackForwardCacheEnabled": false,  // if you click the back button, then the forward button, cache (don't re-download) the page?  Breaks a very small number of webpages.  Disable ONLY BECAUSE we mostly don't about increasing load on the handful of whitelisted websites.
