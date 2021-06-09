@@ -625,7 +625,7 @@
                 {"installType": "AVAILABLE", "packageName": "com.agateau.tinywheels.android"},  // Pixel Wheels; fine, controls take some getting used to.  There's a cop car, does that matter?
                 {"installType": "BLOCKED", "packageName": "app.crossword.yourealwaysbe.forkyz"},  // in F-Droid but not Play Store.
                 {"installType": "BLOCKED", "packageName": "de.sudoq"},  // perfectly fine sudoku game, but LOOKS like it's a privesc app
-                {"installType": "FORCE_INSTALLED", "packageName": "com.serwylo.beatgame"},
+                {"installType": "BLOCKED", "packageName": "com.serwylo.beatgame"},  // NOT_FOUND
                 {"installType": "FORCE_INSTALLED", "packageName": "org.moire.opensudoku"},
                 {"installType": "AVAILABLE", "packageName": "org.eehouse.android.xw4"},  // crosswords (Scrabble) -- offers many network play options.  If these DON'T WORK, I guess passes review???
                 {"installType": "AVAILABLE", "packageName": "com.dozingcatsoftware.bouncy"},  // Vector Pinball -- GREAT!!!
@@ -634,15 +634,15 @@
                 {"installType": "BLOCKED", "packageName": "com.jeffliu.balancetheball"},  // Broken?  I couldn't get this game to "play"
                 {"installType": "AVAILABLE", "packageName": "org.supertuxkart.stk"},  // Super Tux Kart; PASSES REVIEW
                 {"installType": "BLOCKED", "packageName": "net.minetest.minetest"},  // more-or-less works, but really not fun on a touchscreen without a gamepad
-                {"installType": "FORCE_INSTALLED", "packageName": "com.gitlab.ardash.appleflinger.android"},
+                {"installType": "BLOCKED", "packageName": "com.gitlab.ardash.appleflinger.android"},  // NOT_FOUND
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlydame"},  // Checkers
                 {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlysolitaire"},  // works, but REALLY ugly jaggie images
                 {"installType": "FORCE_INSTALLED", "packageName": "jwtc.android.chess"},
                 {"installType": "BLOCKED", "packageName": "it.alessandropira.wesnoth114"},  // NEEDS INTERNET -- DOWNLOADS 100MB to 500MB **AFTER** GAME STARTS!!  The touchscreen moves around a separate virtual mouse pointer -- VERY PAINFUL!
                 {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},  // HyperRogue -- GREAT! works really well on touchscreen.
-                {"installType": "FORCE_INSTALLED", "packageName": "pro.rudloff.papercraft"},
-                {"installType": "FORCE_INSTALLED", "packageName": "de.tobiasbielefeld.brickgames"},   // tetris?
-                {"installType": "AVAILABLE", "packageName": "org.jfedor.frozenbubble"},               // PASSES REVIEW
+                {"installType": "BLOCKED", "packageName": "pro.rudloff.papercraft"},  // NOT_FOUND
+                {"installType": "BLOCKED", "packageName": "de.tobiasbielefeld.brickgames"},   // tetris? NOT_FOUND
+                {"installType": "AVAILABLE", "packageName": "org.jfedor.frozenbubble"},               // PASSES REVIEW, sprites look really low-resolution, but plays fine
                 {"installType": "BLOCKED", "packageName": "com.traffar.oware"},               // in F-Droid but not Play Store.
 
                 // ============================================================
@@ -651,7 +651,7 @@
                 {"installType": "BLOCKED", "packageName": "com.microsoft.chineselearning"},  // (education?) (needs internet, needs account)
                 {"installType": "AVAILABLE", "packageName": "com.duolingo"},  // DuoLingo (language education) (needs internet???), has some ads.  Otherwise VERY good.
                 {"installType": "AVAILABLE", "packageName": "net.gcompris.full"},  // GCompris (early learning); WANTS INTERNET; (FIXME: not FORCE_INSTALLED because huge ~500MB)
-                {"installType": "FORCE_INSTALLED", "packageName": "com.rechnen.app"},  // Calculate, math training
+                {"installType": "BLOCKED", "packageName": "com.rechnen.app"},  // Calculate, math training; NOT_FOUND
                 {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics.memory"},
                 {"installType": "AVAILABLE", "packageName": "de.moekadu.tuner"},  // NOTE: microphone currently blocked in policy, so can't test it
@@ -667,7 +667,7 @@
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.dialer"}, // NOT_COMPATIBLE_WITH_DEVICE
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.draw"},
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.filemanager"},  // not useful/interesting
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.flashlight"},
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.flashlight"},  // on Lenovo says NOT_COMPATIBLE_WITH_DEVICE; on Laser you can get flashlight from swipe-down swipe-down pencil-icon then drag "Torch" from the available box up into the active box.  If this app is installed, "Flashlight" shows up instead, and takes longer to respond to click.
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.musicplayer"},
                 {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.notes"},
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.smsmessenger"}, // NOT_COMPATIBLE_WITH_DEVICE
@@ -777,7 +777,7 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.timerswitch"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.timezone.updater"},
                 {"installType": "BLOCKED", "packageName": "com.android.traceur"},  // System Tracing -- debugging tool??? --- FIXME: "nonComplianceReason": "INVALID_VALUE" ??? --- accessible via Activity Launcher as System Tracing > System Tracing > com.android.traceur.MainTvActivity.  Thereafter, can be launched from swipe-down-from-top config tray.
-                {"installType": "BLOCKED", "packageName": "com.android.vending"},  // Google Play Store --- what happens if I try to remove this?
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.vending"},  // Google Play Store --- if you try to remove this, it simply downgrades to the version installed in the ROM (i.e. like you factory-reset just this app).  It's still usable at all times, AND appAutoUpdatePolicy causes it to constantly be upgraded and downgrade in a loop.  Set to REQUIRED_FOR_SETUP so it's upgraded during enrollment, before the user can interact with android at all.
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.vpndialogs"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaper.livepicker"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaperbackup"},
@@ -840,10 +840,9 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.defaultlaunch"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.dsa"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.launcher.provider"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.lsf"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.lsf.device"},
+                {"installType": "BLOCKED", "packageName": "com.lenovo.lsf"},  // Lenovo ID (i.e. like google account, but Lenovo account); installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.lenovo.lsf.device"},  // Device Service; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ocpl"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ota"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screenassistant"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screencapture"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.tab_m10_hd"},
@@ -896,7 +895,8 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.setup"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.smartiot"},
                 {"installType": "BLOCKED", "packageName": "com.tblenovo.wallpaper"},      // Wallpapers; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
-                {"installType": "AVAILABLE", "packageName": "com.tblenovo.whatsnewclient"},  // Settings > System > Lenovo Feature Update --- needed to do OS image upgrades (e.g. Android 9 -> Android 10)???; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "AVAILABLE", "packageName": "com.tblenovo.whatsnewclient"},  // Settings > System > Lenovo Feature Update --- needed to do OS upgrades??? (e.g. Android 9 -> Android 10); installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "AVAILABLE", "packageName": "com.lenovo.ota"},  // System Update; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid --- needed to do OS upgrades??? (e.g. Android 9 -> Android 10)
                 {"installType": "BLOCKED", "packageName": "org.codeaurora.bluetooth"},    // ???; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
                 {"installType": "BLOCKED", "packageName": "org.codeaurora.ims"},  // Carrier Services (i.e. phone stuff); installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
                 {"installType": "BLOCKED", "packageName": "vendor.qti.hardware.cacert.server"},  // CACertApp; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid --- I couldn't work out how to actually find and run this!  (Not even in Activity Launcher)
@@ -909,7 +909,7 @@
 
 
                 // SECUSO privacy-friendly research group https://play.google.com/store/apps/dev?id=4797307650791917378
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyrulerapp"},
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlyrulerapp"},  // WORKS, BUT NOT USEFUL -- just displays centimetre/inch ruler and/or degree/radian protractor onscreen
                 {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlybackup"},  // Not useful
                 {"installType": "AVAILABLE", "packageName": "org.secuso.aktivpause"},  // "take a break and do this exercise" thing.  FIXME: useful or useless??
                 {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysketching"},
