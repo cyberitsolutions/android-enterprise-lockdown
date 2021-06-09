@@ -4,26 +4,826 @@
     },
     "applications": [
         {
-            "installType": "REQUIRED_FOR_SETUP",
+            "installType": "FORCE_INSTALLED",
             "managedConfiguration": {
+                "AlternateErrorPagesEnabled": true,
+                "AuthSchemes": "basic",
+                "AutofillAddressEnabled": false,
+                "AutofillCreditCardEnabled": false,
+                "BackForwardCacheEnabled": false,
                 "BlockThirdPartyCookies": true,
-                "HomepageLocation": "https://prisonpc.com/"
+                "HomepageLocation": "https://prisonpc.com/",
+                "PrintingEnabled": true
             },
             "packageName": "com.android.chrome"
         },
         {
-            "installType": "BLOCKED",
-            "packageName": "com.google.android.apps.youtube.music"
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.mozilla.rocket"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.mozilla.firefox"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.mozilla.focus"
         },
         {
             "installType": "FORCE_INSTALLED",
             "packageName": "com.microsoft.emmx"
         },
         {
-            "installType": "REQUIRED_FOR_SETUP",
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.android.launcher3"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.tblenovo.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.nexuslauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
             "packageName": "amirz.rootless.nexuslauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "ch.deletescape.lawnchair.plah"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "de.szalkowski.activitylauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "ademar.textlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "app.olauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.anpmech.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.dynamicg.homebuttonlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.easwareapps.g2l"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.finnmglas.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.gacode.relaunchx"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.github.postapczuk.lalauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.github.rsteube.t4"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.harasoft.relaunch"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.jkuester.unlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.kaneoriley.cyanogenport.launcher3"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.launcher.silverfish"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.mirasmithy.epochlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.notriddle.null_launcer"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.quaap.launchtime"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.sduduzog.slimlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.sentienhq.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.szchoiceway.aios.bridge"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.twsitedapps.homemanager"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.vackosar.searchbasedlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.vincent_falzon.discreetlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "community.fairphone.fplauncher3"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "community.fairphone.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "de.clemensbartz.android.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "de.devmil.paperlaunch"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "de.markusfisch.android.pielauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "de.nodomain.tobihille.seniorlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "foundation.e.blisslauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "fr.neamar.kiss"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "io.github.subhamtyagi.lastlauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "kr.hybdms.sidepanel"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "luke.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "mono.hg"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "net.nhiroki.bluelineconsole"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "ohi.andre.consolelauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.xphnx.ameixa"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.zimmob.zimlx"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "posidon.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "rocks.tbog.tblauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "managedConfiguration": {
+                "com.microsoft.launcher.Dock.Mode": "Show",
+                "com.microsoft.launcher.Dock.Mode.UserChangeAllowed": false,
+                "com.microsoft.launcher.Feed.Enable": false,
+                "com.microsoft.launcher.Feed.Enable.UserChangeAllowed": false,
+                "com.microsoft.launcher.Folder.Style.UserChangeAllowed": false,
+                "com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed": false,
+                "com.microsoft.launcher.Search.SearchBar.Placement": "Hidden",
+                "com.microsoft.launcher.Search.SearchBar.Placement.UserChangeAllowed": false,
+                "com.microsoft.launcher.Wallpaper.Url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri.jpg",
+                "com.microsoft.launcher.Wallpaper.Url.UserChangeAllowed": false
+            },
+            "packageName": "com.microsoft.launcher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.real.launcher.wp.ten"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.android.calculator2"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.calculator"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.calculator"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.googlequicksearchbox"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.searchlite"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.duckduckgo.mobile.android"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.calendar"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.calendar"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.android.deskclock"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.clock"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.enterprise.webapp.x597edd8749574755"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.enterprise.webapp.x50bb90cffc907768"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.enterprise.webapp.xf5f403c242677721"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "amirz.musicfx.material"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.android.camera2"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.GoogleCamera"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.camera"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.photos"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.photosgo"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.gallery"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.niksoftware.snapseed"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.videolan.vlc"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.videolan.vlcbenchmark"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.dialer"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.contacts"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "net.osmand"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.maps"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.mapslite"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.navlite"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.street"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.earth"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.docs"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "managedConfiguration": {
+                "PrintingEnabled": true,
+                "enableAccountLessMode": true
+            },
+            "packageName": "com.google.android.apps.docs.editors.docs"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "managedConfiguration": {
+                "PrintingEnabled": true,
+                "enableAccountLessMode": true
+            },
+            "packageName": "com.google.android.apps.docs.editors.sheets"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "managedConfiguration": {
+                "PrintingEnabled": true,
+                "enableAccountLessMode": true
+            },
+            "packageName": "com.google.android.apps.docs.editors.slides"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.collabora.libreoffice"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.microsoft.microsoftsolitairecollection"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.microsoft.mahjong"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.emmanuelmess.tictactoe"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.andstatus.game2048"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendly2048"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "dev.lucanlm.antimine"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlyminesweeper"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlysudoku"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.agateau.tinywheels.android"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "app.crossword.yourealwaysbe.forkyz"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "de.sudoq"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.serwylo.beatgame"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.moire.opensudoku"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.eehouse.android.xw4"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.dozingcatsoftware.bouncy"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.billthefarmer.crossword"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "net.nullsum.freedoom"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.jeffliu.balancetheball"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.supertuxkart.stk"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "net.minetest.minetest"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.gitlab.ardash.appleflinger.android"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlydame"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlysolitaire"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "jwtc.android.chess"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "it.alessandropira.wesnoth114"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.roguetemple.hyperroid"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "pro.rudloff.papercraft"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "de.tobiasbielefeld.brickgames"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.jfedor.frozenbubble"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.traffar.oware"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.microsoft.chineselearning"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.duolingo"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "net.gcompris.full"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.rechnen.app"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.sanskritbasics"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.sanskritbasics.memory"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "de.moekadu.tuner"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.ichi2.anki"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.LAPARCELA.nihonoari"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "info.puzz.a10000sentences"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.quaap.primary"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.applauncher"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.contacts"
+        },
+        {
+            "installType": "BLOCKED",
+            "packageName": "com.simplemobiletools.dialer"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.draw"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.filemanager"
+        },
+        {
+            "installType": "BLOCKED",
+            "packageName": "com.simplemobiletools.flashlight"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.musicplayer"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.notes"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.smsmessenger"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.simplemobiletools.voicerecorder"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.android.traceur"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.caf.fmradio"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.microsoft.bing.wallpapers"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.microsoft.office.outlook"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.skype.raider"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.tblenovo.lenovotips"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.microsoft.office.lync15"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlyrulerapp"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlybackup"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.aktivpause"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlysketching"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlyfoodtracker"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlyfinancemanager"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlypausinghealthily"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.samples.apps.iosched"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.adm"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.authenticator2"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.books"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.chromecast.app"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.classroom"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.dynamite"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.fitness"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.kids.familylink"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.meetings"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.paidtasks"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.subscriptions.red"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.tasks"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.vega"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.walletnfcrel"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.youtube.creator"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.keep"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.play.games"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.tachyon"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.talk"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.translate"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.youtube.kids"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.youtube.tvkids"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.access.wifi.consumer"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.katniss"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.tv.remote"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.wearable.app"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.podcasts"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.googleassistant"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.messaging"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.nbu.files"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.photos.scanner"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.youtube.music"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.inputmethod.latin"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.projection.gearhead"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.projection.gearhead.phonescreen"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.youtube"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.ar.lens"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.tango.measure"
         }
     ],
     "name": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
-    "version": "3"
+    "statusReportingSettings": {
+        "applicationReportingSettings": {
+            "includeRemovedApps": true
+        },
+        "applicationReportsEnabled": true,
+        "deviceSettingsEnabled": true,
+        "displayInfoEnabled": true,
+        "hardwareStatusEnabled": true,
+        "memoryInfoEnabled": true,
+        "networkInfoEnabled": true,
+        "powerManagementEventsEnabled": true,
+        "softwareInfoEnabled": true,
+        "systemPropertiesEnabled": true
+    },
+    "version": "9"
 }
