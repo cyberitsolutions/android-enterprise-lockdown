@@ -28,12 +28,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Flashlight",
-            "events": [
-                {
-                    "createTime": "2021-06-08T00:35:31.298Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.simplemobiletools.flashlight",
             "packageSha256Hash": "b65df1a566c52f6013f1cb35ea986dfd5040186886ae2cf2f3583676b30ffb86",
@@ -61,7 +55,27 @@
             "displayName": "Tasks",
             "events": [
                 {
-                    "createTime": "2021-06-08T18:01:32.511Z",
+                    "createTime": "2021-06-09T02:36:08.627Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T02:36:19.211Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T03:09:24.846Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T03:09:35.610Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T03:56:37.325Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T03:56:47.482Z",
                     "eventType": "CHANGED"
                 }
             ],
@@ -72,8 +86,8 @@
                 "5af12649728293f2d9f5e8c61e455a8fea16e7d8"
             ],
             "state": "INSTALLED",
-            "versionCode": 1257640,
-            "versionName": "2021.04.25.370342879.release"
+            "versionCode": 1260725,
+            "versionName": "2021.05.24.375699940.release"
         },
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
@@ -82,6 +96,10 @@
                 {
                     "createTime": "2021-06-09T00:07:18.421Z",
                     "eventType": "INSTALLED"
+                },
+                {
+                    "createTime": "2021-06-09T03:09:31.514Z",
+                    "eventType": "CHANGED"
                 }
             ],
             "installerPackageName": "com.android.vending",
@@ -122,12 +140,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "VLC",
-            "events": [
-                {
-                    "createTime": "2021-06-08T09:45:07.465Z",
-                    "eventType": "CHANGED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.videolan.vlc",
             "packageSha256Hash": "0078c8f5d7140a52391d136642837596c34244465094d21902d6257b9b5248ec",
@@ -256,6 +268,14 @@
                 {
                     "createTime": "2021-06-09T00:04:47.121Z",
                     "eventType": "INSTALLED"
+                },
+                {
+                    "createTime": "2021-06-09T03:09:55.043Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T03:10:10.515Z",
+                    "eventType": "CHANGED"
                 }
             ],
             "installerPackageName": "com.android.vending",
@@ -343,17 +363,22 @@
             "versionName": "3.36.0.372401129"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Photos",
-            "installerPackageName": "com.android.vending",
+            "events": [
+                {
+                    "createTime": "2021-06-10T03:53:28.390Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.google.android.apps.photos",
             "packageSha256Hash": "a2ba07ef00b494618cdddce454101b6015aadee8e4f3d7c90719770a2082ca51",
             "signingKeyCertFingerprints": [
                 "24bb24c05e47e0aefa68a58a766179d9b613a600"
             ],
             "state": "INSTALLED",
-            "versionCode": 39307347,
-            "versionName": "5.45.0.377084276"
+            "versionCode": 13936277,
+            "versionName": "4.32.0.281814149"
         },
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
@@ -370,12 +395,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Mahjong",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:33:14.232Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.microsoft.mahjong",
             "packageSha256Hash": "f18180b822bcff56a9ff0c084ab7833702b2099bad37a36f4d3d8ddb63dcd711",
@@ -525,16 +544,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Chat",
-            "events": [
-                {
-                    "createTime": "2021-06-08T04:39:40.777Z",
-                    "eventType": "INSTALLED"
-                },
-                {
-                    "createTime": "2021-06-08T18:01:26.590Z",
-                    "eventType": "CHANGED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.dynamite",
             "packageSha256Hash": "2349cf2f9d9e5570d71637cad29f5a4048ca792096d8697e5cd40d958a525386",
@@ -548,12 +557,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Draw",
-            "events": [
-                {
-                    "createTime": "2021-06-08T01:43:19.527Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.simplemobiletools.draw",
             "packageSha256Hash": "e0cda86630ab5f098424d9b0cd66bdd4acdb1298ac9d3148a49c92cb382da239",
@@ -567,12 +570,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Battle for Wesnoth",
-            "events": [
-                {
-                    "createTime": "2021-06-08T03:09:08.155Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "it.alessandropira.wesnoth114",
             "packageSha256Hash": "e56403d717a0d954e17a0480210e28c675491a4e8f10fc43666218438aca6847",
@@ -672,12 +669,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "HgLauncher",
-            "events": [
-                {
-                    "createTime": "2021-06-08T04:36:22.767Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "mono.hg",
             "packageSha256Hash": "ec785b673728e7fc6f08e4745440ace4cf129bb854c97b66cb229e8f8ff10f59",
@@ -727,12 +718,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Snapseed",
-            "events": [
-                {
-                    "createTime": "2021-06-08T07:30:57.660Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.niksoftware.snapseed",
             "packageSha256Hash": "cc5ca0f921bbc98b51897cf3ef4850ce5d3c67bbfaf3a2233ff6877f0d41a6e1",
@@ -771,12 +756,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Solitaire",
-            "events": [
-                {
-                    "createTime": "2021-06-08T02:11:54.025Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.microsoft.microsoftsolitairecollection",
             "packageSha256Hash": "6af60bdebca679b5cd26f7c3bf3d07b0b788158eaf45b4aad1da13d784de5f1a",
@@ -926,12 +905,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Translate",
-            "events": [
-                {
-                    "createTime": "2021-06-08T05:59:17.563Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.translate",
             "packageSha256Hash": "551131667c703e075f287d243d34a6ccfa820e99272b816bc6984e5d1ef2c9b1",
@@ -958,12 +931,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Music Player",
-            "events": [
-                {
-                    "createTime": "2021-06-08T11:18:01.690Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.simplemobiletools.musicplayer",
             "packageSha256Hash": "da722204644479c121aa9983606fff711a68fcf0c3dccd135d55100a97c674c1",
@@ -987,17 +954,30 @@
             "versionName": "1.0"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "YouTube Music",
-            "installerPackageName": "com.android.vending",
+            "events": [
+                {
+                    "createTime": "2021-06-09T06:56:13.450Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-10T03:53:23.418Z",
+                    "eventType": "INSTALLED"
+                },
+                {
+                    "createTime": "2021-06-10T04:00:04.576Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.google.android.apps.youtube.music",
-            "packageSha256Hash": "3cc52011d527eae0afff17171b618f43163a0345ffe4f201d2ccadd03d7aa307",
+            "packageSha256Hash": "972d53fcd151b1e04121dbe9ae291318edf27b921bba685aacf802b002511e48",
             "signingKeyCertFingerprints": [
                 "afb0fed5eeaebdd86f56a97742f4b6b33ef59875"
             ],
             "state": "INSTALLED",
-            "versionCode": 43050230,
-            "versionName": "4.30.50"
+            "versionCode": 34554230,
+            "versionName": "3.45.54"
         },
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
@@ -1145,12 +1125,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "CrossWords",
-            "events": [
-                {
-                    "createTime": "2021-06-08T04:16:38.651Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.eehouse.android.xw4",
             "packageSha256Hash": "8fcab00b7f5bdb8ff0d7377846d2a00d9e2649306b24bf4e3156dd71d82d458c",
@@ -1205,6 +1179,10 @@
                 {
                     "createTime": "2021-06-09T00:21:38.275Z",
                     "eventType": "INSTALLED"
+                },
+                {
+                    "createTime": "2021-06-09T03:10:05.808Z",
+                    "eventType": "CHANGED"
                 }
             ],
             "installerPackageName": "com.android.vending",
@@ -1232,16 +1210,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Google Opinion Rewards",
-            "events": [
-                {
-                    "createTime": "2021-06-08T05:45:22.321Z",
-                    "eventType": "INSTALLED"
-                },
-                {
-                    "createTime": "2021-06-08T05:57:07.467Z",
-                    "eventType": "CHANGED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.paidtasks",
             "packageSha256Hash": "75ff1631f43899e47520f0a73f23e31110744abd07574919477770519aa91134",
@@ -1255,12 +1223,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "10,000 sentences",
-            "events": [
-                {
-                    "createTime": "2021-06-08T11:15:17.100Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "info.puzz.a10000sentences",
             "packageSha256Hash": "e264ccc837d6a329ba40f2dbb632e9ab447d485c62ece7a8263dfd8637820276",
@@ -1284,51 +1246,42 @@
             "versionName": "10"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Drive",
             "events": [
                 {
-                    "createTime": "2021-06-08T00:59:20.610Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T02:07:15.381Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T02:20:58.189Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T03:07:59.184Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T05:44:16.849Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T06:31:41.800Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T06:55:05.138Z",
-                    "eventType": "CHANGED"
-                },
-                {
                     "createTime": "2021-06-08T23:55:29.505Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T03:10:25.385Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T03:55:50.490Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T04:19:21.051Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T04:28:33.197Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T05:16:35.499Z",
                     "eventType": "CHANGED"
                 }
             ],
-            "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.docs",
             "packageSha256Hash": "a86b74591d36a31b4a6bad9de23437f9ae1b2474e23de21e217d9a7be06bccc9",
             "signingKeyCertFingerprints": [
                 "38918a453d07199354f8b19af05ec6562ced5788"
             ],
             "state": "INSTALLED",
-            "versionCode": 212010732,
-            "versionName": "2.21.201.07.32"
+            "versionCode": 194720532,
+            "versionName": "2.19.472.05.32"
         },
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
@@ -1346,12 +1299,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "GCompris",
-            "events": [
-                {
-                    "createTime": "2021-06-08T11:17:47.603Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "net.gcompris.full",
             "packageSha256Hash": "2e52dd2495249cabe53db6834ffe6b6a1b27bf8f2983156f4e7df5c0c8ce2ce7",
@@ -1391,12 +1338,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Firefox Focus",
-            "events": [
-                {
-                    "createTime": "2021-06-08T02:12:41.639Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.mozilla.focus",
             "packageSha256Hash": "92b3c71262b1affbb9a97e21f7bb2cd46ae3d21c127162eadb5e964ab19907fd",
@@ -1495,43 +1436,31 @@
             "displayName": "Google Play services",
             "events": [
                 {
-                    "createTime": "2021-06-08T01:00:07.845Z",
+                    "createTime": "2021-06-09T02:37:24.941Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-08T01:00:19.706Z",
+                    "createTime": "2021-06-09T05:17:06.242Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-08T02:07:49.691Z",
+                    "createTime": "2021-06-09T05:17:17.041Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-08T02:08:02.378Z",
+                    "createTime": "2021-06-09T06:59:40.706Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-08T03:08:29.529Z",
+                    "createTime": "2021-06-09T06:59:49.759Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-08T05:44:38.489Z",
+                    "createTime": "2021-06-09T07:00:11.839Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-08T05:44:51.957Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T06:32:01.190Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T06:32:11.522Z",
-                    "eventType": "CHANGED"
-                },
-                {
-                    "createTime": "2021-06-08T09:46:38.569Z",
+                    "createTime": "2021-06-09T08:02:16.607Z",
                     "eventType": "CHANGED"
                 }
             ],
@@ -1561,12 +1490,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Android Auto for phone screens",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:01:33.983Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.projection.gearhead.phonescreen",
             "packageSha256Hash": "d40a496aebb61c1f5a6e17097f5cd30a7e9f7206c8e1b567491a8ac354583e79",
@@ -1580,12 +1503,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Blue Line Console",
-            "events": [
-                {
-                    "createTime": "2021-06-08T02:14:29.350Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "net.nhiroki.bluelineconsole",
             "packageSha256Hash": "df9f36aeca7defdcb7f8587842a8ffda2d370e7011c4f696046a81b30b3a4cfa",
@@ -1712,12 +1629,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Fit",
-            "events": [
-                {
-                    "createTime": "2021-06-08T01:52:40.721Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.fitness",
             "packageSha256Hash": "08076405d8c37b41f7a5d4c368d992f58d37865fecef285308dd54084bd96cb5",
@@ -1743,20 +1654,14 @@
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Bluetooth",
+            "events": [
+                {
+                    "createTime": "2021-06-10T03:53:22.499Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.android.bluetooth",
             "packageSha256Hash": "f113932cee0b64d15ffd5c7a45dfdac25eb19a20799bea95e627018abff4fdbb",
-            "signingKeyCertFingerprints": [
-                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
-            ],
-            "state": "INSTALLED",
-            "versionCode": 29,
-            "versionName": "10"
-        },
-        {
-            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
-            "displayName": "Calculator",
-            "packageName": "com.android.calculator2",
-            "packageSha256Hash": "27566f4d6c29a94cc2149e1d614739ab4389a81764d1a8f196e47fa130ca1986",
             "signingKeyCertFingerprints": [
                 "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
             ],
@@ -1804,12 +1709,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Calculator",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:57:38.994Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.simplemobiletools.calculator",
             "packageSha256Hash": "f429408b359f117308ebb3758783ab4ba3e3469728e50418a3de0b5ba840919e",
@@ -1889,6 +1788,10 @@
                 {
                     "createTime": "2021-06-09T02:05:39.882Z",
                     "eventType": "INSTALLED"
+                },
+                {
+                    "createTime": "2021-06-09T06:50:31.722Z",
+                    "eventType": "REMOVED"
                 }
             ],
             "installerPackageName": "com.android.vending",
@@ -1903,32 +1806,7 @@
         },
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
-            "displayName": "T-UI",
-            "events": [
-                {
-                    "createTime": "2021-06-09T00:06:42.147Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
-            "installerPackageName": "com.android.vending",
-            "packageName": "ohi.andre.consolelauncher",
-            "packageSha256Hash": "7a172ba9c99a64894fb4c33ae998dddcb06a1d9ccf50876e127afd004999eb8f",
-            "signingKeyCertFingerprints": [
-                "fbec0183d5931df56d18cfe8c47aa5a8d1521580"
-            ],
-            "state": "INSTALLED",
-            "versionCode": 206,
-            "versionName": "v6.15"
-        },
-        {
-            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Null launcher",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:57:45.078Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.notriddle.null_launcer",
             "packageSha256Hash": "1f88f0bf9a680989fc489ae869efc24a9dcd724e0422a771ca7f5cc213a344ec",
@@ -2012,12 +1890,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Street View",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:02:12.474Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.street",
             "packageSha256Hash": "67dc6940495a326263770b9a5912554297062510b1d0eb171b257ca994d078b5",
@@ -2043,16 +1915,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Google Pay",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:00:04.196Z",
-                    "eventType": "INSTALLED"
-                },
-                {
-                    "createTime": "2021-06-08T06:31:49.081Z",
-                    "eventType": "CHANGED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.walletnfcrel",
             "packageSha256Hash": "31e37385a8125ee2430d3bbab2ca6cd527656af71888f9615b17608b893d4692",
@@ -2066,6 +1928,12 @@
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Auto run",
+            "events": [
+                {
+                    "createTime": "2021-06-09T07:08:29.130Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.softwinner.awmanager",
             "packageSha256Hash": "6f3e267f32f05dc951fd2bd94ccdc2877643950290ac58dcc9aed60b6cac1cc6",
             "signingKeyCertFingerprints": [
@@ -2165,12 +2033,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "YT Kids",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:01:27.184Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.youtube.kids",
             "packageSha256Hash": "02d368c6acfb79c28d566f26f0371cd48b1e5bbfbc362bedbc4cc7c9d58f7ab5",
@@ -2208,12 +2070,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Calendar",
-            "events": [
-                {
-                    "createTime": "2021-06-08T00:57:48.759Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.simplemobiletools.calendar",
             "packageSha256Hash": "ea5967a910dd456bafbf6fcce6f5d64142254735dfea33f899bc6f04658edb50",
@@ -2225,30 +2081,34 @@
             "versionName": "5.2.7"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Maps",
-            "installerPackageName": "com.android.vending",
+            "events": [
+                {
+                    "createTime": "2021-06-09T04:27:15.767Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.google.android.apps.maps",
-            "packageSha256Hash": "3be8344951e89ff1770cc970fc45d2bd0a43331b5dc189f8f773c0781c25aa95",
+            "packageSha256Hash": "8a4e3f3102f915aceeaafa8600dee985ce859036cb8868c2c90a628b70e37522",
             "signingKeyCertFingerprints": [
                 "38918a453d07199354f8b19af05ec6562ced5788"
             ],
             "state": "INSTALLED",
-            "versionCode": 1065917564,
-            "versionName": "10.71.4"
+            "versionCode": 1018200141,
+            "versionName": "10.18.2"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Duo",
-            "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.tachyon",
             "packageSha256Hash": "e0cd662c77ab4b887adcb8a7fdc2289721258a0ab8c4050a249fb0dceafb1337",
             "signingKeyCertFingerprints": [
                 "a0bc09af527b6397c7a9ef171d6cf76f757becc3"
             ],
             "state": "INSTALLED",
-            "versionCode": 3062822,
-            "versionName": "138.0.371209553.DR138_RC00.g"
+            "versionCode": 2999905,
+            "versionName": "68.0.284888502.DR68_RC09"
         },
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
@@ -2325,12 +2185,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Gallery Go",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:54:55.110Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.photosgo",
             "packageSha256Hash": "7d88404ba13dd640843fe6a9dea5f8c810b1a61b0b62c794a0dd033c040592d8",
@@ -2400,12 +2254,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Firefox",
-            "events": [
-                {
-                    "createTime": "2021-06-08T19:00:31.365Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.mozilla.firefox",
             "packageSha256Hash": "9efbdc3f5b4a0b039a30a9c47b35141240e01c06eee7d4046d1e933db7daec40",
@@ -2431,12 +2279,6 @@
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "System UI",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:57:03.156Z",
-                    "eventType": "RESTARTED"
-                }
-            ],
             "packageName": "com.android.systemui",
             "packageSha256Hash": "a54a0f932cc9ce01d5f6cd64629de06d10efd1e5788a79516d0b64eb355f7e59",
             "signingKeyCertFingerprints": [
@@ -2449,12 +2291,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Google I/O",
-            "events": [
-                {
-                    "createTime": "2021-06-08T01:43:00.193Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.samples.apps.iosched",
             "packageSha256Hash": "a14d0ff6892486a142d1b08250228e6e9924930065192a0fab4e6bcab1d7a196",
@@ -2468,12 +2304,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Backup",
-            "events": [
-                {
-                    "createTime": "2021-06-08T02:22:56.590Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.secuso.privacyfriendlybackup",
             "packageSha256Hash": "d18d3de919ff968b3a830639bf6531638666ef0ae372ba40c10e6efb65df801b",
@@ -2483,6 +2313,25 @@
             "state": "INSTALLED",
             "versionCode": 1,
             "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Google Play Games",
+            "events": [
+                {
+                    "createTime": "2021-06-09T02:37:14.513Z",
+                    "eventType": "INSTALLED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.play.games",
+            "packageSha256Hash": "b06b9263f40214ca38b0a165ee962d2105a072cbe3aa1272c38dac507acae8d1",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 259730032,
+            "versionName": "2021.04.25973 (369482405.369482405-000302)"
         },
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
@@ -2546,6 +2395,25 @@
             "versionName": "1.0"
         },
         {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Contacts",
+            "events": [
+                {
+                    "createTime": "2021-06-09T02:37:43.926Z",
+                    "eventType": "INSTALLED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.simplemobiletools.contacts",
+            "packageSha256Hash": "80b6c741b26d18e16528e60559d181a75473ccb8b919db6245fff37b4ce4d13a",
+            "signingKeyCertFingerprints": [
+                "ca7f58994ba2682ad49707d98a009ec025486dad"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 46,
+            "versionName": "5.2.7"
+        },
+        {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Permission controller",
             "packageName": "com.google.android.permissioncontroller",
@@ -2572,6 +2440,12 @@
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Camera",
+            "events": [
+                {
+                    "createTime": "2021-06-10T03:53:25.180Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.android.camera2",
             "packageSha256Hash": "6a289cd1e36dad55f31272ad5b221fc75224bf1fca6615908605f94e25e79a9f",
             "signingKeyCertFingerprints": [
@@ -2609,12 +2483,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "PaperLaunch",
-            "events": [
-                {
-                    "createTime": "2021-06-08T07:45:13.176Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "de.devmil.paperlaunch",
             "packageSha256Hash": "f631fe4f1a31bd646f7b57a51107c574251b377b29140d5ff3dae43931dbe4d1",
@@ -2709,12 +2577,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Open Sudoku",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:55:35.275Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.moire.opensudoku",
             "packageSha256Hash": "bf84d173986a908e05d0345e683c8212ebf2336d37e76c4a349451c461116bff",
@@ -2728,12 +2590,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Calculator",
-            "events": [
-                {
-                    "createTime": "2021-06-08T11:16:35.492Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.calculator",
             "packageSha256Hash": "ed89f641a2851abc4b6e9ed440d174c4a9de9a029e489ec56dead518a98e2c46",
@@ -2838,6 +2694,25 @@
             "versionName": "1.0"
         },
         {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Twisted Home Manager",
+            "events": [
+                {
+                    "createTime": "2021-06-09T02:37:23.752Z",
+                    "eventType": "INSTALLED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.twsitedapps.homemanager",
+            "packageSha256Hash": "67b3ed8220463408e1eec9b6c66642e4013f725b0e412a3f5993bada0a5d0ece",
+            "signingKeyCertFingerprints": [
+                "163b3d9c7a46c193f8b0e62dc49dd9597bb3a23e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 18,
+            "versionName": "1.0.1.8"
+        },
+        {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "AwlogSettings",
             "packageName": "com.softwinner.awlogsettings",
@@ -2913,12 +2788,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Edge",
-            "events": [
-                {
-                    "createTime": "2021-06-08T07:48:34.593Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.microsoft.emmx",
             "packageSha256Hash": "9c32a6947e428c0c2d8eb3aa05f885cb3eb46b5092c1c05a29a88f508355660c",
@@ -3019,12 +2888,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Launcher for Win 10",
-            "events": [
-                {
-                    "createTime": "2021-06-08T11:46:44.344Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.real.launcher.wp.ten",
             "packageSha256Hash": "4c669bfd88d981989da7831877f29c4942188de0e230ee5b2f4425cf46eae833",
@@ -3060,18 +2923,6 @@
             "versionName": "10"
         },
         {
-            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
-            "displayName": "com.android.providers.partnerbookmarks",
-            "packageName": "com.android.providers.partnerbookmarks",
-            "packageSha256Hash": "5cf0bec71c96667b6ae43fd42778cc32d3f0424de9545121a01e8a1812729f7a",
-            "signingKeyCertFingerprints": [
-                "3fba205937e230f096701209d6a627def06a150d"
-            ],
-            "state": "INSTALLED",
-            "versionCode": 29,
-            "versionName": "10"
-        },
-        {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Text Launcher",
             "installerPackageName": "com.android.vending",
@@ -3083,6 +2934,18 @@
             "state": "INSTALLED",
             "versionCode": 6,
             "versionName": "1.3.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.providers.partnerbookmarks",
+            "packageName": "com.android.providers.partnerbookmarks",
+            "packageSha256Hash": "5cf0bec71c96667b6ae43fd42778cc32d3f0424de9545121a01e8a1812729f7a",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
         },
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
@@ -3124,12 +2987,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Family Link",
-            "events": [
-                {
-                    "createTime": "2021-06-08T04:49:49.030Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.apps.kids.familylink",
             "packageSha256Hash": "9af7f782bad4c1de371c396ccc7f2a842b85158a46d82915471af17de05a89d3",
@@ -3143,12 +3000,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "SanskritBasicsLetters",
-            "events": [
-                {
-                    "createTime": "2021-06-08T07:45:02.454Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.sanskritbasics",
             "packageSha256Hash": "8ed595e5e36266d6218da62d01f8800bd28fddcdf88ac2a06a208201b197557e",
@@ -3162,12 +3013,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Pausing Healthily",
-            "events": [
-                {
-                    "createTime": "2021-06-08T04:35:57.858Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.secuso.privacyfriendlypausinghealthily",
             "packageSha256Hash": "9a6d6409e995bd16dd88880dc24e85c162f40ba5e8889e55a8e919a2d6abd7d1",
@@ -3188,8 +3033,8 @@
                 "38918a453d07199354f8b19af05ec6562ced5788"
             ],
             "state": "INSTALLED",
-            "versionCode": 82552710,
-            "versionName": "25.5.27-21 [0] [PR] 375135971"
+            "versionCode": 82561410,
+            "versionName": "25.6.14-21 [0] [PR] 376382668"
         },
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
@@ -3204,17 +3049,16 @@
             "versionName": "10"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
-            "displayName": "Files by Google",
-            "installerPackageName": "com.android.vending",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Files",
             "packageName": "com.google.android.apps.nbu.files",
             "packageSha256Hash": "3a48f42158bd32ed219fd1ef5b70859ae2249cc25569764e581909d7a260392d",
             "signingKeyCertFingerprints": [
                 "9f591218c092ce2ae72aeb71c2ea00a7cbf20030"
             ],
             "state": "INSTALLED",
-            "versionCode": 375578,
-            "versionName": "1.0.372842724"
+            "versionCode": 30684,
+            "versionName": "1.0.278928638"
         },
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
@@ -3229,17 +3073,26 @@
             "versionName": "10"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Chrome",
-            "installerPackageName": "com.android.vending",
+            "events": [
+                {
+                    "createTime": "2021-06-09T05:19:07.534Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T05:19:09.576Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.android.chrome",
             "packageSha256Hash": "d0c301d507e272e29809225a153b88a63b6bd8557a3fe4f55c81d366c18f46b0",
             "signingKeyCertFingerprints": [
                 "38918a453d07199354f8b19af05ec6562ced5788"
             ],
             "state": "INSTALLED",
-            "versionCode": 447208830,
-            "versionName": "91.0.4472.88"
+            "versionCode": 398709903,
+            "versionName": "80.0.3987.99"
         },
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
@@ -3268,12 +3121,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "2048",
-            "events": [
-                {
-                    "createTime": "2021-06-08T06:55:49.523Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.secuso.privacyfriendly2048",
             "packageSha256Hash": "751f822dd3efe37b22cfe36f7a3c1002215e998a2ae58c48bb32a53a568d8a42",
@@ -3302,15 +3149,39 @@
             "displayName": "Home",
             "events": [
                 {
-                    "createTime": "2021-06-08T01:00:33.686Z",
+                    "createTime": "2021-06-09T02:35:25.238Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-08T02:07:32.680Z",
+                    "createTime": "2021-06-09T03:10:29.203Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-08T05:44:46.332Z",
+                    "createTime": "2021-06-09T03:10:30.572Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T03:10:33.016Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T04:19:24.011Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T04:19:25.257Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T04:28:36.332Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T04:28:37.726Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-09T05:17:28.813Z",
                     "eventType": "CHANGED"
                 }
             ],
@@ -3325,17 +3196,22 @@
             "versionName": "2.38.1.7"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "YouTube",
-            "installerPackageName": "com.android.vending",
+            "events": [
+                {
+                    "createTime": "2021-06-09T05:16:52.765Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.google.android.youtube",
-            "packageSha256Hash": "58b08da76c8b4f2de8d7e7269d0fe4c007429938734989f46dabe28bf944ef47",
+            "packageSha256Hash": "eab3637e51ac984c607dabe1e512d6fd878e446b76d78a0ad2030a8dea9167c4",
             "signingKeyCertFingerprints": [
                 "24bb24c05e47e0aefa68a58a766179d9b613a600"
             ],
             "state": "INSTALLED",
-            "versionCode": 1521081792,
-            "versionName": "16.20.35"
+            "versionCode": 1449513000,
+            "versionName": "14.49.51"
         },
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
@@ -3416,12 +3292,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "2048 Open Fun Game",
-            "events": [
-                {
-                    "createTime": "2021-06-08T02:12:51.936Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "org.andstatus.game2048",
             "packageSha256Hash": "0dccaf5ab8ef3950267e8f9ad39deeb8c7262fc47def7420ee5b29a3b193f8d5",
@@ -3437,8 +3307,8 @@
             "displayName": "Contacts",
             "events": [
                 {
-                    "createTime": "2021-06-08T02:23:12.400Z",
-                    "eventType": "INSTALLED"
+                    "createTime": "2021-06-09T02:36:26.013Z",
+                    "eventType": "CHANGED"
                 }
             ],
             "installerPackageName": "com.android.vending",
@@ -3523,12 +3393,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "TV Guide",
-            "events": [
-                {
-                    "createTime": "2021-06-08T01:52:01.993Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "com.google.enterprise.webapp.x597edd8749574755",
             "packageSha256Hash": "c89a28a0db23d3c66f1f497968d1dc28412f2854fb7ed67913fcaffb57a61ec8",
@@ -3577,6 +3441,25 @@
         },
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Camera",
+            "events": [
+                {
+                    "createTime": "2021-06-09T02:34:32.944Z",
+                    "eventType": "INSTALLED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.simplemobiletools.camera",
+            "packageSha256Hash": "5287477dc60d9b8b8b86c6ae3c3921b273cb838e188581d66b77cce45dca0f32",
+            "signingKeyCertFingerprints": [
+                "e3c0c3a77a8ed6bafcefa8569e0f627e1e468622"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 77,
+            "versionName": "5.3.1"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Olauncher",
             "installerPackageName": "com.android.vending",
             "packageName": "app.olauncher",
@@ -3611,6 +3494,19 @@
             "state": "INSTALLED",
             "versionCode": 1,
             "versionName": "1.0"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Maps Go",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.mapslite",
+            "packageSha256Hash": "3d1a9c5b7cde74d28d848c0fe3163dac3391ae1f1c890847d52c49566064175d",
+            "signingKeyCertFingerprints": [
+                "c6bf74b328a4afc0cca4af9bdbcc467d7c25323e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 152,
+            "versionName": "152.0"
         },
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
@@ -3649,19 +3545,6 @@
             "versionName": "10-5771379"
         },
         {
-            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
-            "displayName": "Maps Go",
-            "installerPackageName": "com.android.vending",
-            "packageName": "com.google.android.apps.mapslite",
-            "packageSha256Hash": "3d1a9c5b7cde74d28d848c0fe3163dac3391ae1f1c890847d52c49566064175d",
-            "signingKeyCertFingerprints": [
-                "c6bf74b328a4afc0cca4af9bdbcc467d7c25323e"
-            ],
-            "state": "INSTALLED",
-            "versionCode": 152,
-            "versionName": "152.0"
-        },
-        {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Blocked Numbers Storage",
             "packageName": "com.android.providers.blockednumber",
@@ -3688,12 +3571,6 @@
         {
             "applicationSource": "INSTALLED_FROM_PLAY_STORE",
             "displayName": "Freedoom",
-            "events": [
-                {
-                    "createTime": "2021-06-08T01:01:39.307Z",
-                    "eventType": "INSTALLED"
-                }
-            ],
             "installerPackageName": "com.android.vending",
             "packageName": "net.nullsum.freedoom",
             "packageSha256Hash": "ec1db7213896ecac6520949493ac78037a57d0da7a5a2f31a179124d68693663",
@@ -3718,21 +3595,61 @@
             "versionName": "10.6.02.371892758-lite_release-armeabi-v7a"
         },
         {
-            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Calendar",
-            "installerPackageName": "com.android.vending",
             "packageName": "com.google.android.calendar",
             "packageSha256Hash": "cb7510a0d242a69c8bbbf8f24743c3cc826d2c6c179194ff114db70ad809edb9",
             "signingKeyCertFingerprints": [
                 "38918a453d07199354f8b19af05ec6562ced5788"
             ],
             "state": "INSTALLED",
-            "versionCode": 2016996610,
-            "versionName": "2021.19.0-372815398-release"
+            "versionCode": 2016416004,
+            "versionName": "2019.45.1-279921459-release"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Calculator",
+            "events": [
+                {
+                    "createTime": "2021-06-09T07:00:08.853Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "packageName": "com.android.calculator2",
+            "packageSha256Hash": "27566f4d6c29a94cc2149e1d614739ab4389a81764d1a8f196e47fa130ca1986",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "REMOVED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "T-UI",
+            "events": [
+                {
+                    "createTime": "2021-06-09T00:06:42.147Z",
+                    "eventType": "INSTALLED"
+                },
+                {
+                    "createTime": "2021-06-09T06:51:45.227Z",
+                    "eventType": "REMOVED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "ohi.andre.consolelauncher",
+            "packageSha256Hash": "7a172ba9c99a64894fb4c33ae998dddcb06a1d9ccf50876e127afd004999eb8f",
+            "signingKeyCertFingerprints": [
+                "fbec0183d5931df56d18cfe8c47aa5a8d1521580"
+            ],
+            "state": "REMOVED",
+            "versionCode": 206,
+            "versionName": "v6.15"
         }
     ],
     "appliedPolicyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
-    "appliedPolicyVersion": "9",
+    "appliedPolicyVersion": "13",
     "appliedState": "ACTIVE",
     "deviceSettings": {
         "encryptionStatus": "ACTIVE_PER_USER",
@@ -3760,72 +3677,6 @@
     },
     "hardwareStatusSamples": [
         {
-            "createTime": "2021-06-07T20:35:45.599Z"
-        },
-        {
-            "createTime": "2021-06-08T00:35:10.475Z"
-        },
-        {
-            "createTime": "2021-06-08T00:57:26.578Z"
-        },
-        {
-            "createTime": "2021-06-08T01:41:16.516Z"
-        },
-        {
-            "createTime": "2021-06-08T01:52:51.057Z"
-        },
-        {
-            "createTime": "2021-06-08T02:07:50.296Z"
-        },
-        {
-            "createTime": "2021-06-08T02:22:49.302Z"
-        },
-        {
-            "createTime": "2021-06-08T03:07:29.192Z"
-        },
-        {
-            "createTime": "2021-06-08T03:56:35.499Z"
-        },
-        {
-            "createTime": "2021-06-08T04:35:31.322Z"
-        },
-        {
-            "createTime": "2021-06-08T04:49:16.231Z"
-        },
-        {
-            "createTime": "2021-06-08T05:42:02.489Z"
-        },
-        {
-            "createTime": "2021-06-08T05:58:20.467Z"
-        },
-        {
-            "createTime": "2021-06-08T06:29:09.920Z"
-        },
-        {
-            "createTime": "2021-06-08T06:53:46.167Z"
-        },
-        {
-            "createTime": "2021-06-08T07:44:43.473Z"
-        },
-        {
-            "createTime": "2021-06-08T09:38:12.413Z"
-        },
-        {
-            "createTime": "2021-06-08T10:42:53.659Z"
-        },
-        {
-            "createTime": "2021-06-08T11:15:19.444Z"
-        },
-        {
-            "createTime": "2021-06-08T12:12:03.657Z"
-        },
-        {
-            "createTime": "2021-06-08T14:05:24.573Z"
-        },
-        {
-            "createTime": "2021-06-08T18:00:57.337Z"
-        },
-        {
             "createTime": "2021-06-08T23:52:13.952Z"
         },
         {
@@ -3836,430 +3687,306 @@
         },
         {
             "createTime": "2021-06-09T02:32:15.756Z"
+        },
+        {
+            "createTime": "2021-06-09T02:39:20.183Z"
+        },
+        {
+            "createTime": "2021-06-09T02:55:58.555Z"
+        },
+        {
+            "createTime": "2021-06-09T03:09:22.518Z"
+        },
+        {
+            "createTime": "2021-06-09T03:24:45.439Z"
+        },
+        {
+            "createTime": "2021-06-09T03:39:21.353Z"
+        },
+        {
+            "createTime": "2021-06-09T03:54:48.563Z"
+        },
+        {
+            "createTime": "2021-06-09T04:09:21.454Z"
+        },
+        {
+            "createTime": "2021-06-09T04:24:50.996Z"
+        },
+        {
+            "createTime": "2021-06-09T04:39:22.332Z"
+        },
+        {
+            "createTime": "2021-06-09T04:55:58.317Z"
+        },
+        {
+            "createTime": "2021-06-09T05:09:24.236Z"
+        },
+        {
+            "createTime": "2021-06-09T05:24:20.069Z"
+        },
+        {
+            "createTime": "2021-06-09T06:25:26.441Z"
+        },
+        {
+            "createTime": "2021-06-09T06:49:58.284Z"
+        },
+        {
+            "createTime": "2021-06-09T07:09:29.634Z"
+        },
+        {
+            "createTime": "2021-06-09T07:24:21.222Z"
+        },
+        {
+            "createTime": "2021-06-09T07:39:42.999Z"
+        },
+        {
+            "createTime": "2021-06-09T07:55:05.542Z"
+        },
+        {
+            "createTime": "2021-06-09T08:09:21.241Z"
+        },
+        {
+            "createTime": "2021-06-09T08:24:21.218Z"
+        },
+        {
+            "createTime": "2021-06-09T08:45:34.274Z"
+        },
+        {
+            "createTime": "2021-06-09T08:59:21.251Z"
+        },
+        {
+            "createTime": "2021-06-09T09:14:22.239Z"
+        },
+        {
+            "createTime": "2021-06-09T09:31:29.230Z"
+        },
+        {
+            "createTime": "2021-06-09T09:44:21.231Z"
+        },
+        {
+            "createTime": "2021-06-09T09:54:57.256Z"
+        },
+        {
+            "createTime": "2021-06-09T10:09:21.216Z"
+        },
+        {
+            "createTime": "2021-06-09T10:29:21.226Z"
+        },
+        {
+            "createTime": "2021-06-09T10:44:21.260Z"
+        },
+        {
+            "createTime": "2021-06-09T10:54:22.218Z"
+        },
+        {
+            "createTime": "2021-06-09T11:09:21.227Z"
+        },
+        {
+            "createTime": "2021-06-09T11:31:53.244Z"
+        },
+        {
+            "createTime": "2021-06-09T11:44:21.211Z"
+        },
+        {
+            "createTime": "2021-06-09T12:01:28.255Z"
+        },
+        {
+            "createTime": "2021-06-09T12:09:22.214Z"
+        },
+        {
+            "createTime": "2021-06-09T12:31:29.220Z"
+        },
+        {
+            "createTime": "2021-06-09T12:44:21.285Z"
+        },
+        {
+            "createTime": "2021-06-09T13:01:28.262Z"
+        },
+        {
+            "createTime": "2021-06-09T13:09:21.195Z"
+        },
+        {
+            "createTime": "2021-06-09T13:29:21.211Z"
+        },
+        {
+            "createTime": "2021-06-09T13:44:22.272Z"
+        },
+        {
+            "createTime": "2021-06-09T14:01:46.430Z"
+        },
+        {
+            "createTime": "2021-06-09T14:10:07.529Z"
+        },
+        {
+            "createTime": "2021-06-09T14:29:21.287Z"
+        },
+        {
+            "createTime": "2021-06-09T14:46:40.239Z"
+        },
+        {
+            "createTime": "2021-06-09T14:59:21.231Z"
+        },
+        {
+            "createTime": "2021-06-09T15:09:21.192Z"
+        },
+        {
+            "createTime": "2021-06-09T15:24:21.200Z"
+        },
+        {
+            "createTime": "2021-06-09T15:39:51.251Z"
+        },
+        {
+            "createTime": "2021-06-09T16:01:29.208Z"
+        },
+        {
+            "createTime": "2021-06-09T16:09:22.202Z"
+        },
+        {
+            "createTime": "2021-06-09T16:31:29.196Z"
+        },
+        {
+            "createTime": "2021-06-09T16:44:24.247Z"
+        },
+        {
+            "createTime": "2021-06-09T17:01:29.288Z"
+        },
+        {
+            "createTime": "2021-06-09T17:09:21.194Z"
+        },
+        {
+            "createTime": "2021-06-09T17:29:21.203Z"
+        },
+        {
+            "createTime": "2021-06-09T17:44:21.244Z"
+        },
+        {
+            "createTime": "2021-06-09T18:01:28.239Z"
+        },
+        {
+            "createTime": "2021-06-09T18:09:21.183Z"
+        },
+        {
+            "createTime": "2021-06-09T18:31:58.198Z"
+        },
+        {
+            "createTime": "2021-06-09T18:44:21.225Z"
+        },
+        {
+            "createTime": "2021-06-09T19:01:29.225Z"
+        },
+        {
+            "createTime": "2021-06-09T19:09:21.213Z"
+        },
+        {
+            "createTime": "2021-06-09T19:32:05.218Z"
+        },
+        {
+            "createTime": "2021-06-09T19:44:21.242Z"
+        },
+        {
+            "createTime": "2021-06-09T20:01:28.250Z"
+        },
+        {
+            "createTime": "2021-06-09T20:09:22.226Z"
+        },
+        {
+            "createTime": "2021-06-09T20:32:17.236Z"
+        },
+        {
+            "createTime": "2021-06-09T20:44:21.216Z"
+        },
+        {
+            "createTime": "2021-06-09T21:01:28.211Z"
+        },
+        {
+            "createTime": "2021-06-09T21:09:49.220Z"
+        },
+        {
+            "createTime": "2021-06-09T21:32:38.241Z"
+        },
+        {
+            "createTime": "2021-06-09T21:42:37.240Z"
+        },
+        {
+            "createTime": "2021-06-09T21:57:51.444Z"
+        },
+        {
+            "createTime": "2021-06-09T22:09:51.238Z"
+        },
+        {
+            "createTime": "2021-06-09T22:29:09.046Z"
+        },
+        {
+            "createTime": "2021-06-09T22:41:39.885Z"
+        },
+        {
+            "createTime": "2021-06-09T23:01:29.397Z"
+        },
+        {
+            "createTime": "2021-06-09T23:09:22.241Z"
+        },
+        {
+            "createTime": "2021-06-09T23:32:48.504Z"
+        },
+        {
+            "createTime": "2021-06-09T23:39:28.971Z"
+        },
+        {
+            "createTime": "2021-06-09T23:54:20.451Z"
+        },
+        {
+            "createTime": "2021-06-10T00:10:05.261Z"
+        },
+        {
+            "createTime": "2021-06-10T00:26:14.695Z"
+        },
+        {
+            "createTime": "2021-06-10T00:39:21.265Z"
+        },
+        {
+            "createTime": "2021-06-10T00:57:28.212Z"
+        },
+        {
+            "createTime": "2021-06-10T01:10:51.249Z"
+        },
+        {
+            "createTime": "2021-06-10T01:27:57.666Z"
+        },
+        {
+            "createTime": "2021-06-10T01:40:23.451Z"
+        },
+        {
+            "createTime": "2021-06-10T01:56:46.331Z"
+        },
+        {
+            "createTime": "2021-06-10T02:09:46.817Z"
+        },
+        {
+            "createTime": "2021-06-10T02:28:47.261Z"
+        },
+        {
+            "createTime": "2021-06-10T02:44:20.227Z"
+        },
+        {
+            "createTime": "2021-06-10T02:55:01.779Z"
+        },
+        {
+            "createTime": "2021-06-10T03:10:55.235Z"
+        },
+        {
+            "createTime": "2021-06-10T03:31:29.197Z"
+        },
+        {
+            "createTime": "2021-06-10T03:44:21.236Z"
+        },
+        {
+            "createTime": "2021-06-10T03:54:21.216Z"
         }
     ],
-    "lastPolicySyncTime": "2021-06-09T02:04:06.091Z",
-    "lastStatusReportTime": "2021-06-09T02:33:25.006Z",
+    "lastPolicySyncTime": "2021-06-10T04:01:59.069Z",
+    "lastStatusReportTime": "2021-06-10T04:02:11.413Z",
     "managementMode": "DEVICE_OWNER",
     "memoryEvents": [
-        {
-            "byteCount": "1468166144",
-            "createTime": "2021-06-07T20:35:45.566Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-07T20:35:45.568Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "9023696896",
-            "createTime": "2021-06-07T20:35:45.596Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1473191936",
-            "createTime": "2021-06-08T00:35:10.424Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T00:35:10.426Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "9023594496",
-            "createTime": "2021-06-08T00:35:10.465Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T00:35:20.481Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T00:35:34.633Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1443897344",
-            "createTime": "2021-06-08T00:57:26.450Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T00:57:26.503Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "9033453568",
-            "createTime": "2021-06-08T00:57:26.611Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T01:01:19.030Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1371049984",
-            "createTime": "2021-06-08T01:41:16.486Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T01:41:16.493Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "9045327872",
-            "createTime": "2021-06-08T01:41:16.555Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T01:41:27.040Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T01:42:00.204Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1249320960",
-            "createTime": "2021-06-08T01:52:51.020Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T01:52:51.053Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8981372928",
-            "createTime": "2021-06-08T01:52:51.092Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1479180288",
-            "createTime": "2021-06-08T02:07:50.118Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T02:07:50.174Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8942043136",
-            "createTime": "2021-06-08T02:07:50.396Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T02:07:57.005Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1347903488",
-            "createTime": "2021-06-08T02:22:49.293Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T02:22:49.320Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8639967232",
-            "createTime": "2021-06-08T02:22:49.334Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1554886656",
-            "createTime": "2021-06-08T03:07:29.002Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T03:07:29.490Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8561065984",
-            "createTime": "2021-06-08T03:07:29.780Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T03:08:59.822Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1443274752",
-            "createTime": "2021-06-08T03:56:35.491Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T03:56:35.492Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8497905664",
-            "createTime": "2021-06-08T03:56:35.564Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1412284416",
-            "createTime": "2021-06-08T04:35:31.288Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T04:35:31.323Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8347017216",
-            "createTime": "2021-06-08T04:35:31.458Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T04:35:52.692Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1342205952",
-            "createTime": "2021-06-08T04:49:16.179Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T04:49:16.217Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8279101440",
-            "createTime": "2021-06-08T04:49:16.254Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1359695872",
-            "createTime": "2021-06-08T05:42:02.471Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T05:42:02.512Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8249425920",
-            "createTime": "2021-06-08T05:42:02.558Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T05:42:16.373Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T05:42:26.780Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T05:45:19.710Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1283055616",
-            "createTime": "2021-06-08T05:58:20.400Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T05:58:20.531Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "8152002560",
-            "createTime": "2021-06-08T05:58:20.640Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T06:03:40.822Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1351393280",
-            "createTime": "2021-06-08T06:29:09.878Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T06:29:09.898Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "7891505152",
-            "createTime": "2021-06-08T06:29:09.948Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T06:32:47.634Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1451311104",
-            "createTime": "2021-06-08T06:53:45.916Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T06:53:45.918Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "7818530816",
-            "createTime": "2021-06-08T06:53:46.184Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T06:54:30.831Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1436401664",
-            "createTime": "2021-06-08T07:44:43.433Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T07:44:43.436Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "7569973248",
-            "createTime": "2021-06-08T07:44:43.463Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1463877632",
-            "createTime": "2021-06-08T09:38:12.363Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T09:38:12.365Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "7270133760",
-            "createTime": "2021-06-08T09:38:12.374Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T09:38:22.162Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T09:46:04.920Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T09:46:56.494Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1412259840",
-            "createTime": "2021-06-08T10:42:53.654Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T10:42:53.655Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "7254392832",
-            "createTime": "2021-06-08T10:42:53.809Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1397411840",
-            "createTime": "2021-06-08T11:15:19.331Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T11:15:19.361Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "7088500736",
-            "createTime": "2021-06-08T11:15:19.555Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1407512576",
-            "createTime": "2021-06-08T12:12:03.580Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T12:12:03.584Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "6914953216",
-            "createTime": "2021-06-08T12:12:03.650Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "1425653760",
-            "createTime": "2021-06-08T14:05:24.493Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T14:05:24.495Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "6883762176",
-            "createTime": "2021-06-08T14:05:24.507Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T14:05:34.834Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "1504591872",
-            "createTime": "2021-06-08T18:00:57.204Z",
-            "eventType": "RAM_MEASURED"
-        },
-        {
-            "createTime": "2021-06-08T18:00:57.241Z",
-            "eventType": "INTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "6883717120",
-            "createTime": "2021-06-08T18:00:57.279Z",
-            "eventType": "EXTERNAL_STORAGE_MEASURED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T18:01:31.609Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T18:15:36.474Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T18:15:55.617Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
-        {
-            "byteCount": "12389822464",
-            "createTime": "2021-06-08T18:44:41.515Z",
-            "eventType": "EXTERNAL_STORAGE_DETECTED"
-        },
         {
             "byteCount": "1402212352",
             "createTime": "2021-06-08T23:52:13.869Z",
@@ -4345,6 +4072,1478 @@
             "byteCount": "6492835840",
             "createTime": "2021-06-09T02:32:15.753Z",
             "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1329614848",
+            "createTime": "2021-06-09T02:39:20.142Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T02:39:20.157Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6440955904",
+            "createTime": "2021-06-09T02:39:20.231Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1322274816",
+            "createTime": "2021-06-09T02:55:58.445Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T02:55:58.448Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6440841216",
+            "createTime": "2021-06-09T02:55:58.648Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1325236224",
+            "createTime": "2021-06-09T03:09:22.431Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T03:09:22.433Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6288637952",
+            "createTime": "2021-06-09T03:09:22.552Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1304424448",
+            "createTime": "2021-06-09T03:24:45.345Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T03:24:45.352Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6438629376",
+            "createTime": "2021-06-09T03:24:45.403Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1310793728",
+            "createTime": "2021-06-09T03:39:21.245Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T03:39:21.246Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6438621184",
+            "createTime": "2021-06-09T03:39:21.310Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1294749696",
+            "createTime": "2021-06-09T03:54:48.521Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T03:54:48.525Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6436065280",
+            "createTime": "2021-06-09T03:54:48.533Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1264107520",
+            "createTime": "2021-06-09T04:09:21.409Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T04:09:21.411Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6394810368",
+            "createTime": "2021-06-09T04:09:21.441Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1279938560",
+            "createTime": "2021-06-09T04:24:50.978Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T04:24:50.980Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6392225792",
+            "createTime": "2021-06-09T04:24:50.991Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1306685440",
+            "createTime": "2021-06-09T04:39:22.314Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T04:39:22.328Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6245744640",
+            "createTime": "2021-06-09T04:39:22.392Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1307750400",
+            "createTime": "2021-06-09T04:55:58.236Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T04:55:58.237Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6380658688",
+            "createTime": "2021-06-09T04:55:58.261Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1302085632",
+            "createTime": "2021-06-09T05:09:24.205Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T05:09:24.206Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6405730304",
+            "createTime": "2021-06-09T05:09:24.234Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T05:18:11.822Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1230602240",
+            "createTime": "2021-06-09T05:24:20.042Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T05:24:20.046Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6201380864",
+            "createTime": "2021-06-09T05:24:20.057Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T05:30:21.109Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T05:30:30.926Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1289760768",
+            "createTime": "2021-06-09T06:25:26.407Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T06:25:26.409Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6394490880",
+            "createTime": "2021-06-09T06:25:26.433Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1266634752",
+            "createTime": "2021-06-09T06:49:58.249Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T06:49:58.300Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "6256185344",
+            "createTime": "2021-06-09T06:49:58.350Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T06:50:10.574Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T06:59:48.303Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1400270848",
+            "createTime": "2021-06-09T07:09:29.584Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T07:09:29.591Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10940416000",
+            "createTime": "2021-06-09T07:09:29.617Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1382932480",
+            "createTime": "2021-06-09T07:24:21.202Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T07:24:21.211Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939858944",
+            "createTime": "2021-06-09T07:24:21.222Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1378045952",
+            "createTime": "2021-06-09T07:39:42.981Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T07:39:42.982Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939277312",
+            "createTime": "2021-06-09T07:39:42.993Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1386016768",
+            "createTime": "2021-06-09T07:55:05.507Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T07:55:05.508Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939846656",
+            "createTime": "2021-06-09T07:55:05.523Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T08:02:18.521Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1538367488",
+            "createTime": "2021-06-09T08:09:21.220Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T08:09:21.222Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10940616704",
+            "createTime": "2021-06-09T08:09:21.242Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1420730368",
+            "createTime": "2021-06-09T08:24:21.199Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T08:24:21.203Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939887616",
+            "createTime": "2021-06-09T08:24:21.215Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1459335168",
+            "createTime": "2021-06-09T08:45:34.249Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T08:45:34.251Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939830272",
+            "createTime": "2021-06-09T08:45:34.304Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1452339200",
+            "createTime": "2021-06-09T08:59:21.230Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T08:59:21.232Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939793408",
+            "createTime": "2021-06-09T08:59:21.248Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1463140352",
+            "createTime": "2021-06-09T09:14:22.207Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T09:14:22.208Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939772928",
+            "createTime": "2021-06-09T09:14:22.218Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1462161408",
+            "createTime": "2021-06-09T09:31:29.193Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T09:31:29.195Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939772928",
+            "createTime": "2021-06-09T09:31:29.208Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T09:31:30.907Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1446387712",
+            "createTime": "2021-06-09T09:44:21.206Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T09:44:21.207Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861342720",
+            "createTime": "2021-06-09T09:44:21.220Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T09:44:28.560Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1435389952",
+            "createTime": "2021-06-09T09:54:57.219Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T09:54:57.221Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861543424",
+            "createTime": "2021-06-09T09:54:57.233Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1441296384",
+            "createTime": "2021-06-09T10:09:21.195Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T10:09:21.198Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861543424",
+            "createTime": "2021-06-09T10:09:21.225Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1517780992",
+            "createTime": "2021-06-09T10:29:21.212Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T10:29:21.213Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861576192",
+            "createTime": "2021-06-09T10:29:21.233Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1513934848",
+            "createTime": "2021-06-09T10:44:21.240Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T10:44:21.241Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861760512",
+            "createTime": "2021-06-09T10:44:21.255Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1526136832",
+            "createTime": "2021-06-09T10:54:22.190Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T10:54:22.191Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861740032",
+            "createTime": "2021-06-09T10:54:22.198Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1511784448",
+            "createTime": "2021-06-09T11:09:21.201Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T11:09:21.203Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861596672",
+            "createTime": "2021-06-09T11:09:21.212Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1510948864",
+            "createTime": "2021-06-09T11:31:53.227Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T11:31:53.230Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861580288",
+            "createTime": "2021-06-09T11:31:53.248Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1504702464",
+            "createTime": "2021-06-09T11:44:21.190Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T11:44:21.193Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861375488",
+            "createTime": "2021-06-09T11:44:21.205Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1530200064",
+            "createTime": "2021-06-09T12:01:28.262Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T12:01:28.263Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10861731840",
+            "createTime": "2021-06-09T12:01:28.280Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1499328512",
+            "createTime": "2021-06-09T12:09:22.194Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T12:09:22.195Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10848505856",
+            "createTime": "2021-06-09T12:09:22.210Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1502146560",
+            "createTime": "2021-06-09T12:31:29.190Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T12:31:29.192Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10850308096",
+            "createTime": "2021-06-09T12:31:29.200Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1536819200",
+            "createTime": "2021-06-09T12:44:21.267Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T12:44:21.269Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10850283520",
+            "createTime": "2021-06-09T12:44:21.284Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1534185472",
+            "createTime": "2021-06-09T13:01:28.223Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T13:01:28.225Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10850283520",
+            "createTime": "2021-06-09T13:01:28.232Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1552752640",
+            "createTime": "2021-06-09T13:09:21.175Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T13:09:21.177Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10850246656",
+            "createTime": "2021-06-09T13:09:21.185Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1550012416",
+            "createTime": "2021-06-09T13:29:21.188Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T13:29:21.189Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10850246656",
+            "createTime": "2021-06-09T13:29:21.197Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T13:30:03.463Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T13:30:07.019Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T13:30:11.591Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1508982784",
+            "createTime": "2021-06-09T13:44:22.235Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T13:44:22.242Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10849181696",
+            "createTime": "2021-06-09T13:44:22.271Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1521643520",
+            "createTime": "2021-06-09T14:01:46.404Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T14:01:46.406Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852065280",
+            "createTime": "2021-06-09T14:01:46.417Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1519325184",
+            "createTime": "2021-06-09T14:10:07.515Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T14:10:07.520Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10851962880",
+            "createTime": "2021-06-09T14:10:07.532Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1524461568",
+            "createTime": "2021-06-09T14:29:21.263Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T14:29:21.265Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852417536",
+            "createTime": "2021-06-09T14:29:21.275Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1525817344",
+            "createTime": "2021-06-09T14:46:40.223Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T14:46:40.226Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852433920",
+            "createTime": "2021-06-09T14:46:40.241Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1541808128",
+            "createTime": "2021-06-09T14:59:21.204Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T14:59:21.209Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852433920",
+            "createTime": "2021-06-09T14:59:21.220Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1532796928",
+            "createTime": "2021-06-09T15:09:21.174Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T15:09:21.177Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852089856",
+            "createTime": "2021-06-09T15:09:21.186Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1549881344",
+            "createTime": "2021-06-09T15:24:21.180Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T15:24:21.182Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852470784",
+            "createTime": "2021-06-09T15:24:21.189Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1543569408",
+            "createTime": "2021-06-09T15:39:51.212Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T15:39:51.228Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852450304",
+            "createTime": "2021-06-09T15:39:51.248Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1543507968",
+            "createTime": "2021-06-09T16:01:29.175Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T16:01:29.184Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852450304",
+            "createTime": "2021-06-09T16:01:29.207Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1530257408",
+            "createTime": "2021-06-09T16:09:22.179Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T16:09:22.181Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852306944",
+            "createTime": "2021-06-09T16:09:22.188Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1537593344",
+            "createTime": "2021-06-09T16:31:29.179Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T16:31:29.181Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852311040",
+            "createTime": "2021-06-09T16:31:29.192Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1542430720",
+            "createTime": "2021-06-09T16:44:24.214Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T16:44:24.217Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852421632",
+            "createTime": "2021-06-09T16:44:24.224Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1537560576",
+            "createTime": "2021-06-09T17:01:29.227Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T17:01:29.236Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852405248",
+            "createTime": "2021-06-09T17:01:29.269Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1534152704",
+            "createTime": "2021-06-09T17:09:21.175Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T17:09:21.177Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852413440",
+            "createTime": "2021-06-09T17:09:21.186Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1562886144",
+            "createTime": "2021-06-09T17:29:21.181Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T17:29:21.183Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852413440",
+            "createTime": "2021-06-09T17:29:21.191Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T17:30:02.079Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T17:30:06.919Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1547354112",
+            "createTime": "2021-06-09T17:44:21.217Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T17:44:21.219Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852540416",
+            "createTime": "2021-06-09T17:44:21.230Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1563754496",
+            "createTime": "2021-06-09T18:01:28.212Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T18:01:28.214Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852491264",
+            "createTime": "2021-06-09T18:01:28.224Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1575915520",
+            "createTime": "2021-06-09T18:09:21.165Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T18:09:21.166Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852454400",
+            "createTime": "2021-06-09T18:09:21.174Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1571586048",
+            "createTime": "2021-06-09T18:31:58.178Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T18:31:58.180Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852454400",
+            "createTime": "2021-06-09T18:31:58.188Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1566003200",
+            "createTime": "2021-06-09T18:44:21.203Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T18:44:21.204Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10851979264",
+            "createTime": "2021-06-09T18:44:21.211Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1564876800",
+            "createTime": "2021-06-09T19:01:29.189Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T19:01:29.216Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852511744",
+            "createTime": "2021-06-09T19:01:29.240Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1560055808",
+            "createTime": "2021-06-09T19:09:21.199Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T19:09:21.201Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852429824",
+            "createTime": "2021-06-09T19:09:21.212Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1566113792",
+            "createTime": "2021-06-09T19:32:05.185Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T19:32:05.187Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852552704",
+            "createTime": "2021-06-09T19:32:05.212Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1560260608",
+            "createTime": "2021-06-09T19:44:21.213Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T19:44:21.216Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852470784",
+            "createTime": "2021-06-09T19:44:21.229Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1568747520",
+            "createTime": "2021-06-09T20:01:28.214Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T20:01:28.216Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852519936",
+            "createTime": "2021-06-09T20:01:28.259Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1554403328",
+            "createTime": "2021-06-09T20:09:22.200Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T20:09:22.202Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852290560",
+            "createTime": "2021-06-09T20:09:22.212Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1554608128",
+            "createTime": "2021-06-09T20:32:17.193Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T20:32:17.194Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852601856",
+            "createTime": "2021-06-09T20:32:17.225Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1549033472",
+            "createTime": "2021-06-09T20:44:21.181Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T20:44:21.182Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852507648",
+            "createTime": "2021-06-09T20:44:21.209Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1570037760",
+            "createTime": "2021-06-09T21:01:28.192Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T21:01:28.211Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852638720",
+            "createTime": "2021-06-09T21:01:28.226Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1565941760",
+            "createTime": "2021-06-09T21:09:49.198Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T21:09:49.199Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852515840",
+            "createTime": "2021-06-09T21:09:49.213Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1561415680",
+            "createTime": "2021-06-09T21:32:38.207Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T21:32:38.209Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10852319232",
+            "createTime": "2021-06-09T21:32:38.222Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T21:32:42.465Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-09T21:32:48.044Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1552449536",
+            "createTime": "2021-06-09T21:42:37.208Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T21:42:37.214Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882772992",
+            "createTime": "2021-06-09T21:42:37.231Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1547489280",
+            "createTime": "2021-06-09T21:57:51.384Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T21:57:51.386Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882732032",
+            "createTime": "2021-06-09T21:57:51.407Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1544441856",
+            "createTime": "2021-06-09T22:09:51.214Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T22:09:51.217Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882736128",
+            "createTime": "2021-06-09T22:09:51.236Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1544589312",
+            "createTime": "2021-06-09T22:29:09.026Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T22:29:09.027Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882818048",
+            "createTime": "2021-06-09T22:29:09.044Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1547993088",
+            "createTime": "2021-06-09T22:41:39.874Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T22:41:39.876Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882789376",
+            "createTime": "2021-06-09T22:41:39.893Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1542529024",
+            "createTime": "2021-06-09T23:01:29.372Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T23:01:29.373Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882740224",
+            "createTime": "2021-06-09T23:01:29.391Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1538535424",
+            "createTime": "2021-06-09T23:09:22.197Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T23:09:22.198Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882678784",
+            "createTime": "2021-06-09T23:09:22.225Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1544089600",
+            "createTime": "2021-06-09T23:32:48.480Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T23:32:48.482Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882707456",
+            "createTime": "2021-06-09T23:32:48.493Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1541812224",
+            "createTime": "2021-06-09T23:39:28.909Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T23:39:28.910Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882236416",
+            "createTime": "2021-06-09T23:39:28.925Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1540661248",
+            "createTime": "2021-06-09T23:54:20.431Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-09T23:54:20.432Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882748416",
+            "createTime": "2021-06-09T23:54:20.492Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1546321920",
+            "createTime": "2021-06-10T00:10:05.231Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T00:10:05.233Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882727936",
+            "createTime": "2021-06-10T00:10:05.283Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1546059776",
+            "createTime": "2021-06-10T00:26:14.641Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T00:26:14.643Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882629632",
+            "createTime": "2021-06-10T00:26:14.658Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1517961216",
+            "createTime": "2021-06-10T00:39:21.248Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T00:39:21.249Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10881630208",
+            "createTime": "2021-06-10T00:39:21.297Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1540026368",
+            "createTime": "2021-06-10T00:57:28.185Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T00:57:28.186Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882486272",
+            "createTime": "2021-06-10T00:57:28.200Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1537445888",
+            "createTime": "2021-06-10T01:10:51.237Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T01:10:51.238Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882416640",
+            "createTime": "2021-06-10T01:10:51.251Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1526960128",
+            "createTime": "2021-06-10T01:27:57.595Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T01:27:57.602Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882387968",
+            "createTime": "2021-06-10T01:27:57.610Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-10T01:30:04.128Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-10T01:30:07.731Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1527570432",
+            "createTime": "2021-06-10T01:40:23.428Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T01:40:23.430Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882465792",
+            "createTime": "2021-06-10T01:40:23.457Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1534029824",
+            "createTime": "2021-06-10T01:56:46.326Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T01:56:46.329Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882813952",
+            "createTime": "2021-06-10T01:56:46.343Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1519546368",
+            "createTime": "2021-06-10T02:09:46.791Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T02:09:46.792Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882756608",
+            "createTime": "2021-06-10T02:09:46.802Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1518784512",
+            "createTime": "2021-06-10T02:28:47.247Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T02:28:47.252Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882813952",
+            "createTime": "2021-06-10T02:28:47.261Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1516306432",
+            "createTime": "2021-06-10T02:44:20.208Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T02:44:20.209Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882293760",
+            "createTime": "2021-06-10T02:44:20.224Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1520513024",
+            "createTime": "2021-06-10T02:55:01.750Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T02:55:01.751Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882871296",
+            "createTime": "2021-06-10T02:55:01.762Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1523048448",
+            "createTime": "2021-06-10T03:10:55.207Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T03:10:55.208Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882838528",
+            "createTime": "2021-06-10T03:10:55.221Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1396301824",
+            "createTime": "2021-06-10T03:31:29.178Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T03:31:29.179Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882416640",
+            "createTime": "2021-06-10T03:31:29.187Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1392992256",
+            "createTime": "2021-06-10T03:44:21.211Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T03:44:21.212Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10882416640",
+            "createTime": "2021-06-10T03:44:21.226Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-10T03:53:22.172Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1454825472",
+            "createTime": "2021-06-10T03:54:21.189Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-10T03:54:21.194Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10881466368",
+            "createTime": "2021-06-10T03:54:21.212Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-10T04:01:23.974Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-10T04:01:55.650Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
         }
     ],
     "memoryInfo": {
@@ -4357,595 +5556,19 @@
     },
     "nonComplianceDetails": [
         {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.mozilla.firefox",
+            "nonComplianceReason": "APP_INSTALLED",
+            "packageName": "com.google.android.apps.youtube.music",
             "settingName": "applications"
         },
         {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.tblenovo.launcher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.apps.nexuslauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.anpmech.launcher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.easwareapps.g2l",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.gacode.relaunchx",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.github.rsteube.t4",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.harasoft.relaunch",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.jkuester.unlauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.kaneoriley.cyanogenport.launcher3",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.launcher.silverfish",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.mirasmithy.epochlauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.quaap.launchtime",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.sduduzog.slimlauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.szchoiceway.aios.bridge",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.twsitedapps.homemanager",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.vackosar.searchbasedlauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.vincent_falzon.discreetlauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "community.fairphone.fplauncher3",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "community.fairphone.launcher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "de.clemensbartz.android.launcher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "de.markusfisch.android.pielauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "de.nodomain.tobihille.seniorlauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "foundation.e.blisslauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "io.github.subhamtyagi.lastlauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "kr.hybdms.sidepanel",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "luke.launcher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "ohi.andre.consolelauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.xphnx.ameixa",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.zimmob.zimlx",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "posidon.launcher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "rocks.tbog.tblauncher",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.googlequicksearchbox",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.GoogleCamera",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.simplemobiletools.camera",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.videolan.vlcbenchmark",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.dialer",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "dev.lucanlm.antimine",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "app.crossword.yourealwaysbe.forkyz",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.serwylo.beatgame",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.billthefarmer.crossword",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.jeffliu.balancetheball",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.gitlab.ardash.appleflinger.android",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.secuso.privacyfriendlysolitaire",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "pro.rudloff.papercraft",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "de.tobiasbielefeld.brickgames",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.traffar.oware",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.microsoft.chineselearning",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.rechnen.app",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.quaap.primary",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.simplemobiletools.contacts",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.simplemobiletools.smsmessenger",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.simplemobiletools.voicerecorder",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.caf.fmradio",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_AVAILABLE_IN_COUNTRY",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.microsoft.bing.wallpapers",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_FOUND",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.tblenovo.lenovotips",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.secuso.privacyfriendlyrulerapp",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.secuso.aktivpause",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "org.secuso.privacyfriendlysketching",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.apps.meetings",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.apps.youtube.creator",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.keep",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.play.games",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "INSTALLATION_FAILURE_REASON_UNKNOWN",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.talk",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.youtube.tvkids",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.katniss",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.wearable.app",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.apps.podcasts",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.apps.messaging",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.apps.photos.scanner",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.android.projection.gearhead",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.ar.lens",
-            "settingName": "applications"
-        },
-        {
-            "installationFailureReason": "NOT_COMPATIBLE_WITH_DEVICE",
-            "nonComplianceReason": "APP_NOT_INSTALLED",
-            "packageName": "com.google.tango.measure",
-            "settingName": "applications"
+            "nonComplianceReason": "MANAGEMENT_MODE",
+            "settingName": "bluetoothContactSharingDisabled"
         }
     ],
     "ownership": "COMPANY_OWNED",
     "policyCompliant": true,
     "policyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
     "powerManagementEvents": [
-        {
-            "batteryLevel": 98,
-            "createTime": "2021-06-07T20:35:45.554Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 97,
-            "createTime": "2021-06-08T00:35:10.447Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 97,
-            "createTime": "2021-06-08T00:35:10.528Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 97,
-            "createTime": "2021-06-08T00:57:26.429Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "createTime": "2021-06-08T00:57:55.642Z",
-            "eventType": "SHUTDOWN"
-        },
-        {
-            "createTime": "2021-06-08T01:00:38.620Z",
-            "eventType": "BOOT_COMPLETED"
-        },
-        {
-            "batteryLevel": 95,
-            "createTime": "2021-06-08T01:42:46.415Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "createTime": "2021-06-08T02:05:47.485Z",
-            "eventType": "SHUTDOWN"
-        },
-        {
-            "createTime": "2021-06-08T02:07:34.152Z",
-            "eventType": "BOOT_COMPLETED"
-        },
-        {
-            "createTime": "2021-06-08T03:06:21.953Z",
-            "eventType": "SHUTDOWN"
-        },
-        {
-            "batteryLevel": 90,
-            "createTime": "2021-06-08T03:07:28.992Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "createTime": "2021-06-08T03:08:44.065Z",
-            "eventType": "BOOT_COMPLETED"
-        },
-        {
-            "batteryLevel": 89,
-            "createTime": "2021-06-08T03:56:35.460Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 88,
-            "createTime": "2021-06-08T04:49:16.135Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "createTime": "2021-06-08T05:42:43.913Z",
-            "eventType": "SHUTDOWN"
-        },
-        {
-            "batteryLevel": 86,
-            "createTime": "2021-06-08T05:43:49.289Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "createTime": "2021-06-08T05:44:57.148Z",
-            "eventType": "BOOT_COMPLETED"
-        },
-        {
-            "createTime": "2021-06-08T06:29:27.432Z",
-            "eventType": "SHUTDOWN"
-        },
-        {
-            "createTime": "2021-06-08T06:32:28.871Z",
-            "eventType": "BOOT_COMPLETED"
-        },
-        {
-            "batteryLevel": 84,
-            "createTime": "2021-06-08T06:53:46.003Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 82,
-            "createTime": "2021-06-08T07:44:43.445Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 81,
-            "createTime": "2021-06-08T09:38:12.349Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "createTime": "2021-06-08T09:43:58.876Z",
-            "eventType": "SHUTDOWN"
-        },
-        {
-            "createTime": "2021-06-08T09:46:45.154Z",
-            "eventType": "BOOT_COMPLETED"
-        },
-        {
-            "batteryLevel": 80,
-            "createTime": "2021-06-08T10:42:53.674Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 80,
-            "createTime": "2021-06-08T10:42:54.043Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 78,
-            "createTime": "2021-06-08T12:12:03.549Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 77,
-            "createTime": "2021-06-08T14:05:24.510Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 77,
-            "createTime": "2021-06-08T14:05:24.535Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 76,
-            "createTime": "2021-06-08T18:00:57.190Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "batteryLevel": 76,
-            "createTime": "2021-06-08T18:01:05.503Z",
-            "eventType": "BATTERY_LEVEL_COLLECTED"
-        },
-        {
-            "createTime": "2021-06-08T18:01:06.169Z",
-            "eventType": "BATTERY_LOW"
-        },
         {
             "batteryLevel": 73,
             "createTime": "2021-06-08T23:52:13.884Z",
@@ -4973,6 +5596,180 @@
             "batteryLevel": 70,
             "createTime": "2021-06-09T02:03:48.900Z",
             "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-09T02:35:06.298Z",
+            "eventType": "POWER_CONNECTED"
+        },
+        {
+            "batteryLevel": 71,
+            "createTime": "2021-06-09T02:43:27.291Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-09T03:09:19.975Z",
+            "eventType": "POWER_DISCONNECTED"
+        },
+        {
+            "createTime": "2021-06-09T03:09:51.039Z",
+            "eventType": "POWER_CONNECTED"
+        },
+        {
+            "batteryLevel": 85,
+            "createTime": "2021-06-09T03:42:54.233Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 99,
+            "createTime": "2021-06-09T04:42:54.261Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-09T05:13:56.813Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-09T05:17:56.381Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "batteryLevel": 97,
+            "createTime": "2021-06-09T06:25:26.401Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 97,
+            "createTime": "2021-06-09T06:49:58.267Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-09T06:56:09.651Z",
+            "eventType": "POWER_CONNECTED"
+        },
+        {
+            "createTime": "2021-06-09T06:57:48.208Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-09T06:59:32.480Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T07:42:53.033Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-09T08:00:51.496Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-09T08:02:00.008Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T08:45:34.269Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T09:44:21.205Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T10:44:21.229Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T11:44:21.190Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T12:44:21.257Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T13:44:22.232Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T14:46:40.198Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T15:43:21.206Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T16:44:24.219Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T17:44:21.208Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T18:44:21.190Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T19:44:21.210Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T20:44:21.179Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T21:42:53.036Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T22:42:55.183Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-09T23:42:55.247Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-10T00:42:54.215Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-10T01:42:54.182Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-10T02:44:20.196Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 100,
+            "createTime": "2021-06-10T03:44:21.208Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-10T03:59:34.194Z",
+            "eventType": "POWER_DISCONNECTED"
         }
     ],
     "previousDeviceNames": [
