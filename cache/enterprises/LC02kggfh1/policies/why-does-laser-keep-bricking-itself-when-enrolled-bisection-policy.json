@@ -44,6 +44,7 @@
     "outgoingBeamDisabled": true,
     "outgoingCallsDisabled": true,
     "removeUserDisabled": true,
+    "safeBootDisabled": true,
     "screenCaptureDisabled": true,
     "setUserIconDisabled": true,
     "setWallpaperDisabled": true,
@@ -64,5 +65,5 @@
     "unmuteMicrophoneDisabled": true,
     "usbFileTransferDisabled": true,
     "usbMassStorageEnabled": true,
-    "version": "27"
+    "version": "28"
 }
