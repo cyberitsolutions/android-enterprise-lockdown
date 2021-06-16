@@ -465,6 +465,12 @@
             "type": "STRING"
         },
         {
+            "description": "Leaving the policy unset or setting it to Enabled allows users to search with their cameras using Google Lens. Setting the policy to Disabled means users can't see the Google Lens button in the search box when Google Lens camera assisted search is supported.",
+            "key": "LensCameraAssistedSearchEnabled",
+            "title": "Allow Google Lens camera assisted search",
+            "type": "BOOL"
+        },
+        {
             "description": "Setting the policy lets you set a list of URL patterns that specify the sites that can open pop-ups. Leaving the policy unset means DefaultPopupsSetting applies for all sites, if it's set. If not, the user's personal setting applies. For detailed information on valid url patterns, please see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns. * is not an accepted value for this policy.",
             "key": "PopupsAllowedForUrls",
             "title": "Allow popups on these sites",
