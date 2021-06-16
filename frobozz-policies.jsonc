@@ -39,52 +39,8 @@
 
 
         "why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy": {
-            "applications": [
-                // Things that are pre-installed
-                // (SYSTEM_APP_FACTORY_VERSION), which appear in the
-                // app menu and can be run EVEN WITH EMPTY WHITELIST
-                // "applications": []!!!
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.youtube.music"},
-                {"installType": "BLOCKED", "packageName": "com.android.camera2"},
-                {"installType": "BLOCKED", "packageName": "com.android.deskclock"},
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos"},
-                // Basic apps needed to enforce the rest of the policy
-                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome"},
-                {"installType": "AVAILABLE", "packageName": "com.android.vending"},
-                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.google.android.inputmethod.latin"}
-            ],
-            "statusReportingSettings": { "applicationReportsEnabled": true, "applicationReportingSettings": { "includeRemovedApps": true}, "commonCriteriaModeEnabled": false, "deviceSettingsEnabled": true, "displayInfoEnabled": true, "hardwareStatusEnabled": true, "memoryInfoEnabled": true, "networkInfoEnabled": true, "powerManagementEventsEnabled": true, "softwareInfoEnabled": true, "systemPropertiesEnabled": true},
-            "advancedSecurityOverrides": {"developerSettings": "DEVELOPER_SETTINGS_DISABLED"},
-
-
-            // BLOCK A
-            "networkResetDisabled": true,
-            "safeBootDisabled": true,
-            "factoryResetDisabled": true,
-            // "frpAdminEmails": ["prisonpctester2@gmail.com", "prisonpctester1@gmail.com", "trentbuck@gmail.com"],
-            "bluetoothDisabled": true,
-            "bluetoothConfigDisabled": true,
-            "bluetoothContactSharingDisabled": true,
-            "addUserDisabled": true,
-            "modifyAccountsDisabled": true,
-            "removeUserDisabled": true,
-            "adjustVolumeDisabled": false,
-
-            // BLOCK B
-            "cameraDisabled": false,
-            "unmuteMicrophoneDisabled": true,
-            "screenCaptureDisabled": true,
-            "setWallpaperDisabled": true,
-            "setUserIconDisabled": true,
-            "mountPhysicalMediaDisabled": true,
-            "outgoingBeamDisabled": true,
-            "outgoingCallsDisabled": true,
-            "usbFileTransferDisabled": true,
-            "usbMassStorageEnabled": true,
-
-
-            "networkEscapeHatchEnabled": true
-        } ,
+            "factoryResetDisabled": true
+        },
         "policy1": {
             // WARNING WARNING WARNING:
             //   Android's docs say the work application list is a whitelist by default -- if an app isn't on the list, you can't run it.
