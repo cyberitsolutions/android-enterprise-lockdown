@@ -40,6 +40,7 @@
     "mountPhysicalMediaDisabled": true,
     "name": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
     "networkEscapeHatchEnabled": true,
+    "networkResetDisabled": true,
     "outgoingBeamDisabled": true,
     "outgoingCallsDisabled": true,
     "removeUserDisabled": true,
@@ -63,5 +64,5 @@
     "unmuteMicrophoneDisabled": true,
     "usbFileTransferDisabled": true,
     "usbMassStorageEnabled": true,
-    "version": "26"
+    "version": "27"
 }

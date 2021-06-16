@@ -58,7 +58,7 @@
 
 
             // BLOCK A
-            // "networkResetDisabled": true,
+            "networkResetDisabled": true,
             // "safeBootDisabled": true,
             // "factoryResetDisabled": true,
             // "frpAdminEmails": ["prisonpctester2@gmail.com", "prisonpctester1@gmail.com", "trentbuck@gmail.com"],
