@@ -40,16 +40,28 @@
 
         "why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy": {
             "applications": [
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.youtube.music", "disabled": true}
-                
-
-],
+                // Things that are pre-installed
+                // (SYSTEM_APP_FACTORY_VERSION), which appear in the
+                // app menu and can be run EVEN WITH EMPTY WHITELIST
+                // "applications": []!!!
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.youtube.music"},
+                {"installType": "BLOCKED", "packageName": "com.android.camera2"},
+                {"installType": "BLOCKED", "packageName": "com.android.deskclock"},
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos"},
+                // Basic apps needed to enforce the rest of the policy
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome"},
+                {"installType": "AVAILABLE", "packageName": "com.android.vending"},
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.google.android.inputmethod.latin"}
+            ],
             "statusReportingSettings": { "applicationReportsEnabled": true, "applicationReportingSettings": { "includeRemovedApps": true}, "commonCriteriaModeEnabled": false, "deviceSettingsEnabled": true, "displayInfoEnabled": true, "hardwareStatusEnabled": true, "memoryInfoEnabled": true, "networkInfoEnabled": true, "powerManagementEventsEnabled": true, "softwareInfoEnabled": true, "systemPropertiesEnabled": true},
             "advancedSecurityOverrides": {"developerSettings": "DEVELOPER_SETTINGS_DISABLED"},
-            "networkResetDisabled": true,
-            "safeBootDisabled": true,
-            "factoryResetDisabled": true,
-            "frpAdminEmails": ["prisonpctester2@gmail.com", "prisonpctester1@gmail.com", "trentbuck@gmail.com"],
+
+
+            // BLOCK A
+            // "networkResetDisabled": true,
+            // "safeBootDisabled": true,
+            // "factoryResetDisabled": true,
+            // "frpAdminEmails": ["prisonpctester2@gmail.com", "prisonpctester1@gmail.com", "trentbuck@gmail.com"],
             "bluetoothDisabled": true,
             "bluetoothConfigDisabled": true,
             "bluetoothContactSharingDisabled": true,
@@ -57,6 +69,8 @@
             "modifyAccountsDisabled": true,
             "removeUserDisabled": true,
             "adjustVolumeDisabled": false,
+
+            // BLOCK B
             "cameraDisabled": false,
             "unmuteMicrophoneDisabled": true,
             "screenCaptureDisabled": true,
@@ -67,31 +81,10 @@
             "outgoingCallsDisabled": true,
             "usbFileTransferDisabled": true,
             "usbMassStorageEnabled": true,
-            // "keyguardDisabledFeatures": "BIOMETRICS",
-            // "permittedAccessibilityServices": {"packageNames": []},
-            // "permittedInputMethods": {"packageNames": []},
-            // "locationMode": "LOCATION_DISABLED",
-            // "shareLocationDisabled": true,
-            // "mobileNetworksConfigDisabled": true,
-            // "cellBroadcastsConfigDisabled": true,
-            // "dataRoamingDisabled": true,
-            // "smsDisabled": true,
-            // "tetheringConfigDisabled": true,
-            // "funDisabled": true,
-            // "blockApplicationsEnabled": true,
-            // "autoDateAndTimeZone": "AUTO_DATE_AND_TIME_ZONE_ENFORCED",
-            // "appAutoUpdatePolicy": "ALWAYS",
-            // "autoTimeRequired": true,
-            // "deviceOwnerLockScreenInfo": {"defaultMessage": "By logging in, YOU AGREE to the Acceptable Use Policy."},
-            // "shortSupportMessage": {"defaultMessage": "By logging in, YOU AGREE to the Acceptable Use Policy."},
-            // "longSupportMessage": {"defaultMessage": "By logging in, YOU AGREE to the following policy Acceptable Use Policy.\n\nAccess to the Prisoner Interactive Learning System is a privilege.\n\nAbuse may result in temporary or permanent loss of use.\nAbuse includes, but is not limited to, attempts to\n • disclose your password to another user;\n • grant another user access to your account;\n • access another user's account;\n • communicate with another inmate;\n • use unauthorised media (inc. CD, DVD & USB);\n • install or modify software; and\n • modify system settings.\n\nAll use, including email correspondence, may be\n • archived indefinitely;\n • reviewed by automated systems;\n • reviewed by staff;\n • reviewed by external agencies for the purposes of\n • investigating suspected criminal/unlawful activity.\n\nAll logs, records and archives may be used as evidence in court."},
-            // "vpnConfigDisabled": true,
-            // "encryptionPolicy": "ENCRYPTION_POLICY_UNSPECIFIED",
-            // "personalUsagePolicies": {"cameraDisabled": true, "maxDaysWithWorkOff": 3, "personalApplications": [], "personalPlayStoreMode": "ALLOWLIST", "screenCaptureDisabled": true},
-            // "periodicPullForUnmeteredNetworkInHour": 1,
-            // "periodicPullForMeteredNetworkInHour": 6,
+
+
             "networkEscapeHatchEnabled": true
-        },
+        } ,
         "policy1": {
             // WARNING WARNING WARNING:
             //   Android's docs say the work application list is a whitelist by default -- if an app isn't on the list, you can't run it.

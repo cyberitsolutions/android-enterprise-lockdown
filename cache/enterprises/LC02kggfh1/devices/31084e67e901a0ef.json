@@ -1,0 +1,3394 @@
+{
+    "apiLevel": 29,
+    "applicationReports": [
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Speech Services",
+            "packageName": "com.google.android.apps.speechservices",
+            "packageSha256Hash": "9fc692540e778256d0c756d7ac31161fe1b10e2b6ba29bc0334874a49014e1f6",
+            "signingKeyCertFingerprints": [
+                "e9c88f5b1f8ae3d93b71f7851b58ccb8f87f3ca2"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 804,
+            "versionName": "1.0.7.arm"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Storage Manager",
+            "packageName": "com.android.storagemanager",
+            "packageSha256Hash": "c3aafe72f1659f196a4c179d857337dbd697add12c3adc30a8cfe81d0b890514",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Print Spooler",
+            "packageName": "com.android.printspooler",
+            "packageSha256Hash": "90018fc483d7577f8b30391a33d49a6ed592d8d3cb7e42289d5baba68f5e36a1",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "android.auto_generated_rro_vendor__",
+            "packageName": "android.auto_generated_rro_vendor__",
+            "packageSha256Hash": "fd5cc92769cfb166f192f1c421f6e43b1e606468fcfe821efe1da26d92c7dc59",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "PacProcessor",
+            "packageName": "com.android.pacprocessor",
+            "packageSha256Hash": "10fa66484e57669b6c8d44ad40053ddca13c139faefbf710c094df36768b2e5f",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Package installer",
+            "packageName": "com.google.android.packageinstaller",
+            "packageSha256Hash": "4cfe4bb8632e9d868358a8412cfd017d2dbc463aa7b7abde06c729eedfe00bc3",
+            "signingKeyCertFingerprints": [
+                "82f34042b49bfdb66209047207b4434f0658218a"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-6052471"
+        },
+        {
+            "applicationSource": "INSTALLED_FROM_PLAY_STORE",
+            "displayName": "Device Policy",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.apps.work.clouddpc",
+            "packageSha256Hash": "0634c21e271659f5fe8f10b51217455fe9a4820ae0057726ed5fa0adc54b3880",
+            "signingKeyCertFingerprints": [
+                "693804be095bd77a327649a8b970ce25c1373069"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1516070,
+            "versionName": "15.16.07.v40"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Setup",
+            "packageName": "com.google.android.apps.restore",
+            "packageSha256Hash": "e768608061e488cd82c608868b80d8d7df35efc8c5391ca4c039920daee90fe0",
+            "signingKeyCertFingerprints": [
+                "19da94896ce4078c38ca695701f1dec741ec6d67"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 9069,
+            "versionName": "1.0.290634092"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.modules.permissioncontroller.forframework",
+            "packageName": "com.google.android.overlay.modules.permissioncontroller.forframework",
+            "packageSha256Hash": "001a539b1a9bb1e35d10084a76d539fe66bc881169c5665667077aa76898ac21",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.themepicker",
+            "packageSha256Hash": "c15f67c1715861795630168fd6fa7b47268245d633ef2e5ccfe5104fa9034cf3",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Gestural Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.gestural_narrow_back",
+            "packageSha256Hash": "d24dbf054abca4812827434fa7699fdb0796e6a05147690751023154b48e69e4",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Mobile Network Configuration",
+            "packageName": "com.android.providers.telephony",
+            "packageSha256Hash": "b2b63bddbf783fe3ff9939b2f2bf97bb946db79690b996cc03138c5506679cc4",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Partner Set Up",
+            "packageName": "com.google.android.partnersetup",
+            "packageSha256Hash": "dcf66dce354e75089431280a4a4dace841728735a0d8e68fa55a6cc68ab050c9",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-6019755"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Clock",
+            "packageName": "com.android.deskclock",
+            "packageSha256Hash": "c8a41fc3962281a7e703f5000faf3c2a435bb3bfc6836af4edb5606afd305005",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Google Text-to-speech engine",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.tts",
+            "packageSha256Hash": "a70fce9dada5277e5fd3470ceec8601150371ef87add23976df62450aa464910",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 210316593,
+            "versionName": "25.2.1.361632836"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Auto run",
+            "packageName": "com.softwinner.awmanager",
+            "packageSha256Hash": "6f3e267f32f05dc951fd2bd94ccdc2877643950290ac58dcc9aed60b6cac1cc6",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "DragonFire",
+            "packageName": "com.softwinner.dragonfire",
+            "packageSha256Hash": "df305f345d16e58371c65eb39397f9c77934e859421d0e3d2c2d3cbb59db7647",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 40,
+            "versionName": "40.0 20170314"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Shared Library",
+            "packageName": "com.google.android.ext.shared",
+            "packageSha256Hash": "f45132ec0509b60e5e155ecc497b46d91bac14b160bb9f5e0b57cefc9f5d6bc1",
+            "signingKeyCertFingerprints": [
+                "d6a06039c0213121c631bae619f674005f29d638"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "DragonAging",
+            "packageName": "com.softwinner.dragonaging",
+            "packageSha256Hash": "eb37ad5691ca81cbdb70ef3c828277318ada4facfce0e1382b219e0da93713d8",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 14,
+            "versionName": "1.1 qualcomm 20160723"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Photos",
+            "packageName": "com.google.android.apps.photos",
+            "packageSha256Hash": "a2ba07ef00b494618cdddce454101b6015aadee8e4f3d7c90719770a2082ca51",
+            "signingKeyCertFingerprints": [
+                "24bb24c05e47e0aefa68a58a766179d9b613a600"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 13936277,
+            "versionName": "4.32.0.281814149"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.cts.ctsshim",
+            "packageName": "com.android.cts.ctsshim",
+            "packageSha256Hash": "7511d5fa669e86cdeb02be41009cf788b2c97ec1a39f4b004b9983342f9bdb09",
+            "signingKeyCertFingerprints": [
+                "61ed377e85d386a8dfee6b864bd85b0bfaa5af81"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 28,
+            "versionName": "9-5374186"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.packageinstaller.overlay",
+            "packageName": "com.google.android.packageinstaller.overlay",
+            "packageSha256Hash": "c4a3a9b7ec797eedd790faeb34ea5d2f1f6af763ef93846ca6904160a9cc7540",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Contacts Storage",
+            "packageName": "com.android.providers.contacts",
+            "packageSha256Hash": "350f25b1d1b2cb0fc61582208c35120072de2f70ee5d5660593f459d4702133f",
+            "signingKeyCertFingerprints": [
+                "8b43f80ea92c56266e01925f2125d38444714d3e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "MTP Host",
+            "packageName": "com.android.mtp",
+            "packageSha256Hash": "8a442527d22a6cb24545fc04df42a9e397b065c5a11813e2ea647e0488f2dd12",
+            "signingKeyCertFingerprints": [
+                "205d4345cde5ea193da137d6bb25e6445487d885"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.sharedstoragebackup",
+            "packageName": "com.android.sharedstoragebackup",
+            "packageSha256Hash": "edc9d538ff3b14e37850c291857aafb6a2acaac293ffec0d5622f13e623adcf4",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Files",
+            "packageName": "com.android.documentsui",
+            "packageSha256Hash": "e7e6a6b82f2cd66f71ba9b8c2aac1eb79650cf68645ff7766167f97e993c922c",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.softwinner.settingssetup",
+            "packageName": "com.softwinner.settingssetup",
+            "packageSha256Hash": "a7d9cc97ef4c95913c7875d42b1598e2ef9e57958e89f026481495b2dbaf0d3c",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Quickstep",
+            "packageName": "com.android.launcher3",
+            "packageSha256Hash": "a3b8eca7cb0aede957d608b002dd885150fb0c38a647501ae8349bbd0c2e8ddc",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Bookmark Provider",
+            "packageName": "com.android.bookmarkprovider",
+            "packageSha256Hash": "2144b5ec12c49ee675a99b8b88b38797f0091709cbe89dcefed3fd6a1537495a",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "VpnDialogs",
+            "packageName": "com.android.vpndialogs",
+            "packageSha256Hash": "e29603ad5e380410b80eb790f90c915385c9f081d5134d2d88d7779d384da7ca",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Cinnamon",
+            "packageName": "com.android.theme.color.cinnamon",
+            "packageSha256Hash": "58b049eb597d5d6f8246c197e15c71e6afb95565dfff8e627220e7cdea7710cd",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Sample Home Screen",
+            "packageName": "com.google.android.gmsintegration",
+            "packageSha256Hash": "317a1be213d16b66ca725ac60677d6c6b8ad078fab1e6e84e5e2eda65e8555d3",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Services Framework",
+            "packageName": "com.google.android.gsf",
+            "packageSha256Hash": "b4ac1f66fd3295113e1cc7f2efcb7918aa805b73fcc2830c22989639e6a531d4",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.android",
+            "packageSha256Hash": "8d7a409b132f6e580d55fd06b8c8a2d943b5047427f60c06f458fffabaeade34",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Corner cutout",
+            "packageName": "com.android.internal.display.cutout.emulation.corner",
+            "packageSha256Hash": "99cf030a51d0d6969eba44c94676c955f652995bef8a0c931f49da39eca6817b",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Module Metadata",
+            "packageName": "com.google.android.modulemetadata",
+            "packageSha256Hash": "553707f0980bb146fec86c2eabe5bde8778bf44e983efeed79fca33b0758f717",
+            "signingKeyCertFingerprints": [
+                "8e017ef64bdca26698fe60ec8f45fcf9819f1f4d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 292102300,
+            "versionName": "2020-02-01"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "NetworkStack",
+            "packageName": "com.android.networkstack.inprocess",
+            "packageSha256Hash": "d3ca9e990051cf66474c4cfe52684fc30321b2435baca24461b53da68210d8a7",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Ocean",
+            "packageName": "com.android.theme.color.ocean",
+            "packageSha256Hash": "2d511f3107ddd2afb79fd4700bb62c6c24aec02dfdc43ad3e2f32de8de4810f7",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.server.NetworkPermissionConfig",
+            "packageName": "com.android.networkstack.permissionconfig",
+            "packageSha256Hash": "8791d0fef4a7fae6d76903b975f614ea50f1bae77e5960f0b63836ed58073a02",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 290000000,
+            "versionName": "2019-09"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded Rectangle",
+            "packageName": "com.android.theme.icon.roundedrect",
+            "packageSha256Hash": "99007825582f105e26deddbc44e9ad5c14b3363de7aa567cb5eedb4b4b6d305a",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.gmsgoconfig",
+            "packageName": "com.google.android.overlay.gmsgoconfig",
+            "packageSha256Hash": "49afec778d0fd5b02206e2858ad7bba9b4b1bc2b03711b74e83b869aef7fe300",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Gestural Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.gestural_extra_wide_back",
+            "packageSha256Hash": "f329646afce0724ca909c2092993bb62ad8c8ddd3824c6c7c5c4ffed825fa8e8",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Fused Location",
+            "packageName": "com.android.location.fused",
+            "packageSha256Hash": "97e640000002952207ef3d40fd914514b389721cc103e6aaaf3d96df1a528196",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Intent Filter Verification Service",
+            "packageName": "com.android.statementservice",
+            "packageSha256Hash": "170848e32c08974101765d9f8fa7e652789e28d5cc79ca66368e8f7b8a8246fd",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.localtransport",
+            "packageName": "com.android.localtransport",
+            "packageSha256Hash": "6f7477a4813d25ccadb155541be236187977547b4c8bb10734130389eca68e8c",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Squircle",
+            "packageName": "com.android.theme.icon.squircle",
+            "packageSha256Hash": "83808da3a723a778f547485f8237e254a1808c2b951e2dfdb0e1d0ff7f6927e3",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Settings Storage",
+            "packageName": "com.android.providers.settings",
+            "packageSha256Hash": "75eada657791cfa5c044f22957e4f694273cbacbe2581155ed13053b481a353f",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "System UI",
+            "packageName": "com.android.systemui",
+            "packageSha256Hash": "a54a0f932cc9ce01d5f6cd64629de06d10efd1e5788a79516d0b64eb355f7e59",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded",
+            "packageName": "com.android.theme.icon_pack.rounded.android",
+            "packageSha256Hash": "6c09cf384c5eb51a3d26cc2283200ece321967e6a73eb76daea796adec7015b6",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Default Print Service",
+            "packageName": "com.android.bips",
+            "packageSha256Hash": "9d4a90dbd11eca70e1c0c0674afb262bb135190e7fb4435ba16221e43293bb3a",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Companion Device Manager",
+            "packageName": "com.android.companiondevicemanager",
+            "packageSha256Hash": "b019ade3368b58d62a03674fae282efb2967284158baeababc865e570433756e",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.systemui",
+            "packageSha256Hash": "d164eac065b8e41fe449e17bd8054cb0a5a630ebc7eb8b5384b9775cb6be26fd",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Square",
+            "packageName": "com.android.theme.icon.square",
+            "packageSha256Hash": "90205545027a694de7e900672fff8d3deb9c69b3c8ba51743cf31d8b5d4cfda9",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Sample Home Screen",
+            "packageName": "com.allwinnertech.gmsintegration",
+            "packageSha256Hash": "25182f57af71fb075116f602cdad246e4f42afef5fee0e81687c6026f3742dd6",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Permission controller",
+            "packageName": "com.google.android.permissioncontroller",
+            "packageSha256Hash": "f7cd75a6ae4c4f40b84a743a7012eebf704340029e5952d60ed584a5a2b4d6a2",
+            "signingKeyCertFingerprints": [
+                "1d156d16e46b29796ef586b1b6c80e8690156717"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 291900801,
+            "versionName": "q_pr1-release_aml_291900801"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.settings",
+            "packageSha256Hash": "080ba2a5fb8b1e42172d604e1238fc46567fe3388b0b3ce2ebe6d2ed19034fde",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Basic Daydreams",
+            "packageName": "com.android.dreams.basic",
+            "packageSha256Hash": "495008c6b4b2a5a68b105e04b3badccb92bda7f0f33d1bd65cd1d8a2f22cf9ba",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.themepicker",
+            "packageSha256Hash": "fcbea4e9cd16c82545cc9552c215111ec026377b586c8db9cfd8887cfafd5508",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Gestural Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.gestural_wide_back",
+            "packageSha256Hash": "3ef704a686b1d12a2dba40bbb6c68856a5c61e5e748836fbb6effcfea90fff57",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded",
+            "packageName": "com.android.theme.icon_pack.rounded.launcher",
+            "packageSha256Hash": "08ed83ee9bc705c1b0caaad1a24203fca57b5305bf70bd7991a0d4d115bfe261",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Shell",
+            "packageName": "com.android.shell",
+            "packageSha256Hash": "589294bc16f16ccffe33d8810d45b7d1d16387650900d7aa686e84254ba45503",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google One Time Init",
+            "packageName": "com.google.android.onetimeinitializer",
+            "packageSha256Hash": "0df32a1ce51e2338f605ebc70780c59276d30cfaa1bdb8807f970a5feec4acbb",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.backupconfirm",
+            "packageName": "com.android.backupconfirm",
+            "packageSha256Hash": "0dcc4140055ea4d877b299125fbeca0f2cfa5da7427dfe864cfcb82abd79010e",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Teardrop",
+            "packageName": "com.android.theme.icon.teardrop",
+            "packageSha256Hash": "25c761f0a4dbd0b607544319ce000752231f4f592b45744c963df877b0f90d65",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Settings",
+            "events": [
+                {
+                    "createTime": "2021-06-16T02:39:54.504Z",
+                    "eventType": "CHANGED"
+                }
+            ],
+            "packageName": "com.android.settings",
+            "packageSha256Hash": "08657405bfa27526aaa3f837c28a31aed3bf2021bebde0bbab0fffaaf97788c8",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "User Dictionary",
+            "packageName": "com.android.providers.userdictionary",
+            "packageSha256Hash": "bf4dcd26e5378a46925a8ccebcc53c39254cb0496c22417ffc38a52de2cff6c8",
+            "signingKeyCertFingerprints": [
+                "8b43f80ea92c56266e01925f2125d38444714d3e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Location History",
+            "packageName": "com.google.android.gms.location.history",
+            "packageSha256Hash": "883bdabea7146ca5de25dfa2f8a983bf71aa3e61b86dcd37a751651a6897026f",
+            "signingKeyCertFingerprints": [
+                "09b3e0b0e7995718fd4328e851b72ab6420748c9"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Purple",
+            "packageName": "com.android.theme.color.purple",
+            "packageSha256Hash": "aad045c4dc890bce2a77c99dbc4775d2966f7618a84716af2cd98cdc2848c672",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Market Feedback Agent",
+            "packageName": "com.google.android.feedback",
+            "packageSha256Hash": "26cac31e16f398c033aeb3a046eb36404e7f82447a9b1e9ed753d3b857ddd94f",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded",
+            "packageName": "com.android.theme.icon_pack.rounded.systemui",
+            "packageSha256Hash": "35d3318b5ba05d22bbbc07bfa6baa98158abe51896eeeddef817201a7aec107f",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Settings Suggestions",
+            "packageName": "com.android.settings.intelligence",
+            "packageSha256Hash": "4251323e7040b047bf8cb691bca72ed83ec199a135b82e5980b4acb08227c4b2",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Orchid",
+            "packageName": "com.android.theme.color.orchid",
+            "packageSha256Hash": "f02cd8cada4eed3231775d1485313c2e56d350e20f3009596e3d74a8be292138",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.modules.permissioncontroller",
+            "packageName": "com.google.android.overlay.modules.permissioncontroller",
+            "packageSha256Hash": "2905ec2069baada2a22b5ca5919dcd06b7baf3f5cbf9a37dc96701ed81b21fe6",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "YouTube Music",
+            "packageName": "com.google.android.apps.youtube.music",
+            "packageSha256Hash": "3cc52011d527eae0afff17171b618f43163a0345ffe4f201d2ccadd03d7aa307",
+            "signingKeyCertFingerprints": [
+                "afb0fed5eeaebdd86f56a97742f4b6b33ef59875"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 43050230,
+            "versionName": "4.30.50"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "AwlogSettings",
+            "packageName": "com.softwinner.awlogsettings",
+            "packageSha256Hash": "113a93e81e0bcb8a3bad6f656be544e4a4225240d7fb87c6f5b0e3fd2910b5d7",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.android",
+            "packageSha256Hash": "9fb659ea1eeec894b763529c9b8da55ff04e0ec34fa33ea214cafa21b693fa70",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Setup",
+            "packageName": "com.google.android.setupwizard",
+            "packageSha256Hash": "fe1928c35ad6219b90206bf32be46f8fb332a07ff3601449066e6de8dfafdcc5",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 4094,
+            "versionName": "229.294135555"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Noto Serif / Source Sans Pro",
+            "packageName": "com.android.theme.font.notoserifsource",
+            "packageSha256Hash": "500d0f3fb233056bb73104c7ea05f1820ae7477f7f89be6b1a1a4f66823c2947",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Filled",
+            "packageName": "com.android.theme.icon_pack.filled.launcher",
+            "packageSha256Hash": "bc058be500646ac7b60d1575f799a1ee569d45beb932d51281978ce641834875",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Bluetooth MIDI Service",
+            "packageName": "com.android.bluetoothmidiservice",
+            "packageSha256Hash": "52f1dd6ad7bdbf1556648ff4392b6fed1d4b1f531780057c716e6ac37cc10001",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Double cutout",
+            "packageName": "com.android.internal.display.cutout.emulation.double",
+            "packageSha256Hash": "8a0ce7aebdda2a47f1dd5a5678d18c22b993e265237ca166564d35542091dc1f",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Space",
+            "packageName": "com.android.theme.color.space",
+            "packageSha256Hash": "9be2e1564d5cdce385ab445673f1c77c545e5640306c710f42eb23d7b863c564",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Android System WebView",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.webview",
+            "packageSha256Hash": "1316b41a0e72c33acf65246c6815cc6883f6d49c79f773c21bbf7693363ed57e",
+            "signingKeyCertFingerprints": [
+                "1f387cb25e0069efca490ade28c060e09d37dd45"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 447208830,
+            "versionName": "91.0.4472.88"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.systemui",
+            "packageSha256Hash": "6f2859c87716f3fb5e4b47426a06ce0feeb3847d4e752003f92a5529b5ce69a8",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Mobile Data",
+            "packageName": "com.android.phone",
+            "packageSha256Hash": "918334a76686125aa6d41e8f78935f9ad080d023e79afd767dcf410818a60ded",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "MmsService",
+            "packageName": "com.android.mms.service",
+            "packageSha256Hash": "ad548a5fcd305ec874487a3eb2821894749a0e4a343c6adbc663af69b13181f8",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Q Easter Egg",
+            "packageName": "com.android.egg",
+            "packageSha256Hash": "42842f44fb11239228f665579d164b3a211bb9c35b92816d0a3734c93ee91b9d",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Print Service Recommendation Service",
+            "packageName": "com.google.android.printservice.recommendation",
+            "packageSha256Hash": "a1f470272171aad45f9f73cf6e8c7d322d9327f5a0a56675a7f7ab1b390fbdac",
+            "signingKeyCertFingerprints": [
+                "4a296f252841c126e8266122863393e1a107600d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 4,
+            "versionName": "1.3.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "CaptivePortalLogin",
+            "packageName": "com.android.captiveportallogin",
+            "packageSha256Hash": "901391b410fa5845b3a1dce9da22902b6eab88c9b5a9a67bd94f12d2e0f3d48e",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 290000000,
+            "versionName": "2019-09"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Rounded",
+            "packageName": "com.android.theme.icon_pack.rounded.settings",
+            "packageSha256Hash": "687c8e5507d02ef5a78c679a419955dc78e3ce115111594933d3fb504956bee6",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "OsuLogin",
+            "packageName": "com.android.hotspot2",
+            "packageSha256Hash": "70f4b3c3f05da59b53a32c13643e1d25aa499bd4f6373df9525b12d7a80659d9",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Black",
+            "packageName": "com.android.theme.color.black",
+            "packageSha256Hash": "29e8908243a49248be31e4b2674ef37ae7a3a1e7fed941978f65f8d46990f29d",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Input Devices",
+            "packageName": "com.android.inputdevices",
+            "packageSha256Hash": "94a322854112bfc286b86a6b801b78a7b5af073c07294c9ebb9aeb335f1a4b69",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.providers.partnerbookmarks",
+            "packageName": "com.android.providers.partnerbookmarks",
+            "packageSha256Hash": "5cf0bec71c96667b6ae43fd42778cc32d3f0424de9545121a01e8a1812729f7a",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Calendar Storage",
+            "packageName": "com.android.providers.calendar",
+            "packageSha256Hash": "7e5fcafb31799e6990d03f864ab371899e527c73ac206ebe386b52ef227934ba",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.gmsconfig",
+            "packageName": "com.google.android.overlay.gmsconfig",
+            "packageSha256Hash": "6e6e1f7a6c044c7df148555056452d8f149a856785703846b46256e529469678",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.modules.modulemedtadatagoogle.forframework",
+            "packageName": "com.google.android.overlay.modules.modulemedtadatagoogle.forframework",
+            "packageSha256Hash": "7e2c6405ee0318745caf40a56c42796759283d62b731afafa0a90382da6d40d9",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "External Storage",
+            "packageName": "com.android.externalstorage",
+            "packageSha256Hash": "69f96fda76f92757077380eea6056818bfbb644464e904a81ab513a04db3cf6f",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Google Play Store",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.android.vending",
+            "packageSha256Hash": "1028a629e74195286593660d5f0f397b96b102629233f31849685e652c487e15",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 82572210,
+            "versionName": "25.7.22-21 [0] [PR] 378204440"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Call Management",
+            "packageName": "com.android.server.telecom",
+            "packageSha256Hash": "8680b2acf9c229a1a56b3a0a56a73fe32ac3db94dd8bdcbd5c3b7b6299d69604",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Key Chain",
+            "packageName": "com.android.keychain",
+            "packageSha256Hash": "77eabb63683fddcde7a586cab574cf8d21316fb63a5972a47b48f5d89e5ae72a",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.wallpaperbackup",
+            "packageName": "com.android.wallpaperbackup",
+            "packageSha256Hash": "31197bb9cb2bdd338fe4a6ed6050eeddacfa82813e6af696b692636d9696520a",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Chrome",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.android.chrome",
+            "packageSha256Hash": "46dab3f10116aef4a830a38e596d6ef2fd87586566afe4448c273a92e307a52e",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 447210130,
+            "versionName": "91.0.4472.101"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Work Setup",
+            "packageName": "com.android.managedprovisioning",
+            "packageSha256Hash": "a7b872265710075f5b5416f64b8db541980c58b257db6dc228c604dcb833f0d4",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Media Storage",
+            "packageName": "com.android.providers.media",
+            "packageSha256Hash": "5d251d342b1de00799cf0f96b14214ce5072d851a9ce164444a4fbbfc3aa0836",
+            "signingKeyCertFingerprints": [
+                "205d4345cde5ea193da137d6bb25e6445487d885"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1023,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.gmsagoconfig",
+            "packageName": "com.google.android.overlay.gmsagoconfig",
+            "packageSha256Hash": "85791133ecc49da5e600404f980661bf041fe94ab4c16e4d0e47a40050f47214",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "3 Button Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.threebutton",
+            "packageSha256Hash": "5b17f6f433fa794aab0d6af57eaa432d311774802d756d0e8963656cc6e8c350",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.wallpapercropper",
+            "packageName": "com.android.wallpapercropper",
+            "packageSha256Hash": "a000107384b7a2390ab67a476de95ec790df4308a16ad50d23aead5acb78131a",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android System",
+            "packageName": "android",
+            "packageSha256Hash": "57d08f50a356cc313fc5aedebf79655ecd2c319591d5b8ea1d793c742a813f7c",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Google Play services",
+            "events": [
+                {
+                    "createTime": "2021-06-16T02:44:04.425Z",
+                    "eventType": "CHANGED"
+                }
+            ],
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.gms",
+            "packageSha256Hash": "9c1168f48e14535695a59f964a414313ad9e5a09c4a684a64b167ec2c9a31b1c",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 212116067,
+            "versionName": "21.21.16 (110302-378233385)"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Certificate Installer",
+            "packageName": "com.android.certinstaller",
+            "packageSha256Hash": "07810bc795ce1b045d907d8974d7c19ae2f7452be0cd0a90d7099a6da2c54cf7",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Green",
+            "packageName": "com.android.theme.color.green",
+            "packageSha256Hash": "57587466162acbe7e2fcd7ca5360b0a80803fce945dde677211639c9fbda6ed8",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "SecureElementApplication",
+            "packageName": "com.android.se",
+            "packageSha256Hash": "3a907457690f281692606c8afc54ad9746d12bbd133b98cab8fe02cf323a1e7f",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "ProxyHandler",
+            "packageName": "com.android.proxyhandler",
+            "packageSha256Hash": "427877cc895c262e6433df47ad2cab5c9ff0b6ab25c2e85ee918dde673940532",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.launcher",
+            "packageSha256Hash": "f3238a82bfa01c2277a795a251d47c37e447dd221df5448ce137376b28bece3f",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Download Manager",
+            "packageName": "com.android.providers.downloads",
+            "packageSha256Hash": "e07a3595f5c901a36049c3a1713139bb3f3e39c2eed7b821217496131b31966e",
+            "signingKeyCertFingerprints": [
+                "205d4345cde5ea193da137d6bb25e6445487d885"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Circular",
+            "packageName": "com.android.theme.icon_pack.circular.settings",
+            "packageSha256Hash": "0376bd385292a310af4e767814d7a2e958b46475f3c77736bdc8529b66266d57",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Android Services Library",
+            "packageName": "com.google.android.ext.services",
+            "packageSha256Hash": "a4be6d929328fe2cc80412b01f747a7e8ced787e410e23f2d7445aae1acb3136",
+            "signingKeyCertFingerprints": [
+                "b99dd2248a4882e560503ba1b6cb10efb3808f21"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 291900801,
+            "versionName": "q_pr1-release_aml_291900801"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Allwinner Package Override Application",
+            "packageName": "com.allwinnertech.packageoverride",
+            "packageSha256Hash": "04213936eacb4e947ed598b825917269210b15a911de47cce24c610d91d17ef2",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Tall cutout",
+            "packageName": "com.android.internal.display.cutout.emulation.tall",
+            "packageSha256Hash": "c4c7ab45b5248746665a394a2948eca9bf31eb8f7c39d108b951882b167264ef",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Bluetooth",
+            "events": [
+                {
+                    "createTime": "2021-06-16T02:58:54.313Z",
+                    "eventType": "CHANGED"
+                }
+            ],
+            "packageName": "com.android.bluetooth",
+            "packageSha256Hash": "f113932cee0b64d15ffd5c7a45dfdac25eb19a20799bea95e627018abff4fdbb",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.android.cts.priv.ctsshim",
+            "packageName": "com.android.cts.priv.ctsshim",
+            "packageSha256Hash": "06f757354a7c2497264f8ff699942d2e3e26d337c9a47b6d8841d7ff83981b86",
+            "signingKeyCertFingerprints": [
+                "61ed377e85d386a8dfee6b864bd85b0bfaa5af81"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 28,
+            "versionName": "9-5374186"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "2 Button Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.twobutton",
+            "packageSha256Hash": "9f20b338d68b5a1ebcb1bdc49def22e33c8fb71e58170272bfd1bf37153cdb86",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Google Contacts Sync",
+            "packageName": "com.google.android.syncadapters.contacts",
+            "packageSha256Hash": "cd4e0e33e1ea1d73c1f261e4e0d34fd3ceca333097d4e49c81a381b87d2e6e80",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Downloads",
+            "packageName": "com.android.providers.downloads.ui",
+            "packageSha256Hash": "2c8b44841ade7f175f3e4d4b34526b3af46469e33d5c6a1b4777c68abc78c1a4",
+            "signingKeyCertFingerprints": [
+                "205d4345cde5ea193da137d6bb25e6445487d885"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.google.android.overlay.modules.ext.services",
+            "packageName": "com.google.android.overlay.modules.ext.services",
+            "packageSha256Hash": "27ad51ca930140f9858c41fcdc9357d073bab950f20bc033989f22b08f4e8814",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "com.softwinner.dragonaging.res",
+            "packageName": "com.softwinner.dragonaging.res",
+            "packageSha256Hash": "b32a9271f72af60e0c3c82c564f3df47eb34069249d7bac715eb073fee588782",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Blocked Numbers Storage",
+            "packageName": "com.android.providers.blockednumber",
+            "packageSha256Hash": "a77486a1cc26877c9f746003c81fd836766064bfca4a5070d57d3d319d5fa1e7",
+            "signingKeyCertFingerprints": [
+                "8b43f80ea92c56266e01925f2125d38444714d3e"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Gestural Navigation Bar",
+            "packageName": "com.android.internal.systemui.navbar.gestural",
+            "packageSha256Hash": "4bb1437c84485b0b99ee14b2e2c19ed6b9c98ff9fab81da2e83e90822124089a",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 1,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "System Tracing",
+            "packageName": "com.android.traceur",
+            "packageSha256Hash": "9fbfd2a4331925d00d399e5e39da97502cb26403fef3a6bbb599a4d7bae1c7d1",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 2,
+            "versionName": "1.0"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_UPDATED_VERSION",
+            "displayName": "Gboard",
+            "installerPackageName": "com.android.vending",
+            "packageName": "com.google.android.inputmethod.latin",
+            "packageSha256Hash": "608deb1f9f6377c55a71b84e80d3fa858ef075967647a5c62a335c952f6dc87c",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 56407777,
+            "versionName": "10.6.02.371892758-lite_release-armeabi-v7a"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Dynamic System Updates",
+            "packageName": "com.android.dynsystem",
+            "packageSha256Hash": "d797b3a39cf5b4be993cdf427fc42d51ccb0bc2032c4b439f06abe1260c5e706",
+            "signingKeyCertFingerprints": [
+                "914a161ea2f2f10a04dedb30d9d72f25cbf47620"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "HTML Viewer",
+            "packageName": "com.android.htmlviewer",
+            "packageSha256Hash": "989e112164e2cfdf70974b8fb6f33b0bf3d49386f8435bae292e447b086e1b69",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "ConfigUpdater",
+            "packageName": "com.google.android.configupdater",
+            "packageSha256Hash": "bba7f585c0a873a521146ef45c7f55a1edc522cd562161482084b2192f6369e6",
+            "signingKeyCertFingerprints": [
+                "38918a453d07199354f8b19af05ec6562ced5788"
+            ],
+            "state": "INSTALLED",
+            "versionCode": 29,
+            "versionName": "10-5771379"
+        },
+        {
+            "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
+            "displayName": "Camera",
+            "packageName": "com.android.camera2",
+            "packageSha256Hash": "6a289cd1e36dad55f31272ad5b221fc75224bf1fca6615908605f94e25e79a9f",
+            "signingKeyCertFingerprints": [
+                "3fba205937e230f096701209d6a627def06a150d"
+            ],
+            "state": "REMOVED",
+            "versionCode": 20002130,
+            "versionName": "2.0.002"
+        }
+    ],
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "appliedPolicyVersion": "26",
+    "appliedState": "ACTIVE",
+    "deviceSettings": {
+        "encryptionStatus": "ACTIVE_PER_USER",
+        "isEncrypted": true,
+        "verifyAppsEnabled": true
+    },
+    "displays": [
+        {
+            "density": 160,
+            "height": 1280,
+            "name": "Built-in Screen",
+            "refreshRate": 59,
+            "state": "ON",
+            "width": 800
+        }
+    ],
+    "enrollmentTime": "2021-06-10T12:30:40.474Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/IyOcG6FTyyM4qpvkthclwwL8qTwVpS13jN6U2BkHET0",
+    "hardwareInfo": {
+        "brand": "Laser",
+        "hardware": "A50",
+        "manufacturer": "incar",
+        "model": "MID_1089IPS",
+        "serialNumber": "3c0014056441073248e"
+    },
+    "hardwareStatusSamples": [
+        {
+            "createTime": "2021-06-14T21:10:39.281Z"
+        },
+        {
+            "createTime": "2021-06-14T21:49:35.247Z"
+        },
+        {
+            "createTime": "2021-06-14T22:12:20.496Z"
+        },
+        {
+            "createTime": "2021-06-14T22:28:26.361Z"
+        },
+        {
+            "createTime": "2021-06-14T22:49:29.326Z"
+        },
+        {
+            "createTime": "2021-06-14T23:10:41.262Z"
+        },
+        {
+            "createTime": "2021-06-14T23:40:55.266Z"
+        },
+        {
+            "createTime": "2021-06-15T00:06:59.295Z"
+        },
+        {
+            "createTime": "2021-06-15T00:43:33.253Z"
+        },
+        {
+            "createTime": "2021-06-15T01:01:20.264Z"
+        },
+        {
+            "createTime": "2021-06-15T01:16:27.315Z"
+        },
+        {
+            "createTime": "2021-06-15T01:40:40.276Z"
+        },
+        {
+            "createTime": "2021-06-15T02:01:21.228Z"
+        },
+        {
+            "createTime": "2021-06-15T02:16:27.252Z"
+        },
+        {
+            "createTime": "2021-06-15T02:40:40.310Z"
+        },
+        {
+            "createTime": "2021-06-15T03:01:21.304Z"
+        },
+        {
+            "createTime": "2021-06-15T03:16:28.240Z"
+        },
+        {
+            "createTime": "2021-06-15T03:40:40.305Z"
+        },
+        {
+            "createTime": "2021-06-15T04:01:21.249Z"
+        },
+        {
+            "createTime": "2021-06-15T04:16:30.262Z"
+        },
+        {
+            "createTime": "2021-06-15T04:40:41.261Z"
+        },
+        {
+            "createTime": "2021-06-15T05:01:20.339Z"
+        },
+        {
+            "createTime": "2021-06-15T05:16:27.268Z"
+        },
+        {
+            "createTime": "2021-06-15T05:40:41.294Z"
+        },
+        {
+            "createTime": "2021-06-15T06:06:58.263Z"
+        },
+        {
+            "createTime": "2021-06-15T06:28:27.315Z"
+        },
+        {
+            "createTime": "2021-06-15T06:43:34.288Z"
+        },
+        {
+            "createTime": "2021-06-15T07:01:22.303Z"
+        },
+        {
+            "createTime": "2021-06-15T07:16:32.245Z"
+        },
+        {
+            "createTime": "2021-06-15T07:40:40.306Z"
+        },
+        {
+            "createTime": "2021-06-15T08:16:31.265Z"
+        },
+        {
+            "createTime": "2021-06-15T08:41:20.238Z"
+        },
+        {
+            "createTime": "2021-06-15T09:06:15.330Z"
+        },
+        {
+            "createTime": "2021-06-15T09:43:11.328Z"
+        },
+        {
+            "createTime": "2021-06-15T10:03:12.293Z"
+        },
+        {
+            "createTime": "2021-06-15T10:25:51.340Z"
+        },
+        {
+            "createTime": "2021-06-15T10:49:31.283Z"
+        },
+        {
+            "createTime": "2021-06-15T11:11:23.263Z"
+        },
+        {
+            "createTime": "2021-06-15T11:26:29.269Z"
+        },
+        {
+            "createTime": "2021-06-15T11:46:20.339Z"
+        },
+        {
+            "createTime": "2021-06-15T12:01:27.295Z"
+        },
+        {
+            "createTime": "2021-06-15T12:16:34.389Z"
+        },
+        {
+            "createTime": "2021-06-15T12:40:41.343Z"
+        },
+        {
+            "createTime": "2021-06-15T13:10:54.240Z"
+        },
+        {
+            "createTime": "2021-06-15T13:41:06.308Z"
+        },
+        {
+            "createTime": "2021-06-15T13:56:21.302Z"
+        },
+        {
+            "createTime": "2021-06-15T14:11:27.244Z"
+        },
+        {
+            "createTime": "2021-06-15T14:28:26.277Z"
+        },
+        {
+            "createTime": "2021-06-15T14:49:26.274Z"
+        },
+        {
+            "createTime": "2021-06-15T15:10:42.255Z"
+        },
+        {
+            "createTime": "2021-06-15T15:51:31.475Z"
+        },
+        {
+            "createTime": "2021-06-15T16:16:42.303Z"
+        },
+        {
+            "createTime": "2021-06-15T16:41:07.327Z"
+        },
+        {
+            "createTime": "2021-06-15T17:16:44.357Z"
+        },
+        {
+            "createTime": "2021-06-15T17:55:54.257Z"
+        },
+        {
+            "createTime": "2021-06-15T18:28:35.324Z"
+        },
+        {
+            "createTime": "2021-06-15T18:49:51.259Z"
+        },
+        {
+            "createTime": "2021-06-15T19:04:57.236Z"
+        },
+        {
+            "createTime": "2021-06-15T19:28:34.249Z"
+        },
+        {
+            "createTime": "2021-06-15T19:49:41.293Z"
+        },
+        {
+            "createTime": "2021-06-15T20:12:52.304Z"
+        },
+        {
+            "createTime": "2021-06-15T20:28:33.505Z"
+        },
+        {
+            "createTime": "2021-06-15T20:46:37.337Z"
+        },
+        {
+            "createTime": "2021-06-15T21:10:49.258Z"
+        },
+        {
+            "createTime": "2021-06-15T21:41:13.275Z"
+        },
+        {
+            "createTime": "2021-06-15T22:12:28.250Z"
+        },
+        {
+            "createTime": "2021-06-15T22:28:33.311Z"
+        },
+        {
+            "createTime": "2021-06-15T22:49:40.299Z"
+        },
+        {
+            "createTime": "2021-06-15T23:10:49.315Z"
+        },
+        {
+            "createTime": "2021-06-15T23:28:32.249Z"
+        },
+        {
+            "createTime": "2021-06-15T23:47:39.338Z"
+        },
+        {
+            "createTime": "2021-06-16T00:12:50.311Z"
+        },
+        {
+            "createTime": "2021-06-16T00:28:39.405Z"
+        },
+        {
+            "createTime": "2021-06-16T00:50:19.316Z"
+        },
+        {
+            "createTime": "2021-06-16T01:05:26.350Z"
+        },
+        {
+            "createTime": "2021-06-16T01:20:33.245Z"
+        },
+        {
+            "createTime": "2021-06-16T01:40:49.279Z"
+        },
+        {
+            "createTime": "2021-06-16T01:56:28.251Z"
+        },
+        {
+            "createTime": "2021-06-16T02:17:11.282Z"
+        },
+        {
+            "createTime": "2021-06-16T02:39:53.650Z"
+        },
+        {
+            "createTime": "2021-06-16T02:56:26.227Z"
+        }
+    ],
+    "lastPolicySyncTime": "2021-06-16T03:01:28.081Z",
+    "lastStatusReportTime": "2021-06-16T02:59:08.510Z",
+    "managementMode": "DEVICE_OWNER",
+    "memoryEvents": [
+        {
+            "byteCount": "1577185280",
+            "createTime": "2021-06-14T21:10:39.257Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-14T21:10:39.259Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10776289280",
+            "createTime": "2021-06-14T21:10:39.269Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1553330176",
+            "createTime": "2021-06-14T21:49:35.219Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-14T21:49:35.222Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833264640",
+            "createTime": "2021-06-14T21:49:35.232Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1546158080",
+            "createTime": "2021-06-14T22:12:20.462Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-14T22:12:20.468Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833915904",
+            "createTime": "2021-06-14T22:12:20.488Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1545109504",
+            "createTime": "2021-06-14T22:28:26.332Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-14T22:28:26.334Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833903616",
+            "createTime": "2021-06-14T22:28:26.375Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1543528448",
+            "createTime": "2021-06-14T22:49:29.290Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-14T22:49:29.312Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833752064",
+            "createTime": "2021-06-14T22:49:29.352Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1546207232",
+            "createTime": "2021-06-14T23:10:41.239Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-14T23:10:41.241Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833629184",
+            "createTime": "2021-06-14T23:10:41.250Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1540104192",
+            "createTime": "2021-06-14T23:40:55.233Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-14T23:40:55.235Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833608704",
+            "createTime": "2021-06-14T23:40:55.246Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1537593344",
+            "createTime": "2021-06-15T00:06:59.270Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T00:06:59.274Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833829888",
+            "createTime": "2021-06-15T00:06:59.286Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1536380928",
+            "createTime": "2021-06-15T00:43:33.227Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T00:43:33.229Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833707008",
+            "createTime": "2021-06-15T00:43:33.238Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1540673536",
+            "createTime": "2021-06-15T01:01:20.240Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T01:01:20.241Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833801216",
+            "createTime": "2021-06-15T01:01:20.250Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T01:01:22.799Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T01:03:22.377Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T01:03:24.360Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1544392704",
+            "createTime": "2021-06-15T01:16:27.253Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T01:16:27.268Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833776640",
+            "createTime": "2021-06-15T01:16:27.308Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1544126464",
+            "createTime": "2021-06-15T01:40:40.235Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T01:40:40.238Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833756160",
+            "createTime": "2021-06-15T01:40:40.245Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1546170368",
+            "createTime": "2021-06-15T02:01:21.203Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T02:01:21.205Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833735680",
+            "createTime": "2021-06-15T02:01:21.216Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1539522560",
+            "createTime": "2021-06-15T02:16:27.226Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T02:16:27.228Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833809408",
+            "createTime": "2021-06-15T02:16:27.238Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1541365760",
+            "createTime": "2021-06-15T02:40:40.273Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T02:40:40.279Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833694720",
+            "createTime": "2021-06-15T02:40:40.298Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1540747264",
+            "createTime": "2021-06-15T03:01:21.282Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T03:01:21.284Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833616896",
+            "createTime": "2021-06-15T03:01:21.317Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1542598656",
+            "createTime": "2021-06-15T03:16:28.229Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T03:16:28.230Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833547264",
+            "createTime": "2021-06-15T03:16:28.239Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1548128256",
+            "createTime": "2021-06-15T03:40:40.296Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T03:40:40.303Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833633280",
+            "createTime": "2021-06-15T03:40:40.323Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1555398656",
+            "createTime": "2021-06-15T04:01:21.233Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T04:01:21.239Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833592320",
+            "createTime": "2021-06-15T04:01:21.246Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1559465984",
+            "createTime": "2021-06-15T04:16:30.244Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T04:16:30.246Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833518592",
+            "createTime": "2021-06-15T04:16:30.256Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1564844032",
+            "createTime": "2021-06-15T04:40:41.239Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T04:40:41.242Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833575936",
+            "createTime": "2021-06-15T04:40:41.261Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1571614720",
+            "createTime": "2021-06-15T05:01:20.319Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T05:01:20.321Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833539072",
+            "createTime": "2021-06-15T05:01:20.336Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T05:01:21.820Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T05:03:47.072Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1567805440",
+            "createTime": "2021-06-15T05:16:27.251Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T05:16:27.253Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833547264",
+            "createTime": "2021-06-15T05:16:27.269Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1568645120",
+            "createTime": "2021-06-15T05:40:41.263Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T05:40:41.267Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833547264",
+            "createTime": "2021-06-15T05:40:41.282Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1570062336",
+            "createTime": "2021-06-15T06:06:58.234Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T06:06:58.235Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833571840",
+            "createTime": "2021-06-15T06:06:58.246Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1564983296",
+            "createTime": "2021-06-15T06:28:27.294Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T06:28:27.296Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833489920",
+            "createTime": "2021-06-15T06:28:27.303Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1569107968",
+            "createTime": "2021-06-15T06:43:34.257Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T06:43:34.259Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833506304",
+            "createTime": "2021-06-15T06:43:34.269Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1565675520",
+            "createTime": "2021-06-15T07:01:22.273Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T07:01:22.275Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833608704",
+            "createTime": "2021-06-15T07:01:22.284Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1567711232",
+            "createTime": "2021-06-15T07:16:32.219Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T07:16:32.221Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833551360",
+            "createTime": "2021-06-15T07:16:32.238Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1573822464",
+            "createTime": "2021-06-15T07:40:40.264Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T07:40:40.268Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833469440",
+            "createTime": "2021-06-15T07:40:40.290Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1566035968",
+            "createTime": "2021-06-15T08:16:31.240Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T08:16:31.242Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833481728",
+            "createTime": "2021-06-15T08:16:31.253Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1549021184",
+            "createTime": "2021-06-15T08:41:20.227Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T08:41:20.229Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10832592896",
+            "createTime": "2021-06-15T08:41:20.247Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1566867456",
+            "createTime": "2021-06-15T09:06:15.306Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T09:06:15.308Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833461248",
+            "createTime": "2021-06-15T09:06:15.322Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T09:06:17.657Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T09:08:28.459Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1568034816",
+            "createTime": "2021-06-15T09:43:11.298Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T09:43:11.300Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833514496",
+            "createTime": "2021-06-15T09:43:11.310Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1568448512",
+            "createTime": "2021-06-15T10:03:12.270Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T10:03:12.275Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833575936",
+            "createTime": "2021-06-15T10:03:12.314Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1571123200",
+            "createTime": "2021-06-15T10:25:51.322Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T10:25:51.325Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833559552",
+            "createTime": "2021-06-15T10:25:51.336Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1570750464",
+            "createTime": "2021-06-15T10:49:31.253Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T10:49:31.254Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833567744",
+            "createTime": "2021-06-15T10:49:31.262Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1562882048",
+            "createTime": "2021-06-15T11:11:23.236Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T11:11:23.238Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833420288",
+            "createTime": "2021-06-15T11:11:23.246Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1565073408",
+            "createTime": "2021-06-15T11:26:29.259Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T11:26:29.261Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833420288",
+            "createTime": "2021-06-15T11:26:29.270Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1557585920",
+            "createTime": "2021-06-15T11:46:20.318Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T11:46:20.320Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833563648",
+            "createTime": "2021-06-15T11:46:20.335Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1564712960",
+            "createTime": "2021-06-15T12:01:27.261Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T12:01:27.263Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833543168",
+            "createTime": "2021-06-15T12:01:27.284Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1563230208",
+            "createTime": "2021-06-15T12:16:34.368Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T12:16:34.369Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10833436672",
+            "createTime": "2021-06-15T12:16:34.382Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1572188160",
+            "createTime": "2021-06-15T12:40:41.311Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T12:40:41.319Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887970816",
+            "createTime": "2021-06-15T12:40:41.353Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T12:55:50.607Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T13:01:36.408Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1568198656",
+            "createTime": "2021-06-15T13:10:54.213Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T13:10:54.214Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887991296",
+            "createTime": "2021-06-15T13:10:54.226Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1563922432",
+            "createTime": "2021-06-15T13:41:06.275Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T13:41:06.280Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10888294400",
+            "createTime": "2021-06-15T13:41:06.298Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1564327936",
+            "createTime": "2021-06-15T13:56:21.273Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T13:56:21.276Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10888228864",
+            "createTime": "2021-06-15T13:56:21.286Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1571311616",
+            "createTime": "2021-06-15T14:11:27.222Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T14:11:27.224Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10888228864",
+            "createTime": "2021-06-15T14:11:27.235Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1572843520",
+            "createTime": "2021-06-15T14:28:26.261Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T14:28:26.266Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10888163328",
+            "createTime": "2021-06-15T14:28:26.280Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1575899136",
+            "createTime": "2021-06-15T14:49:26.239Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T14:49:26.241Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10888155136",
+            "createTime": "2021-06-15T14:49:26.249Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1576964096",
+            "createTime": "2021-06-15T15:10:42.231Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T15:10:42.232Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10888060928",
+            "createTime": "2021-06-15T15:10:42.245Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1580867584",
+            "createTime": "2021-06-15T15:51:31.430Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T15:51:31.431Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887897088",
+            "createTime": "2021-06-15T15:51:31.444Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1495015424",
+            "createTime": "2021-06-15T16:16:42.276Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T16:16:42.278Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887929856",
+            "createTime": "2021-06-15T16:16:42.289Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1500180480",
+            "createTime": "2021-06-15T16:41:07.259Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T16:41:07.265Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887864320",
+            "createTime": "2021-06-15T16:41:07.276Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T16:56:16.903Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T17:04:55.633Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1501229056",
+            "createTime": "2021-06-15T17:16:44.316Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T17:16:44.320Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887995392",
+            "createTime": "2021-06-15T17:16:44.366Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1501626368",
+            "createTime": "2021-06-15T17:55:54.237Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T17:55:54.239Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887983104",
+            "createTime": "2021-06-15T17:55:54.248Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1502892032",
+            "createTime": "2021-06-15T18:28:35.303Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T18:28:35.304Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887950336",
+            "createTime": "2021-06-15T18:28:35.312Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1513558016",
+            "createTime": "2021-06-15T18:49:51.226Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T18:49:51.230Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887864320",
+            "createTime": "2021-06-15T18:49:51.242Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1512972288",
+            "createTime": "2021-06-15T19:04:57.205Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T19:04:57.207Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887843840",
+            "createTime": "2021-06-15T19:04:57.215Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1513676800",
+            "createTime": "2021-06-15T19:28:34.229Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T19:28:34.230Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887786496",
+            "createTime": "2021-06-15T19:28:34.249Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1509105664",
+            "createTime": "2021-06-15T19:49:41.271Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T19:49:41.273Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10888024064",
+            "createTime": "2021-06-15T19:49:41.302Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1520287744",
+            "createTime": "2021-06-15T20:12:52.285Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T20:12:52.289Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887942144",
+            "createTime": "2021-06-15T20:12:52.301Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1512046592",
+            "createTime": "2021-06-15T20:28:33.487Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T20:28:33.489Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887782400",
+            "createTime": "2021-06-15T20:28:33.498Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1514545152",
+            "createTime": "2021-06-15T20:46:37.318Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T20:46:37.322Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887888896",
+            "createTime": "2021-06-15T20:46:37.331Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T20:46:39.474Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-15T20:46:48.885Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1518333952",
+            "createTime": "2021-06-15T21:10:49.232Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T21:10:49.233Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887749632",
+            "createTime": "2021-06-15T21:10:49.242Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1474125824",
+            "createTime": "2021-06-15T21:41:13.253Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T21:41:13.255Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887630848",
+            "createTime": "2021-06-15T21:41:13.270Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1502359552",
+            "createTime": "2021-06-15T22:12:28.233Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T22:12:28.234Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887778304",
+            "createTime": "2021-06-15T22:12:28.242Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1502584832",
+            "createTime": "2021-06-15T22:28:33.287Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T22:28:33.288Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887778304",
+            "createTime": "2021-06-15T22:28:33.315Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1578287104",
+            "createTime": "2021-06-15T22:49:40.258Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T22:49:40.260Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887741440",
+            "createTime": "2021-06-15T22:49:40.275Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1563496448",
+            "createTime": "2021-06-15T23:10:49.281Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T23:10:49.282Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10886701056",
+            "createTime": "2021-06-15T23:10:49.305Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1565335552",
+            "createTime": "2021-06-15T23:28:32.228Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T23:28:32.230Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887626752",
+            "createTime": "2021-06-15T23:28:32.241Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1563308032",
+            "createTime": "2021-06-15T23:47:39.315Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-15T23:47:39.318Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887589888",
+            "createTime": "2021-06-15T23:47:39.329Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1570136064",
+            "createTime": "2021-06-16T00:12:50.297Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T00:12:50.298Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887589888",
+            "createTime": "2021-06-16T00:12:50.307Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1560444928",
+            "createTime": "2021-06-16T00:28:39.373Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T00:28:39.375Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887634944",
+            "createTime": "2021-06-16T00:28:39.395Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1562013696",
+            "createTime": "2021-06-16T00:50:19.296Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T00:50:19.298Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887462912",
+            "createTime": "2021-06-16T00:50:19.309Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T00:50:22.949Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T00:50:33.375Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T00:52:29.551Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1564205056",
+            "createTime": "2021-06-16T01:05:26.319Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T01:05:26.327Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887528448",
+            "createTime": "2021-06-16T01:05:26.373Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1558749184",
+            "createTime": "2021-06-16T01:20:33.229Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T01:20:33.232Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887507968",
+            "createTime": "2021-06-16T01:20:33.241Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1562755072",
+            "createTime": "2021-06-16T01:40:49.261Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T01:40:49.262Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887622656",
+            "createTime": "2021-06-16T01:40:49.286Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1564258304",
+            "createTime": "2021-06-16T01:56:28.233Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T01:56:28.237Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887602176",
+            "createTime": "2021-06-16T01:56:28.250Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1561165824",
+            "createTime": "2021-06-16T02:17:11.252Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T02:17:11.253Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887548928",
+            "createTime": "2021-06-16T02:17:11.270Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "1529012224",
+            "createTime": "2021-06-16T02:39:53.571Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T02:39:53.572Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10887442432",
+            "createTime": "2021-06-16T02:39:53.650Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T02:40:01.112Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T02:43:53.888Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T02:55:16.112Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1501978624",
+            "createTime": "2021-06-16T02:56:26.211Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T02:56:26.213Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10939256832",
+            "createTime": "2021-06-16T02:56:26.251Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T02:58:45.231Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T02:59:03.030Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        }
+    ],
+    "memoryInfo": {
+        "totalInternalStorage": "598638592",
+        "totalRam": "2093760512"
+    },
+    "name": "enterprises/LC02kggfh1/devices/31084e67e901a0ef",
+    "networkInfo": {
+        "wifiMacAddress": "60:4d:ae:4c:92:4b"
+    },
+    "nonComplianceDetails": [
+        {
+            "nonComplianceReason": "MANAGEMENT_MODE",
+            "settingName": "bluetoothContactSharingDisabled"
+        }
+    ],
+    "ownership": "COMPANY_OWNED",
+    "policyCompliant": true,
+    "policyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "powerManagementEvents": [
+        {
+            "batteryLevel": 94,
+            "createTime": "2021-06-14T21:49:35.225Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 94,
+            "createTime": "2021-06-14T22:49:29.285Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 93,
+            "createTime": "2021-06-14T23:40:55.231Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 93,
+            "createTime": "2021-06-15T00:43:33.227Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 92,
+            "createTime": "2021-06-15T01:40:40.244Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 92,
+            "createTime": "2021-06-15T02:40:40.275Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 91,
+            "createTime": "2021-06-15T03:40:40.276Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 90,
+            "createTime": "2021-06-15T04:40:41.236Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 89,
+            "createTime": "2021-06-15T05:40:41.261Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 88,
+            "createTime": "2021-06-15T06:43:34.258Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 88,
+            "createTime": "2021-06-15T07:40:40.278Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 87,
+            "createTime": "2021-06-15T08:40:39.252Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 87,
+            "createTime": "2021-06-15T09:43:11.290Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 86,
+            "createTime": "2021-06-15T10:49:31.254Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 85,
+            "createTime": "2021-06-15T11:46:20.323Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 85,
+            "createTime": "2021-06-15T12:40:41.321Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 84,
+            "createTime": "2021-06-15T13:41:06.271Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 84,
+            "createTime": "2021-06-15T14:49:26.248Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 83,
+            "createTime": "2021-06-15T15:51:31.449Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 82,
+            "createTime": "2021-06-15T16:41:07.257Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 82,
+            "createTime": "2021-06-15T17:40:47.273Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 81,
+            "createTime": "2021-06-15T18:49:51.225Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 81,
+            "createTime": "2021-06-15T19:49:41.271Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 80,
+            "createTime": "2021-06-15T20:46:37.323Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 80,
+            "createTime": "2021-06-15T21:41:13.256Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 79,
+            "createTime": "2021-06-15T22:49:40.261Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 79,
+            "createTime": "2021-06-15T23:47:39.322Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 78,
+            "createTime": "2021-06-16T00:50:19.297Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 78,
+            "createTime": "2021-06-16T01:40:49.259Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "batteryLevel": 77,
+            "createTime": "2021-06-16T02:39:53.506Z",
+            "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-16T02:41:49.732Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-16T02:43:14.264Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-06-16T02:52:45.464Z",
+            "eventType": "BATTERY_LOW"
+        },
+        {
+            "createTime": "2021-06-16T02:57:31.320Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-16T02:58:39.050Z",
+            "eventType": "BOOT_COMPLETED"
+        }
+    ],
+    "previousDeviceNames": [
+        "enterprises/LC02kggfh1/devices/3b2767b18f9c4405",
+        "enterprises/LC02kggfh1/devices/37977ffdbc26f9db",
+        "enterprises/LC02kggfh1/devices/3cebbde468415aad",
+        "enterprises/LC02kggfh1/devices/37b0aa3d5905b0ad",
+        "enterprises/LC02kggfh1/devices/3715f85817a474fd",
+        "enterprises/LC02kggfh1/devices/3f79c67b5fb46dce",
+        "enterprises/LC02kggfh1/devices/35132f656b47c34f",
+        "enterprises/LC02kggfh1/devices/3e1ca1926e8ddfa7",
+        "enterprises/LC02kggfh1/devices/375182d5f613ed58",
+        "enterprises/LC02kggfh1/devices/3059573412daf8a0",
+        "enterprises/LC02kggfh1/devices/3fddf60a69ecea67",
+        "enterprises/LC02kggfh1/devices/3909d9eba8c44b4f",
+        "enterprises/LC02kggfh1/devices/3a55a87ca6c7a3a2",
+        "enterprises/LC02kggfh1/devices/3bf07c80560b49ce"
+    ],
+    "securityPosture": {
+        "devicePosture": "SECURE"
+    },
+    "softwareInfo": {
+        "androidBuildNumber": "MID_1089IPS_V01_20200626",
+        "androidBuildTime": "2020-06-26T03:37:31Z",
+        "androidDevicePolicyVersionCode": 1516070,
+        "androidDevicePolicyVersionName": "15.16.07.v40",
+        "androidVersion": "10",
+        "bootloaderVersion": "unknown",
+        "deviceBuildSignature": "7f5088d73143bfcadb55f55bcf77d98d8caa9b68dee882919e5497a7f5fb79d3",
+        "deviceKernelVersion": "4.9.170",
+        "primaryLanguageCode": "en-AU",
+        "securityPatchLevel": "2020-04-05",
+        "systemUpdateInfo": {
+            "updateStatus": "UP_TO_DATE"
+        }
+    },
+    "state": "ACTIVE",
+    "systemProperties": {
+        "ro.product.first_api_level": "29"
+    },
+    "userName": "enterprises/LC02kggfh1/users/113080580333305723262"
+}

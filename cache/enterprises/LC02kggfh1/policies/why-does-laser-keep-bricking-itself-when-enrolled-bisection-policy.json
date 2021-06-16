@@ -5,29 +5,44 @@
     },
     "applications": [
         {
-            "disabled": true,
             "installType": "BLOCKED",
             "packageName": "com.google.android.apps.youtube.music"
+        },
+        {
+            "installType": "BLOCKED",
+            "packageName": "com.android.camera2"
+        },
+        {
+            "installType": "BLOCKED",
+            "packageName": "com.android.deskclock"
+        },
+        {
+            "installType": "BLOCKED",
+            "packageName": "com.google.android.apps.photos"
+        },
+        {
+            "installType": "REQUIRED_FOR_SETUP",
+            "packageName": "com.android.chrome"
+        },
+        {
+            "installType": "AVAILABLE",
+            "packageName": "com.android.vending"
+        },
+        {
+            "installType": "REQUIRED_FOR_SETUP",
+            "packageName": "com.google.android.inputmethod.latin"
         }
     ],
     "bluetoothConfigDisabled": true,
     "bluetoothContactSharingDisabled": true,
     "bluetoothDisabled": true,
-    "factoryResetDisabled": true,
-    "frpAdminEmails": [
-        "prisonpctester2@gmail.com",
-        "prisonpctester1@gmail.com",
-        "trentbuck@gmail.com"
-    ],
     "modifyAccountsDisabled": true,
     "mountPhysicalMediaDisabled": true,
     "name": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
     "networkEscapeHatchEnabled": true,
-    "networkResetDisabled": true,
     "outgoingBeamDisabled": true,
     "outgoingCallsDisabled": true,
     "removeUserDisabled": true,
-    "safeBootDisabled": true,
     "screenCaptureDisabled": true,
     "setUserIconDisabled": true,
     "setWallpaperDisabled": true,
@@ -48,5 +63,5 @@
     "unmuteMicrophoneDisabled": true,
     "usbFileTransferDisabled": true,
     "usbMassStorageEnabled": true,
-    "version": "13"
+    "version": "26"
 }
