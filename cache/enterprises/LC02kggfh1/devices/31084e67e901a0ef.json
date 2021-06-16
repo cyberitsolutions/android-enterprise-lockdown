@@ -1327,6 +1327,14 @@
                 {
                     "createTime": "2021-06-16T02:44:04.425Z",
                     "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-16T02:59:05.120Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-16T03:01:42.804Z",
+                    "eventType": "CHANGED"
                 }
             ],
             "installerPackageName": "com.android.vending",
@@ -1919,8 +1927,8 @@
             "createTime": "2021-06-16T02:56:26.227Z"
         }
     ],
-    "lastPolicySyncTime": "2021-06-16T03:01:28.081Z",
-    "lastStatusReportTime": "2021-06-16T02:59:08.510Z",
+    "lastPolicySyncTime": "2021-06-16T03:14:53.130Z",
+    "lastStatusReportTime": "2021-06-16T03:01:52.506Z",
     "managementMode": "DEVICE_OWNER",
     "memoryEvents": [
         {
@@ -3161,6 +3169,11 @@
             "byteCount": "12389822464",
             "createTime": "2021-06-16T02:59:03.030Z",
             "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T03:01:38.577Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
         }
     ],
     "memoryInfo": {
@@ -3349,6 +3362,14 @@
         },
         {
             "createTime": "2021-06-16T02:58:39.050Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-06-16T03:00:14.631Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-16T03:01:24.425Z",
             "eventType": "BOOT_COMPLETED"
         }
     ],
