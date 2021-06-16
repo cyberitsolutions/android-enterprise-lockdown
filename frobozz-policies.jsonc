@@ -843,7 +843,7 @@
             "outgoingBeamDisabled": true,  // user can't use NFC (e.g. paywave)
             "outgoingCallsDisabled": true,  // user can't make calls
             "usbFileTransferDisabled": true,  // user can't share files over MTP/PTP???
-            "usbMassStorageEnabled": true,    // user can't share files over SD card???
+            "usbMassStorageEnabled": false,    // user can't share files over SD card???
 
 
             // <twb> "Keyguard" is the brand name for android's lock screen.
