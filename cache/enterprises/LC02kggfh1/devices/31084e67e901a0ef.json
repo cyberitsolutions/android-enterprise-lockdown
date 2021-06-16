@@ -1351,6 +1351,14 @@
                 {
                     "createTime": "2021-06-16T03:31:09.546Z",
                     "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-16T03:37:33.457Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-16T03:40:49.713Z",
+                    "eventType": "CHANGED"
                 }
             ],
             "installerPackageName": "com.android.vending",
@@ -1672,7 +1680,7 @@
         }
     ],
     "appliedPolicyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
-    "appliedPolicyVersion": "28",
+    "appliedPolicyVersion": "29",
     "appliedState": "ACTIVE",
     "deviceSettings": {
         "encryptionStatus": "ACTIVE_PER_USER",
@@ -1944,10 +1952,13 @@
         },
         {
             "createTime": "2021-06-16T03:26:27.248Z"
+        },
+        {
+            "createTime": "2021-06-16T03:41:32.050Z"
         }
     ],
-    "lastPolicySyncTime": "2021-06-16T03:40:35.776Z",
-    "lastStatusReportTime": "2021-06-16T03:32:59.869Z",
+    "lastPolicySyncTime": "2021-06-16T03:48:47.110Z",
+    "lastStatusReportTime": "2021-06-16T03:49:06.568Z",
     "managementMode": "DEVICE_OWNER",
     "memoryEvents": [
         {
@@ -3237,6 +3248,40 @@
             "byteCount": "12389822464",
             "createTime": "2021-06-16T03:32:50.418Z",
             "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T03:37:24.199Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T03:40:37.861Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "1537314816",
+            "createTime": "2021-06-16T03:41:32.019Z",
+            "eventType": "RAM_MEASURED"
+        },
+        {
+            "createTime": "2021-06-16T03:41:32.026Z",
+            "eventType": "INTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "10966630400",
+            "createTime": "2021-06-16T03:41:32.059Z",
+            "eventType": "EXTERNAL_STORAGE_MEASURED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T03:48:36.017Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
+        },
+        {
+            "byteCount": "12389822464",
+            "createTime": "2021-06-16T03:49:00.937Z",
+            "eventType": "EXTERNAL_STORAGE_DETECTED"
         }
     ],
     "memoryInfo": {
@@ -3463,6 +3508,30 @@
             "batteryLevel": 70,
             "createTime": "2021-06-16T03:31:29.313Z",
             "eventType": "BATTERY_LEVEL_COLLECTED"
+        },
+        {
+            "createTime": "2021-06-16T03:36:08.272Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-16T03:37:17.231Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-06-16T03:39:20.007Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-16T03:40:31.489Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-06-16T03:47:23.922Z",
+            "eventType": "SHUTDOWN"
+        },
+        {
+            "createTime": "2021-06-16T03:48:32.398Z",
+            "eventType": "BOOT_COMPLETED"
         }
     ],
     "previousDeviceNames": [
