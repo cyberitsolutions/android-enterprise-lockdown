@@ -60,7 +60,7 @@
             // BLOCK A
             "networkResetDisabled": true,
             "safeBootDisabled": true,
-            "factoryResetDisabled": true,
+            // "factoryResetDisabled": true,
             // "frpAdminEmails": ["prisonpctester2@gmail.com", "prisonpctester1@gmail.com", "trentbuck@gmail.com"],
             "bluetoothDisabled": true,
             "bluetoothConfigDisabled": true,

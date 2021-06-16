@@ -77,7 +77,7 @@
             "displayName": "Device Policy",
             "events": [
                 {
-                    "createTime": "2021-06-16T04:14:25.727Z",
+                    "createTime": "2021-06-16T04:58:12.958Z",
                     "eventType": "CHANGED"
                 }
             ],
@@ -1152,11 +1152,15 @@
             "displayName": "Google Play Store",
             "events": [
                 {
-                    "createTime": "2021-06-16T04:14:11.802Z",
+                    "createTime": "2021-06-16T04:56:20.665Z",
                     "eventType": "CHANGED"
                 },
                 {
-                    "createTime": "2021-06-16T04:14:36.700Z",
+                    "createTime": "2021-06-16T04:57:51.434Z",
+                    "eventType": "CHANGED"
+                },
+                {
+                    "createTime": "2021-06-16T04:58:01.912Z",
                     "eventType": "CHANGED"
                 }
             ],
@@ -1209,6 +1213,12 @@
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Chrome",
+            "events": [
+                {
+                    "createTime": "2021-06-16T04:57:58.754Z",
+                    "eventType": "INSTALLED"
+                }
+            ],
             "packageName": "com.android.chrome",
             "packageSha256Hash": "46dab3f10116aef4a830a38e596d6ef2fd87586566afe4448c273a92e307a52e",
             "signingKeyCertFingerprints": [
@@ -1293,6 +1303,12 @@
         {
             "applicationSource": "SYSTEM_APP_FACTORY_VERSION",
             "displayName": "Google Play services",
+            "events": [
+                {
+                    "createTime": "2021-06-16T04:57:53.063Z",
+                    "eventType": "CHANGED"
+                }
+            ],
             "packageName": "com.google.android.gms",
             "packageSha256Hash": "b28c792288ba4c6d1fe95e08d3aa408d3f5621677c244f7630ab664fe01905d2",
             "signingKeyCertFingerprints": [
@@ -1592,7 +1608,7 @@
         }
     ],
     "appliedPolicyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
-    "appliedPolicyVersion": "29",
+    "appliedPolicyVersion": "30",
     "appliedState": "ACTIVE",
     "deviceSettings": {
         "encryptionStatus": "ACTIVE_PER_USER",
@@ -1609,8 +1625,8 @@
             "width": 800
         }
     ],
-    "enrollmentTime": "2021-06-16T04:13:48.274Z",
-    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/oNeMEUCqnicPuKsFhTt232Onzeqjtm2pP1saM-h1SjQ",
+    "enrollmentTime": "2021-06-16T04:55:54.092Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/0nd0xix5wwnaYfKuBdkQkCMWhuR3Qnc1qzohBdCKsUk",
     "hardwareInfo": {
         "brand": "Laser",
         "hardware": "A50",
@@ -1618,18 +1634,18 @@
         "model": "MID_1089IPS",
         "serialNumber": "3c0014056441073248e"
     },
-    "lastPolicySyncTime": "2021-06-16T04:13:51.254Z",
-    "lastStatusReportTime": "2021-06-16T04:15:03.105Z",
+    "lastPolicySyncTime": "2021-06-16T05:30:23.774Z",
+    "lastStatusReportTime": "2021-06-16T04:58:48.473Z",
     "managementMode": "DEVICE_OWNER",
     "memoryEvents": [
         {
             "byteCount": "12389822464",
-            "createTime": "2021-06-16T04:14:05.036Z",
+            "createTime": "2021-06-16T04:56:07.645Z",
             "eventType": "EXTERNAL_STORAGE_DETECTED"
         },
         {
             "byteCount": "12389822464",
-            "createTime": "2021-06-16T04:14:37.728Z",
+            "createTime": "2021-06-16T04:58:24.025Z",
             "eventType": "EXTERNAL_STORAGE_DETECTED"
         }
     ],
@@ -1637,7 +1653,7 @@
         "totalInternalStorage": "598638592",
         "totalRam": "2093760512"
     },
-    "name": "enterprises/LC02kggfh1/devices/37a020b169a7e25d",
+    "name": "enterprises/LC02kggfh1/devices/3361416120a622e5",
     "networkInfo": {
         "wifiMacAddress": "60:4d:ae:4c:92:4b"
     },
@@ -1652,8 +1668,8 @@
     "policyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
     "powerManagementEvents": [
         {
-            "batteryLevel": 63,
-            "createTime": "2021-06-16T04:14:04.980Z",
+            "batteryLevel": 55,
+            "createTime": "2021-06-16T04:56:07.586Z",
             "eventType": "BATTERY_LEVEL_COLLECTED"
         }
     ],
@@ -1672,7 +1688,8 @@
         "enterprises/LC02kggfh1/devices/3909d9eba8c44b4f",
         "enterprises/LC02kggfh1/devices/3a55a87ca6c7a3a2",
         "enterprises/LC02kggfh1/devices/3bf07c80560b49ce",
-        "enterprises/LC02kggfh1/devices/31084e67e901a0ef"
+        "enterprises/LC02kggfh1/devices/31084e67e901a0ef",
+        "enterprises/LC02kggfh1/devices/37a020b169a7e25d"
     ],
     "securityPosture": {
         "devicePosture": "SECURE"
@@ -1696,5 +1713,5 @@
     "systemProperties": {
         "ro.product.first_api_level": "29"
     },
-    "userName": "enterprises/LC02kggfh1/users/105957674605084166230"
+    "userName": "enterprises/LC02kggfh1/users/113568030844378141921"
 }

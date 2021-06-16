@@ -36,7 +36,6 @@
     "bluetoothConfigDisabled": true,
     "bluetoothContactSharingDisabled": true,
     "bluetoothDisabled": true,
-    "factoryResetDisabled": true,
     "modifyAccountsDisabled": true,
     "mountPhysicalMediaDisabled": true,
     "name": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
@@ -66,5 +65,5 @@
     "unmuteMicrophoneDisabled": true,
     "usbFileTransferDisabled": true,
     "usbMassStorageEnabled": true,
-    "version": "29"
+    "version": "30"
 }
