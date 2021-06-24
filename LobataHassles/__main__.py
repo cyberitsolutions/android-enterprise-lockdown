@@ -401,9 +401,12 @@ for enterprise in merged_pages(
 # FIXME: this does enrollment for whatever the LAST POLICY IN THE LIST loop was.
 # Since "policies" is a dict, the order is random!
 # Move this crap inside the "for ... in policies" loop?
+# https://developers.google.com/android/management/reference/rest/v1/enterprises.enrollmentTokens#EnrollmentToken
 enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
     parent=json_config_object['enterprise_name'],
-    body={"policyName": policy_name}
+    body={"policyName": policy_name,
+          'duration': f'{60 * 60 * 24 * 90}s',  # maximum duration (90 days, in seconds)
+          }
 ).execute()
 
 
