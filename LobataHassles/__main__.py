@@ -137,6 +137,23 @@ else:
 
     print('\nAuthentication succeeded.')
 
+# Get WPA2-PSK passphrases -- if any -- out of pypass.
+for policy in json_config_object.get('policies', {}).values():
+    for networkConfiguration in policy.get('openNetworkConfiguration', {}).get('NetworkConfigurations', []):
+        if 'Passphrase' in networkConfiguration.get('WiFi', {}):
+            networkConfiguration['WiFi']['Passphrase'] = pypass.PasswordStore().get_decrypted_password(
+                f"android-wifi-PSK/{networkConfiguration['WiFi']['SSID']}").strip()
+del policy, networkConfiguration
+
+# Used later to revert this hack during dumping/caching.
+# Symmetry with the above loop.
+def redact_some_passphrases(device_or_policy_or_webapp: dict) -> None:  # DESTRUCTIVE
+    policy = device_or_policy_or_webapp
+    for networkConfiguration in policy.get('openNetworkConfiguration', {}).get('NetworkConfigurations', []):
+        if 'Passphrase' in networkConfiguration.get('WiFi', {}):
+            networkConfiguration['WiFi']['Passphrase'] = None
+
+
 ######################################################################
 ## Create an enterprise
 ######################################################################
@@ -344,6 +361,7 @@ for enterprise in merged_pages(
                 response_key=response_key,
                 # google's arguments
                 parent=enterprise['name']):
+            redact_some_passphrases(obj)  # DESTRUCTIVE
             my_json_dump(obj)
 
     # NOTE: because this is essentially EVERY app in Play Store,

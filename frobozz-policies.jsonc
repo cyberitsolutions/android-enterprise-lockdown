@@ -41,6 +41,28 @@
         "why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy": {
             "factoryResetDisabled": true
         },
+
+        "browser-kiosk": {
+            "applications": [
+                {"installType": "KIOSK", "packageName": "com.android.chrome",
+                 "managedConfiguration": {
+                     "HomepageLocation": "https://prisonpc.com/"}},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.videolan.vlc"}],
+
+
+            "wifiConfigDisabled": true,
+            "openNetworkConfiguration": {
+                "NetworkConfigurations": [{
+                    "GUID": "PrisonPC",
+                    "Name": "PrisonPC",
+                    "Type": "WiFi",
+                    "WiFi": {
+                        "SSID": "PrisonPC",
+                        "Security": "WPA-PSK",
+                        "Passphrase": null}}]},  // script fetches PSK from pypass.
+
+            "networkEscapeHatchEnabled": true},
+
         "policy1": {
             // WARNING WARNING WARNING:
             //   Android's docs say the work application list is a whitelist by default -- if an app isn't on the list, you can't run it.
