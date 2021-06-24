@@ -292,7 +292,7 @@ device_names_to_delete = (
     set(
         name
         for d in devices
-        for name in d['previousDeviceNames'])
+        for name in d.get('previousDeviceNames', {}))
     &                  # set intersection -- name must be in both sets
     # All known devices
     set(d['name'] for d in devices))
