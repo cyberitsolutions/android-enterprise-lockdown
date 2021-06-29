@@ -59,18 +59,55 @@
 
             "wifiConfigDisabled": true,
             "openNetworkConfiguration": {
-                "NetworkConfigurations": [{
-                    "GUID": "PrisonPC",
-                    "Name": "PrisonPC",
-                    "Type": "WiFi",
-                    "WiFi": {
-                        "SSID": "PrisonPC",
-                        "Security": "WPA-PSK",
-                        "Passphrase": null}}]},  // script fetches PSK from pypass.
+                "NetworkConfigurations": [
+                    {
+                        "GUID": "00d75ad3-743f-45bd-8e6d-cd631f7f81db",
+                        "Name": "PrisonPC (Enrollment Only)",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC Enrollment",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}},
+                    {
+                        "GUID": "937947f2-a18d-4a85-829e-4d769d1f0564",
+                        "Name": "PrisonPC",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}}]},  // script fetches PSK from pypass.
 
             "networkEscapeHatchEnabled": true},
 
         "policy1": {
+            // FIXME TEST THIS PROPERLY
+            // https://developers.google.com/android/management/policies/dedicated-devices
+            //"kioskCustomLauncherEnabled": true,  // user cannot open Play Store or Settings
+            "keyguardDisabled": true,  // user cannot lock screen
+
+            "openNetworkConfiguration": {
+                "NetworkConfigurations": [
+                    // {
+                    //     "GUID": "00d75ad3-743f-45bd-8e6d-cd631f7f81db",
+                    //     "Name": "PrisonPC (Enrollment Only)",
+                    //     "Type": "WiFi",
+                    //     "WiFi": {
+                    //         "AutoConnect": true,
+                    //         "SSID": "PrisonPC Enrollment",
+                    //         "Security": "WPA-PSK",
+                    //         "Passphrase": null}},
+                    {
+                        "GUID": "937947f2-a18d-4a85-829e-4d769d1f0564",
+                        "Name": "PrisonPC",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}}]},
+
             // WARNING WARNING WARNING:
             //   Android's docs say the work application list is a whitelist by default -- if an app isn't on the list, you can't run it.
             //   BUT, it's a blacklist for apps that ship with the OS, e.g. YT Music.
@@ -319,6 +356,7 @@
                 // ============================================================
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x50bb90cffc907768"},  // "Mail" (https://webmail/)
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xf5f403c242677721"},  // "Lorem Ipsum" (test app)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x793f12cf8a1f5dd2"},  // "RTSP Test App"
 
                 // ============================================================
                 // Sound Recorder / Editor
