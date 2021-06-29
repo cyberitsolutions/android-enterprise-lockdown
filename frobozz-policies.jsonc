@@ -4,6 +4,11 @@
     "enterprise_name": "enterprises/LC02kggfh1",
     "webApps": [
         {
+            "title": "RTSP Test Page",
+            "startUrl": "https://www.wowza.com/html/mobile.html",
+            "displayMode": "STANDALONE"
+        },
+        {
             // "icons": ["imageData": "XXX"]  // base64'd 512x512 PNG
             "title": "Mail",
             "startUrl": "https://webmail/",
@@ -44,9 +49,11 @@
 
         "browser-kiosk": {
             "applications": [
-                {"installType": "KIOSK", "packageName": "com.android.chrome",
-                 "managedConfiguration": {
-                     "HomepageLocation": "https://prisonpc.com/"}},
+                // NOTE: when using KIOSK, managedconfiguration.homepagelocation is ignored.
+                //       Instead of setting chrome to be the KIOSK, you set a specific webApps app to be the KIOSK.
+                //       This webapp essentially just a bookmark (homepage) in com.android.chrome anyway.
+                {"installType": "KIOSK", "packageName": "com.google.enterprise.webapp.x793f12cf8a1f5dd2"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.android.chrome"},
                 {"installType": "FORCE_INSTALLED", "packageName": "org.videolan.vlc"}],
 
 
