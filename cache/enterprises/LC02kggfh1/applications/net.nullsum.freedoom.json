@@ -1,0 +1,36 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/net.nullsum.freedoom",
+    "permissions": [
+        {
+            "description": "Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices.",
+            "name": "view Wi-Fi connections",
+            "permissionId": "android.permission.ACCESS_WIFI_STATE"
+        },
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to control the vibrator.",
+            "name": "control vibration",
+            "permissionId": "android.permission.VIBRATE"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Google Play license check",
+            "name": "Google Play license check",
+            "permissionId": "com.android.vending.CHECK_LICENSE"
+        }
+    ],
+    "title": "Freedoom"
+}

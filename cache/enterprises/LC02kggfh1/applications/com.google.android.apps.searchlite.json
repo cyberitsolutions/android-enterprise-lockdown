@@ -1,0 +1,143 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.google.android.apps.searchlite",
+    "permissions": [
+        {
+            "description": "Allows the app to get your precise location using the Global Positioning System (GPS) or network location sources such as cell towers and Wi-Fi. These location services must be turned on and available to your device for the app to use them. Apps may use this to determine where you are, and may consume additional battery power.",
+            "name": "precise location (GPS and network-based)",
+            "permissionId": "android.permission.ACCESS_FINE_LOCATION"
+        },
+        {
+            "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
+            "name": "view network connections",
+            "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to view information about Wi-Fi networking, such as whether Wi-Fi is enabled and name of connected Wi-Fi devices.",
+            "name": "view Wi-Fi connections",
+            "permissionId": "android.permission.ACCESS_WIFI_STATE"
+        },
+        {
+            "description": "Allows the app to view the configuration of Bluetooth on the device, and to make and accept connections with paired devices.",
+            "name": "pair with Bluetooth devices",
+            "permissionId": "android.permission.BLUETOOTH"
+        },
+        {
+            "description": "Allows the app to configure the local Bluetooth device, and to discover and pair with remote devices.",
+            "name": "access Bluetooth settings",
+            "permissionId": "android.permission.BLUETOOTH_ADMIN"
+        },
+        {
+            "description": "Allows the app to call phone numbers without your intervention. This may result in unexpected charges or calls. Note that this doesn't allow the app to call emergency numbers. Malicious apps may cost you money by making calls without your confirmation.",
+            "name": "directly call phone numbers",
+            "permissionId": "android.permission.CALL_PHONE"
+        },
+        {
+            "description": "Allows the app to take pictures and videos with the camera. This permission allows the app to use the camera at any time without your confirmation.",
+            "name": "take pictures and videos",
+            "permissionId": "android.permission.CAMERA"
+        },
+        {
+            "description": "Allows the app to connect to and disconnect from Wi-Fi access points and to make changes to device configuration for Wi-Fi networks.",
+            "name": "connect and disconnect from Wi-Fi",
+            "permissionId": "android.permission.CHANGE_WIFI_STATE"
+        },
+        {
+            "description": "Allows the app to download files through the download manager without any notification being shown to the user.",
+            "name": "download files without notification",
+            "permissionId": "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"
+        },
+        {
+            "permissionId": "android.permission.FOREGROUND_SERVICE"
+        },
+        {
+            "description": "Allows the app to get the list of accounts known by the device. This may include any accounts created by applications you have installed.",
+            "name": "find accounts on the device",
+            "permissionId": "android.permission.GET_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to retrieve its code, data, and cache sizes",
+            "name": "measure app storage space",
+            "permissionId": "android.permission.GET_PACKAGE_SIZE"
+        },
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        },
+        {
+            "description": "Allows the app to perform operations like adding and removing accounts, and deleting their password.",
+            "name": "add or remove accounts",
+            "permissionId": "android.permission.MANAGE_ACCOUNTS"
+        },
+        {
+            "permissionId": "android.permission.QUERY_ALL_PACKAGES"
+        },
+        {
+            "description": "Allows the app to read all calendar events stored on your device, including those of friends or co-workers. This may allow the app to share or save your calendar data, regardless of confidentiality or sensitivity.",
+            "name": "read calendar events plus confidential information",
+            "permissionId": "android.permission.READ_CALENDAR"
+        },
+        {
+            "description": "Allows the app to read data about your contacts stored on your device, including the frequency with which you've called, emailed, or communicated in other ways with specific individuals. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.",
+            "name": "read your contacts",
+            "permissionId": "android.permission.READ_CONTACTS"
+        },
+        {
+            "description": "Allows the app to read the contents of your USB storage.",
+            "name": "read the contents of your USB storage",
+            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
+            "name": "run at startup",
+            "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"
+        },
+        {
+            "description": "Allows the app to record audio with the microphone. This permission allows the app to record audio at any time without your confirmation.",
+            "name": "record audio",
+            "permissionId": "android.permission.RECORD_AUDIO"
+        },
+        {
+            "description": "Allows the app to move tasks to the foreground and background. The app may do this without your input.",
+            "name": "reorder running apps",
+            "permissionId": "android.permission.REORDER_TASKS"
+        },
+        {
+            "permissionId": "android.permission.REQUEST_INSTALL_PACKAGES"
+        },
+        {
+            "description": "Allows the app to control the vibrator.",
+            "name": "control vibration",
+            "permissionId": "android.permission.VIBRATE"
+        },
+        {
+            "description": "Allows the app to prevent the device from going to sleep.",
+            "name": "prevent device from sleeping",
+            "permissionId": "android.permission.WAKE_LOCK"
+        },
+        {
+            "description": "Allows the app to write to the USB storage.",
+            "name": "modify or delete the contents of your USB storage",
+            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
+        },
+        {
+            "description": "Allows the app to set an alarm in an installed alarm clock app. Some alarm clock apps may not implement this feature.",
+            "name": "set an alarm",
+            "permissionId": "com.android.alarm.permission.SET_ALARM"
+        },
+        {
+            "description": "Allows apps to accept cloud to device messages sent by the app's service. Using this service will incur data usage. Malicious apps could cause excess data usage.",
+            "name": "receive data from Internet",
+            "permissionId": "com.google.android.c2dm.permission.RECEIVE"
+        },
+        {
+            "permissionId": "com.google.android.finsky.permission.DSE"
+        },
+        {
+            "description": "Allows this app to read Google service configuration data.",
+            "name": "read Google service configuration",
+            "permissionId": "com.google.android.providers.gsf.permission.READ_GSERVICES"
+        }
+    ],
+    "title": "Google Go: A lighter, faster way to search"
+}

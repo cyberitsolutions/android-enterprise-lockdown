@@ -1,0 +1,11 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/de.moekadu.tuner",
+    "permissions": [
+        {
+            "description": "Allows the app to record audio with the microphone. This permission allows the app to record audio at any time without your confirmation.",
+            "name": "record audio",
+            "permissionId": "android.permission.RECORD_AUDIO"
+        }
+    ],
+    "title": "Tuner"
+}

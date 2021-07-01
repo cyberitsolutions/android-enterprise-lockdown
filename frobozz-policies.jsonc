@@ -2,94 +2,1035 @@
 {
     "service_account": "android-management-api-client@frobozz.iam.gserviceaccount.com",
     "enterprise_name": "enterprises/LC02kggfh1",
+    "webApps": [
+        {
+            "title": "RTSP Test Page",
+            "startUrl": "https://www.wowza.com/html/mobile.html",
+            "displayMode": "STANDALONE"
+        },
+        {
+            // "icons": ["imageData": "XXX"]  // base64'd 512x512 PNG
+            "title": "Mail",
+            "startUrl": "https://webmail/",
+            "displayMode": "STANDALONE"
+        },
+        {
+            // "icons": ["imageData": "XXX"]  // base64'd 512x512 PNG
+            "title": "TV Guide",
+            "startUrl": "https://prisonpc/TV/",
+            "displayMode": "MINIMAL_UI"
+        }
+    ],
     "policies": {
-        "empty-policy": { },
+        // "empty-policy": { },
 
-        "wifi-locked-policy": {
+        // "wifi-locked-policy": {
+        //     "wifiConfigDisabled": true,
+        //     "openNetworkConfiguration": {
+        //         "NetworkConfigurations": [
+        //             {
+        //                 "GUID": "cd9da76c-3e4d-4245-bd71-b6fea23ad576",
+        //                 "Name": "PrisonPC Tablet Network",
+        //                 "Type": "WiFi",
+        //                 "WiFi": {
+        //                     "SSID": "PrisonPC",
+        //                     "Security": "WPA-PSK",
+        //                     "Passphrase": "FIXME USE A PASSWORD VAULT HERE"
+        //                 }
+        //             }
+        //         ]
+        //     }
+        // },
+
+
+        "why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy": {
+            "factoryResetDisabled": true
+        },
+
+        "browser-kiosk": {
+            "applications": [
+                // NOTE: when using KIOSK, managedconfiguration.homepagelocation is ignored.
+                //       Instead of setting chrome to be the KIOSK, you set a specific webApps app to be the KIOSK.
+                //       This webapp essentially just a bookmark (homepage) in com.android.chrome anyway.
+                {"installType": "KIOSK", "packageName": "com.google.enterprise.webapp.x793f12cf8a1f5dd2"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.android.chrome"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.videolan.vlc"}],
+
+
             "wifiConfigDisabled": true,
             "openNetworkConfiguration": {
                 "NetworkConfigurations": [
                     {
-                        "GUID": "cd9da76c-3e4d-4245-bd71-b6fea23ad576",
-                        "Name": "PrisonPC Tablet Network",
+                        "GUID": "00d75ad3-743f-45bd-8e6d-cd631f7f81db",
+                        "Name": "PrisonPC (Enrollment Only)",
                         "Type": "WiFi",
                         "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC Enrollment",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}},
+                    {
+                        "GUID": "937947f2-a18d-4a85-829e-4d769d1f0564",
+                        "Name": "PrisonPC",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
                             "SSID": "PrisonPC",
                             "Security": "WPA-PSK",
-                            "Passphrase": "FIXME USE A PASSWORD VAULT HERE"
-                        }
-                    }
-                ]
-            }
-        },
+                            "Passphrase": null}}]},  // script fetches PSK from pypass.
 
+            "networkEscapeHatchEnabled": true},
 
         "policy1": {
+            // FIXME TEST THIS PROPERLY
+            // https://developers.google.com/android/management/policies/dedicated-devices
+            //"kioskCustomLauncherEnabled": true,  // user cannot open Play Store or Settings
+            "keyguardDisabled": true,  // user cannot lock screen
+
+            "openNetworkConfiguration": {
+                "NetworkConfigurations": [
+                    // {
+                    //     "GUID": "00d75ad3-743f-45bd-8e6d-cd631f7f81db",
+                    //     "Name": "PrisonPC (Enrollment Only)",
+                    //     "Type": "WiFi",
+                    //     "WiFi": {
+                    //         "AutoConnect": true,
+                    //         "SSID": "PrisonPC Enrollment",
+                    //         "Security": "WPA-PSK",
+                    //         "Passphrase": null}},
+                    {
+                        "GUID": "937947f2-a18d-4a85-829e-4d769d1f0564",
+                        "Name": "PrisonPC",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}}]},
+
+            // WARNING WARNING WARNING:
+            //   Android's docs say the work application list is a whitelist by default -- if an app isn't on the list, you can't run it.
+            //   BUT, it's a blacklist for apps that ship with the OS, e.g. YT Music.
+            //   If you don't explicitly ban them, they're allowed.
+            //   Each vendor pre-installs different apps (e.g. Lenovo ships com.motorola.demo and org.codeaurora.snapcam).
+            //   So you have to check and blacklist apps for EVERY FUCKING DEVICE SEPARATELY.
             "applications": [
-                {
-                    "packageName": "com.google.samples.apps.iosched",
-                    "installType": "BLOCKED"
+                // NOTE: these ApplicationPolicy properties are not interesting:
+                //
+                //     "accessibleTrackIds": ["foo", "bar"], // List of the app's track IDs that a device belonging to the enterprise can access. If the list contains multiple track IDs, devices receive the latest version among all accessible tracks. If the list contains no track IDs, devices only have access to the app's production track. More details about each track are available in AppTrackInfo.
+
+
+                // ============================================================
+                // Web Browser
+                // ============================================================
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",  // Chrome -- REQUESTS gmail account
+                 "managedConfiguration": {
+                     "HomepageLocation": "https://prisonpc.com/",  // FIXME: change to https://prisonpc.lan/ in final version
+                     "AlternateErrorPagesEnabled": true,  // NOTE: I couldn't get this to behave differently on a generic 404 message.
+                     "SearchSuggestEnabled": false,  // FIXME
+                     // "NetworkPredictionOptions": ???,  // FIXME
+                     "IncognitoModeAvailability": false,  // FIXME
+                     // "SavingBrowserHistoryDisabled": ???,  // FIXME
+                     "PrintingEnabled": true,
+                     // "AppCacheForceEnabled": ???,  // DEAD: https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache
+                     "ForceGoogleSafeSearch": false,  // FIXME
+                     // "ForceYouTubeRestrict": ???,  // FIXME
+                     // "SafeBrowsingProtectionLevel": ???,  // FIXME
+                     // "PasswordManagerEnabled": ???,  // FIXME
+                     // "PasswordLeakDetectionEnabled": ???,  // FIXME
+                     "AutofillAddressEnabled": false,  // neither remember nor prompt for previously-used sites when typing into the address bar
+                     "AutofillCreditCardEnabled": false,  // neither remember not prompt for previously-used credit card numbers
+                     // "SyncTypesListDisabled": ???,  // FIXME
+                     // "ProxySettings": ???,  // FIXME
+                     "AuthSchemes": "basic",  // disallow digest (insecure MD5), ntlm (insecure MD4), and negotiate (SPNEGO)
+                     // "DisableAuthNegotiateCnameLookup": ???,  // FIXME
+                     // "AuthServerAllowlist": ???,  // somehow related to https://en.wikipedia.org/wiki/Integrated_Windows_Authentication
+                     // "AuthNegotiateDelegateAllowlist": ???,  // SPNEGO (Active Directory Kerberos client) TGT server whitelist
+                     // "AuthAndroidNegotiateAccountType": ???,  // SPNEGO (Active Directory Kerberos client) enabled?
+                     "NtlmV2Enabled": false,  // FIXME
+                     "BlockThirdPartyCookies": true,  // If you browse to https://example.com, and that google analytics or facebook button, google/FB can't use cookies for tracking (but they can still use other things).
+                     // "DefaultSearchProviderEnabled": ???,  // FIXME
+                     // "DefaultSearchProviderName": ???,  // FIXME
+                     // "DefaultSearchProviderKeyword": ???,  // FIXME
+                     // "DefaultSearchProviderSearchURL": ???,  // FIXME
+                     // "DefaultSearchProviderSuggestURL": ???,  // FIXME
+                     // "DefaultSearchProviderIconURL": ???,  // FIXME
+                     // "DefaultSearchProviderEncodings": ???,  // FIXME
+                     // "DefaultSearchProviderAlternateURLs": ???,  // FIXME
+                     // "DefaultSearchProviderImageURL": ???,  // FIXME
+                     // "DefaultSearchProviderNewTabURL": ???,  // FIXME
+                     // "DefaultSearchProviderSearchURLPostParams": ???,  // FIXME
+                     // "DefaultSearchProviderSuggestURLPostParams": ???,  // FIXME
+                     // "DefaultSearchProviderImageURLPostParams": ???,  // FIXME
+                     // "DefaultCookiesSetting": ???,  // FIXME
+                     // "DefaultJavaScriptSetting": ???,  // FIXME
+                     // "DefaultPopupsSetting": ???,  // FIXME
+                     // "DefaultGeolocationSetting": ???,  // FIXME
+                     // "DefaultWebBluetoothGuardSetting": ???,  // FIXME
+                     // "DefaultSensorsSetting": ???,  // FIXME
+                     // "DefaultWebUsbGuardSetting": ???,  // FIXME
+                     // "WebUsbAllowDevicesForUrls": ???,  // FIXME
+                     // "WebUsbAskForUrls": ???,  // FIXME
+                     // "WebUsbBlockedForUrls": ???,  // FIXME
+                     // "CookiesAllowedForUrls": ???,  // FIXME
+                     // "CookiesBlockedForUrls": ???,  // FIXME
+                     // "CookiesSessionOnlyForUrls": ???,  // FIXME
+                     // "JavaScriptAllowedForUrls": ???,  // FIXME
+                     // "JavaScriptBlockedForUrls": ???,  // FIXME
+                     // "LegacySameSiteCookieBehaviorEnabled": ???,  // FIXME
+                     // "LegacySameSiteCookieBehaviorEnabledForDomainList": ???,  // FIXME
+                     // "PopupsAllowedForUrls": ???,  // FIXME
+                     // "PopupsBlockedForUrls": ???,  // FIXME
+                     // "SensorsAllowedForUrls": ???,  // FIXME
+                     // "SensorsBlockedForUrls": ???,  // FIXME
+                     // "TargetBlankImpliesNoOpener": ???,  // FIXME
+                     "TranslateEnabled": false,  // FIXME
+                     "EditBookmarksEnabled": false,  // FIXME
+                     // "URLBlocklist": ???,  // FIXME
+                     // "URLAllowlist": ???,  // FIXME
+                     // "EnableExperimentalPolicies": ???,  // FIXME
+                     "DisableSafeBrowsingProceedAnyway": true,  // FIXME
+                     // "BuiltInDnsClientEnabled": ???,  // I believe this only affects Chrome on Linux/Windows/MacOS, NOT Android
+                     // "DnsOverHttpsMode": ???,  // FIXME
+                     // "DnsOverHttpsTemplates": ???,  // FIXME
+                     // "SharedClipboardEnabled": ???,  // FIXME
+                     // "ManagedBookmarks": ???,  // FIXME
+                     "DataCompressionProxyEnabled": false,  // FIXME
+                     // "BrowserSignin": ???,  // FIXME FIXME FIXME -- THIS ONE IS DEEP MAGIC READ MORE -- FIXME FIXME FIXME
+                     // "SSLVersionMin": ???,  // FIXME
+                     // "CertificateTransparencyEnforcementDisabledForUrls": ???,  // FIXME
+                     // "CertificateTransparencyEnforcementDisabledForCas": ???,  // FIXME
+                     // "CertificateTransparencyEnforcementDisabledForLegacyCas": ???,  // FIXME
+                     "ContextualSearchEnabled": false,  // FIXME
+                     "SSLErrorOverrideAllowed": false,  // FIXME
+                     // "SSLErrorOverrideAllowedForOrigins": ???,  // FIXME
+                     // // "AllowedDomainsForApps": ???,  // I THINK if you set this to e.g. "ai", then you can only sign into gmail as alice@ai and not alice@gmail.com.  I'm 50% sure this HAS NO EFFECT on non-Google websites.
+                     "EnableMediaRouter": false,  // FIXME
+                     // "NTPContentSuggestionsEnabled": ???,  // FIXME
+                     // "WebRtcUdpPortRange": ???,  // FIXME
+                     // "IsolateOriginsAndroid": ???,  // FIXME
+                     // "SitePerProcessAndroid": ???,  // FIXME
+                     // "RestrictAccountsToPatterns": ???,  // FIXME
+                     "SafeBrowsingExtendedReportingEnabled": true,  // FIXME
+                     // "OverrideSecurityRestrictionsOnInsecureOrigin": ???,  // FIXME
+                     // "UrlKeyedAnonymizedDataCollectionEnabled": ???,  // FIXME
+                     // "EnterpriseHardwarePlatformAPIEnabled": ???,  // FIXME
+                     // "HSTSPolicyBypassList": ???,  // FIXME
+                     // // "AllowSyncXHRInPageDismissal": false,  // BORING; will be removed in Chrome 93; https://www.chromestatus.com/feature/4664843055398912
+                     "PaymentMethodQueryEnabled": false,  // FIXME
+                     // "ScrollToTextFragmentEnabled": ???,  // FIXME
+                     // "IntensiveWakeUpThrottlingEnabled": ???,  // FIXME
+                     "BackForwardCacheEnabled": false,  // if you click the back button, then the forward button, cache (don't re-download) the page?  Breaks a very small number of webpages.  Disable ONLY BECAUSE we mostly don't about increasing load on the handful of whitelisted websites.
+                     // "UserAgentClientHintsEnabled": ???,  // FIXME
+                     // "InsecureFormsWarningsEnabled": ???,  // FIXME
+                     // "LookalikeWarningAllowlistDomains": ???,  // FIXME
+                     // "TosDialogBehavior": ???,  // FIXME
+                     // "WebXRImmersiveArEnabled": ???}  // FIXME
+
+                     "HomepageLocation": "https://prisonpc.com/"
+                }
+                 },
+                {"installType": "BLOCKED", "packageName": "org.mozilla.rocket"},  // Firefox Lite (browser)
+                {"installType": "BLOCKED", "packageName": "org.mozilla.firefox"},  // Firefox (browser)
+                {"installType": "BLOCKED", "packageName": "org.mozilla.focus"},  // Firefox Focus (browser)
+                {"installType": "BLOCKED", "packageName": "com.microsoft.emmx"},  // Edge (browser)  (NOTE: supports managedConfiguration)
+
+
+                // ============================================================
+                // DEVELOPMENT DEBUGGING
+                // ============================================================
+                {"installType": "AVAILABLE", "packageName": "de.szalkowski.activitylauncher"},  // TOO minimalist -- BUT USEFUL FOR DEBUGGING to see exactly what launchables are in e.g. "Android Q Easter Egg" or "VpnDialogs" app
+                {"installType": "AVAILABLE", "packageName": "com.ubqsoft.sec01"},  // https://www.xda-developers.com/disable-system-app-bloatware-android/
+
+
+                // ============================================================
+                // Launcher (Home App)
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.android.launcher3"},  // not in play store; cannot be removed; default on Laser MID1089IPS; default on Android 4.4
+                {"installType": "BLOCKED", "packageName": "com.tblenovo.launcher"},  // not in play store; cannot be removed; default on on Lenovo M1 gen1
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nexuslauncher"},  // cannot be installed; default on Google Pixel
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "amirz.rootless.nexuslauncher"},  // backport of com.google.android.apps.nexuslauncher
+                {"installType": "BLOCKED", "packageName": "ch.deletescape.lawnchair.plah"},  // mostly OK, similar to amirz.rootless.nexuslauncher but slightly more weird
+                {"installType": "BLOCKED", "packageName": "ademar.textlauncher"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "app.olauncher"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "com.anpmech.launcher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.dynamicg.homebuttonlauncher"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "com.easwareapps.g2l"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.finnmglas.launcher"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "com.gacode.relaunchx"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.github.postapczuk.lalauncher"},  // "Joker Launcher" -- TOO minimalist
+                {"installType": "BLOCKED", "packageName": "com.github.rsteube.t4"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.harasoft.relaunch"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.jkuester.unlauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.kaneoriley.cyanogenport.launcher3"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.launcher.silverfish"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.mirasmithy.epochlauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.notriddle.null_launcer"},  // "built for an older Android"
+                {"installType": "BLOCKED", "packageName": "com.quaap.launchtime"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.sduduzog.slimlauncher"},  // TOO minimalist -- PERSONALLY I like this, but wrong for our target market
+                {"installType": "BLOCKED", "packageName": "com.sentienhq.launcher"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "com.szchoiceway.aios.bridge"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "com.twsitedapps.homemanager"}, // DEAD, complains about wrong Android version
+                {"installType": "BLOCKED", "packageName": "com.vackosar.searchbasedlauncher"},  // "built for an older Android"
+                {"installType": "BLOCKED", "packageName": "com.vincent_falzon.discreetlauncher"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "community.fairphone.fplauncher3"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "community.fairphone.launcher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "de.clemensbartz.android.launcher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "de.devmil.paperlaunch"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "de.markusfisch.android.pielauncher"},  // TOO minimalist (but interesting)
+                {"installType": "BLOCKED", "packageName": "de.nodomain.tobihille.seniorlauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "foundation.e.blisslauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "fr.neamar.kiss"},  // TOO minimalist
+                {"installType": "BLOCKED", "packageName": "io.github.subhamtyagi.lastlauncher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "kr.hybdms.sidepanel"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "luke.launcher"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "mono.hg"},  // tolerable; a bit weird
+                {"installType": "BLOCKED", "packageName": "net.nhiroki.bluelineconsole"},  // wrong target audience -- this is a bit like SilverLight for Mac
+                {"installType": "BLOCKED", "packageName": "ohi.andre.consolelauncher"},  // cool but WAYYYY wrong for this userbase
+                {"installType": "BLOCKED", "packageName": "org.xphnx.ameixa"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "org.zimmob.zimlx"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "posidon.launcher"},  // TOO complicated
+                {"installType": "BLOCKED", "packageName": "rocks.tbog.tblauncher"},  // not reviewed
+                {"installType": "BLOCKED", "packageName": "com.microsoft.launcher",  // Microsoft Launcher (home) --- heavyweight -- interesting iff you run a lot of MS apps (Skype, SharePoint, &c)
+                 "managedConfiguration": {
+                     // "management_mode_key": "???",
+                     "com.microsoft.launcher.Wallpaper.Url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri.jpg",
+                     "com.microsoft.launcher.Wallpaper.Url.UserChangeAllowed": false,
+                     "com.microsoft.launcher.Feed.Enable": false,
+                     "com.microsoft.launcher.Feed.Enable.UserChangeAllowed": false,
+                     // "com.microsoft.launcher.HomeScreen.GridSize": "4x6",  // is this correct format?
+                     // "com.microsoft.launcher.HomeScreen.Applications": [{"package": "com.android.chrome", }], // ???
+                     // "com.microsoft.launcher.HomeScreen.AppOrder": [???],
+                     "com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed": false,
+                     // "com.microsoft.launcher.Folder.Style": {???},
+                     "com.microsoft.launcher.Folder.Style.UserChangeAllowed": false,
+                     // These are identical to webApps except THESE don't have to be created as separate objects in play.google.com/work
+                     // "com.microsoft.launcher.HomeScreen.WebLinks": XXX,
+                     "com.microsoft.launcher.Dock.Mode": "Show",
+                     "com.microsoft.launcher.Dock.Mode.UserChangeAllowed": false,
+                     "com.microsoft.launcher.Search.SearchBar.Placement": "Hidden",  // don't show com.google.android.googlequicksearchbox widget
+                     "com.microsoft.launcher.Search.SearchBar.Placement.UserChangeAllowed": false}
+                 },
+                {"installType": "BLOCKED", "packageName": "com.real.launcher.wp.ten"},  // **NOT** Microsoft Launcher (home) --- NOT FREE SOFTWARE, has ads, probably bitcoin miner -- ALSO this does NOT behave like Windows Phone, but more like Windows desktop!!! YUUUUK
+
+
+                // ============================================================
+                // Calculator
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.android.calculator2"},  // not in play store; default in Laser MID1089IPS?; default in AOSP?
+                {"installType": "AVAILABLE", "packageName": "com.google.android.calculator"},  // in play store; default in Lenovo M1 gen1? --- PASSES REVIEW
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.calculator"},  // doesn't support rotation; does support dashbaord widget
+
+
+                // ============================================================
+                // Search (NOTE: com.google.chrome might be sufficient)
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.google.android.googlequicksearchbox"},  // Google
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.searchlite"},  // Google Go
+                {"installType": "BLOCKED", "packageName": "com.duckduckgo.mobile.android"},  // Duck Duck Go (FIXME: this is a browser as well???)
+
+
+                // ============================================================
+                // Calender / Appointments
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.google.android.calendar"},  // You can LOOK at an EMPTY calendar, but you need a gmail account (or similar) to actually CREATE an appointment!
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.calendar"},
+
+                // ============================================================
+                // Clock / Alarm Clock
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.android.deskclock"},  // Clock; pre-installed on Laser & Lenovo; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.clock"},  // basically fine, but first-party one is also fine
+
+                // ============================================================
+                // Music Player
+                // ============================================================
+
+                // ============================================================
+                // Video Player / TV
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x597edd8749574755"},  // "TV Guide" (https://prisonpc/TV/)
+
+                // ============================================================
+                // Email
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x50bb90cffc907768"},  // "Mail" (https://webmail/)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xf5f403c242677721"},  // "Lorem Ipsum" (test app)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x793f12cf8a1f5dd2"},  // "RTSP Test App"
+
+                // ============================================================
+                // Sound Recorder / Editor
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "amirz.musicfx.material"},           // Equalizer --- I couldn't work out how to actually find and run this!
+
+                // ============================================================
+                // Camera
+                // ============================================================
+                // 18:29 <twb> the other case I thought was "I want to take a picture to show to my kids"
+                // 18:29 <ron> nope, can't do that
+                {"installType": "BLOCKED", "packageName": "com.android.camera2"},  // not in play store; default in Laser MID1089IPS?; default in AOSP?
+                {"installType": "BLOCKED", "packageName": "com.google.android.GoogleCamera"},  // Google Camera, NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.camera"},  // saves under "DCIM" instead of "Camera" sometimes?
+                {"installType": "BLOCKED", "packageName": "org.codeaurora.snapcam"},        // Not in Play Store, not in F-Droid, bundled on Lenovo M1
+                // ============================================================
+                // Photo Gallery (image viewer)
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos"},  // Prefer the "photos go" lite version???
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.gallery"},  // doesn't support SVG, even though com.simplemobiletools.sketch makes those??
+
+                // ============================================================
+                // Photo Editor / Image Editor / Drawing / Sketching
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.niksoftware.snapseed"},  // some photo editing thing???
+
+
+                // ============================================================
+                // IPTV client
+                // ============================================================
+                // For now we think this is either something that can view MPEG-TS inside RTP inside multicast UDP (i.e. vlc)
+                // *OR* something that consumes that and then emits MPEG-TS inside HTTP inside unicast TCP to localhost.
+                // in the latter case, the viewer would be plain org.android.chrome.
+                {"installType": "FORCE_INSTALLED", "packageName": "org.videolan.vlc"},  // vlc -- FIXME: includes e.g. smb client and browser!!
+                {"installType": "BLOCKED", "packageName": "org.videolan.vlcbenchmark"},  // FIXME: remove (debugging only) -- needs 4GB of downloads and 3 hours of runtime!
+                // ============================================================
+                // Video Editor
+                // ============================================================
+
+                // ============================================================
+                // Messaging / Chat / Video Chat / Teleconference / Phone
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.google.android.dialer"},  // Google Phone - NOT_COMPATIBLE_WITH_DEVICE
+
+                // ============================================================
+                // Contacts / Address Book
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.contacts"},  // Gmail account REQUESTED
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.contacts"},
+
+
+                // ============================================================
+                // Maps
+                // ============================================================
+                {"installType": "FORCE_INSTALLED", "packageName": "net.osmand"},  // OsmAnd (OpenStreetMap for Android)
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.maps"},  // Maps
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.mapslite"},  // Maps Go
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.navlite"},  // Navigation for Google Maps Go — is this ONLY for automobiles?
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.street"},  // Street View
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.earth"},
+
+
+                // ============================================================
+                // Office Suite
+                // ============================================================
+                // If you install docs.editors.docs, you can "list recent files", but long-press "New doc" doesn't work.
+                // The actual editor for all three lives in com.google.android.apps.docs.
+                // We have to install the other three to force accountlessmode????
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.docs",
+                 "managedConfiguration": {
+                     "PrintingEnabled": true,
+                     "enableAccountLessMode": true}  // run on devices without Google accounts
                 },
-                {
-                    "packageName": "com.android.chrome",
-                    "installType": "FORCE_INSTALLED"
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.sheets",
+                 "managedConfiguration": {
+                     "PrintingEnabled": true,
+                     "enableAccountLessMode": true}  // run on devices without Google accounts
                 },
-                {"installType": "AVAILABLE", "packageName": "com.google.android.GoogleCamera"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.adm"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.authenticator2"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.books"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.chromecast.app"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.classroom"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.docs"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.sheets"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.slides"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.dynamite"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.fitness"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.googleassistant"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.kids.familylink"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.mapslite"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.meetings"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.messaging"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.navlite"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.nbu.files"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.paidtasks"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photos"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photos.scanner"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.podcasts"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.searchlite"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.subscriptions.red"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.tachyon"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.tasks"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.translate"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.vega"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.walletnfcrel"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.creator"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.kids"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.music"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.calculator"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.calendar"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.contacts"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.dialer"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.googlequicksearchbox"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.inputmethod.latin"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.keep"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.play.games"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.projection.gearhead"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.projection.gearhead.phonescreen"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.street"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.talk"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.tv.remote"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.wearable.app"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.youtube"},
-                {"installType": "AVAILABLE", "packageName": "com.google.android.youtube.tvkids"},
-                {"installType": "AVAILABLE", "packageName": "com.google.ar.lens"},
-                {"installType": "AVAILABLE", "packageName": "com.google.earth"},
-                {"installType": "AVAILABLE", "packageName": "com.google.tango.measure"},
-                {"installType": "AVAILABLE", "packageName": "com.niksoftware.snapseed"}
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.slides",
+                 "managedConfiguration": {
+                     "PrintingEnabled": true,
+                     "enableAccountLessMode": true}  // run on devices without Google accounts
+                },
+                // This is an alternative to Google Docs, above.
+                {"installType": "AVAILABLE", "packageName": "com.collabora.libreoffice"},  // PASSES REVIEW.  They've tried to make LibreOffice into a touchscreen app, with moderate success.
+
+
+                // ============================================================
+                // Games
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.microsoft.microsoftsolitairecollection"},  // Solitaire (game) --- FULL OF ADS, COMPLAINS ABOUT LACK OF DIRECT INTERNET ACCESS TO MS.COM
+                {"installType": "BLOCKED", "packageName": "com.microsoft.mahjong"},  // Mahjong (game)
+                {"installType": "BLOCKED", "packageName": "com.emmanuelmess.tictactoe"},  // no AI, black-and-white, looks ugly
+                {"installType": "AVAILABLE", "packageName": "org.andstatus.game2048"},  // fine
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendly2048"},  // also fine, andstatus is slightly nicer
+                {"installType": "FORCE_INSTALLED", "packageName": "dev.lucanlm.antimine"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyminesweeper"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysudoku"},
+                {"installType": "AVAILABLE", "packageName": "com.agateau.tinywheels.android"},  // Pixel Wheels; fine, controls take some getting used to.  There's a cop car, does that matter?
+                {"installType": "BLOCKED", "packageName": "app.crossword.yourealwaysbe.forkyz"},  // in F-Droid but not Play Store.
+                {"installType": "BLOCKED", "packageName": "de.sudoq"},  // perfectly fine sudoku game, but LOOKS like it's a privesc app
+                {"installType": "BLOCKED", "packageName": "com.serwylo.beatgame"},  // NOT_FOUND
+                {"installType": "FORCE_INSTALLED", "packageName": "org.moire.opensudoku"},
+                {"installType": "AVAILABLE", "packageName": "org.eehouse.android.xw4"},  // crosswords (Scrabble) -- offers many network play options.  If these DON'T WORK, I guess passes review???
+                {"installType": "AVAILABLE", "packageName": "com.dozingcatsoftware.bouncy"},  // Vector Pinball -- GREAT!!!
+                {"installType": "BLOCKED", "packageName": "org.billthefarmer.crossword"},     // in F-Droid but not Play Store.
+                {"installType": "AVAILABLE", "packageName": "net.nullsum.freedoom"},            // DOOM (crashed a couple times trying to start it, BUT played OK once I got past that)
+                {"installType": "BLOCKED", "packageName": "com.jeffliu.balancetheball"},  // Broken?  I couldn't get this game to "play"
+                {"installType": "AVAILABLE", "packageName": "org.supertuxkart.stk"},  // Super Tux Kart; PASSES REVIEW
+                {"installType": "BLOCKED", "packageName": "net.minetest.minetest"},  // more-or-less works, but really not fun on a touchscreen without a gamepad
+                {"installType": "BLOCKED", "packageName": "com.gitlab.ardash.appleflinger.android"},  // NOT_FOUND
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlydame"},  // Checkers
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlysolitaire"},  // works, but REALLY ugly jaggie images
+                {"installType": "FORCE_INSTALLED", "packageName": "jwtc.android.chess"},
+                {"installType": "BLOCKED", "packageName": "it.alessandropira.wesnoth114"},  // NEEDS INTERNET -- DOWNLOADS 100MB to 500MB **AFTER** GAME STARTS!!  The touchscreen moves around a separate virtual mouse pointer -- VERY PAINFUL!
+                {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},  // HyperRogue -- GREAT! works really well on touchscreen.
+                {"installType": "BLOCKED", "packageName": "pro.rudloff.papercraft"},  // NOT_FOUND
+                {"installType": "BLOCKED", "packageName": "de.tobiasbielefeld.brickgames"},   // tetris? NOT_FOUND
+                {"installType": "AVAILABLE", "packageName": "org.jfedor.frozenbubble"},               // PASSES REVIEW, sprites look really low-resolution, but plays fine
+                {"installType": "BLOCKED", "packageName": "com.traffar.oware"},               // in F-Droid but not Play Store.
+
+                // ============================================================
+                // Education
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.microsoft.chineselearning"},  // (education?) (needs internet, needs account)
+                {"installType": "AVAILABLE", "packageName": "com.duolingo"},  // DuoLingo (language education) (needs internet???), has some ads.  Otherwise VERY good.
+                {"installType": "AVAILABLE", "packageName": "net.gcompris.full"},  // GCompris (early learning); WANTS INTERNET; (FIXME: not FORCE_INSTALLED because huge ~500MB)
+                {"installType": "BLOCKED", "packageName": "com.rechnen.app"},  // Calculate, math training; NOT_FOUND
+                {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics.memory"},
+                {"installType": "AVAILABLE", "packageName": "de.moekadu.tuner"},  // NOTE: microphone currently blocked in policy, so can't test it
+                {"installType": "AVAILABLE", "packageName": "com.ichi2.anki"},  // Flash card app, mostly for vocab memorization.  Wants you to log into a website (ankiweb) to access existing cards??
+                {"installType": "AVAILABLE", "packageName": "com.LAPARCELA.nihonoari"},  // kana trainer, basically fine, focus is a bit narrow
+                {"installType": "AVAILABLE", "packageName": "info.puzz.a10000sentences"},  // WARNING: needs internet access to download flash cards; otherwise seems OK
+                {"installType": "BLOCKED", "packageName": "com.quaap.primary"},            // in F-Droid but not Play Store.
+
+
+
+                // "Simple" apps – dev house recommended by mike — https://play.google.com/store/apps/dev?id=9070296388022589266
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.applauncher"},  // can't be set at home app, so fuck it
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.dialer"}, // NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.draw"},
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.filemanager"},  // not useful/interesting
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.flashlight"},  // on Lenovo says NOT_COMPATIBLE_WITH_DEVICE; on Laser you can get flashlight from swipe-down swipe-down pencil-icon then drag "Torch" from the available box up into the active box.  If this app is installed, "Flashlight" shows up instead, and takes longer to respond to click.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.musicplayer"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.notes"},
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.smsmessenger"}, // NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.voicerecorder"},
+
+                // ============================================================
+                // INSTALLED BY LASER AND/OR LENOVO???
+                // ============================================================
+                // {"installType": "FORCE_INSTALLED", "packageName": "android"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "android.auto_generated_rro_vendor__"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.Lct.Ext.Feature"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.allwinnertech.gmsintegration"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.allwinnertech.packageoverride"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.backupconfirm"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bips"},
+                {"installType": "BLOCKED", "packageName": "com.android.bluetooth"},            // Bluetooth; pre-installed on Laser & Lenovo; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.android.bluetoothmidiservice"},  // Bluetooth MIDI Service; pre-installed on Laser & Lenovo; not in Play Store, not in F-Droid
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.bookmarkprovider"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.captiveportallogin"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.certinstaller"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.companiondevicemanager"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.contacts"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.ctsshim"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.priv.ctsshim"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.documentsui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.basic"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dreams.phototable"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.dynsystem"},
+                {"installType": "BLOCKED", "packageName": "com.android.egg"}, // Android Q Easter Egg; cannot be removed; see "funDisabled=true" below. --- can still be launched via Activity Launcher, at least!
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.externalstorage"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.hotspot2"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.htmlviewer"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.inputdevices"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.corner"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.double"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.display.cutout.emulation.tall"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_extra_wide_back"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_narrow_back"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.gestural_wide_back"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.productivity"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.threebutton"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.internal.systemui.navbar.twobutton"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.keychain"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.localtransport"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.location.fused"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.managedprovisioning"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.mms.service"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.mtp"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.networkstack.inprocess"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.networkstack.permissionconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.ons"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.pacprocessor"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.partnerbrowsercustomizations.example"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.phone"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.printspooler"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.blockednumber"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.calendar"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.contacts"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.downloads"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.downloads.ui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.media"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.partnerbookmarks"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.telephony"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.providers.userdictionary"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.proxyhandler"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.se"},
+                {"installType": "BLOCKED", "packageName": "com.android.server.telecom"}, // Call Management; pre-installed on Laser & Lenovo; not in Play Store, not in F-Droid
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings.intelligence"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.settings.overlay.common"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.sharedstoragebackup"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.shell"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.simappdialog"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.smspush"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.soundrecorder"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.statementservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.storagemanager"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.systemui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.black"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.cinnamon"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.green"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.ocean"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.orchid"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.purple"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.color.space"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.font.notoserifsource"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.roundedrect"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.square"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.squircle"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon.teardrop"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.android"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.launcher"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.systemui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.circular.themepicker"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.android"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.launcher"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.systemui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.filled.themepicker"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.android"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.launcher"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.settings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.theme.icon_pack.rounded.systemui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.timerswitch"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.timezone.updater"},
+                {"installType": "BLOCKED", "packageName": "com.android.traceur"},  // System Tracing -- debugging tool??? --- FIXME: "nonComplianceReason": "INVALID_VALUE" ??? --- accessible via Activity Launcher as System Tracing > System Tracing > com.android.traceur.MainTvActivity.  Thereafter, can be launched from swipe-down-from-top config tray.
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.vending"},  // Google Play Store --- if you try to remove this, it simply downgrades to the version installed in the ROM (i.e. like you factory-reset just this app).  It's still usable at all times, AND appAutoUpdatePolicy causes it to constantly be upgraded and downgrade in a loop.  Set to REQUIRED_FOR_SETUP so it's upgraded during enrollment, before the user can interact with android at all.
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.vpndialogs"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaper.livepicker"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaperbackup"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpapercropper"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wantjoin.childmode.ctrl"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wantjoin.settings"},
+                {"installType": "AVAILABLE", "packageName": "com.caf.fmradio"},  // FM Radio -- works on Lenovo, but not in play store
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.dolby.daxappui"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.dolby.daxservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.dsi.ant.server"},
+                {"installType": "BLOCKED", "packageName": "com.focaltech.ft_terminal_test"},  // FT Terminal Test; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.goodix.rawdata"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.assistant"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nbu.files"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photos"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.restore"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.searchlite"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.speechservices"}, // Google Text-to-Speech (a11y)
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.wellbeing"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.work.oobconfig"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.youtube.music"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.calendar"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.configupdater"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ext.services"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ext.shared"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.feedback"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gm"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gms"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gms.location.history"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gmsintegration"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.googlequicksearchbox"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.gsf"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.ims"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.latin"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.marvin.talkback"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.modulemetadata"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.onetimeinitializer"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsagoconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsgoconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.gmsgsaconfig"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.ext.services"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.modulemedtadatagoogle.forframework"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.modulemetadata.forframework"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.permissioncontroller"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.overlay.modules.permissioncontroller.forframework"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.packageinstaller"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.packageinstaller.overlay"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.partnersetup"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.permissioncontroller"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.printservice.recommendation"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.setupwizard"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.syncadapters.contacts"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.tag"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.tts"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.videos"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.webview"},
+                // // {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.youtube"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lct.lottie"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.defaultlaunch"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.dsa"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.launcher.provider"},
+                {"installType": "BLOCKED", "packageName": "com.lenovo.lsf"},  // Lenovo ID (i.e. like google account, but Lenovo account); installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.lenovo.lsf.device"},  // Device Service; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ocpl"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screenassistant"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screencapture"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.tab_m10_hd"},
+                {"installType": "BLOCKED", "packageName": "com.lenovo.ue.device"},          // User Experience (Lenovo-specific), not in Play Store, not in F-Droid
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.longcheertel.midtest"},
+                {"installType": "BLOCKED", "packageName": "com.microsoft.bing.wallpapers"},  // installed by default on Lenovo M1 gen1
+                {"installType": "BLOCKED", "packageName": "com.microsoft.office.outlook"},  // installed by default on Lenovo M1 gen1  (NOTE: supports managedConfiguration)
+                {"installType": "BLOCKED", "packageName": "com.motorola.demo"},     // Demo mode; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.confuridialer"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.dpmserviceapp"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.qualcomm.datastatusnotification"},
+                {"installType": "BLOCKED", "packageName": "com.qti.qualcomm.deviceinfo"},       // SIM card stuff; show the IMEI/IMSI &c of the installed SIM
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.service.colorservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.xdivert"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.atfwd"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.embms"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.location"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qcrilmsgtunnel"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.cne"},
+                {"installType": "BLOCKED", "packageName": "com.qualcomm.qti.confdialer"},  // installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.dynamicddsservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.ims"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.lpa"},
+                {"installType": "BLOCKED", "packageName": "com.qualcomm.qti.networksetting"},   // SIM card stuff; "CDMA Options" &c
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.poweroffalarm"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.connectionsecurity"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.telemetry"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.trustzoneaccess"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qtisystemservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.remoteSimlockAuth"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.seccamservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.services.secureui"},
+                {"installType": "BLOCKED", "packageName": "com.qualcomm.qti.simsettings"}, // SIM card stuff; "CDMA Options" &c
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.telephonyservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.uceShimService"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.uim"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.workloadclassifier"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.timeservice"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteclient"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteserver"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.wfd.service"},
+                {"installType": "BLOCKED", "packageName": "com.skype.raider"},  // Skype (not Skype for Business); installed by default on Lenovo M1 gen1
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awlogsettings"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awmanager"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging.res"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonfire"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.settingssetup"},
+                {"installType": "BLOCKED", "packageName": "com.tblenovo.lenovotips"},  // annoying garbage
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.setup"},
+                // {"installType": "FORCE_INSTALLED", "packageName": "com.tblenovo.smartiot"},
+                {"installType": "BLOCKED", "packageName": "com.tblenovo.wallpaper"},      // Wallpapers; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "AVAILABLE", "packageName": "com.tblenovo.whatsnewclient"},  // Settings > System > Lenovo Feature Update --- needed to do OS upgrades??? (e.g. Android 9 -> Android 10); installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "AVAILABLE", "packageName": "com.lenovo.ota"},  // System Update; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid --- needed to do OS upgrades??? (e.g. Android 9 -> Android 10)
+                {"installType": "BLOCKED", "packageName": "org.codeaurora.bluetooth"},    // ???; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "org.codeaurora.ims"},  // Carrier Services (i.e. phone stuff); installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "vendor.qti.hardware.cacert.server"},  // CACertApp; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid --- I couldn't work out how to actually find and run this!  (Not even in Activity Launcher)
+                // {"installType": "FORCE_INSTALLED", "packageName": "vendor.qti.iwlan"},
+
+                // ============================================================
+                // MICROSOFT -- https://play.google.com/store/apps/dev?id=6720847872553662727
+                // ============================================================
+                {"installType": "BLOCKED", "packageName": "com.microsoft.office.lync15"},  // Skype for Business -- NEEDS LOGIN
+
+
+                // SECUSO privacy-friendly research group https://play.google.com/store/apps/dev?id=4797307650791917378
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlyrulerapp"},  // WORKS, BUT NOT USEFUL -- just displays centimetre/inch ruler and/or degree/radian protractor onscreen
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlybackup"},  // Not useful
+                {"installType": "AVAILABLE", "packageName": "org.secuso.aktivpause"},  // "take a break and do this exercise" thing.  FIXME: useful or useless??
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysketching"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyfoodtracker"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyfinancemanager"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlypausinghealthily"},
+
+
+                // ============================================================
+                // GOOGLE -- https://play.google.com/store/apps/dev?id=5700313618786177705
+                // ============================================================
+                // The demo app in the AndroidEnterprise quickstart docs.  It is about a google conference.
+                {"installType": "BLOCKED", "packageName": "com.google.samples.apps.iosched"},
+                // Random apps "by Google" I found in the app store -- Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.adm"},  // Gmail account REQUIRED; Find Device
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.authenticator2"}, // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.books"},  // Gmail account REQUIRED; Play Books
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.chromecast.app"},  // Gmail account REQUIRED; Google Home
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.classroom"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.dynamite"},  // Gmail account REQUIRED; Chat
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.fitness"},  // Gmail account REQUIRED; Google Fit
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.kids.familylink"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.meetings"},  // Gmail account REQUIRED; Meet
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.paidtasks"},  // Gmail account REQUIRED; Google Opinion Rewards (loops)
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.subscriptions.red"},  // Gmail account REQUIRED; Google One
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.tasks"},  // Gmail account REQUIRED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.vega"},  // Gmail account REQUIRED; Google My Business
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.walletnfcrel"},  // Gmail account REQUIRED; Google Pay
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.youtube.creator"},  // Gmail account REQUIRED; YT Studio
+                {"installType": "BLOCKED", "packageName": "com.google.android.keep"},  // Gmail account REQUIRED; Keep Notes
+                {"installType": "BLOCKED", "packageName": "com.google.android.play.games"},  // Gmail account REQUIRED; Play Games
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.tachyon"},  // Gmail account REQUIRED; Google Duo (Video Calls)
+                {"installType": "BLOCKED", "packageName": "com.google.android.talk"},  // Gmail account REQUIRED; Hangouts
+                // Random apps "by Google" I found in the app store -- Gmail account REQUESTED
+
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.translate"},  // Gmail account REQUESTED; WORKS OK; NEEDS INTERNET; USEFUL?
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.kids"},  // Gmail account REQUESTED; YT Kids; WORKS OK; NEEDS INTERNET; NOT USEFUL?
+                {"installType": "BLOCKED", "packageName": "com.google.android.youtube.tvkids"},  // Gmail account REQUESTED; NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.access.wifi.consumer"},  // configure google-brand wifi APs (hardware missing)
+                {"installType": "BLOCKED", "packageName": "com.google.android.katniss"},  // Google app for Android TV (hardware missing)
+                {"installType": "BLOCKED", "packageName": "com.google.android.tv.remote"},  // TV Remote (hardware missing)
+                {"installType": "BLOCKED", "packageName": "com.google.android.wearable.app"},  // Wear OS (hardware missing)
+                // Random apps "by Google" I found in the app store -- Gmail account NOT PROMPTED
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.podcasts"},  // REQUIRES com.google.android.googlequicksearchbox
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.googleassistant"},  // REQUIRES com.google.android.googlequicksearchbox; Gmail account REQUESTED; Assistant
+                // Random apps "by Google" I found in the app store -- DID NOT APPEAR IN THE APP LIST EVEN WHEN INSTALLED???
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.messaging"},  // Messages - NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.nbu.files"},  // Files - "save space by deleting things" but also "share files with friends", therefore fuck that
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos.scanner"},  // PhotoScan by Google - NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.music"},   // YT Music -- with modifyAccountsDisabled, can only play files locally installed.  I downloaded an MP3 from https://3zzz.com.au/ (in Chrome), and YT Music app could "see" it.  If you're not SAVING files locally, you can still just listen to audio directly in Chrome.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.latin"},  // gboard -- the onscreen keyboard.  Now includes non-Latin input e.g. Hindi.  Those are added via Settings app.
+                {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead"},  // Android Auto - Google Maps, Media & Messaging --- wrong android version
+                {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead.phonescreen"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.youtube"},  // Works without google account.  "Nicer" interface than just browsing to youtube.com (e.g. dark theme works).  Do we care about this at all?
+                {"installType": "BLOCKED", "packageName": "com.google.ar.lens"},  // NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "BLOCKED", "packageName": "com.google.tango.measure"},  // NOT_COMPATIBLE_WITH_DEVICE --- UPDATE: deleted from play store around June 2021
+
+                // Random apps "by Google" I found in the app store -- ARE THESE MERGED INTO gbord (inputmethod.latin) now??? -- UPDATE, yes I am 99% certain they are.
+                {"installType": "BLOCKED", "packageName": "com.google.android.inputmethod.pinyin"},  // Google Pinyin Input
+                {"installType": "BLOCKED", "packageName": "com.google.android.inputmethod.korean"},  // Google Korean Input
+                {"installType": "BLOCKED", "packageName": "com.google.android.inputmethod.japanese"},  // Google Japanese Input (says "do not use this, features merged into gboard (inputmethod.latin)")
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.inputmethod.hindi"}  // Google Indic Keyboard
+
             ],
-            "factoryResetDisabled": true,
-            "debuggingFeaturesAllowed": false
+
+
+            "advancedSecurityOverrides": {
+                // Controls access to developer settings: developer options and safe boot.
+                // Replaces safeBootDisabled (deprecated) and debuggingFeaturesAllowed (deprecated).
+                "developerSettings": "DEVELOPER_SETTINGS_DISABLED",
+                // Whether Google Play Protect verification (https://support.google.com/accounts/answer/2812853) is enforced.
+                // Replaces ensureVerifyAppsEnabled (deprecated).
+                "googlePlayProtectVerifyApps": "VERIFY_APPS_ENFORCED",  // Default. Force-enables app verification.
+                // The policy for untrusted apps (apps from unknown sources) enforced on the device.
+                // Replaces install_unknown_sources_allowed (deprecated).
+                "untrustedAppsPolicy": "DISALLOW_INSTALL",  // Default. Disallow untrusted app installs on entire device.
+                // Controls Common Criteria Mode –
+                // security standards defined in the Common Criteria for Information Technology Security Evaluation
+                // (https://www.commoncriteriaportal.org/) (CC).
+                // Enabling Common Criteria Mode increases certain security components on a device, including
+                // AES-GCM encryption of Bluetooth Long Term Keys, and
+                // Wi-Fi configuration stores.
+                // Warning: Common Criteria Mode enforces a strict security model typically only required for IT products used in national security systems and other highly sensitive organizations.
+                // Standard device use may be affected.
+                // Only enabled if required.
+                "commonCriteriaMode": "COMMON_CRITERIA_MODE_DISABLED"  // Default. Disables Common Criteria Mode.
+            },
+
+            // DEBUGGING!
+            // When this is on, tablets report more *TO GOOGLE* information about themselves.
+            // We can then ask Google to tell the information back to us, the real site admins.
+            "statusReportingSettings": {
+                "applicationReportsEnabled": true,     // enable app reports
+                "applicationReportingSettings": {
+                    "includeRemovedApps": true},       // include removed apps in application reports.
+                "commonCriteriaModeEnabled": false,    // enable Common Criteria Mode reporting
+                "deviceSettingsEnabled": true,         // enable device settings reporting
+                "displayInfoEnabled": true,            // enable displays reporting.  Not available for personally-owned devices with work profiles.
+                "hardwareStatusEnabled": true,         // enable hardware status reporting. Not available for personally owned devices with work profiles.
+                "memoryInfoEnabled": true,             // enable memory reporting
+                "networkInfoEnabled": true,            // enable network info reporting
+                "powerManagementEventsEnabled": true,  // enable power management event reporting. Not available for personally owned devices with work profiles.
+                "softwareInfoEnabled": true,           // enable software info reporting
+                "systemPropertiesEnabled": true},      // enable system properties reporting
+
+            "networkResetDisabled": true,  // user can't delete wifi passwords
+            "safeBootDisabled": true,      // long-press "Power Off" to enter; is full GUI, but with Play Store apps disabled
+            "factoryResetDisabled": true,  // user can't factory reset from GUI (can still reboot into "recovery" mode and choose there, though)
+
+            // If the inmate can get to the bootloader's recovery-ui, they can select "Erase data (Factory reset)".
+            // This is accessible REGARDLESS of factoryResetDisabled=true above.
+            // If they choose this, then AFTERWARD, when they try to do initial login of the tablet,
+            // it will say "sorry, factory reset protection triggered, log in (to the tablet) as the previous owner".
+            // The "previous owner" they mean is ANYONE in this list below.
+            // The email addresses in the list below **DO NOT** need to have anything to do with this enterprise!
+            //
+            // NOTE: allegedly this relies on the OEM vendor shipping an "FRP partition" which is a device-specific binary blob?
+            // NOTE: allegedly the inmate can defeat FRP by booting "fastboot" to zero "FRP partition".
+            // NOTE: allegedly the inmate can defeat FRP by using a device-specific tool (SP Flash Tool) to zero "FRP partition".
+            "frpAdminEmails": [
+                "prisonpctester2@gmail.com",
+                "prisonpctester1@gmail.com",
+                "trentbuck@gmail.com"],
+
+            "bluetoothDisabled": true,  // Prefer this setting over bluetooth_config_disabled because bluetooth_config_disabled can be bypassed by the user.
+            "bluetoothConfigDisabled": true,
+            "bluetoothContactSharingDisabled": true,  // FIXME: not settable in work-only devices ("nonComplianceReason": "MANAGEMENT_MODE")???
+
+            "addUserDisabled": true,  // Whether adding new users and profiles is disabled.
+            "modifyAccountsDisabled": true,  // Whether adding or removing accounts is disabled.
+            "removeUserDisabled": true,      // Whether removing other users is disabled.
+
+            "adjustVolumeDisabled": false,
+
+            // 18:13 <twb> Should camera and/or microphone be completely disabled?
+            // 18:13 <twb> I currently assume "camera and microphone are allowed" mainly for education learning and maybe eventually voice/video calls
+            // 18:13 <mike> Probably not completely because we'll eventually do SIP/etc on this
+            // 18:13 <mike> But probably disable it for now and make sure you have a FINDME comment or similar
+            // 18:14 <twb> I guess "disable for now; revisit later" is reasonable
+            // 18:14 <twb> Will the prison crack the shits if they get a tablet and stuff like that is disabled?
+            // 18:14 <twb> "nothing on this thing works!  What a shitpiece!"
+            // 18:15 <mike> If it says it was disabled by PrisonPC, then I expect they'll communicate with us in the pilot
+            // 18:29 <ron> ok, we need to have both microphone and camera enabled when we deploy the telephony apps
+            // 18:29 <twb> the other case I thought was "I want to take a picture to show to my kids"
+            // 18:29 <ron> nope, can't do that
+            //
+            // 18:34 <twb> PROBABLY this has also broken the ability to scan QR codes
+            // 18:34 <ron> ah, good point
+            // 18:34 <twb> confirmed
+            // 18:35 <twb> QR code scanning for wifi is now broken
+            // 18:35 <ron> ok, then leave it enabled
+            //
+            // FIXME: revisit this when SIP voice/video chat.
+            // FIXME: microphone is useful for language learning (duolingo).
+            // FIXME: microphone is for guitar/piano tuner app?
+            "cameraDisabled": false,
+            "unmuteMicrophoneDisabled": true,
+
+            "screenCaptureDisabled": true,  // user can't take screenshots
+            "setWallpaperDisabled": true,   // user can't change desktop background (wallpaper)
+            "setUserIconDisabled": true,    // user can't change their X-Face
+            "mountPhysicalMediaDisabled": true,  // user can't read from / write to an SD card?
+            "outgoingBeamDisabled": true,  // user can't use NFC (e.g. paywave)
+            "outgoingCallsDisabled": true,  // user can't make calls
+            "usbFileTransferDisabled": true,  // user can't share files over MTP/PTP???
+            "usbMassStorageEnabled": false,    // user can't share files over SD card???
+
+
+            // <twb> "Keyguard" is the brand name for android's lock screen.
+            //       Do we care about e.g. face recognition?
+            // <ron> twb: for unlocking? not yet, possibly not ever
+            // <twb> ron: do we care to ban them?
+            // <ron> twb: for now there'll be too much admin overhead to manage it.
+            //       I think we should ban it until we decide it is valuable enough to promote.
+            //       default-deny
+            //
+            // NOTE: this setting ALSO allows disabling camera while locked, disabling notifications while locked, &c.
+            "keyguardDisabledFeatures": "BIOMETRICS",  // user cannot log in with fingerprint/face/iris &c
+
+            "permittedAccessibilityServices": {
+                "packageNames": [
+                      // only allow built-in system accessibility features
+                      // (FIXME: test what this actually means / what other accessbility apps exist?)
+                ]},
+            "permittedInputMethods": {
+                "packageNames": [
+                    // only allow bulit-in system input methods (FIXME: test if this includes hindi, pinyin, &c built into gboard in (at least) Android 10)
+                ]},
+            // Can apps ask the hardware "where am I?"
+            // BONUS: map apps default to local area.
+            // MALUS: an escapee might have offline maps with them, and
+            //        use it to work out exactly which way to run?
+            // Does this affect automatic timezone? (I don't think so.)
+            //
+            // Ron's view is default-deny --- have to justify why they SHOULD get anything, not why they SHOULDN'T.
+            "locationMode": "LOCATION_DISABLED",
+            "shareLocationDisabled": true,
+
+            "mobileNetworksConfigDisabled": true,  // user can't configure the SIM card?
+            "cellBroadcastsConfigDisabled": true,  // something to do with the SIM card?
+            "dataRoamingDisabled": true,           // something to do with the SIM card?
+            "smsDisabled": true,
+            "tetheringConfigDisabled": true,  // tethering and portable hotspots is disabledx
+
+            "funDisabled": true,             // disables "com.android.egg" (NOTE: de.szalkowski.activitylauncher can still run it)
+            "blockApplicationsEnabled": true,  // auto-remove apps whose policy changes from "allowed" to "blocked" ---- FIXME: appears in noncompliance list as "UNSUPPORTED"???
+            // UPDATE: these were even more annoying than I thought.  Even FORCE_INSTALLED apps won't auto-install!
+            // "installAppsDisabled": true,       // user cannot install apps whitelisted as "AVAILABLE" (but not pre- or force-installed)
+            // "uninstallAppsDisabled": true,     // user cannot remove apps whitelisted as "PREINSTALLED" (pre-installed but removable)
+
+            "autoDateAndTimeZone": "AUTO_DATE_AND_TIME_ZONE_ENFORCED",  // user can't spoof the clock
+            "appAutoUpdatePolicy": "ALWAYS",  // user can't disable auto-updates
+            "autoTimeRequired": true,        // ignored if autoDateAndTimeZone is set
+
+            "deviceOwnerLockScreenInfo": {
+                // The device owner information to be shown on the lock screen.
+                // This shows on the lock screen; end user CANNOT change it.
+                // It scrolls in a marquee, but you can only read about 100 letters before the screen blanks.
+                "defaultMessage":
+                "By logging in, YOU AGREE to the Acceptable Use Policy."},
+            "shortSupportMessage": {
+                "defaultMessage":
+                // A message displayed to the user in the settings screen wherever functionality has been disabled by the admin.
+                // If the message is longer than 200 characters it may be truncated.
+                // UPDATE: this line appears as the "body" of a popup when you try to remove a FORCE_INSTALLED app.
+                "By logging in, YOU AGREE to the Acceptable Use Policy."},
+            "longSupportMessage": {
+                "defaultMessage":
+                // A message displayed to the user in the device administators settings screen.
+                // This appears under Settings > Security > Device admin info > Device Policy;
+                // This also appears if you click "Learn Mode" in the previous line's popup.
+                "By logging in, YOU AGREE to the following policy Acceptable Use Policy.\n\nAccess to the Prisoner Interactive Learning System is a privilege.\n\nAbuse may result in temporary or permanent loss of use.\nAbuse includes, but is not limited to, attempts to\n • disclose your password to another user;\n • grant another user access to your account;\n • access another user's account;\n • communicate with another inmate;\n • use unauthorised media (inc. CD, DVD & USB);\n • install or modify software; and\n • modify system settings.\n\nAll use, including email correspondence, may be\n • archived indefinitely;\n • reviewed by automated systems;\n • reviewed by staff;\n • reviewed by external agencies for the purposes of\n • investigating suspected criminal/unlawful activity.\n\nAll logs, records and archives may be used as evidence in court."},
+
+
+
+            // "androidDevicePolicyTracks": ["PRODUCTION", "BETA"],  // If no tracks are specified, then the device receives the latest version of the production track.
+
+            // FIXME: I don't understand these policy options:
+            //
+            //     "accountTypesWithManagementDisabled": ['foo', 'bar', 'baz'],  // Account types that can't be managed by the user.
+            //     "createWindowsDisabled": true,  // Whether creating windows besides app windows is disabled.
+
+
+            // FIXME: we don't *need* a VPN; is it useful to force a VPN to always be on, purely to prevent them adding one later?
+            //     "alwaysOnVpnPackage": {"lockdownEnabled": true, "packageName": "com.example.foo"},  // Configuration for an always-on VPN connection. Use with vpn_config_disabled to prevent modification of this setting.
+            "vpnConfigDisabled": true,
+
+            // Requirements:
+            //
+            //     1. Prison staff MUST be able to read content created by inmates.
+            //     2. Inmates MUST NOT be able to communicate clandestinely (e.g. dead drops inside a the tablet).
+            //     3. Inmate B SHOULD NOT be able to read Inmate A's content without Inmate A's knowledge.
+            //
+            // Due to (1) I think we actually want to BAN full-disk-encryption, but that is not an option.
+            //
+            // UPDATE: according to Settings > Security > Encryption & Credentials, Lenovo M1 is encrypted by default.
+            // UPDATE: according to Settings > Security > Encryption & Credentials, Laser MID1089IPS is encrypted by default.
+            "encryptionPolicy": "ENCRYPTION_POLICY_UNSPECIFIED",
+
+
+            // If you enroll the device immediately after factory
+            // reset, at the blue-background-yellow-button screen, I
+            // think this setting has NO EFFECT WHATSOEVER.
+            // I think this only applies to mixed personal-plus-work devices,
+            // which have personal user "user" and work user "work".
+            // You do that by taking a normal device and manually installing Device Policy, then
+            // opening Device Policy app and scanning the QR code.
+            // This SHOULDN'T ever be possible, but just for paranoia's sake,
+            // I'm setting all the settings to their most paranoid values.
+            // --twb, May 2021
+            //
+            // UPDATE: when working correctly (a work-only device), this will show up in device json as
+            //
+            //     {"nonComplianceReason": "MANAGEMENT_MODE", "settingName": "personalUsagePolicies"}
+            "personalUsagePolicies": {
+                // "accountTypesWithManagementDisabled": [???],  // FIXME
+                "cameraDisabled": true,
+                "maxDaysWithWorkOff": 3,  // How long the work profile can stay off [... minimum] 3 days.
+                "personalApplications": [],  // no apps/packages are whitelisted.
+                "personalPlayStoreMode": "ALLOWLIST",  // Only apps set to AVAILABLE in personalApplications may be installed in the personal profile.
+                "screenCaptureDisabled": true},
+
+            // WARNING: DO NOT SET THIS TO false WITHOUT A BLOODY GOOD REASON.
+            // SETTING THIS TO FALSE MAKES IT POSSIBLE TO BRICK A TABLET.
+            "networkEscapeHatchEnabled": true  // Whether the network escape hatch is enabled. If a network connection can't be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to refresh the device policy. After applying policy, the temporary network will be forgotten and the device will continue booting. This prevents being unable to connect to a network if there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is otherwise unable to reach device settings.Note: Setting wifiConfigDisabled to true will override this setting under specific circumstances. Please see wifiConfigDisabled for further details.
+
         }
     }
 }

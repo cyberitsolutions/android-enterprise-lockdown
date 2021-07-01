@@ -1,0 +1,9 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/org.secuso.privacyfriendlysudoku",
+    "permissions": [
+        {
+            "permissionId": "android.permission.FOREGROUND_SERVICE"
+        }
+    ],
+    "title": "Sudoku (Privacy Friendly)"
+}

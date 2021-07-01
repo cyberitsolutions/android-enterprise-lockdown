@@ -1,0 +1,21 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/org.secuso.privacyfriendlypausinghealthily",
+    "permissions": [
+        {
+            "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
+            "name": "run at startup",
+            "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"
+        },
+        {
+            "description": "Allows the app to control the vibrator.",
+            "name": "control vibration",
+            "permissionId": "android.permission.VIBRATE"
+        },
+        {
+            "description": "Allows the app to prevent the device from going to sleep.",
+            "name": "prevent device from sleeping",
+            "permissionId": "android.permission.WAKE_LOCK"
+        }
+    ],
+    "title": "Pausing Healthily (Privacy Friendly)"
+}

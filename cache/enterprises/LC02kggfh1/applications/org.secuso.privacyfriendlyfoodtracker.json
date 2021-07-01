@@ -1,0 +1,11 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/org.secuso.privacyfriendlyfoodtracker",
+    "permissions": [
+        {
+            "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
+            "name": "full network access",
+            "permissionId": "android.permission.INTERNET"
+        }
+    ],
+    "title": "Food-Tracker (Privacy Friendly)"
+}

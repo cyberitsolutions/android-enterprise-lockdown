@@ -1,0 +1,19 @@
+{
+    "name": "enterprises/LC02kggfh1/policies/wifi-locked-policy",
+    "openNetworkConfiguration": {
+        "NetworkConfigurations": [
+            {
+                "GUID": "cd9da76c-3e4d-4245-bd71-b6fea23ad576",
+                "Name": "PrisonPC Tablet Network",
+                "Type": "WiFi",
+                "WiFi": {
+                    "Passphrase": "FIXME USE A PASSWORD VAULT HERE",
+                    "SSID": "PrisonPC",
+                    "Security": "WPA-PSK"
+                }
+            }
+        ]
+    },
+    "version": "37",
+    "wifiConfigDisabled": true
+}

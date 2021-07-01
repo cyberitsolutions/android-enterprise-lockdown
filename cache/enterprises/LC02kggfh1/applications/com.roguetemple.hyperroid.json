@@ -1,0 +1,9 @@
+{
+    "name": "enterprises/LC02kggfh1/applications/com.roguetemple.hyperroid",
+    "permissions": [
+        {
+            "permissionId": "android.permission.FOREGROUND_SERVICE"
+        }
+    ],
+    "title": "HyperRogue"
+}

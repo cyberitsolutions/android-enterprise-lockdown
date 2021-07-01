@@ -53,7 +53,7 @@ import google_auth_oauthlib.flow
 import googleapiclient
 import jsmin                 # purely so policy file can have comments
 import pypass
-import requests
+import requests                 # purely for get().json() shorthand
 
 parser = argparse.ArgumentParser(description=__DOC__)
 parser.add_argument(
@@ -77,7 +77,10 @@ parser.add_argument(
     QR code is easier for "fully managed mode" (device only has restricted work account).
     URL is easier for "work profile mode" (device has an unrestricted non-work account).
     """)
+parser.add_argument('--debug', dest='logging_level', action='store_const', const=logging.DEBUG, default=logging.NOTSET)
+parser.add_argument('--verbose', dest='logging_level', action='store_const', const=logging.INFO, default=logging.NOTSET)
 args = parser.parse_args()
+logging.getLogger().setLevel(args.logging_level)
 
 with args.json_config_path.open() as f:
     json_config_object = json.loads(jsmin.jsmin(f.read()))
@@ -133,6 +136,23 @@ else:
         ).run_console())
 
     print('\nAuthentication succeeded.')
+
+# Get WPA2-PSK passphrases -- if any -- out of pypass.
+for policy in json_config_object.get('policies', {}).values():
+    for networkConfiguration in policy.get('openNetworkConfiguration', {}).get('NetworkConfigurations', []):
+        if 'Passphrase' in networkConfiguration.get('WiFi', {}):
+            networkConfiguration['WiFi']['Passphrase'] = pypass.PasswordStore().get_decrypted_password(
+                f"android-wifi-PSK/{networkConfiguration['WiFi']['SSID']}").strip()
+del policy, networkConfiguration
+
+# Used later to revert this hack during dumping/caching.
+# Symmetry with the above loop.
+def redact_some_passphrases(device_or_policy_or_webapp: dict) -> None:  # DESTRUCTIVE
+    policy = device_or_policy_or_webapp
+    for networkConfiguration in policy.get('openNetworkConfiguration', {}).get('NetworkConfigurations', []):
+        if 'Passphrase' in networkConfiguration.get('WiFi', {}):
+            networkConfiguration['WiFi']['Passphrase'] = None
+
 
 ######################################################################
 ## Create an enterprise
@@ -200,6 +220,107 @@ for policy_name, policy_body in json_config_object['policies'].items():
         body=policy_body).execute()
 
 
+############################################################
+## Create webapp pseudo-apps
+############################################################
+
+# Ref. https://colab.research.google.com/github/google/android-management-api-samples/blob/master/notebooks/web_apps.ipynb
+
+# Unlike policy, patch() won't implicitly create a webapp.
+# Instead we must "PATCH if in LIST else CREATE".
+# This mirrors SQL's "UPDATE if SELECT else INSERT".
+old_webApps = androidmanagement.enterprises().webApps().list(
+    parent=json_config_object['enterprise_name']).execute()['webApps']
+for new_webApp in json_config_object['webApps']:
+    # We assume the startUrl (not title) is unique.
+    try:
+        old_webApp, = [
+            old_webApp
+            for old_webApp in old_webApps
+            if old_webApp['startUrl'] == new_webApp['startUrl']]
+        # UGHHHHH, if we send a noop patch, the webapp version jumps, and play store pushes a "new" 50kB apk to every device.
+        # Therefore if old_webApp == new_webApp, do nothing.
+        # Except that old_webApp has some auto-populated fields, so
+        # only compare startUrl/title/displayMode.
+        if all(old_webApp[k] == new_webApp[k] for k in new_webApp):
+            logging.debug('Exists and unchanged, so call nothing')
+            continue
+        logging.debug('Exists, so call patch()')
+        androidmanagement.enterprises().webApps().patch(
+            name=old_webApp['name'],
+            body=new_webApp).execute()
+    except ValueError:
+        logging.debug("Doesn't exist, so call create()")
+        androidmanagement.enterprises().webApps().create(
+            parent=json_config_object['enterprise_name'],
+            body=new_webApp).execute()
+
+
+############################################################
+## Delete historical devices from the device list.
+############################################################
+def pages(
+        resource: googleapiclient.discovery.Resource,  # e.g. androidmanagement.enterprises().devices()
+        *args,
+        **kwargs):
+    "Given e.g. devices(), iterate over each page of responses."
+    request = None
+    while True:
+        if request is None:     # first iteration through "while True"
+            request = resource.list(*args, **kwargs)
+        else:                   # subsequent iteration through "while True"
+            request = resource.list_next(
+                previous_request=request,
+                previous_response=response)
+        if request:           # on last page, list_next() returns None
+            response = request.execute()
+            yield response
+        else:
+            break
+
+
+def merged_pages(
+        resource: googleapiclient.discovery.Resource,  # e.g. androidmanagement.enterprises().devices()
+        response_key: str,                             # e.g. "devices"
+        *args,
+        **kwargs):
+    "Given e.g. devices(), iterate over each device (across multiple pages)."
+    for page in pages(resource, *args, **kwargs):
+        # Sanity check
+        for k in page.keys():
+            if k not in {response_key, 'nextPageToken'}:
+                raise RuntimeError('Unexpected key', {k: page[k]})
+        for record in page[response_key]:
+            yield record
+
+# If a device is re-enrolled, it becomes a new "device" with a new name.
+# The old enrollment continues to exist under the old name.
+# Delete any old enrollments that haven't already been deleted.
+# Use set() to minimize the number of HTTP requests, since they're slow (urllib2 can't HTTP/3).
+devices = list(
+    merged_pages(
+        # our arguments
+        resource=androidmanagement.enterprises().devices(),
+        response_key='devices',
+        # google's arguments
+        parent=json_config_object['enterprise_name']))
+device_names_to_delete = (
+    # All obsolete devices
+    set(
+        name
+        for d in devices
+        for name in d.get('previousDeviceNames', {}))
+    &                  # set intersection -- name must be in both sets
+    # All known devices
+    set(d['name'] for d in devices))
+for name in device_names_to_delete:
+    androidmanagement.enterprises().devices().delete(
+        name=name).execute()
+
+
+
+
+
 ######################################################################
 ## Do some queries
 ######################################################################
@@ -215,36 +336,54 @@ with open('cache/API-androidmanagement-v1.json', mode='w') as f:
         sort_keys=True,
         indent=4)
     del resp
-with open('cache/enterprises.json', mode='w') as f:
-    try:
-        json.dump(
-            androidmanagement.enterprises().list(
-                projectId=gcloud_project_id
-            ).execute(),
-            f,
-            sort_keys=True,
-            indent=4)
-    except googleapiclient.errors.HttpError:
-        json.dump(
-            'API call failed... due to "not generally available yet"???',
-            f,
-            sort_keys=True,
-            indent=4)
-with open('cache/devices.json', mode='w') as f:
-    json.dump(
-        androidmanagement.enterprises().devices().list(
-            parent=json_config_object['enterprise_name']).execute(),
-        f,
-        sort_keys=True,
-        indent=4)
-with open('cache/policies.json', mode='w') as f:
-    json.dump(
-        androidmanagement.enterprises().policies().list(
-            parent=json_config_object['enterprise_name']
-        ).execute(),
-        f,
-        sort_keys=True,
-        indent=4)
+
+
+def my_json_dump(obj):
+    path = pathlib.Path(f'cache/{obj["name"]}.json')
+    os.makedirs(path.parent, exist_ok=True)
+    with path.open('w') as f:
+        json.dump(obj, f, sort_keys=True, indent=4)
+
+for enterprise in merged_pages(
+        # our arguments
+        resource=androidmanagement.enterprises(),
+        response_key='enterprises',
+        # google's arguments
+        projectId=gcloud_project_id):
+    my_json_dump(enterprise)
+    for response_key, resource in [
+            ('devices', androidmanagement.enterprises().devices),
+            ('policies', androidmanagement.enterprises().policies),
+            ('webApps', androidmanagement.enterprises().webApps)]:
+        for obj in merged_pages(
+                # our arguments
+                resource=resource(),
+                response_key=response_key,
+                # google's arguments
+                parent=enterprise['name']):
+            redact_some_passphrases(obj)  # DESTRUCTIVE
+            my_json_dump(obj)
+
+    # NOTE: because this is essentially EVERY app in Play Store,
+    #       there is no list().
+    #       Instead we ask for a single application by name.
+    #       Get those names from current policies.
+    #
+    # NOTE: com.android.chrome's managedProperties is equivalent to
+    #       https://www.chromium.org/administrators/policy-list-3
+    for packageName in sorted(set(
+            application['packageName']
+            for policy in json_config_object['policies'].values()
+            for application in policy.get('applications', [])
+            if application['installType'] != 'BLOCKED')):
+        try:
+            my_json_dump(androidmanagement.enterprises().applications().get(
+                name=f'{enterprise["name"]}/applications/{packageName}').execute())
+        except googleapiclient.errors.HttpError as e:
+            if e.resp.status == 404:
+                logging.debug('App %s not in Play Store -- probably from F-Droid', packageName)
+            else:
+                raise
 
 
 ######################################################################
@@ -262,9 +401,12 @@ with open('cache/policies.json', mode='w') as f:
 # FIXME: this does enrollment for whatever the LAST POLICY IN THE LIST loop was.
 # Since "policies" is a dict, the order is random!
 # Move this crap inside the "for ... in policies" loop?
+# https://developers.google.com/android/management/reference/rest/v1/enterprises.enrollmentTokens#EnrollmentToken
 enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
     parent=json_config_object['enterprise_name'],
-    body={"policyName": policy_name}
+    body={"policyName": policy_name,
+          'duration': f'{60 * 60 * 24 * 90}s',  # maximum duration (90 days, in seconds)
+          }
 ).execute()
 
 
@@ -273,12 +415,16 @@ if args.work_profile_mode:
     print('Please open this link on your device:',
           'https://enterprise.google.com/android/enroll?et=' + enrollment_token['value'])
 else:
-    url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
-              'cht': 'qr',
-              'chs': '500x500',
-              'chl': enrollment_token['qrCode']})
-    print('Please visit this URL to scan the QR code:', url)
-    subprocess.check_call(['xdg-open', url])
+    # url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
+    #           'cht': 'qr',
+    #           'chs': '500x500',
+    #           'chl': enrollment_token['qrCode']})
+    # print('Please visit this URL to scan the QR code:', url)
+    # subprocess.check_call(['xdg-open', url])
+    subprocess.run(['qrencode', '-tUTF8'],
+                   check=True,
+                   input=enrollment_token['qrCode'],
+                   text=True)
 
 
 # The method for provisioning a device varies depending on the management mode you want to use.
