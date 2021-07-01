@@ -1,0 +1,350 @@
+#!/usr/bin/python3
+
+__DOC__ = """ talk to EMM server *at all* from ordinary Python
+
+See also https://github.com/google/android-management-api-samples/blob/master/notebooks/quickstart.ipynb
+
+"""
+
+# Copyright 2018 Google LLC.
+# © Trent W. Buck
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+
+# https://www.apache.org/licenses/LICENSE-2.0
+
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+######################################################################
+## Setup
+######################################################################
+# The base resource of your Android Management solution is a Google Cloud Platform project.
+# All other resources (`Enterprises`, `Devices`, `Policies`, etc) belong to the project, and
+# the project controls access to these resources.
+#
+# A solution is typically associated with a single project, but
+# you can create multiple projects if you want to restrict access to resources.
+#
+# You can create a project in the Google Cloud Console:
+#
+#   1. Go to the Cloud Console: https://console.cloud.google.com/cloud-resource-manager
+#   2. Click `CREATE PROJECT`.
+#   3. Enter your project details, and then click `CREATE`.
+#   4. Read and remember the project ID; run ./quickstart.py --project-id=X.
+
+
+import argparse
+import json
+import logging
+import os
+import pathlib
+import subprocess
+import urllib.parse
+
+import apiclient.discovery
+import google.oauth2.service_account
+import google_auth_oauthlib.flow
+import googleapiclient
+import jsmin                 # purely so policy file can have comments
+import pypass
+import requests
+
+parser = argparse.ArgumentParser(description=__DOC__)
+parser.add_argument(
+    'json_config_path',
+    nargs='?',
+    default=pathlib.Path('frobozz-policies.jsonc'),
+    type=pathlib.Path,
+    # example='android-management-api-client@frobozz.iam.gserviceaccount.com',
+    help="""
+    A file containing a JSON object with at least {"policies": {"my-cool-policy": ...}}.
+    If it contains "gcloud_project_id" you won't be prompted for one.
+    If it contains "enterprise_name" you won't be prompted to create one.
+    Note that "enterprise_name" is a token provided by Google, NOT one you make up.
+    If it contains "gcloud_service_account" it'll be looked up in ~/.password-store.
+    Otherwise, you will have to bounce through a browser every time.
+    """)
+parser.add_argument(
+    '--work-profile-mode', action='store_true',
+    help="""
+    Emit enrollment URL instead of enrollment QR code.
+    QR code is easier for "fully managed mode" (device only has restricted work account).
+    URL is easier for "work profile mode" (device has an unrestricted non-work account).
+    """)
+args = parser.parse_args()
+
+with args.json_config_path.open() as f:
+    json_config_object = json.loads(jsmin.jsmin(f.read()))
+
+if 'service_account' in json_config_object:
+    # first-time setup has already been done, so get an oauth token from the private key.
+    service_account_object = json.loads(
+        pypass.PasswordStore().get_decrypted_password(
+            json_config_object['service_account']).strip())
+    # Basic sanity checks
+    if service_account_object['type'] != 'service_account':
+        raise RuntimeError('wrong json')
+    if 'private_key' not in service_account_object:
+        raise RuntimeError('wrong json')
+    gcloud_project_id = service_account_object['project_id']
+    logging.debug('Project ID is: %s', gcloud_project_id)
+    androidmanagement = apiclient.discovery.build(
+        serviceName='androidmanagement',
+        version='v1',
+        cache_discovery=False,  # disable some stupid warning
+        credentials=google.oauth2.service_account.Credentials.from_service_account_info(
+            info=service_account_object,
+            scopes=['https://www.googleapis.com/auth/androidmanagement']))
+    logging.info('Authentication succeeded.')
+else:
+    # FIXME: CHANGE THESE MAGIC NUMBERS;
+    #        DO NOT HARD-CODE THEM IN A PUBLIC REPO!
+    # This is a public OAuth config, you can use it to run this guide, but
+    # please use different credentials when building your own solution.
+    service_account_object = {
+        'client_id':'882252295571-uvkkfelq073vq73bbq9cmr0rn8bt80ee.apps.googleusercontent.com',
+        'client_secret': 'S2QcoBe0jxNLUoqnpeksCLxI',
+        'auth_uri':'https://accounts.google.com/o/oauth2/auth',
+        'token_uri':'https://accounts.google.com/o/oauth2/token'
+    }
+    gcloud_project_id = input('What is the gcloud project ID (that runs your EMM service?): ')
+
+    # To create and access resources,
+    # you must authenticate with an account that has edit rights over your project.
+    # To start the authentication flow, run the cell below.
+    #
+    # When you build a server-based solution, you should create a
+    # service account so you don't need to authorize the access every time.
+    #
+    #     https://developers.google.com/android/management/service-account
+
+    # Create the API client.
+    androidmanagement = apiclient.discovery.build(
+        'androidmanagement', 'v1',
+        credentials=google_auth_oauthlib.flow.InstalledAppFlow.from_client_config(
+            scopes=['https://www.googleapis.com/auth/androidmanagement'],
+            client_config={'installed': service_account_object}
+        ).run_console())
+
+    print('\nAuthentication succeeded.')
+
+######################################################################
+## Create an enterprise
+######################################################################
+# An `Enterprise` resource binds an organization to your Android Management solution.
+# `Devices` and `Policies` both belong to an enterprise.
+# Typically, a single enterprise resource is associated with a single organization.
+# However, you can create multiple enterprises for the same organization based on their needs.
+# For example, an organization may want separate enterprises for its different departments or regions.
+#
+# To create an enterprise you need a Gmail account.
+# It MUST NOT already be associated with an enterprise.
+#
+# To start the enterprise creation flow, run the cell below.
+#
+# If you've already created an enterprise for this project,
+# you can skip this step and enter your enterprise name in the next cell.
+
+if 'enterprise_name' not in json_config_object:
+
+    # Generate a signup URL where the enterprise admin can signup with a Gmail
+    # account.
+    signup_url = androidmanagement.signupUrls().create(
+        projectId=gcloud_project_id,
+        callbackUrl='https://storage.googleapis.com/android-management-quick-start/enterprise_signup_callback.html'
+    ).execute()
+
+    print('Please visit this URL to create an enterprise:', signup_url['url'])
+
+    enterprise_token = input('Enter the code: ')
+
+    # Complete the creation of the enterprise and retrieve the enterprise name.
+    enterprise = androidmanagement.enterprises().create(
+        projectId=gcloud_project_id,
+        signupUrlName=signup_url['name'],
+        enterpriseToken=enterprise_token,
+        body={}
+    ).execute()
+
+    json_config_object['enterprise_name'] = enterprise['name']
+    print('\nYour enterprise name is', json_config_object['enterprise_name'])
+
+
+# Take note of the enterprise name so you can reuse it after you close this notebook.
+# If you already have an enterprise, you can enter the enterprise name in the cell below and run the cell.
+
+
+######################################################################
+## Create a policy
+######################################################################
+#
+# A `Policy` is a group of settings that determine the behavior of a managed device and apps installed thereon.
+# Each Policy resource represents a unique group of device and app settings and can be applied to one or more devices.
+# Once a device is linked to a policy, any updates to the policy are automatically applied to the device.
+#
+# To create a basic policy, run the cell below.
+# You'll see how to create more advanced policies later in this guide.
+
+for policy_name, policy_body in json_config_object['policies'].items():
+    # Example: "frobozz-DEADBE/policies/policy1"
+    # FIXME: probably doesn't quote silly enterprise names properly.
+    policy_path = f'{json_config_object["enterprise_name"]}/policies/{policy_name}'
+    androidmanagement.enterprises().policies().patch(
+        name=policy_path,
+        body=policy_body).execute()
+
+
+######################################################################
+## Do some queries
+######################################################################
+# Save to disk some notes about the current state, so
+# it can be poked around at later with jq(1).
+os.makedirs('cache', exist_ok=True)
+with open('cache/API-androidmanagement-v1.json', mode='w') as f:
+    resp = requests.get('https://androidmanagement.googleapis.com/$discovery/rest?version=v1')
+    resp.raise_for_status()
+    json.dump(
+        resp.json(),
+        f,
+        sort_keys=True,
+        indent=4)
+    del resp
+with open('cache/enterprises.json', mode='w') as f:
+    try:
+        json.dump(
+            androidmanagement.enterprises().list(
+                projectId=gcloud_project_id
+            ).execute(),
+            f,
+            sort_keys=True,
+            indent=4)
+    except googleapiclient.errors.HttpError:
+        json.dump(
+            'API call failed... due to "not generally available yet"???',
+            f,
+            sort_keys=True,
+            indent=4)
+with open('cache/devices.json', mode='w') as f:
+    json.dump(
+        androidmanagement.enterprises().devices().list(
+            parent=json_config_object['enterprise_name']).execute(),
+        f,
+        sort_keys=True,
+        indent=4)
+with open('cache/policies.json', mode='w') as f:
+    json.dump(
+        androidmanagement.enterprises().policies().list(
+            parent=json_config_object['enterprise_name']
+        ).execute(),
+        f,
+        sort_keys=True,
+        indent=4)
+
+
+######################################################################
+## Provision a device
+######################################################################
+# Provisioning refers to the process of enrolling a device with an enterprise,
+# applying the appropriate policies to the device, and
+# guiding the user to complete the set up of their device in accordance with those policies.
+# Before attempting to provision a device,
+# ensure that the device is running Android 6.0 or above.
+#
+# You need an enrollment token for each device that you want to provision (you can use the same token for multiple devices);
+# when creating a token you can specify a policy that will be applied to the device.
+
+# FIXME: this does enrollment for whatever the LAST POLICY IN THE LIST loop was.
+# Since "policies" is a dict, the order is random!
+# Move this crap inside the "for ... in policies" loop?
+enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
+    parent=json_config_object['enterprise_name'],
+    body={"policyName": policy_name}
+).execute()
+
+
+# Embed your enrollment token in either an enrollment link or a QR code, and then follow the provisioning instructions below.
+if args.work_profile_mode:
+    print('Please open this link on your device:',
+          'https://enterprise.google.com/android/enroll?et=' + enrollment_token['value'])
+else:
+    url = 'https://chart.googleapis.com/chart?' + urllib.parse.urlencode({
+              'cht': 'qr',
+              'chs': '500x500',
+              'chl': enrollment_token['qrCode']})
+    print('Please visit this URL to scan the QR code:', url)
+    subprocess.check_call(['xdg-open', url])
+
+
+# The method for provisioning a device varies depending on the management mode you want to use.
+#
+# Fully managed mode
+# ------------------------------------------------------------
+# In fully managed mode the entire device is managed and the device needs to be factory reset before setup.
+# To set up a device in fully managed mode you need to use a QR code.
+#
+# For devices running Android 7.0 or above:
+#
+# 1.  Turn on a new or factory-reset device.
+# 2.  Tap the same spot on the welcome screen six times to enter QR code mode.
+# 3.  Connect to a WiFi network.
+# 4.  Scan the QR code.
+#
+# For devices running Android 6.0:
+#
+# 1.  Turn on a new or factory-reset device.
+# 2.  Follow the setup wizard and enter your Wi-Fi details.
+# 3.  When prompted to sign in, enter **afw#setup**.
+# 4.  Tap Next, and then accept the installation of Android Device Policy.
+# 5.  Scan the QR code.
+#
+# Work profile mode
+# ------------------------------------------------------------
+# In work profile mode corporate apps and data are kept secure in a self-contained work profile
+# while the user keeps control of the rest of the device.
+# To set up a work profile you can either use a QR code or an enrollment link.
+#
+# Using the enrollment link:
+#
+# 1.  Make the link accessible on the device (send it via email or put it on a website).
+# 2.  Open the link.
+#
+# Or using the QR code:
+#
+# 1.  Go to Settings > Google.
+# 2.  Tap "Set up your work profile".
+# 3.  Scan the QR code.
+
+######################################################################
+## What's next?
+######################################################################
+# By now you should have a managed device configured with a basic policy, but
+# there's much more you can do with the Android Management API.
+#
+# First, we recommend exploring the range of available policies to build the right policy for your needs:
+#    https://developers.google.com/android/management/create-policy
+#
+# Next, explore other features of the Android Management API:
+#
+#  • Learn how to discover apps:
+#    https://developers.google.com/android/management/apps
+#
+#  • Set up Pub/Sub notifications
+#    https://developers.google.com/android/management/notifications
+#
+# Or start developing a server-based solution:
+#
+#  • Download the Android Management API client library for
+#
+#      :Java:   https://developers.google.com/api-client-library/java/apis/androidmanagement/v1
+#      :.NET:   https://developers.google.com/api-client-library/dotnet/apis/androidmanagement/v1
+#      :Python: https://developers.google.com/api-client-library/python/apis/androidmanagement/v1 or
+#      :Ruby:   https://developers.google.com/api-client-library/ruby/apis/androidmanagement/v1
+#
+#  • Create a service account
+#    https://developers.google.com/android/management/service-account

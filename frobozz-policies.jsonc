@@ -1,0 +1,95 @@
+// -*- mode: js; mode: json -*- Ref. https://github.com/komkom/jsonc
+{
+    "service_account": "android-management-api-client@frobozz.iam.gserviceaccount.com",
+    "enterprise_name": "enterprises/LC02kggfh1",
+    "policies": {
+        "empty-policy": { },
+
+        "wifi-locked-policy": {
+            "wifiConfigDisabled": true,
+            "openNetworkConfiguration": {
+                "NetworkConfigurations": [
+                    {
+                        "GUID": "cd9da76c-3e4d-4245-bd71-b6fea23ad576",
+                        "Name": "PrisonPC Tablet Network",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "SSID": "PrisonPC",
+                            "Security": "WPA-PSK",
+                            "Passphrase": "FIXME USE A PASSWORD VAULT HERE"
+                        }
+                    }
+                ]
+            }
+        },
+
+
+        "policy1": {
+            "applications": [
+                {
+                    "packageName": "com.google.samples.apps.iosched",
+                    "installType": "BLOCKED"
+                },
+                {
+                    "packageName": "com.android.chrome",
+                    "installType": "FORCE_INSTALLED"
+                },
+                {"installType": "AVAILABLE", "packageName": "com.google.android.GoogleCamera"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.adm"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.authenticator2"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.books"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.chromecast.app"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.classroom"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.docs"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.sheets"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.slides"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.dynamite"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.fitness"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.googleassistant"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.kids.familylink"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.mapslite"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.meetings"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.messaging"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.navlite"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.nbu.files"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.paidtasks"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photos"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photos.scanner"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.podcasts"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.searchlite"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.subscriptions.red"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.tachyon"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.tasks"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.translate"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.vega"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.walletnfcrel"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.creator"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.kids"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.music"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.calculator"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.calendar"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.contacts"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.dialer"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.googlequicksearchbox"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.inputmethod.latin"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.keep"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.play.games"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.projection.gearhead"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.projection.gearhead.phonescreen"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.street"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.talk"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.tv.remote"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.wearable.app"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.youtube"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.youtube.tvkids"},
+                {"installType": "AVAILABLE", "packageName": "com.google.ar.lens"},
+                {"installType": "AVAILABLE", "packageName": "com.google.earth"},
+                {"installType": "AVAILABLE", "packageName": "com.google.tango.measure"},
+                {"installType": "AVAILABLE", "packageName": "com.niksoftware.snapseed"}
+            ],
+            "factoryResetDisabled": true,
+            "debuggingFeaturesAllowed": false
+        }
+    }
+}

@@ -1,0 +1,5 @@
+#! /usr/bin/make -f
+export PYBUILD_NAME=lobata-hassles
+export PYBUILD_SYSTEM=flit
+%:
+	dh $@ --buildsystem=pybuild
