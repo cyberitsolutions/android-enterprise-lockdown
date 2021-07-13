@@ -1038,7 +1038,7 @@
             //
             // UPDATE: according to Settings > Security > Encryption & Credentials, Lenovo M1 is encrypted by default.
             // UPDATE: according to Settings > Security > Encryption & Credentials, Laser MID1089IPS is encrypted by default.
-            "encryptionPolicy": "ENCRYPTION_POLICY_UNSPECIFIED",
+            "encryptionPolicy": "ENABLED_WITHOUT_PASSWORD",
 
 
             // If you enroll the device immediately after factory
@@ -1062,6 +1062,47 @@
                 "personalApplications": [],  // no apps/packages are whitelisted.
                 "personalPlayStoreMode": "ALLOWLIST",  // Only apps set to AVAILABLE in personalApplications may be installed in the personal profile.
                 "screenCaptureDisabled": true},
+            "crossProfileCallerIdDisabled": true,  // ??? (not documented, found in com.android.apps.work.cloudpc)
+            "crossProfileContactsSearchDisabled": true,  // ??? (not documented, found in com.android.apps.work.cloudpc)
+            "crossProfileCopyPasteDisabled": true,  // ??? (not documented, found in com.android.apps.work.cloudpc)
+            "crossProfileDataSharingPolicies": {  // ??? (not documented, found in com.android.apps.work.cloudpc)
+                "calendarPolicy": "DISABLED",
+                "contactsPolicy": "DISABLED",
+                "callerIdPolicy": "DISABLED",
+                "copyPastePolicy": "DISABLED",
+                "widgetProviderPolicy": "DISABLED"},
+            // "crossProfilePolicies": {  // ??? (not documented, found in com.android.apps.work.cloudpc)
+            //     "showWorkContactsInPersonalProile": "???",
+            //     "crossProfileCopyPaste": "???",
+            //     "crossProfileDataSharing": "???"},
+
+            // Open Settings > Security > Device Policy > \vdots > Device Details.
+            // Then Click on "Device Info" until debug mode unlocks.
+            // Then \vdots > All policies.
+            // Then you can see the policy raw setting JSON as it reaches the tablet.
+            // I saw this option in that GUI which wasn't mentioned in
+            // https://androidmanagement.googleapis.com/$discovery/rest?version=v1
+            // What happens when I set it???
+            "periodicPullForUnmeteredNetworkInHour": 1,  // default 4
+            "periodicPullForMeteredNetworkInHour": 6,    // default 24
+
+            // TESTING UNDOCUMENTED FEATURE FROM ANDROID 8 THAT MIGHT STILL WORK
+            // "caCerts": [{
+            //     // "certificate": "MIIEXDCCAxSgAwIBAgIEUy/IjzANBgkqhkiG9w0BAQsFADCBgjEnMCUGA1UEAxMeUHJpc29uUEMgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MSMwIQYDVQQKExpDeWJlciBJdCBTb2x1dGlvbnMgUHR5IEx0ZDESMBAGA1UEBxMJTWVsYm91cm5lMREwDwYDVQQIEwhWaWN0b3JpYTELMAkGA1UEBhMCQVUwIhgPMjAxNDAzMjQwNTU0MjNaGA85OTk5MTIzMTIzNTk1OVowgYIxJzAlBgNVBAMTHlByaXNvblBDIENlcnRpZmljYXRlIEF1dGhvcml0eTEjMCEGA1UEChMaQ3liZXIgSXQgU29sdXRpb25zIFB0eSBMdGQxEjAQBgNVBAcTCU1lbGJvdXJuZTERMA8GA1UECBMIVmljdG9yaWExCzAJBgNVBAYTAkFVMIIBUjANBgkqhkiG9w0BAQEFAAOCAT8AMIIBOgKCATEAnGPlb8flD4JXh1P3f0t2/zAAjS8MpBPpeJcZSatc6zm8zR51mc/4jwE0+HqKphOWOOoNKrH1tsAWowP3lHr0C/xTYa0IC0HL3WHVym+6R/lUvIpzrNeo8+khHN15vWAD9PyDg32BmlTCGFjYxDUazu3Gun4yPf5EA7YIEH11WBhlyq9uAwHyoTm732s1qqor/Pn269W7HW9uwRJeuVD/2dztKApgtj36ZMu8OcMsVsGSEFWHFq17cU8SehXXExFKWJM8KqpwjbS80N/tTaBqw5pz77K34oNwrqTHMapp3xdi0RPSsdMU2PwiFAnWJcxLVlheGSGQR6jiyPHmdiBlLkU1DbXKli16TU8x7NIYscTo+K1h94bZ8pg36mk9Qt3KzroJr7EpK7NcIUZQNrdYYQIDAQABo3QwcjAPBgNVHRMBAf8EBTADAQH/MC8GA1UdEQQoMCaBJHN1cHBvcnQtcHJpc29ucGMtY2FjZXJ0QGN5YmVyLmNvbS5hdTAPBgNVHQ8BAf8EBQMDBwQAMB0GA1UdDgQWBBSu51ddABlTD3Xg5iL/38fXqP5R8DANBgkqhkiG9w0BAQsFAAOCATEAJ7odxH6n8zTd4QFYUTxnweWH+N2dYrxPafsoV3LtVKhSzc2j5NzttHLOvHUwxjAa7xDwbTgQ9axOSD3jSyes+7yGW5iX9G3wuOuC5nPUj89TgDLd43KN20DCUMNei/SqCPxl+35vo/h3L89IhDYLnyA1wDZ9jtfwer51CFJaX2c3Hw9zbpaCHLarLVjvokSO9neTPfCiPAH1rmA24nz9XGENn1Pl7P4+OrixLRRs46xBpx5RRRjPcJJctDds2k4tjqtrM2czjPBMIJgfSyFijU5zB8AUgHtQ52HM4aNXJqycYlNTcF5GYZbTLBIWm1SmlCLqEzNueCIGEuJ3B15RG6KElnGtHyh03XJ13PM2J9+Yq2t8OOpL8ItdYOLlTYNl67OCKIbUXhfYCQk2ByRaKQ==",
+            //     "name": "Wonko the Sane"
+            // }],
+
+            // "credentialsConfigDisabled": true,  // user cannot Settings>Security>Credentials>Install from SD card (and other options in this screen)
+
+            // FIXME: these aren't tested properly yet.
+            "createWindowsDisabled": true,  // ???
+            "deviceWideUnknownSourcesBlocked": true,
+            "ensureVerifyAppsEnabled": true,
+            "fullDiskEncryptionEnabled": true,
+            "globalDnsOverTlsDisabled": true,
+            "shakeFeedbackAndResetEnabled": false,
+            "lockTaskSettingsAllowed": false,
+
 
             // WARNING: DO NOT SET THIS TO false WITHOUT A BLOODY GOOD REASON.
             // SETTING THIS TO FALSE MAKES IT POSSIBLE TO BRICK A TABLET.
