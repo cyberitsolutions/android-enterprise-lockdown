@@ -128,6 +128,8 @@
             //   If you don't explicitly ban them, they're allowed.
             //   Each vendor pre-installs different apps (e.g. Lenovo ships com.motorola.demo and org.codeaurora.snapcam).
             //   So you have to check and blacklist apps for EVERY FUCKING DEVICE SEPARATELY.
+            //
+            //   UPDATE: conflicting circumstantial evidence suggests you might need to wait longer and/or reboot before YT Music disappears?
             "applications": [
                 // NOTE: these ApplicationPolicy properties are not interesting:
                 //
@@ -261,10 +263,12 @@
                 // ============================================================
                 // Launcher (Home App)
                 // ============================================================
+                // UPDATE: INSTEAD OF THIS, SETTING kioskCustomLauncherEnabled GIVES A CONSISTENT (IF BASIC) LAUNCHER.
+                //         NOTE THAT IT ALSO BLOCKS PLAY STORE AND SETTINGS, SO ANNOYING DURING DEVELOPMENT/TESTING.
                 {"installType": "BLOCKED", "packageName": "com.android.launcher3"},  // not in play store; cannot be removed; default on Laser MID1089IPS; default on Android 4.4
                 {"installType": "BLOCKED", "packageName": "com.tblenovo.launcher"},  // not in play store; cannot be removed; default on on Lenovo M1 gen1
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.nexuslauncher"},  // cannot be installed; default on Google Pixel
-                {"installType": "REQUIRED_FOR_SETUP", "packageName": "amirz.rootless.nexuslauncher"},  // backport of com.google.android.apps.nexuslauncher
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.nexuslauncher"},  // cannot be installed; default on Google Pixel
+                {"installType": "BLOCKED", "packageName": "amirz.rootless.nexuslauncher"},  // backport of com.google.android.apps.nexuslauncher --- UPDATE: irrelevant if we use kioskCustomLauncherEnabled=true
                 {"installType": "BLOCKED", "packageName": "ch.deletescape.lawnchair.plah"},  // mostly OK, similar to amirz.rootless.nexuslauncher but slightly more weird
                 {"installType": "BLOCKED", "packageName": "ademar.textlauncher"},  // TOO minimalist
                 {"installType": "BLOCKED", "packageName": "app.olauncher"},  // TOO minimalist
@@ -340,8 +344,8 @@
                 // ============================================================
                 // Search (NOTE: com.google.chrome might be sufficient)
                 // ============================================================
-                {"installType": "BLOCKED", "packageName": "com.google.android.googlequicksearchbox"},  // Google
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.searchlite"},  // Google Go
+                {"installType": "BLOCKED", "packageName": "com.google.android.googlequicksearchbox", "disabled": true},  // Google
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.searchlite", "disabled": true},  // Google Go -- not needed if kioskCustomLauncherEnabled=true
                 {"installType": "BLOCKED", "packageName": "com.duckduckgo.mobile.android"},  // Duck Duck Go (FIXME: this is a browser as well???)
 
 
@@ -349,12 +353,13 @@
                 // Calender / Appointments
                 // ============================================================
                 {"installType": "BLOCKED", "packageName": "com.google.android.calendar"},  // You can LOOK at an EMPTY calendar, but you need a gmail account (or similar) to actually CREATE an appointment!
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.calendar"},
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.calendar"},  // UPDATE: irrelevant if kioskCustomLauncherEnabled -- no login, so no point storing appointments on tablet
 
                 // ============================================================
                 // Clock / Alarm Clock
                 // ============================================================
-                {"installType": "FORCE_INSTALLED", "packageName": "com.android.deskclock"},  // Clock; pre-installed on Laser & Lenovo; not in Play Store, not in F-Droid
+                // UPDATE: irrelevant if kioskCustomLauncherEnabled=true -- no point saving "wake me at 5AM" if kiosk
+                {"installType": "BLOCKED", "packageName": "com.android.deskclock", "disabled": true},  // Clock; pre-installed on Laser & Lenovo; not in Play Store, not in F-Droid
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.clock"},  // basically fine, but first-party one is also fine
 
                 // ============================================================
@@ -372,6 +377,7 @@
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x50bb90cffc907768"},  // "Mail" (https://webmail/)
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xf5f403c242677721"},  // "Lorem Ipsum" (test app)
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x793f12cf8a1f5dd2"},  // "RTSP Test App"
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x90f3691f2c466fd4"},  // CA Cert Test App
 
                 // ============================================================
                 // Sound Recorder / Editor
@@ -387,6 +393,12 @@
                 {"installType": "BLOCKED", "packageName": "com.google.android.GoogleCamera"},  // Google Camera, NOT_COMPATIBLE_WITH_DEVICE
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.camera"},  // saves under "DCIM" instead of "Camera" sometimes?
                 {"installType": "BLOCKED", "packageName": "org.codeaurora.snapcam"},        // Not in Play Store, not in F-Droid, bundled on Lenovo M1
+
+                {"installType": "BLOCKED", "packageName": "org.jitsi.meet"},  // works fine, needs internet, needs camera/microphone
+                {"installType": "BLOCKED", "packageName": "com.skype.raider"},  // Skype (not Skype for Business); installed by default on Lenovo M1 gen1
+                {"installType": "BLOCKED", "packageName": "com.microsoft.office.lync15"},  // Skype for Business -- NEEDS LOGIN
+
+
                 // ============================================================
                 // Photo Gallery (image viewer)
                 // ============================================================
@@ -430,19 +442,20 @@
                 // ============================================================
                 // Contacts / Address Book
                 // ============================================================
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.contacts"},  // Gmail account REQUESTED
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.contacts"},
+                // UPDATE: irrelevant if kioskCustomLauncherEnabled=true -- no point saving email addresses if kiosk
+                {"installType": "BLOCKED", "packageName": "com.google.android.contacts"},  // Gmail account REQUESTED
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.contacts"},
 
 
                 // ============================================================
                 // Maps
                 // ============================================================
-                {"installType": "FORCE_INSTALLED", "packageName": "net.osmand"},  // OsmAnd (OpenStreetMap for Android)
+                {"installType": "BLOCKED", "packageName": "net.osmand"},  // OsmAnd (OpenStreetMap for Android) -- FIXME: review?
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.maps"},  // Maps
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.mapslite"},  // Maps Go
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.mapslite"},  // Maps Go -- FIXME: review?
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.navlite"},  // Navigation for Google Maps Go — is this ONLY for automobiles?
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.street"},  // Street View
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.earth"},
+                {"installType": "BLOCKED", "packageName": "com.google.android.street"},  // Street View -- FIXME: review?
+                {"installType": "BLOCKED", "packageName": "com.google.earth"},  // FIXME: review?
 
 
                 // ============================================================
@@ -451,18 +464,18 @@
                 // If you install docs.editors.docs, you can "list recent files", but long-press "New doc" doesn't work.
                 // The actual editor for all three lives in com.google.android.apps.docs.
                 // We have to install the other three to force accountlessmode????
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.docs",
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs"},
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.docs",
                  "managedConfiguration": {
                      "PrintingEnabled": true,
                      "enableAccountLessMode": true}  // run on devices without Google accounts
                 },
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.sheets",
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.sheets",
                  "managedConfiguration": {
                      "PrintingEnabled": true,
                      "enableAccountLessMode": true}  // run on devices without Google accounts
                 },
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.slides",
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.docs.editors.slides",
                  "managedConfiguration": {
                      "PrintingEnabled": true,
                      "enableAccountLessMode": true}  // run on devices without Google accounts
@@ -525,13 +538,13 @@
                 // "Simple" apps – dev house recommended by mike — https://play.google.com/store/apps/dev?id=9070296388022589266
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.applauncher"},  // can't be set at home app, so fuck it
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.dialer"}, // NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.draw"},
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.draw"},  // FIXME: review
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.filemanager"},  // not useful/interesting
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.flashlight"},  // on Lenovo says NOT_COMPATIBLE_WITH_DEVICE; on Laser you can get flashlight from swipe-down swipe-down pencil-icon then drag "Torch" from the available box up into the active box.  If this app is installed, "Flashlight" shows up instead, and takes longer to respond to click.
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.musicplayer"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.notes"},
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.musicplayer"},  // FIXME: review
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.notes"},  // FIXME: review
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.smsmessenger"}, // NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "FORCE_INSTALLED", "packageName": "com.simplemobiletools.voicerecorder"},
+                {"installType": "BLOCKED", "packageName": "com.simplemobiletools.voicerecorder"},  // FIXME: review
 
                 // ============================================================
                 // INSTALLED BY LASER AND/OR LENOVO???
@@ -637,7 +650,7 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.timerswitch"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.timezone.updater"},
                 {"installType": "BLOCKED", "packageName": "com.android.traceur"},  // System Tracing -- debugging tool??? --- FIXME: "nonComplianceReason": "INVALID_VALUE" ??? --- accessible via Activity Launcher as System Tracing > System Tracing > com.android.traceur.MainTvActivity.  Thereafter, can be launched from swipe-down-from-top config tray.
-                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.vending"},  // Google Play Store --- if you try to remove this, it simply downgrades to the version installed in the ROM (i.e. like you factory-reset just this app).  It's still usable at all times, AND appAutoUpdatePolicy causes it to constantly be upgraded and downgrade in a loop.  Set to REQUIRED_FOR_SETUP so it's upgraded during enrollment, before the user can interact with android at all.
+                {"installType": "AVAILABLE", "packageName": "com.android.vending"},  // Google Play Store --- if you try to remove this, it simply downgrades to the version installed in the ROM (i.e. like you factory-reset just this app).  It's still usable at all times, AND appAutoUpdatePolicy causes it to constantly be upgraded and downgrade in a loop.  Set to REQUIRED_FOR_SETUP so it's upgraded during enrollment, before the user can interact with android at all. --- UPDATE: if you set this to "REQUIRED_FOR_SETUP", enrollment hangs while installing other REQUIRED_FOR_SETUP packages (probably forever, but I only tested for about 5 hours).
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.vpndialogs"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaper.livepicker"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.wallpaperbackup"},
@@ -744,7 +757,6 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteclient"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.uimremoteserver"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.wfd.service"},
-                {"installType": "BLOCKED", "packageName": "com.skype.raider"},  // Skype (not Skype for Business); installed by default on Lenovo M1 gen1
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awlogsettings"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.awmanager"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.softwinner.dragonaging"},
@@ -765,17 +777,16 @@
                 // ============================================================
                 // MICROSOFT -- https://play.google.com/store/apps/dev?id=6720847872553662727
                 // ============================================================
-                {"installType": "BLOCKED", "packageName": "com.microsoft.office.lync15"},  // Skype for Business -- NEEDS LOGIN
 
 
                 // SECUSO privacy-friendly research group https://play.google.com/store/apps/dev?id=4797307650791917378
                 {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlyrulerapp"},  // WORKS, BUT NOT USEFUL -- just displays centimetre/inch ruler and/or degree/radian protractor onscreen
                 {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlybackup"},  // Not useful
-                {"installType": "AVAILABLE", "packageName": "org.secuso.aktivpause"},  // "take a break and do this exercise" thing.  FIXME: useful or useless??
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysketching"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyfoodtracker"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyfinancemanager"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlypausinghealthily"},
+                {"installType": "BLOCKED", "packageName": "org.secuso.aktivpause"},  // "take a break and do this exercise" thing.  FIXME: useful or useless??
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlysketching"},  // FIXME: review?
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlyfoodtracker"},  // FIXME: review?
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlyfinancemanager"},  // FIXME: review?
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlypausinghealthily"},  // FIXME: review?
 
 
                 // ============================================================
@@ -816,10 +827,10 @@
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.podcasts"},  // REQUIRES com.google.android.googlequicksearchbox
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.googleassistant"},  // REQUIRES com.google.android.googlequicksearchbox; Gmail account REQUESTED; Assistant
                 // Random apps "by Google" I found in the app store -- DID NOT APPEAR IN THE APP LIST EVEN WHEN INSTALLED???
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.messaging"},  // Messages - NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.nbu.files"},  // Files - "save space by deleting things" but also "share files with friends", therefore fuck that
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.messaging"},  // Messages - NOT_COMPATIBLE_WITH_DEVICE
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.nbu.files", "disabled": true},  // Files - "save space by deleting things" but also "share files with friends", therefore fuck that
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos.scanner"},  // PhotoScan by Google - NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.music"},   // YT Music -- with modifyAccountsDisabled, can only play files locally installed.  I downloaded an MP3 from https://3zzz.com.au/ (in Chrome), and YT Music app could "see" it.  If you're not SAVING files locally, you can still just listen to audio directly in Chrome.
+                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.music", "disabled": true},   // YT Music -- with modifyAccountsDisabled, can only play files locally installed.  I downloaded an MP3 from https://3zzz.com.au/ (in Chrome), and YT Music app could "see" it.  If you're not SAVING files locally, you can still just listen to audio directly in Chrome.
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.latin"},  // gboard -- the onscreen keyboard.  Now includes non-Latin input e.g. Hindi.  Those are added via Settings app.
                 {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead"},  // Android Auto - Google Maps, Media & Messaging --- wrong android version
                 {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead.phonescreen"},
