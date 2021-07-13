@@ -4,6 +4,11 @@
     "enterprise_name": "enterprises/LC02kggfh1",
     "webApps": [
         {
+            "title": "CACert Test Page",
+            "startUrl": "https://abrahall.id.au/~mike/tablet-test.html",
+            "displayMode": "STANDALONE"
+        },
+        {
             "title": "RTSP Test Page",
             "startUrl": "https://www.wowza.com/html/mobile.html",
             "displayMode": "STANDALONE"
