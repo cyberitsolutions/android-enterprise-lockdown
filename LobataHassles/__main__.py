@@ -141,9 +141,9 @@ else:
 for policy in json_config_object.get('policies', {}).values():
     for networkConfiguration in policy.get('openNetworkConfiguration', {}).get('NetworkConfigurations', []):
         if 'Passphrase' in networkConfiguration.get('WiFi', {}):
+            logging.info('Asking pass(1) for WiFi PSK for %s', networkConfiguration['WiFi']['SSID'])
             networkConfiguration['WiFi']['Passphrase'] = pypass.PasswordStore().get_decrypted_password(
                 f"android-wifi-PSK/{networkConfiguration['WiFi']['SSID']}").strip()
-del policy, networkConfiguration
 
 # Used later to revert this hack during dumping/caching.
 # Symmetry with the above loop.
