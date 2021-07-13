@@ -390,8 +390,9 @@
                 // ============================================================
                 // Photo Gallery (image viewer)
                 // ============================================================
+                // UPDATE: using photosgo as the rtp:// consumer?
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos"},  // Prefer the "photos go" lite version???
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go
+                // {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go  --- UPDATE: handled under IPTV
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.gallery"},  // doesn't support SVG, even though com.simplemobiletools.sketch makes those??
 
                 // ============================================================
@@ -406,8 +407,17 @@
                 // For now we think this is either something that can view MPEG-TS inside RTP inside multicast UDP (i.e. vlc)
                 // *OR* something that consumes that and then emits MPEG-TS inside HTTP inside unicast TCP to localhost.
                 // in the latter case, the viewer would be plain org.android.chrome.
-                {"installType": "FORCE_INSTALLED", "packageName": "org.videolan.vlc"},  // vlc -- FIXME: includes e.g. smb client and browser!!
+                {"installType": "BLOCKED", "packageName": "org.videolan.vlc"},  // vlc -- FIXME: includes e.g. smb client and browser!!
                 {"installType": "BLOCKED", "packageName": "org.videolan.vlcbenchmark"},  // FIXME: remove (debugging only) -- needs 4GB of downloads and 3 hours of runtime!
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go (THIS CAN ALSO PLAY RTSP:// VIDEOS)
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos"},  // Prefer the "photos go" lite version???  (THIS CAN ALSO PLAY RTSP:// VIDEOS)
+
+                // 15:47 <twb> Interesting: when I opened that "RTSP Test App" (https://www.wowza.com/html/mobile.html) then click the rtsp:// URL
+                // 15:47 <twb> it says "open with Gallery Go, or VLC?"
+                // 15:47 <twb> Gallery Go works, it plays the video OK
+                // 15:47 <twb> Not sure if that means we can skip vlc for IPTV
+                // 15:48 <ron> that is interesting
+
                 // ============================================================
                 // Video Editor
                 // ============================================================
