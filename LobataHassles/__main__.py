@@ -77,6 +77,13 @@ parser.add_argument(
     QR code is easier for "fully managed mode" (device only has restricted work account).
     URL is easier for "work profile mode" (device has an unrestricted non-work account).
     """)
+parser.add_argument(
+    '--enrollment-policy-name',
+    help="""
+    At the end of this garbage script, it generates an enrollment QR code for SOME policy.
+    Which one is semi-random.  To force a specific one, use this.
+    e.g. --enrollment-policy-name=policy1
+    """)
 parser.add_argument('--debug', dest='logging_level', action='store_const', const=logging.DEBUG, default=logging.NOTSET)
 parser.add_argument('--verbose', dest='logging_level', action='store_const', const=logging.INFO, default=logging.NOTSET)
 args = parser.parse_args()
@@ -84,6 +91,13 @@ logging.getLogger().setLevel(args.logging_level)
 
 with args.json_config_path.open() as f:
     json_config_object = json.loads(jsmin.jsmin(f.read()))
+
+# Sanity check
+if args.enrollment_policy_name:
+    if args.enrollment_policy_name not in json_config_object['policies']:
+        raise RuntimeError('Bogus enrollment policy name',
+                           args.enrollment_policy_name,
+                           json_config_object['policies'].keys())
 
 if 'service_account' in json_config_object:
     # first-time setup has already been done, so get an oauth token from the private key.
@@ -404,7 +418,7 @@ for enterprise in merged_pages(
 # https://developers.google.com/android/management/reference/rest/v1/enterprises.enrollmentTokens#EnrollmentToken
 enrollment_token = androidmanagement.enterprises().enrollmentTokens().create(
     parent=json_config_object['enterprise_name'],
-    body={"policyName": policy_name,
+    body={"policyName": args.enrollment_policy_name or policy_name,
           'duration': f'{60 * 60 * 24 * 90}s',  # maximum duration (90 days, in seconds)
           }
 ).execute()
