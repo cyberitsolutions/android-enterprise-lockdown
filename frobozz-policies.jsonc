@@ -100,6 +100,7 @@
             //"kioskCustomLauncherEnabled": true,  // user cannot open Play Store or Settings
             "keyguardDisabled": true,  // user cannot lock screen
 
+            //"wifiConfigDisabled": true,
             "openNetworkConfiguration": {
                 "NetworkConfigurations": [
                     // {
