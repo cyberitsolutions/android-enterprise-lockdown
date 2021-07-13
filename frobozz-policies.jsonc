@@ -84,6 +84,14 @@
                             "Security": "WPA-PSK",
                             "Passphrase": null}}]},  // script fetches PSK from pypass.
 
+            // FIXME: If I enable this, then when I go BACK to the enrollment network, the proxy doesn't exist there.
+            //        So I can never update the policy -- I have to do a full factory reset!
+            //        This is super annoying!
+            "recommendedGlobalProxy": {
+                "host": "proxy.lan", "port": "3128",
+                // "pacUri": "http://proxy.lan/proxy.pac",
+                "excludedHosts": ["*.lan"]},
+
             "networkEscapeHatchEnabled": true},
 
         "policy1": {
