@@ -138,6 +138,7 @@
                 // Web Browser
                 // ============================================================
                 {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",  // Chrome -- REQUESTS gmail account
+                 "disabled": false,  // if we disable chrome, it also breaks all webApps.
                  "managedConfiguration": {
                      "HomepageLocation": "https://prisonpc.com/",  // FIXME: change to https://prisonpc.lan/ in final version
                      "AlternateErrorPagesEnabled": true,  // NOTE: I couldn't get this to behave differently on a generic 404 message.
@@ -148,7 +149,7 @@
                      "PrintingEnabled": true,
                      // "AppCacheForceEnabled": ???,  // DEAD: https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache
                      "ForceGoogleSafeSearch": false,  // FIXME
-                     // "ForceYouTubeRestrict": ???,  // FIXME
+                     "ForceYouTubeRestrict": 2,  // user can't see porn on youtube (even if youtube is allowed)
                      // "SafeBrowsingProtectionLevel": ???,  // FIXME
                      // "PasswordManagerEnabled": ???,  // FIXME
                      // "PasswordLeakDetectionEnabled": ???,  // FIXME
