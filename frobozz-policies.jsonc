@@ -3,6 +3,78 @@
     "service_account": "android-management-api-client@frobozz.iam.gserviceaccount.com",
     "enterprise_name": "enterprises/LC02kggfh1",
     "webApps": [
+        // ??? cottage-orders
+        // ??? vocal/FantasticPhonics-adult/fantasticphonics/
+        // ??? koha.lan
+        {
+            "title": "ACT Law Handbook",
+            "startUrl": "https://austlii.community/foswiki/ACTLawHbk",
+            "displayMode": "STANDALONE"
+        },
+        {
+            "title": "ACT Corrective Services",
+            "startUrl": "https://correctiveservices.act.gov.au/",
+            "displayMode": "STANDALONE"
+        },
+        {
+            "title": "Report historic sexual assault",
+            "startUrl": "https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache",
+            "displayMode": "STANDALONE"
+        },
+        {
+            "title": "Enrol to vote as a prisoner",
+            "startUrl": "https://formupload.aec.gov.au/Form?FormId=prisoner",
+            "displayMode": "STANDALONE"
+        },
+
+        {
+            "title": "Legal Aid ACT: Publications",
+            "startUrl": "https://legalaidact.org.au/what-we-do/legal-information-education/publications",
+            "displayMode": "STANDALONE"
+        },
+        // {
+        //     "title": "FIXME",
+        //     "startUrl": "https://legalanswers.sl.nsw.gov.au/hot-topics",
+        //     "displayMode": "STANDALONE"
+        // },
+        {
+            "title": "The Law Handbook: your practical guide to the law in NSW",
+            "startUrl": "https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw",
+            "displayMode": "STANDALONE"
+        },
+        {
+            "title": "Legislation Register (ACT)",
+            "startUrl": "https://legislation.act.gov.au",
+            "displayMode": "STANDALONE"
+        },
+        {
+            "title": "Legislation Register (Federal)",
+            "startUrl": "https://legislation.gov.au",
+            "displayMode": "STANDALONE"
+        },
+        {
+            "title": "COVID-19 information and advice in the ACT",
+            "startUrl": "https://www.covid19.act.gov.au",
+            "displayMode": "STANDALONE"
+        },
+        {
+            "title": "Project Gutenberg: over 60,000 free eBooks",
+            "startUrl": "https://www.gutenberg.org/",
+            "displayMode": "STANDALONE"
+        },
+        // FIXME: this redirects now to https://fls.org.au/, which is not whitelisted.
+        // {
+        //     "title": "FIXME",
+        //     "startUrl": "https://www.lawhandbook.org.au",
+        //     "displayMode": "STANDALONE"
+        // },
+        {
+            "title": "ACT Charter of Rights for Victims of Crime: Online Survey",
+            "startUrl": "https://www.surveymonkey.com/r/QR7W7FD",
+            "displayMode": "STANDALONE"
+        },
+
+
         {
             "title": "CACert Test Page",
             "startUrl": "https://abrahall.id.au/~mike/tablet-test.html",

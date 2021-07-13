@@ -40,6 +40,7 @@ See also https://github.com/google/android-management-api-samples/blob/master/no
 
 
 import argparse
+import base64
 import json
 import logging
 import os
@@ -240,6 +241,19 @@ for policy_name, policy_body in json_config_object['policies'].items():
 
 # Ref. https://colab.research.google.com/github/google/android-management-api-samples/blob/master/notebooks/web_apps.ipynb
 
+# Google requires inline base64 PNG images.
+# Let's just use URLs because fuck that.
+# UPDATE: austlii.edu.au returns 200 to firefox, but 401 to python requests.
+# Therefore, double fuck it --- I'll commit icons to git.
+icon_dir = pathlib.Path('icons')
+for webApp in json_config_object.get('webApps', []):
+    if 'icons' not in webApp:
+        icon_path = (icon_dir / webApp['title']).with_suffix('.png')
+        if icon_path.exists():
+            logging.debug('Slurping icon from disk: %s', icon_path)
+            with icon_path.open(mode='rb') as f:
+                webApp['icons'] = [{'imageData': base64.urlsafe_b64encode(f.read()).decode('UTF-8')}]
+
 # Unlike policy, patch() won't implicitly create a webapp.
 # Instead we must "PATCH if in LIST else CREATE".
 # This mirrors SQL's "UPDATE if SELECT else INSERT".
@@ -256,7 +270,8 @@ for new_webApp in json_config_object['webApps']:
         # Therefore if old_webApp == new_webApp, do nothing.
         # Except that old_webApp has some auto-populated fields, so
         # only compare startUrl/title/displayMode.
-        if all(old_webApp[k] == new_webApp[k] for k in new_webApp):
+        # UPDATE: FIXME: when I upload a webApp['icons'], it isn't there when I query it back.  Is it broken during upload, or download?
+        if all(old_webApp.get(k) == v for k, v in new_webApp.items()):
             logging.debug('Exists and unchanged, so call nothing')
             continue
         logging.debug('Exists, so call patch()')
