@@ -3,102 +3,105 @@
     "service_account": "android-management-api-client@frobozz.iam.gserviceaccount.com",
     "enterprise_name": "enterprises/LC02kggfh1",
     "webApps": [
+        // UPDATE: THESE "URL WHITELIST" WEBAPPS BASICALLY WORK, BUT
+        //   1. THERE ARE TOO MANY OF THEM
+        //   2. THEIR NAMES ARE TRUNCATED IN THE GUI TO ABOUT 20 LETTERS.
+        //   3. THEY MAKE IT HARDER TO SEE "CHROME" ICON.
+        // THEREFORE I THINK WE SHOULD STICK WITH EARLIER IDEA, WHICH
+        // IS BASICALLY THE SAME AS EXISTING https://PrisonPC/Bookmarks
+        // LEAVE ONE OR TWO AS EXAMPLES.
         // ??? cottage-orders
         // ??? vocal/FantasticPhonics-adult/fantasticphonics/
         // ??? koha.lan
-        {
-            "title": "ACT Law Handbook",
-            "startUrl": "https://austlii.community/foswiki/ACTLawHbk",
-            "displayMode": "STANDALONE"
-        },
-        {
-            "title": "ACT Corrective Services",
-            "startUrl": "https://correctiveservices.act.gov.au/",
-            "displayMode": "STANDALONE"
-        },
-        {
-            "title": "Report historic sexual assault",
-            "startUrl": "https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache",
-            "displayMode": "STANDALONE"
-        },
-        {
-            "title": "Enrol to vote as a prisoner",
-            "startUrl": "https://formupload.aec.gov.au/Form?FormId=prisoner",
-            "displayMode": "STANDALONE"
-        },
-
-        {
-            "title": "Legal Aid ACT: Publications",
-            "startUrl": "https://legalaidact.org.au/what-we-do/legal-information-education/publications",
-            "displayMode": "STANDALONE"
-        },
         // {
-        //     "title": "FIXME",
-        //     "startUrl": "https://legalanswers.sl.nsw.gov.au/hot-topics",
+        //     "title": "ACT Law Handbook",
+        //     "startUrl": "https://austlii.community/foswiki/ACTLawHbk",
+        //     "displayMode": "STANDALONE"
+        // },
+        // {
+        //     "title": "ACT Corrective Services",
+        //     "startUrl": "https://correctiveservices.act.gov.au/",
+        //     "displayMode": "STANDALONE"
+        // },
+        // {
+        //     "title": "Report historic sexual assault",
+        //     "startUrl": "https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache",
         //     "displayMode": "STANDALONE"
         // },
         {
-            // Max title length is 50 codepoints
-            // "title": "The Law Handbook: your practical guide to the law in NSW",
-            "title": "The Law Handbook: your practical guide to NSW law",
-            "startUrl": "https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw",
+            "title": "Enrol to vote",
+            "startUrl": "https://formupload.aec.gov.au/Form?FormId=prisoner",
             "displayMode": "STANDALONE"
         },
+        // {
+        //     "title": "Legal Aid ACT: Publications",
+        //     "startUrl": "https://legalaidact.org.au/what-we-do/legal-information-education/publications",
+        //     "displayMode": "STANDALONE"
+        // },
+        // // {
+        // //     "title": "FIXME",
+        // //     "startUrl": "https://legalanswers.sl.nsw.gov.au/hot-topics",
+        // //     "displayMode": "STANDALONE"
+        // // },
+        // {
+        //     // Max title length is 50 codepoints
+        //     // "title": "The Law Handbook: your practical guide to the law in NSW",
+        //     "title": "The Law Handbook: your practical guide to NSW law",
+        //     "startUrl": "https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw",
+        //     "displayMode": "STANDALONE"
+        // },
         {
-            "title": "Legislation Register (ACT)",
+            "title": "Legislation (ACT)",
             "startUrl": "https://legislation.act.gov.au",
             "displayMode": "STANDALONE"
         },
         {
-            "title": "Legislation Register (Federal)",
+            "title": "Legislation (Federal)",
             "startUrl": "https://legislation.gov.au",
             "displayMode": "STANDALONE"
         },
-        {
-            "title": "COVID-19 information and advice in the ACT",
-            "startUrl": "https://www.covid19.act.gov.au",
-            "displayMode": "STANDALONE"
-        },
-        {
-            "title": "Project Gutenberg: over 60,000 free eBooks",
-            "startUrl": "https://www.gutenberg.org/",
-            "displayMode": "STANDALONE"
-        },
-        // FIXME: this redirects now to https://fls.org.au/, which is not whitelisted.
         // {
-        //     "title": "FIXME",
-        //     "startUrl": "https://www.lawhandbook.org.au",
+        //     "title": "COVID-19 information and advice in the ACT",
+        //     "startUrl": "https://www.covid19.act.gov.au",
         //     "displayMode": "STANDALONE"
         // },
-        {
-            // Exceeds google's 50 codepoint limit
-            // "title": "ACT Charter of Rights for Victims of Crime: Online Survey",
-            "title": "Charter of Rights for Victims of Crime Survey",
-            "startUrl": "https://www.surveymonkey.com/r/QR7W7FD",
-            "displayMode": "STANDALONE"
-        },
+        // {
+        //     "title": "Project Gutenberg: over 60,000 free eBooks",
+        //     "startUrl": "https://www.gutenberg.org/",
+        //     "displayMode": "STANDALONE"
+        // },
+        // // FIXME: this redirects now to https://fls.org.au/, which is not whitelisted.
+        // // {
+        // //     "title": "FIXME",
+        // //     "startUrl": "https://www.lawhandbook.org.au",
+        // //     "displayMode": "STANDALONE"
+        // // },
+        // {
+        //     // Exceeds google's 50 codepoint limit
+        //     // "title": "ACT Charter of Rights for Victims of Crime: Online Survey",
+        //     "title": "Charter of Rights for Victims of Crime Survey",
+        //     "startUrl": "https://www.surveymonkey.com/r/QR7W7FD",
+        //     "displayMode": "STANDALONE"
+        // },
 
-
+        // The normal URLs are "https://prisonpc.lan/###".
+        // That's re-using the in-house certs that we REALLY need for MITM.
+        // Until I can convince Android to trust those, workaround be EITHER:
+        // 1) disable "you must use TLS" in apache (yuk!); or
+        // 2) make these domains publicly point to tweak,
+        //    run certbot on tweak,
+        //    copy the certs from tweak to airgapped host,
+        //    make airgapped site see those domains as internal.
+        //
+        // These webApps are expecting that, though it's not set up yet.
         {
-            "title": "CACert Test Page",
-            "startUrl": "https://abrahall.id.au/~mike/tablet-test.html",
-            "displayMode": "STANDALONE"
-        },
-        {
-            "title": "RTSP Test Page",
-            "startUrl": "https://www.wowza.com/html/mobile.html",
-            "displayMode": "STANDALONE"
-        },
-        {
-            // "icons": ["imageData": "XXX"]  // base64'd 512x512 PNG
             "title": "Mail",
-            "startUrl": "https://webmail/",
+            "startUrl": "https://LOCAL.PrisonPC.com/Mail",
             "displayMode": "STANDALONE"
         },
         {
-            // "icons": ["imageData": "XXX"]  // base64'd 512x512 PNG
-            "title": "TV Guide",
-            "startUrl": "https://prisonpc/TV/",
+            "title": "TV",
+            "startUrl": "https://LOCAL.PrisonPC.com/TV",
             "displayMode": "MINIMAL_UI"
         }
     ],
@@ -127,6 +130,225 @@
         "why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy": {
             "factoryResetDisabled": true
         },
+
+
+        // ======================================================================
+        // ======================================================================
+        // ======================================================================
+        "pilot0": {
+            // ----------------------------------------------------------------------
+            //  Block "Play Store", "Settings", screen locking.
+            "kioskCustomLauncherEnabled": true,
+
+            // ----------------------------------------------------------------------
+            // Hard-code wifi; block changing it.
+            "wifiConfigDisabled": true,
+            "openNetworkConfiguration": {
+                "NetworkConfigurations": [
+                    {
+                        "GUID": "2891cf2d-e32a-468b-ba57-b9f0d954e701",
+                        "Name": "Trent's Home (FIXME: remove)",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "wang",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}},
+                    {
+                        "GUID": "00d75ad3-743f-45bd-8e6d-cd631f7f81db",
+                        "Name": "PrisonPC (Enrollment Only)",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC Enrollment",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}},
+                    {
+                        "GUID": "937947f2-a18d-4a85-829e-4d769d1f0564",
+                        "Name": "PrisonPC",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}}]},
+
+            "applications": [
+                // ----------------------------------------------------------------------
+                // Inmate can play a couple of games.
+                {"installType": "FORCE_INSTALLED", "packageName": "org.andstatus.game2048"},  // 2048
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysudoku"},  // Sudoku
+                {"installType": "FORCE_INSTALLED", "packageName": "com.dozingcatsoftware.bouncy"},  // Vector Pinball
+                {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},  // HyperRogue
+                // No quick-and-easy edu choices, so install Duolingo but disable it, so
+                // it's sort of saying "hey maybe we could do this later, but not right now".
+                {"installType": "AVAILABLE", "packageName": "com.duolingo", "disabled": true},
+
+                // ----------------------------------------------------------------------
+                // Inmate can watch IPTV streams.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xbcaba3d5067d04e1"},  // TV Guide
+
+                // ----------------------------------------------------------------------
+                // Inmate can read and write emails.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x229102e320da4139"},  // Mail
+
+                // ----------------------------------------------------------------------
+                // Inmate can browse to whitelisted websites.
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",
+                 "disabled": false,
+                 "managedConfiguration": {
+                     // Additional browser lockdown.
+                     "HomepageLocation": "https://www.PrisonPC.com/",  // FIXME: change
+                     "AlternateErrorPagesEnabled": false,  // disabled
+                     "SearchSuggestEnabled": false,        // disabled
+                     "NetworkPredictionOptions": "2",      // disabled
+                     "IncognitoModeAvailability": "1",     // disabled
+                     "SavingBrowserHistoryDisabled": true,  // disabled
+                     "PrintingEnabled": false,              // disabled
+                     "AppCacheForceEnabled": false,         // disabled
+                     "ForceGoogleSafeSearch": true,         // enabled (google search pretends women don't have nipples)
+                     "ForceYouTubeRestrict": "2",           // enabled (youtube pretends women don't have nipples)
+                     "SafeBrowsingProtectionLevel": "1",    // enabled (below "phone home to google" level)
+                     "PasswordManagerEnabled": false,       // disabled
+                     "PasswordLeakDetectionEnabled": true,  // enabled (checks passwords against a blacklist?)
+                     "AutofillAddressEnabled": false,       // disabled
+                     "AutofillCreditCardEnabled": false,    // disabled
+                     "SyncTypesListDisabled": ["bookmarks", "readingList", "preferences", "passwords", "autofill", "themes", "typedUrls", "extensions", "apps", "tabs", "wifiConfiguratoins", "preferredSexPositions"],  // disable all
+                     "ProxySettings": {"ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"},
+                     "AuthSchemes": "basic",  // disable weak MD5 ("digest") and MD4 ("ntlm")
+                     "DisableAuthNegotiateCnameLookup": false,  // IRRELEVANT -- KERBEROS ONLY
+                     "AuthServerAllowlist": "LOCAL.PrisonPC.com,*.lan",  // FIXME: ???
+                     // "AuthNegotiateDelegateAllowlist"
+                     // "AuthAndroidNegotiateAccountType"
+                     // "NtlmV2Enabled"
+                     // "BlockThirdPartyCookies"
+                     // "DefaultSearchProviderEnabled"
+                     // "DefaultSearchProviderName"
+                     // "DefaultSearchProviderKeyword"
+                     // "DefaultSearchProviderSearchURL"
+                     // "DefaultSearchProviderSuggestURL"
+                     // "DefaultSearchProviderIconURL"
+                     // "DefaultSearchProviderEncodings"
+                     // "DefaultSearchProviderAlternateURLs"
+                     // "DefaultSearchProviderImageURL"
+                     // "DefaultSearchProviderNewTabURL"
+                     // "DefaultSearchProviderSearchURLPostParams"
+                     // "DefaultSearchProviderSuggestURLPostParams"
+                     // "DefaultSearchProviderImageURLPostParams"
+                     // "DefaultCookiesSetting"
+                     // "DefaultJavaScriptSetting"
+                     // "DefaultPopupsSetting"
+                     // "DefaultGeolocationSetting"
+                     // "DefaultWebBluetoothGuardSetting"
+                     // "DefaultSensorsSetting"
+                     // "DefaultWebUsbGuardSetting"
+                     // "WebUsbAllowDevicesForUrls"
+                     // "WebUsbAskForUrls"
+                     // "WebUsbBlockedForUrls"
+                     // "CookiesAllowedForUrls"
+                     // "CookiesBlockedForUrls"
+                     // "CookiesSessionOnlyForUrls"
+                     // "JavaScriptAllowedForUrls"
+                     // "JavaScriptBlockedForUrls"
+                     // "LegacySameSiteCookieBehaviorEnabled"
+                     // "LegacySameSiteCookieBehaviorEnabledForDomainList"
+                     // "LensCameraAssistedSearchEnabled"
+                     // "PopupsAllowedForUrls"
+                     // "PopupsBlockedForUrls"
+                     // "SensorsAllowedForUrls"
+                     // "SensorsBlockedForUrls"
+                     // "TargetBlankImpliesNoOpener"
+                     // "TranslateEnabled"
+                     // "EditBookmarksEnabled"
+                     // "URLBlocklist"
+                     // "URLAllowlist"
+                     // "EnableExperimentalPolicies"
+                     // "DisableSafeBrowsingProceedAnyway"
+                     // "BuiltInDnsClientEnabled"
+                     // "DnsOverHttpsMode"
+                     // "DnsOverHttpsTemplates"
+                     // "SharedClipboardEnabled"
+                     "ManagedBookmarks": [
+                         // https://crtech.tips/json-example-code-for-chromes-managed-bookmarks/
+                         {"toplevel_name": "Company Links"},
+                         {"name": "Folder 1", "children":
+                          [
+                              {"name": "Website 1", "url": "https://website1.com/"},
+                              {"name": "Website 2", "url": "https://website2.com/"},
+                              {"name": "Website 3", "url": "https://website3.com/"},
+                              {"name": "Website 4", "url": "https://website4.com/"},
+                              {"name": "Website 5", "url": "https://website5.com/"},
+                              {"name": "Website 6", "url": "https://website6.com/"}
+                          ]
+                         },
+                         {"name": "Folder 2", "children":
+                          [
+                              {"name": "Website 7", "url": "https://website7.com/"},
+                              {"name": "Website 8", "url": "https://website8.com/"},
+                              {"name": "Website 9", "url": "https://website9.com/"},
+                              {"name": "Website 10", "url": "https://website10.com/"},
+                              {"name": "Website 11", "url": "https://website11.com/"},
+                              {"name": "Website 12", "url": "https://website12.com/"}
+                          ]
+                         }
+                     ]
+                     // "DataCompressionProxyEnabled"
+                     // "BrowserSignin"
+                     // "SSLVersionMin"
+                     // "CECPQ2Enabled"
+                     // "CertificateTransparencyEnforcementDisabledForUrls"
+                     // "CertificateTransparencyEnforcementDisabledForCas"
+                     // "CertificateTransparencyEnforcementDisabledForLegacyCas"
+                     // "ContextualSearchEnabled"
+                     // "SSLErrorOverrideAllowed"
+                     // "SSLErrorOverrideAllowedForOrigins"
+                     // "AllowedDomainsForApps"
+                     // "EnableMediaRouter"
+                     // "NTPContentSuggestionsEnabled"
+                     // "WebRtcUdpPortRange"
+                     // "IsolateOriginsAndroid"
+                     // "SitePerProcessAndroid"
+                     // "RestrictAccountsToPatterns"
+                     // "SafeBrowsingExtendedReportingEnabled"
+                     // "OverrideSecurityRestrictionsOnInsecureOrigin"
+                     // "UrlKeyedAnonymizedDataCollectionEnabled"
+                     // "EnterpriseHardwarePlatformAPIEnabled"
+                     // "HSTSPolicyBypassList"
+                     // "AllowSyncXHRInPageDismissal"
+                     // "PaymentMethodQueryEnabled"
+                     // "ScrollToTextFragmentEnabled"
+                     // "IntensiveWakeUpThrottlingEnabled"
+                     // "BackForwardCacheEnabled"
+                     // "UserAgentClientHintsEnabled"
+                     // "InsecureFormsWarningsEnabled"
+                     // "LookalikeWarningAllowlistDomains"
+                     // "TosDialogBehavior"
+                     // "WebXRImmersiveArEnabled"
+                     // "SuppressDifferentOriginSubframeDialogs"
+                     // "ExplicitlyAllowedNetworkPorts"
+                 }},
+
+                // ----------------------------------------------------------------------
+                // Disable some trash that should not be accessible, but is?
+                {"installType": "BlOCKED", "disabled": true, "packageName": "com.google.android.gms"}  // "Google Play services", i.e. in chrome "Turn on sync" ???
+
+
+
+
+                ],
+
+
+            "networkEscapeHatchEnabled": true
+        },
+
+        // ======================================================================
+        // ======================================================================
+        // ======================================================================
+
+
+
+
+
 
         "browser-kiosk": {
             "applications": [
@@ -455,6 +677,20 @@
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x793f12cf8a1f5dd2"},  // "RTSP Test App"
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x90f3691f2c466fd4"},  // CA Cert Test App
 
+                // AMC global whitelist bookmarks
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x1ee31a0110ce1a3a"},  // Legislation Register (Federal)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x1f9e7a9b0c853c65"},  // Project Gutenberg: over 60,000 free eBooks
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x5e6c3fb7b469e95b"},  // ACT Law Handbook
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x69c10769046ee392"},  // Charter of Rights for Victims of Crime Survey
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x80288a4a6361484e"},  // Enrol to vote as a prisoner
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x8064a771f2a9c6f8"},  // The Law Handbook: your practical guide to NSW law
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x876130003966cb8d"},  // Report historic sexual assault
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xba1b2b11cde7a038"},  // ACT Corrective Services
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xbd1e5259817b20f9"},  // COVID-19 information and advice in the ACT
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xc779cc7af9003b48"},  // Legal Aid ACT: Publications
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xe68c0ef9115d7656"},  // Legislation Register (ACT)
+
+
                 // ============================================================
                 // Sound Recorder / Editor
                 // ============================================================
@@ -479,7 +715,7 @@
                 // Photo Gallery (image viewer)
                 // ============================================================
                 // UPDATE: using photosgo as the rtp:// consumer?
-                {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos"},  // Prefer the "photos go" lite version???
+                // {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos"},  // Prefer the "photos go" lite version??? --- UPDATE: handled under IPTV
                 // {"installType": "AVAILABLE", "packageName": "com.google.android.apps.photosgo"},  // Gallery Go  --- UPDATE: handled under IPTV
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.gallery"},  // doesn't support SVG, even though com.simplemobiletools.sketch makes those??
 
@@ -566,16 +802,16 @@
                 {"installType": "BLOCKED", "packageName": "com.microsoft.microsoftsolitairecollection"},  // Solitaire (game) --- FULL OF ADS, COMPLAINS ABOUT LACK OF DIRECT INTERNET ACCESS TO MS.COM
                 {"installType": "BLOCKED", "packageName": "com.microsoft.mahjong"},  // Mahjong (game)
                 {"installType": "BLOCKED", "packageName": "com.emmanuelmess.tictactoe"},  // no AI, black-and-white, looks ugly
-                {"installType": "AVAILABLE", "packageName": "org.andstatus.game2048"},  // fine
-                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendly2048"},  // also fine, andstatus is slightly nicer
-                {"installType": "FORCE_INSTALLED", "packageName": "dev.lucanlm.antimine"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlyminesweeper"},
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysudoku"},
+                {"installType": "FORCE_INSTALLED", "packageName": "org.andstatus.game2048"},  // fine
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendly2048"},  // also fine, the "org.andstatus" alternative  is slightly nicer
+                {"installType": "BLOCKED", "packageName": "dev.lucanlm.antimine"},  // not in play store
+                {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlyminesweeper"},  // works OK, but UX is a bit shit
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysudoku"},  // seems OK at a glance
                 {"installType": "AVAILABLE", "packageName": "com.agateau.tinywheels.android"},  // Pixel Wheels; fine, controls take some getting used to.  There's a cop car, does that matter?
                 {"installType": "BLOCKED", "packageName": "app.crossword.yourealwaysbe.forkyz"},  // in F-Droid but not Play Store.
                 {"installType": "BLOCKED", "packageName": "de.sudoq"},  // perfectly fine sudoku game, but LOOKS like it's a privesc app
                 {"installType": "BLOCKED", "packageName": "com.serwylo.beatgame"},  // NOT_FOUND
-                {"installType": "FORCE_INSTALLED", "packageName": "org.moire.opensudoku"},
+                {"installType": "BLOCKED", "packageName": "org.moire.opensudoku"},  // "get more puzzles online" — otherwise seems OK at a glance
                 {"installType": "AVAILABLE", "packageName": "org.eehouse.android.xw4"},  // crosswords (Scrabble) -- offers many network play options.  If these DON'T WORK, I guess passes review???
                 {"installType": "AVAILABLE", "packageName": "com.dozingcatsoftware.bouncy"},  // Vector Pinball -- GREAT!!!
                 {"installType": "BLOCKED", "packageName": "org.billthefarmer.crossword"},     // in F-Droid but not Play Store.
@@ -584,9 +820,9 @@
                 {"installType": "AVAILABLE", "packageName": "org.supertuxkart.stk"},  // Super Tux Kart; PASSES REVIEW
                 {"installType": "BLOCKED", "packageName": "net.minetest.minetest"},  // more-or-less works, but really not fun on a touchscreen without a gamepad
                 {"installType": "BLOCKED", "packageName": "com.gitlab.ardash.appleflinger.android"},  // NOT_FOUND
-                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlydame"},  // Checkers
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlydame"},  // Checkers; PASSES REVIEW
                 {"installType": "BLOCKED", "packageName": "org.secuso.privacyfriendlysolitaire"},  // works, but REALLY ugly jaggie images
-                {"installType": "FORCE_INSTALLED", "packageName": "jwtc.android.chess"},
+                {"installType": "BLOCKED", "packageName": "jwtc.android.chess"},  // Offers "play online"
                 {"installType": "BLOCKED", "packageName": "it.alessandropira.wesnoth114"},  // NEEDS INTERNET -- DOWNLOADS 100MB to 500MB **AFTER** GAME STARTS!!  The touchscreen moves around a separate virtual mouse pointer -- VERY PAINFUL!
                 {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},  // HyperRogue -- GREAT! works really well on touchscreen.
                 {"installType": "BLOCKED", "packageName": "pro.rudloff.papercraft"},  // NOT_FOUND
@@ -599,14 +835,14 @@
                 // ============================================================
                 {"installType": "BLOCKED", "packageName": "com.microsoft.chineselearning"},  // (education?) (needs internet, needs account)
                 {"installType": "AVAILABLE", "packageName": "com.duolingo"},  // DuoLingo (language education) (needs internet???), has some ads.  Otherwise VERY good.
-                {"installType": "AVAILABLE", "packageName": "net.gcompris.full"},  // GCompris (early learning); WANTS INTERNET; (FIXME: not FORCE_INSTALLED because huge ~500MB)
+                {"installType": "BLOCKED", "packageName": "net.gcompris.full"},  // GCompris (early learning); WANTS INTERNET; (FIXME: not FORCE_INSTALLED because huge ~500MB)
                 {"installType": "BLOCKED", "packageName": "com.rechnen.app"},  // Calculate, math training; NOT_FOUND
-                {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.sanskritbasics.memory"},
-                {"installType": "AVAILABLE", "packageName": "de.moekadu.tuner"},  // NOTE: microphone currently blocked in policy, so can't test it
-                {"installType": "AVAILABLE", "packageName": "com.ichi2.anki"},  // Flash card app, mostly for vocab memorization.  Wants you to log into a website (ankiweb) to access existing cards??
-                {"installType": "AVAILABLE", "packageName": "com.LAPARCELA.nihonoari"},  // kana trainer, basically fine, focus is a bit narrow
-                {"installType": "AVAILABLE", "packageName": "info.puzz.a10000sentences"},  // WARNING: needs internet access to download flash cards; otherwise seems OK
+                {"installType": "BLOCKED", "packageName": "com.sanskritbasics"},  // looks like shit
+                {"installType": "BLOCKED", "packageName": "com.sanskritbasics.memory"},  // looks like shit
+                {"installType": "BLOCKED", "packageName": "de.moekadu.tuner"},  // NOTE: microphone currently blocked in policy, so can't test it
+                {"installType": "BLOCKED", "packageName": "com.ichi2.anki"},  // Flash card app, mostly for vocab memorization.  Wants you to log into a website (ankiweb) to access existing cards??
+                {"installType": "BLOCKED", "packageName": "com.LAPARCELA.nihonoari"},  // kana trainer, basically fine, focus is a bit narrow
+                {"installType": "BLOCKED", "packageName": "info.puzz.a10000sentences"},  // WARNING: needs internet access to download flash cards; otherwise seems OK
                 {"installType": "BLOCKED", "packageName": "com.quaap.primary"},            // in F-Droid but not Play Store.
 
 
@@ -638,7 +874,7 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.captiveportallogin"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.certinstaller"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.companiondevicemanager"},
-                // {"installType": "FORCE_INSTALLED", "packageName": "com.android.contacts"},
+                {"installType": "BLOCKED", "packageName": "com.android.contacts", "disabled": true},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.ctsshim"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.cts.priv.ctsshim"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.android.documentsui"},
@@ -789,21 +1025,21 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.defaultlaunch"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.dsa"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.launcher.provider"},
-                {"installType": "BLOCKED", "packageName": "com.lenovo.lsf"},  // Lenovo ID (i.e. like google account, but Lenovo account); installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
-                {"installType": "BLOCKED", "packageName": "com.lenovo.lsf.device"},  // Device Service; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.lenovo.lsf", "disabled": true},  // Lenovo ID (i.e. like google account, but Lenovo account); installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.lenovo.lsf.device", "disabled": true},  // Device Service; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.ocpl"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screenassistant"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.screencapture"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.lenovo.tab_m10_hd"},
-                {"installType": "BLOCKED", "packageName": "com.lenovo.ue.device"},          // User Experience (Lenovo-specific), not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.lenovo.ue.device", "disabled": true},          // User Experience (Lenovo-specific), not in Play Store, not in F-Droid
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.longcheertel.midtest"},
-                {"installType": "BLOCKED", "packageName": "com.microsoft.bing.wallpapers"},  // installed by default on Lenovo M1 gen1
-                {"installType": "BLOCKED", "packageName": "com.microsoft.office.outlook"},  // installed by default on Lenovo M1 gen1  (NOTE: supports managedConfiguration)
-                {"installType": "BLOCKED", "packageName": "com.motorola.demo"},     // Demo mode; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.microsoft.bing.wallpapers", "disabled": true},  // installed by default on Lenovo M1 gen1
+                {"installType": "BLOCKED", "packageName": "com.microsoft.office.outlook", "disabled": true},  // installed by default on Lenovo M1 gen1  (NOTE: supports managedConfiguration)
+                {"installType": "BLOCKED", "packageName": "com.motorola.demo", "disabled": true},     // Demo mode; installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.confuridialer"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.dpmserviceapp"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.qualcomm.datastatusnotification"},
-                {"installType": "BLOCKED", "packageName": "com.qti.qualcomm.deviceinfo"},       // SIM card stuff; show the IMEI/IMSI &c of the installed SIM
+                {"installType": "BLOCKED", "packageName": "com.qti.qualcomm.deviceinfo", "disabled": true},       // SIM card stuff; show the IMEI/IMSI &c of the installed SIM
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.service.colorservice"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qti.xdivert"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.atfwd"},
@@ -811,11 +1047,11 @@
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.location"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qcrilmsgtunnel"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.cne"},
-                {"installType": "BLOCKED", "packageName": "com.qualcomm.qti.confdialer"},  // installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
+                {"installType": "BLOCKED", "packageName": "com.qualcomm.qti.confdialer", "disabled": true},  // installed by default on Lenovo M1 gen1; not in Play Store, not in F-Droid
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.dynamicddsservice"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.ims"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.lpa"},
-                {"installType": "BLOCKED", "packageName": "com.qualcomm.qti.networksetting"},   // SIM card stuff; "CDMA Options" &c
+                {"installType": "BLOCKED", "packageName": "com.qualcomm.qti.networksetting", "disabled": true},   // SIM card stuff; "CDMA Options" &c
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.poweroffalarm"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.connectionsecurity"},
                 // {"installType": "FORCE_INSTALLED", "packageName": "com.qualcomm.qti.qms.service.telemetry"},
@@ -906,7 +1142,7 @@
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.messaging"},  // Messages - NOT_COMPATIBLE_WITH_DEVICE
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.nbu.files", "disabled": true},  // Files - "save space by deleting things" but also "share files with friends", therefore fuck that
                 {"installType": "BLOCKED", "packageName": "com.google.android.apps.photos.scanner"},  // PhotoScan by Google - NOT_COMPATIBLE_WITH_DEVICE
-                {"installType": "AVAILABLE", "packageName": "com.google.android.apps.youtube.music", "disabled": true},   // YT Music -- with modifyAccountsDisabled, can only play files locally installed.  I downloaded an MP3 from https://3zzz.com.au/ (in Chrome), and YT Music app could "see" it.  If you're not SAVING files locally, you can still just listen to audio directly in Chrome.
+                {"installType": "BLOCKED", "packageName": "com.google.android.apps.youtube.music", "disabled": true},   // YT Music -- with modifyAccountsDisabled, can only play files locally installed.  I downloaded an MP3 from https://3zzz.com.au/ (in Chrome), and YT Music app could "see" it.  If you're not SAVING files locally, you can still just listen to audio directly in Chrome.
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.inputmethod.latin"},  // gboard -- the onscreen keyboard.  Now includes non-Latin input e.g. Hindi.  Those are added via Settings app.
                 {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead"},  // Android Auto - Google Maps, Media & Messaging --- wrong android version
                 {"installType": "BLOCKED", "packageName": "com.google.android.projection.gearhead.phonescreen"},
