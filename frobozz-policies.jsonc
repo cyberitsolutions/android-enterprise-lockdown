@@ -99,25 +99,25 @@
         }
     ],
     "policies": {
-        // "empty-policy": { },
+        "empty-policy": { },
 
-        // "wifi-locked-policy": {
-        //     "wifiConfigDisabled": true,
-        //     "openNetworkConfiguration": {
-        //         "NetworkConfigurations": [
-        //             {
-        //                 "GUID": "cd9da76c-3e4d-4245-bd71-b6fea23ad576",
-        //                 "Name": "PrisonPC Tablet Network",
-        //                 "Type": "WiFi",
-        //                 "WiFi": {
-        //                     "SSID": "PrisonPC",
-        //                     "Security": "WPA-PSK",
-        //                     "Passphrase": "FIXME USE A PASSWORD VAULT HERE"
-        //                 }
-        //             }
-        //         ]
-        //     }
-        // },
+        "wifi-locked-policy": {
+            "wifiConfigDisabled": true,
+            "openNetworkConfiguration": {
+                "NetworkConfigurations": [
+                    {
+                        "GUID": "cd9da76c-3e4d-4245-bd71-b6fea23ad576",
+                        "Name": "PrisonPC Tablet Network",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "SSID": "PrisonPC",
+                            "Security": "WPA-PSK",
+                            "Passphrase": "FIXME USE A PASSWORD VAULT HERE"
+                        }
+                    }
+                ]
+            }
+        },
 
 
         "why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy": {
