@@ -38,7 +38,9 @@
         //     "displayMode": "STANDALONE"
         // },
         {
-            "title": "The Law Handbook: your practical guide to the law in NSW",
+            // Max title length is 50 codepoints
+            // "title": "The Law Handbook: your practical guide to the law in NSW",
+            "title": "The Law Handbook: your practical guide to NSW law",
             "startUrl": "https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw",
             "displayMode": "STANDALONE"
         },
@@ -69,7 +71,9 @@
         //     "displayMode": "STANDALONE"
         // },
         {
-            "title": "ACT Charter of Rights for Victims of Crime: Online Survey",
+            // Exceeds google's 50 codepoint limit
+            // "title": "ACT Charter of Rights for Victims of Crime: Online Survey",
+            "title": "Charter of Rights for Victims of Crime Survey",
             "startUrl": "https://www.surveymonkey.com/r/QR7W7FD",
             "displayMode": "STANDALONE"
         },
