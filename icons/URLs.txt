@@ -2,3 +2,6 @@ https://www.austlii.edu.au/austlii/apps/ios/AustLII_app.png
 https://correctiveservices.act.gov.au/themes/jacs/Act_logo.svg
 https://www.afp.gov.au/sites/all/themes/afp_theme/images/logo.png
 https://www.aec.gov.au/_template/css/img/face-share-logo.jpg
+file:///usr/share/icons/hicolor/scalable/apps/evolution.svg
+file:///usr/share/icons/hicolor/scalable/apps/io.github.celluloid_player.Celluloid.svg
+https://www.gov.au/img/coat-of-arms-af51ab555b0040c7bcda43484858d96594d2cb60d71ff58ff91003a9cc7f3e81.png
