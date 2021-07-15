@@ -1,0 +1,61 @@
+{
+    "apiLevel": 28,
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/pilot0",
+    "appliedPolicyVersion": "63",
+    "appliedState": "ACTIVE",
+    "enrollmentTime": "2021-07-15T01:04:50.628Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/dsvXLX1_mQ9JljvPIzwYJLLz4nO2gibhcRoPsp_U53c",
+    "hardwareInfo": {
+        "brand": "Remdun",
+        "deviceBasebandVersion": ".TA.3.0.c1-00515-8953_GEN_PACK-1",
+        "hardware": "qcom",
+        "manufacturer": "emdoor",
+        "model": "RD86QE",
+        "serialNumber": "81QAB4640NXE20H0471"
+    },
+    "lastPolicySyncTime": "2021-07-15T10:34:23.214Z",
+    "lastStatusReportTime": "2021-07-15T10:34:25.413Z",
+    "managementMode": "DEVICE_OWNER",
+    "memoryInfo": {
+        "totalInternalStorage": "3120525312",
+        "totalRam": "3771334656"
+    },
+    "name": "enterprises/LC02kggfh1/devices/3ffb42e93510946b",
+    "nonComplianceDetails": [
+        {
+            "nonComplianceReason": "UNSUPPORTED",
+            "settingName": "blockApplicationsEnabled"
+        },
+        {
+            "nonComplianceReason": "MANAGEMENT_MODE",
+            "settingName": "bluetoothContactSharingDisabled"
+        }
+    ],
+    "ownership": "COMPANY_OWNED",
+    "policyCompliant": true,
+    "policyName": "enterprises/LC02kggfh1/policies/pilot0",
+    "powerManagementEvents": [
+        {
+            "createTime": "2021-07-15T02:47:25.481Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-07-15T05:20:06.037Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-07-15T09:21:43.515Z",
+            "eventType": "BOOT_COMPLETED"
+        }
+    ],
+    "previousDeviceNames": [
+        "enterprises/LC02kggfh1/devices/305b9730ccc0b915",
+        "enterprises/LC02kggfh1/devices/3d6c3ba5541bb837",
+        "enterprises/LC02kggfh1/devices/3d7ea826e7ffe77d"
+    ],
+    "securityPosture": {
+        "devicePosture": "SECURE"
+    },
+    "state": "ACTIVE",
+    "userName": "enterprises/LC02kggfh1/users/109145467649408822393"
+}

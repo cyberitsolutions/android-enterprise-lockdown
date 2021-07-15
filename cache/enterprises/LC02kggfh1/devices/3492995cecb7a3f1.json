@@ -1,0 +1,54 @@
+{
+    "apiLevel": 29,
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/pilot0",
+    "appliedPolicyVersion": "63",
+    "appliedState": "ACTIVE",
+    "enrollmentTime": "2021-07-15T09:57:46.363Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/EYPkAe2dEr63Dx-KtVnotJt1ejNSs7iDA9OhouKW-Ug",
+    "hardwareInfo": {
+        "brand": "Lenovo",
+        "hardware": "qcom",
+        "manufacturer": "LENOVO",
+        "model": "Lenovo TB-X505F",
+        "serialNumber": "HGAL10T2"
+    },
+    "lastPolicySyncTime": "2021-07-15T10:32:52.121Z",
+    "lastStatusReportTime": "2021-07-15T10:32:58.006Z",
+    "managementMode": "DEVICE_OWNER",
+    "memoryInfo": {
+        "totalInternalStorage": "4160729088",
+        "totalRam": "1954570240"
+    },
+    "name": "enterprises/LC02kggfh1/devices/3492995cecb7a3f1",
+    "nonComplianceDetails": [
+        {
+            "nonComplianceReason": "UNSUPPORTED",
+            "settingName": "blockApplicationsEnabled"
+        },
+        {
+            "nonComplianceReason": "MANAGEMENT_MODE",
+            "settingName": "bluetoothContactSharingDisabled"
+        }
+    ],
+    "ownership": "COMPANY_OWNED",
+    "policyCompliant": true,
+    "policyName": "enterprises/LC02kggfh1/policies/pilot0",
+    "previousDeviceNames": [
+        "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
+        "enterprises/LC02kggfh1/devices/348b1daeac68a70c",
+        "enterprises/LC02kggfh1/devices/39f5c698a64bed51",
+        "enterprises/LC02kggfh1/devices/35712c2e9993bc57",
+        "enterprises/LC02kggfh1/devices/33639ffb1e61f7cd",
+        "enterprises/LC02kggfh1/devices/346539c38497359c",
+        "enterprises/LC02kggfh1/devices/31b2267e0d5ed312",
+        "enterprises/LC02kggfh1/devices/30b8ed1244f6c1f0",
+        "enterprises/LC02kggfh1/devices/3cb9719b575e7094",
+        "enterprises/LC02kggfh1/devices/38b83afcbbfbdd7f",
+        "enterprises/LC02kggfh1/devices/326f454a3ce3c734"
+    ],
+    "securityPosture": {
+        "devicePosture": "SECURE"
+    },
+    "state": "ACTIVE",
+    "userName": "enterprises/LC02kggfh1/users/116317706311417607141"
+}
