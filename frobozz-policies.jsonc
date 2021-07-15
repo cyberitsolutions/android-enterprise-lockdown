@@ -131,6 +131,20 @@
             "factoryResetDisabled": true
         },
 
+        "allow-ron-to-do-his-stupid-meeting-using-non-free-stupid-software-that-requires-a-google-account": {
+            "applications": [{"installType": "KIOSK", "packageName": "com.google.android.apps.meetings"}],
+            "wifiConfigDisabled": true,
+            "openNetworkConfiguration": {
+                "NetworkConfigurations": [{
+                    "GUID": "2891cf2d-e32a-468b-ba57-b9f0d954e701",
+                    "Name": "Trent's Home (FIXME: remove)",
+                    "Type": "WiFi",
+                    "WiFi": {
+                        "AutoConnect": true,
+                        "SSID": "wang",
+                        "Security": "WPA-PSK",
+                        "Passphrase": null}}]}},
+
 
         // ======================================================================
         // ======================================================================
