@@ -1,0 +1,53 @@
+{
+    "applications": [
+        {
+            "installType": "KIOSK",
+            "packageName": "com.google.enterprise.webapp.x793f12cf8a1f5dd2"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.android.chrome"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.videolan.vlc"
+        }
+    ],
+    "name": "enterprises/LC02kggfh1/policies/browser-kiosk",
+    "networkEscapeHatchEnabled": true,
+    "openNetworkConfiguration": {
+        "NetworkConfigurations": [
+            {
+                "GUID": "00d75ad3-743f-45bd-8e6d-cd631f7f81db",
+                "Name": "PrisonPC (Enrollment Only)",
+                "Type": "WiFi",
+                "WiFi": {
+                    "AutoConnect": true,
+                    "Passphrase": null,
+                    "SSID": "PrisonPC Enrollment",
+                    "Security": "WPA-PSK"
+                }
+            },
+            {
+                "GUID": "937947f2-a18d-4a85-829e-4d769d1f0564",
+                "Name": "PrisonPC",
+                "Type": "WiFi",
+                "WiFi": {
+                    "AutoConnect": true,
+                    "Passphrase": null,
+                    "SSID": "PrisonPC",
+                    "Security": "WPA-PSK"
+                }
+            }
+        ]
+    },
+    "recommendedGlobalProxy": {
+        "excludedHosts": [
+            "*.lan"
+        ],
+        "host": "proxy.lan",
+        "port": 3128
+    },
+    "version": "128",
+    "wifiConfigDisabled": true
+}

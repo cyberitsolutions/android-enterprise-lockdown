@@ -1,0 +1,228 @@
+{
+    "addUserDisabled": true,
+    "appAutoUpdatePolicy": "ALWAYS",
+    "applications": [
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.andstatus.game2048"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "org.secuso.privacyfriendlysudoku"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.dozingcatsoftware.bouncy"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.roguetemple.hyperroid"
+        },
+        {
+            "disabled": true,
+            "installType": "AVAILABLE",
+            "packageName": "com.duolingo"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.enterprise.webapp.xbcaba3d5067d04e1"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.enterprise.webapp.x229102e320da4139"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "packageName": "com.google.android.apps.docs"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "managedConfiguration": {
+                "PrintingEnabled": false,
+                "enableAccountLessMode": true
+            },
+            "packageName": "com.google.android.apps.docs.editors.docs"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "managedConfiguration": {
+                "PrintingEnabled": false,
+                "enableAccountLessMode": true
+            },
+            "packageName": "com.google.android.apps.docs.editors.sheets"
+        },
+        {
+            "installType": "FORCE_INSTALLED",
+            "managedConfiguration": {
+                "PrintingEnabled": false,
+                "enableAccountLessMode": true
+            },
+            "packageName": "com.google.android.apps.docs.editors.slides"
+        },
+        {
+            "installType": "REQUIRED_FOR_SETUP",
+            "managedConfiguration": {
+                "AllowSyncXHRInPageDismissal": false,
+                "AlternateErrorPagesEnabled": false,
+                "AppCacheForceEnabled": false,
+                "AuthSchemes": "basic",
+                "AuthServerAllowlist": "LOCAL.PrisonPC.com,*.lan",
+                "AutofillAddressEnabled": false,
+                "AutofillCreditCardEnabled": false,
+                "BlockThirdPartyCookies": true,
+                "BrowserSignin": 0,
+                "CECPQ2Enabled": true,
+                "DataCompressionProxyEnabled": false,
+                "DefaultCookiesSetting": 2,
+                "DefaultGeolocationSetting": 2,
+                "DefaultJavaScriptSetting": 1,
+                "DefaultPopupsSetting": 2,
+                "DefaultSearchProviderEnabled": false,
+                "DefaultSensorsSetting": 2,
+                "DefaultWebBluetoothGuardSetting": 2,
+                "DefaultWebUsbGuardSetting": 2,
+                "DisableAuthNegotiateCnameLookup": false,
+                "DisableSafeBrowsingProceedAnyway": true,
+                "DnsOverHttpsMode": "off",
+                "EditBookmarksEnabled": false,
+                "EnableExperimentalPolicies": "",
+                "EnableMediaRouter": false,
+                "EnterpriseHardwarePlatformAPIEnabled": false,
+                "ExplicitlyAllowedNetworkPorts": "",
+                "ForceGoogleSafeSearch": true,
+                "ForceYouTubeRestrict": "2",
+                "HomepageLocation": "https://www.PrisonPC.com/",
+                "IncognitoModeAvailability": 1,
+                "InsecureFormsWarningsEnabled": true,
+                "IntensiveWakeUpThrottlingEnabled": true,
+                "LegacySameSiteCookieBehaviorEnabled": 2,
+                "LensCameraAssistedSearchEnabled": false,
+                "ManagedBookmarks": "[{\"toplevel_name\": \"AMC Detainee Bookmarks\"}, {\"url\": \"https://austlii.community/foswiki/ACTLawHbk\", \"name\": \"ACT Law Handbook Austlii\"}, {\"url\": \"https://correctiveservices.act.gov.au/\", \"name\": \"ACT Corrective Services\"}, {\"url\": \"https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache\", \"name\": \"AFP Reporting Historical Sexual Assault\"}, {\"url\": \"https://formupload.aec.gov.au/Form?FormId=prisoner\", \"name\": \"Australian Electoral Commission Enrol to Vote\"}, {\"url\": \"https://koha.lan\", \"name\": \"Library Index\"}, {\"url\": \"https://legalaidact.org.au/what-we-do/legal-information-education/publications\", \"name\": \"Legal Aid Information and Education Topics\"}, {\"url\": \"https://legalanswers.sl.nsw.gov.au/hot-topics\", \"name\": \"Hot Topics Find Legal Answers State Library of NSW\"}, {\"url\": \"https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw\", \"name\": \"NSW Law Handbook\"}, {\"url\": \"https://legislation.act.gov.au\", \"name\": \"ACT Legislation\"}, {\"url\": \"https://legislation.gov.au\", \"name\": \"Federal Legislation\"}, {\"url\": \"https://www.covid19.act.gov.au\", \"name\": \"COVID 19 Information ACT Government\"}, {\"url\": \"https://www.gutenberg.org/\", \"name\": \"Project Gutenberg eBooks\"}, {\"url\": \"https://www.lawhandbook.org.au\", \"name\": \"Victorian Law Handbook\"}, {\"url\": \"https://www.surveymonkey.com/r/externalactcs\", \"name\": \"ACT Corrective Services DAIP Questionnaire\"}, {\"url\": \"https://www.surveymonkey.com/r/QR7W7FD\", \"name\": \"ACT Charter of Rights for Victims of Crime Online Survey\"}, {\"name\": \"Internal Bookmarks\", \"children\": [{\"url\": \"https://LOCAL.PrisonPC.com/Cottage-Orders/\", \"name\": \"AMC Cottage Orders\"}, {\"url\": \"https://LOCAL.PrisonPC.com/Share/Emails/External_whitelisted_email_addresses.pdf\", \"name\": \"Whitelisted Emails\"}, {\"url\": \"https://LOCAL.PrisonPC.com/Share/Handbook/AMC_Detainee_Handbook-February2021.pdf\", \"name\": \"AMC Detainee Handbook 2021\"}, {\"url\": \"https://LOCAL.PrisonPC.com/Share/Telephone/Free_Call-Common_Number_List.pdf\", \"name\": \"AMC Detainee Free Call Common Numbers List\"}, {\"url\": \"https://LOCAL.PrisonPC.com/Share/University/OpenUniversitiesHandbook2021.pdf\", \"name\": \"Open Universities Handbook 2021\"}, {\"url\": \"https://LOCAL.PrisonPC.com/Vocal/FantasticPhonics-adult/fantasticphonics/\", \"name\": \"Fantastic Phonics\"}]}, {\"name\": \"Community Services Guide\", \"children\": [{\"url\": \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0010/1097146/Guide_1_CC_reports_web.pdf\", \"name\": \"1 Child Concern Reports\"}, {\"url\": \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0006/1097151/Guide_2_Going_to_court_web.pdf\", \"name\": \"2 Court and Reuniting Familes\"}, {\"url\": \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0007/1097152/Guide_3_Children_in_care_web.pdf\", \"name\": \"3 Children in Care\"}, {\"url\": \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0009/1097154/Guide_4_Feedback_web.pdf\", \"name\": \"4 Raising Concerns\"}, {\"url\": \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0010/1097155/Guide_5_Self_representation_A4_web.pdf\", \"name\": \"5 Self Representation\"}]}, {\"name\": \"Canberra Community Law\", \"children\": [{\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-15.pdf\", \"name\": \"Eviction From Your Home\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-16.pdf\", \"name\": \"Defending Eviction\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-19.pdf\", \"name\": \"Incarcerated Tenants 26 Week No Cause Notices\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-20.pdf\", \"name\": \"What Happens to My Belongings\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-8.pdf\", \"name\": \"Damage to ACT Housing Property\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-9.pdf\", \"name\": \"Previous Tenancy Debts\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/ccl-disability-discrimination-factsheet-1.pdf\", \"name\": \"Disability Discrimination Complaints 1\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/ccl-disability-discrimination-factsheet-2.pdf\", \"name\": \"Disability Discrimination Complaints 2\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/ccl-our-services-brochure-aug-2019.pdf\", \"name\": \"About Us\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/Public-Housing-Fact-Sheet-1-2019.pdf\", \"name\": \"Applications for Housing Assistance\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-17.pdf\", \"name\": \"Disclosing Convictions\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-18.pdf\", \"name\": \"Victims Of Crime Financial Assistance\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-19.pdf\", \"name\": \"My Rights When Stopped By Police\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-1.pdf\", \"name\": \"Traffic and Parking Infringements\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-7.pdf\", \"name\": \"Completing a Work Development Program\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-22.pdf\", \"name\": \"Applying for a Vulnerable People Card\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-23.pdf\", \"name\": \"Discrimination Due to Criminal History\"}, {\"url\": \"https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-24.pdf\", \"name\": \"Disclosing Criminal History to Employers\"}]}]",
+                "NTPContentSuggestionsEnabled": false,
+                "NetworkPredictionOptions": 2,
+                "NtlmV2Enabled": false,
+                "PasswordLeakDetectionEnabled": true,
+                "PasswordManagerEnabled": false,
+                "PaymentMethodQueryEnabled": false,
+                "PrintingEnabled": false,
+                "ProxySettings": {
+                    "ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"
+                },
+                "SSLErrorOverrideAllowed": false,
+                "SSLVersionMin": "tls1.2",
+                "SafeBrowsingExtendedReportingEnabled": false,
+                "SafeBrowsingProtectionLevel": "1",
+                "SavingBrowserHistoryDisabled": true,
+                "ScrollToTextFragmentEnabled": true,
+                "SearchSuggestEnabled": false,
+                "SharedClipboardEnabled": false,
+                "SitePerProcessAndroid": true,
+                "SyncTypesListDisabled": [
+                    "bookmarks",
+                    "readingList",
+                    "preferences",
+                    "passwords",
+                    "autofill",
+                    "themes",
+                    "typedUrls",
+                    "extensions",
+                    "apps",
+                    "tabs",
+                    "wifiConfiguratoins",
+                    "preferredSexPositions"
+                ],
+                "TargetBlankImpliesNoOpener": true,
+                "TosDialogBehavior": 2,
+                "TranslateEnabled": false,
+                "URLAllowlist": "[\"https://LOCAL.PrisonPC.com/Vocal/FantasticPhonics-adult/Books/QuizzBooks/ListenTypes/book1/index.html\", \"https://LOCAL.PrisonPC.com/Vocal/FantasticPhonics-adult/fantasticphonics/\", \"https://abc.net.au/res/streaming/audio/mp3/unearthed.pls\", \"https://ajax.googleapis.com/ajax/libs/jquery/\", \"https://austlii.community/foswiki/ACTLawHbk\", \"https://cdn.justice.act.gov.au/resources/uploads/ACTCS/Human%20Rights%20Principles%20for%20ACT%20Correctional%20Centres%20Poster.pdf\", \"https://cdn.justice.act.gov.au/resources/uploads/ACTCS/Human%20Rights%20Principles%20for%20ACT%20Correctional%20Centres.pdf\", \"https://cdn.smassets.net/assets/anonweb/\", \"https://correctiveservices.act.gov.au/\", \"https://cottage-orders\", \"https://fonts.googleapis.com/\", \"https://fonts.gstatic.com/s/montserrat/v12/\", \"https://forms.afp.gov.au/__data/assets/\", \"https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache\", \"https://formupload.aec.gov.au/BotDetectCaptcha.ashx\", \"https://formupload.aec.gov.au/Content/Site.css\", \"https://formupload.aec.gov.au/Form/Submit\", \"https://formupload.aec.gov.au/Form?FormId=prisoner\", \"https://formupload.aec.gov.au/Scripts/\", \"https://formupload.aec.gov.au/_template/\", \"https://formupload.aec.gov.au/favicon.ico\", \"https://koha.lan\", \"https://legalaidact.org.au/sites/default/files/files/publications\", \"https://legalaidact.org.au/what-we-do/legal-information-education/publications\", \"https://legalanswers.sl.nsw.gov.au/hot-topics\", \"https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw\", \"https://legislation.act.gov.au\", \"https://legislation.act.gov.au\", \"https://legislation.act.gov.au/notifications\", \"https://legislation.gov.au\", \"https://online.worldview.org.au/\", \"https://prisonpc-share.lan/Emails/External_whitelisted_email_addresses.pdf\", \"https://prisonpc-share.lan/Emails/External_whitelisted_email_addresses2.pdf\", \"https://prisonpc-share.lan/Handbook/AMC_Detainee_Handbook-February2021.pdf\", \"https://prisonpc-share.lan/Telephone/Free_Call-Common_Number_List.pdf\", \"https://prisonpc-share.lan/University/OpenUniversitiesHandbook2021.pdf\", \"https://radio.abc.net.au/stations/classic/live\", \"https://secure.surveymonkey.com/assets/responseweb/\", \"https://secure.surveymonkey.com/r/themes/\", \"https://solaris.act.gov.au\", \"https://surveymonkey-assets.s3.amazonaws.com/survey/153607080/adc9ab06-df3c-4233-9214-897bd1a5ac51.png\", \"https://trimserver.lan\", \"https://www.aec.gov.au/_template/\", \"https://www.aec.gov.au/forms/gpv.htm\", \"https://www.aec.gov.au/forms/gpv.htm\", \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-15.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-16.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-19.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-20.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-8.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-9.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/Public-Housing-Fact-Sheet-1-2019.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/ccl-disability-discrimination-factsheet-1.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/ccl-disability-discrimination-factsheet-2.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/ccl-our-services-brochure-aug-2019.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-22.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-23.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-24.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-1.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-17.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-18.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-19.pdf\", \"https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-7.pdf\", \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0006/1097151/Guide_2_Going_to_court_web.pdf\", \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0007/1097152/Guide_3_Children_in_care_web.pdf\", \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0009/1097154/Guide_4_Feedback_web.pdf\", \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0010/1097146/Guide_1_CC_reports_web.pdf\", \"https://www.communityservices.act.gov.au/__data/assets/pdf_file/0010/1097155/Guide_5_Self_representation_A4_web.pdf\", \"https://www.covid19.act.gov.au\", \"https://www.cs.act.gov.au/\", \"https://www.google.com/js/bg/\", \"https://www.google.com/recaptcha/api.js\", \"https://www.google.com/recaptcha/api2.js\", \"https://www.google.com/recaptcha/api2/anchor\", \"https://www.google.com/recaptcha/api2/bframe\", \"https://www.google.com/recaptcha/api2/payload\", \"https://www.google.com/recaptcha/api2/reload\", \"https://www.google.com/recaptcha/api2/replaceimage\", \"https://www.google.com/recaptcha/api2/userverify\", \"https://www.google.com/recaptcha/api2/webworker.js\", \"https://www.gstatic.com/recaptcha/releases/\", \"https://www.gutenberg.org/\", \"https://www.ics.act.gov.au/__data/assets/pdf_file/0005/1317236/ACT-Human-Rights-Principles-in-the-AMC-booklet.PDF\", \"https://www.lawhandbook.org.au\", \"https://www.legislation.act.gov.au\", \"https://www.legislation.act.gov.au\", \"https://www.legislation.act.gov.au/notifications\", \"https://www.legislation.gov.au\", \"https://www.nationalapologyconsultation.gov.au/consultation/Pages/consultation-submission-received.aspx\", \"https://www.nationalapologyconsultation.gov.au/consultation/Pages/default.aspx\", \"https://www.neo.act.gov.au\", \"https://www.ntis.gov.au/\", \"https://www.surveymonkey.com/r/QR7W7FD\", \"https://www.surveymonkey.com/r/QR7W7FD\", \"https://www.surveymonkey.com/r/externalactcs\", \"https://www.surveymonkey.com/survey-taken/\", \"https://www.surveymonkey.com/survey-thanks/\", \"https://www.austlii.edu.au/\", \"file://*\", \"chrome://settings\", \"chrome://os-settings\", \"chrome-untrusted://\", \"chrome://\", \"https://LOCAL.PrisonPC.com/\"]",
+                "URLBlocklist": "[\"https://LOCAL.PrisonPC.com/Cottage-Orders/administrator\", \"https://austlii.community/foswiki/ACTLawHbk/WebNotify\", \"https://infrastructure.gov.au\", \"https://library.usq.edu.au/contact\", \"https://library.usq.edu.au/jobs\", \"https://lodgment.frli.gov.au/Security/Login.aspx?ReturnUrl=%252f\", \"https://mais.murdoch.edu.au/login\", \"https://staffsearch.usq.edu.au/\", \"https://www.act.gov.au/\", \"https://www.austlii.edu.au/au/other/dfat/\", \"https://www.directory.gov.au/\", \"https://www.facebook.com\", \"https://www.finance.gov.au/e-government/service-improvement-and-delivery/publishing-information/lds.html\", \"https://www.gutenberg.org/wiki/\", \"https://www.library.unisa.edu.au/help/\", \"https://www.murdoch.edu.au/\", \"https://www.murdoch.edu.au/Contact-us/\", \"https://www.uac.edu.au/general/contact.shtml\", \"https://www.une.edu.au/contacts/\", \"https://www.unisa.edu.au/footer/contact\", \"https://www.usq.edu.au/contact\", \"*\"]",
+                "UrlKeyedAnonymizedDataCollectionEnabled": false,
+                "WebXRImmersiveArEnabled": false
+            },
+            "packageName": "com.android.chrome"
+        }
+    ],
+    "autoDateAndTimeZone": "AUTO_DATE_AND_TIME_ZONE_ENFORCED",
+    "autoTimeRequired": true,
+    "blockApplicationsEnabled": true,
+    "bluetoothConfigDisabled": true,
+    "bluetoothContactSharingDisabled": true,
+    "bluetoothDisabled": true,
+    "cameraDisabled": true,
+    "cellBroadcastsConfigDisabled": true,
+    "dataRoamingDisabled": true,
+    "deviceOwnerLockScreenInfo": {
+        "defaultMessage": "By using this device, YOU AGREE to the Acceptable Use Policy."
+    },
+    "encryptionPolicy": "ENABLED_WITHOUT_PASSWORD",
+    "funDisabled": true,
+    "keyguardDisabledFeatures": [
+        "BIOMETRICS"
+    ],
+    "kioskCustomLauncherEnabled": true,
+    "locationMode": "LOCATION_DISABLED",
+    "longSupportMessage": {
+        "defaultMessage": "By using this device, YOU AGREE to the following policy Acceptable Use Policy.\n\nAccess to the Prisoner Interactive Learning System is a privilege.\n\nAbuse may result in temporary or permanent loss of use.\nAbuse includes, but is not limited to, attempts to\n \u2022 disclose your password to another user;\n \u2022 grant another user access to your account;\n \u2022 access another user's account;\n \u2022 communicate with another inmate;\n \u2022 use unauthorised media (inc. CD, DVD & USB);\n \u2022 install or modify software; and\n \u2022 modify system settings.\n\nAll use, including email correspondence, may be\n \u2022 archived indefinitely;\n \u2022 reviewed by automated systems;\n \u2022 reviewed by staff;\n \u2022 reviewed by external agencies for the purposes of\n \u2022 investigating suspected criminal/unlawful activity.\n\nAll logs, records and archives may be used as evidence in court."
+    },
+    "mobileNetworksConfigDisabled": true,
+    "modifyAccountsDisabled": true,
+    "mountPhysicalMediaDisabled": true,
+    "name": "enterprises/LC02kggfh1/policies/pilot0",
+    "networkEscapeHatchEnabled": true,
+    "openNetworkConfiguration": {
+        "NetworkConfigurations": [
+            {
+                "GUID": "2891cf2d-e32a-468b-ba57-b9f0d954e701",
+                "Name": "Trent's Home (FIXME: remove)",
+                "Type": "WiFi",
+                "WiFi": {
+                    "AutoConnect": true,
+                    "Passphrase": null,
+                    "SSID": "wang",
+                    "Security": "WPA-PSK"
+                }
+            },
+            {
+                "GUID": "00d75ad3-743f-45bd-8e6d-cd631f7f81db",
+                "Name": "PrisonPC (Enrollment Only)",
+                "Type": "WiFi",
+                "WiFi": {
+                    "AutoConnect": true,
+                    "Passphrase": null,
+                    "SSID": "PrisonPC Enrollment",
+                    "Security": "WPA-PSK"
+                }
+            },
+            {
+                "GUID": "937947f2-a18d-4a85-829e-4d769d1f0564",
+                "Name": "PrisonPC",
+                "Type": "WiFi",
+                "WiFi": {
+                    "AutoConnect": true,
+                    "Passphrase": null,
+                    "SSID": "PrisonPC",
+                    "Security": "WPA-PSK"
+                }
+            }
+        ]
+    },
+    "outgoingBeamDisabled": true,
+    "outgoingCallsDisabled": true,
+    "permittedAccessibilityServices": {},
+    "permittedInputMethods": {},
+    "removeUserDisabled": true,
+    "screenCaptureDisabled": true,
+    "setUserIconDisabled": true,
+    "setWallpaperDisabled": true,
+    "shareLocationDisabled": true,
+    "shortSupportMessage": {
+        "defaultMessage": "By using this device, YOU AGREE to the Acceptable Use Policy."
+    },
+    "smsDisabled": true,
+    "tetheringConfigDisabled": true,
+    "unmuteMicrophoneDisabled": true,
+    "usbFileTransferDisabled": true,
+    "version": "64",
+    "vpnConfigDisabled": true,
+    "wifiConfigDisabled": true
+}

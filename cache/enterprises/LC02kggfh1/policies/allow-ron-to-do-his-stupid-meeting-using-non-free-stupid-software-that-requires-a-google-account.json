@@ -1,0 +1,26 @@
+{
+    "applications": [
+        {
+            "installType": "KIOSK",
+            "packageName": "com.google.android.apps.meetings"
+        }
+    ],
+    "name": "enterprises/LC02kggfh1/policies/allow-ron-to-do-his-stupid-meeting-using-non-free-stupid-software-that-requires-a-google-account",
+    "openNetworkConfiguration": {
+        "NetworkConfigurations": [
+            {
+                "GUID": "2891cf2d-e32a-468b-ba57-b9f0d954e701",
+                "Name": "Trent's Home (FIXME: remove)",
+                "Type": "WiFi",
+                "WiFi": {
+                    "AutoConnect": true,
+                    "Passphrase": null,
+                    "SSID": "wang",
+                    "Security": "WPA-PSK"
+                }
+            }
+        ]
+    },
+    "version": "23",
+    "wifiConfigDisabled": true
+}

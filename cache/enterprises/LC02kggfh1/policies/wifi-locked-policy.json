@@ -7,13 +7,13 @@
                 "Name": "PrisonPC Tablet Network",
                 "Type": "WiFi",
                 "WiFi": {
-                    "Passphrase": "FIXME USE A PASSWORD VAULT HERE",
+                    "Passphrase": null,
                     "SSID": "PrisonPC",
                     "Security": "WPA-PSK"
                 }
             }
         ]
     },
-    "version": "37",
+    "version": "104",
     "wifiConfigDisabled": true
 }
