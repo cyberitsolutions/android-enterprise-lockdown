@@ -360,7 +360,13 @@ for name in device_names_to_delete:
 # it can be poked around at later with jq(1).
 os.makedirs('cache', exist_ok=True)
 with open('cache/API-androidmanagement-v1.json', mode='w') as f:
-    resp = requests.get('https://androidmanagement.googleapis.com/$discovery/rest?version=v1')
+    resp = requests.get(
+        # Either of these URLs works, and returns the same content.
+        # This is the URL that apiclient.discovery.build() above talks to.
+        'https://www.googleapis.com/discovery/v1/apis/androidmanagement/v1/rest'
+        or
+        # This is the URL that Google documentation told us to use.
+        'https://androidmanagement.googleapis.com/$discovery/rest?version=v1')
     resp.raise_for_status()
     json.dump(
         resp.json(),
