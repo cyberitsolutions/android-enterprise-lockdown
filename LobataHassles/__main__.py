@@ -271,7 +271,10 @@ for new_webApp in json_config_object['webApps']:
         # Except that old_webApp has some auto-populated fields, so
         # only compare startUrl/title/displayMode.
         # UPDATE: FIXME: when I upload a webApp['icons'], it isn't there when I query it back.  Is it broken during upload, or download?
-        if all(old_webApp.get(k) == v for k, v in new_webApp.items()):
+        if all(old_webApp[k] == new_webApp[k]
+               for k in new_webApp
+               if k != 'icons'  # FIXME: is this permanently bugged, or what???
+               ):
             logging.debug('Exists and unchanged, so call nothing')
             continue
         logging.debug('Exists, so call patch()')
