@@ -1,10 +1,20 @@
 {
-    "name": "enterprises/LC02kggfh1/applications/net.gcompris.full",
+    "name": "enterprises/LC02kggfh1/applications/com.ubqsoft.sec01",
     "permissions": [
         {
             "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
             "name": "view network connections",
             "permissionId": "android.permission.ACCESS_NETWORK_STATE"
+        },
+        {
+            "description": "Allows the app to download files through the download manager without any notification being shown to the user.",
+            "name": "download files without notification",
+            "permissionId": "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"
+        },
+        {
+            "description": "Allows the app to retrieve its code, data, and cache sizes",
+            "name": "measure app storage space",
+            "permissionId": "android.permission.GET_PACKAGE_SIZE"
         },
         {
             "description": "Allows the app to create network sockets and use custom network protocols. The browser and other applications provide means to send data to the internet, so this permission is not required to send data to the internet.",
@@ -22,5 +32,5 @@
             "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
         }
     ],
-    "title": "GCompris Educational Game for Children"
+    "title": "App Inspector"
 }

@@ -1,9 +1,0 @@
-{
-    "name": "enterprises/LC02kggfh1/applications/com.sanskritbasics.memory",
-    "permissions": [
-        {
-            "permissionId": "com.android.vending.BILLING"
-        }
-    ],
-    "title": "Sanskrit Basics Memory"
-}

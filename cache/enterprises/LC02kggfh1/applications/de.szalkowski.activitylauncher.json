@@ -2,6 +2,9 @@
     "name": "enterprises/LC02kggfh1/applications/de.szalkowski.activitylauncher",
     "permissions": [
         {
+            "permissionId": "android.permission.QUERY_ALL_PACKAGES"
+        },
+        {
             "description": "Allows an app to add shortcuts without user intervention.",
             "name": "install shortcuts",
             "permissionId": "com.android.launcher.permission.INSTALL_SHORTCUT"

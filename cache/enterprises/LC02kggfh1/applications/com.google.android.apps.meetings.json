@@ -1,16 +1,6 @@
 {
-    "name": "enterprises/LC02kggfh1/applications/com.google.android.street",
+    "name": "enterprises/LC02kggfh1/applications/com.google.android.apps.meetings",
     "permissions": [
-        {
-            "description": "Allows the app to get your approximate location. This location is derived by location services using network location sources such as cell towers and Wi-Fi. These location services must be turned on and available to your device for the app to use them. Apps may use this to determine approximately where you are.",
-            "name": "approximate location (network-based)",
-            "permissionId": "android.permission.ACCESS_COARSE_LOCATION"
-        },
-        {
-            "description": "Allows the app to get your precise location using the Global Positioning System (GPS) or network location sources such as cell towers and Wi-Fi. These location services must be turned on and available to your device for the app to use them. Apps may use this to determine where you are, and may consume additional battery power.",
-            "name": "precise location (GPS and network-based)",
-            "permissionId": "android.permission.ACCESS_FINE_LOCATION"
-        },
         {
             "description": "Allows the app to view information about network connections such as which networks exist and are connected.",
             "name": "view network connections",
@@ -22,6 +12,29 @@
             "permissionId": "android.permission.ACCESS_WIFI_STATE"
         },
         {
+            "description": "Allows the app to use the account authenticator capabilities of the AccountManager, including creating accounts and getting and setting their passwords.",
+            "name": "create accounts and set passwords",
+            "permissionId": "android.permission.AUTHENTICATE_ACCOUNTS"
+        },
+        {
+            "description": "Allows the app to view the configuration of Bluetooth on the device, and to make and accept connections with paired devices.",
+            "name": "pair with Bluetooth devices",
+            "permissionId": "android.permission.BLUETOOTH"
+        },
+        {
+            "description": "Allows the app to view the configuration of Bluetooth on the device, and to make and accept connections with paired devices.",
+            "name": "pair with Bluetooth devices",
+            "permissionId": "android.permission.BLUETOOTH"
+        },
+        {
+            "permissionId": "android.permission.BLUETOOTH_CONNECT"
+        },
+        {
+            "description": "Allows the app to call phone numbers without your intervention. This may result in unexpected charges or calls. Note that this doesn't allow the app to call emergency numbers. Malicious apps may cost you money by making calls without your confirmation.",
+            "name": "directly call phone numbers",
+            "permissionId": "android.permission.CALL_PHONE"
+        },
+        {
             "description": "Allows the app to take pictures and videos with the camera. This permission allows the app to use the camera at any time without your confirmation.",
             "name": "take pictures and videos",
             "permissionId": "android.permission.CAMERA"
@@ -30,11 +43,6 @@
             "description": "Allows the app to change the state of network connectivity.",
             "name": "change network connectivity",
             "permissionId": "android.permission.CHANGE_NETWORK_STATE"
-        },
-        {
-            "description": "Allows the app to connect to and disconnect from Wi-Fi access points and to make changes to device configuration for Wi-Fi networks.",
-            "name": "connect and disconnect from Wi-Fi",
-            "permissionId": "android.permission.CHANGE_WIFI_STATE"
         },
         {
             "permissionId": "android.permission.FOREGROUND_SERVICE"
@@ -60,9 +68,17 @@
             "permissionId": "android.permission.MANAGE_ACCOUNTS"
         },
         {
-            "description": "Allows the app to read the contents of your USB storage.",
-            "name": "read the contents of your USB storage",
-            "permissionId": "android.permission.READ_EXTERNAL_STORAGE"
+            "permissionId": "android.permission.MANAGE_OWN_CALLS"
+        },
+        {
+            "description": "Allows the app to modify global audio settings such as volume and which speaker is used for output.",
+            "name": "change your audio settings",
+            "permissionId": "android.permission.MODIFY_AUDIO_SETTINGS"
+        },
+        {
+            "description": "Allows the app to read data about your contacts stored on your device, including the frequency with which you've called, emailed, or communicated in other ways with specific individuals. This permission allows apps to save your contact data, and malicious apps may share contact data without your knowledge.",
+            "name": "read your contacts",
+            "permissionId": "android.permission.READ_CONTACTS"
         },
         {
             "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
@@ -70,14 +86,17 @@
             "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"
         },
         {
+            "description": "Allows the app to record audio with the microphone. This permission allows the app to record audio at any time without your confirmation.",
+            "name": "record audio",
+            "permissionId": "android.permission.RECORD_AUDIO"
+        },
+        {
             "description": "Allows the app to request authentication tokens.",
             "name": "use accounts on the device",
             "permissionId": "android.permission.USE_CREDENTIALS"
         },
         {
-            "description": "Allows the app to control the vibrator.",
-            "name": "control vibration",
-            "permissionId": "android.permission.VIBRATE"
+            "permissionId": "android.permission.USE_FULL_SCREEN_INTENT"
         },
         {
             "description": "Allows the app to prevent the device from going to sleep.",
@@ -85,17 +104,7 @@
             "permissionId": "android.permission.WAKE_LOCK"
         },
         {
-            "description": "Allows the app to write to the USB storage.",
-            "name": "modify or delete the contents of your USB storage",
-            "permissionId": "android.permission.WRITE_EXTERNAL_STORAGE"
-        },
-        {
-            "description": "Allows apps to accept cloud to device messages sent by the app's service. Using this service will incur data usage. Malicious apps could cause excess data usage.",
-            "name": "receive data from Internet",
-            "permissionId": "com.google.android.c2dm.permission.RECEIVE"
-        },
-        {
-            "permissionId": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+            "permissionId": "com.google.android.hangouts.START_HANGOUT"
         },
         {
             "description": "Allows this app to read Google service configuration data.",
@@ -103,5 +112,5 @@
             "permissionId": "com.google.android.providers.gsf.permission.READ_GSERVICES"
         }
     ],
-    "title": "Google Street View"
+    "title": "Google Meet"
 }
