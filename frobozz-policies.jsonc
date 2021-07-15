@@ -211,77 +211,22 @@
                 {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",
                  "disabled": false,
                  "managedConfiguration": {
-                     // Additional browser lockdown.
-                     "HomepageLocation": "https://www.PrisonPC.com/",  // FIXME: change
-                     "AlternateErrorPagesEnabled": false,  // disabled
-                     "SearchSuggestEnabled": false,        // disabled
-                     "NetworkPredictionOptions": "2",      // disabled
-                     "IncognitoModeAvailability": "1",     // disabled
-                     "SavingBrowserHistoryDisabled": true,  // disabled
-                     "PrintingEnabled": false,              // disabled
-                     "AppCacheForceEnabled": false,         // disabled
-                     "ForceGoogleSafeSearch": true,         // enabled (google search pretends women don't have nipples)
-                     "ForceYouTubeRestrict": "2",           // enabled (youtube pretends women don't have nipples)
-                     "SafeBrowsingProtectionLevel": "1",    // enabled (below "phone home to google" level)
-                     "PasswordManagerEnabled": false,       // disabled
-                     "PasswordLeakDetectionEnabled": true,  // enabled (checks passwords against a blacklist?)
-                     "AutofillAddressEnabled": false,       // disabled
-                     "AutofillCreditCardEnabled": false,    // disabled
-                     "SyncTypesListDisabled": ["bookmarks", "readingList", "preferences", "passwords", "autofill", "themes", "typedUrls", "extensions", "apps", "tabs", "wifiConfiguratoins", "preferredSexPositions"],  // disable all
-                     "ProxySettings": {"ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"},
-                     "AuthSchemes": "basic",  // disable weak MD5 ("digest") and MD4 ("ntlm")
-                     "DisableAuthNegotiateCnameLookup": false,  // IRRELEVANT -- KERBEROS ONLY
-                     "AuthServerAllowlist": "LOCAL.PrisonPC.com,*.lan",  // FIXME: ???
-                     // "AuthNegotiateDelegateAllowlist"
-                     // "AuthAndroidNegotiateAccountType"
-                     // "NtlmV2Enabled"
-                     // "BlockThirdPartyCookies"
-                     // "DefaultSearchProviderEnabled"
-                     // "DefaultSearchProviderName"
-                     // "DefaultSearchProviderKeyword"
-                     // "DefaultSearchProviderSearchURL"
-                     // "DefaultSearchProviderSuggestURL"
-                     // "DefaultSearchProviderIconURL"
-                     // "DefaultSearchProviderEncodings"
-                     // "DefaultSearchProviderAlternateURLs"
-                     // "DefaultSearchProviderImageURL"
-                     // "DefaultSearchProviderNewTabURL"
-                     // "DefaultSearchProviderSearchURLPostParams"
-                     // "DefaultSearchProviderSuggestURLPostParams"
-                     // "DefaultSearchProviderImageURLPostParams"
-                     // "DefaultCookiesSetting"
-                     // "DefaultJavaScriptSetting"
-                     // "DefaultPopupsSetting"
-                     // "DefaultGeolocationSetting"
-                     // "DefaultWebBluetoothGuardSetting"
-                     // "DefaultSensorsSetting"
-                     // "DefaultWebUsbGuardSetting"
-                     // "WebUsbAllowDevicesForUrls"
-                     // "WebUsbAskForUrls"
-                     // "WebUsbBlockedForUrls"
-                     // "CookiesAllowedForUrls"
-                     // "CookiesBlockedForUrls"
-                     // "CookiesSessionOnlyForUrls"
-                     // "JavaScriptAllowedForUrls"
-                     // "JavaScriptBlockedForUrls"
-                     // "LegacySameSiteCookieBehaviorEnabled"
-                     // "LegacySameSiteCookieBehaviorEnabledForDomainList"
-                     // "LensCameraAssistedSearchEnabled"
-                     // "PopupsAllowedForUrls"
-                     // "PopupsBlockedForUrls"
-                     // "SensorsAllowedForUrls"
-                     // "SensorsBlockedForUrls"
-                     // "TargetBlankImpliesNoOpener"
-                     // "TranslateEnabled"
-                     // "EditBookmarksEnabled"
-                     // "URLBlocklist"
-                     // "URLAllowlist"
-                     // "EnableExperimentalPolicies"
-                     // "DisableSafeBrowsingProceedAnyway"
-                     // "BuiltInDnsClientEnabled"
-                     // "DnsOverHttpsMode"
-                     // "DnsOverHttpsTemplates"
-                     // "SharedClipboardEnabled"
+                     // THIS FORMAT (REGULAR JSON) IS NOT WORKING.
+                     //     "ManagedBookmarks": [{"name": "MyOtherCoolBookmark", "url": "https://example.org/"}]
+                     // THIS FORMAT (WRAPPING IN A STRING) IS DEFINITELY WORKING.
+                     //     "ManagedBookmarks": "[{\"name\": \"MyCoolBookmark\", \"url\": \"https://example.com/\"}]"
+                     //     "URLBlocklist": "[\"*\", \"chrome://*\"]",
+                     //     "URLAllowlist": "[\"https://example.com/\", \"https://www.example.com/\", \"https://ang.wikipedia.org/\"]",
+                     //
+                     // UPDATE: I patched my wrapper script to auto-encode json into a string, i.e. basically
+                     //    managedBookmarks = json.dumps(managedBookmarks)
+                     "URLBlocklist": [
+                         "*",
+                         "chrome://*"],
+                     "URLAllowlist": [
+                         "https://example.com/",
+                         "https://www.example.com/",
+                         "https://ang.wikipedia.org/"],
                      "ManagedBookmarks": [
                          // https://crtech.tips/json-example-code-for-chromes-managed-bookmarks/
                          {"toplevel_name": "Company Links"},
@@ -305,51 +250,180 @@
                               {"name": "Website 12", "url": "https://website12.com/"}
                           ]
                          }
-                     ]
-                     // "DataCompressionProxyEnabled"
-                     // "BrowserSignin"
-                     // "SSLVersionMin"
-                     // "CECPQ2Enabled"
+                     ],
+
+                     // Additional browser lockdown.
+                     "HomepageLocation": "https://www.PrisonPC.com/",  // FIXME: change
+                     "AlternateErrorPagesEnabled": false,  // disabled
+                     "SearchSuggestEnabled": false,        // disabled
+                     "NetworkPredictionOptions": 2,        // disabled
+                     "IncognitoModeAvailability": 1,       // disabled
+                     "SavingBrowserHistoryDisabled": true,  // disabled
+                     "PrintingEnabled": false,              // disabled
+                     "AppCacheForceEnabled": false,         // disabled
+                     "ForceGoogleSafeSearch": true,         // enabled (google search pretends women don't have nipples)
+                     "ForceYouTubeRestrict": "2",           // enabled (youtube pretends women don't have nipples)
+                     "SafeBrowsingProtectionLevel": "1",    // enabled (below "phone home to google" level)
+                     "PasswordManagerEnabled": false,       // disabled
+                     "PasswordLeakDetectionEnabled": true,  // enabled (checks passwords against a blacklist?)
+                     "AutofillAddressEnabled": false,       // disabled
+                     "AutofillCreditCardEnabled": false,    // disabled
+                     "SyncTypesListDisabled": ["bookmarks", "readingList", "preferences", "passwords", "autofill", "themes", "typedUrls", "extensions", "apps", "tabs", "wifiConfiguratoins", "preferredSexPositions"],  // disable all
+                     "ProxySettings": {"ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"},
+                     "AuthSchemes": "basic",  // disable weak MD5 ("digest") and MD4 ("ntlm")
+                     "DisableAuthNegotiateCnameLookup": false,  // IRRELEVANT -- SPNEGO KERBEROS ONLY
+                     "AuthServerAllowlist": "LOCAL.PrisonPC.com,*.lan",  // FIXME: ???
+                     // "AuthNegotiateDelegateAllowlist"  // IRRELEVANT -- SPNEGO KERBEROS ONLY
+                     // "AuthAndroidNegotiateAccountType"  // IRRELEVANT -- SPNEGO KERBEROS ONLY
+                     "NtlmV2Enabled": false,  // disabled
+                     "BlockThirdPartyCookies": true,
+                     "DefaultSearchProviderEnabled": false,  // disabled
+                     // All DefaultSearchProviderXXX IRRELEVANT due to DefaultSearchProviderEnabled=false
+                     // "DefaultSearchProviderName":                 "Quack Quack Quo",
+                     // "DefaultSearchProviderKeyword" :             "ddg",
+                     // "DefaultSearchProviderSearchURL":            "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderSuggestURL":           "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderIconURL":              "https://lite.duckduckgo.com/favicon.ico",
+                     // "DefaultSearchProviderEncodings":            "UTF-8",
+                     // "DefaultSearchProviderAlternateURLs":        "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderImageURL":             "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderNewTabURL":            "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderSearchURLPostParams":  "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderSuggestURLPostParams": "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderImageURLPostParams":   "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     "DefaultCookiesSetting": 2,  // disabled (FIXME: ???)
+                     "DefaultJavaScriptSetting": 1,  // ENABLED (websites may execute javascript!!!)
+                     "DefaultPopupsSetting": 2,  // disabled (popups banned -- this is the default)
+                     "DefaultGeolocationSetting": 2,  // disabled (geolocation banned)
+                     "DefaultWebBluetoothGuardSetting": 2,  // disabled (bluetooth banned)
+                     "DefaultSensorsSetting": 2,            // disabled (light/gyro sensors banned)
+                     "DefaultWebUsbGuardSetting": 2,        // disabled (USB banned)
+                     // "WebUsbAllowDevicesForUrls"
+                     // "WebUsbAskForUrls"
+                     // "WebUsbBlockedForUrls"
+                     // "CookiesAllowedForUrls"
+                     // "CookiesBlockedForUrls"
+                     // "CookiesSessionOnlyForUrls"
+                     // "JavaScriptAllowedForUrls"
+                     // "JavaScriptBlockedForUrls"
+                     "LegacySameSiteCookieBehaviorEnabled": 2,  // disabled
+                     // "LegacySameSiteCookieBehaviorEnabledForDomainList"
+                     "LensCameraAssistedSearchEnabled": false,  // disabled
+                     // "PopupsAllowedForUrls"
+                     // "PopupsBlockedForUrls"
+                     // "SensorsAllowedForUrls"
+                     // "SensorsBlockedForUrls"
+                     "TargetBlankImpliesNoOpener": true,  // disabled (block an off-by-default insecure thing)
+                     "TranslateEnabled": false,     // disabled
+                     "EditBookmarksEnabled": false,  // disabled
+                     "EnableExperimentalPolicies": "",  // disabled?
+                     "DisableSafeBrowsingProceedAnyway": true,  // disabled (cannot say "I accept the risk")
+                     // "BuiltInDnsClientEnabled"
+                     "DnsOverHttpsMode": "off",  // disabled
+                     // "DnsOverHttpsTemplates"
+                     "SharedClipboardEnabled": false,  // disabled
+                     "DataCompressionProxyEnabled": false,  // disabled (don't "phone home" page contents to google)  ("Lite mode")
+                     "BrowserSignin": 0,  // disabled (user can't "sign into google")
+                     "SSLVersionMin": "tls1.2",  // enabled (ban insecure SSL/TLS versions)
+                     "CECPQ2Enabled": true,      // enabled (don't delay adoption of strong crypto)
                      // "CertificateTransparencyEnforcementDisabledForUrls"
                      // "CertificateTransparencyEnforcementDisabledForCas"
                      // "CertificateTransparencyEnforcementDisabledForLegacyCas"
                      // "ContextualSearchEnabled"
-                     // "SSLErrorOverrideAllowed"
+                     "SSLErrorOverrideAllowed": false,  // disabled (cannot say "I accept the risk")
                      // "SSLErrorOverrideAllowedForOrigins"
                      // "AllowedDomainsForApps"
-                     // "EnableMediaRouter"
-                     // "NTPContentSuggestionsEnabled"
+                     "EnableMediaRouter": false,  // disabled (Google Cast)
+                     "NTPContentSuggestionsEnabled": false,  // disabled
                      // "WebRtcUdpPortRange"
                      // "IsolateOriginsAndroid"
-                     // "SitePerProcessAndroid"
+                     "SitePerProcessAndroid": true,  // enabled
                      // "RestrictAccountsToPatterns"
-                     // "SafeBrowsingExtendedReportingEnabled"
+                     "SafeBrowsingExtendedReportingEnabled": false,  // disabled (do not "phone home" to google)
                      // "OverrideSecurityRestrictionsOnInsecureOrigin"
-                     // "UrlKeyedAnonymizedDataCollectionEnabled"
-                     // "EnterpriseHardwarePlatformAPIEnabled"
+                     "UrlKeyedAnonymizedDataCollectionEnabled": false,  // disabled (do not "phone home" to google)
+                     "EnterpriseHardwarePlatformAPIEnabled": false,  // ???
                      // "HSTSPolicyBypassList"
-                     // "AllowSyncXHRInPageDismissal"
-                     // "PaymentMethodQueryEnabled"
-                     // "ScrollToTextFragmentEnabled"
-                     // "IntensiveWakeUpThrottlingEnabled"
+                     "AllowSyncXHRInPageDismissal": false,  // disabled
+                     "PaymentMethodQueryEnabled": false,    // disabled (Credit Card stuff)
+                     "ScrollToTextFragmentEnabled": true,   // ENABLED (allow "#foo" in URLs, e.g. https://example.com/x.html#Chapter_3)
+                     "IntensiveWakeUpThrottlingEnabled": true,  // ENABLED (mitigate battery drain by bad js)
                      // "BackForwardCacheEnabled"
                      // "UserAgentClientHintsEnabled"
-                     // "InsecureFormsWarningsEnabled"
+                     "InsecureFormsWarningsEnabled": true,  // ENABLED (warn about cleartext HTTP)
                      // "LookalikeWarningAllowlistDomains"
-                     // "TosDialogBehavior"
-                     // "WebXRImmersiveArEnabled"
+                     "TosDialogBehavior": 2,  // ENABLED (don't display Chrome EULA on first open)
+                     "WebXRImmersiveArEnabled": false,  // disabled
                      // "SuppressDifferentOriginSubframeDialogs"
-                     // "ExplicitlyAllowedNetworkPorts"
-                 }},
+                     "ExplicitlyAllowedNetworkPorts": ""  // disabled (empty list of whitelisted legacy ports to re-allow)
+                 }}
 
                 // ----------------------------------------------------------------------
                 // Disable some trash that should not be accessible, but is?
-                {"installType": "BlOCKED", "disabled": true, "packageName": "com.google.android.gms"}  // "Google Play services", i.e. in chrome "Turn on sync" ???
-
-
-
-
+                // UPDATE: THIS DID NOT WORK, BUT com.android.chrome/managedConfiguration/BrowserSignin=false did???
+                // {"installType": "BlOCKED", "disabled": true, "packageName": "com.google.android.gms"}  // "Google Play services", i.e. in chrome "Turn on sync" ???
                 ],
+
+
+            // ----------------------------------------------------------------------
+            // Default-disable everything else.
+            // NOTE: Kiosk mode hides MOST of this anyway, but sometimes is still reachable indirectly.
+            // NOTE: "adjustVolumeDisabled" disables sound output -- breaks watching IPTV.
+            // NOTE: "cameraDisabled" disables QR code scanning for wifi enrollment.
+            "bluetoothDisabled": true,
+            "bluetoothConfigDisabled": true,
+            "bluetoothContactSharingDisabled": true,
+            "addUserDisabled": true,
+            "modifyAccountsDisabled": true,
+            "removeUserDisabled": true,
+            "adjustVolumeDisabled": false,
+            "cameraDisabled": true,
+            "unmuteMicrophoneDisabled": true,
+            "screenCaptureDisabled": true,
+            "setWallpaperDisabled": true,
+            "setUserIconDisabled": true,
+            "mountPhysicalMediaDisabled": true,
+            "outgoingBeamDisabled": true,
+            "outgoingCallsDisabled": true,
+            "usbFileTransferDisabled": true,
+            "usbMassStorageEnabled": false,
+            "keyguardDisabledFeatures": "BIOMETRICS",
+            "permittedAccessibilityServices": {"packageNames": []},
+            "permittedInputMethods": {"packageNames": []},
+            "locationMode": "LOCATION_DISABLED",
+            "shareLocationDisabled": true,
+            "mobileNetworksConfigDisabled": true,
+            "cellBroadcastsConfigDisabled": true,
+            "dataRoamingDisabled": true,
+            "smsDisabled": true,
+            "tetheringConfigDisabled": true,
+            "funDisabled": true,
+            "blockApplicationsEnabled": true,
+            "autoDateAndTimeZone": "AUTO_DATE_AND_TIME_ZONE_ENFORCED",
+            "appAutoUpdatePolicy": "ALWAYS",
+            "autoTimeRequired": true,
+            "vpnConfigDisabled": true,
+            "encryptionPolicy": "ENABLED_WITHOUT_PASSWORD",
+
+            // ----------------------------------------------------------------------
+            // Acceptable use policy
+            "deviceOwnerLockScreenInfo": {
+                "defaultMessage":
+                "By using this device, YOU AGREE to the Acceptable Use Policy."},
+            "shortSupportMessage": {
+                "defaultMessage":
+                "By using this device, YOU AGREE to the Acceptable Use Policy."},
+            "longSupportMessage": {
+                "defaultMessage":
+                "By using this device, YOU AGREE to the following policy Acceptable Use Policy.\n\nAccess to the Prisoner Interactive Learning System is a privilege.\n\nAbuse may result in temporary or permanent loss of use.\nAbuse includes, but is not limited to, attempts to\n • disclose your password to another user;\n • grant another user access to your account;\n • access another user's account;\n • communicate with another inmate;\n • use unauthorised media (inc. CD, DVD & USB);\n • install or modify software; and\n • modify system settings.\n\nAll use, including email correspondence, may be\n • archived indefinitely;\n • reviewed by automated systems;\n • reviewed by staff;\n • reviewed by external agencies for the purposes of\n • investigating suspected criminal/unlawful activity.\n\nAll logs, records and archives may be used as evidence in court."},
+
+
+
+
+
+
+
+
 
 
             "networkEscapeHatchEnabled": true
