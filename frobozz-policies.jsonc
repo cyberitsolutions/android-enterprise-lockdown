@@ -207,6 +207,13 @@
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x229102e320da4139"},  // Mail
 
                 // ----------------------------------------------------------------------
+                // Inmate can view PDFs and emailed office documents.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},  // needed to read PDF, DOCX, PPTX, XLSX
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.docs", "managedConfiguration": {"PrintingEnabled": false, "enableAccountLessMode": true}},  // NEEDED TO VIEW DOCX
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.sheets", "managedConfiguration": {"PrintingEnabled": false, "enableAccountLessMode": true}},  // NEEDED TO VIEW XLSX
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.slides", "managedConfiguration": {"PrintingEnabled": false, "enableAccountLessMode": true}},  // NEEDED TO VIEW PPTX
+
+                // ----------------------------------------------------------------------
                 // Inmate can browse to whitelisted websites.
                 {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",
                  "disabled": false,
