@@ -281,7 +281,7 @@
                          "https://formupload.aec.gov.au/Scripts/",
                          "https://formupload.aec.gov.au/_template/",
                          "https://formupload.aec.gov.au/favicon.ico",
-                         "https://koha.lan",
+                         "https://LOCAL.PrisonPC.com/Library",
                          "https://legalaidact.org.au/sites/default/files/files/publications",
                          "https://legalaidact.org.au/what-we-do/legal-information-education/publications",
                          "https://legalanswers.sl.nsw.gov.au/hot-topics",
@@ -343,7 +343,8 @@
                          "https://www.gstatic.com/recaptcha/releases/",
                          "https://www.gutenberg.org/",
                          "https://www.ics.act.gov.au/__data/assets/pdf_file/0005/1317236/ACT-Human-Rights-Principles-in-the-AMC-booklet.PDF",
-                         "https://www.lawhandbook.org.au",
+                         "https://fls.org.au", "http://fls.org.au",  // was lawhandbook.org.au (internal links explicitly use "http://" sometimes, sigh
+  // was lawhandbook.org.au
                          "https://www.legislation.act.gov.au",
                          "https://www.legislation.act.gov.au",
                          "https://www.legislation.act.gov.au/notifications",
@@ -377,12 +378,13 @@
                          {"url": "https://legislation.gov.au"                                                                                          , "name": "Federal Legislation"                                                 },
                          {"url": "https://www.covid19.act.gov.au"                                                                                      , "name": "COVID 19 Information ACT Government"                                 },
                          {"url": "https://www.gutenberg.org/"                                                                                          , "name": "Project Gutenberg eBooks"                                            },
-                         {"url": "https://www.lawhandbook.org.au"                                                                                      , "name": "Victorian Law Handbook"                                              },
-                         {"url": "https://www.surveymonkey.com/r/externalactcs"                                                                        , "name": "ACT Corrective Services DAIP Questionnaire"                          },
+                         // {"url": "https://www.lawhandbook.org.au"                                                                                      , "name": "Victorian Law Handbook"                                              },
+                         {"url": "https://fls.org.au"                                                                                                  , "name": "Victorian Law Handbook"                                              },
+                         // {"url": "https://www.surveymonkey.com/r/externalactcs"                                                                        , "name": "ACT Corrective Services DAIP Questionnaire"                          }, // SURVEY CLOSED - NOT USEFUL
                          {"url": "https://www.surveymonkey.com/r/QR7W7FD"                                                                              , "name": "ACT Charter of Rights for Victims of Crime Online Survey"            },
                          {"name": "Internal Bookmarks", "children":
                           [{"url": "https://LOCAL.PrisonPC.com/Cottage-Orders/", "name": "AMC Cottage Orders"},
-                           {"url": "https://koha.lan", "name": "Library Index"},
+                           {"url": "https://LOCAL.PrisonPC.com/Library", "name": "Library Index"},
                            {"url": "https://LOCAL.PrisonPC.com/Share/Emails/External_whitelisted_email_addresses.pdf", "name": "Whitelisted Emails"},
                            {"url": "https://LOCAL.PrisonPC.com/Share/Handbook/AMC_Detainee_Handbook-February2021.pdf", "name": "AMC Detainee Handbook 2021"},
                            {"url": "https://LOCAL.PrisonPC.com/Share/Telephone/Free_Call-Common_Number_List.pdf", "name": "AMC Detainee Free Call Common Numbers List"},
