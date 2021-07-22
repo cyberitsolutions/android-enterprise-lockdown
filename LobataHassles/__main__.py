@@ -85,6 +85,7 @@ parser.add_argument(
     Which one is semi-random.  To force a specific one, use this.
     e.g. --enrollment-policy-name=policy1
     """)
+parser.add_argument('--hurry-the-fuck-up', action='store_true')
 parser.add_argument('--debug', dest='logging_level', action='store_const', const=logging.DEBUG, default=logging.NOTSET)
 parser.add_argument('--verbose', dest='logging_level', action='store_const', const=logging.INFO, default=logging.NOTSET)
 args = parser.parse_args()
@@ -431,6 +432,9 @@ for enterprise in merged_pages(
     #
     # NOTE: com.android.chrome's managedProperties is equivalent to
     #       https://www.chromium.org/administrators/policy-list-3
+    if args.hurry_the_fuck_up:
+        logging.debug('Skipping slow download of application stuff')
+        continue
     for packageName in sorted(set(
             application['packageName']
             for policy in json_config_object['policies'].values()
@@ -457,6 +461,10 @@ for enterprise in merged_pages(
 #
 # You need an enrollment token for each device that you want to provision (you can use the same token for multiple devices);
 # when creating a token you can specify a policy that will be applied to the device.
+
+if args.hurry_the_fuck_up:
+    logging.debug('Skipping everything else (probably just enrollment QR code)')
+    exit()
 
 # FIXME: this does enrollment for whatever the LAST POLICY IN THE LIST loop was.
 # Since "policies" is a dict, the order is random!
