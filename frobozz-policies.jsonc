@@ -360,8 +360,14 @@
                          "https://www.surveymonkey.com/survey-thanks/",
                          // WARNING!  THIS *WAS* RESTRICTED TO A VERY SMALL SET OF DETAINEES -- ASK WHY??
                          "https://www.austlii.edu.au/",
-                         // Is this needed to make PDF viewing work???
-                         "file://*", "chrome://settings", "chrome://os-settings", "chrome-untrusted://", "chrome://",
+                         // None of these seem to be needed – Settings screen is visible WITHOUT allowing any chrome://!
+                         // "file://*", "chrome://settings", "chrome://os-settings", "chrome-untrusted://", "chrome://",
+                         // Chrome uses content: to access downloaded files that are 1) not HTML; and 2) not handled externally (PDF).
+                         // For example, this applies for text/plain from gutenberg.
+                         // For example, this applies for image/png (but can also be opened directly in Gallery Go).
+                         // UPDATE: the URL it claims to be trying is content://media/external/downloads/27
+                         // but whitelisting anything narrower than "content://*" is not working.
+                         "content://*",
                          // During pilot this replaces some/all unqualified hosts (e.g. https://PrisonPC/ and https://Cottage-Orders/).
                          "https://LOCAL.PrisonPC.com/"],
                      "ManagedBookmarks": [
