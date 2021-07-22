@@ -153,6 +153,7 @@
             // ----------------------------------------------------------------------
             //  Block "Play Store", "Settings", screen locking.
             "kioskCustomLauncherEnabled": true,
+            "keyguardDisabled": true,
 
             // ----------------------------------------------------------------------
             // Hard-code wifi; block changing it.
