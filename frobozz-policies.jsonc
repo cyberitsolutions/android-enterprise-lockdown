@@ -370,7 +370,6 @@
                          {"url": "https://correctiveservices.act.gov.au/"                                                                              , "name": "ACT Corrective Services"                                             },
                          {"url": "https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache"                                 , "name": "AFP Reporting Historical Sexual Assault"                             },
                          {"url": "https://formupload.aec.gov.au/Form?FormId=prisoner"                                                                  , "name": "Australian Electoral Commission Enrol to Vote"                       },
-                         {"url": "https://koha.lan"                                                                                                    , "name": "Library Index"                                                       },
                          {"url": "https://legalaidact.org.au/what-we-do/legal-information-education/publications"                                      , "name": "Legal Aid Information and Education Topics"                          },
                          {"url": "https://legalanswers.sl.nsw.gov.au/hot-topics"                                                                       , "name": "Hot Topics Find Legal Answers State Library of NSW"                  },
                          {"url": "https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw"                                        , "name": "NSW Law Handbook"                                                    },
@@ -383,6 +382,7 @@
                          {"url": "https://www.surveymonkey.com/r/QR7W7FD"                                                                              , "name": "ACT Charter of Rights for Victims of Crime Online Survey"            },
                          {"name": "Internal Bookmarks", "children":
                           [{"url": "https://LOCAL.PrisonPC.com/Cottage-Orders/", "name": "AMC Cottage Orders"},
+                           {"url": "https://koha.lan", "name": "Library Index"},
                            {"url": "https://LOCAL.PrisonPC.com/Share/Emails/External_whitelisted_email_addresses.pdf", "name": "Whitelisted Emails"},
                            {"url": "https://LOCAL.PrisonPC.com/Share/Handbook/AMC_Detainee_Handbook-February2021.pdf", "name": "AMC Detainee Handbook 2021"},
                            {"url": "https://LOCAL.PrisonPC.com/Share/Telephone/Free_Call-Common_Number_List.pdf", "name": "AMC Detainee Free Call Common Numbers List"},
