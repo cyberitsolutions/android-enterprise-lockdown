@@ -202,6 +202,7 @@
                 // ----------------------------------------------------------------------
                 // Inmate can watch IPTV streams.
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xbcaba3d5067d04e1"},  // TV Guide
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // rtp:// client (Gallery Go)
 
                 // ----------------------------------------------------------------------
                 // Inmate can read and write emails.
