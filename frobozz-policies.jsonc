@@ -416,7 +416,7 @@
                      ],
 
                      // Additional browser lockdown.
-                     "HomepageLocation": "https://www.PrisonPC.com/",  // FIXME: change
+                     "HomepageLocation": "https://LOCAL.PrisonPC.com/",
                      "AlternateErrorPagesEnabled": false,  // disabled
                      "SearchSuggestEnabled": false,        // disabled
                      "NetworkPredictionOptions": 2,        // disabled
@@ -525,6 +525,11 @@
                 // Disable some trash that should not be accessible, but is?
                 // UPDATE: THIS DID NOT WORK, BUT com.android.chrome/managedConfiguration/BrowserSignin=false did???
                 // {"installType": "BlOCKED", "disabled": true, "packageName": "com.google.android.gms"}  // "Google Play services", i.e. in chrome "Turn on sync" ???
+                // Try to prevent inmate filling their own tablet's disk with
+                //   1. Chrome > Settings > About Chrome > Application version (unlock Developer options)
+                //   2. Chrome > Settings > Developer Tools > Tracing > Deveoper options > Tracing > Record trace
+                // UPDATE: THIS DID NOT WORK.
+                // {"disabled": true, "packageName": "com.android.traceur"}
                 ],
 
 
@@ -691,6 +696,12 @@
                 {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",  // Chrome -- REQUESTS gmail account
                  "disabled": false,  // if we disable chrome, it also breaks all webApps.
                  "managedConfiguration": {
+                     // NOTE: com.android.chrome has "no home page" as an option, which hides the house icon.
+                     //       I would LIKE to have that, but I can't set it in policy.
+                     //       If I leave HomepageLocation unset, end user can turn it on.
+                     //       HomepageIsNewTabPage is not available on com.android.chrome.
+                     //       Setting it HomepageLocation=null doesn't work.
+                     //       Setting it HomepageLocation=false doesn't work.
                      "HomepageLocation": "https://prisonpc.com/",  // FIXME: change to https://prisonpc.lan/ in final version
                      "AlternateErrorPagesEnabled": true,  // NOTE: I couldn't get this to behave differently on a generic 404 message.
                      "SearchSuggestEnabled": false,  // FIXME
