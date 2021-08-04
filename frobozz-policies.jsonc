@@ -92,11 +92,9 @@
         //    run certbot on tweak,
         //    copy the certs from tweak to airgapped host,
         //    make airgapped site see those domains as internal.
-        //
-        // These webApps are expecting that, though it's not set up yet.
         {
             "title": "Mail",
-            "startUrl": "https://LOCAL.PrisonPC.com/Mail",
+            "startUrl": "https://webmail.PrisonPC.com/",
             "displayMode": "STANDALONE"
         },
         {
@@ -369,7 +367,8 @@
                          // but whitelisting anything narrower than "content://*" is not working.
                          "content://*",
                          // During pilot this replaces some/all unqualified hosts (e.g. https://PrisonPC/ and https://Cottage-Orders/).
-                         "https://LOCAL.PrisonPC.com/"],
+                         "https://LOCAL.PrisonPC.com/",
+                         "https://webmail.PrisonPC.com/"],
                      "ManagedBookmarks": [
                          // https://crtech.tips/json-example-code-for-chromes-managed-bookmarks/
                          {"toplevel_name": "AMC Detainee Bookmarks"},
