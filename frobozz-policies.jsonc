@@ -101,7 +101,7 @@
         },
         {
             "title": "TV",
-            "startUrl": "https://LOCAL.PrisonPC.com/TV",
+            "startUrl": "https://LOCAL.PrisonPC.com/TV/",
             "displayMode": "MINIMAL_UI"
         }
     ],
