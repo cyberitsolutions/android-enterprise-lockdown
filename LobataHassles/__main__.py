@@ -284,30 +284,31 @@ old_webApps = androidmanagement.enterprises().webApps().list(
     parent=json_config_object['enterprise_name']).execute()['webApps']
 for new_webApp in json_config_object['webApps']:
     # We assume the startUrl (not title) is unique.
-    try:
-        old_webApp, = [
-            old_webApp
-            for old_webApp in old_webApps
-            if old_webApp['startUrl'] == new_webApp['startUrl']]
+    # UPDATE: this got to be too annoying when URLs were typo'd, so switch to title.
+    if not any(old_webApp['title'] == new_webApp['title']
+               for old_webApp in old_webApps):
+        logging.debug("Doesn't exist, so call create()")
+        androidmanagement.enterprises().webApps().create(
+            parent=json_config_object['enterprise_name'],
+            body=new_webApp).execute()
+        continue
+    for old_webApp in old_webApps:
+        if old_webApp['title'] != new_webApp['title']:
+            continue
         # UGHHHHH, if we send a noop patch, the webapp version jumps, and play store pushes a "new" 50kB apk to every device.
         # Therefore if old_webApp == new_webApp, do nothing.
         # Except that old_webApp has some auto-populated fields, so
         # only compare startUrl/title/displayMode.
-        # UPDATE: FIXME: when I upload a webApp['icons'], it isn't there when I query it back.  Is it broken during upload, or download?
+        # UPDATE: When I upload a webApp['icons'], it isn't there when I query it back.
+        #         This appears to be by design.  Sigh.
         if all(old_webApp[k] == new_webApp[k]
-               for k in new_webApp
-               if k != 'icons'  # FIXME: is this permanently bugged, or what???
-               ):
+               for k in new_webApp.keys()
+               if k != 'icons'):
             logging.debug('Exists and unchanged, so call nothing')
             continue
-        logging.debug('Exists, so call patch()')
+        logging.debug('Exists and changed, so call patch()')
         androidmanagement.enterprises().webApps().patch(
             name=old_webApp['name'],
-            body=new_webApp).execute()
-    except ValueError:
-        logging.debug("Doesn't exist, so call create()")
-        androidmanagement.enterprises().webApps().create(
-            parent=json_config_object['enterprise_name'],
             body=new_webApp).execute()
 
 
