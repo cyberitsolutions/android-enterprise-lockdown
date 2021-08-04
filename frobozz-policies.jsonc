@@ -142,6 +142,16 @@
                 // Inmate can watch IPTV streams.
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xbcaba3d5067d04e1"},  // TV Guide
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // rtp:// client (Gallery Go)
+                // * NOTE: Gallery Go handles rtsp:// but not rtp://.
+                //   We should aim to implement an rtsp:// shim so that we can use Gallery Go on tablets.
+                //   This reduces the attack surface (vlc has more functionality than Gallery Go).
+                // In the meantime, ship vlc instead/also.
+
+                // 20:06 <twb> Clicking on that DOES NOT open Gallery Go
+                // 20:06 <twb> So on top of everything else, we need to implement an RTSP server, because plain RTP isn't working
+                // 20:07 <twb> I also tried long-click on the URL and it offers to "share" it but only to Drive not Gallery
+                // 
+                {"installType": "FORCE_INSTALLED", "packageName": "org.videolan.vlc"},
 
                 // ----------------------------------------------------------------------
                 // Inmate can read and write emails.
