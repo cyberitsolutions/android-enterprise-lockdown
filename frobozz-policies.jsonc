@@ -10,46 +10,11 @@
         // THEREFORE I THINK WE SHOULD STICK WITH EARLIER IDEA, WHICH
         // IS BASICALLY THE SAME AS EXISTING https://PrisonPC/Bookmarks
         // LEAVE ONE OR TWO AS EXAMPLES.
-        // ??? cottage-orders
-        // ??? vocal/FantasticPhonics-adult/fantasticphonics/
-        // ??? koha.lan
-        // {
-        //     "title": "ACT Law Handbook",
-        //     "startUrl": "https://austlii.community/foswiki/ACTLawHbk",
-        //     "displayMode": "STANDALONE"
-        // },
-        // {
-        //     "title": "ACT Corrective Services",
-        //     "startUrl": "https://correctiveservices.act.gov.au/",
-        //     "displayMode": "STANDALONE"
-        // },
-        // {
-        //     "title": "Report historic sexual assault",
-        //     "startUrl": "https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache",
-        //     "displayMode": "STANDALONE"
-        // },
         {
             "title": "Enrol to vote",
             "startUrl": "https://formupload.aec.gov.au/Form?FormId=prisoner",
             "displayMode": "STANDALONE"
         },
-        // {
-        //     "title": "Legal Aid ACT: Publications",
-        //     "startUrl": "https://legalaidact.org.au/what-we-do/legal-information-education/publications",
-        //     "displayMode": "STANDALONE"
-        // },
-        // // {
-        // //     "title": "FIXME",
-        // //     "startUrl": "https://legalanswers.sl.nsw.gov.au/hot-topics",
-        // //     "displayMode": "STANDALONE"
-        // // },
-        // {
-        //     // Max title length is 50 codepoints
-        //     // "title": "The Law Handbook: your practical guide to the law in NSW",
-        //     "title": "The Law Handbook: your practical guide to NSW law",
-        //     "startUrl": "https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw",
-        //     "displayMode": "STANDALONE"
-        // },
         {
             "title": "Legislation (ACT)",
             "startUrl": "https://legislation.act.gov.au",
@@ -60,30 +25,6 @@
             "startUrl": "https://legislation.gov.au",
             "displayMode": "STANDALONE"
         },
-        // {
-        //     "title": "COVID-19 information and advice in the ACT",
-        //     "startUrl": "https://www.covid19.act.gov.au",
-        //     "displayMode": "STANDALONE"
-        // },
-        // {
-        //     "title": "Project Gutenberg: over 60,000 free eBooks",
-        //     "startUrl": "https://www.gutenberg.org/",
-        //     "displayMode": "STANDALONE"
-        // },
-        // // FIXME: this redirects now to https://fls.org.au/, which is not whitelisted.
-        // // {
-        // //     "title": "FIXME",
-        // //     "startUrl": "https://www.lawhandbook.org.au",
-        // //     "displayMode": "STANDALONE"
-        // // },
-        // {
-        //     // Exceeds google's 50 codepoint limit
-        //     // "title": "ACT Charter of Rights for Victims of Crime: Online Survey",
-        //     "title": "Charter of Rights for Victims of Crime Survey",
-        //     "startUrl": "https://www.surveymonkey.com/r/QR7W7FD",
-        //     "displayMode": "STANDALONE"
-        // },
-
         // The normal URLs are "https://prisonpc.lan/###".
         // That's re-using the in-house certs that we REALLY need for MITM.
         // Until I can convince Android to trust those, workaround be EITHER:
