@@ -889,7 +889,7 @@
                 // ============================================================
                 // Video Player / TV
                 // ============================================================
-                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x597edd8749574755"},  // "TV Guide" (https://prisonpc/TV/)
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x545efc9bbc8f8551"},  // "TV Guide" (https://prisonpc/TV/)
 
                 // ============================================================
                 // Email
@@ -1067,7 +1067,11 @@
                 {"installType": "BLOCKED", "packageName": "info.puzz.a10000sentences"},  // WARNING: needs internet access to download flash cards; otherwise seems OK
                 {"installType": "BLOCKED", "packageName": "com.quaap.primary"},            // in F-Droid but not Play Store.
 
-
+                // Is there ANY way to set a curfew?
+                // Experimentally, install a "computers are bad, go play in the road" app for irresponsible parents.
+                // 11:59 <twb> Yeah that app can't be used without a human google account (in addition to the machine account)
+                // 12:00 <twb> I guess not many "screens are bad; go play in the road" parents understand computers enough to set up group policy objects at home
+                //{"installType": "BLOCKED", "packageName": "com.google.android.apps.kids.familylink"},
 
                 // "Simple" apps – dev house recommended by mike — https://play.google.com/store/apps/dev?id=9070296388022589266
                 {"installType": "BLOCKED", "packageName": "com.simplemobiletools.applauncher"},  // can't be set at home app, so fuck it
