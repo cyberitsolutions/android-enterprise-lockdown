@@ -1,7 +1,7 @@
 {
     "displayMode": "MINIMAL_UI",
     "name": "enterprises/LC02kggfh1/webApps/com.google.enterprise.webapp.x597edd8749574755",
-    "startUrl": "https://prisonpc/TV/",
+    "startUrl": "https://LOCAL.PrisonPC.com/TV/",
     "title": "TV Guide",
-    "versionCode": "20"
+    "versionCode": "21"
 }

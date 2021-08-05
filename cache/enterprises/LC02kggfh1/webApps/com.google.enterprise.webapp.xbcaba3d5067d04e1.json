@@ -1,7 +1,7 @@
 {
     "displayMode": "MINIMAL_UI",
     "name": "enterprises/LC02kggfh1/webApps/com.google.enterprise.webapp.xbcaba3d5067d04e1",
-    "startUrl": "https://LOCAL.PrisonPC.com/TV",
+    "startUrl": "https://LOCAL.PrisonPC.com/TV/",
     "title": "TV",
-    "versionCode": "1"
+    "versionCode": "2"
 }
