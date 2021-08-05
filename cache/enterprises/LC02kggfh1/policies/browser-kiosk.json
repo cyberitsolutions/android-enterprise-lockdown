@@ -48,6 +48,6 @@
         "host": "proxy.lan",
         "port": 3128
     },
-    "version": "128",
+    "version": "181",
     "wifiConfigDisabled": true
 }

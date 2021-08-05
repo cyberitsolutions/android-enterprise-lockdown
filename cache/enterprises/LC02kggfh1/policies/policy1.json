@@ -305,7 +305,7 @@
         },
         {
             "installType": "FORCE_INSTALLED",
-            "packageName": "com.google.enterprise.webapp.x597edd8749574755"
+            "packageName": "com.google.enterprise.webapp.x545efc9bbc8f8551"
         },
         {
             "installType": "FORCE_INSTALLED",
@@ -1095,6 +1095,6 @@
     "tetheringConfigDisabled": true,
     "unmuteMicrophoneDisabled": true,
     "usbFileTransferDisabled": true,
-    "version": "180",
+    "version": "233",
     "vpnConfigDisabled": true
 }
