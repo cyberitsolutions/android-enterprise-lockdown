@@ -81,6 +81,11 @@
             "permissionId": "android.permission.READ_CONTACTS"
         },
         {
+            "description": "Allows the app to access the phone features of the device. This permission allows the app to determine the phone number and device IDs, whether a call is active, and the remote number connected by a call.",
+            "name": "read phone status and identity",
+            "permissionId": "android.permission.READ_PHONE_STATE"
+        },
+        {
             "description": "Allows the app to have itself started as soon as the system has finished booting. This can make it take longer to start the device and allow the app to slow down the overall device by always running.",
             "name": "run at startup",
             "permissionId": "android.permission.RECEIVE_BOOT_COMPLETED"

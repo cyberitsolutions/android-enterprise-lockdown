@@ -275,7 +275,7 @@
             "type": "STRING"
         },
         {
-            "description": "Unless the RestoreOnStartup policy is set to permanently restore URLs from previous sessions, then setting CookiesSessionOnlyForUrls lets you make a list of URL patterns that specify sites that can and can't set cookies for one session. Leaving the policy unset results in the use of DefaultCookiesSetting for all sites, if it's set. If not, the user's personal setting applies. URLs not covered by the patterns specified also result in the use of defaults. If Google Chrome is running in Background mode, the session might stay active until the user exits the browser, not just closes the last window. See BackgroundModeEnabled for details about configuring this behavior. While no specific policy takes precedence, see CookiesBlockedForUrls and CookiesAllowedForUrls. URL patterns among these 3 policies must not conflict.",
+            "description": "Unless the RestoreOnStartup policy is set to permanently restore URLs from previous sessions, then setting CookiesSessionOnlyForUrls lets you make a list of URL patterns that specify sites that can and can't set cookies for one session. Leaving the policy unset results in the use of DefaultCookiesSetting for all sites, if it's set. If not, the user's personal setting applies. URLs not covered by the patterns specified also result in the use of defaults. While no specific policy takes precedence, see CookiesBlockedForUrls and CookiesAllowedForUrls. URL patterns among these 3 policies must not conflict.",
             "entries": [
                 {
                     "name": "Allow all sites to set local data",
@@ -425,7 +425,7 @@
             "type": "STRING"
         },
         {
-            "description": "Unless the RestoreOnStartup policy is set to permanently restore URLs from previous sessions, then setting CookiesSessionOnlyForUrls lets you make a list of URL patterns that specify sites that can and can't set cookies for one session. Leaving the policy unset results in the use of DefaultCookiesSetting for all sites, if it's set. If not, the user's personal setting applies. URLs not covered by the patterns specified also result in the use of defaults. If Google Chrome is running in Background mode, the session might stay active until the user exits the browser, not just closes the last window. See BackgroundModeEnabled for details about configuring this behavior. While no specific policy takes precedence, see CookiesBlockedForUrls and CookiesAllowedForUrls. URL patterns among these 3 policies must not conflict. For detailed information on valid url patterns, please see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns. * is not an accepted value for this policy.",
+            "description": "Unless the RestoreOnStartup policy is set to permanently restore URLs from previous sessions, then setting CookiesSessionOnlyForUrls lets you make a list of URL patterns that specify sites that can and can't set cookies for one session. Leaving the policy unset results in the use of DefaultCookiesSetting for all sites, if it's set. If not, the user's personal setting applies. URLs not covered by the patterns specified also result in the use of defaults. While no specific policy takes precedence, see CookiesBlockedForUrls and CookiesAllowedForUrls. URL patterns among these 3 policies must not conflict. For detailed information on valid url patterns, please see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns. * is not an accepted value for this policy.",
             "key": "CookiesSessionOnlyForUrls",
             "title": "Limit cookies from matching URLs to the current session",
             "type": "STRING"
@@ -443,22 +443,6 @@
             "type": "STRING"
         },
         {
-            "description": "Allows you to revert all cookies to legacy SameSite behavior. Reverting to legacy behavior causes cookies that don't specify a SameSite attribute to be treated as if they were \\SameSite=None\\, removes the requirement for \\SameSite=None\\ cookies to carry the \\Secure\\ attribute, and skips the scheme comparison when evaluating if two sites are same-site. See https://www.chromium.org/administrators/policy-list-3/cookie-legacy-samesite-policies for full description. When this policy is not set, the default SameSite behavior for cookies will depend on the user's personal configuration for the SameSite-by-default feature, the Cookies-without-SameSite-must-be-secure feature, and the Schemeful Same-Site feature which may be set by a field trial or by enabling or disabling the same-site-by-default-cookies flag, the cookies-without-same-site-must-be-secure flag, or the schemeful-same-site flag, respectively.",
-            "entries": [
-                {
-                    "name": "Revert to legacy SameSite behavior for cookies on all sites",
-                    "value": "1"
-                },
-                {
-                    "name": "Use SameSite-by-default behavior for cookies on all sites",
-                    "value": "2"
-                }
-            ],
-            "key": "LegacySameSiteCookieBehaviorEnabled",
-            "title": "Default legacy SameSite cookie behavior setting",
-            "type": "CHOICE"
-        },
-        {
             "description": "Cookies set for domains matching these patterns will revert to legacy SameSite behavior. Reverting to legacy behavior causes cookies that don't specify a SameSite attribute to be treated as if they were \\SameSite=None\\, removes the requirement for \\SameSite=None\\ cookies to carry the \\Secure\\ attribute, and skips the scheme comparison when evaluating if two sites are same-site. See https://www.chromium.org/administrators/policy-list-3/cookie-legacy-samesite-policies for full description. For cookies on domains not covered by the patterns specified here, or for all cookies if this policy is not set, the global default value will be used either from the LegacySameSiteCookieBehaviorEnabled policy, if it is set, or the user's personal configuration otherwise. Note that patterns you list here are treated as domains, not URLs, so you should not specify a scheme or port.",
             "key": "LegacySameSiteCookieBehaviorEnabledForDomainList",
             "title": "Revert to legacy SameSite behavior for cookies on these sites",
@@ -469,6 +453,18 @@
             "key": "LensCameraAssistedSearchEnabled",
             "title": "Allow Google Lens camera assisted search",
             "type": "BOOL"
+        },
+        {
+            "description": "Controls whether insecure websites are allowed to make requests to more-private network endpoints. This policy relates to the CORS-RFC1918 specification. See https://wicg.github.io/cors-rfc1918 for more details. A network endpoint is more private than another if: 1) Its IP address is localhost and the other is not. 2) Its IP address is private and the other is public. In the future, depending on spec evolution, this policy might apply to all cross-origin requests directed at private IPs or localhost. A website is deemed secure if it meets the definition of a secure context in https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts. Otherwise, it will be treated as an insecure context. When this policy is either not set or set to false, the default behavior for requests from insecure contexts to more-private network endpoints will depend on the user's personal configuration for the BlockInsecurePrivateNetworkRequests feature, which may be set by a field trial or on the command line. When this policy is set to true, insecure websites are allowed to make requests to any network endpoint, subject to other cross-origin checks.",
+            "key": "InsecurePrivateNetworkRequestsAllowed",
+            "title": "Specifies whether to allow insecure websites to make requests to more-private network endpoints",
+            "type": "BOOL"
+        },
+        {
+            "description": "List of URL patterns. Private network requests initiated from insecure websites served by matching origins are allowed. If unset, this policy behaves as if set to the empty list. For origins not covered by the patterns specified here, the global default value will be used either from the InsecurePrivateNetworkRequestsAllowed policy, if it is set, or the user's personal configuration otherwise. Note that this policy only affects insecure origins, so secure origins (e.g. https://example.com) included in this list will be ignored. For detailed information on valid URL patterns, please see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns.",
+            "key": "InsecurePrivateNetworkRequestsAllowedForUrls",
+            "title": "Allow the listed sites to make requests to more-private network endpoints from insecure contexts.",
+            "type": "STRING"
         },
         {
             "description": "Setting the policy lets you set a list of URL patterns that specify the sites that can open pop-ups. Leaving the policy unset means DefaultPopupsSetting applies for all sites, if it's set. If not, the user's personal setting applies. For detailed information on valid url patterns, please see https://cloud.google.com/docs/chrome-enterprise/policies/url-patterns. * is not an accepted value for this policy.",
@@ -513,13 +509,13 @@
             "type": "BOOL"
         },
         {
-            "description": "Setting the policy prevents webpages with prohibited URLs from loading. It provides a list of URL patterns that specify forbidden URLs. Leaving the policy unset means no URLs are prohibited in the browser. Format the URL pattern according to this format ( https://www.chromium.org/administrators/url-blocklist-filter-format ). Up to 1,000 exceptions can be defined in URLAllowlist. From Google Chrome version 73, you can block javascript://* URLs. However, it affects only JavaScript entered in the address bar (or, for example, bookmarklets). In-page JavaScript URLs with dynamically loaded data aren't subject to this policy. For example, if you block example.com/abc, then example.com can still load example.com/abc using XMLHTTPRequest. Note: Blocking internal chrome://* URLs can lead to unexpected errors.",
+            "description": "Setting the policy prevents webpages with prohibited URLs from loading. It provides a list of URL patterns that specify forbidden URLs. Leaving the policy unset means no URLs are prohibited in the browser. Format the URL pattern according to this format ( https://www.chromium.org/administrators/url-blocklist-filter-format ). Up to 1,000 exceptions can be defined in URLAllowlist. From Google Chrome version 73, you can block javascript://* URLs. However, it affects only JavaScript entered in the address bar (or, for example, bookmarklets). In-page JavaScript URLs with dynamically loaded data aren't subject to this policy. For example, if you block example.com/abc, then example.com can still load example.com/abc using XMLHTTPRequest. From Google Chrome version 92, this policy is also supported in the headless mode. Note: Blocking internal chrome://* URLs can lead to unexpected errors.",
             "key": "URLBlocklist",
             "title": "Block access to a list of URLs",
             "type": "STRING"
         },
         {
-            "description": "Setting the policy provides access to the listed URLs, as exceptions to URLBlocklist. See that policy's description for the format of entries of this list. For example, setting URLBlocklist to * will block all requests, and you can use this policy to allow access to a limited list of URLs. Use it to open exceptions to certain schemes, subdomains of other domains, ports, or specific paths, using the format specified at ( https://www.chromium.org/administrators/url-blocklist-filter-format ). The most specific filter determines if a URL is blocked or allowed. The URLAllowlist policy takes precedence over URLBlocklist. This policy is limited to 1,000 entries. This policy also allows enabling the automatic invocation by the browser of external application registered as protocol handlers for the listed protocols like \\tel:\\ or \\ssh:\\. Leaving the policy unset allows no exceptions to URLBlocklist. On Microsoft\u00ae Windows\u00ae, this functionality is only available on instances that are joined to a Microsoft\u00ae Active Directory\u00ae domain, running on Windows 10 Pro, or enrolled in Chrome Browser Cloud Management. On macOS, this functionality is only available on instances that are managed via MDM, or joined to a domain via MCX.",
+            "description": "Setting the policy provides access to the listed URLs, as exceptions to URLBlocklist. See that policy's description for the format of entries of this list. For example, setting URLBlocklist to * will block all requests, and you can use this policy to allow access to a limited list of URLs. Use it to open exceptions to certain schemes, subdomains of other domains, ports, or specific paths, using the format specified at ( https://www.chromium.org/administrators/url-blocklist-filter-format ). The most specific filter determines if a URL is blocked or allowed. The URLAllowlist policy takes precedence over URLBlocklist. This policy is limited to 1,000 entries. This policy also allows enabling the automatic invocation by the browser of external application registered as protocol handlers for the listed protocols like \\tel:\\ or \\ssh:\\. Leaving the policy unset allows no exceptions to URLBlocklist. From Google Chrome version 92, this policy is also supported in the headless mode. On Microsoft\u00ae Windows\u00ae, this functionality is only available on instances that are joined to a Microsoft\u00ae Active Directory\u00ae domain, running on Windows 10 Pro, or enrolled in Chrome Browser Cloud Management. On macOS, this functionality is only available on instances that are managed via MDM, or joined to a domain via MCX.",
             "key": "URLAllowlist",
             "title": "Allow access to a list of URLs",
             "type": "STRING"
@@ -569,6 +565,12 @@
             "type": "STRING"
         },
         {
+            "description": "This policy controls whether Google Chrome may query additional DNS record types when making insecure DNS requests. This policy has no effect on DNS queries made via Secure DNS, which may always query additional DNS types. If this policy is unset or set to Enabled, additional types such as HTTPS (DNS type 65) may be queried in addition to A (DNS type 1) and AAAA (DNS type 28). If this policy is set to Disabled, DNS will only be queried for A (DNS type 1) and/or AAAA (DNS type 28). This policy is a temporary measure and will be removed in future versions of Google Chrome. After removal of the policy, Google Chrome will always be able to query additional DNS types.",
+            "key": "AdditionalDnsQueryTypesEnabled",
+            "title": "Allow DNS queries for additional DNS record types",
+            "type": "BOOL"
+        },
+        {
             "description": "Enable the Shared Clipboard feature which allows users to send text between Chrome Desktops and an Android device when Sync is enabled and the user is Signed-in. If this policy is set to true, the capability of sending text, cross device, for chrome user is enabled. If this policy is set to false, the capability of sending text, cross device, for chrome user is disabled. If you set this policy, users cannot change or override it. If this policy is left unset, the shared clipboard feature is enabled by default. It is up to the admins to set policies in all platforms they care about. It's recommended to set this policy to one value in all platforms.",
             "key": "SharedClipboardEnabled",
             "title": "Enable the Shared Clipboard Feature",
@@ -605,14 +607,6 @@
         {
             "description": "Warning: Support for suppressing the TLS 1.0/1.1 warning will be removed from Google Chrome starting in version 91 (around May 2021) and this policy will stop working then. Setting the policy to a valid value means Google Chrome won't use SSL/TLS versions less than the specified version. Unrecognized values are ignored. If this policy is not set, then Google Chrome will show an error for TLS 1.0 and TLS 1.1, but the user will be able to bypass it.",
             "entries": [
-                {
-                    "name": "TLS 1.0",
-                    "value": "tls1"
-                },
-                {
-                    "name": "TLS 1.1",
-                    "value": "tls1.1"
-                },
                 {
                     "name": "TLS 1.2",
                     "value": "tls1.2"
@@ -665,9 +659,9 @@
             "type": "STRING"
         },
         {
-            "description": "Setting the policy turns on Chrome's restricted sign-in feature in G Suite and prevents users from changing this setting. Users can only access Google tools using accounts from the specified domains (to allow gmail or googlemail accounts, add consumer_accounts to the list of domains). This setting prevents users from signing in and adding a Secondary Account on a managed device that requires Google authentication, if that account doesn't belong to one of the explicitly allowed domains. Leaving this setting empty or unset means users can access G Suite with any account. Users cannot change or override this setting. Note: This policy causes the X-GoogApps-Allowed-Domains header to be appended to all HTTP and HTTPS requests to all google.com domains, as described in https://support.google.com/a/answer/1668854.",
+            "description": "Setting the policy turns on Chrome's restricted sign-in feature in Google Workspace and prevents users from changing this setting. Users can only access Google tools using accounts from the specified domains (to allow gmail or googlemail accounts, add consumer_accounts to the list of domains). This setting prevents users from signing in and adding a Secondary Account on a managed device that requires Google authentication, if that account doesn't belong to one of the explicitly allowed domains. Leaving this setting empty or unset means users can access Google Workspace with any account. Users cannot change or override this setting. Note: This policy causes the X-GoogApps-Allowed-Domains header to be appended to all HTTP and HTTPS requests to all google.com domains, as described in https://support.google.com/a/answer/1668854.",
             "key": "AllowedDomainsForApps",
-            "title": "Define domains allowed to access G Suite",
+            "title": "Define domains allowed to access Google Workspace",
             "type": "STRING"
         },
         {
@@ -687,6 +681,12 @@
             "key": "WebRtcUdpPortRange",
             "title": "Restrict the range of local UDP ports used by WebRTC",
             "type": "STRING"
+        },
+        {
+            "description": "Setting the policy to Enabled means users are asked where to save each file before downloading. Setting the policy to Disabled has downloads start immediately, and users aren't asked where to save the file. Leaving the policy unset lets users change this setting.",
+            "key": "PromptForDownloadLocation",
+            "title": "Ask where to save each file before downloading",
+            "type": "BOOL"
         },
         {
             "description": "Setting the policy means each of the named origins in a comma-separated list runs in its own process, and it isolates origins named by subdomains. For example, specifying https://example.com/ isolates https://foo.example.com/ as part of the https://example.com/ site. Turning the policy off prevents explicit site isolation and turns off field trials of IsolateOriginsAndroid and SitePerProcessAndroid. Users can still turn on IsolateOrigins manually, through the command line flag. Leaving the policy unset lets users change this setting. Note: Site isolation support for Android will improve, but currently it may cause performance problems. This policy applies only to Chrome on Android running on devices with strictly more than 1 GB of RAM. To apply the policy on non-Android platforms, use IsolateOrigins.",
@@ -822,11 +822,21 @@
                 {
                     "name": "port 10080 (expires 2022/04/01)",
                     "value": "10080"
+                },
+                {
+                    "name": "port 6566 (expires 2021/10/15)",
+                    "value": "6566"
                 }
             ],
             "key": "ExplicitlyAllowedNetworkPorts",
             "title": "Explicitly allowed network ports",
             "type": "MULTISELECT"
+        },
+        {
+            "description": "Warning: 3DES will be completely removed from Google Chrome in version 95 (around October 2021) and this policy will stop working then. If the policy is set to true, then 3DES cipher suites in TLS will be enabled. If it is set to false, they will be disabled. If the policy is unset, 3DES cipher suites are currently enabled by default. They will be disabled by default in Google Chrome 93. In Google Chrome 92, this policy may be used to preview the change and test for incompatibilities. In Google Chrome 93 and later, it may be used to temporarily retain compatibility with an outdated server. This is a stopgap measure and the server should be reconfigured.",
+            "key": "TripleDESEnabled",
+            "title": "Enable 3DES cipher suites in TLS",
+            "type": "BOOL"
         }
     ],
     "name": "enterprises/LC02kggfh1/applications/com.android.chrome",
@@ -857,9 +867,25 @@
             "permissionId": "android.permission.BLUETOOTH"
         },
         {
+            "description": "Allows the app to view the configuration of Bluetooth on the device, and to make and accept connections with paired devices.",
+            "name": "pair with Bluetooth devices",
+            "permissionId": "android.permission.BLUETOOTH"
+        },
+        {
             "description": "Allows the app to configure the local Bluetooth device, and to discover and pair with remote devices.",
             "name": "access Bluetooth settings",
             "permissionId": "android.permission.BLUETOOTH_ADMIN"
+        },
+        {
+            "description": "Allows the app to configure the local Bluetooth device, and to discover and pair with remote devices.",
+            "name": "access Bluetooth settings",
+            "permissionId": "android.permission.BLUETOOTH_ADMIN"
+        },
+        {
+            "permissionId": "android.permission.BLUETOOTH_CONNECT"
+        },
+        {
+            "permissionId": "android.permission.BLUETOOTH_SCAN"
         },
         {
             "description": "Allows the app to take pictures and videos with the camera. This permission allows the app to use the camera at any time without your confirmation.",
