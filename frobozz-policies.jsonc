@@ -426,6 +426,7 @@
                      // "WebUsbBlockedForUrls"
                      "CookiesAllowedForUrls": [
                          // Without this, the site doesn't work AT ALL.
+                         "https://webmail.PrisonPC.com",
                          "https://legislation.act.gov.au"],
                      // "CookiesBlockedForUrls"
                      // "CookiesSessionOnlyForUrls"
