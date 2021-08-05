@@ -390,9 +390,9 @@
                      "AutofillAddressEnabled": false,       // disabled
                      "AutofillCreditCardEnabled": false,    // disabled
                      "SyncTypesListDisabled": ["bookmarks", "readingList", "preferences", "passwords", "autofill", "themes", "typedUrls", "extensions", "apps", "tabs", "wifiConfigurations", "preferredSexPositions"],  // disable all
-                     "ProxySettings": {
-                         "ProxyMode": "pac_script",
-                         "ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"},
+                     // Ref. https://chromeenterprise.google/policies/?policy=ProxySettings (requires js)
+                     // "ProxySettings": "{\"ProxyMode\": \"pac_script\", \"ProxyPacUrl\": \"https://LOCAL.PrisonPC.com/proxy.pac\"}",
+                     "ProxySettings": "{\"ProxyMode\":\"fixed_servers\",\"ProxyServer\":\"odin:3128\"}",  // THIS WORKS AT HOME
                      "AuthSchemes": "basic",  // disable weak MD5 ("digest") and MD4 ("ntlm")
                      "DisableAuthNegotiateCnameLookup": false,  // IRRELEVANT -- SPNEGO KERBEROS ONLY
                      "AuthServerAllowlist": "LOCAL.PrisonPC.com,*.lan",  // FIXME: ???
