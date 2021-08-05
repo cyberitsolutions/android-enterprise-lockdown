@@ -1,7 +1,7 @@
 {
     "apiLevel": 29,
     "appliedPolicyName": "enterprises/LC02kggfh1/policies/pilot0",
-    "appliedPolicyVersion": "63",
+    "appliedPolicyVersion": "116",
     "appliedState": "ACTIVE",
     "enrollmentTime": "2021-07-15T09:57:46.363Z",
     "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/EYPkAe2dEr63Dx-KtVnotJt1ejNSs7iDA9OhouKW-Ug",
@@ -12,8 +12,8 @@
         "model": "Lenovo TB-X505F",
         "serialNumber": "HGAL10T2"
     },
-    "lastPolicySyncTime": "2021-07-15T10:32:52.121Z",
-    "lastStatusReportTime": "2021-07-15T10:32:58.006Z",
+    "lastPolicySyncTime": "2021-08-04T06:35:27.016Z",
+    "lastStatusReportTime": "2021-08-04T06:35:31.751Z",
     "managementMode": "DEVICE_OWNER",
     "memoryInfo": {
         "totalInternalStorage": "4160729088",
@@ -33,6 +33,32 @@
     "ownership": "COMPANY_OWNED",
     "policyCompliant": true,
     "policyName": "enterprises/LC02kggfh1/policies/pilot0",
+    "powerManagementEvents": [
+        {
+            "createTime": "2021-08-03T23:38:35.343Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-08-04T00:06:34.475Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-08-04T00:40:45.398Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-08-04T00:55:45.093Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-08-04T03:15:19.767Z",
+            "eventType": "BOOT_COMPLETED"
+        },
+        {
+            "createTime": "2021-08-04T05:39:12.577Z",
+            "eventType": "BOOT_COMPLETED"
+        }
+    ],
     "previousDeviceNames": [
         "enterprises/LC02kggfh1/devices/37a6c70d6e54b86b",
         "enterprises/LC02kggfh1/devices/348b1daeac68a70c",

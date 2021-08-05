@@ -1,0 +1,34 @@
+{
+    "apiLevel": 29,
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "appliedPolicyVersion": "38",
+    "appliedState": "ACTIVE",
+    "enrollmentTime": "2021-07-21T11:07:07.818Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/pMgmOCg5XtxMpXhAzTD3DXulW2In7pDmxR6X4OIXFYA",
+    "hardwareInfo": {
+        "brand": "Laser",
+        "hardware": "A100",
+        "manufacturer": "Deejoy",
+        "model": "MID_1089IPSA100",
+        "serialNumber": "9c00141cf6538732090"
+    },
+    "lastPolicySyncTime": "2021-07-28T18:53:40.286Z",
+    "lastStatusReportTime": "2021-07-28T13:06:47.633Z",
+    "managementMode": "DEVICE_OWNER",
+    "memoryInfo": {
+        "totalInternalStorage": "934105088",
+        "totalRam": "2069106688"
+    },
+    "name": "enterprises/LC02kggfh1/devices/395de85acdaced29",
+    "ownership": "COMPANY_OWNED",
+    "policyCompliant": true,
+    "policyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "previousDeviceNames": [
+        "enterprises/LC02kggfh1/devices/3f17ce0f60bffa0a"
+    ],
+    "securityPosture": {
+        "devicePosture": "SECURE"
+    },
+    "state": "ACTIVE",
+    "userName": "enterprises/LC02kggfh1/users/108869608124044474154"
+}

@@ -1,0 +1,31 @@
+{
+    "apiLevel": 30,
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "appliedPolicyVersion": "38",
+    "appliedState": "ACTIVE",
+    "enrollmentTime": "2021-07-29T07:53:57.634Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/pMgmOCg5XtxMpXhAzTD3DXulW2In7pDmxR6X4OIXFYA",
+    "hardwareInfo": {
+        "brand": "Tecnomaster",
+        "hardware": "sun50iw10p1",
+        "manufacturer": "incar",
+        "model": "EDT800",
+        "serialNumber": "ac00141d665088c1f90"
+    },
+    "lastPolicySyncTime": "2021-07-30T09:33:20.055Z",
+    "lastStatusReportTime": "2021-07-30T09:33:51.686Z",
+    "managementMode": "DEVICE_OWNER",
+    "memoryInfo": {
+        "totalInternalStorage": "895569920",
+        "totalRam": "2061791232"
+    },
+    "name": "enterprises/LC02kggfh1/devices/3d70eff883cc1f5b",
+    "ownership": "COMPANY_OWNED",
+    "policyCompliant": true,
+    "policyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "securityPosture": {
+        "devicePosture": "SECURE"
+    },
+    "state": "ACTIVE",
+    "userName": "enterprises/LC02kggfh1/users/100030901999276044662"
+}

@@ -1,0 +1,31 @@
+{
+    "apiLevel": 29,
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "appliedPolicyVersion": "38",
+    "appliedState": "ACTIVE",
+    "enrollmentTime": "2021-07-29T09:44:52.071Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/pMgmOCg5XtxMpXhAzTD3DXulW2In7pDmxR6X4OIXFYA",
+    "hardwareInfo": {
+        "brand": "Laser",
+        "hardware": "A50",
+        "manufacturer": "incar",
+        "model": "MID_1089IPS",
+        "serialNumber": "3c0014056441086248e"
+    },
+    "lastPolicySyncTime": "2021-07-29T09:44:55.042Z",
+    "lastStatusReportTime": "2021-07-29T09:45:37.887Z",
+    "managementMode": "DEVICE_OWNER",
+    "memoryInfo": {
+        "totalInternalStorage": "598638592",
+        "totalRam": "2093760512"
+    },
+    "name": "enterprises/LC02kggfh1/devices/3ca7dfd3125bf327",
+    "ownership": "COMPANY_OWNED",
+    "policyCompliant": true,
+    "policyName": "enterprises/LC02kggfh1/policies/why-does-laser-keep-bricking-itself-when-enrolled-bisection-policy",
+    "securityPosture": {
+        "devicePosture": "SECURE"
+    },
+    "state": "ACTIVE",
+    "userName": "enterprises/LC02kggfh1/users/100292651867323263793"
+}

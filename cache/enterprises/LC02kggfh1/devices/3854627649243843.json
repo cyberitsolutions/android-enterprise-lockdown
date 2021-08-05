@@ -1,10 +1,10 @@
 {
     "apiLevel": 29,
-    "appliedPolicyName": "enterprises/LC02kggfh1/policies/allow-ron-to-do-his-stupid-meeting-using-non-free-stupid-software-that-requires-a-google-account",
-    "appliedPolicyVersion": "7",
+    "appliedPolicyName": "enterprises/LC02kggfh1/policies/pilot0",
+    "appliedPolicyVersion": "115",
     "appliedState": "ACTIVE",
-    "enrollmentTime": "2021-07-15T01:08:00.761Z",
-    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/dsvXLX1_mQ9JljvPIzwYJLLz4nO2gibhcRoPsp_U53c",
+    "enrollmentTime": "2021-07-28T08:42:08.689Z",
+    "enrollmentTokenName": "enterprises/LC02kggfh1/enrollmentTokens/zTr6Sabr2n6k2h1Y4MeiY6e5Mv_yMX7ewGwgmvSAk_c",
     "hardwareInfo": {
         "brand": "Laser",
         "hardware": "A50",
@@ -12,33 +12,34 @@
         "model": "MID_1089IPS",
         "serialNumber": "3c0014056441073248e"
     },
-    "lastPolicySyncTime": "2021-07-15T04:39:44.907Z",
-    "lastStatusReportTime": "2021-07-15T04:18:05.047Z",
+    "lastPolicySyncTime": "2021-08-04T04:41:01.366Z",
+    "lastStatusReportTime": "2021-08-04T04:41:22.976Z",
     "managementMode": "DEVICE_OWNER",
     "memoryInfo": {
         "totalInternalStorage": "598638592",
         "totalRam": "2093760512"
     },
-    "name": "enterprises/LC02kggfh1/devices/3afa860fd5b7f854",
+    "name": "enterprises/LC02kggfh1/devices/3854627649243843",
+    "nonComplianceDetails": [
+        {
+            "nonComplianceReason": "UNSUPPORTED",
+            "settingName": "blockApplicationsEnabled"
+        },
+        {
+            "nonComplianceReason": "MANAGEMENT_MODE",
+            "settingName": "bluetoothContactSharingDisabled"
+        }
+    ],
     "ownership": "COMPANY_OWNED",
     "policyCompliant": true,
-    "policyName": "enterprises/LC02kggfh1/policies/allow-ron-to-do-his-stupid-meeting-using-non-free-stupid-software-that-requires-a-google-account",
+    "policyName": "enterprises/LC02kggfh1/policies/pilot0",
     "powerManagementEvents": [
         {
-            "createTime": "2021-07-15T01:45:26.984Z",
-            "eventType": "BOOT_COMPLETED"
-        },
-        {
-            "createTime": "2021-07-15T02:07:46.112Z",
-            "eventType": "BOOT_COMPLETED"
-        },
-        {
-            "createTime": "2021-07-15T03:06:17.262Z",
+            "createTime": "2021-08-04T02:34:27.010Z",
             "eventType": "BOOT_COMPLETED"
         }
     ],
     "previousDeviceNames": [
-        "enterprises/LC02kggfh1/devices/3e1ca1926e8ddfa7",
         "enterprises/LC02kggfh1/devices/375182d5f613ed58",
         "enterprises/LC02kggfh1/devices/3059573412daf8a0",
         "enterprises/LC02kggfh1/devices/3fddf60a69ecea67",
@@ -57,11 +58,12 @@
         "enterprises/LC02kggfh1/devices/361860032f7bf555",
         "enterprises/LC02kggfh1/devices/3d999ce8bc3072b0",
         "enterprises/LC02kggfh1/devices/365e07db65340504",
-        "enterprises/LC02kggfh1/devices/341f4a85bf6581e2"
+        "enterprises/LC02kggfh1/devices/341f4a85bf6581e2",
+        "enterprises/LC02kggfh1/devices/3afa860fd5b7f854"
     ],
     "securityPosture": {
         "devicePosture": "SECURE"
     },
     "state": "ACTIVE",
-    "userName": "enterprises/LC02kggfh1/users/115140197666408907938"
+    "userName": "enterprises/LC02kggfh1/users/106688977383945254775"
 }
