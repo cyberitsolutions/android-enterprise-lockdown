@@ -234,6 +234,9 @@ if 'enterprise_name' not in json_config_object:
 # This is FUCKING UNREADABLE, so as a workaround,
 # let me write them as normal json,
 # then convert it to a string here.
+#
+# Known keys where this is helpful:
+#   "URLBlocklist", "URLAllowlist", "ManagedBookmarks", "ProxySettings"
 for chrome_policy in [
         # FIXME: this is ugly; use jsonpath?
         application['managedConfiguration']
@@ -241,13 +244,10 @@ for chrome_policy in [
         for application in android_policy.get('applications', [])
         if application['packageName'] == 'com.android.chrome'
         if 'managedConfiguration' in application]:
-    for key in ('URLBlocklist', 'URLAllowlist', 'ManagedBookmarks'):
-        if key not in chrome_policy:
-            continue            # not present
-        if isinstance(chrome_policy[key], str):
-            continue            # already encoded into a string
-        logging.debug('Double-json-ing com.android.chrome managedConfiguration %s', key)
-        chrome_policy[key] = json.dumps(chrome_policy[key])
+    for key, value in chrome_policy.items():
+        if isinstance(value, dict):
+            logging.debug('Double-json-ing com.android.chrome managedConfiguration %s', key)
+            chrome_policy[key] = json.dumps(chrome_policy[key])
 
 for policy_name, policy_body in json_config_object['policies'].items():
     # Example: "frobozz-DEADBE/policies/policy1"
