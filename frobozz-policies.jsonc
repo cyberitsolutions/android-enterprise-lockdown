@@ -396,10 +396,9 @@
                      "SyncTypesListDisabled": ["bookmarks", "readingList", "preferences", "passwords", "autofill", "themes", "typedUrls", "extensions", "apps", "tabs", "wifiConfigurations", "preferredSexPositions"],  // disable all
                      // Ref. https://chromeenterprise.google/policies/?policy=ProxySettings (requires js)
                      "ProxySettings": {  // NOTE: my wrapper script converts this to a string.
+                         "ProxyPacMandatory": false,  // allow falling back to direct -- useful for enrollment network
                          "ProxyMode": "pac_script",
-                         // FIXME: change apache to serve this out properly.
-                         // "ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"
-                         "ProxyPacUrl": "http://proxy.lan/proxy.pac"  // FIXME: does this work???
+                         "ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"
                      },
                      "AuthSchemes": "basic",  // disable weak MD5 ("digest") and MD4 ("ntlm")
                      "DisableAuthNegotiateCnameLookup": false,  // IRRELEVANT -- SPNEGO KERBEROS ONLY
