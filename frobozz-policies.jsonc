@@ -433,7 +433,7 @@
                      // "CookiesSessionOnlyForUrls"
                      // "JavaScriptAllowedForUrls"
                      // "JavaScriptBlockedForUrls"
-                     "LegacySameSiteCookieBehaviorEnabled": 2,  // disabled
+                     // "LegacySameSiteCookieBehaviorEnabled": 2,  // disabled  (UPDATE: NO LONGER AVAILABLE IN CHROME 92, AUG 2021)
                      // "LegacySameSiteCookieBehaviorEnabledForDomainList"
                      "LensCameraAssistedSearchEnabled": false,  // disabled
                      // "PopupsAllowedForUrls"
@@ -482,7 +482,7 @@
                      "TosDialogBehavior": 2,  // ENABLED (don't display Chrome EULA on first open)
                      "WebXRImmersiveArEnabled": false,  // disabled
                      // "SuppressDifferentOriginSubframeDialogs"
-                     "ExplicitlyAllowedNetworkPorts": ""  // disabled (empty list of whitelisted legacy ports to re-allow)
+                     "ExplicitlyAllowedNetworkPorts": []  // disabled (empty list of whitelisted legacy ports to re-allow)
                  }}
 
                 // ----------------------------------------------------------------------
@@ -670,7 +670,7 @@
                      "AlternateErrorPagesEnabled": true,  // NOTE: I couldn't get this to behave differently on a generic 404 message.
                      "SearchSuggestEnabled": false,  // FIXME
                      // "NetworkPredictionOptions": ???,  // FIXME
-                     "IncognitoModeAvailability": false,  // FIXME
+                     "IncognitoModeAvailability": 1,  // FIXME
                      // "SavingBrowserHistoryDisabled": ???,  // FIXME
                      "PrintingEnabled": true,
                      // "AppCacheForceEnabled": ???,  // DEAD: https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache
