@@ -237,17 +237,61 @@ if 'enterprise_name' not in json_config_object:
 #
 # Known keys where this is helpful:
 #   "URLBlocklist", "URLAllowlist", "ManagedBookmarks", "ProxySettings"
-for chrome_policy in [
-        # FIXME: this is ugly; use jsonpath?
-        application['managedConfiguration']
-        for android_policy in json_config_object['policies'].values()
-        for application in android_policy.get('applications', [])
-        if application['packageName'] == 'com.android.chrome'
-        if 'managedConfiguration' in application]:
-    for key, value in chrome_policy.items():
-        if isinstance(value, dict):
-            logging.debug('Double-json-ing com.android.chrome managedConfiguration %s', key)
-            chrome_policy[key] = json.dumps(chrome_policy[key])
+#
+# UPDATE: also do some basic validation, as neither androidmanagement
+#         nor com.android.chrome validate managedConfiguration.
+#         AND as I've REPEATEDLY made non-obvious errors which were
+#         silently ignored, LEAVING THE SYSTEM INSECURE.
+for packageName, managedConfiguration in (
+        (a['packageName'], a['managedConfiguration'])
+        for p in json_config_object['policies'].values()
+        for a in p.get('applications', [])
+        if 'managedConfiguration' in a):
+    # FIXME: memoize this "get" call.
+    schema = dict(
+        (d['key'], d)
+        for d in androidmanagement.enterprises().applications().get(
+                name=f'{json_config_object["enterprise_name"]}/applications/{packageName}').execute()['managedProperties'])
+    schema_type_to_python_type = {
+        'BOOL': bool,
+        'STRING': str,
+        'CHOICE': str,
+        'MULTISELECT': str},     # FIXME: is this correct???
+    for k, v in managedConfiguration.items():
+        if schema[k]['type'] == 'BOOL':
+            # EXAMPLE (tested): "SearchSuggestEnabled": false
+            if not isinstance(v, bool):
+                raise TypeError(packageName, k, v, 'BOOL')
+        elif schema[k]['type'] == 'CHOICE':
+            # EXAMPLE (tested): "DnsOverHttpsMode": "off"
+            # EXAMPLE (tested): "IncognitoModeAvailability": 1  # NOTE: 1 or "1"; both work
+            choices = {choice['value'] for choice in schema[k]['entries']}
+            assert all(isinstance(choice, str) for choice in choices)
+            if isinstance(v, int) and str(v) in choices:
+                logging.debug('Ignoring str-as-int (seems to work) %s %s %s %s', packageName, k, v, choices)
+            elif not isinstance(v, str):
+                raise TypeError(packageName, k, v, 'CHOICE', choices)
+        elif schema[k]['type'] == 'MULTISELECT':
+            # EXAMPLE (tested): "ExplicitlyAllowedNetworkPorts": "[\"554\", \"10080\"]"
+            choices = {choice['value'] for choice in schema[k]['entries']}
+            assert all(isinstance(choice, str) for choice in choices)
+            if not isinstance(v, list):
+                raise TypeError(packageName, k, v, 'MULTISELECT', choices)
+            for choice in v:
+                if choice not in choices:
+                    raise ValueError(packageName, k, v, choice, 'MULTISELECT', choices)
+            logging.debug('Double-json-ing %s %s', packageName, k)
+            managedConfiguration[k] = json.dumps(v)
+        elif schema[k]['type'] == 'STRING':
+            # EXAMPLE (tested): "HomepageLocation": "https://LOCAL.PrisonPC.com/"
+            # EXAMPLE (tested): "ManagedBookmarks": "[{\"name\": \"MyCoolBookmark\", \"url\": \"https://example.com/\"}]"
+            # EXAMPLE (tested): "URLAllowlist": "[\"https://example.com/\", \"https://www.example.com/\", \"https://ang.wikipedia.org/\"]"
+            if not isinstance(v, str):
+                logging.debug('Double-json-ing %s %s', packageName, k)
+                managedConfiguration[k] = json.dumps(v)
+        else:
+            raise RuntimeError(packageName, k, schema[k]['type'])
+
 
 for policy_name, policy_body in json_config_object['policies'].items():
     # Example: "frobozz-DEADBE/policies/policy1"
