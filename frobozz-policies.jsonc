@@ -169,6 +169,8 @@
                 {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",
                  "disabled": false,
                  "managedConfiguration": {
+                     // Ref. https://chromeenterprise.google/policies/#ExplicitlyAllowedNetworkPorts  (needs js)
+                     //
                      // THIS FORMAT (REGULAR JSON) IS NOT WORKING.
                      //     "ManagedBookmarks": [{"name": "MyOtherCoolBookmark", "url": "https://example.org/"}]
                      // THIS FORMAT (WRAPPING IN A STRING) IS DEFINITELY WORKING.
@@ -317,12 +319,14 @@
                          // UPDATE: the URL it claims to be trying is content://media/external/downloads/27
                          // but whitelisting anything narrower than "content://*" is not working.
                          "content://*",
+                         "chrome://policy",  // DEBUGGING -- FIXME: SECURITY RISK, REMOVE BEFORE PROD
                          // During pilot this replaces some/all unqualified hosts (e.g. https://PrisonPC/ and https://Cottage-Orders/).
                          "https://LOCAL.PrisonPC.com/",
                          "https://webmail.PrisonPC.com/"],
                      "ManagedBookmarks": [
                          // https://crtech.tips/json-example-code-for-chromes-managed-bookmarks/
                          {"toplevel_name": "AMC Detainee Bookmarks"},
+                         {"url": "chrome://policy", "name": "DEBUGGING -- FIXME: SECURITY RISK, REMOVE BEFORE PROD"},
                          {"url": "https://austlii.community/foswiki/ACTLawHbk"                                                                         , "name": "ACT Law Handbook Austlii"                                            },
                          {"url": "https://correctiveservices.act.gov.au/"                                                                              , "name": "ACT Corrective Services"                                             },
                          {"url": "https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache"                                 , "name": "AFP Reporting Historical Sexual Assault"                             },
@@ -393,7 +397,10 @@
                      // Ref. https://chromeenterprise.google/policies/?policy=ProxySettings (requires js)
                      "ProxySettings": {  // NOTE: my wrapper script converts this to a string.
                          "ProxyMode": "pac_script",
-                         "ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"},
+                         // FIXME: change apache to serve this out properly.
+                         // "ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"
+                         "ProxyPacUrl": "http://proxy.lan/proxy.pac"  // FIXME: does this work???
+                     },
                      "AuthSchemes": "basic",  // disable weak MD5 ("digest") and MD4 ("ntlm")
                      "DisableAuthNegotiateCnameLookup": false,  // IRRELEVANT -- SPNEGO KERBEROS ONLY
                      "AuthServerAllowlist": "LOCAL.PrisonPC.com,*.lan",  // FIXME: ???
