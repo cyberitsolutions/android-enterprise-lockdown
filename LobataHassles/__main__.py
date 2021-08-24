@@ -177,7 +177,7 @@ if args.google_play_iframe:
         parent=json_config_object['enterprise_name'],
         body={"parentFrameUrl": IFRAME_URL}).execute()
     subprocess.check_call(['xdg-open', f'{IFRAME_URL}?mode=SELECT&token={web_token["value"]}'])
-    print('Skipping everything else', file=sys.stderr, flush=True)
+    logging.debug('Skipping everything else')
     exit()
 
 ######################################################################
