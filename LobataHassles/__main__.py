@@ -88,6 +88,7 @@ parser.add_argument(
 parser.add_argument('--hurry-the-fuck-up', action='store_true')
 parser.add_argument('--debug', dest='logging_level', action='store_const', const=logging.DEBUG, default=logging.NOTSET)
 parser.add_argument('--verbose', dest='logging_level', action='store_const', const=logging.INFO, default=logging.NOTSET)
+parser.add_argument('--google-play-iframe', action='store_true')
 args = parser.parse_args()
 logging.getLogger().setLevel(args.logging_level)
 
@@ -169,6 +170,15 @@ def redact_some_passphrases(device_or_policy_or_webapp: dict) -> None:  # DESTRU
         if 'Passphrase' in networkConfiguration.get('WiFi', {}):
             networkConfiguration['WiFi']['Passphrase'] = None
 
+
+if args.google_play_iframe:
+    IFRAME_URL = "https://storage.googleapis.com/android-management-api-samples/managed_play_iframe.html"
+    web_token = androidmanagement.enterprises().webTokens().create(
+        parent=json_config_object['enterprise_name'],
+        body={"parentFrameUrl": IFRAME_URL}).execute()
+    subprocess.check_call(['xdg-open', f'{IFRAME_URL}?mode=SELECT&token={web_token["value"]}'])
+    print('Skipping everything else', file=sys.stderr, flush=True)
+    exit()
 
 ######################################################################
 ## Create an enterprise
