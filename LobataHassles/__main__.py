@@ -89,6 +89,7 @@ parser.add_argument('--hurry-the-fuck-up', action='store_true')
 parser.add_argument('--debug', dest='logging_level', action='store_const', const=logging.DEBUG, default=logging.NOTSET)
 parser.add_argument('--verbose', dest='logging_level', action='store_const', const=logging.INFO, default=logging.NOTSET)
 parser.add_argument('--google-play-iframe', action='store_true')
+parser.add_argument('--delete-some-tablets', nargs='*')
 args = parser.parse_args()
 logging.getLogger().setLevel(args.logging_level)
 
@@ -179,6 +180,12 @@ if args.google_play_iframe:
     subprocess.check_call(['xdg-open', f'{IFRAME_URL}?mode=SELECT&token={web_token["value"]}'])
     logging.debug('Skipping everything else')
     exit()
+
+if args.delete_some_tablets:
+    for name in args.delete_some_tablets:
+        androidmanagement.enterprises().devices().delete(name=name).execute()
+    exit()
+
 
 ######################################################################
 ## Create an enterprise
