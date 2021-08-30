@@ -90,6 +90,7 @@ parser.add_argument('--debug', dest='logging_level', action='store_const', const
 parser.add_argument('--verbose', dest='logging_level', action='store_const', const=logging.INFO, default=logging.NOTSET)
 parser.add_argument('--google-play-iframe', action='store_true')
 parser.add_argument('--delete-some-tablets', nargs='*')
+parser.add_argument('--migrate-some-tablets', nargs='*')
 args = parser.parse_args()
 logging.getLogger().setLevel(args.logging_level)
 
@@ -184,6 +185,16 @@ if args.google_play_iframe:
 if args.delete_some_tablets:
     for name in args.delete_some_tablets:
         androidmanagement.enterprises().devices().delete(name=name).execute()
+    exit()
+
+# Ref. https://stackoverflow.com/questions/52949572/android-management-api-change-policy-for-device#52953195
+if args.migrate_some_tablets:
+    assert args.enrollment_policy_name, 'Gotta know new policy to move to'
+    for name in args.migrate_some_tablets:
+        androidmanagement.enterprises().devices().patch(
+            name=name,
+            updateMask='policyName',
+            body={'policyName': args.enrollment_policy_name}).execute()
     exit()
 
 
