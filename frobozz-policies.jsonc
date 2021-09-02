@@ -165,6 +165,10 @@
                 {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.slides", "managedConfiguration": {"PrintingEnabled": false, "enableAccountLessMode": true}},  // NEEDED TO VIEW PPTX
 
                 // ----------------------------------------------------------------------
+                // Install our CA cert using a custom app that's only in our private Play Store.
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.prisonpc.cacertinstaller", "delegatedScopes": "CERT_INSTALL"},
+
+                // ----------------------------------------------------------------------
                 // Inmate can browse to whitelisted websites.
                 {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",
                  "disabled": false,
