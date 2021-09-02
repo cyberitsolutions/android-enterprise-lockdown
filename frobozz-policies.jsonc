@@ -100,6 +100,17 @@
             "openNetworkConfiguration": {
                 "NetworkConfigurations": [
                     {
+                        // The docs say
+                        //    https://developers.google.com/android/management/configure-networks
+                        //    GUID, Name, Type, and WiFi are the only supported fields, and are all required.
+                        // Mike saw this approach work for him on Android 9 Go.
+                        // Trent saw this approach silently ignored for him on Android 10 Go.
+                        // "ProxySettings": {
+                        //     "Manual": {
+                        //         "HTTPProxy": {"Host": "hera", "Port": 3128},
+                        //         "SecureHTTPProxy": {"Host": "hera", "Port": 3128}
+                        //     },
+                        //     "Type": "Manual"},
                         "GUID": "2891cf2d-e32a-468b-ba57-b9f0d954e701",
                         "Name": "Trent's Home (FIXME: remove)",
                         "Type": "WiFi",
