@@ -502,6 +502,16 @@
                 // {"disabled": true, "packageName": "com.android.traceur"}
                 ],
 
+            // Prevent factory resets.
+            // Breaks Laser MID-1089IPS.
+            // Fine for everything else (inc MID-1089IPSA100, a.k.a. MID-1089IPS-GLD).
+            "networkResetDisabled": true,
+            "safeBootDisabled": true,
+            "factoryResetDisabled": true,
+            "frpAdminEmails": [
+                "prisonpctester2@gmail.com",
+                "prisonpctester1@gmail.com",
+                "trentbuck@gmail.com"],
 
             // ----------------------------------------------------------------------
             // Default-disable everything else.
