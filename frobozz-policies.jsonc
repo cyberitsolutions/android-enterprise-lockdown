@@ -504,7 +504,38 @@
                      "WebXRImmersiveArEnabled": false,  // disabled
                      // "SuppressDifferentOriginSubframeDialogs"
                      "ExplicitlyAllowedNetworkPorts": []  // disabled (empty list of whitelisted legacy ports to re-allow)
-                 }}
+                 }},
+
+                // ----------------------------------------------------------------------
+                // A bunch of games Ron wanted for testing
+                {"installType": "FORCE_INSTALLED", "packageName": "air.com.sgn.cookiejam.gp"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.cookiecrush.legend"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.fruitcandy.blast"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.free.games.cake.smash.mania.puzzle"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.cookie.match3.casual"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.playfun.candymatch3.free"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrush4"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.sweetcandy.puzzle.blast.crush.free"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushjellysaga"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushsodasaga"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.v2r.pjewel1a"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.enp.jewel3.google"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.linkdesks.jewellegend"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.fires.jewelsjungle.treasure"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.phonemaster.jewelhunter"},
+                {"installType": "FORCE_INSTALLED", "packageName": "jewelblast.puzzlegame.toycrush.gem"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.go7game.jewelclassic"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushsaga"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.superbox.aos.jewelsjungle"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.ivy.jewel.mystery"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.dodamgames.aos.jewelsfantasypirate"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.jewellegendgame.jewels.town"},
+                {"installType": "FORCE_INSTALLED", "packageName": "teskin.jewels.planet"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.creativejoy.jewelsancient"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.spcomes.jewelryking"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.lyoomatch.jewelscrush.princessadventure"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.dysugar.jewels.prince"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.bitmango.go.jewelsmagicmysterymatch3"}
 
                 // ----------------------------------------------------------------------
                 // Disable some trash that should not be accessible, but is?
