@@ -507,37 +507,6 @@
                  }},
 
                 // ----------------------------------------------------------------------
-                // A bunch of games Ron wanted for testing
-                {"installType": "FORCE_INSTALLED", "packageName": "air.com.sgn.cookiejam.gp"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.cookiecrush.legend"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.fruitcandy.blast"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.free.games.cake.smash.mania.puzzle"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.cookie.match3.casual"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.playfun.candymatch3.free"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrush4"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.sweetcandy.puzzle.blast.crush.free"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushjellysaga"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushsodasaga"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.v2r.pjewel1a"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.enp.jewel3.google"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.linkdesks.jewellegend"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.fires.jewelsjungle.treasure"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.phonemaster.jewelhunter"},
-                {"installType": "FORCE_INSTALLED", "packageName": "jewelblast.puzzlegame.toycrush.gem"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.go7game.jewelclassic"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushsaga"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.superbox.aos.jewelsjungle"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.ivy.jewel.mystery"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.dodamgames.aos.jewelsfantasypirate"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.jewellegendgame.jewels.town"},
-                {"installType": "FORCE_INSTALLED", "packageName": "teskin.jewels.planet"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.creativejoy.jewelsancient"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.spcomes.jewelryking"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.lyoomatch.jewelscrush.princessadventure"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.dysugar.jewels.prince"},
-                {"installType": "FORCE_INSTALLED", "packageName": "com.bitmango.go.jewelsmagicmysterymatch3"}
-
-                // ----------------------------------------------------------------------
                 // Disable some trash that should not be accessible, but is?
                 // UPDATE: THIS DID NOT WORK, BUT com.android.chrome/managedConfiguration/BrowserSignin=false did???
                 // {"installType": "BlOCKED", "disabled": true, "packageName": "com.google.android.gms"}  // "Google Play services", i.e. in chrome "Turn on sync" ???
@@ -626,8 +595,390 @@
         // ======================================================================
         // ======================================================================
         // ======================================================================
+        "alistair-game-test": {
+            // ----------------------------------------------------------------------
+            //  Block "Play Store", "Settings", screen locking.
+            "kioskCustomLauncherEnabled": true,
+            "keyguardDisabled": true,
+
+            // ----------------------------------------------------------------------
+            // Hard-code wifi; block changing it.
+            "wifiConfigDisabled": true,
+            "openNetworkConfiguration": {
+                "NetworkConfigurations": [
+                    {
+                        // The docs say
+                        //    https://developers.google.com/android/management/configure-networks
+                        //    GUID, Name, Type, and WiFi are the only supported fields, and are all required.
+                        // Mike saw this approach work for him on Android 9 Go.
+                        // Trent saw this approach silently ignored for him on Android 10 Go.
+                        // "ProxySettings": {
+                        //     "Manual": {
+                        //         "HTTPProxy": {"Host": "hera", "Port": 3128},
+                        //         "SecureHTTPProxy": {"Host": "hera", "Port": 3128}
+                        //     },
+                        //     "Type": "Manual"},
+                        "GUID": "2891cf2d-e32a-468b-ba57-b9f0d954e701",
+                        "Name": "Trent's Home (FIXME: remove)",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "wang",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}},
+                    {
+                        "GUID": "00d75ad3-743f-45bd-8e6d-cd631f7f81db",
+                        "Name": "PrisonPC (Enrollment Only)",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC Enrollment",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}},
+                    {
+                        "GUID": "937947f2-a18d-4a85-829e-4d769d1f0564",
+                        "Name": "PrisonPC",
+                        "Type": "WiFi",
+                        "WiFi": {
+                            "AutoConnect": true,
+                            "SSID": "PrisonPC",
+                            "Security": "WPA-PSK",
+                            "Passphrase": null}}]},
+
+            "applications": [
+                // ----------------------------------------------------------------------
+                // Inmate can play a couple of games.
+                {"installType": "FORCE_INSTALLED", "packageName": "org.andstatus.game2048"},  // 2048
+                {"installType": "FORCE_INSTALLED", "packageName": "org.secuso.privacyfriendlysudoku"},  // Sudoku
+                {"installType": "FORCE_INSTALLED", "packageName": "com.dozingcatsoftware.bouncy"},  // Vector Pinball
+                {"installType": "FORCE_INSTALLED", "packageName": "com.roguetemple.hyperroid"},  // HyperRogue
+                // No quick-and-easy edu choices, so install Duolingo but disable it, so
+                // it's sort of saying "hey maybe we could do this later, but not right now".
+                {"installType": "AVAILABLE", "packageName": "com.duolingo", "disabled": true},
+
+                // ----------------------------------------------------------------------
+                // Inmate can watch IPTV streams.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.xbcaba3d5067d04e1"},  // TV Guide
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.photosgo"},  // rtp:// client (Gallery Go)
+                // * NOTE: Gallery Go handles rtsp:// but not rtp://.
+                //   We should aim to implement an rtsp:// shim so that we can use Gallery Go on tablets.
+                //   This reduces the attack surface (vlc has more functionality than Gallery Go).
+                // In the meantime, ship vlc instead/also.
+
+                // 20:06 <twb> Clicking on that DOES NOT open Gallery Go
+                // 20:06 <twb> So on top of everything else, we need to implement an RTSP server, because plain RTP isn't working
+                // 20:07 <twb> I also tried long-click on the URL and it offers to "share" it but only to Drive not Gallery
+                // 
+                {"installType": "FORCE_INSTALLED", "packageName": "org.videolan.vlc"},
+
+                // ----------------------------------------------------------------------
+                // Inmate can read and write emails.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.enterprise.webapp.x229102e320da4139"},  // Mail
+
+                // ----------------------------------------------------------------------
+                // Inmate can view PDFs and emailed office documents.
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs"},  // needed to read PDF, DOCX, PPTX, XLSX
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.docs", "managedConfiguration": {"PrintingEnabled": false, "enableAccountLessMode": true}},  // NEEDED TO VIEW DOCX
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.sheets", "managedConfiguration": {"PrintingEnabled": false, "enableAccountLessMode": true}},  // NEEDED TO VIEW XLSX
+                {"installType": "FORCE_INSTALLED", "packageName": "com.google.android.apps.docs.editors.slides", "managedConfiguration": {"PrintingEnabled": false, "enableAccountLessMode": true}},  // NEEDED TO VIEW PPTX
+
+                // ----------------------------------------------------------------------
+                // Install our CA cert using a custom app that's only in our private Play Store.
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.prisonpc.cacertinstaller", "delegatedScopes": "CERT_INSTALL"},
+
+                // ----------------------------------------------------------------------
+                // Inmate can browse to whitelisted websites.
+                {"installType": "REQUIRED_FOR_SETUP", "packageName": "com.android.chrome",
+                 "disabled": false,
+                 "managedConfiguration": {
+                     "ManagedBookmarks": [
+                         // https://crtech.tips/json-example-code-for-chromes-managed-bookmarks/
+                         {"toplevel_name": "AMC Detainee Bookmarks"},
+                         {"url": "chrome://policy", "name": "DEBUGGING -- FIXME: SECURITY RISK, REMOVE BEFORE PROD"},
+                         {"url": "https://austlii.community/foswiki/ACTLawHbk"                                                                         , "name": "ACT Law Handbook Austlii"                                            },
+                         {"url": "https://correctiveservices.act.gov.au/"                                                                              , "name": "ACT Corrective Services"                                             },
+                         {"url": "https://forms.afp.gov.au/online_forms/actpolicing_reporting_sexual_assault/_nocache"                                 , "name": "AFP Reporting Historical Sexual Assault"                             },
+                         {"url": "https://formupload.aec.gov.au/Form?FormId=prisoner"                                                                  , "name": "Australian Electoral Commission Enrol to Vote"                       },
+                         {"url": "https://legalaidact.org.au/what-we-do/legal-information-education/publications"                                      , "name": "Legal Aid Information and Education Topics"                          },
+                         {"url": "https://legalanswers.sl.nsw.gov.au/hot-topics"                                                                       , "name": "Hot Topics Find Legal Answers State Library of NSW"                  },
+                         {"url": "https://legalanswers.sl.nsw.gov.au/law-handbook-your-practical-guide-law-nsw"                                        , "name": "NSW Law Handbook"                                                    },
+                         {"url": "https://legislation.act.gov.au"                                                                                      , "name": "ACT Legislation"                                                     },
+                         {"url": "https://legislation.gov.au"                                                                                          , "name": "Federal Legislation"                                                 },
+                         {"url": "https://www.covid19.act.gov.au"                                                                                      , "name": "COVID 19 Information ACT Government"                                 },
+                         {"url": "https://www.gutenberg.org/"                                                                                          , "name": "Project Gutenberg eBooks"                                            },
+                         // {"url": "https://www.lawhandbook.org.au"                                                                                      , "name": "Victorian Law Handbook"                                              },
+                         {"url": "https://fls.org.au"                                                                                                  , "name": "Victorian Law Handbook"                                              },
+                         // {"url": "https://www.surveymonkey.com/r/externalactcs"                                                                        , "name": "ACT Corrective Services DAIP Questionnaire"                          }, // SURVEY CLOSED - NOT USEFUL
+                         {"url": "https://www.surveymonkey.com/r/QR7W7FD"                                                                              , "name": "ACT Charter of Rights for Victims of Crime Online Survey"            },
+                         {"name": "Internal Bookmarks", "children":
+                          [{"url": "https://LOCAL.PrisonPC.com/Cottage-Orders/", "name": "AMC Cottage Orders"},
+                           {"url": "https://LOCAL.PrisonPC.com/Library", "name": "Library Index"},
+                           {"url": "https://LOCAL.PrisonPC.com/Share/Emails/External_whitelisted_email_addresses.pdf", "name": "Whitelisted Emails"},
+                           {"url": "https://LOCAL.PrisonPC.com/Share/Handbook/AMC_Detainee_Handbook-February2021.pdf", "name": "AMC Detainee Handbook 2021"},
+                           {"url": "https://LOCAL.PrisonPC.com/Share/Telephone/Free_Call-Common_Number_List.pdf", "name": "AMC Detainee Free Call Common Numbers List"},
+                           {"url": "https://LOCAL.PrisonPC.com/Share/University/OpenUniversitiesHandbook2021.pdf", "name": "Open Universities Handbook 2021"},
+                           {"url": "https://LOCAL.PrisonPC.com/Vocal/FantasticPhonics-adult/fantasticphonics/", "name": "Fantastic Phonics"}]},
+                         {"name": "Community Services Guide", "children":
+                          [{"url": "https://www.communityservices.act.gov.au/__data/assets/pdf_file/0010/1097146/Guide_1_CC_reports_web.pdf"             , "name": "1 Child Concern Reports"                    },
+                           {"url": "https://www.communityservices.act.gov.au/__data/assets/pdf_file/0006/1097151/Guide_2_Going_to_court_web.pdf"         , "name": "2 Court and Reuniting Familes"              },
+                           {"url": "https://www.communityservices.act.gov.au/__data/assets/pdf_file/0007/1097152/Guide_3_Children_in_care_web.pdf"       , "name": "3 Children in Care"                         },
+                           {"url": "https://www.communityservices.act.gov.au/__data/assets/pdf_file/0009/1097154/Guide_4_Feedback_web.pdf"               , "name": "4 Raising Concerns"                         },
+                           {"url": "https://www.communityservices.act.gov.au/__data/assets/pdf_file/0010/1097155/Guide_5_Self_representation_A4_web.pdf" , "name": "5 Self Representation"                      }]},
+                         {"name": "Canberra Community Law", "children":
+                          [{"url": "https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-15.pdf"          , "name": "Eviction From Your Home"                      },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-16.pdf"          , "name": "Defending Eviction"                           },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-19.pdf"          , "name": "Incarcerated Tenants 26 Week No Cause Notices"},
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-20.pdf"          , "name": "What Happens to My Belongings"                },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-8.pdf"           , "name": "Damage to ACT Housing Property"               },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/2019/ccl-public-housing-factsheets-2019-9.pdf"           , "name": "Previous Tenancy Debts"                       },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/ccl-disability-discrimination-factsheet-1.pdf"           , "name": "Disability Discrimination Complaints 1"       },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/ccl-disability-discrimination-factsheet-2.pdf"           , "name": "Disability Discrimination Complaints 2"       },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/ccl-our-services-brochure-aug-2019.pdf"                  , "name": "About Us"                                     },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/Public-Housing-Fact-Sheet-1-2019.pdf"                    , "name": "Applications for Housing Assistance"          },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-17.pdf"               , "name": "Disclosing Convictions"                       },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-18.pdf"               , "name": "Victims Of Crime Financial Assistance"        },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-19.pdf"               , "name": "My Rights When Stopped By Police"             },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-1.pdf"                , "name": "Traffic and Parking Infringements"            },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/streetlaw/ccl-street-law-factsheet-7.pdf"                , "name": "Completing a Work Development Program"        },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-22.pdf"                             , "name": "Applying for a Vulnerable People Card"        },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-23.pdf"                             , "name": "Discrimination Due to Criminal History"       },
+                           {"url": "https://www.canberracommunitylaw.org.au/sites/default/files/street-law-factsheet-24.pdf"                             , "name": "Disclosing Criminal History to Employers"     }]}
+                     ],
+
+                     // Additional browser lockdown.
+                     "HomepageLocation": "https://LOCAL.PrisonPC.com/",
+                     "AlternateErrorPagesEnabled": false,  // disabled
+                     "SearchSuggestEnabled": false,        // disabled
+                     "NetworkPredictionOptions": 2,        // disabled
+                     "IncognitoModeAvailability": 1,       // disabled
+                     "SavingBrowserHistoryDisabled": true,  // disabled
+                     "PrintingEnabled": false,              // disabled
+                     "AppCacheForceEnabled": false,         // disabled
+                     "ForceGoogleSafeSearch": true,         // enabled (google search pretends women don't have nipples)
+                     "ForceYouTubeRestrict": "2",           // enabled (youtube pretends women don't have nipples)
+                     "SafeBrowsingProtectionLevel": "1",    // enabled (below "phone home to google" level)
+                     "PasswordManagerEnabled": false,       // disabled
+                     "PasswordLeakDetectionEnabled": true,  // enabled (checks passwords against a blacklist?)
+                     "AutofillAddressEnabled": false,       // disabled
+                     "AutofillCreditCardEnabled": false,    // disabled
+                     "SyncTypesListDisabled": ["bookmarks", "readingList", "preferences", "passwords", "autofill", "themes", "typedUrls", "extensions", "apps", "tabs", "wifiConfigurations", "preferredSexPositions"],  // disable all
+                     // Ref. https://chromeenterprise.google/policies/?policy=ProxySettings (requires js)
+                     "ProxySettings": {  // NOTE: my wrapper script converts this to a string.
+                         "ProxyPacMandatory": false,  // allow falling back to direct -- useful for enrollment network
+                         "ProxyMode": "pac_script",
+                         "ProxyPacUrl": "https://LOCAL.PrisonPC.com/proxy.pac"
+                     },
+                     "AuthSchemes": "basic",  // disable weak MD5 ("digest") and MD4 ("ntlm")
+                     "DisableAuthNegotiateCnameLookup": false,  // IRRELEVANT -- SPNEGO KERBEROS ONLY
+                     "AuthServerAllowlist": "LOCAL.PrisonPC.com,*.lan",  // FIXME: ???
+                     // "AuthNegotiateDelegateAllowlist"  // IRRELEVANT -- SPNEGO KERBEROS ONLY
+                     // "AuthAndroidNegotiateAccountType"  // IRRELEVANT -- SPNEGO KERBEROS ONLY
+                     "NtlmV2Enabled": false,  // disabled
+                     "BlockThirdPartyCookies": true,
+                     "DefaultSearchProviderEnabled": false,  // disabled
+                     // All DefaultSearchProviderXXX IRRELEVANT due to DefaultSearchProviderEnabled=false
+                     // "DefaultSearchProviderName":                 "Quack Quack Quo",
+                     // "DefaultSearchProviderKeyword" :             "ddg",
+                     // "DefaultSearchProviderSearchURL":            "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderSuggestURL":           "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderIconURL":              "https://lite.duckduckgo.com/favicon.ico",
+                     // "DefaultSearchProviderEncodings":            "UTF-8",
+                     // "DefaultSearchProviderAlternateURLs":        "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderImageURL":             "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderNewTabURL":            "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderSearchURLPostParams":  "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderSuggestURLPostParams": "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     // "DefaultSearchProviderImageURLPostParams":   "https://lite.duckduckgo.com/lite?q={searchTerms}",
+                     "DefaultCookiesSetting": 2,  // disabled (FIXME: ???)
+                     "DefaultJavaScriptSetting": 1,  // ENABLED (websites may execute javascript!!!)
+                     "DefaultPopupsSetting": 2,  // disabled (popups banned -- this is the default)
+                     "DefaultGeolocationSetting": 2,  // disabled (geolocation banned)
+                     "DefaultWebBluetoothGuardSetting": 2,  // disabled (bluetooth banned)
+                     "DefaultSensorsSetting": 2,            // disabled (light/gyro sensors banned)
+                     "DefaultWebUsbGuardSetting": 2,        // disabled (USB banned)
+                     // "WebUsbAllowDevicesForUrls"
+                     // "WebUsbAskForUrls"
+                     // "WebUsbBlockedForUrls"
+                     "CookiesAllowedForUrls": [
+                         // Without this, the site doesn't work AT ALL.
+                         "https://webmail.PrisonPC.com",
+                         "https://legislation.act.gov.au"],
+                     // "CookiesBlockedForUrls"
+                     // "CookiesSessionOnlyForUrls"
+                     // "JavaScriptAllowedForUrls"
+                     // "JavaScriptBlockedForUrls"
+                     // "LegacySameSiteCookieBehaviorEnabled": 2,  // disabled  (UPDATE: NO LONGER AVAILABLE IN CHROME 92, AUG 2021)
+                     // "LegacySameSiteCookieBehaviorEnabledForDomainList"
+                     "LensCameraAssistedSearchEnabled": false,  // disabled
+                     // "PopupsAllowedForUrls"
+                     // "PopupsBlockedForUrls"
+                     // "SensorsAllowedForUrls"
+                     // "SensorsBlockedForUrls"
+                     "TargetBlankImpliesNoOpener": true,  // disabled (block an off-by-default insecure thing)
+                     "TranslateEnabled": false,     // disabled
+                     "EditBookmarksEnabled": false,  // disabled
+                     "EnableExperimentalPolicies": "",  // disabled?
+                     "DisableSafeBrowsingProceedAnyway": true,  // disabled (cannot say "I accept the risk")
+                     // "BuiltInDnsClientEnabled"
+                     "DnsOverHttpsMode": "off",  // disabled
+                     // "DnsOverHttpsTemplates"
+                     "SharedClipboardEnabled": false,  // disabled
+                     "DataCompressionProxyEnabled": false,  // disabled (don't "phone home" page contents to google)  ("Lite mode")
+                     "BrowserSignin": 0,  // disabled (user can't "sign into google")
+                     "SSLVersionMin": "tls1.2",  // enabled (ban insecure SSL/TLS versions)
+                     "CECPQ2Enabled": true,      // enabled (don't delay adoption of strong crypto)
+                     // "CertificateTransparencyEnforcementDisabledForUrls"
+                     // "CertificateTransparencyEnforcementDisabledForCas"
+                     // "CertificateTransparencyEnforcementDisabledForLegacyCas"
+                     // "ContextualSearchEnabled"
+                     "SSLErrorOverrideAllowed": false,  // disabled (cannot say "I accept the risk")
+                     // "SSLErrorOverrideAllowedForOrigins"
+                     // "AllowedDomainsForApps"
+                     "EnableMediaRouter": false,  // disabled (Google Cast)
+                     "NTPContentSuggestionsEnabled": false,  // disabled
+                     // "WebRtcUdpPortRange"
+                     // "IsolateOriginsAndroid"
+                     "SitePerProcessAndroid": true,  // enabled
+                     // "RestrictAccountsToPatterns"
+                     "SafeBrowsingExtendedReportingEnabled": false,  // disabled (do not "phone home" to google)
+                     // "OverrideSecurityRestrictionsOnInsecureOrigin"
+                     "UrlKeyedAnonymizedDataCollectionEnabled": false,  // disabled (do not "phone home" to google)
+                     "EnterpriseHardwarePlatformAPIEnabled": false,  // ???
+                     // "HSTSPolicyBypassList"
+                     "AllowSyncXHRInPageDismissal": false,  // disabled
+                     "PaymentMethodQueryEnabled": false,    // disabled (Credit Card stuff)
+                     "ScrollToTextFragmentEnabled": true,   // ENABLED (allow "#foo" in URLs, e.g. https://example.com/x.html#Chapter_3)
+                     "IntensiveWakeUpThrottlingEnabled": true,  // ENABLED (mitigate battery drain by bad js)
+                     // "BackForwardCacheEnabled"
+                     // "UserAgentClientHintsEnabled"
+                     "InsecureFormsWarningsEnabled": true,  // ENABLED (warn about cleartext HTTP)
+                     // "LookalikeWarningAllowlistDomains"
+                     "TosDialogBehavior": 2,  // ENABLED (don't display Chrome EULA on first open)
+                     "WebXRImmersiveArEnabled": false,  // disabled
+                     // "SuppressDifferentOriginSubframeDialogs"
+                     "ExplicitlyAllowedNetworkPorts": []  // disabled (empty list of whitelisted legacy ports to re-allow)
+                 }},
+
+                // ----------------------------------------------------------------------
+                // A bunch of games Ron wanted for testing
+                {"installType": "FORCE_INSTALLED", "packageName": "air.com.sgn.cookiejam.gp"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.cookiecrush.legend"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.fruitcandy.blast"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.free.games.cake.smash.mania.puzzle"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.cookie.match3.casual"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.playfun.candymatch3.free"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrush4"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.sweetcandy.puzzle.blast.crush.free"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushjellysaga"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushsodasaga"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.v2r.pjewel1a"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.enp.jewel3.google"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.linkdesks.jewellegend"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.fires.jewelsjungle.treasure"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.phonemaster.jewelhunter"},
+                {"installType": "FORCE_INSTALLED", "packageName": "jewelblast.puzzlegame.toycrush.gem"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.go7game.jewelclassic"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.king.candycrushsaga"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.superbox.aos.jewelsjungle"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.ivy.jewel.mystery"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.dodamgames.aos.jewelsfantasypirate"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.jewellegendgame.jewels.town"},
+                {"installType": "FORCE_INSTALLED", "packageName": "teskin.jewels.planet"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.creativejoy.jewelsancient"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.spcomes.jewelryking"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.lyoomatch.jewelscrush.princessadventure"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.dysugar.jewels.prince"},
+                {"installType": "FORCE_INSTALLED", "packageName": "com.bitmango.go.jewelsmagicmysterymatch3"}
+
+                // ----------------------------------------------------------------------
+                // Disable some trash that should not be accessible, but is?
+                // UPDATE: THIS DID NOT WORK, BUT com.android.chrome/managedConfiguration/BrowserSignin=false did???
+                // {"installType": "BlOCKED", "disabled": true, "packageName": "com.google.android.gms"}  // "Google Play services", i.e. in chrome "Turn on sync" ???
+                // Try to prevent inmate filling their own tablet's disk with
+                //   1. Chrome > Settings > About Chrome > Application version (unlock Developer options)
+                //   2. Chrome > Settings > Developer Tools > Tracing > Deveoper options > Tracing > Record trace
+                // UPDATE: THIS DID NOT WORK.
+                // {"disabled": true, "packageName": "com.android.traceur"}
+                ],
+
+            // Prevent factory resets.
+            // Breaks Laser MID-1089IPS.
+            // Fine for everything else (inc MID-1089IPSA100, a.k.a. MID-1089IPS-GLD).
+            // "networkResetDisabled": true,
+            // "safeBootDisabled": true,
+            // "factoryResetDisabled": true,
+            // "frpAdminEmails": [
+            //     "prisonpctester2@gmail.com",
+            //     "prisonpctester1@gmail.com",
+            //     "trentbuck@gmail.com"],
+
+            // ----------------------------------------------------------------------
+            // Default-disable everything else.
+            // NOTE: Kiosk mode hides MOST of this anyway, but sometimes is still reachable indirectly.
+            // NOTE: "adjustVolumeDisabled" disables sound output -- breaks watching IPTV.
+            // NOTE: "cameraDisabled" disables QR code scanning for wifi enrollment.
+            "bluetoothDisabled": true,
+            "bluetoothConfigDisabled": true,
+            "bluetoothContactSharingDisabled": true,
+            "addUserDisabled": true,
+            "modifyAccountsDisabled": true,
+            "removeUserDisabled": true,
+            "adjustVolumeDisabled": false,
+            "cameraDisabled": true,
+            "unmuteMicrophoneDisabled": true,
+            "screenCaptureDisabled": true,
+            "setWallpaperDisabled": true,
+            "setUserIconDisabled": true,
+            "mountPhysicalMediaDisabled": true,
+            "outgoingBeamDisabled": true,
+            "outgoingCallsDisabled": true,
+            "usbFileTransferDisabled": true,
+            "usbMassStorageEnabled": false,
+            "keyguardDisabledFeatures": "BIOMETRICS",
+            "permittedAccessibilityServices": {"packageNames": []},
+            "permittedInputMethods": {"packageNames": []},
+            "locationMode": "LOCATION_DISABLED",
+            "shareLocationDisabled": true,
+            "mobileNetworksConfigDisabled": true,
+            "cellBroadcastsConfigDisabled": true,
+            "dataRoamingDisabled": true,
+            "smsDisabled": true,
+            "tetheringConfigDisabled": true,
+            "funDisabled": true,
+            "blockApplicationsEnabled": true,
+            "autoDateAndTimeZone": "AUTO_DATE_AND_TIME_ZONE_ENFORCED",
+            "appAutoUpdatePolicy": "ALWAYS",
+            "autoTimeRequired": true,
+            "vpnConfigDisabled": true,
+            "encryptionPolicy": "ENABLED_WITHOUT_PASSWORD",
+
+            // ----------------------------------------------------------------------
+            // Acceptable use policy
+            "deviceOwnerLockScreenInfo": {
+                "defaultMessage":
+                "By using this device, YOU AGREE to the Acceptable Use Policy."},
+            "shortSupportMessage": {
+                "defaultMessage":
+                "By using this device, YOU AGREE to the Acceptable Use Policy."},
+            "longSupportMessage": {
+                "defaultMessage":
+                "By using this device, YOU AGREE to the following policy Acceptable Use Policy.\n\nAccess to the Prisoner Interactive Learning System is a privilege.\n\nAbuse may result in temporary or permanent loss of use.\nAbuse includes, but is not limited to, attempts to\n • disclose your password to another user;\n • grant another user access to your account;\n • access another user's account;\n • communicate with another inmate;\n • use unauthorised media (inc. CD, DVD & USB);\n • install or modify software; and\n • modify system settings.\n\nAll use, including email correspondence, may be\n • archived indefinitely;\n • reviewed by automated systems;\n • reviewed by staff;\n • reviewed by external agencies for the purposes of\n • investigating suspected criminal/unlawful activity.\n\nAll logs, records and archives may be used as evidence in court."},
 
 
+
+
+
+
+
+
+
+
+            "networkEscapeHatchEnabled": true
+        },
+
+        // ======================================================================
+        // ======================================================================
+        // ======================================================================
 
 
 
