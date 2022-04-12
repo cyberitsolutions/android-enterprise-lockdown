@@ -469,7 +469,6 @@
                      "DnsOverHttpsMode": "off",  // disabled
                      // "DnsOverHttpsTemplates"
                      "SharedClipboardEnabled": false,  // disabled
-                     "DataCompressionProxyEnabled": false,  // disabled (don't "phone home" page contents to google)  ("Lite mode")
                      "BrowserSignin": 0,  // disabled (user can't "sign into google")
                      "SSLVersionMin": "tls1.2",  // enabled (ban insecure SSL/TLS versions)
                      "CECPQ2Enabled": true,      // enabled (don't delay adoption of strong crypto)
@@ -821,7 +820,6 @@
                      "DnsOverHttpsMode": "off",  // disabled
                      // "DnsOverHttpsTemplates"
                      "SharedClipboardEnabled": false,  // disabled
-                     "DataCompressionProxyEnabled": false,  // disabled (don't "phone home" page contents to google)  ("Lite mode")
                      "BrowserSignin": 0,  // disabled (user can't "sign into google")
                      "SSLVersionMin": "tls1.2",  // enabled (ban insecure SSL/TLS versions)
                      "CECPQ2Enabled": true,      // enabled (don't delay adoption of strong crypto)
@@ -1146,7 +1144,6 @@
                      // "DnsOverHttpsTemplates": ???,  // FIXME
                      // "SharedClipboardEnabled": ???,  // FIXME
                      // "ManagedBookmarks": ???,  // FIXME
-                     "DataCompressionProxyEnabled": false,  // FIXME
                      // "BrowserSignin": ???,  // FIXME FIXME FIXME -- THIS ONE IS DEEP MAGIC READ MORE -- FIXME FIXME FIXME
                      // "SSLVersionMin": ???,  // FIXME
                      // "CertificateTransparencyEnforcementDisabledForUrls": ???,  // FIXME
