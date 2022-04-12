@@ -895,6 +895,15 @@
                 // {"disabled": true, "packageName": "com.android.traceur"}
                 ],
 
+            // Force the CA cert installer app gets run during initial enrolment
+            "setupActions":[
+                {
+                    "title":{"defaultMessage":"Set up user environment"},
+                    "description":{"defaultMessage":"Just run this to to trigger some initial setup stuff"},
+                    "launchApp":{"packageName":"com.prisonpc.cacertinstaller"}
+                }
+            ],
+
             // Prevent factory resets.
             // Breaks Laser MID-1089IPS.
             // Fine for everything else (inc MID-1089IPSA100, a.k.a. MID-1089IPS-GLD).
