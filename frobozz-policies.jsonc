@@ -504,7 +504,7 @@
                      "WebXRImmersiveArEnabled": false,  // disabled
                      // "SuppressDifferentOriginSubframeDialogs"
                      "ExplicitlyAllowedNetworkPorts": []  // disabled (empty list of whitelisted legacy ports to re-allow)
-                 }},
+                 }}
 
                 // ----------------------------------------------------------------------
                 // Disable some trash that should not be accessible, but is?
