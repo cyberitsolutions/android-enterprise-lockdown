@@ -400,7 +400,6 @@
                      "IncognitoModeAvailability": 1,       // disabled
                      "SavingBrowserHistoryDisabled": true,  // disabled
                      "PrintingEnabled": false,              // disabled
-                     "AppCacheForceEnabled": false,         // disabled
                      "ForceGoogleSafeSearch": true,         // enabled (google search pretends women don't have nipples)
                      "ForceYouTubeRestrict": "2",           // enabled (youtube pretends women don't have nipples)
                      "SafeBrowsingProtectionLevel": "1",    // enabled (below "phone home to google" level)
@@ -753,7 +752,6 @@
                      "IncognitoModeAvailability": 1,       // disabled
                      "SavingBrowserHistoryDisabled": true,  // disabled
                      "PrintingEnabled": false,              // disabled
-                     "AppCacheForceEnabled": false,         // disabled
                      "ForceGoogleSafeSearch": true,         // enabled (google search pretends women don't have nipples)
                      "ForceYouTubeRestrict": "2",           // enabled (youtube pretends women don't have nipples)
                      "SafeBrowsingProtectionLevel": "1",    // enabled (below "phone home to google" level)
@@ -1086,7 +1084,6 @@
                      "IncognitoModeAvailability": 1,  // FIXME
                      // "SavingBrowserHistoryDisabled": ???,  // FIXME
                      "PrintingEnabled": true,
-                     // "AppCacheForceEnabled": ???,  // DEAD: https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache
                      "ForceGoogleSafeSearch": false,  // FIXME
                      "ForceYouTubeRestrict": 2,  // user can't see porn on youtube (even if youtube is allowed)
                      // "SafeBrowsingProtectionLevel": ???,  // FIXME
